@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif'), local('NotoSerif'), url(http://themes.googleusercontent.com/static/fonts/notoserif/v1/eCpfeMZI7q4jLksXVRWPQxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}

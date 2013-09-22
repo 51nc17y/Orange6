@@ -1,0 +1,109 @@
+.code-div {
+  background-color: #e7eefb;
+  border: 1px solid #c0c0c0;
+  margin: 20px 7.5% 20px 7.5%;
+  padding: 5px 15px 5px 15px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+.detail {
+  font-family: 'Noto Serif', Times, serif;
+  font-size: 10pt;
+  margin: 1.5em 7.5% 1.5em 7.5%;
+}
+
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 0.9em;
+}
+
+h3 {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+span.indent {
+  margin-left: 4.0em;
+}
+span.tab-1 {
+  margin-left: 4.0em;
+}
+span.tab-2 {
+  margin-left: 8.0em;
+}
+span.tab-3 {
+  margin-left: 12.0em;
+}
+
+table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*  A bunch of CSS to format the navigation toolbar  */
+
+#navWrap {				/* Toolbar height so it won't... */
+  height: 30px;				/* ..collapse when floats */
+  font-size: 10pt;
+}
+
+#nav {					/* Rounded div to hold nav's ul */
+  width: 100%;
+  min-width: 925px;
+  padding: 0px;
+  border: 1px solid #c8c8c8;
+  background: #e7eefb;
+  z-index: 100;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+#nav-footer {				/* Spacer under toolbar's nav div */
+  height: 1em;
+  padding: 0px;
+  background: #ffffff;
+  z-index: 99;
+}
+
+#nav ul {				/* Nav's horizontal ul */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#nav li {				/* Nav's individual elements */
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 3px 0 3px;
+  color: #22429e;
+  list-style-type: none;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+#nav li:hover {				/* Change li's color on hover */
+  background-color: #f1faff;
+}
+
+#nav li a {				/* Links in li black, no underline */
+  text-decoration: none;
+}
+
+#nav li a:hover {			/* Restore underline on link hover */
+  text-decoration: underline;
+}

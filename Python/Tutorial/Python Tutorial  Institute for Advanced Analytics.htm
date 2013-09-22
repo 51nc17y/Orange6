@@ -1,0 +1,3277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://www.csc.ncsu.edu/faculty/healey/maa-14/python/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta charset="UTF-8">
+
+<!-- JQuery package -->
+
+<link type="text/css" href="./Python Tutorial  Institute for Advanced Analytics_files/jquery-ui-1.10.2.css" rel="stylesheet">
+<script type="text/javascript" src="./Python Tutorial  Institute for Advanced Analytics_files/jquery-1.9.1.min.js"></script><style type="text/css"></style>
+<script type="text/javascript" src="./Python Tutorial  Institute for Advanced Analytics_files/jquery-ui-1.10.2.min.js"></script>
+
+<!-- Style header for jQuery accordions -->
+
+<style>
+.ui-accordion-header {
+  font-family: 'Droid Sans', sans-serif;
+  font-style: normal;
+}
+</style>
+
+<!-- Google Code hyphenator -->
+
+<script type="text/javascript" src="./Python Tutorial  Institute for Advanced Analytics_files/hyphenate.js"></script>
+
+<!-- Google fonts stuff -->
+
+<link rel="stylesheet" type="text/css" href="./Python Tutorial  Institute for Advanced Analytics_files/css">
+<link rel="stylesheet" type="text/css" href="./Python Tutorial  Institute for Advanced Analytics_files/css(1)">
+<link rel="stylesheet" type="text/css" href="./Python Tutorial  Institute for Advanced Analytics_files/css(2)">
+<link rel="stylesheet" type="text/css" href="./Python Tutorial  Institute for Advanced Analytics_files/css(3)">
+
+<!-- Course page CSS and JS -->
+
+<link type="text/css" href="./Python Tutorial  Institute for Advanced Analytics_files/course.css" rel="stylesheet">
+<script type="text/javascript" src="./Python Tutorial  Institute for Advanced Analytics_files/mod-date.js"></script>
+<script type="text/javascript" src="./Python Tutorial  Institute for Advanced Analytics_files/maa-python.js"></script>
+
+<!-- Overrides for standard course CSS -->
+
+<link type="text/css" href="./Python Tutorial  Institute for Advanced Analytics_files/maa-python.css" rel="stylesheet">
+
+
+<title>Python Tutorial: Institute for Advanced Analytics</title>
+</head>
+
+<body bgcolor="white" class="hyphenate hasGoogleVoiceExt">
+
+<span style="
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  height: 330px;
+  background-image: url( &#39;python-logo.png&#39; );
+  background-repeat: no-repeat;
+">
+<div style="
+  position: absolute;
+  align: right;
+  bottom: 15px;
+  right: 20px;
+  font-family: &#39;Trebuchet MS&#39;, Helvetica, sans-serif;
+  font-size: 16pt;
+  font-weight: normal;
+  color: #646464;
+">
+  Python Tu­to­r­ial
+  <div style="font-size: 10pt;">
+    <a target="_blank" href="http://www.csc.ncsu.edu/faculty/healey">
+    <i>Christo­pher G. Healey</i>
+    </a>
+  </div>
+</div>
+<div style="
+  position: absolute;
+  align: right;
+  top: 0px;
+  left: 0px;
+">
+  <a target="_blank" href="http://www.ncsu.edu/">
+    <img src="./Python Tutorial  Institute for Advanced Analytics_files/nc-state-logo-blue.png" style="
+       border-style: none;
+       -moz-box-shadow: 1px 1px 8px #646464;
+       -webkit-box-shadow: 1px 1px 8px #646464;
+       box-shadow: 1px 1px 8px #646464;
+     ">
+  </a>
+</div>
+</span>
+
+<!--Spacer after image of one "line"-->
+
+<div style="height: 1em;"></div>
+
+<!-- Navigation toolbar -->
+
+<div id="navWrap">
+  <div id="nav" style="position: fixed; top: 0px; left: 8px; width: 98.5%;">
+    <ul id="nav-list">
+      <li id="nav-intro">In­tro­duc­tion
+      </li><li id="nav-var">Vari­ables
+      </li><li id="nav-op">Op­er­a­tors
+      </li><li id="nav-datatype">Data Types
+      </li><li id="nav-cond">Con­di­tion­als
+      </li><li id="nav-file">Files
+      </li><li id="nav-func">Func­tions
+      </li><li id="nav-numpy">NumPy
+      </li><li id="nav-pandas">pan­das
+      </li><li id="nav-web">Web
+    </li></ul>
+  </div>
+
+  <div id="nav-footer" style="position: fixed; top: 28px; left: 8px; width: 98.5%;">
+  </div>
+</div>
+
+
+<h2 id="intro">In­tro­duc­tion</h2>
+
+<p>A com­puter pro­gram is a se­quence of in­struc­tions, writ­ten in a
+<em>pro­gram­ming lan­guage</em>, that com­bine to­gether to solve a
+prob­lem or pro­duce a de­sired re­sult. Com­puter pro­grams range from very
+sim­ple ex­am­ples with only a few lines of <em>source code</em>, to very
+com­pli­cated. For ex­am­ple, Win­dows 7 is es­ti­mated to con­tain around 50
+mil­lion lines of code.</p>
+
+<p>In gen­eral, pro­gram­ming in­volves the fol­low­ing steps:</p>
+
+<ol>
+
+  <li>A pro­gram is writ­ten in some pro­gram­ming lan­guage
+  (<em>e.g.</em>, C++, Python, R, or Javascript), usu­ally stored in
+  one or more source code files.
+
+  </li><li>For com­piled lan­guages like C or C++, the source code is
+  con­verted into ma­chine lan­guage by a com­piler, then com­bined into an
+  ex­e­cutable file by a linker. The ex­e­cutable file is run on a tar­get
+  ma­chine and op­er­at­ing sys­tem.
+
+  </li><li>For in­ter­preted lan­guages like Python and R, the source code is
+  processed by an in­ter­preter. In­di­vid­ual lines are con­verted to
+  ma­chine lan­guage and ex­e­cuted one by one, as they are en­coun­tered
+  within the source code.
+
+</li></ol>
+
+<p>This tu­to­r­ial will pro­vide an in­tro­duc­tion to pro­gram­ming using
+<a target="_blank" href="http://www.python.org/">Python</a>,
+an <em>in­ter­preted</em> pro­gram­ming lan­guage. Python was con­ceived in
+the late 1980s by Guido van Rossum at <a target="_blank" href="http://www.cwi.nl/">Cen­trum Wiskunde &amp; In­for­mat­ica</a>
+(Na­tional Re­search In­sti­tute for Math­e­mat­ics and Com­puter Sci­ence) in
+the Nether­lands. Python 1.0 was re­leased in 1994. The most re­cent
+ver­sion is 3.3, re­leased in Sep­tem­ber 2012. To main­tain back­wards
+com­pat­i­bil­ity, Python ver­sions 3.0 and 3.1 co­in­cided with ver­sions 2.6
+and 2.7. We will be using Python ver­sion 2.7.
+
+</p><p>Python is an in­ter­preted lan­guage, which means in­di­vid­ual lines of
+code are con­verted to ma­chine lan­guage and ex­e­cuted as they are
+en­coun­tered (ver­sus a com­piled lan­guage, which con­verts an en­tire
+pro­gram to ma­chine code in an ex­plicit com­pile–link stage). One
+ad­van­tage of an in­ter­preted lan­guage is the abil­ity to enter
+in­di­vid­ual com­mands on a com­mand line prompt, and im­me­di­ately see
+their re­sults.</p>
+
+
+<div class="code-div">
+  &gt;&gt;&gt; 2 + 5<br>7<br>
+
+  &gt;&gt;&gt; list = [ 1, 2, 3 ]<br>
+
+  &gt;&gt;&gt; print list<br>[1, 2, 3]<br>
+
+  &gt;&gt;&gt; print list[ 0 ]<br>1<br>
+
+  &gt;&gt;&gt; email = { 'healey': 'healey@​ncsu.​edu', 'rappa':
+  'mrappa@​ncsu.​edu' }<br>
+
+  &gt;&gt;&gt; print email<br>{'rappa': 'mrappa@​ncsu.​edu', 'healey':
+  'healey@​ncsu.​edu'}<br>
+
+  &gt;&gt;&gt; print email[ 'healey' ]<br>healey@​ncsu.​edu<br>
+
+  &gt;&gt;&gt; bas­ket = [ 'or­ange', 'apple', 'pear', 'apple', 'durian',
+  'or­ange' ]<br>
+
+  &gt;&gt;&gt; fruit = set( bas­ket )<br>
+
+  &gt;&gt;&gt; print fruit<br>set(['or­ange', 'pear', 'apple', 'durian'])<br>
+
+  &gt;&gt;&gt; 'durian' in fruit<br>True<br>
+
+  &gt;&gt;&gt; 'pome­gran­ate' in fruit<br>False<br>
+</div>
+
+
+<p>Un­less we're only is­su­ing a few com­mands once or twice, we nor­mally
+store the com­mands in source code files. This al­lows us to load and
+ex­e­cute the com­mands as often as we want. It also makes it eas­ier to
+mod­ify a pro­gram, or cor­rect it when we dis­cover er­rors. A slightly
+mod­i­fied ver­sion of the above code (to force out­put to ap­pear when it's
+run) is avail­able in the source code
+file <a href="http://www.csc.ncsu.edu/faculty/healey/maa-14/python/tut-01-intro.py"><code>tut-01-intro.py</code></a>.</p>
+
+<p>A source code file in Python is called a <em>mod­ule</em>. Every
+Python pro­gram in­cludes a <em>main</em> mod­ule. When the pro­gram
+starts run­ning, it be­gins in­ter­pret­ing code in the main mod­ule. You
+can also split your code across ad­di­tional mod­ules to or­ga­nize it, or
+use <em>li­braries</em> to ac­cess func­tion­al­ity pro­vided by other
+pro­gram­mers.
+</p>
+
+
+<h3>Run­ning Python</h3>
+
+<p>For this class, we'll be using the 64-bit ver­sion of Win­Python for
+Win­dows. If you haven't done so al­ready, <a target="_blank" href="https://docs.google.com/a/ncsu.edu/document/d/105C-Kkh2pqSavAibgbCbFo4dhx27H7F9bAbC6aJZULE/edit?usp=sharing">there
+are com­pre­hen­sive in­struc­tions on how to down­load and in­stall
+Win­Python</a>, to­gether with the 
+<a target="_blank" href="http://www.crummy.com/software/BeautifulSoup/">Beau­ti­ful­Soup
+4</a> li­brary. Win­Python al­ready in­cludes
+the <a href="http://www.numpy.org/" target="_blank">NumPy</a>
+(nu­mer­i­cal Python), <a href="http://pandas.pydata.org/" target="_blank">pan­das</a> (Python data analy­sis),
+and <a href="http://docs.python.org/2/library/urllib2.html" target="_blank">url­lib2</a> (URL man­age­ment) li­braries that we'll be
+using in this tu­to­r­ial.</p>
+
+<p>Once Win­Python is in­stalled, dou­ble-click the <code>IPython Qt
+Console</code> icon in the <code>WinPython-64bit-2.7.5.3</code>
+di­rec­tory on your <code>C:</code> drive to bring up an in­ter­ac­tive
+Python con­sole.</p>
+
+<p>On Mac OS X or Linux, Python is nor­mally in­stalled by de­fault. If
+it is, you can type <code>python</code> at a com­mand line prompt to
+bring up a Python shell.</p>
+
+<p>In ad­di­tion to typ­ing in­di­vid­ual state­ments, you can load and
+ex­e­cute source code from the com­mand line. For ex­am­ple, to run the
+state­ments shown in the In­tro­duc­tion above, down­load and save the
+source code
+file <a href="http://www.csc.ncsu.edu/faculty/healey/maa-14/python/tut-01-intro.py"><code>tut-01-intro.py</code></a>,
+then use <code>execfile</code> to run it:</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; ex­ec­file( 'c:/Users/healey/Down­loads/tut-01-intro.​py' )
+</div>
+
+<p>Note that the path to your copy of the file will de­pend on where
+you've saved it.</p>
+
+
+<h3>Why Python?</h3>
+
+<p>Python is a pow­er­ful pro­gram­ming lan­guage that can per­form many
+func­tions. For this class, our in­ter­est is in Python's data man­age­ment
+ca­pa­bil­i­ties. Python of­fers ef­fi­cient ways to read data from one or
+more input files, then mod­ify, cor­rect, con­vert, or ex­tend that data
+and write the re­sults to an out­put file.</p>
+
+<p>For ex­am­ple, sup­pose we had the fol­low­ing comma-sep­a­rated value
+(CSV) file:</p>
+
+<blockquote>
+  <code>Name,Height</code><br>
+  <code>Jim,181</code><br>
+  <code>Betty,167</code><br>
+  <code>Frank,154</code><br>
+  <code>...</code><br>
+  <code>Annabelle,201</code>
+</blockquote>
+
+<p>We want to clas­sify each in­di­vid­ual based on his or her
+height <em>h<sub>i</sub></em> ver­sus the mean and stan­dard de­vi­a­tion
+of height μ and σ as:</p><p>
+
+</p><ul>
+  <li>Class 1:&nbsp;&nbsp;| <em>h<sub>i</sub></em> -
+  μ | ≤ σ
+
+  </li><li>Class 2:&nbsp;&nbsp;| <em>h<sub>i</sub></em> -
+  μ | ≤ 2σ
+
+  </li><li>Class 3:&nbsp;&nbsp;<em>h<sub>i</sub></em> - μ &lt; -2σ
+
+  </li><li>Class 4:&nbsp;&nbsp;<em>h<sub>i</sub></em> - μ &gt; 2σ
+</li></ul>
+
+<p>pro­duc­ing a new CSV out­put file with con­tents:</p>
+
+<blockquote>
+  <code>Name,Height,Class</code><br>
+  <code>Jim,181,2</code><br>
+  <code>Betty,167,1</code><br>
+  <code>Frank,154,3</code><br>
+  <code>...</code><br>
+  <code>Annabelle,201,4</code>
+</blockquote>
+
+<p>Python isn't the only way to pro­duce this re­sult (<i>e.g.</i>, we
+could prob­a­bly do it in Excel, or SAS, or R), but it's often eas­ier
+and faster to do it with a Python pro­gram. If you're cu­ri­ous,
+<a href="http://www.csc.ncsu.edu/faculty/healey/maa-14/python/tut-02-classify.py">this source code file</a> clas­si­fies a
+comma-de­lim­ited height file.
+
+
+</p><h2 id="var">Vari­ables</h2>
+
+<p>Every pro­gram­ming lan­guage pro­vides a way to main­tain val­ues as a
+pro­gram runs. Usu­ally, this is done by cre­ate a <em>named
+vari­able</em>, then as­sign­ing a value to the vari­able. In Python,
+vari­ables are cre­ated in­ter­ac­tively by spec­i­fy­ing their name and
+as­sign­ing them an ini­tial value.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; name = 'Abra­ham Lin­coln'<br>
+
+  &gt;&gt;&gt; height = 6.33<br>
+
+  &gt;&gt;&gt; age = 56<br>
+
+  &gt;&gt;&gt; birth­place = 'Hod­genville KY'<br>
+
+  &gt;&gt;&gt; born = 'Feb­ru­ary 12 1809'<br>
+
+  &gt;&gt;&gt; de­ceased = 'April 15 1865'<br>
+</div>
+
+<p>Un­like lan­guages like C++, Python does not re­quire you to spec­ify a
+vari­able's <em>type</em>. This is in­ferred from the value it
+main­tains. In the above ex­am­ple the vari­ables <code>name</code>,
+<code>birthplace</code>, <code>born</code>, and <code>deceased</code>
+are in­ferred to be strings, <code>height</code> is in­ferred to be
+float­ing point, and <code>age</code> is in­ferred to be in­te­ger. One
+ad­van­tage of Python's <em>dy­nam­i­cally typed</em> vari­ables is that you
+can change them to hold dif­fer­ent types of val­ues when­ever you
+want. You can also ask Python what type of value a vari­able con­tains
+with the <code>type()</code> func­tion.
+
+</p><div class="code-div">
+  &gt;&gt;&gt; name = 'Abra­ham Lin­coln'<br>
+
+  &gt;&gt;&gt; type( name )<br>
+
+  str<br>
+
+  &gt;&gt;&gt; name = 25<br>
+
+  &gt;&gt;&gt; type( name )<br>
+
+  int<br>
+
+  &gt;&gt;&gt; name = 6.3<br>
+
+  &gt;&gt;&gt; type( name )<br>
+
+  float<br>
+
+  &gt;&gt;&gt; name = 305127925769258727938193819283L<br>
+
+  &gt;&gt;&gt; type( name )<br>
+
+  long<br>
+
+  &gt;&gt;&gt; name = False<br>
+
+  &gt;&gt;&gt; type( name )<br>
+
+  bool<br>
+</div>
+
+<p>Here is a quick list of some of Python's basic vari­able types.
+More com­pli­cated types will be dis­cussed later in the tu­to­r­ial.</p>
+
+<ul>
+  <li><b>bool.</b> Boolean or "truth" vari­ables. Pos­si­ble val­ues
+  are <code>True</code> and <code>False</code>.
+
+  </li><li><b>int.</b> In­te­ger vari­ables, whole num­ber val­ues with no
+  frac­tional part. Pos­si­ble val­ues de­pend on the ma­chine you're
+  using. <code>sys.maxint</code> and <code>-sys.maxint - 1</code> can
+  be used to query the ma­chine's max­i­mum and min­i­mum in­te­ger val­ues.
+
+  </li><li><b>long.</b> Large in­te­ger vari­ables. Python does not limit the
+  size of long in­te­gers.
+
+  </li><li><b>float.</b> Float­ing point vari­ables, num­bers with frac­tional
+  parts. Pos­si­ble val­ues de­pend on the ma­chine you're
+  using. <code>sys.float_info.max</code> can be used to query the
+  ma­chine's max­i­mum float value.
+
+</li></ul>
+
+
+<h3>Vari­able Prac­tice Prob­lem</h3>
+
+<p>Write a set of Python state­ments that as­sign the names and
+as­so­ci­ated phone num­bers: Christo­pher Healey, 9195138112, Michael
+Rappa, 9195130480, and Aric LaBarr, 9195132957 to Python vari­ables,
+then prints three lines list­ing each per­son's name and cor­re­spond­ing
+phone num­ber.</p>
+
+<p>I rec­om­mend you write your pro­gram using a text ed­i­tor, save it as
+a source code file, and use <code>execfile()</code> to test it, rather
+than writ­ing the pro­gram di­rectly in the Python shell. This will let
+you write your code, run it to see what it does, edit it to fix
+prob­lems, and run it again, with­out hav­ing to re-type the en­tire
+pro­gram at the com­mand line.</p>
+
+
+<div id="var-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-var-accordion-header-0" aria-controls="ui-accordion-var-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Vari­able As­sign­ment So­lu­tion</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-var-accordion-panel-0" aria-labelledby="ui-accordion-var-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; name_0 = 'Christo­pher Healey'<br>
+
+      &gt;&gt;&gt; phone_0 = '9195138112'<br>
+
+      &gt;&gt;&gt; name_1 = 'Michael Rappa'<br>
+
+      &gt;&gt;&gt; phone_1 = '9195130480'<br>
+
+      &gt;&gt;&gt; name_2 = 'Aric LaBarr'<br>
+
+      &gt;&gt;&gt; phone_2 = '9195132957'<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; print name_0, '@', phone_0<br>
+
+      Christo­pher Healey @ 9195138112<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; print name_1, '@', phone_1<br>
+
+      Michael Rappa @ 9195130480<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; print name_2, '@', phone_2<br>
+
+      Aric LaBarr @ 9195132957<br>
+
+    </div>
+
+    <p>You can <a style="color: #e17009" href="http://www.csc.ncsu.edu/faculty/healey/maa-14/python/tut-03-var.py">down­load
+    the so­lu­tion file</a> and run it on your ma­chine, if you want.</p>
+
+    <p>Your choice of vari­able names is prob­a­bly dif­fer­ent than ours,
+    and you might have printed the name and phone num­ber with slightly
+    dif­fer­ent for­mat­ting. Re­gard­less, the basic idea is to use six
+    sep­a­rate vari­ables to store the names and phone num­bers, then
+    print the con­tents of these vari­ables in com­bi­na­tions that pro­duce
+    the cor­rect out­put.</p>
+
+    <p>You might think, "This works, but it doesn't seem very
+    ef­fi­cient." That's true. Once you've learned more about Python,
+    it's un­likely you'd write this code to solve the prob­lem. Here's a
+    more el­e­gant and flex­i­ble so­lu­tion. When you've fin­ished the
+    tu­to­r­ial, you'll be able to un­der­stand, and to im­ple­ment, this
+    type of code.</p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; db = { }<br>
+
+      &gt;&gt;&gt; db[ '9195138112' ] = 'Christo­pher Healey'<br>
+
+      &gt;&gt;&gt; db[ '9195130480' ] = 'Michael Rappa'<br>
+
+      &gt;&gt;&gt; db[ '9195132957' ] = 'Aric LaBarr'<br>
+
+      &gt;&gt;&gt; for phone in db.​keys():<br>
+
+      ... <span class="tab-1">print db[ phone ], '@', phone<br>
+
+      ...<br>
+
+      Michael Rappa @ 9195130480<br>
+
+      Christo­pher Healey @ 9195138112<br>
+
+      Aric LaBarr @ 9195132957<br>
+
+    </span></div>
+
+  </div>
+</div>
+
+
+<h2 id="op">Op­er­a­tors</h2>
+
+<p>Python pro­vides a set of built-in func­tions or <em>op­er­a­tors</em>
+to per­form sim­ple op­er­a­tions such as ad­di­tion, sub­trac­tion,
+com­par­i­son, and boolean logic. An ex­pres­sion is a com­bi­na­tion of
+vari­ables, con­stants, and op­er­a­tors. Every ex­pres­sion has a
+re­sult. Op­er­a­tors in Python have <em>prece­dence</em> as­so­ci­ated with
+them. This means ex­pres­sions using op­er­a­tors are not eval­u­ated
+strictly left to right. Re­sults from the op­er­a­tors with the high­est
+prece­dence are com­puted first. Con­sider the fol­low­ing sim­ple Python
+ex­pres­sion:</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; 6 + 3 * 4 / 2 + 2<br>14
+</div>
+
+<p>If this were eval­u­ated left to right, the re­sult would be
+20. How­ever, since mul­ti­pli­ca­tion and di­vi­sion have a higher
+prece­dence than ad­di­tion in Python, the re­sult re­turned is 14,
+com­puted as fol­lows.</p>
+
+<ul>
+
+  <li><code><span style="color: #c0c0c0">6 +</span> 3 *
+  4 <span style="color: #c0c0c0">/ 2 + 2</span></code>
+
+  </li><li><code><span style="color: #c0c0c0">6 +</span> 12 /
+  2 <span style="color: #c0c0c0"> + 2</span></code>
+
+  </li><li><code>6 + 6 <span style="color: #c0c0c0">+ 2</span></code>
+
+  </li><li><code>12 + 2</code>
+
+  </li><li><code>14</code>
+
+</li></ul>
+
+<p>Of course, we can use paren­the­ses to force a re­sult of 20, if
+that’s what we wanted, with the fol­low­ing ex­pres­sion:</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; ((( 6 + 3 ) * 4 ) / 2 ) + 2<br>20
+</div>
+
+<p>Below is a list of the com­mon op­er­a­tors in Python, along with an
+ex­pla­na­tion of what they do. The op­er­a­tors are group ac­cord­ing to
+prece­dence, from high­est to low­est.</p>
+
+<div align="center">
+<table>
+
+<tbody><tr>
+  <th>Op­er­a­tor</th>
+  <th>De­scrip­tion</th>
+</tr>
+
+<tr class="even">
+  <td><code>( )</code></td>
+  <td>paren­the­ses de­fine the order in which groups of op­er­a­tors should
+  be eval­u­ated</td>
+</tr>
+
+<tr class="odd">
+  <td><code>**</code></td>
+  <td>ex­po­nen­tial</td>
+</tr>
+
+<tr class="even">
+  <td><code>+x</code>, <code>-x</code></td>
+  <td>make pos­i­tive, make neg­a­tive</td>
+</tr>
+
+<tr class="odd">
+  <td><code>*</code>, <code>/</code>, <code>//</code>, <code>%</code></td>
+  <td>mul­ti­pli­ca­tion, di­vi­sion, floor di­vi­sion, re­main­der</td>
+</tr>
+
+<tr class="even">
+  <td><code>+</code>, <code>-</code></td>
+  <td>ad­di­tion, sub­trac­tion</td>
+</tr>
+
+<tr class="odd">
+  <td>
+    <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>,
+    <code>&gt;=</code>, <code>!=</code>, <code>==</code>
+  </td>
+  <td>less, less or equal, greater, greater or equal, not equal,
+  equal</td>
+</tr>
+
+<tr class="even">
+  <td><code>and</code></td>
+  <td>boolean AND</td>
+</tr>
+
+<tr class="odd">
+  <td><code>or</code></td>
+  <td>boolean OR</td>
+</tr>
+
+</tbody></table>
+</div>
+
+
+<h2 id="datatype">Ad­vanced Data Types</h2>
+
+<p>In ad­di­tion to boolean and nu­meric vari­ables, Python pro­vides a
+num­ber of more com­plex types, in­clud­ing strings (str), lists (list),
+dic­tio­nar­ies (dict), or tu­ples (tuple). Using these types ef­fec­tively
+will make you a much more ef­fi­cient pro­gram­mer.</p>
+
+
+<h3>str</h3>
+
+<p>String vari­ables (str) are a se­quence of one or more char­ac­ters.
+String val­ues are de­noted by sin­gle quotes, <code>s = 'Abraham
+Lincoln'</code>, or dou­ble quotes, <code>s = "Abraham
+Lincoln"</code>. Be­cause strings are a more com­plex data type, they
+sup­port more com­plex op­er­a­tions. Here are some com­mon op­er­a­tions you
+can per­form on strings.</p>
+
+<ul>
+
+  <li><code>len(&nbsp;s&nbsp;)</code>, re­turn the length (the num­ber
+  of char­ac­ters) in <code>s</code>.
+
+  </li><li><code>s + t</code>, con­cate­nate <code>s</code>
+  and <code>t</code>, re­turn­ing a new string as the re­sult.
+
+  </li><li><code>s[&nbsp;i&nbsp;]</code>, re­turn the <em>i</em>-th
+  char­ac­ter in <code>s</code>. The first char­ac­ter in <code>s</code>
+  is at <code>s[&nbsp;0&nbsp;]</code>.
+
+  </li><li><code>s[&nbsp;i: j&nbsp;]</code>, <em>slice</em> <code>s</code>
+  and re­turn the sub­string from <code>s[&nbsp;i&nbsp;]</code> up to,
+  but not in­clud­ing <code>s[&nbsp;j&nbsp;]</code>.
+
+  </li><li><code>s[&nbsp;-i&nbsp;]</code>, re­turn the <em>i</em>-th
+  char­ac­ter <em>from the end</em> of <code>s</code>.
+
+</li></ul>
+
+<p>Here are some ex­am­ples of string op­er­a­tions ex­e­cuted in a Python
+shell.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; s = 'Hello world!'<br>
+
+  &gt;&gt;&gt; len( s )<br>12<br>
+
+  &gt;&gt;&gt; s[ 6 ]<br>'w'<br>
+
+  &gt;&gt;&gt; s[ 2: 8 ]<br>'llo wo'<br>
+
+  &gt;&gt;&gt; s[ -2 ]<br>'d'<br>
+
+  &gt;&gt;&gt; s[ -3: 12 ]<br>'ld!'<br>
+
+  &gt;&gt;&gt; t = 'Must... try... harder'<br>
+
+  &gt;&gt;&gt; s + ' ' + t<br>
+  'Hello world! Must... try... harder...'
+</div>
+
+<p>There are many ad­di­tional op­er­a­tions you can per­form on strings,
+for ex­am­ple, <code>s.capitalize()</code> to cap­i­tal­ize a string, or
+<code>s.find(&nbsp;t&nbsp;)</code> to find the first oc­cur­rence of
+sub­string <code>t</code> in <code>s</code>. The Python
+doc­u­men­ta­tion
+<a target="_blank" href="http://pguides.net/python-tutorial/python-string-methods/">de­scribes
+all the avail­able string meth­ods</a>, ex­plain­ing how to use them and
+what they do.</p>
+
+
+<h3>list</h3>
+
+<p>List vari­ables are or­dered se­quences of val­ues. Most data types can
+be stored in a list, for ex­am­ple, a list of int's, a list of str's, or
+even a list of list's. List val­ues are de­noted by square
+brack­ets, <code>l = [&nbsp;1, 2, 3, 4&nbsp;]</code>.</p>
+
+<p>You might no­tice that strings look sus­pi­ciously like a list of
+char­ac­ters. In­deed, both list and str are known as "se­quence types" in
+Python, so lists sup­port the same <code>len</code>, con­cate­na­tion,
+in­dex­ing, and slic­ing op­er­a­tions as strings.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; l = [ 1, 2, 3, 4, 5 ]<br>
+
+  &gt;&gt;&gt; len( l )<br>5<br>
+
+  &gt;&gt;&gt; l[ 2 ]<br>3<br>
+
+  &gt;&gt;&gt; l[ 1: 3 ]<br>[2, 3]<br>
+
+  &gt;&gt;&gt; l[ -2 ]<br>4<br>
+
+  &gt;&gt;&gt; s[ -3: 5 ]<br>[3, 4, 5]<br>
+
+  &gt;&gt;&gt; m = [ -2, -3, -4 ]<br>
+
+  &gt;&gt;&gt; l + m<br>
+  [1, 2, 3, 4, 5, -2, -3, -4]
+</div>
+
+<p>As with strings, there are many ad­di­tional op­er­a­tions you can
+per­form on lists, for
+ex­am­ple, <code>l.insert(&nbsp;i,&nbsp;x&nbsp;)</code>
+and <code>l.remove(&nbsp;i&nbsp;)</code> to add and re­move items, or
+<code>l.sort()</code> to re­order items into sorted order.  The Python
+doc­u­men­ta­tion
+<a target="_blank" href="http://pguides.net/python-tutorial/python-list-methods/">de­scribes
+the avail­able list meth­ods</a>, ex­plain­ing how to use them and what
+they do.</p>
+
+
+<h3>dict</h3>
+
+<p>Dic­tio­nary vari­ables are a col­lec­tion of key–value pairs.
+This is meant to be anal­o­gous to a real dic­tio­nary, where
+the <em>key</em> is a word, and the as­so­ci­ated <em>value</em> is the
+word's de­f­i­n­i­tion. dict vari­ables are de­signed to sup­port ef­fi­cient
+search­ing for el­e­ments in the dic­tio­nary based on key.  Dic­tio­nary
+val­ues are de­noted by braces, <code>d = {&nbsp;key:
+value&nbsp;}</code>.
+
+</p><p>By de­sign, dic­tio­nar­ies have one im­por­tant re­quire­ment: every value
+you store in a dic­tio­nary must have its own, unique key. For ex­am­ple,
+we could not store a per­son's ad­dress using their last name as a key,
+be­cause if two dif­fer­ent peo­ple had the same last name, only one of
+their ad­dresses could be saved in the dic­tio­nary.<p.>
+
+</p.></p><p>Sup­pose in­stead we wanted to find a per­son's name based on their
+phone num­ber. To do this, we could cre­ate a dic­tio­nary with phone
+num­ber as a key and name as a value.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; d = { '9195138112': 'Christo­pher Healey' }<br>
+
+  &gt;&gt;&gt; d[ '9195130480' ] = 'Michael Rappa'<br>
+
+  &gt;&gt;&gt; d[ '9195152858' ] = 'Dept of Com­puter Sci­ence'<br>
+
+  &gt;&gt;&gt; print d<br>
+
+  {'9195130480': 'Michael Rappa', '9195138112': 'Christo­pher Healey',
+  '9195152858': 'Dept of Com­puter Sci­ence'}<br>
+
+  &gt;&gt;&gt; print d[ '9195138112' ]<br>
+
+  'Christo­pher Healey'
+
+</div>
+
+<p>The first state­ment cre­ates a dic­tio­nary vari­able
+named <code>d</code> and as­signs a sin­gle key–value pair made up
+of a string phone num­ber key
+<code>9195138112</code> and a string name value <code>Christopher
+Healey</code>. The next two lines add two new key–value pairs
+to <code>d</code> by spec­i­fy­ing a key as an index (an string phone
+num­ber in­side the square brack­ets) and as­signed a name as the key's
+value. Print­ing <code>d</code> lists all its key–value pairs.
+The value at­tached to a spe­cific key can be queried by
+in­dex­ing <code>d</code> with the tar­get key.</p>
+
+<div id="dict-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-dict-accordion-header-0" aria-controls="ui-accordion-dict-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Key Types</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-dict-accordion-panel-0" aria-labelledby="ui-accordion-dict-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <p>Why did we choose to make our key a string vari­able and not a
+    nu­meric vari­able? The dic­tio­nary would work if we used <code>d =
+    {&nbsp;9195138112: 'Christopher Healey'&nbsp;}</code>, with a long
+    in­te­ger for the key rather than a string. Our choice was se­man­tic:
+    we view a phone num­ber as a se­quence of (nu­meric) char­ac­ters, and
+    not as a generic nu­meric value. It doesn't make sense to add or
+    sub­tract phone num­bers, for ex­am­ple, so phone num­bers don't re­ally
+    act like num­bers.</p>
+
+    <p>Since the dic­tio­nary works iden­ti­cally ei­ther way, does it
+    re­ally mat­ter? In terms of func­tion­al­ity, prob­a­bly not. In terms
+    of un­der­stand­abil­ity, that de­pends. We try to find the best match
+    be­tween the con­text of a vari­able and its type. Here, the point is
+    sub­tle, so it doesn't make a big dif­fer­ence. In other cases,
+    though, a proper choice (rather than sim­ply the first choice that
+    works) can im­prove a pro­gram's ef­fec­tive­ness, and per­haps more
+    im­por­tantly, make it eas­ier to un­der­stand.</p>
+  </div>
+</div>
+
+<p>One in­ter­est­ing dif­fer­ence be­tween a dic­tio­nary and a list is that
+dic­tio­nar­ies do not main­tain order. The order that items are stored in
+a dic­tio­nary will not nec­es­sar­ily match the order that you added them
+to the dic­tio­nary. You can see this in the above ex­am­ple, where phone
+num­bers were added in the order
+<code>9195138112</code>, <code>9195130480</code>, <code>9195152858</code>,
+but they were stored in <code>d</code> in the
+order <code>9195130480</code>, <code>9195138112</code>,
+then <code>9195152858</code>.</p>
+
+<p>Dic­tio­nar­ies are a very pow­er­ful data struc­ture. If you need to
+per­form ef­fi­cient search, if or­der­ing the el­e­ment's isn't crit­i­cal,
+and if you can de­fine a key for each of the el­e­ments you're stor­ing, a
+dict might be a good can­di­date.
+
+There are many ad­di­tional op­er­a­tions you can per­form on dic­tio­nar­ies,
+for ex­am­ple, <code>d.keys()</code> to re­turn a list of keys in the
+dic­tio­nary, <code>d.values()</code> to re­turn a list of its val­ues,
+or <code>d.pop(&nbsp;k&nbsp;)</code> to re­move an entry with
+key <code>k</code> (and re­turn its value, if you want it). The Python
+doc­u­men­ta­tion
+<a target="_blank" href="http://pguides.net/python-tutorial/python-dictionary-methods/">de­scribes
+the avail­able dic­tio­nary meth­ods</a>, ex­plain­ing how to use them and
+what they do.</p>
+
+
+<h3>tuple</h3>
+
+<p>Tuple vari­ables are or­dered se­quences of val­ues, where the po­si­tion
+of a value within the tuple often has a se­man­tic mean­ing.  Tuple
+val­ues are de­noted by paren­the­ses, <code>t = (&nbsp;2013, 10, 28, 14,
+15, 0&nbsp;)</code>.</p>
+
+<p>You might no­tice that tu­ples look iden­ti­cal to lists. Again, both
+are "se­quence types" in Python, so tu­ples sup­port the
+<code>len</code>, con­cate­na­tion, and slic­ing op­er­a­tions, as well as
+query­ing by index.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; t = ( 2013, 10, 28, 14, 15, 0 )<br>
+
+  &gt;&gt;&gt; len( 5 )<br>6<br>
+
+  &gt;&gt;&gt; t[ 0 ]<br>2013<br>
+
+  &gt;&gt;&gt; t[ 3: 6 ]<br>(14, 15, 0)<br>
+
+  &gt;&gt;&gt; l[ -3 ]<br>14<br>
+
+  &gt;&gt;&gt; s[ -6: 3 ]<br>(2013, 10, 28)<br>
+
+  &gt;&gt;&gt; u = ( 1, 232, 1 )<br>
+
+  &gt;&gt;&gt; t + u<br>
+  (2013, 10, 28, 14, 15, 0, 1, 232, 1)
+</div>
+
+<p>There are im­por­tant dif­fer­ences be­tween lists and tu­ples. Al­though
+they are sub­tle, un­der­stand­ing them will help you de­cide when to use a
+list, and when to use a tuple.</p>
+
+<ul>
+
+  <li>Val­ues in a tuple can­not be changed after they are as­signed
+  (<i>i.e.,</i> tu­ples are im­mutable). If you tried some­thing
+  like <code>t[&nbsp;0&nbsp;] = 10</code>, Python will re­turn an error
+  mes­sage.
+
+  </li><li>The po­si­tion of a value in a tuple often has a se­man­tic
+  mean­ing. In the ex­am­ple above with <code>t = (&nbsp;2013, 10, 28,
+  14, 15, 0&nbsp;)</code>, <code>t</code> rep­re­sents a date-time value
+  con­tain­ing year, month, day, hour, minute, and sec­ond. So, each
+  po­si­tion in this kind of tuple mat­ters: year is
+  at <code>t[&nbsp;0&nbsp;]</code>, month is
+  at <code>t[&nbsp;1&nbsp;]</code>, and so on.
+
+  </li><li>Be­cause tu­ples are im­mutable, they can be used in places that
+  lists can­not. For ex­am­ple, a tuple can be used as a key in a
+  dic­tio­nary entry. A list can­not be used as a key, since it would be
+  pos­si­ble to change the value of the list after it was stored in the
+  dic­tio­nary, break­ing the orig­i­nal key–value as­so­ci­a­tion.
+
+</li></ul>
+
+<p>Tu­ples sup­port meth­ods that lists sup­port, as long as the
+method <em>does not</em> mod­ify the tuple's val­ues. So, for ex­am­ple,
+tu­ples sup­port <code>len()</code> and <code>+</code>, but not
+<code>remove()</code> or <code>sort()</code>, since that changes the
+tuple's val­ues or the order of its val­ues.</p>
+
+
+<h2 id="cond">Con­di­tion­als</h2>
+
+<p>We've al­ready seen that a Python pro­gram runs by ex­e­cut­ing the
+first state­ment in the main mod­ule, and con­tin­u­ing with each
+suc­ces­sive state­ment until it reaches the end of the pro­gram. This
+doesn't allow for very com­pli­cated pro­grams. What if want to con­trol
+the flow of ex­e­cu­tion, that is, what if we want one part of the
+pro­gram to be ex­e­cuted in some cases, but an­other part to be ex­e­cuted
+in dif­fer­ent cases?</p>
+
+<p><em>Con­di­tional state­ments</em> allow you to con­trol how your
+pro­gram ex­e­cutes. For ex­am­ple, a con­di­tional state­ment could apply a
+com­par­i­son op­er­a­tor to a vari­able, then ex­e­cute dif­fer­ent a block of
+state­ments de­pend­ing on the re­sult of the com­par­i­son.  Or, it could
+cause a block of state­ments to be ex­e­cuted re­peat­edly until some
+con­di­tion is met.</p>
+
+<p>Un­der­stand­ing con­di­tion state­ments is nec­es­sary for writ­ing even
+mod­er­ately com­pli­cated pro­grams. We dis­cuss some com­mon Python
+con­di­tional op­er­a­tors below, and give de­tails on how to struc­ture your
+code within a con­di­tional state­ment.</p>
+
+
+<h3>if-then-else</h3>
+
+<p>To start, we'll dis­cuss the if-then-else con­di­tional. De­scribed in
+sim­ple terms, this is used in a pro­gram to say, "<em>If</em> some
+con­di­tion is true, <em>then</em> do this, <em>else</em> do that."</p>
+
+<p>As an ex­am­ple, sup­pose we have a vari­able <code>grade</code> that
+holds a stu­dent's nu­meric grade on the range 0–100. We want to
+de­fine a new vari­able <code>passed</code> that's set
+to <code>True</code> if the stu­dent's grade is 50 or higher,
+or <code>False</code> if the grade is less than 50. The fol­low­ing
+Python con­di­tional will do this.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; if grade &gt;= 50:<br>
+
+  ... <span class="tab-1">passed = True</span><br>
+
+  ... else:<br>
+
+  ... <span class="tab-1">passed = False</span><br>
+</div>
+
+<p>Al­though this state­ment ap­pears sim­ple, there are a num­ber of
+im­por­tant de­tails to dis­cuss.</p>
+
+<ul>
+
+  <li>The com­par­i­son op­er­a­tion <code>grade &gt;= 50</code> eval­u­ates
+  to <code>True</code> if <code>grade</code>'s value is 50 or greater,
+  and <code>False</code> if it isn't. The if con­di­tional uses this
+  boolean re­sult to de­cide which part of the con­di­tional state­ment to
+  ex­e­cute.
+
+  </li><li>No­tice there are colons (<code>:</code>) after the if state­ment
+  and the else state­ment.
+
+  </li><li>The <em>code blocks</em> that make up the then and else parts of
+  the con­di­tional are in­dented with a sin­gle Tab char­ac­ter. This
+  iden­ti­fies which state­ment(s) make up each code block. Iden­ti­fy­ing
+  code blocks with Tabs is
+  <b>re­quired</b> in Python.
+
+  </li><li>There is no ex­plicit then key­word in Python. The first code
+  block fol­low­ing the if state­ment is ex­e­cuted if the con­di­tional
+  passes.
+
+</li></ul>
+
+<p>In­ter­est­ingly, the else part of the con­di­tional is op­tional. The
+fol­low­ing code will pro­duce the same re­sult as the first ex­am­ple.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; passed = False<br>
+
+  &gt;&gt;&gt; if grade &gt;= 50:<br>
+
+  ... <span class="tab-1">passed = True</span><br>
+</div>
+
+<p>Sup­pose we wanted to not only de­fine pass or fail, but also as­sign
+a let­ter grade for the stu­dent. We could use a se­ries of if-then
+state­ments, one for each pos­si­ble let­ter grade. A bet­ter way is to
+use <code>elif</code>, which de­fines else-if code blocks. Now, we're
+telling a pro­gram, "<em>If</em> some con­di­tion is true, <em>then</em>
+do this, <em>else if</em> some other con­di­tion is true, <em>then</em>
+do this, <em>else</em> do that." You can in­clude as many else-if
+state­ments as you want in an if-then-else con­di­tional.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; if grade &gt;= 90:<br>
+
+  ... <span class="tab-1">passed = True</span><br>
+
+  ... <span class="tab-1">let­ter = 'A'</span><br>
+
+  ... elif grade &gt;= 80:<br>
+
+  ... <span class="tab-1">passed = True</span><br>
+
+  ... <span class="tab-1">let­ter = 'B'</span><br>
+
+  ... elif grade &gt;= 65:<br>
+
+  ... <span class="tab-1">passed = True</span><br>
+
+  ... <span class="tab-1">let­ter = 'C'</span><br>
+
+  ... elif grade &gt;= 50:<br>
+
+  ... <span class="tab-1">passed = True</span><br>
+
+  ... <span class="tab-1">let­ter = 'D'</span><br>
+
+  ... else:<br>
+
+  ... <span class="tab-1">passed = False</span><br>
+
+  ... <span class="tab-1">let­ter = 'F'</span><br>
+</div>
+
+
+<h3>while</h3>
+
+<p>An­other com­mon sit­u­a­tion is the need to ex­e­cute a code block until
+some con­di­tion is met. This is done with a while con­di­tional. Here,
+we're telling the pro­gram "<em>While</em> some con­di­tion is true, do
+this." For ex­am­ple, sup­pose we wanted to print the square roots of
+val­ues on the range 1–15.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port math<br>
+
+  &gt;&gt;&gt; i = 1<br>
+
+  &gt;&gt;&gt; while i &lt;= 15:<br>
+
+  ... <span class="tab-1">print 'The square root of', i, 'is',
+  math.​sqrt( i )</span><br>
+
+  ... <span class="tab-1">i = i + 1</span><br>
+
+  ...<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 2 is 1.4142135623730951<br>
+
+  …<br>
+
+  The square root of 15 is 3.872983346207417
+</div>
+
+
+<p>(The <code>import math</code> state­ment is needed to give us ac­cess
+to math­e­mat­i­cal func­tions like <code>math.sqrt</code>).</p>
+
+<p>No­tice that the vari­able that's com­pared in the while con­di­tional
+nor­mally <b>must be up­dated</b> in the con­di­tional's code block. If
+you don't up­date the con­di­tional vari­able, a com­par­i­son that ini­tially
+eval­u­ates to <code>True</code> will never eval­u­ate
+to <code>False</code>, which means the while loop will ex­e­cute
+for­ever. For ex­am­ple, con­sider the fol­low­ing code block.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port math<br>
+
+  &gt;&gt;&gt; i = 1<br>
+
+  &gt;&gt;&gt; while i &lt;= 15:<br>
+
+  ... <span class="tab-1">print 'The square root of', i, 'is',
+  math.​sqrt( i )</span><br>
+
+  ...<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 1 is 1<br>
+
+  …<br>
+</div>
+
+<p>With­out the <code>i = i + 1</code> state­ment to
+up­date <code>i</code> in the con­di­tional's code block, the while
+con­di­tional never fails, giv­ing us the same out­put over and over. You
+can use Ctrl+C to halt your pro­gram if it's caught in an in­fi­nite loop
+like this.</p>
+
+
+<h3>for</h3>
+
+<p>A final con­di­tional that is very com­mon is a for loop. Here, we're
+telling a pro­gram "Ex­e­cute this code block <em>for</em> some list of
+val­ues." for can work on any list of val­ues, but it's often ap­plied to
+a nu­meric range. The <code>range</code> com­mand is used to cre­ate a
+list con­tain­ing a se­quence of in­te­gers.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; range( 5, 10 )<br>
+
+  [5, 6, 7, 8 ,9]<br>
+
+  &gt;&gt;&gt; range( 10 )<br>
+
+  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>
+
+  &gt;&gt;&gt; range( -15, -10 )<br>
+
+  [-15, -14, -13, -12, -11]<br>
+</div>
+
+<p>Giv­ing two val­ues to <code>range</code> like <code>range(&nbsp;2,
+5&nbsp;)</code> de­fines a start­ing value of 2 and an end­ing value of
+5. <code>range</code> gen­er­ates an in­te­ger list from the start­ing
+value, up to but not in­clud­ing the end­ing value: <code>[2, 3,
+4]</code>. If you only give an end­ing value to <code>range</code>
+like <code>range(&nbsp;5&nbsp;)</code>, <code>range</code> as­sumes a
+start­ing value of 0, pro­duc­ing the list <code>[0, 1, 2, 3, 4]</code>.
+
+</p><p>Once a list is pro­duced with <code>range</code>, each value in the
+list is given to the for con­di­tional's code block, in order. For
+ex­am­ple, sup­pose we wanted to print the same set of square roots from
+1–15 using a for loop.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port math<br>
+
+  &gt;&gt;&gt; for i in range( 1, 16 ):<br>
+
+  ... <span class="tab-1">print 'The square root of', i, 'is',
+  math.​sqrt( i )</span><br>
+
+  ...<br>
+
+  The square root of 1 is 1<br>
+
+  The square root of 2 is 1.4142135623730951<br>
+
+  …<br>
+
+  The square root of 15 is 3.872983346207417
+</div>
+
+<p>The for state­ment de­fines a vari­able to hold the "cur­rent" list
+value. In our case, this vari­able is
+called <code>i</code>. <code>range(&nbsp;1, 16&nbsp;)</code> gen­er­ates
+the list <code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+15]</code>.  The for con­di­tional walks through this list and ex­e­cutes
+the code block 15 times, first with <code>i</code> set to 1, then
+with <code>i</code> set to 2, and so on up to the final value of
+15. The state­ment in­side the code block uses <code>i</code> to track
+the cur­rent list value, print­ing square roots from 1 to 15.</p>
+
+<p>We don't need to use <code>range</code> to ex­e­cute a for
+con­di­tional. Any list can be used in a for loop.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; name = [ "Healey", "Rappa", "LaBarr" ]<br>
+
+  &gt;&gt;&gt; for nm in name:<br>
+
+  ... <span class="tab-1">print nm, '(', len( nm ), ')'</span><br>
+
+  ...<br>
+
+  Healey ( 6 )<br>
+
+  Rappa ( 5 )<br>
+
+  LaBarr ( 6 )<br>
+</div>
+
+<div id="loop-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-loop-accordion-header-0" aria-controls="ui-accordion-loop-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>break and con­tinue</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-loop-accordion-panel-0" aria-labelledby="ui-accordion-loop-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <p><em><b>break</b></em></p>
+
+    <p>Some­times we need to exit a for or while loop be­fore its
+    con­di­tion eval­u­ates to <code>False</code>. The <code>break</code>
+    state­ment al­lows us to do this. For ex­am­ple, sup­pose we wanted to
+    print the el­e­ments of a list of strings, but ter­mi­nate ex­am­in­ing
+    the list if we see the string <code>stop</code>.</p>
+
+    <div class="code-div" style="background-color: #f8f8f8;"><br>
+
+    &gt;&gt;&gt; l = [ 'Healey', 'Rappa', 'LaBarr' ]<br>
+
+    &gt;&gt;&gt; for i in range( len( l ) ):<br>
+
+    ... <span class="tab-1">if l[ i ] == 'stop':</span><br>
+
+    ... <span class="tab-2">break</span><br>
+
+    ... <span class="tab-1">print l[ i ]</span><br>
+
+    ...<br>
+
+    Healey<br>
+
+    Rappa<br>
+
+    LaBarr<br>
+
+    &gt;&gt;&gt; l.​insert( 1, 'stop' )<br>
+
+    &gt;&gt;&gt; print l<br>
+
+    [ 'Healey', 'stop', 'Rappa', 'LaBarr' ]<br>
+
+    &gt;&gt;&gt; for i in range( len( l ) ):<br>
+
+    ... <span class="tab-1">if l[ i ] == 'stop':</span><br>
+
+    ... <span class="tab-2">break</span><br>
+
+    ... <span class="tab-1">print l[ i ]</span><br>
+
+    ...<br>
+
+    Healey<br>
+    </div>
+
+    <p><em><b>con­tinue</b></em></p>
+
+    <p>Other times, we want to stop ex­e­cut­ing a loop's code block, and
+    in­stead re­turn to check its con­di­tion.  The <code>continue</code>
+    state­ment al­lows us to do this. For ex­am­ple, sup­pose we wanted to
+    print only the odd num­bers from 1 to 10.</p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+
+    &gt;&gt;&gt; for i in range( 1, 10 ):<br>
+
+    ... <span class="tab-1">if i % 2 == 0:</span><br>
+
+    ... <span class="tab-2">i = i + 1</span><br>
+
+    ... <span class="tab-2">con­tinue</span><br>
+
+    ... <span class="tab-1">print i, 'is odd'</span><br>
+
+    ... <span class="tab-1">i = i + 1</span><br>
+
+    ...<br>
+
+    1 is odd<br>
+
+    3 is odd<br>
+
+    5 is odd<br>
+
+    7 is odd<br>
+
+    9 is odd<br>
+    </div>
+  </div>
+</div>
+
+
+<h3>Loop Prac­tice Prob­lem</h3>
+
+<p>Write a set of Python state­ments to com­pute the av­er­age of the
+fol­low­ing list of num­bers.</p>
+
+<ul>
+
+  <li> 6, 12, -7, 29, 14, 38, 11, 7
+
+</li></ul>
+
+<p>I rec­om­mend you write your pro­gram using a text ed­i­tor, save it as
+a source code file, and use <code>execfile()</code> to test it, rather
+than writ­ing the pro­gram di­rectly in the Python shell. This will let
+you write your code, run it to see what it does, edit it to fix
+prob­lems, and run it again, with­out hav­ing to re-type the en­tire
+pro­gram at the com­mand line.</p>
+
+<div id="for-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-for-accordion-header-0" aria-controls="ui-accordion-for-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>List Av­er­age So­lu­tion</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-for-accordion-panel-0" aria-labelledby="ui-accordion-for-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <p><em><b>for loop</b></em></p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; num = [ 6, 12, -7, 29, 14, 38, 11, 7 ]<br>
+
+      &gt;&gt;&gt; sum = 0<br>
+
+      &gt;&gt;&gt; for n in num:<br>
+
+      &gt;&gt;&gt; <span class="tab-1">sum = sum + n<br>
+
+      &gt;&gt;&gt; print float( sum ) / len( num )<br>
+
+      13.75<br>
+    </span></div>
+
+    <p><em><b>while loop</b></em></p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; num = [ 6, 12, -7, 29, 14, 38, 11, 7 ]<br>
+
+      &gt;&gt;&gt; i = 0<br>
+
+      &gt;&gt;&gt; sum = 0<br>
+
+      &gt;&gt;&gt; while i &lt; len( num ):<br>
+
+      &gt;&gt;&gt; <span class="tab-1">sum = sum + num[ i ]<br>
+
+      &gt;&gt;&gt; <span class="tab-1">i = i + 1<br>
+
+      &gt;&gt;&gt; print float( sum ) / len( num )<br>
+
+      13.75<br>
+    </span></span></div>
+
+    <p>No­tice that we have to con­vert the sum to a float­ing point
+    value (in our case, by cast­ing it with <code>float()</code>) to
+    get the proper av­er­age of 13.75. If we had used the
+    state­ment <code>print float sum / len( num )</code> in­stead,
+    Python would have re­turn an in­te­ger re­sult of 13.</p>
+
+    <p>You can <a style="color: #e17009" href="http://www.csc.ncsu.edu/faculty/healey/maa-14/python/tut-04-avg.py">down­load
+    the so­lu­tion file</a> and run it on your ma­chine, if you want.</p>
+  </div>
+</div>
+
+
+<h3>De­bug­ging</h3>
+
+<p>In­evitably, you'll write some Python code that ei­ther doesn't do
+what you ex­pect it to do, or that gen­er­ates an error mes­sage when you
+try to ex­e­cute it. When that hap­pens, you'll need to <em>debug</em>
+the pro­gram to lo­cate and cor­rect the error. Con­sider the fol­low­ing
+code.</p><p>
+
+</p><div class="code-div">
+  &gt;&gt;&gt; l = [ '10', '20', '30' ]<br>
+
+  &gt;&gt;&gt; sum = 0<br>
+
+  &gt;&gt;&gt; for val in l:<br>
+
+  ... <span class="tab-1">sum = sum + val<br>
+
+  ...<br>
+</span></div>
+
+<p>If you hit Re­turn to close the for loop, Python would re­spond with
+the fol­low­ing error mes­sage.</p>
+
+<div class="code-div">
+  Trace­back (most re­cent call last):<br>
+  &nbsp;&nbsp;File "&lt;stdin&gt;", line 2, in <module><br>
+  Type­Er­ror: un­sup­ported operand type(s) for +: 'int' and 'str'<br>
+</module></div>
+
+<p>So, that didn't work. The first two lines of the error mes­sage give
+some de­tails about how the error's being re­ported, and where the error
+oc­curred (on line 2 of code being en­tered on
+"<code>&lt;stdin&gt;</code>", which is Python's way of say­ing "from
+the key­board"). The most im­por­tant part of the error is the last line,
+which tries to ex­plain the prob­lem Python en­coun­tered. This
+ex­pla­na­tion sug­gests that Python doesn't know how to add
+(<code>+</code>) an int and a str.</p>
+
+<p>If you look at where the error was re­ported (line 2 of the for
+loop), it at­tempted to ex­e­cute <code>sum = sum + val</code>. Python is
+claim­ing the first vari­able in the add op­er­a­tion, <code>sum</code>, is
+an int, but the sec­ond vari­able <code>val</code> is a
+str. <code>val</code> is a value from the list
+vari­able <code>l</code>. And, when we look at <code>l</code>, we see
+that it con­tains three <b>string</b> val­ues:
+<code>'10'</code>, <code>'20'</code>, and <code>'30'</code>. This is
+the prob­lem that Python en­coun­tered.</p>
+
+<p>There are var­i­ous ways to fix this prob­lem. One sim­ple so­lu­tion is
+to put in­te­gers in the list, <code>l = [ 10, 20, 30 ]</code>. If you
+wanted <code>l</code> to con­tain strings for some rea­son, you could
+cast <code>val</code> to be an in­te­ger in the add op­er­a­tion.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; l = [ '10', '20', '30' ]<br>
+
+  &gt;&gt;&gt; sum = 0<br>
+
+  &gt;&gt;&gt; for val in l:<br>
+
+  ... <span class="tab-1">sum = sum + int( val )<br>
+
+  ...<br>
+
+  &gt;&gt;&gt; print sum<br>
+
+  60<br>
+</span></div>
+
+<p>Now, Python ac­cepts the for loop's body be­cause it un­der­stands how
+to add to int vari­ables. The re­sult­ing sum is printed after the loop
+fin­ishes.</p>
+
+<div id="bug-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-bug-accordion-header-0" aria-controls="ui-accordion-bug-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Com­puter "Bugs"</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-bug-accordion-panel-0" aria-labelledby="ui-accordion-bug-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <p>Why are er­rors in com­puter pro­grams called <em>bugs</em>?
+    His­tor­i­cally, the term "bug" was used in en­gi­neer­ing to de­scribe
+    me­chan­i­cal mal­func­tions.
+
+    </p><div class="code-div" style="text-align: center; max-width: 513px;
+      margin-left: auto; margin-right: auto; background-color: #f8f8f8;">
+      <div style="height: 1em;"></div>
+      <img style="width: 97.5%; max-width: 500px;" src="./Python Tutorial  Institute for Advanced Analytics_files/bug.png">
+      <div style="height: 1em;"></div>
+    </div>
+
+    <p>In 1947 com­puter en­gi­neers were de­sign­ing the Har­vard Mark II
+    com­puter. An error in the ma­chine was traced to a moth that had
+    be­come trapped in one of the ma­chine's re­lays. The moth was
+    re­moved and taped to the en­gi­neers' log book, where they re­ferred
+    to it as "The first ac­tual case of bug being found." This in­ci­dent
+    seems to have con­tributed to the wide­spread use of the term in
+    Com­puter Sci­ence.</p>
+  </div>
+</div>
+
+
+<h2 id="file">Files</h2>
+
+<p>One of the main rea­sons we're using Python is to read and write
+data to and from ex­ter­nal files. Python has an ex­ten­sive set of file
+input/out­put (file IO) op­er­a­tions to sup­port this. The basic struc­ture
+of mod­i­fy­ing a file often fol­lows this sim­ple pat­tern.</p>
+
+<ol>
+
+  <li>Open one or more input files to read the orig­i­nal data.
+
+  </li><li>Open an out­put file to write the new or mod­i­fied data.
+
+  </li><li>Read data from the input file, usu­ally line by line.
+
+  </li><li>Ex­am­ine each input line, mod­i­fy­ing it or gen­er­ate new data based
+  on its con­tents.
+
+  </li><li>Write the mod­i­fied line and/or data to the out­put file.
+
+  </li><li>Close the input and out­put files when pro­cess­ing is com­pleted.
+
+</li></ol>
+
+
+<h3>Read­ing Files</h3>
+
+<p>Here are some op­er­a­tions you can use to open files and read from
+them.</p>
+
+<ul>
+
+  <li><code>inp = open( 'input.txt', 'rb' )</code>, open the file
+  named <code>input.txt</code> for read­ing, ac­cessed through
+  vari­able <code>inp</code>.
+
+  </li><li><code>inp.read()</code>, read the en­tire file, re­turn­ing it as a
+  sin­gle string.
+
+  </li><li><code>inp.readline()</code>, read the next line of the file,
+  re­turn­ing the line as a string.
+
+  </li><li><code>inp.readlines()</code>, read the en­tire file, re­turn­ing it
+  as a list of strings, one for each line in the file.
+
+  </li><li><code>inp.close()</code>, close the file.
+
+</li></ul>
+
+<p>As a file is being read, Python main­tains a cur­rent po­si­tion in the
+file (the <em>file pointer</em>). This is how Python finds things like
+the "next" line: it starts from its cur­rent po­si­tion in the file,
+reads until it sees a new­line char­ac­ter (<code>\r\n</code>) or the end
+of the file, then re­turns what it read as a string.</p>
+
+<p>Main­tain­ing a cur­rent po­si­tion means that Python won't
+au­to­mat­i­cally "back up" for you if you want to go back and re-read
+some data. For ex­am­ple, con­sider the fol­low­ing code snip­pet.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; inp = open( 'input.​txt', 'rb' )<br>
+
+  &gt;&gt;&gt; line = inp.​readlines()<br>
+
+  &gt;&gt;&gt; print len( line )<br>
+
+  180<br>
+
+  &gt;&gt;&gt; line = inp.​readlines()<br>
+
+  &gt;&gt;&gt; print len( line )<br>
+
+  0<br>
+
+  &gt;&gt;&gt; inp.​close()<br>
+
+</div>
+
+<p>The first time we read <code>input.txt</code> and asked how many
+lines it con­tained, Python told us it had 180 lines. But the next time
+we read the file, Python said it had 0 lines. How is that
+pos­si­ble?</p>
+
+<p>Re­mem­ber, after the first <code>line = inp.readlines()</code>
+state­ment, Python reads every­thing in the file, re­turn­ing a list with
+180 strings rep­re­sent­ing the file's 180 lines. Crit­i­cally, the cur­rent
+po­si­tion is now at the end of the file. We we re-is­sue the
+same <code>line = input.readlines()</code> state­ment,
+Python <em>starts from its cur­rent po­si­tion at the end of the
+file</em>, re­al­izes there's noth­ing else left to read, and re­turns an
+empty list to tell us that. So, the length of that sec­ond list is 0,
+ex­actly as we saw.</p>
+
+<p>How could we re-read the en­tire file? The eas­i­est way to do this
+is to close the file, then re-open it. Doing this re­sets the cur­rent
+po­si­tion back to the start of the file.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; inp = open( 'input.​txt', 'rb' )<br>
+
+  &gt;&gt;&gt; line = inp.​readlines()<br>
+
+  &gt;&gt;&gt; print len( line )<br>
+
+  180<br>
+
+  &gt;&gt;&gt; inp.​close()<br>
+
+  &gt;&gt;&gt; inp = open( 'input.​txt', 'rb' )<br>
+
+  &gt;&gt;&gt; line = inp.​readlines()<br>
+
+  &gt;&gt;&gt; print len( line )<br>
+
+  180<br>
+
+  &gt;&gt;&gt; inp.​close()<br>
+
+</div>
+
+<div id="seek-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-seek-accordion-header-0" aria-controls="ui-accordion-seek-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>seek and tell</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-seek-accordion-panel-0" aria-labelledby="ui-accordion-seek-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <p><em><b>seek</b></em></p>
+
+    <p>It's pos­si­ble to change the cur­rent po­si­tion in a file with­out
+    clos­ing and re-open­ing it. <code>seek( pos )</code> is used to set
+    a file's cur­rent po­si­tion to <code>pos</code>. For ex­am­ple, we
+    could re-read <code>input.text</code> as fol­lows.</p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; inp = open( 'input.​txt', 'rb' )<br>
+
+      &gt;&gt;&gt; line = inp.​readlines()<br>
+
+      &gt;&gt;&gt; print len( line )<br>
+
+      180<br>
+
+      &gt;&gt;&gt; inp.​seek( 0 )<br>
+
+      &gt;&gt;&gt; line = inp.​readlines()<br>
+
+      &gt;&gt;&gt; print len( line )<br>
+
+      180<br>
+
+      &gt;&gt;&gt; inp.​close()<br>
+
+    </div>
+
+    <p>The com­mand <code>inp.seek(&nbsp;0&nbsp;)</code> sets the
+    cur­rent po­si­tion to 0 bytes from the start of the file
+    (<em>i.e.</em>, to the start of the file). If you need to seek
+    from the end of the file, you can spec­i­fy­ing a neg­a­tive off­set and
+    a sec­ond ar­gu­ment of 2 to <code>seek</code>, for
+    ex­am­ple, <code>inp.seek(&nbsp;-10, 2&nbsp;)</code> seek 10
+    bytes <em>back­wards</em> from the end
+    of <code>input.txt</code>. You can also seek from the cur­rent
+    po­si­tion by spec­i­fy­ing an off­set and a sec­ond ar­gu­ment of 1 to
+    <code>seek</code>, for ex­am­ple, <code>inp.seek(&nbsp;20,
+    1&nbsp;)</code> to seek 20 bytes for­wards from the cur­rent
+    po­si­tion, or <code>seek(&nbsp;-5, 1&nbsp;)</code> to seek 5 bytes
+    back­wards from the cur­rent po­si­tion.</p>
+
+    <p style="margin-top: 1em;"><em><b>tell</b></em></p>
+
+    <p>The <code>tell()</code> com­mand will re­turn the cur­rent
+    po­si­tion in a file. For ex­am­ple, to de­ter­mine the size of a file,
+    you could do the fol­low­ing.
+
+    </p><div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; inp = open( 'input.​txt', 'rb' )<br>
+
+      &gt;&gt;&gt; inp.​seek( 0, 2 )<br>
+
+      &gt;&gt;&gt; print inp.​tell()<br>
+
+      4044<br>
+
+      &gt;&gt;&gt; inp.​close()<br>
+
+    </div>
+  </div>
+</div>
+
+
+<h3>Writ­ing Files</h3>
+
+<p>Python pro­vides sim­i­lar op­er­a­tions open files and write to
+them.</p>
+
+<ul>
+
+  <li><code>out = open( 'output.txt', 'wb' )</code>, open the file
+  named <code>output.txt</code> for writ­ing, ac­cessed through
+  vari­able <code>out</code>.
+
+  </li><li><code>out = open( 'output.txt', 'ab' )</code>, open the file
+  named <code>output.txt</code> and ap­pends any new data you write to
+  the end of the file.
+
+  </li><li><code>out.write( s )</code>, write the con­tents of
+  string <code>s</code> to the file.
+
+  </li><li><code>out.close()</code>, close the file.
+
+</li></ul>
+
+<p>Writ­ing data is sim­ple: put the data you want to write into a
+string vari­able (or con­vert a vari­able's value to a string value),
+then use <code>write</code> to write the data to an out­put
+file.
+
+</p><div class="code-div">
+
+  &gt;&gt;&gt; out = open( 'output.​txt', 'wb' )<br>
+
+  &gt;&gt;&gt; num = 50<br>
+
+  &gt;&gt;&gt; list = [ 'Healey', 'Rappa', 'Mostek' ]<br>
+
+  &gt;&gt;&gt; for elem in list:<br>
+
+  ... <span class="tab-1">out.​write( elem ) + '\r\n'</span><br>
+
+  ...<br>
+
+  &gt;&gt;&gt; out.​write( str( num ) )<br>
+
+  &gt;&gt;&gt; out.​close()<br>
+
+</div>
+
+
+<p>This code snip­pet cre­ates an out­put file <code>output.txt</code>
+and writes four lines con­tain­ing Healey, Rappa, Mostek, and 50 to the
+file. No­tice that if we need a new­line after each value, we need to
+add it ex­plic­itly by ap­pend­ing <code>'\r\n'</code> to the string as
+it's being writ­ten.</p>
+
+<div id="newline-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-newline-accordion-header-0" aria-controls="ui-accordion-newline-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>new­lines</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-newline-accordion-panel-0" aria-labelledby="ui-accordion-newline-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <p>New­lines are used to in­sert a car­riage re­turn be­tween lines in
+    a file. In Win­dows (or DOS) a new­line is ac­tu­ally two char­ac­ters:
+    a re­turn and a new­line, de­noted <code>\r\n</code>. This is unique
+    to Win­dows. On other op­er­at­ing sys­tems like Mac OS or Linux, only
+    the new­line <code>\n</code> is used.</p>
+
+    <p>New­lines also mat­ter when you're read­ing data. For ex­am­ple,
+    sup­posed you used <code>readlines()</code> to read all the lines
+    in a file.</p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; inp = open( 'input.​txt', 'rb' )<br>
+
+      &gt;&gt;&gt; line = inp.​readlines()<br>
+
+      &gt;&gt;&gt; print line[ 0: 2 ]<br>
+
+      ['This is the first line\r\n', 'This is the sec­ond line\r\n']<br>
+    </div>
+
+    <p>The re­turn and new­line are in­cluded at the end of each line
+    that's read. In some cases you want these "sep­a­ra­tors" re­moved
+    when the file is read and parsed. One easy way to do this is to
+    read the en­tire file using <code>read()</code>, then split the
+    re­sult using the string op­er­a­tor <code>split()</code>.
+    
+    </p><div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; inp = open( 'input.​txt', 'rb' )<br>
+
+      &gt;&gt;&gt; con­tent = inp.​read()<br>
+
+      &gt;&gt;&gt; line = content.​split( '\r\n' )<br>
+
+      &gt;&gt;&gt; print line[ 0: 2 ]<br>
+
+      ['This is the first line', 'This is the sec­ond line']<br>
+    </div>
+
+    <p><code>split()</code> di­vides a string into a list of sub­strings
+    based on a <em>de­lim­iter</em>, throw­ing away the de­lim­iter after
+    each split. Split­ting the file's con­tents on the
+    de­lim­iter <code>\r\n</code> gives us what we want: the in­di­vid­ual
+    lines from the file with­out a re­turn and new­line at the end of
+    each line.</p>
+  </div>
+</div>
+
+
+<h3>CSV Files</h3>
+
+<p>A file type you are likely to en­counter often is a comma-sep­a­rated
+value (CSV) file. CSV files are text files con­tain­ing a table of
+val­ues. Each line rep­re­sents one row in the table, with in­di­vid­ual
+col­umn val­ues in the row iden­ti­fied by a <em>sep­a­ra­tor</em>
+char­ac­ter. The sep­a­ra­tor is often a comma (<code>,</code>), al­though
+it can be any char­ac­ter that's guar­an­teed not to ap­pear in any col­umn
+value. For ex­am­ple, here's a <a target="_blank" href="https://www.census.gov/popest/data/cities/totals/2011/index.html">CSV
+file of 2011 city and town pop­u­la­tions</a> from the U.S. Cen­sus
+Bu­reau.</p>
+
+
+<div class="code-div">
+  SUM­LEV,STATE,COUNTY,PLACE,COUSUB,CONCIT,NAME,STNAME,CEN­SUS2010POP,ES­TI­MATES­BASE2010,POPES­TI­MATE2010,POPES­TI­MATE2011<br>
+
+  040,01,000,00000,00000,00000,Al­abama,Al­abama,4779736,4779735,4785401,4802740<br>
+
+  162,01,000,00124,00000,00000,Abbeville city,Al­abama,2688,2688,2689,2704<br>
+
+  162,01,000,00460,00000,00000,Adamsville city,Al­abama,4522,4522,4522,4525<br>
+
+  162,01,000,00484,00000,00000,Ad­di­son town,Al­abama,758,758,754,754<br>
+
+  162,01,000,00676,00000,00000,Akron town,Al­abama,356,356,354,348<br>
+
+  162,01,000,00820,00000,00000,Al­abaster city,Al­abama,30352,30352,30473,30799<br>
+
+  162,01,000,00988,00000,00000,Al­bertville city,Al­abama,21160,21160,21202,21421<br>
+
+  162,01,000,01132,00000,00000,Alexan­der City city,Al­abama,14875,14875,14846,14876<br>
+
+  162,01,000,01228,00000,00000,Al­iceville city,Al­abama,2486,2486,2483,2438<br>
+
+  …<br>
+
+  157,56,045,79125,00000,00000,Upton town,Wyoming,1100,1100,1096,1084<br>
+
+  157,56,045,99990,00000,00000,Bal­ance of We­ston County,Wyoming,2576,2576,2564,2539<br>
+
+</div>
+
+
+<p>We could use file and string op­er­a­tions to read and parse CSV
+files, but Python pro­vides a <code>csv</code> mod­ule to help us with
+this.  Mod­ules are pre-writ­ten col­lec­tions of op­er­a­tors, usu­ally
+de­signed for a spe­cific pur­pose or task. To use a mod­ule, you must
+first <code>import</code> it. To in­voke one of it's op­er­a­tions, you
+pre­cede the op­er­a­tor's name with the name of the mod­ule, fol­lowed by a
+pe­riod.
+
+</p><div class="code-div">
+  &gt;&gt;&gt; im­port csv<br>
+
+  &gt;&gt;&gt; csv.​list_di­alects()<br>
+
+  ['ex­cel-tab', 'excel']<br>
+</div>
+
+<p>To read data from a CSV file, we nor­mally per­form the fol­low­ing
+steps.</p>
+
+<ol>
+
+  <li>Open the CSV file to read with <code>open()</code>, ex­actly like
+  any other input file.
+
+  </li><li>At­tach a CSV <code>reader</code> to the CSV file.
+
+  </li><li>Use <code>next()</code> to read and parse any header line(s) in
+  the CSV file.
+
+  </li><li>Use a <code>for</code> loop to read and parse the rows in the
+  CSV file. Each row is re­turned as a list of col­umn val­ues found in
+  the row's line.
+
+  </li><li>Close the CSV file.
+
+</li></ol>
+
+<p>For ex­am­ple, this code would read and parse the Cen­sus pop­u­la­tion
+file</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; im­port csv<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; inp = open( 'pop.​csv', 'rb' )<br>
+
+  &gt;&gt;&gt; reader = csv.​reader( inp )<br>
+
+  &gt;&gt;&gt; header = reader.​next()<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; for row in reader:<br>
+
+  ... <span class="tab-1">if row[ 6 ] == row[ 7 ]:</span><br>
+
+  ... <span class="tab-2">span&gt;print 'The state of', row[ 7 ], 'has
+  pop­u­la­tion', row[ 11 ]</span><br>
+
+  ... <span class="tab-1">else:</span><br>
+
+  ... <span class="tab-2">print 'City', row[ 6 ], 'in state', row[ 7
+  ], 'has pop­u­la­tion', row[ 11 ]</span><br>
+
+  ...<br>
+
+  The state of Al­abama has pop­u­la­tion 4802740<br>
+
+  City Abbeville city in state Al­abama has pop­u­la­tion 2704<br>
+
+  City Adamsville city in state Al­abama has pop­u­la­tion 4525<br>
+
+  …<br>
+
+  City Upton town in state Wyoming has pop­u­la­tion 1084<br>
+  
+  City Bal­ance of We­ston County in state Wyoming has pop­u­la­tion 2539<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; inp.​close()<br>
+
+</div>
+
+
+<p>No­tice that the <code>csv</code> mod­ule helps us read and parse a
+CSV file, but it doesn't tell us any­thing about what the rows and
+columns in the file rep­re­sent. We need to pro­vide that con­text based
+on our un­der­stand­ing of the file. For ex­am­ple, in the code above:</p>
+
+<ul>
+
+  <li>We know the first line of the CSV file is a header row, so we
+  read it using <code>header = reader.next()</code>. If we didn't do
+  this, it would be in­ter­preted as a city pop­u­la­tion line.
+
+  </li><li>We can see that the 12th col­umn on each row
+  (<code>row[&nbsp;11&nbsp;]</code>) holds the es­ti­mated 2011
+  pop­u­la­tion, so this is what we print in our out­put.
+
+  </li><li>When the city name and the state name
+  (<code>row[&nbsp;6&nbsp;]</code>
+  and <code>row[&nbsp;7&nbsp;]</code>) are iden­ti­cal, the row
+  rep­re­sents the state's over­all pop­u­la­tion. We check for this
+  with <code>if row[ 6 ] == row[ 7 ]</code>, re­port­ing the pop­u­la­tion
+  for these rows as state pop­u­la­tion.
+
+</li></ul>
+
+<p>It's also pos­si­ble to write data out in CSV for­mat. This is use­ful,
+since CSV files can be eas­ily im­ported into pro­grams like Excel or
+SAS. A very sim­i­lar se­quence of steps is used to write a CSV file.</p>
+
+<ol>
+
+  <li>Open the CSV file to write with <code>open()</code>, ex­actly
+  like any other out­put file.
+
+  </li><li>At­tach a CSV <code>writer</code> to the CSV file.
+
+  </li><li>For each row you want to write to the CSV file, store the row's
+  col­umn val­ues in a list.
+
+  </li><li>Use <code>writerow()</code> to write the list's val­ues as a
+  comma-sep­a­rated line in the CSV file.
+
+  </li><li>After all the rows are writ­ten, close the CSV file.
+
+</li></ol>
+
+<p>For ex­am­ple, the Cen­sus pop­u­la­tion file has a lot of columns we
+might not care about. Sup­pose we wanted to re­duce the file to only
+in­clude city name, state name, and 2011 pop­u­la­tion es­ti­mate. The
+fol­low­ing code would do this.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; im­port csv<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; inp = open( 'pop.​csv', 'rb' )<br>
+
+  &gt;&gt;&gt; reader = csv.​reader( inp )<br>
+
+  &gt;&gt;&gt; header = reader.​next()<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; out = open( 'pop-summary.​csv', 'wb' )<br>
+
+  &gt;&gt;&gt; writer = csv.​writer( out )<br>
+
+  &gt;&gt;&gt; writer.​writerow( [ 'City', 'State', 'Pop­u­la­tion' ] )<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; for row in reader:<br>
+
+  ... <span class="tab-1">writer.​writerow( [ row[ 6 ], row[ 7 ], row[
+  11 ] ] )</span><br>
+
+  ...<br>
+
+  &gt;&gt;&gt; inp.​close()<br>
+
+  &gt;&gt;&gt; out.​close()<br>
+
+</div>
+
+<p>This will pro­duce an out­put file <code>pop-summary.csv</code> with
+the fol­low­ing data.</p>
+
+
+<div class="code-div">
+  City,State,Pop­u­la­tion<br>
+
+  Al­abama,Al­abama,4802740<br>
+
+  Abbeville city,Al­abama,2704<br>
+
+  Adamsville city,Al­abama,4525<br>
+
+  Ad­di­son town,Al­abama,754<br>
+
+  Akron town,Al­abama,348<br>
+
+  Al­abaster city,Al­abama,30799<br>
+
+  Al­bertville city,Al­abama,21421<br>
+
+  Alexan­der City city,Al­abama,14876<br>
+
+  Al­iceville city,Al­abama,2438<br>
+
+  …<br>
+
+  Upton town,Wyoming,1084<br>
+
+  Bal­ance of We­ston County,Wyoming,2539<br>
+
+</div>
+
+
+<h3>CSV Prac­tice Prob­lem</h3>
+
+<p>Write a Python pro­gram that finds the city with the largest
+pop­u­la­tion in <a href="http://www.csc.ncsu.edu/faculty/healey/maa-14/python/pop.csv">pop.​csv</a>, then prints this city's
+name, the name of its state, and its pop­u­la­tion.</p>
+
+<p><b>Hint.</b> When you read data with a CSV reader, the col­umn
+val­ues it re­turns are all strings. You'll want to con­vert the
+pop­u­la­tion value from a string to an in­te­ger. To do this,
+you <em>cast</em> the string using the <code>int()</code>op­er­a­tion.
+
+</p><div class="code-div">
+  &gt;&gt;&gt; for row in reader:<br>
+
+  ... <span class="tab-1">pop = int( row[ 11 ] )</span><br>
+
+  …<br>
+</div>
+
+<p>I rec­om­mend you write your pro­gram using a text ed­i­tor, save it as
+a source code file, and use <code>execfile()</code> to test it, rather
+than writ­ing the pro­gram di­rectly in the Python shell. This will let
+you write your code, run it to see what it does, edit it to fix
+prob­lems, and run it again, with­out hav­ing to re-type the en­tire
+pro­gram at the com­mand line.</p>
+
+
+<div id="max-pop-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-max-pop-accordion-header-0" aria-controls="ui-accordion-max-pop-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Max­i­mum Pop­u­la­tion So­lu­tion</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-max-pop-accordion-panel-0" aria-labelledby="ui-accordion-max-pop-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; im­port csv<br>
+
+      &gt;&gt;&gt; inp = open( 'pop.​csv', 'rb' )<br>
+
+      &gt;&gt;&gt; reader = csv.​reader( inp )<br>
+
+      &gt;&gt;&gt; header = reader.​next()<br>
+
+      &gt;&gt;&gt; max_pop = 0<br>
+
+      &gt;&gt;&gt; max_c­ity_nm = "Un­known"<br>
+
+      &gt;&gt;&gt; max_st_nm = "Un­known"<br>
+
+      &gt;&gt;&gt; for row in reader:<br>
+
+      ... <span class="tab-1">pop = int( row[ 11 ] )</span><br>
+
+      ... <span class="tab-1">if row[ 6 ] != row[ 7 ]:</span><br>
+
+      ... <span class="tab-2">if pop &gt; max_pop:</span><br>
+
+      ... <span class="tab-3">max_pop = pop</span><br>
+
+      ... <span class="tab-3">max_c­ity_nm = row[ 6 ]</span><br>
+
+      ... <span class="tab-3">max_st_nm = row[ 7 ]</span><br>
+
+      ...<br>
+
+      &gt;&gt;&gt; inp.​close()<br>
+
+      &gt;&gt;&gt; print max_c­ity_nm, 'in state', max_st_nm, 'has pop­u­la­tion',
+      max_pop<br>
+
+      Los An­ge­les County in state Cal­i­for­nia has pop­u­la­tion 9889056<br>
+
+    </div>
+
+    <p>You can <a style="color: #e17009" href="http://www.csc.ncsu.edu/faculty/healey/maa-14/python/tut-05-pop.py">down­load
+    the so­lu­tion file</a> and run it on your ma­chine, if you want.</p>
+
+  </div>
+</div>
+
+
+<h2 id="func">Func­tions</h2>
+
+<p>It's pos­si­ble to write a pro­gram as a sin­gle, long se­quence of
+state­ments in the main mod­ule. Even for small pro­grams, how­ever, this
+isn't ef­fi­cient. First, writ­ing a pro­gram this way makes it dif­fi­cult
+to ex­am­ine and un­der­stand. Sec­ond, if you're per­form­ing com­mon
+op­er­a­tion on dif­fer­ent vari­ables, you need to du­pli­cate the code every
+time you per­form that op­er­a­tion.</p>
+
+<p>For ex­am­ple, sup­posed we wanted to re­port the av­er­age of two
+nu­meric lists <code>l</code> and <code>m</code>. One ob­vi­ous way to do
+it is to write two for loops.</p><p>
+
+</p><div class="code-div">
+
+  &gt;&gt;&gt; l = [ 1, 2, 3 ]<br>
+
+  &gt;&gt;&gt; m = [ 7, 8, 14 ]<br>
+
+  &gt;&gt;&gt; sum = 0<br>
+
+  &gt;&gt;&gt; for elem in l:<br>
+
+  ... <span class="tab-1">sum = sum + elem<br>
+
+  ...<br>
+
+  &gt;&gt;&gt; print float( sum ) / 3<br>
+
+  &gt;&gt;&gt; 2.0<br>
+
+  &gt;&gt;&gt; sum = 0<br>
+
+  &gt;&gt;&gt; for elem in m:<br>
+
+  ... <span class="tab-1">sum = sum + elem<br>
+
+  ...<br>
+
+  &gt;&gt;&gt; print float( sum ) / 3<br>
+
+  &gt;&gt;&gt; 9.66666666667<br>
+
+</span></span></div>
+
+
+<p>This has a num­ber of prob­lems, how­ever. What if we had more than
+just two lists we wanted to av­er­age? We'd need to du­pli­cate the for
+loop once for each list. What if we wanted to do some­thing more
+com­pli­cated than cal­cu­lat­ing the av­er­age (<em>e.g.</em>, what if we
+wanted pop­u­la­tion stan­dard de­vi­a­tion in­stead)? The amount of code we'd
+need to du­pli­cate would be much longer.</p>
+
+<p>What we re­ally want to do is to have some sort
+of <code>avg()</code> op­er­a­tion that we can call when­ever we want to
+cal­cu­late the av­er­age of a nu­meric list.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; l = [ 1, 2, 3 ]<br>
+
+  &gt;&gt;&gt; m = [ 7, 8, 14 ]<br>
+
+  &gt;&gt;&gt; print avg( l )<br>
+
+  &gt;&gt;&gt; 2.0<br>
+
+  &gt;&gt;&gt; print avg( m )<br>
+
+  &gt;&gt;&gt; 9.66666666667<br>
+
+</div>
+
+
+<p>In Python we can de­fine a <em>func­tion</em> to cre­ate new
+op­er­a­tions like <code>avg()</code>. A func­tion is de­fined using the
+key­word <code>def</code>, fol­lowed by the func­tion's name, fol­lowed by
+an ar­gu­ment list in paren­the­ses, and then a colon. The func­tion's code
+block de­fines what the func­tion does when it's called.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; def avg( num ):<br>
+
+  ... <span class="tab-1">sum = 0</span><br>
+
+  ... <span class="tab-1">for elem in num:</span><br>
+
+  ... <span class="tab-2">sum = sum + elem</span><br>
+
+  ... <span class="tab-1">re­turn float( sum ) / len( num )</span><br>
+
+  ...<br>
+
+</div>
+
+
+<p>Func­tions can take zero or more ar­gu­ments. A func­tion with no
+ar­gu­ments still needs open and close paren­the­ses, <code>def
+func():</code>. A func­tion with mul­ti­ple ar­gu­ments sep­a­rates then with
+com­mas, <code>def func( a, b ):</code>.</p>
+
+<p>Once a func­tion is de­fined, it can be used any­where, in­clud­ing in
+other func­tions. Sup­pose we now wanted to write a
+func­tion <code>stdev()</code> to com­pute the pop­u­la­tion stan­dard
+de­vi­a­tion of a nu­meric list. We can use our <code>avg()</code>
+func­tion to help to do this.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port math<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; def stdev( num ):<br>
+
+  ... <span class="tab-1">sum = 0</span><br>
+
+  ... <span class="tab-1">num_avg = avg( num )</span><br>
+
+  ... <span class="tab-1">for elem in num:</span><br>
+
+  ... <span class="tab-2">sum = ( elem - num_avg ) ** 2.0</span><br>
+
+  ... <span class="tab-1">re­turn math.​sqrt( sum / len( num ) )</span><br>
+
+  ...<br>
+
+</div>
+
+
+<p>What if we wanted to allow a user to de­cide whether to cal­cu­late
+pop­u­la­tion stan­dard de­vi­a­tion or sam­ple stan­dard de­vi­a­tion? We could
+write two sep­a­rate func­tions to do this, but an eas­ier way is to add
+an ar­gu­ment to the <code>stdev()</code> func­tion to spec­ify which
+stan­dard de­vi­a­tion to cal­cu­late.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port math<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; def stdev( num, pop = True ):<br>
+
+  ... <span class="tab-1">sum = 0</span><br>
+
+  ... <span class="tab-1">num_avg = avg( num )</span><br>
+
+  ... <span class="tab-1">for elem in num:</span><br>
+
+  ... <span class="tab-2">sum = ( elem - num_avg ) ** 2.0</span><br>
+
+  ... <span class="tab-1">if pop == True:</span><br>
+
+  ... <span class="tab-2">re­turn math.​sqrt( sum / len( num ) )</span><br>
+
+  ... <span class="tab-1">else:</span><br>
+
+  ... <span class="tab-2">re­turn math.​sqrt( sum / ( len( num ) - 1 )
+  )</span><br>
+
+  ...<br>
+
+</div>
+
+
+<p>Now, <code>stdev()</code> takes a sec­ond
+ar­gu­ment <code>pop</code>. If <code>pop</code> is <code>True</code>,
+we re­turn pop­u­la­tion stan­dard de­vi­a­tion. Oth­er­wise, we re­turn sam­ple
+stan­dard de­vi­a­tion. No­tice that in the func­tion header we
+de­fined <code>pop = True</code>. This spec­i­fies a <em>de­fault
+value</em> for <code>pop</code>. If the user doesn't spec­ify a sec­ond
+ar­gu­ment, we re­turn pop­u­la­tion stan­dard de­vi­a­tion by de­fault.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; l = [ 7, 8, 14 ]<br>
+
+  &gt;&gt;&gt; print 'Pop stdev of', l, 'is', stdev( l )<br>
+
+  Pop stdev of [7, 8, 14] is 3.09120616517<br>
+
+  &gt;&gt;&gt; print 'Sam­ple stdev of', l, 'is', stdev( l, False )<br>
+
+  Sam­ple stdev of [7, 8, 14] is 3.7859388972<br>
+
+</div>
+
+
+<p>It's even pos­si­ble for func­tions to call them­selves. This is known as
+<em>re­cur­sion</em>. Con­sider the Fi­bonacci se­quence:</p>
+
+<ul>
+
+  <li><i>F</i>( 0 ) = 0
+
+  </li><li><i>F</i>( 1 ) = 1
+
+  </li><li><i>F</i>( <i>n</i> ) = <i>F</i>( <i>n</i> - 1 )
+  + <i>F</i>( <i>n</i> - 2 ) ∀ <i>n</i> ≥ 2
+
+</li></ul>
+
+<p>Since Fi­bonacci num­bers for <i>n</i> ≥ 2 are de­fined based on
+lower-or­der ver­sions of them­selves, they are a com­mon can­di­date to
+demon­strate a re­cur­sive func­tion.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; def fib( n ):<br>
+
+  ... <span class="tab-1">if n &lt;= 0:</span><br>
+
+  ... <span class="tab-2">re­turn 0</span><br>
+
+  ... <span class="tab-1">elif n == 1:</span><br>
+
+  ... <span class="tab-2">re­turn 1</span><br>
+
+  ... <span class="tab-1">else:</span><br>
+
+  ... <span class="tab-2">re­turn fib( n - 1 ) + fib( n - 2 )</span><br>
+
+  ...<br>
+
+  &gt;&gt;&gt; fib( 0 )<br>
+
+  0<br>
+
+  &gt;&gt;&gt; fib( 2 )<br>
+
+  1<br>
+
+  &gt;&gt;&gt; fib( 20 )<br>
+
+  6765<br>
+
+  &gt;&gt;&gt; fib( 40 )<br>
+
+  102334155<br>
+
+</div>
+
+<p>If you look at <code>fib()</code>, you should see in­tu­itively that
+it's very ex­pen­sive to ex­e­cute. If you tried to
+cal­cu­late <code>fib(&nbsp;100&nbsp;)</code>, for ex­am­ple, you'd be
+wait­ing a long time for it to fin­ish. That's be­cause each num­ber if a
+Fi­bonacci se­quence re­quires two re­cur­sive calls, which them­selves each
+re­quire two re­cur­sive calls, and so on.</p>
+
+
+<div id="fib-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-fib-accordion-header-0" aria-controls="ui-accordion-fib-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Fi­bonacci, Rab­bits, and Ef­fi­ciency</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-fib-accordion-panel-0" aria-labelledby="ui-accordion-fib-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+
+    <p>Al­though the ori­gins of Fi­bonacci num­bers are
+    <a style="color: #e17009;" target="_blank" href="http://en.wikipedia.org/wiki/Fibonacci_numbers#Origins">cred­ited
+    to In­dian math­e­mat­ics</a>, the num­ber se­ries is named after
+    Leonardo of Pisa, also known as Fi­bonacci. In 1202 Fi­bonacci posed
+    a ques­tion about an ide­al­ized rab­bit pop­u­la­tion.</p>
+
+    <ul>
+
+      <li>You begin with one male and one fe­male rab­bit, just born.
+
+      </li><li>Rab­bits reach sex­ual ma­tu­rity in one month.
+
+      </li><li>Once they reach sex­ual ma­tu­rity, fe­male rab­bits give birth
+      to one male and one fe­male rab­bit each month.
+
+      </li><li>Rab­bits never die.
+
+    </li></ul>
+
+    <p>Fi­bonacci won­dered, "How many <em>pairs</em> of rab­bits would
+    you have after <i>n</i> months passed?"</p>
+
+    <ul>
+
+      <li><b>Month 1.</b> One pair, the orig­i­nal rab­bits.
+
+      </li><li><b>Month 2.</b> One pair, the rab­bits have mated but not
+      given birth.
+
+      </li><li><b>Month 3.</b> Two pairs, one sex­u­ally ma­ture and one just
+      born.
+
+      </li><li><b>Month 4.</b> Three pairs, two sex­u­ally ma­ture and one
+      just born.
+
+      </li><li><b>Month 5.</b> Five pairs, three sex­u­ally ma­ture and two
+      just born.
+
+    </li></ul>
+
+    <p>As you can see, this forms a nu­meric se­quence that we now call
+    the Fi­bonacci num­ber se­ries.</p>
+
+    <p>If we need to com­pute large Fi­bonacci num­bers, the re­cur­sive
+    for­mula is too in­ef­fi­cient. In­stead, we use <a style="color:
+    #e17009;" target="_blank" href="http://mathworld.wolfram.com/BinetsFibonacciNumberFormula.html">Binet's
+    For­mula</a> to cal­cu­late <i>F</i>(<i>n</i>) di­rectly.</p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; im­port math<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; def fib_e( n ):<br>
+
+      ... <span class="tab-1">if n &lt;= 0:</span><br>
+
+      ... <span class="tab-2">re­turn 0</span><br>
+
+      ... <span class="tab-1">elif n == 1:</span><br>
+
+      ... <span class="tab-2">re­turn 1</span><br>
+
+      ... <span class="tab-1">else:</span><br>
+
+      ... <span class="tab-2">sum = ( 1.0 + math.​sqrt( 5 ) ) **
+      n</span><br>
+
+      ... <span class="tab-2">sum = sum - ( 1.0 - math.​sqrt( 5 ) ) **
+      n</span><br>
+
+      ... <span class="tab-2">sum = sum / ( 2.0 ** n * math.​sqrt( 5 )
+      )</span><br>
+
+      ... <span class="tab-2">re­turn round( sum )</span><br>
+
+      ...<br>
+
+    </div>
+
+    <p>If you're cu­ri­ous, <i>F</i>(100) = 3.542248481792631e+20. It
+    would take about 4 years for rab­bits to out­num­ber hu­mans based on
+    Fi­bonacci's sce­nario.</p>
+
+  </div>
+</div>
+
+
+<h2 id="numpy">NumPy</h2>
+
+<p><a href="http://www.numpy.org/">NumPy (nu­mer­i­cal Python,
+here­after <em>numpy</em>)</a> is a li­brary that pro­vides ad­vanced
+math­e­mat­i­cal op­er­a­tions in­volv­ing sta­tis­tics and lin­ear al­ge­bra. Our
+in­ter­est is mainly in numpy sta­tis­ti­cal ca­pa­bil­i­ties, since this will
+allow us to cal­cu­late things like mean, vari­ance, min­i­mum, max­i­mum,
+cor­re­la­tion, and co­vari­ance on lists of num­bers.</p>
+
+<p>numpy's stan­dard data type is an array: a se­quence of num­bers, all
+of the same type. Ar­rays can be cre­ated in nu­mer­ous ways. Com­mon
+ex­am­ples in­clude:</p>
+
+<ul>
+
+  <li>from a Python list,
+
+  </li><li>in a pre-de­fined size con­tain­ing zeros or ones, or
+
+  </li><li>using numpy's <code>arange()</code> com­mand, which is anal­o­gous
+  to Python's <code>range()</code> com­mand.
+
+</li></ul>
+
+
+<div class="code-div">
+
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; arr = numpy.​array( [ 2, 3, 4 ] )<br>
+
+  &gt;&gt;&gt; print arr<br>
+
+  [2 3 4]<br>
+
+  &gt;&gt;&gt; print type( arr )<br>
+
+  numpy.​ndarray<br>
+
+  &gt;&gt;&gt; arr = numpy.​zeros( 5 )<br>
+
+  &gt;&gt;&gt; print arr<br>
+
+  &gt;&gt;&gt; [0. 0. 0. 0. 0.]<br>
+
+  &gt;&gt;&gt; arr = numpy.​arange( 10, 30, 5 )<br>
+
+  &gt;&gt;&gt; print arr<br>
+
+  [10 15 20 25]<br>
+
+</div>
+
+
+<p>numpy also sup­ports <em>mul­ti­di­men­sional ar­rays</em>. For ex­am­ple, a
+table is a 2-di­men­sional (2D) array with rows and columns. A data cube
+is a 3-di­men­sional array with rows, columns, and slices. We re­strict
+our­selves to 1D and 2D ar­rays in this tu­to­r­ial. The eas­i­est way to
+de­fine a 2D array in numpy is to pro­vide a list of equal-length
+sub­lists to the <code>array()</code> op­er­a­tor, one sub­list for each
+row in the array.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; arr = numpy.​array( [ [ 1, 2 ], [ 4, 5 ], [ 7, 8 ] ] )<br>
+
+  &gt;&gt;&gt; print arr<br>
+
+  [[1 2]<br>
+  &nbsp;[4 5]<br>
+  &nbsp;[7 8]]<br>
+
+  &gt;&gt;&gt; print arr[ 1 ]<br>
+
+  [4 5]<br>
+
+  &gt;&gt;&gt; print arr[ 1, 1 ]<br>
+
+  5<br>
+
+  &gt;&gt;&gt; print arr[ -1 ]<br>
+
+  [7 8]<br>
+
+  &gt;&gt;&gt; print arr[ 1: 3 ]<br>
+
+  [[4 5]<br>
+  &nbsp;[7 8]]<br>
+
+  &gt;&gt;&gt; print arr[ 0: 2, 1 ]<br>
+
+  [2 5]<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; print arr.​shape<br>
+
+  (3, 2)<br>
+
+  &gt;&gt;&gt; arr = arr.​reshape( 2, 3 )<br>
+
+  &gt;&gt;&gt; print arr<br>
+
+  [[1 2 4]<br>
+  &nbsp;[5 7 8]<br>
+
+  &gt;&gt;&gt; print arr.​shape<br>
+
+  (2, 3)<br>
+</div>
+
+
+<p>numpy pro­vides ac­cess to el­e­ments of an array using the stan­dard
+in­dex­ing op­er­a­tor <code>[&nbsp;]</code>. Neg­a­tive in­dices and slic­ing
+can be used, sim­i­lar to Python lists. It's also pos­si­ble to ask for
+the <em>shape</em> of an array using <code>shape()</code>, which
+re­turns the num­ber of rows for a 1D array, or a tuple with the num­ber
+of rows and columns for a 2D array. It's even pos­si­ble
+to <em>re­shape</em> an array using <code>reshape()</code>, re­ar­rang­ing
+the array's val­ues into a new (row, col­umn) con­fig­u­ra­tion.</p>
+
+<p>As men­tioned above, one of the main ad­van­tages of using numpy is
+ac­cess to a num­ber of sta­tis­ti­cal op­er­a­tions. A few com­mon ex­am­ples
+are listed below. A full list of numpy's <a target="_blank" href="http://docs.scipy.org/doc/numpy/reference/routines.statistics.html">sta­tis­ti­cal
+op­er­a­tors</a> is avail­able on­line.</p>
+
+<ul>
+
+  <li><code>numpy.mean( arr )</code>, the arith­metic mean of an
+  array's val­ues.
+
+  </li><li><code>numpy.median( arr )</code>, the me­dian of an array's
+  val­ues.
+
+  </li><li><code>numpy.var( arr )</code>, the vari­ance of an array's
+  val­ues.
+
+  </li><li><code>numpy.std( arr )</code>, the pop­u­la­tion stan­dard de­vi­a­tion
+  of an array's val­ues.
+
+  </li><li><code>numpy.amax( arr )</code>, the max­i­mum value in an array.
+
+  </li><li><code>numpy.amin( arr )</code>, the min­i­mum value in an array.
+
+  </li><li><code>numpy.histogram( arr, b )</code>, build a his­togram of the
+  array's val­ues with <code>b</code> bins; numpy re­turns a two-val­ued
+  tuple: the first value an array of the num­ber of val­ues in each bin,
+  the sec­ond con­tains an array of the bound­ary val­ues that sep­a­rate
+  the bins.
+
+</li></ul>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; arr = numpy.​arange( 0, 500, 2 )<br>
+
+  &gt;&gt;&gt; print arr.​size<br>
+
+  250<br>
+
+  &gt;&gt;&gt; hist = numpy.​histogram( arr, 10 )<br>
+
+  &gt;&gt;&gt; print hist<br>
+
+  (array([25, 25, 25, 25, 25, 25, 25, 25, 25, 25]), array([ 0. , 49.8,
+  99.6, 149.4, 199.2, 249. , 298.8, 348.6, 398.4, 448.2, 498. ]))
+
+</div>
+
+
+<p>(An­other use for numpy is to <a target="_blank" href="http://docs.scipy.org/doc/numpy/reference/routines.linalg.html">per­form
+lin­ear al­ge­bra op­er­a­tions</a>. Al­though less com­mon in the an­a­lyt­ics
+pro­gram, numpy's abil­ity to com­pute eigen­vec­tors, in­vert ma­tri­ces, or
+solve sys­tems of equa­tions is very pow­er­ful.)
+
+
+</p><h2 id="pandas">pan­das</h2>
+
+<p>The <a target="_blank" href="http://pandas.pydata.org/">pan­das
+(Python Data Analy­sis) li­brary</a> builds on numpy, of­fer­ing an
+ex­tended set of data ma­nip­u­la­tion and analy­sis tools. pan­das is built
+on a few basic data types (or <em>data struc­tures</em>, as they're
+called in pan­das), to­gether with op­er­a­tions on data stored using these
+types.</p>
+
+
+<h3>Se­ries</h3>
+
+<p>One of pan­das's fun­da­men­tal data types is
+<a href="http://pandas.pydata.org/pandas-docs/stable/dsintro.html#series">a
+<code>Series</code>, a 1D la­belled array</a>. You can think of this as
+a numpy array with an ex­plicit label at­tached to each data value. The
+col­lec­tion of la­bels is called the data's <em>index</em>.</p>
+
+<p>A Se­ries can be cre­ated in nu­mer­ous ways: from Python lists, from a
+numpy array, or even from a Python dic­tio­nary.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt; im­port pan­das<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; s = pandas.​Series( [ 1, 2, 3 ], [ 'a', 'b', 'c' ] )<br>
+
+  &gt;&gt;&gt; print s<br>
+
+  a&nbsp;&nbsp;&nbsp;1<br>
+
+  b&nbsp;&nbsp;&nbsp;2<br>
+
+  c&nbsp;&nbsp;&nbsp;3<br>
+
+  dtype: int64<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; d = { 'a': 3.14, 'b': 6.29, 'x': -1.34 }<br>
+
+  &gt;&gt;&gt; t = pandas.​Series( d )<br>
+
+  &gt;&gt;&gt; print t<br>
+
+  a&nbsp;&nbsp;&nbsp;&nbsp;3.14<br>
+
+  x&nbsp;&nbsp;&nbsp;-1.34<br>
+
+  b&nbsp;&nbsp;&nbsp;&nbsp;6.29<br>
+
+  dtype: float64<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; a = numpy.​array( [ 4.5, 5.5, 6.5 ] )<br>
+
+  &gt;&gt;&gt; u = pandas.​Series( a )<br>
+
+  &gt;&gt;&gt; print u<br>
+
+  0&nbsp;&nbsp;&nbsp;4.5<br>
+
+  1&nbsp;&nbsp;&nbsp;5.5<br>
+
+  2&nbsp;&nbsp;&nbsp;6.5<br>
+
+  dtype: float64<br>
+
+</div>
+
+
+<p>Data in a Se­ries can be queried using nu­meric in­dices and slic­ing,
+just like with Python lists and numpy ar­rays. It can also be ac­cessed
+using index la­bels, sim­i­lar to a Python dic­tio­nary.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt; im­port pan­das<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; s = pandas.​Series( [ 1, 2, 3 ], [ 'a', 'b', 'c' ] )<br>
+
+  &gt;&gt;&gt; print s[ 1 ]<br>
+
+  2<br>
+
+  &gt;&gt;&gt; print s[ 'c' ]<br>
+
+  3<br>
+
+  &gt;&gt;&gt; print s[ 1: 3 ]<br>
+
+  b&nbsp;&nbsp;&nbsp;2<br>
+
+  c&nbsp;&nbsp;&nbsp;3<br>
+
+  dtype: int64<br>
+</div>
+
+
+<p>More im­por­tantly, we can index by ap­ply­ing a con­di­tional op­er­a­tion
+to every data el­e­ment in a Se­ries. This re­turns a new boolean Se­ries
+with the re­sult of ap­ply­ing the con­di­tional (<code>True</code>
+or <code>False</code>) at each el­e­ment po­si­tion. The boolean Se­ries is
+then used to se­lect only those data el­e­ments that passed the
+con­di­tional. For ex­am­ple, sup­pose we wanted to se­lect the el­e­ments in
+a Se­ries whose val­ues were greater than 2, but less than 5.</p>
+
+<div class="code-div">
+
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt; im­port pan­das<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; s = pandas.​Series( [ 1, 2, 3, 4, 5 ] )<br>
+
+  &gt;&gt;&gt; idx = ( s &gt; 2 ) &amp; ( s &lt; 5 )<br>
+
+  &gt;&gt;&gt; print idx<br>
+
+  0&nbsp;&nbsp;&nbsp;False<br>
+
+  1&nbsp;&nbsp;&nbsp;False<br>
+
+  2&nbsp;&nbsp;&nbsp;&nbsp;True<br>
+
+  3&nbsp;&nbsp;&nbsp;&nbsp;True<br>
+
+  4&nbsp;&nbsp;&nbsp;False<br>
+
+  dtype: bool<br>
+
+  &gt;&gt;&gt; s_sub = s[ idx ]<br>
+
+  &gt;&gt;&gt; print s_sub<br>
+
+  2&nbsp;&nbsp;&nbsp;3<br>
+
+  3&nbsp;&nbsp;&nbsp;4<br>
+
+  dtype: int64<br>
+</div>
+
+<p>This is how pan­das in­ter­prets these com­mands.</p>
+
+<ul>
+
+  <li>A Se­ries <code>s</code> with val­ues <code>[&nbsp;1, 2, 3, 4,
+  5&nbsp;]</code> is cre­ated.
+
+  </li><li><code>( s &gt; 2 )</code> cre­ates a boolean Se­ries
+  with <code>True</code> at lo­ca­tions where <code>s</code> is greater
+  than 2, and <code>False</code> oth­er­wise: <code>[&nbsp;False, False,
+  True, True, True&nbsp;]</code>
+
+  </li><li><code>( s &lt; 5 )</code> cre­ates a boolean Se­ries
+  with <code>True</code> at lo­ca­tions where <code>s</code> is less
+  than 5, and <code>False</code> oth­er­wise: <code>[&nbsp;True, True,
+  True, True, False&nbsp;]</code>
+
+  </li><li>The <code>&amp;</code> (boolean and) op­er­a­tor com­bines the two
+  boolean Se­ries, re­turn­ing <code>True</code> if the val­ues in both
+  Se­ries are <code>True</code>, and <code>False</code> oth­er­wise:
+  <code>[&nbsp;False, False, True, True, False&nbsp;]</code>
+
+  </li><li>Pass­ing this boolean Se­ries as an index to <code>s</code>
+  re­turns the data el­e­ments in <code>s</code> whose cor­re­spond­ing
+  index is <code>True</code>, that is, the third and fourth en­tries
+  <code>[&nbsp;3, 4&nbsp;]</code>. This rep­re­sents all the en­tries in
+  <code>s</code> with a value greater than 2, but less than 5.
+
+</li></ul>
+
+<p>Be­cause pan­das data have la­bels, we can per­form op­er­a­tions that
+use <em>data align­ment</em>. pan­das will look at the vari­ables
+in­volved in an op­er­a­tion, and au­to­mat­i­cally "match up" data el­e­ments
+with com­mon la­bels.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt; im­port pan­das<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; s = pandas.​Series( [ 1, 2, 3 ], [ 'a', 'b', 'c' ] )<br>
+
+  &gt;&gt;&gt; t = pandas.​Series( { 'a': 3.14, 'b': 6.29, 'x': -1.34 } )<br>
+
+  &gt;&gt;&gt; print s + t<br>
+
+  a&nbsp;&nbsp;&nbsp;&nbsp;4.14<br>
+
+  b&nbsp;&nbsp;&nbsp;&nbsp;8.29<br>
+
+  c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NaN<br>
+
+  x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NaN<br>
+
+  dtype: float64<br>
+
+</div>
+
+
+<p>When we apply <code>s + t</code>, pan­das sees data with
+la­bels <code>a</code> and <code>b</code> in both vari­ables, so it
+knows to add those en­tries to­gether. If data with a com­mon label is
+miss­ing from any of the Se­ries, the re­sult is un­de­fined, and set to
+<code>NaN</code> (not a num­ber).</p>
+
+
+<h3>DataFrame</h3>
+
+<p>A <code>DataFrame</code> is the sec­ond fun­da­men­tal data type in
+pan­das.
+<a href="http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe">A
+DataFrame is a 2D table</a> whose columns and rows are both
+la­belled. You can think of a DataFrame as a table of Se­ries ar­rays,
+one for each col­umn in the DataFrame. Row la­bels are still re­ferred to
+as the index, and col­umn la­bels are sim­ply called the
+<em>columns</em>.
+
+</p><div class="code-div">
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt; im­port pan­das<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; d = [ [ 1, 2 ], [ 4, 5 ], [ 7, 8 ] ]<br>
+
+  &gt;&gt;&gt; df = pandas.​DataFrame( d, index = [ 'a', 'b', 'c' ], columns = [
+  'C1', 'C2' ] )<br>
+
+  &gt;&gt;&gt; print df<br>
+
+  &nbsp; &nbsp;C1 &nbsp;C2<br>
+
+  a &nbsp; 1 &nbsp; 2<br>
+
+  b &nbsp; 4 &nbsp; 5<br>
+
+  c &nbsp; 7 &nbsp; 8<br>
+</div>
+
+
+<p>In­dex­ing is more com­pli­cated with DataFrames, since there are two
+sep­a­rate di­men­sions: the columns and the rows. The fol­low­ing op­er­a­tors
+are used to index a DataFrame vari­able.</p>
+
+<ul>
+
+  <li><code>[ c ]</code>, re­turn all the val­ues in the col­umn
+  named <code>c</code>.
+
+  </li><li><code>loc[ r ]</code>, re­turn all the val­ues in the row
+  named <code>r</code>.
+
+  </li><li><code>loc[ r, c ]</code>, re­turn the value in the row
+  named <code>r</code> and the col­umn named <code>c</code>.
+
+  </li><li><code>iloc[ i ]</code>, re­turn all the val­ues in the
+  DataFrame's <code>i</code>-ith row.
+
+</li></ul>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt; im­port pan­das<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; d = [ [ 1, 2 ], [ 4, 5 ], [ 7, 8 ] ]<br>
+
+  &gt;&gt;&gt; df = pandas.​DataFrame( d, index = [ 'a', 'b', 'c' ], columns = [
+  'C1', 'C2' ] )<br>
+
+
+  &gt;&gt;&gt; print df[ 'C2' ]<br>
+
+  a &nbsp; 2<br>
+
+  b &nbsp; 5<br>
+
+  c &nbsp; 8<br>
+
+  Name: C2, dtype: int64<br>
+
+  &gt;&gt;&gt; print df[ 'C1' ][ 'b' ]<br>
+
+  4<br>
+
+  &gt;&gt;&gt; print df.​loc[ 'b' ]<br>
+
+  C1 &nbsp; 4<br>
+
+  C2 &nbsp; 5<br>
+
+  Name: b, dtype: int64<br>
+
+  &gt;&gt;&gt; print df.​iloc[ 2 ]<br>
+
+  C1 &nbsp; 7<br>
+
+  C2 &nbsp; 8<br>
+
+  Name: c, dtype: int64<br>
+</div>
+
+
+<div id="pandas-slice-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-pandas-slice-accordion-header-0" aria-controls="ui-accordion-pandas-slice-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Slic­ing DataFrames</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-pandas-slice-accordion-panel-0" aria-labelledby="ui-accordion-pandas-slice-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+    <p>It's pos­si­ble to use slic­ing to re­turn mul­ti­ple rows (and/or
+    columns), rather than a sin­gle re­sult. This must be done in a
+    par­tic­u­lar way to prop­erly han­dle and dif­fer­en­ti­ate be­tween rows
+    and columns, how­ever, mak­ing it more com­plex than slic­ing lists or
+    ar­rays.
+
+    </p><ul>
+
+      <li><code>df[&nbsp;r0: r1&nbsp;]</code>, re­turn all the val­ues
+      in <b>rows</b> <code>r0</code>
+      to <code>r1</code> <em>in­clu­sive</em>.
+
+      <div style="margin-bottom: 0.3em;"></div>
+
+      <b>Note 1.</b> When you index with <code>[&nbsp;r0:
+      r1&nbsp;]</code> it re­turns <b>rows</b>, not columns like it
+      does when you only pro­vide a sin­gle index.
+
+      <div style="margin-bottom: 0.3em;"></div>
+
+      <b>Note 2.</b> Slic­ing a DataFrame in­cludes all rows
+      from <code>r0</code> up to <b>and
+      in­clud­ing</b> <code>r1</code>. This is dif­fer­ent from slic­ing on
+      a list or an array, which would ex­clude <code>r1</code> from the
+      re­sult.
+
+      <div style="margin-bottom: 0.3em;"></div>
+
+      </li><li><code>df.loc[&nbsp;r0: r1&nbsp;]</code>, re­turn all the
+      val­ues in rows <code>r0</code> to <code>r1</code> in­clu­sive.
+
+      </li><li><code>df.loc[&nbsp;r0: r1, c0: c1&nbsp;]</code>, re­turn the
+      val­ues in rows <code>r0</code> to <code>r1</code> in­clu­sive, and
+      columns <code>c0</code> to <code>c1</code> in­clu­sive within
+      those rows.
+
+      </li><li><code>df.loc[&nbsp;:, c0: c1&nbsp;]</code>, re­turn all the
+      val­ues in columns <code>c0</code> to <code>c1</code> in­clu­sive
+      (<code>[&nbsp;:&nbsp;]</code> is the <em>null slice</em>, and
+      means "se­lect every­thing on this di­men­sion").
+
+    </li></ul>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+      &gt;&gt;&gt; im­port numpy<br>
+
+      &gt;&gt;&gt; im­port pan­das<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; d = [ [ 1, 2, -1 ], [ 4, 5, -2 ], [ 7, 8, -3 ] ]<br>
+
+      &gt;&gt;&gt; df = pandas.​DataFrame( d, index = [ 'a', 'b', 'c' ], columns
+      = [ 'C1', 'C2', 'C3' ] )<br>
+
+      &gt;&gt;&gt; print df[ 'b': 'c' ]<br>
+
+      &nbsp; &nbsp;C1 &nbsp;C2 &nbsp;C3<br>
+
+      b &nbsp; 4 &nbsp; 5 &nbsp;-2<br>
+
+      c &nbsp; 7 &nbsp; 8 &nbsp;-3<br>
+
+      &gt;&gt;&gt; print df.​loc[ 'a': 'b' ]<br>
+
+      &nbsp; &nbsp;C1 &nbsp;C2 &nbsp;C3<br>
+
+      a &nbsp; 1 &nbsp; 2 &nbsp;-1<br>
+
+      b &nbsp; 4 &nbsp; 5 &nbsp;-2<br>
+
+      &gt;&gt;&gt; print df.​loc[ :, 'C1': 'C2' ]<br>
+
+      &nbsp; &nbsp;C2 &nbsp;C3<br>
+
+      a &nbsp; 2 &nbsp;-1<br>
+
+      b &nbsp; 5 &nbsp;-2<br>
+
+      c &nbsp; 8 &nbsp;-3<br>
+
+      &gt;&gt;&gt; print df.​loc[ 'a': 'b', 'C2': 'C3' ]<br>
+
+      &nbsp; &nbsp;C1 &nbsp;C2<br>
+
+      a &nbsp; 1 &nbsp; 2<br>
+
+      b &nbsp; 4 &nbsp; 5<br>
+    </div>
+  </div>
+</div>
+
+
+<p>You can in­sert and delete rows and columns from a DataFrame, or
+change val­ues at spe­cific index po­si­tions, using the same in­dex­ing
+op­er­a­tions.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port numpy<br>
+
+  &gt;&gt;&gt; im­port pan­das<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; d = [ [ 1, 2 ], [ 4, 5 ], [ 7, 8 ] ]<br>
+
+  &gt;&gt;&gt; df = pandas.​DataFrame( d, index = [ 'a', 'b', 'c' ], columns = [
+  'C1', 'C2' ] )<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; s = pandas.​Series( { 'C1': 9, 'C2': 11 } )<br>
+
+  &gt;&gt;&gt; s.​name = 'd'<br>
+
+  &gt;&gt;&gt; df.​append( s )<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; df[ 'C3' ] = df[ 'C1' ] + df[ 'C2' ]<br>
+
+  &gt;&gt;&gt; df[ 'C1' ][ 'a' ] = 99<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; print df<br>
+
+  &nbsp; &nbsp;C1 &nbsp;C2 &nbsp;C3<br>
+
+  a &nbsp;99 &nbsp; 2 &nbsp; 3<br>
+
+  b &nbsp; 4 &nbsp; 5 &nbsp; 9<br>
+
+  c &nbsp; 7 &nbsp; 8 &nbsp;15<br>
+
+  d &nbsp; 9 &nbsp;11 &nbsp;20<br>
+</div>
+
+
+<div id="pandas-pop-accordion" class="detail ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-pandas-pop-accordion-header-0" aria-controls="ui-accordion-pandas-pop-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Max­i­mum Pop­u­la­tion Re­vis­ited</h3>
+  <div style="background-image: none; background-color: rgb(231, 238, 251); display: none; background-position: initial initial; background-repeat: initial initial;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-pandas-pop-accordion-panel-0" aria-labelledby="ui-accordion-pandas-pop-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+
+    <p>To bet­ter ex­em­plify the power of pan­das, re­call the pre­vi­ous
+    prob­lem of iden­ti­fy­ing the city with the max­i­mum es­ti­mated 2011
+    pop­u­la­tion from a Cen­sus Bu­reau CSV file. Using pan­das, we could
+    iden­tify the city with the largest pop­u­la­tion using only a few
+    lines of code.</p>
+
+    <div class="code-div" style="background-color: #f8f8f8;">
+
+      &gt;&gt;&gt; im­port numpy<br>
+
+      &gt;&gt;&gt; im­port pan­das<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; pop = pandas.​read_csv( 'pop.​csv' )<br>
+
+      &gt;&gt;&gt; pop.​describe()<br>
+
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SUM­LEV &nbsp; &nbsp;
+      &nbsp; &nbsp;STATE &nbsp;…&nbsp; POPES­TI­MATE2011<br>
+
+      count 81746.000000 81746.000000 &nbsp;…&nbsp; &nbsp;
+      &nbsp;81746.000000<br>
+
+      mean &nbsp; &nbsp;114.380936 &nbsp; &nbsp;30.592849
+      &nbsp;…&nbsp; &nbsp; &nbsp;15929.926565<br>
+
+      std &nbsp; &nbsp; &nbsp;47.934468 &nbsp; &nbsp;13.416473
+      &nbsp;…&nbsp; &nbsp; 244346.744241<br>
+
+      min &nbsp; &nbsp; &nbsp;40.000000 &nbsp; &nbsp; 1.000000
+      &nbsp;…&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.000000<br>
+
+      25% &nbsp; &nbsp; &nbsp;61.000000 &nbsp; &nbsp;19.000000
+      &nbsp;…&nbsp; &nbsp; &nbsp; &nbsp;339.000000<br>
+
+      50% &nbsp; &nbsp; 157.000000 &nbsp; &nbsp;29.000000
+      &nbsp;…&nbsp; &nbsp; &nbsp; 1209.000000<br>
+
+      75% &nbsp; &nbsp; 157.000000 &nbsp; &nbsp;41.000000
+      &nbsp;…&nbsp; &nbsp; &nbsp; 5041.000000<br>
+
+      max &nbsp; &nbsp; 172.000000 &nbsp; &nbsp;56.000000
+      &nbsp;…&nbsp; 37691912.000000<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; idx = pop[&nbsp;'NAME'&nbsp;] !=
+      pop[&nbsp;'STNAME'&nbsp;]<br>
+
+      &gt;&gt;&gt; city_pop = pop[&nbsp;idx&nbsp;]<br>
+
+      &gt;&gt;&gt; i = city_pop[&nbsp;'POPES­TI­MATE2011'&nbsp;].idx­max()<br>
+
+      &gt;&gt;&gt;<br>
+
+      &gt;&gt;&gt; nm = pop[ 'NAME' ][ i ]<br>
+
+      &gt;&gt;&gt; state = pop[ 'STNAME' ][ i ]<br>
+
+      &gt;&gt;&gt; max_pop = pop[ 'POPES­TI­MATE2011' ][ i ]<br>
+
+      &gt;&gt;&gt; print nm, 'in state', state, 'has pop­u­la­tion', max_pop<br>
+
+      Los An­ge­les County in state Cal­i­for­nia has pop­u­la­tion
+      9889056<br>
+
+    </div>
+
+    <p>This is how pan­das in­ter­prets these com­mands.</p>
+
+    <ul>
+
+      <li><code>read_csv()</code> reads the pop­u­la­tion CSV file,
+      stor­ing it in a DataFrame called <code>pop</code>. The header
+      line in the CSV file is used to as­sign la­bels to each
+      col­umn. De­fault row in­dices 0–81745 are as­signed to each
+      row.
+
+      </li><li><code>describe()</code> re­ports de­scrip­tive sta­tis­tics on a
+      DataFrame. The val­ues are re­turned as a DataFrame, if you want
+      to store or index them.
+
+      </li><li>To ig­nore state pop­u­la­tion rows, we build an index
+      Se­ries <code>idx</code> that con­tains <code>True</code> for rows
+      that <b>do not</b> con­tain state pop­u­la­tions, <code>False</code>
+      oth­er­wise.
+
+      </li><li><code>idx</code> is used to se­lect city pop­u­la­tion rows,
+      stored in a new DataFrame <code>city_pop</code>.
+
+      </li><li><code>city_pop[&nbsp;'POPESTIMATE2011'&nbsp;]</code> se­lects
+      the col­umn with es­ti­mated 2011 pop­u­la­tion
+      val­ues. Ap­ply­ing <code>idxmax()</code> to this col­umn re­turns
+      the label of the row with the max­i­mum value, that is, the row
+      with the largest es­ti­mated 2011 city pop­u­la­tion.
+
+      </li><li>The label from <code>idxmax()</code> is used to index the
+      orig­i­nal <code>pop</code> DataFrame, iden­ti­fy­ing the largest
+      city's name, state, and pop­u­la­tion.
+
+    </li></ul>
+  </div>
+</div>
+
+
+<h2 id="web">Web Pars­ing</h2>
+
+<p>The abil­ity read and parse web page con­tent is often very use­ful,
+since data is com­monly avail­able on a web page, but in a for­mat that's
+not con­ve­nient to sim­ply copy and paste.</p>
+
+<p>Two Python li­braries are used to sim­plify <em>web scrap­ing:</em>
+<a target="_blank" href="http://docs.python.org/2/library/urllib2.html">url­lib2</a> and
+<a target="_blank" href="http://www.crummy.com/software/BeautifulSoup">Beau­ti­ful­Soup
+4</a>. url­lib2 sup­ports post­ing HTTP re­quests to a web server. In our
+case, this is nor­mally a re­quest for HTML con­tent of a tar­get web
+page. Beau­ti­ful­Soup parses HTML into a <em>parse tree</em>, then
+pro­vides op­er­a­tions that allow you to find spe­cific in­for­ma­tion within
+the tree, for ex­am­ple, all the HTML links, or text at­tached to an HTML
+ID in the doc­u­ment.</p>
+
+<p>These are the steps you would fol­low to read and parse a web
+page.</p>
+
+<ul>
+
+  <li>Read the web page's HTML with <code>urllib2.urlopen()</code>
+  and <code>urllib2.read()</code>.
+
+  </li><li>Parse the web page's HTML with <code>BeautifulSoup()</code> into
+  a parse tree.
+
+  </li><li>Use Beau­ti­ful­Soup's <em>nav­i­ga­tion</em> com­mands to search for
+  in­for­ma­tion within the parse tree.
+
+</li></ul>
+
+<p>This code will read the HTML for this tu­to­r­ial, then re­turn all the
+HTML links in the doc­u­ment.</p>
+
+<div class="code-div">
+  &gt;&gt;&gt; im­port url­lib2<br>
+
+  &gt;&gt;&gt; from bs4 im­port Beau­ti­ful­Soup<br>
+
+  &gt;&gt;&gt;<br>
+
+  &gt;&gt;&gt; url = urllib2.​urlopen(
+  'http://​www.​csc.​ncsu.​edu/​faculty/​healey/​maa-14/​python/​index.​html' )<br>
+
+  &gt;&gt;&gt; doc = url.​read()<br>
+
+  &gt;&gt;&gt; tree = Beau­ti­ful­Soup( doc )<br>
+
+  &gt;&gt;&gt; links = tree.​find_all( 'a' )<br>
+
+  &gt;&gt;&gt; for l in links:<br>
+
+  &gt;&gt;&gt; <span class="tab-1">print l.​get( 'href' )</span><br>
+
+  ...<br>
+
+  http://​www.​csc.​ncsu.​edu/​faculty/​healey<br>
+
+  http://​www.​ncsu.​edu<br>
+
+  http://​www.​python.​org<br>
+
+  …<br>
+
+  http://​www.​crummy.​com/​software/​BeautifulSoup<br>
+</div>
+
+
+<p>One you have a parse tree, most of your work will in­volve
+nav­i­gat­ing the tree to find the things you're look­ing
+for. Beau­ti­ful­Soup pro­vides <a target="_blank" href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/#navigating-the-tree">nu­mer­ous
+op­er­a­tions to search within the tree</a>. This can be done by HTML
+tag, by ID, by string value, and so on. This re­quires work on your
+part, how­ever.</p>
+
+<ul>
+
+  <li>You will need to look at the raw HTML to de­ter­mine
+  the <em>struc­ture</em> of the web page, that is, which HTML el­e­ments
+  con­tain the data you're look­ing for
+  (<em>e.g.</em>, <code>&lt;li&gt;</code> list item
+  el­e­ments, <code>&lt;a href&gt;</code> link ref­er­ence el­e­ments,
+  el­e­ments with a spe­cific <code>&lt;id&gt;</code>
+  or <code>&lt;class&gt;</code> value, and so on).
+
+  </li><li>Next, you will write Python code that uses Beau­ti­ful­Soup to
+  lo­cate the tar­get el­e­ments in the parse tree and ex­tract the strings
+  or val­ues at­tached to those el­e­ments.
+
+  </li><li>Once you have the data iso­lated, you can process it, or write it
+  to an out­put file using file or CSV write op­er­a­tions.
+
+</li></ul>
+
+<p>Un­der­stand­ing the struc­ture of a web page can't be done for you.
+It's some­thing you'll need to com­plete as a first step for ex­tract­ing
+data from the web page. Per­haps more im­por­tantly, if a web page
+doesn't have any use­ful struc­ture, then it might be dif­fi­cult (or
+im­pos­si­ble) to iso­late the data you're in­ter­ested in. Usu­ally,
+how­ever, web pages are built with a log­i­cal de­sign. In these cases,
+web scrap­ing can save you sig­nif­i­cant time and ef­fort over man­u­ally
+copy­ing or re-typ­ing in­di­vid­ual data val­ues.</p>
+
+
+<!-- The mod-date span will be updated by code in mod-date.js -->
+
+<hr class="fig_top">
+<div class="footer">
+  Up­dated <span id="mod-date">15-Sep-13</span>
+</div>
+
+
+
+
+<!--  LocalWords:  Analytics Healey Javascript Rossum Centrum bitwise
+ -->
+<!--  LocalWords:  Wiskunde Informatica decrement ebf fc px moz CSV
+ -->
+<!--  LocalWords:  webkit Lucida monospace SAS numpy NumPy datetime
+ -->
+<!--  LocalWords:  bool str boolean healey rappa durian execfile th
+ -->
+<!--  LocalWords:  Hodgenville tuples tuple substring len llo wo ld
+ -->
+<!--  LocalWords:  elif sqrt Ctrl ui int's str's understandability nm
+ -->
+<!--  LocalWords:  LaBarr inp txt rb readlines wb num Mostek SUMLEV
+ -->
+<!--  LocalWords:  substrings COUSUB CONCIT STNAME ESTIMATESBASE pre
+ -->
+<!--  LocalWords:  POPESTIMATE Abbeville Adamsville Albertville csv
+ -->
+<!--  LocalWords:  Aliceville Los Angeles tuple's writerow stdev Aric
+ -->
+
+<!--  LocalWords:  Binet's covariance numpy's ndarray arange sublists
+ -->
+<!--  LocalWords:  sublist analytics eigenvectors pandas's labelled
+ -->
+<!--  LocalWords:  data's dtype NaN idx idxmax DataFrame DataFrame's
+ -->
+<!--  LocalWords:  df loc DataFrames ith iloc BeautifulSoup bs href
+ -->
+<!--  LocalWords:  BeautifulSoup's Traceback stdin TypeError urllib
+ -->
+<!--  LocalWords:  WinPython url urlopen
+ -->
+</body></html>
