@@ -1,0 +1,135 @@
+                                        The SAS System                                        1
+                                                             16:40 Saturday, September 28, 2013
+
+                                       The KDE Procedure
+
+                                            Inputs
+
+                      Data Set                          WORK.X1_AND_X2   
+                      Number of Observations Used       50000            
+                      Variable                          X1               
+                      Bandwidth Method                  Sheather-Jones   
+                                                        Plug In          
+
+
+                                           Controls
+ 
+                                                               X1
+
+                              Grid Points                     401
+                              Lower Grid Limit             -5.087
+                              Upper Grid Limit             12.414
+                              Bandwidth Multiplier              1
+
+
+                                    Univariate Statistics
+ 
+                                                            X1
+
+                                Mean                      3.01
+                                Variance                  4.01
+                                Standard Deviation        2.00
+                                Range                    17.50
+                                Interquartile Range       2.70
+                                Bandwidth                 0.25
+
+
+                                          Percentiles
+ 
+                                                        X1
+
+                                             0.5     -2.11
+                                             1.0     -1.62
+                                             2.5     -0.90
+                                             5.0     -0.27
+                                            10.0      0.43
+                                            25.0      1.67
+                                            50.0      3.02
+                                            75.0      4.37
+                                            90.0      5.58
+                                            95.0      6.32
+                                            97.5      6.92
+                                            99.0      7.67
+                                            99.5      8.20
+                                        The SAS System                                        2
+                                                             16:40 Saturday, September 28, 2013
+
+                                       The KDE Procedure
+
+                                            Inputs
+
+                      Data Set                          WORK.X1_AND_X2   
+                      Number of Observations Used       50000            
+                      Variable                          X2               
+                      Bandwidth Method                  Sheather-Jones   
+                                                        Plug In          
+
+
+                                           Controls
+ 
+                                                               X2
+
+                              Grid Points                     401
+                              Lower Grid Limit             0.0005
+                              Upper Grid Limit             27.182
+                              Bandwidth Multiplier              1
+
+
+                                    Univariate Statistics
+ 
+                                                            X2
+
+                                Mean                      3.02
+                                Variance                  6.11
+                                Standard Deviation        2.47
+                                Range                    27.18
+                                Interquartile Range       2.94
+                                Bandwidth                0.098
+
+
+                                          Percentiles
+ 
+                                                        X2
+
+                                             0.5     0.070
+                                             1.0      0.11
+                                             2.5      0.21
+                                             5.0      0.35
+                                            10.0      0.59
+                                            25.0      1.22
+                                            50.0      2.38
+                                            75.0      4.15
+                                            90.0      6.28
+                                            95.0      7.83
+                                            97.5      9.38
+                                            99.0     11.36
+                                            99.5     13.01
+                                        The SAS System                                        3
+                                                             16:40 Saturday, September 28, 2013
+
+                                       The KDE Procedure
+
+                                            Inputs
+
+                      Data Set                          WORK.X1_AND_X2   
+                      Number of Observations Used       50000            
+                      Variable 1                        X1               
+                      Variable 2                        X2               
+                      Bandwidth Method                  Simple Normal    
+                                                        Reference        
+
+
+                                           Controls
+ 
+                                                          X1        X2
+
+                         Grid Points                      60        60
+                         Lower Grid Limit             -5.087    0.0005
+                         Upper Grid Limit             12.414    27.182
+                         Bandwidth Multiplier              1         1
+
+
+                                     Bivariate Statistics
+
+                                Covariance                2.79
+                                Correlation               0.56
