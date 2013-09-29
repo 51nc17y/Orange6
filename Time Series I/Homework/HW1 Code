@@ -1,0 +1,31 @@
+libname time "C:\Users\Marc\Documents\Analytics NC State\Time Series";
+
+/*Plotting the Autocorrelation Function for the USD/JPY data*/
+proc arima data=Time.hw1;
+	identify var=value nlag=10;
+	estimate method=ML;
+run;
+quit;
+
+proc sgplot data=Time.hw1;
+	series x=Date y=value;
+	title 'USD/JPY Exchange Rate';
+run;
+
+
+/*Plotting the Partial Autocorrelation Function for the USD/JPY data*/
+
+proc arima data=Time.hw1;
+	identify var=value nlag=10;
+run;
+quit;
+
+
+/*Investigating something that Wes asked about. The pattern when we expand the nlag= to a higher number. What does the SAS warning mean? What are the problems with
+  making the nlag too big*/
+
+proc arima data=Time.hw1;
+	identify var=value nlag=40;
+	estimate method=ML;
+run;
+quit;
