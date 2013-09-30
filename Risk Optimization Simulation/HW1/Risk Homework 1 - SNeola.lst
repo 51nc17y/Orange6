@@ -1,0 +1,404 @@
+                                        The SAS System     12:35 Sunday, September 29, 2013   1
+
+                                   The UNIVARIATE Procedure
+                               Variable:  Intercept  (Intercept)
+
+                                            Moments
+
+                N                       20000    Sum Weights              20000
+                Mean               -12.984664    Sum Observations    -259693.28
+                Std Deviation      5.67228786    Variance            32.1748496
+                Skewness           -0.0132091    Kurtosis            0.09611483
+                Uncorrected SS     4015494.76    Corrected SS        643464.817
+                Coeff Variation    -43.684518    Std Error Mean      0.04010913
+
+
+                                  Basic Statistical Measures
+ 
+                        Location                    Variability
+
+                    Mean     -12.9847     Std Deviation            5.67229
+                    Median   -12.9484     Variance                32.17485
+                    Mode        .         Range                   50.35269
+                                          Interquartile Range      7.53412
+
+
+                                  Tests for Location: Mu0=0
+ 
+                       Test           -Statistic-    -----p Value------
+
+                       Student's t    t  -323.733    Pr > |t|    <.0001
+                       Sign           M     -9758    Pr >= |M|   <.0001
+                       Signed Rank    S  -9.987E7    Pr >= |S|   <.0001
+
+
+                                    Quantiles (Definition 5)
+ 
+                                    Quantile       Estimate
+
+                                    100% Max       11.99543
+                                    99%             0.38609
+                                    95%            -3.70398
+                                    90%            -5.79058
+                                    75% Q3         -9.19863
+                                    50% Median    -12.94843
+                                    25% Q1        -16.73275
+                                    10%           -20.25834
+                                    5%            -22.35566
+                                    1%            -26.11821
+                                    0% Min        -38.35726
+                                        The SAS System     12:35 Sunday, September 29, 2013   2
+
+                                   The UNIVARIATE Procedure
+                               Variable:  Intercept  (Intercept)
+
+                                      Extreme Observations
+ 
+                          ------Lowest-----        ------Highest-----
+ 
+                             Value      Obs            Value      Obs
+
+                          -38.3573    18060          7.34982      267
+                          -35.8955     5816          7.76390     4695
+                          -35.2857       84          8.13483     7173
+                          -35.0282     5544          8.17466    11300
+                          -33.8956     1261         11.99543     1391
+                                        The SAS System     12:35 Sunday, September 29, 2013   3
+
+                                   The UNIVARIATE Procedure
+                     Fitted Normal Distribution for Intercept (Intercept)
+
+                               Parameters for Normal Distribution
+ 
+                                 Parameter   Symbol   Estimate
+
+                                 Mean        Mu       -12.9847
+                                 Std Dev     Sigma    5.672288
+
+
+                        Goodness-of-Fit Tests for Normal Distribution
+ 
+                Test                  ----Statistic-----   ------p Value------
+
+                Kolmogorov-Smirnov    D       0.00531831   Pr > D       >0.150
+                Cramer-von Mises      W-Sq    0.09194431   Pr > W-Sq     0.146
+                Anderson-Darling      A-Sq    0.59709482   Pr > A-Sq     0.124
+
+
+                               Quantiles for Normal Distribution
+ 
+                                          -------Quantile------
+                                Percent    Observed   Estimated
+
+                                    1.0   -26.11821   -26.18038
+                                    5.0   -22.35566   -22.31475
+                                   10.0   -20.25834   -20.25399
+                                   25.0   -16.73275   -16.81056
+                                   50.0   -12.94843   -12.98466
+                                   75.0    -9.19863    -9.15876
+                                   90.0    -5.79058    -5.71533
+                                   95.0    -3.70398    -3.65458
+                                   99.0     0.38609     0.21105
+                                        The SAS System     12:35 Sunday, September 29, 2013   4
+
+                                   The UNIVARIATE Procedure
+                                         Variable:  X1
+
+                                            Moments
+
+                N                       20000    Sum Weights              20000
+                Mean                0.2093602    Sum Observations    4187.20401
+                Std Deviation      0.35033485    Variance             0.1227345
+                Skewness           -0.0027225    Kurtosis            -0.0213981
+                Uncorrected SS     3331.20122    Corrected SS        2454.56735
+                Coeff Variation    167.335934    Std Error Mean      0.00247724
+
+
+                                  Basic Statistical Measures
+ 
+                        Location                    Variability
+
+                    Mean     0.209360     Std Deviation            0.35033
+                    Median   0.211331     Variance                 0.12273
+                    Mode      .           Range                    2.69614
+                                          Interquartile Range      0.47530
+
+
+                                  Tests for Location: Mu0=0
+ 
+                       Test           -Statistic-    -----p Value------
+
+                       Student's t    t  84.51344    Pr > |t|    <.0001
+                       Sign           M      4480    Pr >= |M|   <.0001
+                       Signed Rank    S  60139425    Pr >= |S|   <.0001
+
+
+                                   Quantiles (Definition 5)
+ 
+                                   Quantile        Estimate
+
+                                   100% Max       1.6228797
+                                   99%            1.0256814
+                                   95%            0.7814883
+                                   90%            0.6551992
+                                   75% Q3         0.4474353
+                                   50% Median     0.2113309
+                                   25% Q1        -0.0278695
+                                   10%           -0.2404118
+                                   5%            -0.3674285
+                                   1%            -0.5977720
+                                   0% Min        -1.0732577
+                                        The SAS System     12:35 Sunday, September 29, 2013   5
+
+                                   The UNIVARIATE Procedure
+                                         Variable:  X1
+
+                                      Extreme Observations
+ 
+                          ------Lowest------        -----Highest-----
+ 
+                              Value      Obs           Value      Obs
+
+                          -1.073258     7320         1.47520     5893
+                          -1.044221    17268         1.47810     1885
+                          -0.985949    19126         1.54297    12212
+                          -0.967031     2185         1.54743    14169
+                          -0.966166    15995         1.62288     5973
+                                        The SAS System     12:35 Sunday, September 29, 2013   6
+
+                                   The UNIVARIATE Procedure
+                               Fitted Normal Distribution for X1
+
+                               Parameters for Normal Distribution
+ 
+                                 Parameter   Symbol   Estimate
+
+                                 Mean        Mu        0.20936
+                                 Std Dev     Sigma    0.350335
+
+
+                        Goodness-of-Fit Tests for Normal Distribution
+ 
+                Test                  ----Statistic-----   ------p Value------
+
+                Kolmogorov-Smirnov    D       0.00360417   Pr > D       >0.150
+                Cramer-von Mises      W-Sq    0.04590573   Pr > W-Sq    >0.250
+                Anderson-Darling      A-Sq    0.29346318   Pr > A-Sq    >0.250
+
+
+                               Quantiles for Normal Distribution
+ 
+                                          ------Quantile------
+                                Percent   Observed   Estimated
+
+                                    1.0   -0.59777    -0.60564
+                                    5.0   -0.36743    -0.36689
+                                   10.0   -0.24041    -0.23961
+                                   25.0   -0.02787    -0.02694
+                                   50.0    0.21133     0.20936
+                                   75.0    0.44744     0.44566
+                                   90.0    0.65520     0.65833
+                                   95.0    0.78149     0.78561
+                                   99.0    1.02568     1.02436
+                                        The SAS System     12:35 Sunday, September 29, 2013   7
+
+                                   The UNIVARIATE Procedure
+                                         Variable:  X2
+
+                                            Moments
+
+                N                       20000    Sum Weights              20000
+                Mean               -0.8977491    Sum Observations    -17954.982
+                Std Deviation        0.231577    Variance            0.05362791
+                Skewness           -0.0066791    Kurtosis            0.10742322
+                Uncorrected SS     17191.5736    Corrected SS        1072.50451
+                Coeff Variation    -25.795292    Std Error Mean       0.0016375
+
+
+                                  Basic Statistical Measures
+ 
+                        Location                    Variability
+
+                    Mean     -0.89775     Std Deviation            0.23158
+                    Median   -0.89649     Variance                 0.05363
+                    Mode       .          Range                    1.97725
+                                          Interquartile Range      0.30635
+
+
+                                  Tests for Location: Mu0=0
+ 
+                       Test           -Statistic-    -----p Value------
+
+                       Student's t    t  -548.245    Pr > |t|    <.0001
+                       Sign           M     -9999    Pr >= |M|   <.0001
+                       Signed Rank    S      -1E8    Pr >= |S|   <.0001
+
+
+                                    Quantiles (Definition 5)
+ 
+                                    Quantile       Estimate
+
+                                    100% Max       0.144919
+                                    99%           -0.350129
+                                    95%           -0.517597
+                                    90%           -0.600927
+                                    75% Q3        -0.745257
+                                    50% Median    -0.896491
+                                    25% Q1        -1.051609
+                                    10%           -1.193621
+                                    5%            -1.277768
+                                    1%            -1.445212
+                                    0% Min        -1.832335
+                                        The SAS System     12:35 Sunday, September 29, 2013   8
+
+                                   The UNIVARIATE Procedure
+                                         Variable:  X2
+
+                                     Extreme Observations
+ 
+                         ------Lowest-----        ------Highest------
+ 
+                            Value      Obs             Value      Obs
+
+                         -1.83234    11184        -0.1014348    15360
+                         -1.79707     4787        -0.0891243    13631
+                         -1.75740    16321        -0.0743271     5444
+                         -1.73739    14050        -0.0405447     3136
+                         -1.72526    16739         0.1449188       98
+                                        The SAS System     12:35 Sunday, September 29, 2013   9
+
+                                   The UNIVARIATE Procedure
+                               Fitted Normal Distribution for X2
+
+                               Parameters for Normal Distribution
+ 
+                                 Parameter   Symbol   Estimate
+
+                                 Mean        Mu       -0.89775
+                                 Std Dev     Sigma    0.231577
+
+
+                        Goodness-of-Fit Tests for Normal Distribution
+ 
+                Test                  ----Statistic-----   ------p Value------
+
+                Kolmogorov-Smirnov    D       0.00589644   Pr > D        0.090
+                Cramer-von Mises      W-Sq    0.15342559   Pr > W-Sq     0.022
+                Anderson-Darling      A-Sq    0.88113556   Pr > A-Sq     0.024
+
+
+                               Quantiles for Normal Distribution
+ 
+                                          ------Quantile------
+                                Percent   Observed   Estimated
+
+                                    1.0   -1.44521    -1.43648
+                                    5.0   -1.27777    -1.27866
+                                   10.0   -1.19362    -1.19453
+                                   25.0   -1.05161    -1.05395
+                                   50.0   -0.89649    -0.89775
+                                   75.0   -0.74526    -0.74155
+                                   90.0   -0.60093    -0.60097
+                                   95.0   -0.51760    -0.51684
+                                   99.0   -0.35013    -0.35902
+                                        The SAS System     12:35 Sunday, September 29, 2013  10
+
+                                   The UNIVARIATE Procedure
+                                         Variable:  X3
+
+                                            Moments
+
+                N                       20000    Sum Weights              20000
+                Mean               3.44803605    Sum Observations    68960.7209
+                Std Deviation      0.26358465    Variance            0.06947687
+                Skewness           -0.0045149    Kurtosis            0.13759424
+                Uncorrected SS     239168.519    Corrected SS        1389.46789
+                Coeff Variation    7.64448652    Std Error Mean      0.00186382
+
+
+                                  Basic Statistical Measures
+ 
+                        Location                    Variability
+
+                    Mean     3.448036     Std Deviation            0.26358
+                    Median   3.446608     Variance                 0.06948
+                    Mode      .           Range                    2.25334
+                                          Interquartile Range      0.35160
+
+
+                                  Tests for Location: Mu0=0
+ 
+                       Test           -Statistic-    -----p Value------
+
+                       Student's t    t  1849.978    Pr > |t|    <.0001
+                       Sign           M     10000    Pr >= |M|   <.0001
+                       Signed Rank    S  1.0001E8    Pr >= |S|   <.0001
+
+
+                                   Quantiles (Definition 5)
+ 
+                                    Quantile      Estimate
+
+                                    100% Max       4.54874
+                                    99%            4.06264
+                                    95%            3.87982
+                                    90%            3.78119
+                                    75% Q3         3.62490
+                                    50% Median     3.44661
+                                    25% Q1         3.27330
+                                    10%            3.11102
+                                    5%             3.01629
+                                    1%             2.82867
+                                    0% Min         2.29539
+                                        The SAS System     12:35 Sunday, September 29, 2013  11
+
+                                   The UNIVARIATE Procedure
+                                         Variable:  X3
+
+                                     Extreme Observations
+ 
+                          ------Lowest-----        -----Highest-----
+ 
+                             Value      Obs           Value      Obs
+
+                           2.29539    14390         4.44129     7683
+                           2.30866    12071         4.44956     3748
+                           2.34250    19410         4.48486     5816
+                           2.39186    19772         4.50332      710
+                           2.41644    11300         4.54874    18060
+                                        The SAS System     12:35 Sunday, September 29, 2013  12
+
+                                   The UNIVARIATE Procedure
+                               Fitted Normal Distribution for X3
+
+                               Parameters for Normal Distribution
+ 
+                                 Parameter   Symbol   Estimate
+
+                                 Mean        Mu       3.448036
+                                 Std Dev     Sigma    0.263585
+
+
+                        Goodness-of-Fit Tests for Normal Distribution
+ 
+                Test                  ----Statistic-----   ------p Value------
+
+                Kolmogorov-Smirnov    D       0.00515489   Pr > D       >0.150
+                Cramer-von Mises      W-Sq    0.10622856   Pr > W-Sq     0.095
+                Anderson-Darling      A-Sq    0.69287055   Pr > A-Sq     0.074
+
+
+                               Quantiles for Normal Distribution
+ 
+                                          ------Quantile------
+                                Percent   Observed   Estimated
+
+                                    1.0    2.82867     2.83485
+                                    5.0    3.01629     3.01448
+                                   10.0    3.11102     3.11024
+                                   25.0    3.27330     3.27025
+                                   50.0    3.44661     3.44804
+                                   75.0    3.62490     3.62582
+                                   90.0    3.78119     3.78583
+                                   95.0    3.87982     3.88159
+                                   99.0    4.06264     4.06123
