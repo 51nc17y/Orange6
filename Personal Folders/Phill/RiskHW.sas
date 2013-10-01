@@ -116,3 +116,72 @@ proc univariate data=work.simulation_results3;
 	probplot intercept x1 x2 / normal(mu=est sigma=est);
 run;
 title; 
+
+proc sql;
+	select avg(x2), avg(x3)
+	from risk; 
+quit;  
+
+************************************************
+*   This program will generate two correlated  *
+*   series, X1 and X2, with prespscified       *
+*   marginal distributions                     *
+************************************************;
+
+/*Set the required correlation coefficient and */
+/*the number of simulated points below         */
+%let correlation_coef= 0.6;
+%let num_of_simulated_points = 50000;
+
+/*Create a dataset that holds the correlation   */
+/*matrix between X1 and X2*/
+data _correl_matrix_;
+  _type_ = "corr";
+  _name_ = "X2";
+  X1 = 1.0; 
+  X2 = &correlation_coef.;
+  output;
+  _name_ = "X3";
+  X1 = &correlation_coef.; 
+  X2 = 1.0;
+  output;
+run;
+
+/*Initial "naive" data for X1 and X2*/
+data _naive_data_;
+X1=0;
+X2=0;
+run;
+
+/*Generate X1 and X2*/
+proc model noprint;
+/*Set the mean of X1 here (e.g. 3)*/
+X2 = 10;
+/*Set the distributiuon of x1 here; for the normal*/
+/*case, the statement normal(4) assumes that the  */
+/*error is normally distributed with mean 0 and variance 4*/
+errormodel X2 ~ CHISQUARED(10);
+
+/*Set the mean of X2 here (e.g. 0)*/
+X3 = 0;
+/*Set the distributiuon of x2 here*/
+errormodel X3 ~NORMAL(Sqrt(15));
+/*Generate the data and store them in the*/
+/*SAS dataset x1_and_x2 */
+solve X2 X3/ random=&num_of_simulated_points sdata=_correl_matrix_
+data=_naive_data_ out=x1_and_x2(keep=x1 x2);
+run;
+quit;
+
+/*Drop first observation to get are the final simulated data*/
+data x2_and_x3;
+set x2_and_x3(firstobs=2);
+run;
+
+/*Bivariate plot of X1 and X2*/
+/*Show the marginal and joint distribution*/
+proc kde data=work.x1_and_x2; 
+  univar x2 / plots= histdensity percentiles  unistats ;
+  univar x3 / plots= histdensity percentiles  unistats ;
+  bivar x2 x3 / plots= histsurface out=biv_x1_x2 bivstats;
+run;

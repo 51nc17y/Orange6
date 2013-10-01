@@ -4,7 +4,7 @@
 /*        Dr Aric LaBarr       */
 /*       MSA Class of 2013     */
 /*-----------------------------*/
-
+libname Time 'C:\Users\Phill\Documents\GitHub\Orange6\Time Series I\Data'; 
 /* Building an Autoregressive Model */
 
 proc arima data=Time.AR2 plot=all;
@@ -17,7 +17,7 @@ proc arima data=Time.USAirlines plot=all;
 	identify var=Passengers nlag=40;
 	estimate p=1 method=ML maxiter=100;
 	estimate p=6 method=ML maxiter=100;
-	estimate p=(6) method=ML maxiter=100;
+	estimate p=(1, 6) method=ML maxiter=100;
 	estimate p=(1,2,3,6) method=ML maxiter=100;
 run;
 quit;
