@@ -1,3 +1,4 @@
+libname survival clear ;
 libname risk 'C:\Users\sneola\Documents\Risk Management & Simulation\Homework';
 
 *****************************************************
@@ -39,7 +40,7 @@ data simulation;
 do sim=1 to &nsims;
   do obs=1 to &nobs;
     call streaminit(12345);
-	X1 = rand('uniform')*10;
+	X1 = rand('uniform')*10+10;
 	X2 = rand('chisq',10);
 	X3 = rand('normal',18,sqrt(15));
     err= sqrt(100)*rand('normal');
@@ -82,6 +83,12 @@ proc sql;
 		where x2 gt -.5176 and x2 lt -.51684;
 quit;
 
+proc sql;
+	select count(x2) 
+		from simulation_results 
+		where x2 gt -0.51684 or x2 lt -1.27866;
+quit;
+
 *3.	Repeat steps 1-6, with the only difference that the variance of the error is defined as variance = 10*X1, 
 i.e. make the variance of the residuals a function of X1. ;
 
@@ -89,10 +96,10 @@ data simulation;
 do sim=1 to &nsims;
   do obs=1 to &nobs;
     call streaminit(12345);
-	X1 = rand('uniform')*10;
+	X1 = rand('uniform')*10+10;
 	X2 = rand('chisq',10);
 	X3 = rand('normal',18,sqrt(15));
-    err= 10*X1;
+     err= sqrt(10*X1)*rand('normal');
     Y=&beta0 + &beta1.*X1 + &beta2.*X2 + &beta3.*X3 + err;
     output;
   end;
@@ -118,8 +125,8 @@ and Parms is one of the values;
 
 proc univariate data=work.simulation_results;
 var intercept x1 x2 x3;
-histogram intercept x1 x2 x3/ normal(mu=est sigma=est) kernel;
-probplot intercept x1 x2 x3/ normal(mu=est sigma=est);
+histogram intercept x1 x2 x3/ normal(mu=-.9 sigma=est) kernel;
+probplot intercept x1 x2 x3/ normal(mu=-.9 sigma=est);
 run;
 
 *4.	Repeat steps 1 through 6, but on step 4 run a regression of Y on X1 and X2 only (omit X3). ;
