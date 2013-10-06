@@ -1,0 +1,365 @@
+libname time "C:\Users\Marc\Documents\Analytics NC State\Time Series";
+
+data time.train time.valid;
+set time.hw2;
+ if _n_ < 245 then output time.train;
+ else output time.valid;
+run;
+
+/*Plotting the ACF, PACF, and IACF for North American Sales */
+proc arima data=time.train plot=all;
+	identify var=SALES_NA nlag=10;
+ title 'Plotting the ACF, PACF, and IACF for North American Sales';
+run;
+quit;
+title clear;
+
+
+/*Plotting the ACF, PACF, and IACF for European Sales*/
+proc arima data=time.train plot=all;
+	identify var=SALES_E nlag=10;
+ title 'Plotting the ACF, PACF, and IACF for European Sales';
+run;
+quit;
+title clear;
+
+
+/*Plotting the ACF, PACF, and IACF for Asian Sales*/
+proc arima data=time.train plot=all;
+	identify var=SALES_A nlag=10;
+ title 'Plotting the ACF, PACF, and IACF for Asian Sales';
+run;
+quit;
+title clear;
+
+
+
+
+
+/*Autoregressive Model for North American Sales */
+
+/*This turned out to be the best model with a MAPE=.1417*/
+proc arima data=Time.train plot=all;
+	identify var=SALES_NA nlag=10;
+	estimate p=2 method=ML;
+	forecast lead=16 out=NA1 nooutall; 
+ title 'Autoregressive Model for North American Sales';
+run;
+quit;
+title clear;
+
+/* ARMA Model for European Sales */
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_E nlag=10;
+	estimate p=1 q=1 method=ML;
+	forecast lead=16 out=E1 nooutall;
+ title 'ARMA Model p=1 q=1 for European Sales';
+run;
+quit;
+title clear;
+
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_E nlag=10;
+	estimate p=4 q=2 method=ML;
+	forecast lead=16 out=E2 nooutall;
+ title 'ARMA Model p=(4,4) q=2 for European Sales';
+run;
+quit;
+title clear;
+
+
+/*This turned out to be the best model with a MAPE=.09973*/
+proc arima data=Time.train plot=all;
+	identify var=SALES_E nlag=10;
+	estimate p=(1) q=3 method=ML;
+	forecast lead=16 out=E3 nooutall;
+ title 'ARMA Model p=(1,1) q=3 for European Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_E nlag=10;
+	estimate p=1 q=1 method=ML;
+	forecast lead=16 out=E4 nooutall;
+ title 'ARMA Model p=(1,1) q=1 for European Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_E nlag=10;
+	estimate q=1 method=ML;
+	forecast lead=16 out=E5 nooutall;
+ title 'Moving Average Model q=1 for European Sales';
+run;
+quit;
+title clear;
+
+
+
+
+/* Building an ARMA Model for Asian Sales */
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=2 q=2 method=ML;
+	forecast lead=16 out=A1 nooutall;
+ title 'ARMA Model (2,2) for Asian Sales';
+run;
+quit;
+title clear;
+
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=2 q=3 method=ML;
+	forecast lead=16 out=A2 nooutall;
+ title 'ARMA Model p=(2,9) q=3 for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=1 q=3 method=ML;
+	forecast lead=16 out=A3 nooutall;
+ title 'ARMA Model p=(1,1) q=3 for Asian Sales';
+run;
+quit;
+title clear;
+
+/*This turned out to be the best model with  MAPE=.2061*/
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate q=3 method=ML;
+	forecast lead=16 out=A4 nooutall;
+ title 'Moving Average Model q=3 for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=3 q=4 method=ML maxiter=100;
+	forecast lead=16 out=A5 nooutall;
+ title 'ARMA Model p=(3,3) q=4 for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=3 q=4 method=ML;
+	forecast lead=16 out=A6 nooutall;
+ title 'ARMA Model for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=1 q=4 method=ML;
+	forecast lead=16 out=A7 nooutall;
+ title 'ARMA Model for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=1 q=3 method=ML;
+	forecast lead=16 out=A8 nooutall;
+ title 'ARMA Model for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=Time.train plot=all;
+	identify var=SALES_A nlag=10;
+	estimate p=3 q=2 method=ML;
+	forecast lead=16 out=A9 nooutall;
+ title 'ARMA Model for Asian Sales';
+run;
+quit;
+title clear;
+
+
+
+/*Calculating MAPE's*/
+
+data MAPE_NA;
+	merge NA1 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_NA - FORECAST)) / SALES_NA;
+MAPE + MAPE1;
+run;
+
+data MAPE_E1;
+	merge E1 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_E - FORECAST)) / SALES_E;
+MAPE + MAPE1;
+run;
+
+data MAPE_E2;
+	merge E2 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_E - FORECAST)) / SALES_E;
+MAPE + MAPE1;
+run;
+
+data MAPE_E3;
+	merge E3 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_E - FORECAST)) / SALES_E;
+MAPE + MAPE1;
+run;
+
+data MAPE_E4;
+	merge E4 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_E - FORECAST)) / SALES_E;
+MAPE + MAPE1;
+run;
+
+data MAPE_E5;
+	merge E5 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_E - FORECAST)) / SALES_E;
+MAPE + MAPE1;
+run;
+
+data MAPE_A1;
+	merge A1 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+
+data MAPE_A2;
+	merge A2 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+
+data MAPE_A3;
+	merge A3 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+
+data MAPE_A4;
+	merge A4 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+
+data MAPE_A5;
+	merge A5 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+data MAPE_A6;
+	merge A6 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+data MAPE_A7;
+	merge A7 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+data MAPE_A8;
+	merge A8 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+data MAPE_A9;
+	merge A9 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+
+
+
+
+/*Everything below here was experimental, feel free to ignore. I was trying to use an actual moving average to help forecast future prices, but I ran*/
+/*into problems that I could not fix*/
+
+
+
+
+
+proc expand data=time.hw2 out=hw2moving;
+convert SALES_A = A_EMA_Close12 / TRANSFORM = ( ewma .15385 ) ; *where T=12;
+	  convert SALES_A = A_EMA_Close26 / TRANSFORM = ( ewma .07407) ; *where T=26;
+      convert SALES_A = A_EMA_Close9 / TRANSFORM = ( ewma .2 ) ; *where T=9;
+	  convert SALES_A = MA_Close1 / TRANSFORM = ( CMOVAVE 10 );
+run;
+
+
+data work.train2 work.valid2;
+set work.hw2moving;
+ if _n_ < 245 then output work.train2;
+ else output work.valid2;
+run;
+
+
+proc arima data=work.train2 plot=all;
+	identify var=SALES_A nlag=10 crosscorr=A_EMA_Close9;
+	estimate q=3 method=ML input=A_EMA_Close9 maxiter=100;
+	forecast lead=16 out=A10 nooutall;
+ title 'Moving Average Model q=3 with EMA9 for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=work.train2 plot=all;
+	identify var=SALES_A nlag=10 crosscorr=A_EMA_Close12;
+	estimate q=3 method=ML input=A_EMA_Close12 maxiter=100;
+	forecast lead=16 out=A11 nooutall;
+ title 'Moving Average Model q=3 with EMA12 for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=work.train2 plot=all;
+	identify var=SALES_A nlag=10 crosscorr=A_EMA_Close26;
+	estimate q=3 method=ML input=A_EMA_Close26 maxiter=100;
+	forecast lead=16 out=A12 nooutall;
+ title 'Moving Average Model q=3 with EMA26 for Asian Sales';
+run;
+quit;
+title clear;
+
+proc arima data=work.train2 plot=all;
+	identify var=SALES_A nlag=10 crosscorr=A_EMA_Close9;
+	estimate q=2 method=ML input=A_EMA_Close9 maxiter=100;
+	forecast lead=16 out=A13 nooutall;
+ title 'Moving Average Model q=2 with EMA26 for Asian Sales';
+run;
+quit;
+title clear;
+
+data MAPE_A10;
+	merge A10 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+data MAPE_A11;
+	merge A11 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
+
+data MAPE_A12;
+	merge A12 time.valid;
+MAPE1 = 0.0625 * (abs(SALES_A - FORECAST)) / SALES_A;
+MAPE + MAPE1;
+run;
