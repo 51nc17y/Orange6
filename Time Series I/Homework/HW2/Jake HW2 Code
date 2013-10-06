@@ -62,21 +62,21 @@ quit;
 /*12 WEEK FORECASTS*/
 
 /*forecast for NA sales*/
-proc arima data=hw2_train plot=all;
+proc arima data=hw2 plot=all;
 	identify var=sales_na nlag=15;
 	estimate p=2 method=ML;
 	forecast lead=12;
 run;
 quit;
 /*forecast for A sales*/
-proc arima data=hw2_train plot=all;
+proc arima data=hw2 plot=all;
 	identify var=sales_a nlag=15;
 	estimate p=1 q=(2,3) method=ML;
 	forecast lead=12;
 run;
 quit;
 /*forecast for E sales*/
-proc arima data=hw2_train plot=all;
+proc arima data=hw2 plot=all;
 	identify var=sales_e nlag=15;
 	estimate q=(1) method=ML;
 	forecast lead=12;
