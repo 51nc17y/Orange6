@@ -1,0 +1,84 @@
+libname time 'c:\iaa\fall\time series 1';
+/*first, I created the i variable to filter out final 16 observations*/
+data time.HW2(drop=i);
+	set time.hw2;
+	i+1;
+	if i le 245 then train=1;
+	else train=0;
+run;
+/*create training and validation data sets*/
+data HW2_train;
+	set time.HW2;
+	where train=1;
+run;
+data HW2_valid;
+	set time.HW2;
+	where train=0;
+run;
+/*getting ACF, PACF, IACF for the data set*/
+/*for sales_na*/
+proc arima data=hw2_train plot=all;
+	identify var=sales_na nlag=20;
+	estimate p=2 method=ML;
+run;
+quit;
+/*for sales_a*/
+proc arima data=hw2_train plot=all;
+	identify var=sales_a nlag=15;
+	estimate p=(1) q=(2,3) method=ML;
+run;
+quit;
+/*for sales_e*/
+proc arima data=hw2_train plot=all;
+	identify var=sales_e nlag=10;
+	estimate q=(1,7) method=ML;
+run;
+quit;
+
+/*FORECASTING FOR VALIDATION*/
+
+/*forecast for NA sales*/
+proc arima data=hw2_train plot=all out=NA_forecast;
+	identify var=sales_na nlag=15;
+	estimate p=2 method=ML;
+	forecast lead=16 interval=week ID=date;
+run;
+quit;
+/*forecast for A sales*/
+proc arima data=hw2_train plot=all out=A_forecast;
+	identify var=sales_a nlag=15;
+	estimate p=1 q=(2,3) method=ML;
+	forecast lead=16;
+run;
+quit;
+/*forecast for E sales*/
+proc arima data=hw2_train plot=all out=E_forecast;
+	identify var=sales_e nlag=15;
+	estimate q=(1) method=ML;
+	forecast lead=16;
+run;
+quit;
+
+/*12 WEEK FORECASTS*/
+
+/*forecast for NA sales*/
+proc arima data=hw2_train plot=all;
+	identify var=sales_na nlag=15;
+	estimate p=2 method=ML;
+	forecast lead=12;
+run;
+quit;
+/*forecast for A sales*/
+proc arima data=hw2_train plot=all;
+	identify var=sales_a nlag=15;
+	estimate p=1 q=(2,3) method=ML;
+	forecast lead=12;
+run;
+quit;
+/*forecast for E sales*/
+proc arima data=hw2_train plot=all;
+	identify var=sales_e nlag=15;
+	estimate q=(1) method=ML;
+	forecast lead=12;
+run;
+quit;
