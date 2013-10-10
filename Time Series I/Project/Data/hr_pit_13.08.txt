@@ -1,0 +1,765 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT JUL 31 2013 MOCLDY    72  60  66 S5        30.01F                   AUG
+ 9PM EDT JUL 31 2013 MOCLDY    70  62  76 S7        30.00F                   AUG
+10PM EDT JUL 31 2013 MOCLDY    69  63  81 S3        30.00S                   AUG
+11PM EDT JUL 31 2013 CLOUDY    68  62  81 S6        29.99F                   AUG
+12AM EDT AUG 01 2013 CLOUDY    67  62  84 S5        29.98F                   AUG
+ 1AM EDT AUG 01 2013 CLOUDY    66  62  87 S3        29.97F                   AUG
+ 2AM EDT AUG 01 2013 CLOUDY    66  62  87 S3        29.95F                   AUG
+ 3AM EDT AUG 01 2013 CLOUDY    66  62  87 S3        29.92F                     .
+ 4AM EDT AUG 01 2013 CLOUDY    66  62  87 SW5       29.91F                     .
+ 5AM EDT AUG 01 2013 CLOUDY    66  62  87 SW6       29.90S                     .
+ 6AM EDT AUG 01 2013 DRIZZLE   66  63  90 SW6       29.89F                     .
+ 7AM EDT AUG 01 2013 DRIZZLE   66  64  93 S3        29.89S FOG                 .
+ 8AM EDT AUG 01 2013 DRIZZLE   67  64  90 SW7       29.91R FOG                 .
+ 9AM EDT AUG 01 2013 CLOUDY    68  65  90 W8        29.92R                     .
+10AM EDT AUG 01 2013 CLOUDY    69  65  86 W7        29.92S                     .
+11AM EDT AUG 01 2013 PTSUNNY   72  64  76 W10       29.92S                     .
+12PM EDT AUG 01 2013 PTSUNNY   74  62  66 W14       29.92S                     .
+ 1PM EDT AUG 01 2013 MOSUNNY   76  60  57 NW9       29.92S                     .
+ 2PM EDT AUG 01 2013 MOSUNNY   78  59  51 NW9G17    29.91F                     .
+ 3PM EDT AUG 01 2013 MOSUNNY   79  59  50 NW13G21   29.91S                     .
+ 4PM EDT AUG 01 2013 MOSUNNY   79  58  48 NW14      29.90F                     .
+ 5PM EDT AUG 01 2013 MOSUNNY   80  59  48 NW14      29.89F                     .
+ 6PM EDT AUG 01 2013 MOSUNNY   79  57  46 W14       29.90R                     .
+ 7PM EDT AUG 01 2013 MOSUNNY   78  56  46 W10       29.91R                     .
+ 8PM EDT AUG 01 2013 MOCLDY    76  58  53 NW8       29.92R                     .
+ 9PM EDT AUG 01 2013 MOCLDY    72  57  59 W5        29.92S                     .
+10PM EDT AUG 01 2013 MOCLDY    70  57  63 NW5       29.93R                     .
+11PM EDT AUG 01 2013 PTCLDY    67  58  72 W3        29.94R                     .
+12AM EDT AUG 02 2013 PTCLDY    65  57  75 W3        29.95R                     .
+ 1AM EDT AUG 02 2013 PTCLDY    64  58  80 CALM      29.94F                     .
+ 2AM EDT AUG 02 2013 PTCLDY    61  57  87 W5        29.94S                     .
+ 3AM EDT AUG 02 2013 CLEAR     61  57  87 CALM      29.93F                     .
+ 4AM EDT AUG 02 2013 CLEAR     60  57  89 CALM      29.93S                     .
+ 5AM EDT AUG 02 2013 CLEAR     61  57  87 CALM      29.93S                     .
+ 6AM EDT AUG 02 2013 PTCLDY    60  57  89 CALM      29.95R                     .
+ 7AM EDT AUG 02 2013 PTCLDY    60  57  89 W5        29.97R                     .
+ 8AM EDT AUG 02 2013 MOSUNNY   63  58  83 W8        29.98R                     .
+ 9AM EDT AUG 02 2013 MOSUNNY   66  58  75 W5        29.99R                     .
+10AM EDT AUG 02 2013 MOSUNNY   68  58  70 SW7       29.99S                     .
+11AM EDT AUG 02 2013 MOSUNNY   71  55  56 W10       30.00R                     .
+12PM EDT AUG 02 2013 MOSUNNY   73  51  46 W14G21    30.00S                     .
+ 1PM EDT AUG 02 2013 PTSUNNY   75  52  44 W12       30.00S                     .
+ 2PM EDT AUG 02 2013 PTSUNNY   74  50  42 W10       30.01R                     .
+ 3PM EDT AUG 02 2013 PTSUNNY   73  51  46 W9G18     30.01S                     .
+ 4PM EDT AUG 02 2013 CLOUDY    75  50  41 SW15G24   29.99F                     .
+ 5PM EDT AUG 02 2013 PTSUNNY   73  52  47 W5        29.99S                     .
+ 6PM EDT AUG 02 2013 CLOUDY    73  55  53 SW6       29.97F                     .
+ 7PM EDT AUG 02 2013 CLOUDY    73  56  54 SW6       29.95F                     .
+ 8PM EDT AUG 02 2013 MOCLDY    73  58  59 SW5       29.95S                     .
+ 9PM EDT AUG 02 2013 MOCLDY    72  59  63 SW6       29.95S                     .
+10PM EDT AUG 02 2013 CLOUDY    72  59  63 SW7       29.96R                     .
+11PM EDT AUG 02 2013 CLOUDY    72  60  66 SW5       29.96S                     .
+12AM EDT AUG 03 2013 CLOUDY    72  60  66 SW6       29.96S                     .
+ 1AM EDT AUG 03 2013 CLOUDY    72  60  66 SW7       29.96S                     .
+ 2AM EDT AUG 03 2013 LGT RAIN  71  60  68 SW8       29.96S                     .
+ 3AM EDT AUG 03 2013 LGT RAIN  68  62  81 W12G20    29.98R                     .
+ 4AM EDT AUG 03 2013 LGT RAIN  66  63  90 W12       29.97F                     .
+ 5AM EDT AUG 03 2013 CLOUDY    66  63  90 W8        29.98R                     .
+ 6AM EDT AUG 03 2013 CLOUDY    66  63  90 SW5       29.98S                     .
+ 7AM EDT AUG 03 2013 LGT RAIN  65  63  93 W7        29.99R FOG                 .
+ 8AM EDT AUG 03 2013 LGT RAIN  64  62  93 W6        29.99S FOG                 .
+ 9AM EDT AUG 03 2013 CLOUDY    64  62  93 SW5       29.99S                     .
+10AM EDT AUG 03 2013 CLOUDY    65  62  90 SW3       29.99S                     .
+11AM EDT AUG 03 2013 CLOUDY    66  63  90 W6        29.99S                     .
+12PM EDT AUG 03 2013 PTSUNNY   69  63  81 SW7       29.99S                     .
+ 1PM EDT AUG 03 2013 PTSUNNY   74  62  66 W6        29.99S                     .
+ 2PM EDT AUG 03 2013 PTSUNNY   74  62  66 SW8       29.98F                     .
+ 3PM EDT AUG 03 2013 PTSUNNY   75  63  66 SW7       29.97F                     .
+ 4PM EDT AUG 03 2013 MOSUNNY   75  62  64 SW10      29.96F                     .
+ 5PM EDT AUG 03 2013 PTSUNNY   75  60  59 W8        29.96S                     .
+ 6PM EDT AUG 03 2013 MOSUNNY   78  55  44 NW13      29.97R                     .
+ 7PM EDT AUG 03 2013 PTSUNNY   76  53  44 NW12      29.98R                     .
+ 8PM EDT AUG 03 2013 MOCLDY    74  54  49 N10       29.99R                     .
+ 9PM EDT AUG 03 2013 PTCLDY    71  53  52 N3        30.00R                     .
+10PM EDT AUG 03 2013 PTCLDY    65  55  70 NW3       30.01R                     .
+11PM EDT AUG 03 2013 CLEAR     64  55  72 CALM      30.01S                     .
+12AM EDT AUG 04 2013 CLEAR     62  54  74 CALM      30.02R                     .
+ 1AM EDT AUG 04 2013 CLEAR     61  53  75 CALM      30.02S                     .
+ 2AM EDT AUG 04 2013 CLEAR     58  53  84 W5        30.02S                     .
+ 3AM EDT AUG 04 2013 CLEAR     57  53  86 CALM      30.02S                     .
+ 4AM EDT AUG 04 2013 PTCLDY    57  52  83 CALM      30.01F                     .
+ 5AM EDT AUG 04 2013 PTCLDY    56  52  86 CALM      30.02R                     .
+ 6AM EDT AUG 04 2013 CLOUDY    58  53  84 NW12      30.05R                     .
+ 7AM EDT AUG 04 2013 CLOUDY    59  56  89 N5        30.05S                     .
+ 8AM EDT AUG 04 2013 PTSUNNY   59  57  93 NW5       30.07R                     .
+ 9AM EDT AUG 04 2013 PTSUNNY   62  56  80 N7        30.08R                     .
+10AM EDT AUG 04 2013 MOSUNNY   66  56  70 N8        30.09R                     .
+11AM EDT AUG 04 2013 PTSUNNY   68  55  63 NW10      30.08F                     .
+12PM EDT AUG 04 2013 PTSUNNY   71  53  52 NW10G21   30.09R                     .
+ 1PM EDT AUG 04 2013 PTSUNNY   72  54  53 NW10      30.09S                     .
+ 2PM EDT AUG 04 2013 MOSUNNY   72  51  47 N16       30.09S                     .
+ 3PM EDT AUG 04 2013 PTSUNNY   72  50  45 N14       30.09S                     .
+ 4PM EDT AUG 04 2013 MOSUNNY   74  52  46 NW14      30.08F                     .
+ 5PM EDT AUG 04 2013 MOSUNNY   74  52  46 N12       30.07F                     .
+ 6PM EDT AUG 04 2013 MOSUNNY   74  51  44 N12G18    30.08R                     .
+ 7PM EDT AUG 04 2013 MOSUNNY   72  50  45 NW14      30.08S                     .
+ 8PM EDT AUG 04 2013 PTCLDY    69  51  52 NW10      30.09R                     .
+ 9PM EDT AUG 04 2013 PTCLDY    67  50  54 N9        30.10R                     .
+10PM EDT AUG 04 2013 PTCLDY    65  52  62 NW8       30.11R                     .
+11PM EDT AUG 04 2013 MOCLDY    64  52  64 N8        30.11S                     .
+12AM EDT AUG 05 2013 MOCLDY    62  53  72 NW8       30.11S                     .
+ 1AM EDT AUG 05 2013 MOCLDY    61  53  75 NW5       30.12R                     .
+ 2AM EDT AUG 05 2013 MOCLDY    59  53  80 CALM      30.11F                     .
+ 3AM EDT AUG 05 2013 MOCLDY    59  53  80 CALM      30.12R                     .
+ 4AM EDT AUG 05 2013 PTCLDY    56  52  86 CALM      30.12S                     .
+ 5AM EDT AUG 05 2013 PTCLDY    54  51  90 NW3       30.12S                     .
+ 6AM EDT AUG 05 2013 PTCLDY    54  50  86 CALM      30.12S                     .
+ 7AM EDT AUG 05 2013 PTCLDY    53  50  89 CALM      30.13R                     .
+ 8AM EDT AUG 05 2013 MOSUNNY   57  52  83 CALM      30.14R                     .
+ 9AM EDT AUG 05 2013 MOSUNNY   60  53  77 CALM      30.15R                     .
+10AM EDT AUG 05 2013 MOSUNNY   64  53  67 CALM      30.15S                     .
+11AM EDT AUG 05 2013 PTSUNNY   67  51  56 CALM      30.14F                     .
+12PM EDT AUG 05 2013 CLOUDY    69  50  50 VRB5      30.14S                     .
+ 1PM EDT AUG 05 2013 CLOUDY    71  47  42 CALM      30.11F                     .
+ 2PM EDT AUG 05 2013 CLOUDY    72  48  42 NW6       30.09F                     .
+ 3PM EDT AUG 05 2013 PTSUNNY   72  47  40 NW8       30.08F                     .
+ 4PM EDT AUG 05 2013 CLOUDY    72  47  40 W7        30.07F                     .
+ 5PM EDT AUG 05 2013 CLOUDY    72  49  44 W7        30.07S                     .
+ 6PM EDT AUG 05 2013 CLOUDY    70  51  51 W5        30.08R                     .
+ 7PM EDT AUG 05 2013 CLOUDY    70  51  51 CALM      30.06F                     .
+ 8PM EDT AUG 05 2013 CLOUDY    68  52  56 CALM      30.05F                     .
+ 9PM EDT AUG 05 2013 CLOUDY    67  52  58 CALM      30.04F                     .
+10PM EDT AUG 05 2013 CLOUDY    66  54  65 CALM      30.05R                     .
+11PM EDT AUG 05 2013 CLOUDY    65  54  67 CALM      30.04F                     .
+12AM EDT AUG 06 2013 MOCLDY    64  53  67 CALM      30.04S                     .
+ 1AM EDT AUG 06 2013 PTCLDY    61  55  81 CALM      30.04S                     .
+ 2AM EDT AUG 06 2013 PTCLDY    59  53  80 CALM      30.04S                     .
+ 3AM EDT AUG 06 2013 PTCLDY    59  54  83 CALM      30.03F                     .
+ 4AM EDT AUG 06 2013 MOCLDY    58  54  86 CALM      30.03S                     .
+ 5AM EDT AUG 06 2013 CLOUDY    60  55  83 CALM      30.03S                     .
+ 6AM EDT AUG 06 2013 MOCLDY    59  55  87 CALM      30.03S                     .
+ 7AM EDT AUG 06 2013 PTCLDY    59  55  87 CALM      30.03S                     .
+ 8AM EDT AUG 06 2013 MOSUNNY   61  54  77 CALM      30.03S                     .
+ 9AM EDT AUG 06 2013 MOSUNNY   66  56  70 CALM      30.05R                     .
+10AM EDT AUG 06 2013 MOSUNNY   69  54  58 SE3       30.05S                     .
+11AM EDT AUG 06 2013 MOSUNNY   72  52  49 E3        30.05S                     .
+12PM EDT AUG 06 2013 MOSUNNY   74  51  44 VRB5      30.04F                     .
+ 1PM EDT AUG 06 2013 MOSUNNY   75  49  39 CALM      30.03F                     .
+ 2PM EDT AUG 06 2013 MOSUNNY   78  48  34 VRB3      30.03S                     .
+ 3PM EDT AUG 06 2013 MOSUNNY   79  50  36 E6        30.02F                     .
+ 4PM EDT AUG 06 2013 MOSUNNY   80  52  37 VRB3      30.01F                     .
+ 5PM EDT AUG 06 2013 MOSUNNY   79  52  38 S9        30.00F                     .
+ 6PM EDT AUG 06 2013 MOSUNNY   79  52  38 S6        30.00S                     .
+ 7PM EDT AUG 06 2013 MOSUNNY   78  53  41 S7        30.01R                     .
+ 8PM EDT AUG 06 2013 PTCLDY    77  53  43 SW5       30.00F                     .
+ 9PM EDT AUG 06 2013 PTCLDY    73  56  54 SE3       29.99F                     .
+10PM EDT AUG 06 2013 PTCLDY    72  56  57 CALM      30.00R                     .
+11PM EDT AUG 06 2013 PTCLDY    69  58  67 CALM      30.00S                     .
+12AM EDT AUG 07 2013 PTCLDY    67  58  72 CALM      30.00S                     .
+ 1AM EDT AUG 07 2013 CLEAR     64  58  80 CALM      30.00S                     .
+ 2AM EDT AUG 07 2013 CLEAR     66  58  75 CALM      30.00S                     .
+ 3AM EDT AUG 07 2013 CLEAR     64  58  80 CALM      30.00S                     .
+ 4AM EDT AUG 07 2013 MOCLDY    65  58  78 CALM      30.00S                     .
+ 5AM EDT AUG 07 2013 MOCLDY    64  59  83 CALM      29.99F                     .
+ 6AM EDT AUG 07 2013 MOCLDY    64  59  83 CALM      29.99S                     .
+ 7AM EDT AUG 07 2013 CLOUDY    63  59  87 CALM      29.99S                     .
+ 8AM EDT AUG 07 2013 CLOUDY    65  61  87 S5        29.98F                     .
+ 9AM EDT AUG 07 2013 CLOUDY    68  62  81 SE3       30.00R                     .
+10AM EDT AUG 07 2013 CLOUDY    71  63  75 SE6       30.00S                     .
+11AM EDT AUG 07 2013 CLOUDY    74  64  71 SE3       30.00S                     .
+12PM EDT AUG 07 2013 CLOUDY    76  64  66 S6        30.00S                     .
+ 1PM EDT AUG 07 2013 PTSUNNY   80  66  62 S9        29.98F                     .
+ 2PM EDT AUG 07 2013 PTSUNNY   82  65  56 S8        29.98S                     .
+ 3PM EDT AUG 07 2013 CLOUDY    82  66  58 SW10      29.97F                     .
+ 4PM EDT AUG 07 2013 CLOUDY    83  66  56 SW9       29.95F HX  85              .
+ 5PM EDT AUG 07 2013 TSTM      75  68  78 SW8       29.96S                     .
+ 6PM EDT AUG 07 2013 TSTM      71  65  81 NE8       29.94F                     .
+ 7PM EDT AUG 07 2013 CLOUDY    70  66  87 SW7       29.99R                     .
+ 8PM EDT AUG 07 2013 CLOUDY    70  67  90 SE6       29.97F                     .
+ 9PM EDT AUG 07 2013 CLOUDY    69  66  90 SE6       29.98R                     .
+10PM EDT AUG 07 2013 CLOUDY    68  65  90 SE8       30.00R                     .
+11PM EDT AUG 07 2013 CLOUDY    68  65  90 S7        29.99F                     .
+12AM EDT AUG 08 2013 CLOUDY    68  65  90 S5        30.00R                     .
+ 1AM EDT AUG 08 2013 MOCLDY    68  65  90 S3        29.99F                     .
+ 2AM EDT AUG 08 2013 CLOUDY    69  65  86 S5        29.98F                     .
+ 3AM EDT AUG 08 2013 CLOUDY    69  65  86 CALM      29.97F                     .
+ 4AM EDT AUG 08 2013 MOCLDY    69  65  86 CALM      29.97S                     .
+ 5AM EDT AUG 08 2013 MOCLDY    67  64  90 CALM      29.97S                     .
+ 6AM EDT AUG 08 2013 MOCLDY    67  65  93 CALM      29.98R                     .
+ 7AM EDT AUG 08 2013 MOCLDY    67  65  93 CALM      29.98S                     .
+ 8AM EDT AUG 08 2013 CLOUDY    69  66  90 S3        29.98S                     .
+ 9AM EDT AUG 08 2013 PTSUNNY   72  66  83 S3        29.99S                     .
+10AM EDT AUG 08 2013 CLOUDY    75  69  81 S5        29.99S                     .
+11AM EDT AUG 08 2013 CLOUDY    76  69  79 SW5       29.99S                     .
+12PM EDT AUG 08 2013 CLOUDY    78  70  76 VRB3      30.00R                     .
+ 1PM EDT AUG 08 2013 LGT RAIN  80  70  71 VRB6      30.00S                     .
+ 2PM EDT AUG 08 2013 PTSUNNY   81  70  69 SW7       29.98F                     .
+ 3PM EDT AUG 08 2013 PTSUNNY   84  69  60 SW9       29.97F HX  88              .
+ 4PM EDT AUG 08 2013 PTSUNNY   83  69  62 SW9       29.96F HX  86              .
+ 5PM EDT AUG 08 2013 PTSUNNY   83  69  62 S8        29.93F HX  86              .
+ 6PM EDT AUG 08 2013 PTSUNNY   83  69  62 SW9       29.94R HX  86              .
+ 7PM EDT AUG 08 2013 CLOUDY    81  69  67 S12       29.93F                     .
+ 8PM EDT AUG 08 2013 CLOUDY    79  69  71 S5        29.94R                     .
+ 9PM EDT AUG 08 2013 CLOUDY    75  67  76 NE3       29.97R                     .
+10PM EDT AUG 08 2013 CLOUDY    75  67  76 N6        29.97S                     .
+11PM EDT AUG 08 2013 CLOUDY    73  67  81 NW5       29.95F                     .
+12AM EDT AUG 09 2013 CLOUDY    73  67  81 CALM      29.94F                     .
+ 1AM EDT AUG 09 2013 CLOUDY    72  68  87 CALM      29.92F                     .
+ 2AM EDT AUG 09 2013 CLOUDY    72  68  87 CALM      29.93R                     .
+ 3AM EDT AUG 09 2013 CLOUDY    72  69  90 CALM      29.93S                     .
+ 4AM EDT AUG 09 2013 CLOUDY    72  69  90 CALM      29.93S                     .
+ 5AM EDT AUG 09 2013 CLOUDY    72  69  90 CALM      29.92F                     .
+ 6AM EDT AUG 09 2013 LGT RAIN  72  70  93 CALM      29.91F FOG                 .
+ 7AM EDT AUG 09 2013 LGT RAIN  72  70  93 CALM      29.92R FOG                 .
+ 8AM EDT AUG 09 2013 CLOUDY    73  70  90 SW5       29.92S FOG                 .
+ 9AM EDT AUG 09 2013 CLOUDY    73  71  93 W5        29.92S FOG                 .
+10AM EDT AUG 09 2013 CLOUDY    74  70  87 W5        29.92S                     .
+11AM EDT AUG 09 2013 PTSUNNY   76  70  82 W12       29.93R                     .
+12PM EDT AUG 09 2013 LGT RAIN  75  70  84 W13       29.93S                     .
+ 1PM EDT AUG 09 2013 CLOUDY    73  68  84 NW13      29.96R                     .
+ 2PM EDT AUG 09 2013 CLOUDY    74  67  78 NW9       29.95F                     .
+ 3PM EDT AUG 09 2013 CLOUDY    75  67  76 NW8       29.96R                     .
+ 4PM EDT AUG 09 2013 CLOUDY    74  67  78 NW9       29.95F                     .
+ 5PM EDT AUG 09 2013 PTSUNNY   76  66  71 W10       29.96R                     .
+ 6PM EDT AUG 09 2013 MOSUNNY   77  65  66 NW9       29.96R                     .
+ 7PM EDT AUG 09 2013 PTSUNNY   77  65  66 NW8       29.97R                     .
+ 8PM EDT AUG 09 2013 PTCLDY    76  64  66 NW8       29.98R                     .
+ 9PM EDT AUG 09 2013 PTCLDY    72  64  76 W3        29.99R                     .
+10PM EDT AUG 09 2013 PTCLDY    71  61  70 NW5       30.01R                     .
+11PM EDT AUG 09 2013 MOCLDY    67  62  84 NW6       30.03R                     .
+12AM EDT AUG 10 2013 MOCLDY    67  58  72 NW3       30.04R                     .
+ 1AM EDT AUG 10 2013 CLOUDY    65  58  78 CALM      30.05R                     .
+ 2AM EDT AUG 10 2013 CLOUDY    62  58  86 CALM      30.06R                     .
+ 3AM EDT AUG 10 2013 CLOUDY    62  58  86 CALM      30.06S                     .
+ 4AM EDT AUG 10 2013 CLOUDY    62  58  86 W6        30.06S                     .
+ 5AM EDT AUG 10 2013 CLOUDY    63  58  83 CALM      30.06S                     .
+ 6AM EDT AUG 10 2013 CLOUDY    62  58  86 S3        30.06S                     .
+ 7AM EDT AUG 10 2013 CLOUDY    63  58  83 CALM      30.08R                     .
+ 8AM EDT AUG 10 2013 PTSUNNY   63  59  87 CALM      30.09R                     .
+ 9AM EDT AUG 10 2013 MOSUNNY   69  57  65 CALM      30.11R                     .
+10AM EDT AUG 10 2013 MOSUNNY   71  59  65 CALM      30.11S                     .
+11AM EDT AUG 10 2013 PTSUNNY   74  61  63 SE3       30.12R                     .
+12PM EDT AUG 10 2013 PTSUNNY   76  60  57 NW3       30.12S                     .
+ 1PM EDT AUG 10 2013 MOSUNNY   78  61  55 CALM      30.11F                     .
+ 2PM EDT AUG 10 2013 PTSUNNY   79  60  52 W8        30.11S                     .
+ 3PM EDT AUG 10 2013 MOSUNNY   80  60  50 W7        30.09F                     .
+ 4PM EDT AUG 10 2013 MOSUNNY   81  59  47 NW10      30.09S                     .
+ 5PM EDT AUG 10 2013 PTSUNNY   80  60  50 NW5       30.08F                     .
+ 6PM EDT AUG 10 2013 PTSUNNY   79  61  53 NW7       30.08S                     .
+ 7PM EDT AUG 10 2013 PTSUNNY   78  61  55 NW7       30.08S                     .
+ 8PM EDT AUG 10 2013 MOCLDY    77  60  55 N7        30.08S                     .
+ 9PM EDT AUG 10 2013 MOCLDY    76  60  57 N6        30.10R                     .
+10PM EDT AUG 10 2013 MOCLDY    73  60  63 N8        30.11R                     .
+11PM EDT AUG 10 2013 PTCLDY    71  60  68 NE6       30.11S                     .
+12AM EDT AUG 11 2013 CLOUDY    70  59  68 CALM      30.12R                     .
+ 1AM EDT AUG 11 2013 CLOUDY    70  57  63 NE3       30.12S                     .
+ 2AM EDT AUG 11 2013 CLOUDY    69  57  65 N6        30.11F                     .
+ 3AM EDT AUG 11 2013 CLOUDY    67  55  65 N3        30.11S                     .
+ 4AM EDT AUG 11 2013 CLOUDY    67  54  63 N6        30.12R                     .
+ 5AM EDT AUG 11 2013 CLOUDY    66  55  67 NE5       30.12S                     .
+ 6AM EDT AUG 11 2013 MOCLDY    65  54  67 CALM      30.12S                     .
+ 7AM EDT AUG 11 2013 MOCLDY    64  54  69 NE3       30.13R                     .
+ 8AM EDT AUG 11 2013 PTSUNNY   64  55  72 NE3       30.13S                     .
+ 9AM EDT AUG 11 2013 PTSUNNY   68  55  63 N7        30.15R                     .
+10AM EDT AUG 11 2013 PTSUNNY   68  55  63 VRB3      30.15S                     .
+11AM EDT AUG 11 2013 MOSUNNY   73  54  51 E9        30.14F                     .
+12PM EDT AUG 11 2013 CLOUDY    73  54  51 E5        30.14S                     .
+ 1PM EDT AUG 11 2013 PTSUNNY   76  56  49 SE5       30.12F                     .
+ 2PM EDT AUG 11 2013 MOSUNNY   77  59  53 S3        30.11F                     .
+ 3PM EDT AUG 11 2013 MOSUNNY   81  60  48 CALM      30.09F                     .
+ 4PM EDT AUG 11 2013 MOSUNNY   81  61  50 VRB6      30.07F                     .
+ 5PM EDT AUG 11 2013 MOSUNNY   82  62  50 N3        30.05F                     .
+ 6PM EDT AUG 11 2013 PTSUNNY   80  62  54 N8        30.05S                     .
+ 7PM EDT AUG 11 2013 PTSUNNY   77  64  64 N5        30.05S                     .
+ 8PM EDT AUG 11 2013 MOCLDY    74  66  76 SW3       30.05S                     .
+ 9PM EDT AUG 11 2013 MOCLDY    76  64  66 N5        30.06R                     .
+10PM EDT AUG 11 2013 MOCLDY    75  63  66 CALM      30.07R                     .
+11PM EDT AUG 11 2013 MOCLDY    72  64  76 CALM      30.08R                     .
+12AM EDT AUG 12 2013 PTCLDY    70  67  90 CALM      30.07F                     .
+ 1AM EDT AUG 12 2013 PTCLDY    68  65  90 CALM      30.07S                     .
+ 2AM EDT AUG 12 2013 PTCLDY    67  65  93 W3        30.08R                     .
+ 3AM EDT AUG 12 2013 MOCLDY    67  63  87 CALM      30.07F                     .
+ 4AM EDT AUG 12 2013 PTCLDY    65  63  93 W3        30.07S                     .
+ 5AM EDT AUG 12 2013 PTCLDY    65  62  90 CALM      30.07S                     .
+ 6AM EDT AUG 12 2013 PTCLDY    64  61  90 CALM      30.06F                     .
+ 7AM EDT AUG 12 2013 PTCLDY    63  60  90 CALM      30.07R                     .
+ 8AM EDT AUG 12 2013 PTSUNNY   65  62  90 CALM      30.08R                     .
+ 9AM EDT AUG 12 2013 MOSUNNY   68  63  84 CALM      30.08S                     .
+10AM EDT AUG 12 2013 MOSUNNY   73  63  70 CALM      30.07F                     .
+11AM EDT AUG 12 2013 MOSUNNY   76  59  55 VRB5      30.08R                     .
+12PM EDT AUG 12 2013 MOSUNNY   78  60  53 S7        30.07F                     .
+ 1PM EDT AUG 12 2013 MOSUNNY   79  59  50 VRB6      30.05F                     .
+ 2PM EDT AUG 12 2013 MOSUNNY   82  59  45 W7        30.03F                     .
+ 3PM EDT AUG 12 2013 PTSUNNY   81  59  47 W3        30.03S                     .
+ 4PM EDT AUG 12 2013 MOSUNNY   82  61  48 W9        30.01F                     .
+ 5PM EDT AUG 12 2013 MOSUNNY   81  61  50 SW7       29.98F                     .
+ 6PM EDT AUG 12 2013 MOSUNNY   81  61  50 SW7       29.98S                     .
+ 7PM EDT AUG 12 2013 PTSUNNY   81  61  50 SW8       29.96F                     .
+ 8PM EDT AUG 12 2013 CLOUDY    79  62  56 SW5       29.95F                     .
+ 9PM EDT AUG 12 2013 CLOUDY    77  64  64 S3        29.94F                     .
+10PM EDT AUG 12 2013 CLOUDY    76  63  64 S5        29.95R                     .
+11PM EDT AUG 12 2013 CLOUDY    74  64  71 S3        29.92F                     .
+12AM EDT AUG 13 2013 CLOUDY    73  64  73 S5        29.91F                     .
+ 1AM EDT AUG 13 2013 NOT AVBL                                                  .
+ 2AM EDT AUG 13 2013 CLOUDY    73  65  75 S3        29.85                      .
+ 3AM EDT AUG 13 2013 CLOUDY    72  66  81 SW6       29.85S                     .
+ 4AM EDT AUG 13 2013 CLOUDY    72  66  81 SW5       29.84F                     .
+ 5AM EDT AUG 13 2013 CLOUDY    71  66  84 S6        29.83F                     .
+ 6AM EDT AUG 13 2013 CLOUDY    71  66  84 SW7       29.82F                     .
+ 7AM EDT AUG 13 2013 MOCLDY    70  65  84 SW8       29.83R                     .
+ 8AM EDT AUG 13 2013 PTSUNNY   70  65  84 SW6       29.84R                     .
+ 9AM EDT AUG 13 2013 PTSUNNY   71  66  84 SW8       29.84S                     .
+10AM EDT AUG 13 2013 PTSUNNY   74  66  76 NW10G16   29.85R                     .
+11AM EDT AUG 13 2013 PTSUNNY   75  63  66 NW16      29.86R                     .
+12PM EDT AUG 13 2013 PTSUNNY   76  60  57 N14       29.87R                     .
+ 1PM EDT AUG 13 2013 MOSUNNY   79  60  52 NW9       29.86F                     .
+ 2PM EDT AUG 13 2013 PTSUNNY   75  60  59 NW13      29.87R                     .
+ 3PM EDT AUG 13 2013 MOSUNNY   79  58  48 NW16G24   29.86F                     .
+ 4PM EDT AUG 13 2013 MOSUNNY   77  57  50 NW16      29.87R                     .
+ 5PM EDT AUG 13 2013 PTSUNNY   75  57  53 NW21      29.88R                     .
+ 6PM EDT AUG 13 2013 PTSUNNY   72  56  57 N20       29.89R                     .
+ 7PM EDT AUG 13 2013 CLOUDY    69  54  58 N16G23    29.90R                     .
+ 8PM EDT AUG 13 2013 MOCLDY    67  51  56 NW12      29.93R                     .
+ 9PM EDT AUG 13 2013 MOCLDY    64  49  57 N16       29.95R                     .
+10PM EDT AUG 13 2013 MOCLDY    62  47  57 N13       29.98R                     .
+11PM EDT AUG 13 2013 PTCLDY    60  47  61 N9        29.99R                     .
+12AM EDT AUG 14 2013 PTCLDY    59  47  64 NW6       30.00R                     .
+ 1AM EDT AUG 14 2013 PTCLDY    57  47  69 NW5       30.00S                     .
+ 2AM EDT AUG 14 2013 CLEAR     54  47  77 W5        30.01R                     .
+ 3AM EDT AUG 14 2013 PTCLDY    53  47  79 W3        30.00F                     .
+ 4AM EDT AUG 14 2013 PTCLDY    52  48  86 CALM      30.00S                     .
+ 5AM EDT AUG 14 2013 MOCLDY    52  48  86 W8        30.01R                     .
+ 6AM EDT AUG 14 2013 PTCLDY    52  47  83 W8        30.02R                     .
+ 7AM EDT AUG 14 2013 PTCLDY    51  46  83 W5        30.04R                     .
+ 8AM EDT AUG 14 2013 PTSUNNY   53  47  79 W6        30.05R                     .
+ 9AM EDT AUG 14 2013 PTSUNNY   55  49  80 W6        30.07R                     .
+10AM EDT AUG 14 2013 DRIZZLE   59  49  69 NW14      30.09R                     .
+11AM EDT AUG 14 2013 PTSUNNY   61  49  64 NW10      30.10R                     .
+12PM EDT AUG 14 2013 CLOUDY    62  51  67 N9        30.11S                     .
+ 1PM EDT AUG 14 2013 PTSUNNY   63  51  65 NW8       30.12S                     .
+ 2PM EDT AUG 14 2013 PTSUNNY   65  48  54 NW10G18   30.11F                     .
+ 3PM EDT AUG 14 2013 PTSUNNY   66  51  58 N8        30.10F                     .
+ 4PM EDT AUG 14 2013 PTSUNNY   66  48  52 N9        30.10S                     .
+ 5PM EDT AUG 14 2013 PTSUNNY   67  47  48 NW8       30.11R                     .
+ 6PM EDT AUG 14 2013 PTSUNNY   69  48  47 NW12      30.11S                     .
+ 7PM EDT AUG 14 2013 PTSUNNY   68  47  46 NW15G21   30.11S                     .
+ 8PM EDT AUG 14 2013 MOCLDY    65  48  54 NW7       30.12R                     .
+ 9PM EDT AUG 14 2013 PTCLDY    63  48  58 N7        30.13R                     .
+10PM EDT AUG 14 2013 CLEAR     61  48  62 N6        30.15R                     .
+11PM EDT AUG 14 2013 CLEAR     56  49  77 NW5       30.16R                     .
+12AM EDT AUG 15 2013 CLEAR     54  48  80 CALM      30.16S                     .
+ 1AM EDT AUG 15 2013 CLEAR     54  48  80 CALM      30.16S                     .
+ 2AM EDT AUG 15 2013 CLEAR     52  47  83 CALM      30.17R                     .
+ 3AM EDT AUG 15 2013 CLEAR     49  46  90 CALM      30.17S                     .
+ 4AM EDT AUG 15 2013 CLEAR     50  45  83 CALM      30.17S                     .
+ 5AM EDT AUG 15 2013 CLEAR     50  46  86 CALM      30.17S                     .
+ 6AM EDT AUG 15 2013 CLEAR     48  45  89 CALM      30.18R                     .
+ 7AM EDT AUG 15 2013 PTCLDY    48  44  86 CALM      30.19R                     .
+ 8AM EDT AUG 15 2013 MOSUNNY   51  47  86 CALM      30.20R                     .
+ 9AM EDT AUG 15 2013 MOSUNNY   57  50  77 CALM      30.21R                     .
+10AM EDT AUG 15 2013 MOSUNNY   61  49  64 S3        30.21S                     .
+11AM EDT AUG 15 2013 PTSUNNY   65  48  54 CALM      30.22R                     .
+12PM EDT AUG 15 2013 PTSUNNY   70  49  47 VRB3      30.22S                     .
+ 1PM EDT AUG 15 2013 PTSUNNY   70  45  40 CALM      30.20F                     .
+ 2PM EDT AUG 15 2013 PTSUNNY   70  44  39 CALM      30.17F                     .
+ 3PM EDT AUG 15 2013 PTSUNNY   71  45  39 VRB3      30.15F                     .
+ 4PM EDT AUG 15 2013 PTSUNNY   72  46  39 CALM      30.13F                     .
+ 5PM EDT AUG 15 2013 PTSUNNY   72  45  37 S3        30.13S                     .
+ 6PM EDT AUG 15 2013 PTSUNNY   73  45  36 N3        30.12F                     .
+ 7PM EDT AUG 15 2013 PTSUNNY   72  46  39 NW6       30.12S                     .
+ 8PM EDT AUG 15 2013 MOCLDY    70  46  42 N6        30.13R                     .
+ 9PM EDT AUG 15 2013 MOCLDY    66  48  52 E3        30.14R                     .
+10PM EDT AUG 15 2013 MOCLDY    61  51  70 CALM      30.15R                     .
+11PM EDT AUG 15 2013 CLOUDY    61  50  67 CALM      30.15S                     .
+12AM EDT AUG 16 2013 MOCLDY    60  50  69 CALM      30.15S                     .
+ 1AM EDT AUG 16 2013 NOT AVBL                                                  .
+ 2AM EDT AUG 16 2013 CLOUDY    58  51  78 CALM      30.15                      .
+ 3AM EDT AUG 16 2013 CLOUDY    59  51  75 N3        30.14F                     .
+ 4AM EDT AUG 16 2013 CLOUDY    59  50  72 N3        30.14                      .
+ 5AM EDT AUG 16 2013 CLOUDY    58  50  75 CALM      30.14                      .
+ 6AM EDT AUG 16 2013 MOCLDY    57  50  77 N3        30.15R                     .
+ 7AM EDT AUG 16 2013 PTCLDY    54  49  83 CALM      30.15S                     .
+ 8AM EDT AUG 16 2013 MOSUNNY   59  51  75 CALM      30.17R                     .
+ 9AM EDT AUG 16 2013 MOSUNNY   62  52  69 NE3       30.17S                     .
+10AM EDT AUG 16 2013 MOSUNNY   65  51  60 E3        30.17S                     .
+11AM EDT AUG 16 2013 PTSUNNY   70  50  49 CALM      30.18R                     .
+12PM EDT AUG 16 2013 PTSUNNY   73  51  46 VRB3      30.18S                     .
+ 1PM EDT AUG 16 2013 MOSUNNY   76  51  41 VRB3      30.18S                     .
+ 2PM EDT AUG 16 2013 MOSUNNY   75  49  39 CALM      30.17F                     .
+ 3PM EDT AUG 16 2013 MOSUNNY   76  49  38 VRB5      30.16F                     .
+ 4PM EDT AUG 16 2013 PTSUNNY   76  49  38 VRB5      30.16S                     .
+ 5PM EDT AUG 16 2013 MOSUNNY   75  49  39 VRB5      30.15F                     .
+ 6PM EDT AUG 16 2013 MOSUNNY   77  50  38 N7        30.16R                     .
+ 7PM EDT AUG 16 2013 MOSUNNY   76  50  40 E5        30.16S                     .
+ 8PM EDT AUG 16 2013 PTCLDY    74  50  42 N8        30.17R                     .
+ 9PM EDT AUG 16 2013 PTCLDY    71  51  49 N6        30.18R                     .
+10PM EDT AUG 16 2013 PTCLDY    69  52  54 N6        30.18S                     .
+11PM EDT AUG 16 2013 PTCLDY    67  52  58 N3        30.18S                     .
+12AM EDT AUG 17 2013 PTCLDY    63  53  70 CALM      30.19R                     .
+ 1AM EDT AUG 17 2013 PTCLDY    64  53  67 CALM      30.20R                     .
+ 2AM EDT AUG 17 2013 MOCLDY    61  53  75 CALM      30.20S                     .
+ 3AM EDT AUG 17 2013 PTCLDY    57  53  86 CALM      30.20S                     .
+ 4AM EDT AUG 17 2013 PTCLDY    58  52  80 CALM      30.21R                     .
+ 5AM EDT AUG 17 2013 MOCLDY    57  53  86 CALM      30.22R                     .
+ 6AM EDT AUG 17 2013 CLOUDY    57  52  83 CALM      30.24R                     .
+ 7AM EDT AUG 17 2013 MOCLDY    58  53  84 CALM      30.24S                     .
+ 8AM EDT AUG 17 2013 CLOUDY    59  53  80 CALM      30.26R                     .
+ 9AM EDT AUG 17 2013 CLOUDY    62  55  77 SE3       30.27R                     .
+10AM EDT AUG 17 2013 PTSUNNY   68  54  60 E6        30.26F                     .
+11AM EDT AUG 17 2013 PTSUNNY   71  52  50 E7        30.26S                     .
+12PM EDT AUG 17 2013 PTSUNNY   73  49  42 SE13      30.26S                     .
+ 1PM EDT AUG 17 2013 PTSUNNY   76  49  38 SE10      30.25F                     .
+ 2PM EDT AUG 17 2013 PTSUNNY   76  50  40 E12G20    30.23F                     .
+ 3PM EDT AUG 17 2013 PTSUNNY   77  50  38 SE6       30.23S                     .
+ 4PM EDT AUG 17 2013 PTSUNNY   78  50  37 NE3       30.22F                     .
+ 5PM EDT AUG 17 2013 PTSUNNY   78  48  34 E10       30.21F                     .
+ 6PM EDT AUG 17 2013 PTSUNNY   77  50  38 SE10      30.22R                     .
+ 7PM EDT AUG 17 2013 CLOUDY    75  51  43 SE10      30.22S                     .
+ 8PM EDT AUG 17 2013 CLOUDY    72  52  49 SE7       30.23R                     .
+ 9PM EDT AUG 17 2013 CLOUDY    69  53  56 E5        30.22F                     .
+10PM EDT AUG 17 2013 CLOUDY    68  53  58 E6        30.22S                     .
+11PM EDT AUG 17 2013 CLOUDY    68  53  58 SE3       30.23R                     .
+12AM EDT AUG 18 2013 CLOUDY    67  54  63 E5        30.22F                     .
+ 1AM EDT AUG 18 2013 CLOUDY    66  55  67 CALM      30.21F                     .
+ 2AM EDT AUG 18 2013 CLOUDY    65  55  70 E3        30.21S                     .
+ 3AM EDT AUG 18 2013 CLOUDY    64  55  72 E3        30.20F                     .
+ 4AM EDT AUG 18 2013 CLOUDY    64  55  72 CALM      30.20S                     .
+ 5AM EDT AUG 18 2013 CLOUDY    64  55  72 NE3       30.20S                     .
+ 6AM EDT AUG 18 2013 CLOUDY    63  56  78 CALM      30.20S                     .
+ 7AM EDT AUG 18 2013 CLOUDY    63  56  78 CALM      30.22R                     .
+ 8AM EDT AUG 18 2013 CLOUDY    63  57  81 CALM      30.23R                     .
+ 9AM EDT AUG 18 2013 CLOUDY    65  57  75 SE3       30.24R                     .
+10AM EDT AUG 18 2013 CLOUDY    66  59  78 SE5       30.23F                     .
+11AM EDT AUG 18 2013 CLOUDY    69  59  70 SE5       30.24R                     .
+12PM EDT AUG 18 2013 CLOUDY    69  59  70 SE5       30.23F                     .
+ 1PM EDT AUG 18 2013 CLOUDY    70  59  68 SE6       30.23S                     .
+ 2PM EDT AUG 18 2013 CLOUDY    71  59  65 SE6       30.22F                     .
+ 3PM EDT AUG 18 2013 CLOUDY    72  60  66 SE6       30.20F                     .
+ 4PM EDT AUG 18 2013 CLOUDY    71  61  70 S3        30.19F                     .
+ 5PM EDT AUG 18 2013 LGT RAIN  71  62  73 CALM      30.18F                     .
+ 6PM EDT AUG 18 2013 LGT RAIN  70  63  78 CALM      30.18S                     .
+ 7PM EDT AUG 18 2013 LGT RAIN  69  64  84 CALM      30.17F                     .
+ 8PM EDT AUG 18 2013 CLOUDY    68  65  90 CALM      30.17S                     .
+ 9PM EDT AUG 18 2013 LGT RAIN  68  64  87 CALM      30.17S                     .
+10PM EDT AUG 18 2013 CLOUDY    67  64  90 CALM      30.17S                     .
+11PM EDT AUG 18 2013 LGT RAIN  67  64  90 CALM      30.17S                     .
+12AM EDT AUG 19 2013 CLOUDY    67  64  90 CALM      30.18R                     .
+ 1AM EDT AUG 19 2013 CLOUDY    66  64  93 CALM      30.17F                     .
+ 2AM EDT AUG 19 2013 DRIZZLE   66  64  93 CALM      30.15F FOG                 .
+ 3AM EDT AUG 19 2013 CLOUDY    66  64  93 CALM      30.14F FOG                 .
+ 4AM EDT AUG 19 2013 LGT RAIN  66  64  93 CALM      30.13F FOG                 .
+ 5AM EDT AUG 19 2013 LGT RAIN  66  64  93 CALM      30.13S FOG                 .
+ 6AM EDT AUG 19 2013 CLOUDY    66  64  93 CALM      30.14R FOG                 .
+ 7AM EDT AUG 19 2013 CLOUDY    66  64  93 CALM      30.14S FOG                 .
+ 8AM EDT AUG 19 2013 LGT RAIN  66  64  93 CALM      30.14S VSB 1               .
+ 9AM EDT AUG 19 2013 DRZL/FOG  66  64  93 NE8       30.15R VSB 1               .
+10AM EDT AUG 19 2013 DRIZZLE   66  64  93 NE5       30.14F FOG                 .
+11AM EDT AUG 19 2013 CLOUDY    68  64  87 NE5       30.14S                     .
+12PM EDT AUG 19 2013 CLOUDY    70  63  78 CALM      30.15R                     .
+ 1PM EDT AUG 19 2013 DRIZZLE   70  65  84 W3        30.14F                     .
+ 2PM EDT AUG 19 2013 PTSUNNY   71  65  81 VRB5      30.13F                     .
+ 3PM EDT AUG 19 2013 PTSUNNY   76  64  66 CALM      30.12F                     .
+ 4PM EDT AUG 19 2013 MOSUNNY   76  62  62 SW6       30.11F                     .
+ 5PM EDT AUG 19 2013 MOSUNNY   78  61  55 SW3       30.09F                     .
+ 6PM EDT AUG 19 2013 NOT AVBL                                                  .
+ 7PM EDT AUG 19 2013 MOSUNNY   76  61  59 W6        30.09                      .
+ 8PM EDT AUG 19 2013 PTCLDY    74  60  61 W10       30.10R                     .
+ 9PM EDT AUG 19 2013 CLEAR     70  60  70 W5        30.10S                     .
+10PM EDT AUG 19 2013 CLEAR     68  59  73 W3        30.12R                     .
+11PM EDT AUG 19 2013 CLEAR     65  60  84 CALM      30.12S                     .
+12AM EDT AUG 20 2013 CLEAR     63  59  87 CALM      30.13R                     .
+ 1AM EDT AUG 20 2013 CLEAR     63  58  83 CALM      30.14R                     .
+ 2AM EDT AUG 20 2013 FAIR      62  57  83 CALM      30.13F                     .
+ 3AM EDT AUG 20 2013 CLEAR     59  56  89 CALM      30.13S                     .
+ 4AM EDT AUG 20 2013 CLEAR     60  56  86 CALM      30.13S                     .
+ 5AM EDT AUG 20 2013 CLEAR     60  55  83 CALM      30.14R                     .
+ 6AM EDT AUG 20 2013 CLEAR     60  57  89 CALM      30.15R                     .
+ 7AM EDT AUG 20 2013 PTCLDY    58  55  90 CALM      30.17R                     .
+ 8AM EDT AUG 20 2013 MOSUNNY   61  57  87 CALM      30.19R                     .
+ 9AM EDT AUG 20 2013 MOSUNNY   65  59  81 CALM      30.20R                     .
+10AM EDT AUG 20 2013 MOSUNNY   71  61  70 W3        30.21R                     .
+11AM EDT AUG 20 2013 SUNNY     75  61  61 SW6       30.21S                     .
+12PM EDT AUG 20 2013 MOSUNNY   78  56  46 CALM      30.21S                     .
+ 1PM EDT AUG 20 2013 MOSUNNY   79  56  45 SW7       30.21S                     .
+ 2PM EDT AUG 20 2013 MOSUNNY   80  56  43 VRB6      30.20F                     .
+ 3PM EDT AUG 20 2013 MOSUNNY   82  56  40 W6        30.18F                     .
+ 4PM EDT AUG 20 2013 MOSUNNY   81  55  40 SW5       30.17F                     .
+ 5PM EDT AUG 20 2013 MOSUNNY   82  55  39 SW6       30.16F                     .
+ 6PM EDT AUG 20 2013 MOSUNNY   80  57  45 S5        30.15F                     .
+ 7PM EDT AUG 20 2013 MOSUNNY   80  58  46 S5        30.15S                     .
+ 8PM EDT AUG 20 2013 PTCLDY    77  60  55 SW3       30.15S                     .
+ 9PM EDT AUG 20 2013 PTCLDY    72  60  66 CALM      30.16R                     .
+10PM EDT AUG 20 2013 CLEAR     71  62  73 CALM      30.18R                     .
+11PM EDT AUG 20 2013 PTCLDY    70  61  73 CALM      30.19R                     .
+12AM EDT AUG 21 2013 PTCLDY    67  60  78 CALM      30.19S                     .
+ 1AM EDT AUG 21 2013 PTCLDY    66  60  81 CALM      30.19S                     .
+ 2AM EDT AUG 21 2013 FAIR      64  60  87 CALM      30.19S                     .
+ 3AM EDT AUG 21 2013 PTCLDY    64  60  87 CALM      30.18F                     .
+ 4AM EDT AUG 21 2013 PTCLDY    63  59  87 CALM      30.18S                     .
+ 5AM EDT AUG 21 2013 PTCLDY    62  59  90 CALM      30.18S                     .
+ 6AM EDT AUG 21 2013 MOCLDY    61  57  87 CALM      30.19R                     .
+ 7AM EDT AUG 21 2013 PTCLDY    61  56  83 CALM      30.20R                     .
+ 8AM EDT AUG 21 2013 MOSUNNY   63  59  87 CALM      30.20S FOG                 .
+ 9AM EDT AUG 21 2013 MOSUNNY   67  62  84 CALM      30.22R                     .
+10AM EDT AUG 21 2013 MOSUNNY   72  61  68 VRB3      30.21F                     .
+11AM EDT AUG 21 2013 MOSUNNY   76  62  62 CALM      30.22R                     .
+12PM EDT AUG 21 2013 MOSUNNY   79  60  52 CALM      30.21F                     .
+ 1PM EDT AUG 21 2013 MOSUNNY   81  59  47 CALM      30.19F                     .
+ 2PM EDT AUG 21 2013 MOSUNNY   83  60  45 VRB5      30.18F                     .
+ 3PM EDT AUG 21 2013 MOSUNNY   83  59  44 SW7       30.16F                     .
+ 4PM EDT AUG 21 2013 PTSUNNY   83  57  41 S6        30.13F                     .
+ 5PM EDT AUG 21 2013 PTSUNNY   83  57  41 S6        30.12F                     .
+ 6PM EDT AUG 21 2013 CLOUDY    82  59  45 VRB6      30.12S                     .
+ 7PM EDT AUG 21 2013 CLOUDY    79  62  56 SW5       30.09F                     .
+ 8PM EDT AUG 21 2013 CLOUDY    78  63  59 CALM      30.11R                     .
+ 9PM EDT AUG 21 2013 CLOUDY    76  63  64 SW3       30.09F                     .
+10PM EDT AUG 21 2013 CLOUDY    75  64  68 SW7       30.10R                     .
+11PM EDT AUG 21 2013 CLOUDY    73  65  75 SW7       30.11R                     .
+12AM EDT AUG 22 2013 NOT AVBL                                                  .
+ 1AM EDT AUG 22 2013 CLOUDY    72  66  81 SW7       30.12R                     .
+ 2AM EDT AUG 22 2013 LGT RAIN  71  65  81 SW6       30.11F                     .
+ 3AM EDT AUG 22 2013 CLOUDY    70  63  78 SW6       30.11S                     .
+ 4AM EDT AUG 22 2013 CLOUDY    69  63  81 SW5       30.10F                     .
+ 5AM EDT AUG 22 2013 CLOUDY    67  62  84 SW5       30.10S                     .
+ 6AM EDT AUG 22 2013 MOCLDY    67  61  81 SW7       30.09F                     .
+ 7AM EDT AUG 22 2013 PTCLDY    66  61  84 S5        30.09S                     .
+ 8AM EDT AUG 22 2013 MOSUNNY   66  61  84 SW6       30.11R                     .
+ 9AM EDT AUG 22 2013 MOSUNNY   69  63  81 SW8       30.10F                     .
+10AM EDT AUG 22 2013 MOSUNNY   72  64  76 VRB6      30.10S                     .
+11AM EDT AUG 22 2013 MOSUNNY   76  65  68 W7        30.09F                     .
+12PM EDT AUG 22 2013 CLOUDY    79  65  62 W7        30.09S                     .
+ 1PM EDT AUG 22 2013 PTSUNNY   81  66  60 VRB7      30.08F                     .
+ 2PM EDT AUG 22 2013 PTSUNNY   82  65  56 W9        30.05F                     .
+ 3PM EDT AUG 22 2013 CLOUDY    79  63  57 NW17      30.05S                     .
+ 4PM EDT AUG 22 2013 CLOUDY    77  63  61 W6        30.04F                     .
+ 5PM EDT AUG 22 2013 PTSUNNY   80  65  59 W8        30.02F                     .
+ 6PM EDT AUG 22 2013 PTSUNNY   81  66  60 W9        30.02S                     .
+ 7PM EDT AUG 22 2013 NOT AVBL                                                  .
+ 8PM EDT AUG 22 2013 NOT AVBL                                                  .
+ 9PM EDT AUG 22 2013 NOT AVBL                                                  .
+10PM EDT AUG 22 2013 NOT AVBL                                                  .
+11PM EDT AUG 22 2013 CLOUDY    68  65  90 CALM      30.03                      .
+12AM EDT AUG 23 2013 CLOUDY    69  66  90 CALM      30.03F                     .
+ 1AM EDT AUG 23 2013 CLOUDY    68  66  93 CALM      30.04R                     .
+ 2AM EDT AUG 23 2013 CLOUDY    68  66  93 CALM      30.03F                     .
+ 3AM EDT AUG 23 2013 CLOUDY    69  66  90 CALM      30.02F FOG                 .
+ 4AM EDT AUG 23 2013 CLOUDY    68  66  93 S3        30.02S FOG                 .
+ 5AM EDT AUG 23 2013 CLOUDY    68  66  93 NW5       30.02S FOG                 .
+ 6AM EDT AUG 23 2013 CLOUDY    69  66  90 NE3       30.02S FOG                 .
+ 7AM EDT AUG 23 2013 CLOUDY    68  66  93 N3        30.03R FOG                 .
+ 8AM EDT AUG 23 2013 LGT RAIN  68  66  93 N3        30.05R FOG                 .
+ 9AM EDT AUG 23 2013 CLOUDY    69  66  90 N5        30.07R FOG                 .
+10AM EDT AUG 23 2013 CLOUDY    70  66  88 NE6       30.08R FOG                 .
+11AM EDT AUG 23 2013 CLOUDY    71  67  87 NE6       30.09R FOG                 .
+12PM EDT AUG 23 2013 MOSUNNY   73  65  75 E8        30.11R                     .
+ 1PM EDT AUG 23 2013 MOSUNNY   77  59  53 E8        30.10F                     .
+ 2PM EDT AUG 23 2013 MOSUNNY   79  58  48 E9        30.09F                     .
+ 3PM EDT AUG 23 2013 PTSUNNY   79  56  45 CALM      30.09S                     .
+ 4PM EDT AUG 23 2013 MOSUNNY   80  55  42 NE7       30.08F                     .
+ 5PM EDT AUG 23 2013 MOSUNNY   82  53  36 NW8       30.07F                     .
+ 6PM EDT AUG 23 2013 MOSUNNY   80  55  42 N9        30.08R                     .
+ 7PM EDT AUG 23 2013 PTSUNNY   79  54  41 N13       30.08S                     .
+ 8PM EDT AUG 23 2013 PTCLDY    76  51  41 N12       30.10R                     .
+ 9PM EDT AUG 23 2013 PTCLDY    73  51  46 N7        30.12R                     .
+10PM EDT AUG 23 2013 PTCLDY    71  52  50 N9        30.14R                     .
+11PM EDT AUG 23 2013 PTCLDY    69  52  54 N8        30.16R                     .
+12AM EDT AUG 24 2013 CLEAR     67  52  58 N6        30.17R                     .
+ 1AM EDT AUG 24 2013 CLEAR     66  52  60 N5        30.19R                     .
+ 2AM EDT AUG 24 2013 FAIR      64  52  64 N3        30.19S                     .
+ 3AM EDT AUG 24 2013 CLEAR     63  52  67 NE6       30.19S                     .
+ 4AM EDT AUG 24 2013 CLEAR     62  52  69 N3        30.21R                     .
+ 5AM EDT AUG 24 2013 CLEAR     61  52  72 N3        30.21S                     .
+ 6AM EDT AUG 24 2013 CLEAR     60  52  74 CALM      30.23R                     .
+ 7AM EDT AUG 24 2013 PTCLDY    59  52  77 CALM      30.24R                     .
+ 8AM EDT AUG 24 2013 MOSUNNY   62  54  74 N5        30.28R                     .
+ 9AM EDT AUG 24 2013 MOSUNNY   63  54  72 NE5       30.29R                     .
+10AM EDT AUG 24 2013 MOSUNNY   68  56  65 E3        30.31R                     .
+11AM EDT AUG 24 2013 MOSUNNY   71  57  61 CALM      30.32R                     .
+12PM EDT AUG 24 2013 MOSUNNY   74  57  55 VRB5      30.31F                     .
+ 1PM EDT AUG 24 2013 MOSUNNY   77  57  50 NE8       30.30F                     .
+ 2PM EDT AUG 24 2013 MOSUNNY   79  53  40 VRB3      30.30S                     .
+ 3PM EDT AUG 24 2013 MOSUNNY   79  51  37 NE6       30.29F                     .
+ 4PM EDT AUG 24 2013 MOSUNNY   79  52  38 CALM      30.28F                     .
+ 5PM EDT AUG 24 2013 MOSUNNY   79  51  37 S3        30.28S                     .
+ 6PM EDT AUG 24 2013 MOSUNNY   79  53  40 E3        30.28S                     .
+ 7PM EDT AUG 24 2013 MOSUNNY   77  54  44 CALM      30.28S                     .
+ 8PM EDT AUG 24 2013 PTCLDY    76  55  48 NE3       30.28S                     .
+ 9PM EDT AUG 24 2013 PTCLDY    72  55  55 E3        30.30R                     .
+10PM EDT AUG 24 2013 PTCLDY    67  57  70 CALM      30.31R                     .
+11PM EDT AUG 24 2013 PTCLDY    69  55  60 E5        30.31S                     .
+12AM EDT AUG 25 2013 PTCLDY    65  57  75 CALM      30.31S                     .
+ 1AM EDT AUG 25 2013 FAIR      63  57  81 CALM      30.31S                     .
+ 2AM EDT AUG 25 2013 FAIR      63  57  81 CALM      30.30F                     .
+ 3AM EDT AUG 25 2013 PTCLDY    63  56  78 CALM      30.32R                     .
+ 4AM EDT AUG 25 2013 PTCLDY    60  57  89 CALM      30.31F                     .
+ 5AM EDT AUG 25 2013 PTCLDY    61  56  83 CALM      30.33R                     .
+ 6AM EDT AUG 25 2013 PTCLDY    58  55  90 CALM      30.35R                     .
+ 7AM EDT AUG 25 2013 PTCLDY    57  53  86 CALM      30.36R                     .
+ 8AM EDT AUG 25 2013 PTSUNNY   60  56  86 CALM      30.37R                     .
+ 9AM EDT AUG 25 2013 PTSUNNY   64  58  80 S3        30.38R                     .
+10AM EDT AUG 25 2013 MOSUNNY   69  60  73 CALM      30.37F                     .
+11AM EDT AUG 25 2013 MOSUNNY   73  59  61 S5        30.37S                     .
+12PM EDT AUG 25 2013 MOSUNNY   78  56  46 W8        30.37S                     .
+ 1PM EDT AUG 25 2013 MOSUNNY   78  55  44 W5        30.35F                     .
+ 2PM EDT AUG 25 2013 MOSUNNY   82  56  40 W7        30.34F                     .
+ 3PM EDT AUG 25 2013 MOSUNNY   82  56  40 SW7       30.33F                     .
+ 4PM EDT AUG 25 2013 MOSUNNY   81  57  43 S5        30.31F                     .
+ 5PM EDT AUG 25 2013 MOSUNNY   81  57  43 SW12      30.29F                     .
+ 6PM EDT AUG 25 2013 MOSUNNY   80  57  45 SW10      30.27F                     .
+ 7PM EDT AUG 25 2013 MOSUNNY   79  57  46 SW10      30.26F                     .
+ 8PM EDT AUG 25 2013 MOCLDY    76  59  55 SW3       30.27R                     .
+ 9PM EDT AUG 25 2013 MOCLDY    74  59  59 SW5       30.26F                     .
+10PM EDT AUG 25 2013 MOCLDY    71  59  65 SW5       30.28R                     .
+11PM EDT AUG 25 2013 MOCLDY    71  58  63 SW7       30.28S                     .
+12AM EDT AUG 26 2013 MOCLDY    70  58  65 SW5       30.28S                     .
+ 1AM EDT AUG 26 2013 MOCLDY    68  57  68 SW3       30.27F                     .
+ 2AM EDT AUG 26 2013 MOCLDY    66  57  72 SW5       30.25F                     .
+ 3AM EDT AUG 26 2013 MOCLDY    65  57  75 SW3       30.24F                     .
+ 4AM EDT AUG 26 2013 PTCLDY    64  57  78 SW3       30.23F                     .
+ 5AM EDT AUG 26 2013 PTCLDY    64  57  78 SW5       30.22F                     .
+ 6AM EDT AUG 26 2013 PTCLDY    64  56  75 SW3       30.22S                     .
+ 7AM EDT AUG 26 2013 PTCLDY    63  56  78 CALM      30.23R                     .
+ 8AM EDT AUG 26 2013 MOSUNNY   66  56  70 W5        30.25R                     .
+ 9AM EDT AUG 26 2013 MOSUNNY   69  56  62 SW9       30.24F                     .
+10AM EDT AUG 26 2013 PTSUNNY   74  58  57 SW5       30.24S                     .
+11AM EDT AUG 26 2013 PTSUNNY   77  59  53 W6        30.23F                     .
+12PM EDT AUG 26 2013 PTSUNNY   79  59  50 W7        30.23S                     .
+ 1PM EDT AUG 26 2013 MOSUNNY   82  60  47 W9        30.20F                     .
+ 2PM EDT AUG 26 2013 MOSUNNY   83  58  42 W9        30.16F                     .
+ 3PM EDT AUG 26 2013 PTSUNNY   84  60  44 SW9       30.14F                     .
+ 4PM EDT AUG 26 2013 PTSUNNY   83  59  44 SW14      30.11F                     .
+ 5PM EDT AUG 26 2013 CLOUDY    83  59  44 SW13G22   30.08F                     .
+ 6PM EDT AUG 26 2013 PTSUNNY   82  60  47 SW13G18   30.09R                     .
+ 7PM EDT AUG 26 2013 PTSUNNY   81  62  52 W12G20    30.06F                     .
+ 8PM EDT AUG 26 2013 CLOUDY    79  63  57 SW7       30.07R                     .
+ 9PM EDT AUG 26 2013 MOCLDY    76  64  66 W3        30.09R                     .
+10PM EDT AUG 26 2013 CLOUDY    75  67  76 S5        30.08F                     .
+11PM EDT AUG 26 2013 CLOUDY    74  65  73 SW3       30.07F                     .
+12AM EDT AUG 27 2013 LGT RAIN  72  67  84 W5        30.06F                     .
+ 1AM EDT AUG 27 2013 CLOUDY    72  67  84 SW7       30.04F                     .
+ 2AM EDT AUG 27 2013 CLOUDY    73  66  78 W9        30.03F                     .
+ 3AM EDT AUG 27 2013 CLOUDY    72  67  84 W5        30.03S                     .
+ 4AM EDT AUG 27 2013 CLOUDY    72  67  84 W5        30.02F                     .
+ 5AM EDT AUG 27 2013 CLOUDY    72  66  81 W6        30.02S                     .
+ 6AM EDT AUG 27 2013 MOCLDY    71  67  87 W5        30.02S                     .
+ 7AM EDT AUG 27 2013 CLOUDY    71  67  87 CALM      30.02S                     .
+ 8AM EDT AUG 27 2013 CLOUDY    72  67  84 W5        30.03R                     .
+ 9AM EDT AUG 27 2013 CLOUDY    74  67  78 W5        30.03S                     .
+10AM EDT AUG 27 2013 CLOUDY    76  67  73 W9        30.02F                     .
+11AM EDT AUG 27 2013 CLOUDY    78  68  71 W6        30.04R                     .
+12PM EDT AUG 27 2013 LGT RAIN  75  69  81 W9        30.05R                     .
+ 1PM EDT AUG 27 2013 CLOUDY    77  68  73 NW16G24   30.04F                     .
+ 2PM EDT AUG 27 2013 LGT RAIN  76  67  73 SW7       29.99F                     .
+ 3PM EDT AUG 27 2013 CLOUDY    77  67  71 SW8       29.99S                     .
+ 4PM EDT AUG 27 2013 CLOUDY    80  67  64 SW7       29.98F                     .
+ 5PM EDT AUG 27 2013 PTSUNNY   81  67  62 SW10      29.97F                     .
+ 6PM EDT AUG 27 2013 CLOUDY    78  68  71 SW10      29.98R                     .
+ 7PM EDT AUG 27 2013 CLOUDY    76  68  76 SW7       29.98S                     .
+ 8PM EDT AUG 27 2013 MOCLDY    75  68  78 SW3       29.99R                     .
+ 9PM EDT AUG 27 2013 CLOUDY    74  68  81 CALM      29.98F                     .
+10PM EDT AUG 27 2013 CLOUDY    73  68  84 S5        29.98S                     .
+11PM EDT AUG 27 2013 CLOUDY    73  69  87 S3        29.98S                     .
+12AM EDT AUG 28 2013 CLOUDY    73  69  87 S3        29.98S                     .
+ 1AM EDT AUG 28 2013 LGT RAIN  72  70  93 S3        29.96F FOG                 .
+ 2AM EDT AUG 28 2013 LGT RAIN  72  70  93 S3        29.93F FOG                 .
+ 3AM EDT AUG 28 2013 LGT RAIN  74  71  91 SW6       29.91F FOG                 .
+ 4AM EDT AUG 28 2013 RAIN      72  71  97 E7        29.91F FOG                 .
+ 5AM EDT AUG 28 2013 CLOUDY    73  70  90 N5        29.92R FOG                 .
+ 6AM EDT AUG 28 2013 CLOUDY    72  70  93 CALM      29.92S FOG                 .
+ 7AM EDT AUG 28 2013 LGT RAIN  72  70  93 S5        29.92S FOG                 .
+ 8AM EDT AUG 28 2013 FOG       72  72 100 SE6       29.91F VSB 1               .
+ 9AM EDT AUG 28 2013 FOG       73  71  93 S5        29.90F VSB 1               .
+10AM EDT AUG 28 2013 LGT RAIN  73  71  93 S7        29.90S VSB 1               .
+11AM EDT AUG 28 2013 CLOUDY    75  72  88 SW7       29.88S FOG                 .
+12PM EDT AUG 28 2013 LGT RAIN  76  71  85 SW9       29.87F                     .
+ 1PM EDT AUG 28 2013 DRIZZLE   76  71  85 SW7       29.87S                     .
+ 2PM EDT AUG 28 2013 LGT RAIN  78  72  81 W10       29.87S                     .
+ 3PM EDT AUG 28 2013 PTSUNNY   80  71  74 W10G21    29.86F                     .
+ 4PM EDT AUG 28 2013 CLOUDY    80  70  71 NW14      29.86S                     .
+ 5PM EDT AUG 28 2013 PTSUNNY   83  70  64 NW12G18   29.85F HX  87              .
+ 6PM EDT AUG 28 2013 LGT RAIN  79  71  76 N9        29.85S                     .
+ 7PM EDT AUG 28 2013 PTSUNNY   80  70  71 N13G18    29.86R                     .
+ 8PM EDT AUG 28 2013 CLOUDY    76  70  82 N10       29.89R                     .
+ 9PM EDT AUG 28 2013 PTCLDY    73  69  87 N8        29.92R                     .
+10PM EDT AUG 28 2013 CLOUDY    73  68  84 N5        29.94R                     .
+11PM EDT AUG 28 2013 CLOUDY    73  69  87 N7        29.95R                     .
+12AM EDT AUG 29 2013 MOCLDY    73  69  87 N9        29.95S                     .
+ 1AM EDT AUG 29 2013 PTCLDY    72  69  90 N8        29.95S                     .
+ 2AM EDT AUG 29 2013 MOCLDY    71  69  93 N9        29.95S                     .
+ 3AM EDT AUG 29 2013 CLOUDY    71  68  90 N8        29.96R                     .
+ 4AM EDT AUG 29 2013 CLOUDY    71  68  90 N9        29.96S                     .
+ 5AM EDT AUG 29 2013 CLOUDY    71  68  90 N6        29.98R                     .
+ 6AM EDT AUG 29 2013 CLOUDY    71  67  87 N7        29.99R                     .
+ 7AM EDT AUG 29 2013 PTCLDY    70  67  90 NE6       30.01R                     .
+ 8AM EDT AUG 29 2013 MOSUNNY   70  67  90 NE5       30.03R                     .
+ 9AM EDT AUG 29 2013 CLOUDY    69  66  90 E7        30.04S                     .
+10AM EDT AUG 29 2013 PTSUNNY   72  66  81 NE6       30.06R                     .
+11AM EDT AUG 29 2013 PTSUNNY   74  66  76 E3        30.06S                     .
+12PM EDT AUG 29 2013 PTSUNNY   77  65  66 E6        30.07R                     .
+ 1PM EDT AUG 29 2013 MOSUNNY   81  65  58 VRB7      30.06F                     .
+ 2PM EDT AUG 29 2013 MOSUNNY   81  64  56 VRB3      30.06S                     .
+ 3PM EDT AUG 29 2013 MOSUNNY   84  64  50 NE5       30.04F HX  85              .
+ 4PM EDT AUG 29 2013 MOSUNNY   83  63  50 NE6       30.04S                     .
+ 5PM EDT AUG 29 2013 MOSUNNY   84  62  47 CALM      30.03F HX  85              .
+ 6PM EDT AUG 29 2013 MOSUNNY   85  62  46 NE5       30.04R HX  85              .
+ 7PM EDT AUG 29 2013 PTCLDY    83  61  47 NE5       30.03F                     .
+ 8PM EDT AUG 29 2013 PTCLDY    81  63  54 NE3       30.04R                     .
+ 9PM EDT AUG 29 2013 PTCLDY    79  63  57 CALM      30.04S                     .
+10PM EDT AUG 29 2013 CLEAR     76  64  66 CALM      30.05R                     .
+11PM EDT AUG 29 2013 CLEAR     72  64  76 CALM      30.05S                     .
+12AM EDT AUG 30 2013 CLEAR     70  64  81 CALM      30.04F                     .
+ 1AM EDT AUG 30 2013 CLEAR     70  65  84 CALM      30.03F                     .
+ 2AM EDT AUG 30 2013 FAIR      67  64  90 CALM      30.03S                     .
+ 3AM EDT AUG 30 2013 CLEAR     67  64  90 CALM      30.02F                     .
+ 4AM EDT AUG 30 2013 PTCLDY    67  63  87 CALM      30.02S                     .
+ 5AM EDT AUG 30 2013 PTCLDY    66  63  90 CALM      30.02S                     .
+ 6AM EDT AUG 30 2013 PTCLDY    65  62  90 CALM      30.02S                     .
+ 7AM EDT AUG 30 2013 MOCLDY    65  62  90 CALM      30.02S                     .
+ 8AM EDT AUG 30 2013 PTSUNNY   66  63  90 CALM      30.03R FOG                 .
+ 9AM EDT AUG 30 2013 PTSUNNY   70  65  84 CALM      30.03S                     .
+10AM EDT AUG 30 2013 MOSUNNY   75  67  76 VRB5      30.02F                     .
+11AM EDT AUG 30 2013 PTSUNNY   78  67  68 SW8       30.02S                     .
+12PM EDT AUG 30 2013 MOSUNNY   82  68  62 SW8       30.00F HX  85              .
+ 1PM EDT AUG 30 2013 PTSUNNY   83  67  58 SW7       29.98F HX  85              .
+ 2PM EDT AUG 30 2013 MOSUNNY   85  66  53 W6        29.96F HX  87              .
+ 3PM EDT AUG 30 2013 PTSUNNY   85  66  53 SW5       29.95F HX  87              .
+ 4PM EDT AUG 30 2013 MOSUNNY   86  66  51 SW10      29.93F HX  88              .
+ 5PM EDT AUG 30 2013 MOSUNNY   84  66  54 SW7       29.92F HX  86              .
+ 6PM EDT AUG 30 2013 MOSUNNY   85  66  53 SW8       29.89F HX  87              .
+ 7PM EDT AUG 30 2013 PTCLDY    84  66  54 SW8       29.87F HX  86              .
+ 8PM EDT AUG 30 2013 PTCLDY    81  67  62 CALM      29.88R                     .
+ 9PM EDT AUG 30 2013 PTCLDY    78  68  71 SW3       29.90R                     .
+10PM EDT AUG 30 2013 CLEAR     78  67  68 SW6       29.89F                     .
+11PM EDT AUG 30 2013 CLEAR     77  67  71 SW5       29.89S                     .
+12AM EDT AUG 31 2013 PTCLDY    76  67  73 SW6       29.87F                     .
+ 1AM EDT AUG 31 2013 MOCLDY    75  67  76 SW6       29.88R                     .
+ 2AM EDT AUG 31 2013 MOCLDY    74  67  78 SW8       29.86F                     .
+ 3AM EDT AUG 31 2013 MOCLDY    74  67  78 SW8       29.86S                     .
+ 4AM EDT AUG 31 2013 CLOUDY    73  67  81 SW8       29.84F                     .
+ 5AM EDT AUG 31 2013 CLOUDY    72  67  84 S6        29.84S                     .
+ 6AM EDT AUG 31 2013 CLOUDY    71  67  87 S5        29.83F                     .
+ 7AM EDT AUG 31 2013 CLOUDY    71  67  87 S3        29.85R                     .
+ 8AM EDT AUG 31 2013 LGT RAIN  73  67  81 CALM      29.86R                     .
+ 9AM EDT AUG 31 2013 CLOUDY    72  67  84 S3        29.85F                     .
+10AM EDT AUG 31 2013 CLOUDY    74  67  78 SW3       29.87R                     .
+11AM EDT AUG 31 2013 PTSUNNY   75  67  76 S7        29.88R                     .
+12PM EDT AUG 31 2013 MOSUNNY   78  67  68 SW7       29.88S                     .
+ 1PM EDT AUG 31 2013 PTSUNNY   83  65  54 SW7       29.86F HX  85              .
+ 2PM EDT AUG 31 2013 MOSUNNY   82  65  56 S8        29.85F                     .
+ 3PM EDT AUG 31 2013 MOSUNNY   83  64  52 SW9       29.84F                     .
+ 4PM EDT AUG 31 2013 MOSUNNY   85  65  51 W8        29.83F HX  86              .
+ 5PM EDT AUG 31 2013 PTSUNNY   84  65  52 SW8       29.82F HX  86              .
+ 6PM EDT AUG 31 2013 MOSUNNY   84  68  58 VRB5      29.81F HX  87              .
+ 7PM EDT AUG 31 2013 PTCLDY    82  68  62 SW5       29.81S HX  85              .

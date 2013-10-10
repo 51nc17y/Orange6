@@ -1,0 +1,765 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT JUL 31 2012 MOCLDY    83  64  52 SW3       29.87R                   AUG
+ 9PM EDT JUL 31 2012 MOCLDY    78  66  66 S6        29.89R                   AUG
+10PM EDT JUL 31 2012 MOCLDY    76  66  71 SE5       29.90R                   AUG
+11PM EDT JUL 31 2012 MOCLDY    75  65  70 SW5       29.91R THUNDER           AUG
+12AM EDT AUG 01 2012 CLOUDY    70  63  78 S3        29.91S                   AUG
+ 1AM EDT AUG 01 2012 CLOUDY    70  65  84 CALM      29.91S                   AUG
+ 2AM EDT AUG 01 2012 MOCLDY    70  66  87 CALM      29.90F                   AUG
+ 3AM EDT AUG 01 2012 MOCLDY    70  66  87 CALM      29.89F                     .
+ 4AM EDT AUG 01 2012 PTCLDY    69  66  90 CALM      29.89S                     .
+ 5AM EDT AUG 01 2012 PTCLDY    68  66  93 NE3       29.89S FOG                 .
+ 6AM EDT AUG 01 2012 PTCLDY    67  65  93 CALM      29.90R FOG                 .
+ 7AM EDT AUG 01 2012 PTCLDY    67  65  93 CALM      29.91R FOG                 .
+ 8AM EDT AUG 01 2012 MOSUNNY   69  66  90 CALM      29.91S FOG                 .
+ 9AM EDT AUG 01 2012 MOSUNNY   71  67  87 CALM      29.92R FOG                 .
+10AM EDT AUG 01 2012 PTSUNNY   74  68  81 CALM      29.93R                     .
+11AM EDT AUG 01 2012 MOSUNNY   77  66  68 E5        29.93S                     .
+12PM EDT AUG 01 2012 PTSUNNY   79  64  60 CALM      29.93S                     .
+ 1PM EDT AUG 01 2012 PTSUNNY   81  64  56 NE5       29.92F                     .
+ 2PM EDT AUG 01 2012 PTSUNNY   81  65  58 NW7       29.91F                     .
+ 3PM EDT AUG 01 2012 PTSUNNY   84  64  50 N6        29.89F HX  85              .
+ 4PM EDT AUG 01 2012 MOSUNNY   83  61  47 N12       29.88F                     .
+ 5PM EDT AUG 01 2012 MOSUNNY   85  61  44 NW12G17   29.88S HX  85              .
+ 6PM EDT AUG 01 2012 MOSUNNY   84  60  44 NW8       29.87F                     .
+ 7PM EDT AUG 01 2012 MOSUNNY   83  59  44 N10       29.87S                     .
+ 8PM EDT AUG 01 2012 PTCLDY    82  57  42 NE8       29.88R                     .
+ 9PM EDT AUG 01 2012 PTCLDY    79  58  48 NE3       29.89R                     .
+10PM EDT AUG 01 2012 PTCLDY    76  59  55 CALM      29.91R                     .
+11PM EDT AUG 01 2012 CLEAR     74  60  61 N3        29.91S                     .
+12AM EDT AUG 02 2012 PTCLDY    71  60  68 CALM      29.92R                     .
+ 1AM EDT AUG 02 2012 CLEAR     72  60  66 CALM      29.92S                     .
+ 2AM EDT AUG 02 2012 CLEAR     67  61  81 CALM      29.90F                     .
+ 3AM EDT AUG 02 2012 CLEAR     67  60  78 NW5       29.91R                     .
+ 4AM EDT AUG 02 2012 PTCLDY    65  60  84 CALM      29.91S                     .
+ 5AM EDT AUG 02 2012 PTCLDY    64  60  87 CALM      29.92R                     .
+ 6AM EDT AUG 02 2012 PTCLDY    63  59  87 CALM      29.92S                     .
+ 7AM EDT AUG 02 2012 PTCLDY    62  58  86 CALM      29.93R                     .
+ 8AM EDT AUG 02 2012 MOSUNNY   66  60  81 CALM      29.93S                     .
+ 9AM EDT AUG 02 2012 MOSUNNY   72  61  68 CALM      29.94R                     .
+10AM EDT AUG 02 2012 PTSUNNY   77  59  53 CALM      29.94S                     .
+11AM EDT AUG 02 2012 MOSUNNY   79  58  48 SW5       29.94S                     .
+12PM EDT AUG 02 2012 MOSUNNY   81  60  48 VRB6      29.95R                     .
+ 1PM EDT AUG 02 2012 PTSUNNY   82  60  47 NW12      29.96R                     .
+ 2PM EDT AUG 02 2012 MOSUNNY   83  60  45 VRB6      29.96S                     .
+ 3PM EDT AUG 02 2012 MOSUNNY   84  56  38 VRB3      29.94F                     .
+ 4PM EDT AUG 02 2012 MOSUNNY   85  55  35 SW6       29.93F                     .
+ 5PM EDT AUG 02 2012 MOSUNNY   85  56  37 W5        29.92F                     .
+ 6PM EDT AUG 02 2012 MOSUNNY   86  56  35 NW8       29.92S HX  85              .
+ 7PM EDT AUG 02 2012 MOSUNNY   84  57  39 W5        29.92S                     .
+ 8PM EDT AUG 02 2012 PTCLDY    82  56  40 W3        29.93R                     .
+ 9PM EDT AUG 02 2012 PTCLDY    79  62  56 CALM      29.93S                     .
+10PM EDT AUG 02 2012 MOCLDY    73  61  65 CALM      29.95R                     .
+11PM EDT AUG 02 2012 MOCLDY    74  61  63 CALM      29.96R                     .
+12AM EDT AUG 03 2012 MOCLDY    73  63  70 CALM      29.96S                     .
+ 1AM EDT AUG 03 2012 MOCLDY    72  63  73 S3        29.94F                     .
+ 2AM EDT AUG 03 2012 MOCLDY    71  63  75 CALM      29.94S                     .
+ 3AM EDT AUG 03 2012 MOCLDY    70  62  76 CALM      29.95R                     .
+ 4AM EDT AUG 03 2012 CLOUDY    67  62  84 CALM      29.96R                     .
+ 5AM EDT AUG 03 2012 MOCLDY    67  62  84 CALM      29.97R                     .
+ 6AM EDT AUG 03 2012 MOCLDY    65  62  90 CALM      29.97S                     .
+ 7AM EDT AUG 03 2012 CLOUDY    68  63  84 CALM      29.98R                     .
+ 8AM EDT AUG 03 2012 CLOUDY    69  64  84 CALM      30.00R                     .
+ 9AM EDT AUG 03 2012 CLOUDY    72  66  81 CALM      30.01R                     .
+10AM EDT AUG 03 2012 PTSUNNY   77  65  66 CALM      30.02R                     .
+11AM EDT AUG 03 2012 PTSUNNY   80  67  64 CALM      30.02S                     .
+12PM EDT AUG 03 2012 MOSUNNY   84  65  52 S6        30.02S HX  86              .
+ 1PM EDT AUG 03 2012 PTSUNNY   86  64  47 VRB5      30.02S HX  87              .
+ 2PM EDT AUG 03 2012 PTSUNNY   88  64  44 E7        30.02S HX  89              .
+ 3PM EDT AUG 03 2012 PTSUNNY   89  64  43 E7        30.00F HX  90              .
+ 4PM EDT AUG 03 2012 PTSUNNY   89  62  40 SE7       29.99F HX  89              .
+ 5PM EDT AUG 03 2012 PTSUNNY   90  61  37 S6        29.98F HX  90              .
+ 6PM EDT AUG 03 2012 MOSUNNY   89  61  38 E7        29.99R HX  89              .
+ 7PM EDT AUG 03 2012 MOSUNNY   88  62  41 S5        29.99S HX  88              .
+ 8PM EDT AUG 03 2012 PTCLDY    86  65  49 SE6       30.00R HX  88              .
+ 9PM EDT AUG 03 2012 PTCLDY    84  67  56 SE3       30.01R HX  86              .
+10PM EDT AUG 03 2012 PTCLDY    82  67  60 SE5       30.03R                     .
+11PM EDT AUG 03 2012 CLEAR     80  68  66 CALM      30.04R                     .
+12AM EDT AUG 04 2012 CLEAR     79  68  69 SE5       30.04S                     .
+ 1AM EDT AUG 04 2012 CLEAR     77  68  73 E6        30.04S                     .
+ 2AM EDT AUG 04 2012 CLEAR     76  68  76 SE5       30.03F                     .
+ 3AM EDT AUG 04 2012 CLEAR     75  67  76 S3        30.04R                     .
+ 4AM EDT AUG 04 2012 CLEAR     74  67  78 S3        30.06R                     .
+ 5AM EDT AUG 04 2012 CLEAR     73  66  78 S3        30.07R                     .
+ 6AM EDT AUG 04 2012 PTCLDY    71  66  84 S5        30.07S                     .
+ 7AM EDT AUG 04 2012 PTCLDY    71  66  84 SE3       30.09R                     .
+ 8AM EDT AUG 04 2012 MOSUNNY   73  66  78 SE3       30.09S                     .
+ 9AM EDT AUG 04 2012 MOSUNNY   76  67  73 SE3       30.10R                     .
+10AM EDT AUG 04 2012 PTSUNNY   80  69  69 S5        30.10S                     .
+11AM EDT AUG 04 2012 MOSUNNY   82  69  64 SW8       30.09F HX  85              .
+12PM EDT AUG 04 2012 PTSUNNY   85  69  58 SW8       30.09S HX  89              .
+ 1PM EDT AUG 04 2012 PTSUNNY   87  68  52 S8        30.08F HX  90              .
+ 2PM EDT AUG 04 2012 PTSUNNY   87  67  51 S9        30.07F HX  90              .
+ 3PM EDT AUG 04 2012 PTSUNNY   87  67  51 S9        30.06F HX  90              .
+ 4PM EDT AUG 04 2012 MOSUNNY   88  68  51 S8        30.04F HX  91              .
+ 5PM EDT AUG 04 2012 MOSUNNY   88  66  48 S13G20    30.03F HX  90              .
+ 6PM EDT AUG 04 2012 PTSUNNY   87  68  52 S9        30.02F HX  90              .
+ 7PM EDT AUG 04 2012 MOSUNNY   88  67  49 S8G17     30.02S HX  91              .
+ 8PM EDT AUG 04 2012 MOCLDY    87  67  51 S8        30.04R HX  90              .
+ 9PM EDT AUG 04 2012 PTCLDY    84  67  56 S6        30.06R HX  86              .
+10PM EDT AUG 04 2012 MOCLDY    82  68  62 S6        30.05F HX  85              .
+11PM EDT AUG 04 2012 CLOUDY    81  68  64 S6        30.07R                     .
+12AM EDT AUG 05 2012 CLOUDY    80  68  66 S6        30.06F                     .
+ 1AM EDT AUG 05 2012 CLOUDY    79  68  69 S6        30.06S                     .
+ 2AM EDT AUG 05 2012 CLOUDY    79  68  69 S7        30.05F                     .
+ 3AM EDT AUG 05 2012 CLOUDY    79  67  66 S8        30.04F                     .
+ 4AM EDT AUG 05 2012 LGT RAIN  76  69  79 SW10      30.04S                     .
+ 5AM EDT AUG 05 2012 CLOUDY    75  69  81 SW3       30.04S                     .
+ 6AM EDT AUG 05 2012 MOCLDY    76  69  79 S6        30.04S                     .
+ 7AM EDT AUG 05 2012 MOCLDY    76  68  76 S6        30.04S                     .
+ 8AM EDT AUG 05 2012 CLOUDY    77  68  73 SW9       30.04S                     .
+ 9AM EDT AUG 05 2012 TSTM      77  69  76 SW8       30.06R                     .
+10AM EDT AUG 05 2012 TSTM      74  70  87 SW10      30.07S FOG                 .
+11AM EDT AUG 05 2012 LGT RAIN  73  70  90 SW10      30.06F FOG                 .
+12PM EDT AUG 05 2012 RAIN      73  70  90 SW15G22   30.06S FOG                 .
+ 1PM EDT AUG 05 2012 LGT RAIN  73  70  90 S9G17     30.05F                     .
+ 2PM EDT AUG 05 2012 CLOUDY    77  72  83 S13G20    30.04F                     .
+ 3PM EDT AUG 05 2012 CLOUDY    78  71  79 SW10G22   30.05R                     .
+ 4PM EDT AUG 05 2012 CLOUDY    78  72  81 SW9       30.02F                     .
+ 5PM EDT AUG 05 2012 TSTM      75  72  88 CALM      30.01F FOG                 .
+ 6PM EDT AUG 05 2012 CLOUDY    75  71  87 SW5       30.02R                     .
+ 7PM EDT AUG 05 2012 CLOUDY    75  72  90 SW6       30.03R                     .
+ 8PM EDT AUG 05 2012 CLOUDY    75  72  90 SW7       30.04R                     .
+ 9PM EDT AUG 05 2012 CLOUDY    74  71  91 SW6       30.05R                     .
+10PM EDT AUG 05 2012 CLOUDY    73  70  90 SW8       30.07R                     .
+11PM EDT AUG 05 2012 CLOUDY    72  70  93 W5        30.09R                     .
+12AM EDT AUG 06 2012 CLOUDY    72  70  93 W5        30.09S                     .
+ 1AM EDT AUG 06 2012 MOCLDY    72  70  93 W7        30.10R                     .
+ 2AM EDT AUG 06 2012 CLOUDY    71  69  93 W5        30.09F                     .
+ 3AM EDT AUG 06 2012 MOCLDY    70  68  93 W3        30.09S FOG                 .
+ 4AM EDT AUG 06 2012 CLOUDY    69  68  96 CALM      30.09S FOG                 .
+ 5AM EDT AUG 06 2012 MOCLDY    68  66  93 W5        30.09S FOG                 .
+ 6AM EDT AUG 06 2012 PTCLDY    67  64  90 NW6       30.10R                     .
+ 7AM EDT AUG 06 2012 PTCLDY    67  63  87 N6        30.12R                     .
+ 8AM EDT AUG 06 2012 MOSUNNY   68  64  87 N6        30.14R                     .
+ 9AM EDT AUG 06 2012 MOSUNNY   70  62  76 NE7       30.15R                     .
+10AM EDT AUG 06 2012 MOSUNNY   72  60  66 NE5       30.16R                     .
+11AM EDT AUG 06 2012 MOSUNNY   75  60  59 NE6       30.16S                     .
+12PM EDT AUG 06 2012 MOSUNNY   77  58  51 CALM      30.16S                     .
+ 1PM EDT AUG 06 2012 MOSUNNY   77  58  51 CALM      30.15F                     .
+ 2PM EDT AUG 06 2012 MOSUNNY   79  58  48 W7        30.13F                     .
+ 3PM EDT AUG 06 2012 MOSUNNY   80  58  46 NW7       30.12F                     .
+ 4PM EDT AUG 06 2012 MOSUNNY   81  56  42 VRB3      30.09F                     .
+ 5PM EDT AUG 06 2012 PTSUNNY   80  54  40 W6        30.08F                     .
+ 6PM EDT AUG 06 2012 PTSUNNY   81  56  42 W5        30.07F                     .
+ 7PM EDT AUG 06 2012 PTSUNNY   80  55  42 CALM      30.05F                     .
+ 8PM EDT AUG 06 2012 MOCLDY    78  56  46 W3        30.06R                     .
+ 9PM EDT AUG 06 2012 PTCLDY    77  55  46 NE3       30.06S                     .
+10PM EDT AUG 06 2012 PTCLDY    74  55  51 NE5       30.06S                     .
+11PM EDT AUG 06 2012 MOCLDY    71  59  65 CALM      30.06S                     .
+12AM EDT AUG 07 2012 MOCLDY    68  59  73 CALM      30.06S                     .
+ 1AM EDT AUG 07 2012 PTCLDY    65  59  81 CALM      30.06S                     .
+ 2AM EDT AUG 07 2012 PTCLDY    65  59  81 CALM      30.05F                     .
+ 3AM EDT AUG 07 2012 PTCLDY    64  58  80 CALM      30.04F                     .
+ 4AM EDT AUG 07 2012 PTCLDY    62  58  86 CALM      30.03F                     .
+ 5AM EDT AUG 07 2012 PTCLDY    63  58  83 CALM      30.03S                     .
+ 6AM EDT AUG 07 2012 PTCLDY    61  57  87 CALM      30.03S                     .
+ 7AM EDT AUG 07 2012 PTCLDY    60  57  89 CALM      30.04R                     .
+ 8AM EDT AUG 07 2012 MOSUNNY   63  59  87 CALM      30.04S                     .
+ 9AM EDT AUG 07 2012 MOSUNNY   68  62  81 CALM      30.05R                     .
+10AM EDT AUG 07 2012 MOSUNNY   73  62  68 CALM      30.04F                     .
+11AM EDT AUG 07 2012 MOSUNNY   78  61  55 CALM      30.04S                     .
+12PM EDT AUG 07 2012 MOSUNNY   80  58  46 VRB3      30.04S                     .
+ 1PM EDT AUG 07 2012 MOSUNNY   81  58  45 NW6       30.03F                     .
+ 2PM EDT AUG 07 2012 MOSUNNY   82  58  43 W6        30.02F                     .
+ 3PM EDT AUG 07 2012 MOSUNNY   83  58  42 VRB7      30.00F                     .
+ 4PM EDT AUG 07 2012 MOSUNNY   84  58  40 SW6       29.99F                     .
+ 5PM EDT AUG 07 2012 MOSUNNY   84  56  38 W8        29.98F                     .
+ 6PM EDT AUG 07 2012 MOSUNNY   84  57  39 W7        29.98S                     .
+ 7PM EDT AUG 07 2012 MOSUNNY   83  55  38 W5        29.97F                     .
+ 8PM EDT AUG 07 2012 PTCLDY    81  57  43 SW3       29.97S                     .
+ 9PM EDT AUG 07 2012 PTCLDY    78  57  48 SW3       29.98R                     .
+10PM EDT AUG 07 2012 CLEAR     75  59  57 SW3       30.00R                     .
+11PM EDT AUG 07 2012 CLEAR     73  60  63 CALM      30.00S                     .
+12AM EDT AUG 08 2012 CLEAR     68  59  73 NW5       30.00S                     .
+ 1AM EDT AUG 08 2012 CLEAR     69  60  73 CALM      30.01R                     .
+ 2AM EDT AUG 08 2012 CLEAR     67  59  75 CALM      29.99F                     .
+ 3AM EDT AUG 08 2012 CLEAR     67  59  75 CALM      29.98F                     .
+ 4AM EDT AUG 08 2012 NOT AVBL                                                  .
+ 5AM EDT AUG 08 2012 CLEAR     65  59  81 CALM      29.98                      .
+ 6AM EDT AUG 08 2012 NOT AVBL                                                  .
+ 7AM EDT AUG 08 2012 PTCLDY    62  58  86 CALM      30.00                      .
+ 8AM EDT AUG 08 2012 MOSUNNY   65  59  81 CALM      30.01R                     .
+ 9AM EDT AUG 08 2012 MOSUNNY   70  59  68 SW5       30.02R                     .
+10AM EDT AUG 08 2012 MOSUNNY   75  61  61 CALM      30.02S                     .
+11AM EDT AUG 08 2012 MOSUNNY   79  59  50 W3        30.03R                     .
+12PM EDT AUG 08 2012 MOSUNNY   81  56  42 SW6       30.02F                     .
+ 1PM EDT AUG 08 2012 FAIR      83  58  42 CALM      30.01F                     .
+ 2PM EDT AUG 08 2012 MOSUNNY   85  58  39 W5        30.00F                     .
+ 3PM EDT AUG 08 2012 MOSUNNY   85  60  42 W7        29.99F HX  85              .
+ 4PM EDT AUG 08 2012 MOSUNNY   86  61  42 SW7       29.97F HX  86              .
+ 5PM EDT AUG 08 2012 MOSUNNY   87  62  43 VRB7      29.95F HX  87              .
+ 6PM EDT AUG 08 2012 PTSUNNY   87  62  43 W5        29.94F HX  87              .
+ 7PM EDT AUG 08 2012 PTSUNNY   86  64  47 S6        29.93F HX  87              .
+ 8PM EDT AUG 08 2012 MOCLDY    84  64  50 S5        29.93S HX  85              .
+ 9PM EDT AUG 08 2012 TSTM      76  62  62 N18G29    29.97R                     .
+10PM EDT AUG 08 2012 TSTM      71  66  84 CALM      29.98R                     .
+11PM EDT AUG 08 2012 CLOUDY    70  67  90 S7        29.98R                     .
+12AM EDT AUG 09 2012 CLOUDY    70  67  90 S3        29.97F                     .
+ 1AM EDT AUG 09 2012 MOCLDY    70  67  90 CALM      29.98R                     .
+ 2AM EDT AUG 09 2012 NOT AVBL                                                  .
+ 3AM EDT AUG 09 2012 PTCLDY    69  65  86 CALM      29.95                      .
+ 4AM EDT AUG 09 2012 NOT AVBL                                                  .
+ 5AM EDT AUG 09 2012 PTCLDY    68  65  90 CALM      29.93  FOG                 .
+ 6AM EDT AUG 09 2012 MOCLDY    67  64  90 CALM      29.94R FOG                 .
+ 7AM EDT AUG 09 2012 CLOUDY    66  63  90 S3        29.96R FOG                 .
+ 8AM EDT AUG 09 2012 CLOUDY    67  63  87 CALM      29.95F                     .
+ 9AM EDT AUG 09 2012 PTSUNNY   71  64  78 S5        29.95S                     .
+10AM EDT AUG 09 2012 PTSUNNY   73  66  78 CALM      29.95S                     .
+11AM EDT AUG 09 2012 PTSUNNY   76  68  76 SW5       29.95S                     .
+12PM EDT AUG 09 2012 CLOUDY    75  70  84 W8        29.96R                     .
+ 1PM EDT AUG 09 2012 PTSUNNY   81  66  60 W8        29.93F                     .
+ 2PM EDT AUG 09 2012 PTSUNNY   81  65  58 SW5       29.91F                     .
+ 3PM EDT AUG 09 2012 PTSUNNY   82  63  52 CALM      29.88F                     .
+ 4PM EDT AUG 09 2012 PTSUNNY   85  62  46 S7        29.86F HX  85              .
+ 5PM EDT AUG 09 2012 PTSUNNY   86  63  45 SW10      29.86S HX  87              .
+ 6PM EDT AUG 09 2012 PTSUNNY   84  65  52 S7        29.81F HX  86              .
+ 7PM EDT AUG 09 2012 CLOUDY    82  66  58 S6        29.83R                     .
+ 8PM EDT AUG 09 2012 CLOUDY    80  68  66 S3        29.82F                     .
+ 9PM EDT AUG 09 2012 TSTM      76  60  57 N6        29.84R                     .
+10PM EDT AUG 09 2012 TSTM      66  63  90 W7        29.87R                     .
+11PM EDT AUG 09 2012 LGT RAIN  66  64  93 SE5       29.88R                     .
+12AM EDT AUG 10 2012 LGT RAIN  65  64  97 SE3       29.83F FOG                 .
+ 1AM EDT AUG 10 2012 CLOUDY    66  63  90 SE12      29.82F                     .
+ 2AM EDT AUG 10 2012 CLOUDY    66  63  90 SE5       29.83R                     .
+ 3AM EDT AUG 10 2012 CLOUDY    66  62  87 CALM      29.82F                     .
+ 4AM EDT AUG 10 2012 LGT RAIN  66  63  90 E3        29.79F                     .
+ 5AM EDT AUG 10 2012 CLOUDY    65  64  97 CALM      29.77F FOG                 .
+ 6AM EDT AUG 10 2012 CLOUDY    65  63  93 SE3       29.77S FOG                 .
+ 7AM EDT AUG 10 2012 MOCLDY    65  63  93 SE3       29.77S FOG                 .
+ 8AM EDT AUG 10 2012 CLOUDY    66  63  88 SE3       29.77S                     .
+ 9AM EDT AUG 10 2012 CLOUDY    68  64  87 S3        29.77S                     .
+10AM EDT AUG 10 2012 CLOUDY    69  65  86 CALM      29.76F                     .
+11AM EDT AUG 10 2012 CLOUDY    70  65  84 SE8       29.72F                     .
+12PM EDT AUG 10 2012 CLOUDY    72  65  78 VRB7      29.74R                     .
+ 1PM EDT AUG 10 2012 PTSUNNY   75  64  68 S9        29.73S                     .
+ 2PM EDT AUG 10 2012 PTSUNNY   76  64  66 S12       29.72F                     .
+ 3PM EDT AUG 10 2012 PTSUNNY   79  63  57 SW16      29.71F                     .
+ 4PM EDT AUG 10 2012 PTSUNNY   78  63  59 SW10      29.70F                     .
+ 5PM EDT AUG 10 2012 LGT RAIN  77  62  59 SW12      29.71R                     .
+ 6PM EDT AUG 10 2012 PTSUNNY   72  63  73 SW9       29.72R                     .
+ 7PM EDT AUG 10 2012 MOSUNNY   73  62  68 SW8       29.73R                     .
+ 8PM EDT AUG 10 2012 MOCLDY    71  63  75 SW6       29.75R                     .
+ 9PM EDT AUG 10 2012 PTCLDY    70  62  76 SW5       29.76R                     .
+10PM EDT AUG 10 2012 PTCLDY    68  63  84 S5        29.78R                     .
+11PM EDT AUG 10 2012 PTCLDY    68  63  84 S6        29.78S                     .
+12AM EDT AUG 11 2012 NOT AVBL                                                  .
+ 1AM EDT AUG 11 2012 PTCLDY    65  60  84 SW5       29.79                      .
+ 2AM EDT AUG 11 2012 PTCLDY    64  60  87 SW5       29.80R                     .
+ 3AM EDT AUG 11 2012 PTCLDY    63  57  81 SW7       29.79F                     .
+ 4AM EDT AUG 11 2012 CLEAR     61  54  77 SW7       29.81R                     .
+ 5AM EDT AUG 11 2012 PTCLDY    59  53  80 SW6       29.82R                     .
+ 6AM EDT AUG 11 2012 MOCLDY    58  52  80 S7        29.84R                     .
+ 7AM EDT AUG 11 2012 CLOUDY    59  52  77 S7        29.85R                     .
+ 8AM EDT AUG 11 2012 CLOUDY    60  52  74 S9        29.86R                     .
+ 9AM EDT AUG 11 2012 CLOUDY    61  52  72 SW8G17    29.87R                     .
+10AM EDT AUG 11 2012 CLOUDY    61  53  75 SW15G22   29.88R                     .
+11AM EDT AUG 11 2012 CLOUDY    62  54  74 SW12      29.89R                     .
+12PM EDT AUG 11 2012 CLOUDY    63  54  72 SW10      29.90R                     .
+ 1PM EDT AUG 11 2012 CLOUDY    64  55  72 SW7       29.90S                     .
+ 2PM EDT AUG 11 2012 CLOUDY    66  55  67 S9        29.90S                     .
+ 3PM EDT AUG 11 2012 CLOUDY    66  56  70 SW7       29.91R                     .
+ 4PM EDT AUG 11 2012 CLOUDY    67  56  67 SW6G16    29.91S                     .
+ 5PM EDT AUG 11 2012 CLOUDY    67  56  67 SW7       29.92R                     .
+ 6PM EDT AUG 11 2012 CLOUDY    66  57  72 SW7       29.94R                     .
+ 7PM EDT AUG 11 2012 CLOUDY    67  57  70 S5        29.94S                     .
+ 8PM EDT AUG 11 2012 MOCLDY    67  58  72 SW5       29.95R                     .
+ 9PM EDT AUG 11 2012 MOCLDY    64  60  87 W3        29.96R                     .
+10PM EDT AUG 11 2012 MOCLDY    64  59  83 VRB5      29.98R                     .
+11PM EDT AUG 11 2012 MOCLDY    63  58  83 SW6       29.97F                     .
+12AM EDT AUG 12 2012 MOCLDY    63  59  87 SW3       29.98R                     .
+ 1AM EDT AUG 12 2012 MOCLDY    63  58  83 SW6       29.97F                     .
+ 2AM EDT AUG 12 2012 CLOUDY    63  59  87 SW6       29.97S                     .
+ 3AM EDT AUG 12 2012 MOCLDY    62  59  90 W5        29.97S                     .
+ 4AM EDT AUG 12 2012 CLOUDY    62  59  90 CALM      29.98R                     .
+ 5AM EDT AUG 12 2012 PTCLDY    62  58  86 SW3       29.98S                     .
+ 6AM EDT AUG 12 2012 PTCLDY    61  58  90 W3        29.99R                     .
+ 7AM EDT AUG 12 2012 MOCLDY    60  58  92 S3        30.00R                     .
+ 8AM EDT AUG 12 2012 PTSUNNY   62  59  90 S3        30.01R                     .
+ 9AM EDT AUG 12 2012 PTSUNNY   63  59  87 SW7       30.02R                     .
+10AM EDT AUG 12 2012 PTSUNNY   67  60  78 VRB7      30.03R                     .
+11AM EDT AUG 12 2012 PTSUNNY   70  59  68 VRB5      30.03S                     .
+12PM EDT AUG 12 2012 CLOUDY    70  58  65 W6        30.03S                     .
+ 1PM EDT AUG 12 2012 PTSUNNY   71  57  61 W7        30.02F                     .
+ 2PM EDT AUG 12 2012 PTSUNNY   73  59  61 VRB5      30.02S                     .
+ 3PM EDT AUG 12 2012 PTSUNNY   74  59  59 VRB3      30.01F                     .
+ 4PM EDT AUG 12 2012 PTSUNNY   74  56  53 SW5       29.99F                     .
+ 5PM EDT AUG 12 2012 CLOUDY    75  57  53 W7        30.00R                     .
+ 6PM EDT AUG 12 2012 MOSUNNY   75  56  51 W7        30.00S                     .
+ 7PM EDT AUG 12 2012 PTSUNNY   74  58  57 W3        30.01R                     .
+ 8PM EDT AUG 12 2012 MOCLDY    74  58  57 CALM      30.01S                     .
+ 9PM EDT AUG 12 2012 MOCLDY    71  60  68 SW3       30.03R                     .
+10PM EDT AUG 12 2012 MOCLDY    70  59  68 NW5       30.04R                     .
+11PM EDT AUG 12 2012 MOCLDY    69  59  70 W3        30.04S                     .
+12AM EDT AUG 13 2012 PTCLDY    67  59  75 CALM      30.05R                     .
+ 1AM EDT AUG 13 2012 MOCLDY    65  60  84 CALM      30.05S                     .
+ 2AM EDT AUG 13 2012 MOCLDY    66  59  78 CALM      30.04F                     .
+ 3AM EDT AUG 13 2012 NOT AVBL                                                  .
+ 4AM EDT AUG 13 2012 CLOUDY    63  60  90 CALM      30.03                      .
+ 5AM EDT AUG 13 2012 CLOUDY    62  59  90 CALM      30.04R                     .
+ 6AM EDT AUG 13 2012 CLOUDY    62  59  90 SE3       30.04S                     .
+ 7AM EDT AUG 13 2012 CLOUDY    63  59  87 CALM      30.06R                     .
+ 8AM EDT AUG 13 2012 PTSUNNY   63  59  87 CALM      30.06S                     .
+ 9AM EDT AUG 13 2012 PTSUNNY   66  59  78 CALM      30.07R                     .
+10AM EDT AUG 13 2012 MOSUNNY   69  60  73 CALM      30.06F                     .
+11AM EDT AUG 13 2012 PTSUNNY   74  58  57 VRB3      30.05F                     .
+12PM EDT AUG 13 2012 MOSUNNY   76  56  49 S8        30.05S                     .
+ 1PM EDT AUG 13 2012 MOSUNNY   78  55  44 VRB5      30.04F                     .
+ 2PM EDT AUG 13 2012 PTSUNNY   77  53  43 VRB5      30.02F                     .
+ 3PM EDT AUG 13 2012 PTSUNNY   79  53  40 W6        30.00F                     .
+ 4PM EDT AUG 13 2012 PTSUNNY   80  53  39 VRB7      29.99F                     .
+ 5PM EDT AUG 13 2012 PTSUNNY   80  55  42 CALM      29.98F                     .
+ 6PM EDT AUG 13 2012 PTSUNNY   79  55  43 SW6       29.97F                     .
+ 7PM EDT AUG 13 2012 CLOUDY    78  56  46 W5        29.97S                     .
+ 8PM EDT AUG 13 2012 CLOUDY    77  56  48 CALM      29.97S                     .
+ 9PM EDT AUG 13 2012 CLOUDY    74  59  59 CALM      29.98R                     .
+10PM EDT AUG 13 2012 CLOUDY    74  59  59 CALM      29.98S                     .
+11PM EDT AUG 13 2012 LGT RAIN  70  61  73 W5        29.98S                     .
+12AM EDT AUG 14 2012 CLOUDY    69  62  78 NW5       29.99R                     .
+ 1AM EDT AUG 14 2012 CLOUDY    68  61  78 N6        29.97F                     .
+ 2AM EDT AUG 14 2012 CLOUDY    67  61  81 CALM      29.96F                     .
+ 3AM EDT AUG 14 2012 PTCLDY    67  61  81 CALM      29.94F                     .
+ 4AM EDT AUG 14 2012 PTCLDY    65  61  87 CALM      29.94S                     .
+ 5AM EDT AUG 14 2012 PTCLDY    63  60  90 CALM      29.94S                     .
+ 6AM EDT AUG 14 2012 MOCLDY    63  61  93 CALM      29.93F                     .
+ 7AM EDT AUG 14 2012 PTCLDY    63  60  90 CALM      29.93S                     .
+ 8AM EDT AUG 14 2012 CLOUDY    64  61  90 CALM      29.93S                     .
+ 9AM EDT AUG 14 2012 PTSUNNY   67  61  81 CALM      29.93S                     .
+10AM EDT AUG 14 2012 PTSUNNY   72  62  71 CALM      29.93S                     .
+11AM EDT AUG 14 2012 PTSUNNY   75  61  61 S5        29.92F                     .
+12PM EDT AUG 14 2012 MOSUNNY   77  60  55 SW6       29.91F                     .
+ 1PM EDT AUG 14 2012 PTSUNNY   78  61  55 W7        29.90F                     .
+ 2PM EDT AUG 14 2012 LGT RAIN  74  64  71 W6        29.89F                     .
+ 3PM EDT AUG 14 2012 LGT RAIN  71  65  81 W5        29.88F                     .
+ 4PM EDT AUG 14 2012 PTSUNNY   74  64  71 W6        29.87F                     .
+ 5PM EDT AUG 14 2012 MOSUNNY   75  63  66 SW6       29.87S                     .
+ 6PM EDT AUG 14 2012 CLOUDY    75  64  68 VRB5      29.86F                     .
+ 7PM EDT AUG 14 2012 PTSUNNY   73  66  78 NW6       29.87R                     .
+ 8PM EDT AUG 14 2012 CLOUDY    72  66  81 CALM      29.87S                     .
+ 9PM EDT AUG 14 2012 PTCLDY    70  66  87 W5        29.88R                     .
+10PM EDT AUG 14 2012 MOCLDY    70  65  84 NW7       29.91R                     .
+11PM EDT AUG 14 2012 PTCLDY    68  64  87 NW6       29.92R                     .
+12AM EDT AUG 15 2012 PTCLDY    65  63  93 W3        29.92S                     .
+ 1AM EDT AUG 15 2012 MOCLDY    66  64  93 NW5       29.92F FOG                 .
+ 2AM EDT AUG 15 2012 MOCLDY    66  63  90 NW6       29.93R                     .
+ 3AM EDT AUG 15 2012 MOCLDY    65  62  90 CALM      29.93S FOG                 .
+ 4AM EDT AUG 15 2012 MOCLDY    64  61  90 CALM      29.92F                     .
+ 5AM EDT AUG 15 2012 CLOUDY    63  61  93 NW6       29.91F FOG                 .
+ 6AM EDT AUG 15 2012 FOG       63  61  94 CALM      29.93R VSB 1/2             .
+ 7AM EDT AUG 15 2012 FOG       62  61  96 NW5       29.94R VSB 1/4             .
+ 8AM EDT AUG 15 2012 FOG       63  62  97 VRB5      29.96R VSB 1/2             .
+ 9AM EDT AUG 15 2012 CLOUDY    65  62  90 CALM      29.98R FOG                 .
+10AM EDT AUG 15 2012 CLOUDY    67  62  84 NW6       29.98R HAZE                .
+11AM EDT AUG 15 2012 CLOUDY    70  61  73 N3        29.99S                     .
+12PM EDT AUG 15 2012 CLOUDY    71  60  68 VRB5      30.00R                     .
+ 1PM EDT AUG 15 2012 CLOUDY    73  56  54 VRB6      30.00S                     .
+ 2PM EDT AUG 15 2012 PTSUNNY   75  58  55 NW3       30.00S                     .
+ 3PM EDT AUG 15 2012 MOSUNNY   77  57  50 NW3       29.98F                     .
+ 4PM EDT AUG 15 2012 MOSUNNY   79  55  43 NW8       29.96F                     .
+ 5PM EDT AUG 15 2012 MOSUNNY   78  56  46 W6        29.96S                     .
+ 6PM EDT AUG 15 2012 MOSUNNY   79  56  45 NW10      29.96S                     .
+ 7PM EDT AUG 15 2012 MOSUNNY   77  56  48 NW9       29.96S                     .
+ 8PM EDT AUG 15 2012 PTCLDY    76  56  49 NW7       29.97R                     .
+ 9PM EDT AUG 15 2012 PTCLDY    72  57  59 NW3       29.97S                     .
+10PM EDT AUG 15 2012 CLEAR     72  58  61 CALM      29.99R                     .
+11PM EDT AUG 15 2012 CLEAR     67  59  75 CALM      29.99S                     .
+12AM EDT AUG 16 2012 PTCLDY    64  59  83 CALM      30.00R                     .
+ 1AM EDT AUG 16 2012 CLEAR     64  59  83 CALM      30.01R                     .
+ 2AM EDT AUG 16 2012 CLEAR     64  59  83 NW5       30.01S                     .
+ 3AM EDT AUG 16 2012 CLEAR     63  58  83 CALM      30.01S                     .
+ 4AM EDT AUG 16 2012 CLEAR     62  58  86 CALM      30.01S                     .
+ 5AM EDT AUG 16 2012 PTCLDY    60  57  89 CALM      30.02R                     .
+ 6AM EDT AUG 16 2012 PTCLDY    60  57  89 CALM      30.02S                     .
+ 7AM EDT AUG 16 2012 PTCLDY    61  57  87 CALM      30.03R                     .
+ 8AM EDT AUG 16 2012 SUNNY     62  57  83 CALM      30.04R                     .
+ 9AM EDT AUG 16 2012 SUNNY     67  60  78 CALM      30.03F                     .
+10AM EDT AUG 16 2012 SUNNY     72  60  66 CALM      30.02F                     .
+11AM EDT AUG 16 2012 SUNNY     75  61  61 SW5       30.02S                     .
+12PM EDT AUG 16 2012 MOSUNNY   79  60  52 SW6       30.03R                     .
+ 1PM EDT AUG 16 2012 MOSUNNY   79  60  52 W8        30.02F                     .
+ 2PM EDT AUG 16 2012 MOSUNNY   81  59  47 W8        30.00F                     .
+ 3PM EDT AUG 16 2012 PTSUNNY   82  58  43 SW10      29.99F                     .
+ 4PM EDT AUG 16 2012 PTSUNNY   82  59  45 W9        29.98F                     .
+ 5PM EDT AUG 16 2012 CLOUDY    82  59  45 SW9       29.95F                     .
+ 6PM EDT AUG 16 2012 CLOUDY    81  59  47 SW8       29.93F                     .
+ 7PM EDT AUG 16 2012 PTSUNNY   81  59  47 S6        29.90F                     .
+ 8PM EDT AUG 16 2012 MOCLDY    77  61  57 SW3       29.89F                     .
+ 9PM EDT AUG 16 2012 MOCLDY    76  60  57 SW6       29.90R                     .
+10PM EDT AUG 16 2012 MOCLDY    75  60  59 S3        29.91R                     .
+11PM EDT AUG 16 2012 CLOUDY    72  60  66 S5        29.91S                     .
+12AM EDT AUG 17 2012 CLOUDY    74  60  61 SW7       29.91S                     .
+ 1AM EDT AUG 17 2012 CLOUDY    73  60  63 SW7       29.91S                     .
+ 2AM EDT AUG 17 2012 CLOUDY    72  60  66 SW7       29.90F                     .
+ 3AM EDT AUG 17 2012 CLOUDY    70  60  70 S5        29.88F                     .
+ 4AM EDT AUG 17 2012 CLOUDY    71  60  68 S6        29.86F                     .
+ 5AM EDT AUG 17 2012 CLOUDY    71  60  68 SW7       29.86S                     .
+ 6AM EDT AUG 17 2012 CLOUDY    71  60  68 SW3       29.87R                     .
+ 7AM EDT AUG 17 2012 CLOUDY    69  60  73 W5        29.89R                     .
+ 8AM EDT AUG 17 2012 CLOUDY    69  61  75 SW5       29.89S                     .
+ 9AM EDT AUG 17 2012 CLOUDY    70  62  76 W3        29.90R                     .
+10AM EDT AUG 17 2012 LGT RAIN  69  62  78 W3        29.90S                     .
+11AM EDT AUG 17 2012 LGT RAIN  69  64  84 W3        29.91R                     .
+12PM EDT AUG 17 2012 LGT RAIN  67  63  87 NW9       29.92S                     .
+ 1PM EDT AUG 17 2012 CLOUDY    67  62  84 CALM      29.92S                     .
+ 2PM EDT AUG 17 2012 CLOUDY    67  64  90 VRB3      29.93R                     .
+ 3PM EDT AUG 17 2012 PTSUNNY   70  62  76 W5        29.92F                     .
+ 4PM EDT AUG 17 2012 PTSUNNY   72  60  66 VRB3      29.91F                     .
+ 5PM EDT AUG 17 2012 MOSUNNY   73  60  63 SW5       29.90F                     .
+ 6PM EDT AUG 17 2012 MOSUNNY   74  60  61 SW3       29.89F                     .
+ 7PM EDT AUG 17 2012 MOSUNNY   74  60  61 SW6       29.88F                     .
+ 8PM EDT AUG 17 2012 MOCLDY    72  61  68 CALM      29.89R                     .
+ 9PM EDT AUG 17 2012 MOCLDY    71  56  58 N8        29.91R                     .
+10PM EDT AUG 17 2012 PTCLDY    69  57  65 N7        29.94R                     .
+11PM EDT AUG 17 2012 MOCLDY    68  56  65 N6        29.95R                     .
+12AM EDT AUG 18 2012 CLOUDY    67  56  67 N6        29.96R                     .
+ 1AM EDT AUG 18 2012 PTCLDY    66  55  67 N3        29.95F                     .
+ 2AM EDT AUG 18 2012 FAIR      62  56  80 CALM      29.95S                     .
+ 3AM EDT AUG 18 2012 PTCLDY    61  56  83 CALM      29.95S                     .
+ 4AM EDT AUG 18 2012 PTCLDY    58  55  90 NW5       29.95S                     .
+ 5AM EDT AUG 18 2012 PTCLDY    58  55  90 NW5       29.96R                     .
+ 6AM EDT AUG 18 2012 NOT AVBL                                                  .
+ 7AM EDT AUG 18 2012 PTCLDY    58  55  90 NW3       29.98                      .
+ 8AM EDT AUG 18 2012 MOSUNNY   62  56  80 CALM      29.99R                     .
+ 9AM EDT AUG 18 2012 MOSUNNY   64  57  78 CALM      30.00R                     .
+10AM EDT AUG 18 2012 MOSUNNY   66  55  67 E7        30.01R                     .
+11AM EDT AUG 18 2012 MOSUNNY   70  56  61 CALM      30.01S                     .
+12PM EDT AUG 18 2012 PTSUNNY   71  52  50 CALM      30.01S                     .
+ 1PM EDT AUG 18 2012 PTSUNNY   73  50  44 VRB3      30.00F                     .
+ 2PM EDT AUG 18 2012 PTSUNNY   73  50  44 N3        29.98F                     .
+ 3PM EDT AUG 18 2012 PTSUNNY   75  49  39 NW5       29.98S                     .
+ 4PM EDT AUG 18 2012 MOSUNNY   76  47  35 VRB3      29.96F                     .
+ 5PM EDT AUG 18 2012 MOSUNNY   77  48  35 VRB3      29.94F                     .
+ 6PM EDT AUG 18 2012 MOSUNNY   75  47  36 E3        29.93F                     .
+ 7PM EDT AUG 18 2012 MOSUNNY   75  46  35 NE7       29.93S                     .
+ 8PM EDT AUG 18 2012 PTCLDY    73  48  41 N8        29.95R                     .
+ 9PM EDT AUG 18 2012 PTCLDY    70  49  47 NE5       29.96R                     .
+10PM EDT AUG 18 2012 PTCLDY    67  50  54 CALM      29.96S                     .
+11PM EDT AUG 18 2012 PTCLDY    65  52  62 CALM      29.97R                     .
+12AM EDT AUG 19 2012 MOCLDY    63  52  67 CALM      29.97S                     .
+ 1AM EDT AUG 19 2012 MOCLDY    62  51  67 CALM      29.98R                     .
+ 2AM EDT AUG 19 2012 FAIR      62  50  64 NE3       29.98S                     .
+ 3AM EDT AUG 19 2012 CLOUDY    61  50  67 CALM      29.97F                     .
+ 4AM EDT AUG 19 2012 CLOUDY    59  51  75 CALM      29.96F                     .
+ 5AM EDT AUG 19 2012 CLOUDY    59  51  75 E3        29.95F                     .
+ 6AM EDT AUG 19 2012 CLOUDY    58  51  78 CALM      29.93F                     .
+ 7AM EDT AUG 19 2012 CLOUDY    59  51  75 CALM      29.95R                     .
+ 8AM EDT AUG 19 2012 CLOUDY    60  51  72 NE3       29.94F                     .
+ 9AM EDT AUG 19 2012 CLOUDY    61  53  75 CALM      29.95R                     .
+10AM EDT AUG 19 2012 CLOUDY    63  53  70 CALM      29.95S                     .
+11AM EDT AUG 19 2012 CLOUDY    67  53  61 E6        29.95S                     .
+12PM EDT AUG 19 2012 MOSUNNY   71  53  52 E3        29.94F                     .
+ 1PM EDT AUG 19 2012 MOSUNNY   74  55  51 CALM      29.92F                     .
+ 2PM EDT AUG 19 2012 MOSUNNY   77  55  46 E6        29.91F                     .
+ 3PM EDT AUG 19 2012 MOSUNNY   78  53  41 VRB5      29.90F                     .
+ 4PM EDT AUG 19 2012 MOSUNNY   79  48  33 CALM      29.87F                     .
+ 5PM EDT AUG 19 2012 MOSUNNY   79  50  36 SW6       29.86F                     .
+ 6PM EDT AUG 19 2012 MOSUNNY   77  53  43 NE6       29.86S                     .
+ 7PM EDT AUG 19 2012 MOSUNNY   74  55  51 E5        29.86S                     .
+ 8PM EDT AUG 19 2012 PTCLDY    73  55  53 E3        29.86S                     .
+ 9PM EDT AUG 19 2012 PTCLDY    71  56  58 NE3       29.87R                     .
+10PM EDT AUG 19 2012 PTCLDY    70  58  65 NE6       29.88R                     .
+11PM EDT AUG 19 2012 PTCLDY    68  59  73 CALM      29.89R                     .
+12AM EDT AUG 20 2012 PTCLDY    67  59  75 CALM      29.89S                     .
+ 1AM EDT AUG 20 2012 MOCLDY    62  58  86 SE5       29.88F                     .
+ 2AM EDT AUG 20 2012 TSTM      63  55  75 NW18G31   29.90R                     .
+ 3AM EDT AUG 20 2012 TSTM      61  56  83 N8        29.88F                     .
+ 4AM EDT AUG 20 2012 CLOUDY    60  57  89 VRB3      29.88R                     .
+ 5AM EDT AUG 20 2012 CLOUDY    59  57  93 S5        29.88S                     .
+ 6AM EDT AUG 20 2012 CLOUDY    60  57  89 CALM      29.89R                     .
+ 7AM EDT AUG 20 2012 PTCLDY    59  56  89 CALM      29.91R                     .
+ 8AM EDT AUG 20 2012 FOG       60  57  89 NW6       29.93R VSB 1/2             .
+ 9AM EDT AUG 20 2012 PTSUNNY   61  57  88 CALM      29.95R FOG                 .
+10AM EDT AUG 20 2012 MOSUNNY   64  59  83 S3        29.95S                     .
+11AM EDT AUG 20 2012 MOSUNNY   67  57  70 CALM      29.95S                     .
+12PM EDT AUG 20 2012 MOSUNNY   70  56  61 CALM      29.94F                     .
+ 1PM EDT AUG 20 2012 MOSUNNY   73  55  53 N5        29.93F                     .
+ 2PM EDT AUG 20 2012 MOSUNNY   75  54  47 W6        29.92F                     .
+ 3PM EDT AUG 20 2012 MOSUNNY   74  52  46 NW8       29.92S                     .
+ 4PM EDT AUG 20 2012 MOSUNNY   76  52  43 W5        29.90F                     .
+ 5PM EDT AUG 20 2012 PTSUNNY   75  51  43 NW7       29.91R                     .
+ 6PM EDT AUG 20 2012 LGT RAIN  71  53  52 NW12      29.93R                     .
+ 7PM EDT AUG 20 2012 LGT RAIN  68  57  68 N7        29.95R                     .
+ 8PM EDT AUG 20 2012 MOCLDY    67  58  72 NW8       29.94F                     .
+ 9PM EDT AUG 20 2012 PTCLDY    64  56  75 NW5       29.96R                     .
+10PM EDT AUG 20 2012 PTCLDY    62  57  83 CALM      29.99R                     .
+11PM EDT AUG 20 2012 PTCLDY    61  56  83 CALM      30.00R                     .
+12AM EDT AUG 21 2012 PTCLDY    59  56  89 CALM      30.02R                     .
+ 1AM EDT AUG 21 2012 PTCLDY    58  55  90 CALM      30.02S                     .
+ 2AM EDT AUG 21 2012 FAIR      57  54  89 NW3       30.02S                     .
+ 3AM EDT AUG 21 2012 PTCLDY    56  54  93 CALM      30.03R                     .
+ 4AM EDT AUG 21 2012 CLEAR     55  52  89 CALM      30.04R                     .
+ 5AM EDT AUG 21 2012 CLEAR     55  53  93 CALM      30.04S                     .
+ 6AM EDT AUG 21 2012 CLEAR     54  51  90 CALM      30.04S                     .
+ 7AM EDT AUG 21 2012 PTCLDY    55  52  89 CALM      30.05R                     .
+ 8AM EDT AUG 21 2012 MOSUNNY   57  53  86 CALM      30.06R                     .
+ 9AM EDT AUG 21 2012 SUNNY     60  56  86 CALM      30.08R                     .
+10AM EDT AUG 21 2012 SUNNY     65  57  75 CALM      30.09R                     .
+11AM EDT AUG 21 2012 SUNNY     69  56  62 CALM      30.10R                     .
+12PM EDT AUG 21 2012 MOSUNNY   72  56  57 NW7       30.10S                     .
+ 1PM EDT AUG 21 2012 MOSUNNY   74  53  48 CALM      30.09F                     .
+ 2PM EDT AUG 21 2012 MOSUNNY   77  52  41 CALM      30.09S                     .
+ 3PM EDT AUG 21 2012 MOSUNNY   77  51  40 CALM      30.07F                     .
+ 4PM EDT AUG 21 2012 PTSUNNY   76  48  37 SW5       30.05F                     .
+ 5PM EDT AUG 21 2012 PTSUNNY   75  51  43 S14       30.05S                     .
+ 6PM EDT AUG 21 2012 CLOUDY    65  56  72 S10       30.07R THUNDER             .
+ 7PM EDT AUG 21 2012 LGT RAIN  62  54  74 W12       30.11R                     .
+ 8PM EDT AUG 21 2012 LGT RAIN  62  56  80 NW9       30.10F                     .
+ 9PM EDT AUG 21 2012 CLOUDY    60  58  92 CALM      30.11R                     .
+10PM EDT AUG 21 2012 MOCLDY    61  57  87 CALM      30.13R                     .
+11PM EDT AUG 21 2012 PTCLDY    59  57  93 CALM      30.12F                     .
+12AM EDT AUG 22 2012 PTCLDY    57  55  93 CALM      30.13R                     .
+ 1AM EDT AUG 22 2012 PTCLDY    58  55  90 CALM      30.13S                     .
+ 2AM EDT AUG 22 2012 FAIR      57  54  89 CALM      30.12F FOG                 .
+ 3AM EDT AUG 22 2012 CLEAR     56  53  90 CALM      30.12S                     .
+ 4AM EDT AUG 22 2012 CLEAR     54  52  93 CALM      30.12S FOG                 .
+ 5AM EDT AUG 22 2012 CLEAR     54  52  93 CALM      30.12S FOG                 .
+ 6AM EDT AUG 22 2012 PTCLDY    53  52  96 SE3       30.13R FOG                 .
+ 7AM EDT AUG 22 2012 PTCLDY    53  52  96 CALM      30.15R FOG                 .
+ 8AM EDT AUG 22 2012 SUNNY     55  54  96 CALM      30.16R                     .
+ 9AM EDT AUG 22 2012 SUNNY     59  57  93 CALM      30.18R                     .
+10AM EDT AUG 22 2012 SUNNY     64  57  78 CALM      30.19R                     .
+11AM EDT AUG 22 2012 SUNNY     69  59  70 CALM      30.19S                     .
+12PM EDT AUG 22 2012 MOSUNNY   72  58  61 CALM      30.20R                     .
+ 1PM EDT AUG 22 2012 MOSUNNY   74  57  55 CALM      30.19F                     .
+ 2PM EDT AUG 22 2012 MOSUNNY   76  55  48 VRB3      30.17F                     .
+ 3PM EDT AUG 22 2012 MOSUNNY   79  55  43 VRB6      30.15F                     .
+ 4PM EDT AUG 22 2012 MOSUNNY   78  51  38 CALM      30.14F                     .
+ 5PM EDT AUG 22 2012 MOSUNNY   78  48  34 W6        30.13F                     .
+ 6PM EDT AUG 22 2012 MOSUNNY   78  49  35 VRB3      30.13S                     .
+ 7PM EDT AUG 22 2012 MOSUNNY   77  52  41 W3        30.12F                     .
+ 8PM EDT AUG 22 2012 PTCLDY    75  53  46 W3        30.12S                     .
+ 9PM EDT AUG 22 2012 PTCLDY    72  55  55 CALM      30.13R                     .
+10PM EDT AUG 22 2012 CLEAR     68  57  68 CALM      30.14R                     .
+11PM EDT AUG 22 2012 CLEAR     66  55  67 CALM      30.15R                     .
+12AM EDT AUG 23 2012 CLEAR     63  56  78 CALM      30.16R                     .
+ 1AM EDT AUG 23 2012 CLEAR     63  57  81 CALM      30.15F                     .
+ 2AM EDT AUG 23 2012 FAIR      62  57  83 CALM      30.16R                     .
+ 3AM EDT AUG 23 2012 CLEAR     60  56  86 CALM      30.16S                     .
+ 4AM EDT AUG 23 2012 CLEAR     60  55  83 CALM      30.16S                     .
+ 5AM EDT AUG 23 2012 CLEAR     57  55  93 CALM      30.16S                     .
+ 6AM EDT AUG 23 2012 CLEAR     58  54  86 CALM      30.17R                     .
+ 7AM EDT AUG 23 2012 PTCLDY    58  54  86 CALM      30.18R                     .
+ 8AM EDT AUG 23 2012 SUNNY     59  56  89 CALM      30.19R                     .
+ 9AM EDT AUG 23 2012 SUNNY     63  58  83 CALM      30.20R                     .
+10AM EDT AUG 23 2012 SUNNY     70  59  68 CALM      30.20S                     .
+11AM EDT AUG 23 2012 SUNNY     75  59  57 CALM      30.20S                     .
+12PM EDT AUG 23 2012 MOSUNNY   79  54  41 CALM      30.19F                     .
+ 1PM EDT AUG 23 2012 MOSUNNY   80  52  37 CALM      30.19S                     .
+ 2PM EDT AUG 23 2012 MOSUNNY   82  53  36 W7        30.18F                     .
+ 3PM EDT AUG 23 2012 MOSUNNY   83  51  33 S3        30.17F                     .
+ 4PM EDT AUG 23 2012 MOSUNNY   82  52  35 SW6       30.16F                     .
+ 5PM EDT AUG 23 2012 MOSUNNY   83  52  34 SW3       30.15F                     .
+ 6PM EDT AUG 23 2012 MOSUNNY   82  53  36 W6        30.13F                     .
+ 7PM EDT AUG 23 2012 MOSUNNY   81  53  37 CALM      30.13S                     .
+ 8PM EDT AUG 23 2012 PTCLDY    77  56  48 W3        30.13S                     .
+ 9PM EDT AUG 23 2012 CLEAR     74  54  49 E6        30.14R                     .
+10PM EDT AUG 23 2012 CLEAR     74  54  49 CALM      30.16R                     .
+11PM EDT AUG 23 2012 CLEAR     70  57  63 CALM      30.15F                     .
+12AM EDT AUG 24 2012 CLEAR     67  58  72 CALM      30.15S                     .
+ 1AM EDT AUG 24 2012 CLEAR     64  58  80 CALM      30.15S                     .
+ 2AM EDT AUG 24 2012 FAIR      62  57  83 CALM      30.16R                     .
+ 3AM EDT AUG 24 2012 CLEAR     63  57  81 CALM      30.16S                     .
+ 4AM EDT AUG 24 2012 CLEAR     60  57  89 CALM      30.16S                     .
+ 5AM EDT AUG 24 2012 CLEAR     60  56  86 CALM      30.15F                     .
+ 6AM EDT AUG 24 2012 CLEAR     60  55  83 CALM      30.16R                     .
+ 7AM EDT AUG 24 2012 PTCLDY    59  55  87 CALM      30.18R                     .
+ 8AM EDT AUG 24 2012 MOSUNNY   61  57  87 CALM      30.19R                     .
+ 9AM EDT AUG 24 2012 MOSUNNY   67  60  78 CALM      30.20R                     .
+10AM EDT AUG 24 2012 MOSUNNY   71  61  70 VRB3      30.20S                     .
+11AM EDT AUG 24 2012 MOSUNNY   76  61  59 CALM      30.20S                     .
+12PM EDT AUG 24 2012 MOSUNNY   79  61  53 CALM      30.19F                     .
+ 1PM EDT AUG 24 2012 MOSUNNY   83  55  38 CALM      30.18F                     .
+ 2PM EDT AUG 24 2012 MOSUNNY   84  51  31 CALM      30.16F                     .
+ 3PM EDT AUG 24 2012 MOSUNNY   84  54  35 S6        30.15F                     .
+ 4PM EDT AUG 24 2012 MOSUNNY   86  54  33 SE10G16   30.13F                     .
+ 5PM EDT AUG 24 2012 MOSUNNY   86  54  33 VRB5      30.12F                     .
+ 6PM EDT AUG 24 2012 MOSUNNY   84  54  35 E5        30.12S                     .
+ 7PM EDT AUG 24 2012 MOSUNNY   84  54  35 CALM      30.12S                     .
+ 8PM EDT AUG 24 2012 PTCLDY    81  56  42 E5        30.12S                     .
+ 9PM EDT AUG 24 2012 PTCLDY    77  57  50 E6        30.13R                     .
+10PM EDT AUG 24 2012 PTCLDY    76  58  53 CALM      30.15R                     .
+11PM EDT AUG 24 2012 PTCLDY    74  59  59 SE5       30.16R                     .
+12AM EDT AUG 25 2012 CLEAR     73  59  61 SE5       30.16S                     .
+ 1AM EDT AUG 25 2012 CLEAR     71  59  65 SE3       30.17R                     .
+ 2AM EDT AUG 25 2012 FAIR      69  59  70 CALM      30.17S                     .
+ 3AM EDT AUG 25 2012 CLEAR     68  59  73 CALM      30.17S                     .
+ 4AM EDT AUG 25 2012 PTCLDY    66  59  78 CALM      30.17S                     .
+ 5AM EDT AUG 25 2012 PTCLDY    63  58  83 CALM      30.17S                     .
+ 6AM EDT AUG 25 2012 MOCLDY    64  59  83 CALM      30.18R                     .
+ 7AM EDT AUG 25 2012 PTCLDY    63  59  87 CALM      30.20R FOG                 .
+ 8AM EDT AUG 25 2012 MOSUNNY   65  60  84 CALM      30.21R                     .
+ 9AM EDT AUG 25 2012 MOSUNNY   70  62  76 SE3       30.22R                     .
+10AM EDT AUG 25 2012 MOSUNNY   74  63  68 SE5       30.23R                     .
+11AM EDT AUG 25 2012 MOSUNNY   78  61  55 SE6       30.23S                     .
+12PM EDT AUG 25 2012 MOSUNNY   80  62  54 SE6       30.22F                     .
+ 1PM EDT AUG 25 2012 MOSUNNY   82  60  47 E6        30.20F                     .
+ 2PM EDT AUG 25 2012 MOSUNNY   84  58  40 VRB5      30.19F                     .
+ 3PM EDT AUG 25 2012 MOSUNNY   85  57  38 E3        30.17F                     .
+ 4PM EDT AUG 25 2012 MOSUNNY   85  56  37 SE10      30.16F                     .
+ 5PM EDT AUG 25 2012 MOSUNNY   85  55  35 SE10      30.16S                     .
+ 6PM EDT AUG 25 2012 MOSUNNY   82  58  43 E9        30.16S                     .
+ 7PM EDT AUG 25 2012 MOSUNNY   81  58  45 E8        30.16S                     .
+ 8PM EDT AUG 25 2012 PTCLDY    79  54  41 SE8       30.17R                     .
+ 9PM EDT AUG 25 2012 PTCLDY    77  56  48 SE9       30.19R                     .
+10PM EDT AUG 25 2012 CLEAR     74  56  53 SE9       30.21R                     .
+11PM EDT AUG 25 2012 CLEAR     72  54  53 SE6       30.21S                     .
+12AM EDT AUG 26 2012 CLEAR     69  53  56 CALM      30.21S                     .
+ 1AM EDT AUG 26 2012 CLEAR     68  54  60 SE3       30.21S                     .
+ 2AM EDT AUG 26 2012 FAIR      67  54  63 E3        30.21S                     .
+ 3AM EDT AUG 26 2012 CLEAR     65  55  70 CALM      30.20F                     .
+ 4AM EDT AUG 26 2012 CLEAR     65  56  72 CALM      30.20S                     .
+ 5AM EDT AUG 26 2012 PTCLDY    65  56  72 CALM      30.19F                     .
+ 6AM EDT AUG 26 2012 PTCLDY    64  57  78 CALM      30.20R                     .
+ 7AM EDT AUG 26 2012 PTCLDY    64  57  78 CALM      30.21R                     .
+ 8AM EDT AUG 26 2012 PTSUNNY   65  58  78 CALM      30.22R                     .
+ 9AM EDT AUG 26 2012 CLOUDY    67  59  75 NE3       30.23R                     .
+10AM EDT AUG 26 2012 CLOUDY    69  61  75 NE5       30.24R                     .
+11AM EDT AUG 26 2012 CLOUDY    71  62  73 E3        30.25R                     .
+12PM EDT AUG 26 2012 PTSUNNY   75  63  66 NE5       30.24F                     .
+ 1PM EDT AUG 26 2012 MOSUNNY   79  63  57 SE9       30.21F                     .
+ 2PM EDT AUG 26 2012 MOSUNNY   82  59  45 SE7       30.18F                     .
+ 3PM EDT AUG 26 2012 MOSUNNY   81  59  47 SE6       30.16F                     .
+ 4PM EDT AUG 26 2012 MOSUNNY   83  61  47 E7        30.13F                     .
+ 5PM EDT AUG 26 2012 MOSUNNY   82  60  47 NE7       30.11F                     .
+ 6PM EDT AUG 26 2012 MOSUNNY   83  61  47 E10       30.11S                     .
+ 7PM EDT AUG 26 2012 MOSUNNY   80  60  50 E12       30.10F                     .
+ 8PM EDT AUG 26 2012 MOCLDY    78  59  51 E5        30.11R                     .
+ 9PM EDT AUG 26 2012 MOCLDY    75  60  59 E6        30.11S                     .
+10PM EDT AUG 26 2012 MOCLDY    73  62  68 E5        30.12R                     .
+11PM EDT AUG 26 2012 PTCLDY    73  62  68 SE6       30.12S                     .
+12AM EDT AUG 27 2012 PTCLDY    72  62  71 SE7       30.12S                     .
+ 1AM EDT AUG 27 2012 MOCLDY    71  62  73 SE5       30.11F                     .
+ 2AM EDT AUG 27 2012 NOT AVBL                                                  .
+ 3AM EDT AUG 27 2012 PTCLDY    68  62  81 CALM      30.09                      .
+ 4AM EDT AUG 27 2012 PTCLDY    67  62  84 CALM      30.09S                     .
+ 5AM EDT AUG 27 2012 CLEAR     65  61  87 CALM      30.08F                     .
+ 6AM EDT AUG 27 2012 PTCLDY    64  60  87 CALM      30.08S                     .
+ 7AM EDT AUG 27 2012 PTCLDY    64  60  87 CALM      30.09R                     .
+ 8AM EDT AUG 27 2012 MOSUNNY   65  61  87 CALM      30.10R                     .
+ 9AM EDT AUG 27 2012 MOSUNNY   69  62  78 S6        30.11R                     .
+10AM EDT AUG 27 2012 PTSUNNY   74  63  68 S5        30.11S                     .
+11AM EDT AUG 27 2012 PTSUNNY   79  62  56 SW7       30.11S                     .
+12PM EDT AUG 27 2012 PTSUNNY   82  62  50 SW12      30.09F                     .
+ 1PM EDT AUG 27 2012 CLOUDY    84  61  45 SW7       30.07F                     .
+ 2PM EDT AUG 27 2012 CLOUDY    84  62  47 SW10      30.05F HX  85              .
+ 3PM EDT AUG 27 2012 CLOUDY    85  61  44 SW9G21    30.02F HX  85              .
+ 4PM EDT AUG 27 2012 CLOUDY    84  63  49 W5        29.99F HX  85              .
+ 5PM EDT AUG 27 2012 LGT RAIN  76  68  76 NW14G29   29.99S                     .
+ 6PM EDT AUG 27 2012 LGT RAIN  74  69  85 W8        29.99S                     .
+ 7PM EDT AUG 27 2012 CLOUDY    74  68  81 CALM      29.97F                     .
+ 8PM EDT AUG 27 2012 LGT RAIN  72  69  90 CALM      29.98R FOG                 .
+ 9PM EDT AUG 27 2012 LGT RAIN  72  69  90 S7        29.98S                     .
+10PM EDT AUG 27 2012 CLOUDY    72  68  87 S7        29.96F                     .
+11PM EDT AUG 27 2012 CLOUDY    72  68  87 SW6       29.97R                     .
+12AM EDT AUG 28 2012 CLOUDY    71  68  90 W6        29.97S                     .
+ 1AM EDT AUG 28 2012 CLOUDY    71  68  90 VRB3      29.97S                     .
+ 2AM EDT AUG 28 2012 CLOUDY    71  69  93 NW8       29.98R                     .
+ 3AM EDT AUG 28 2012 CLOUDY    71  68  90 NW8       29.98S                     .
+ 4AM EDT AUG 28 2012 CLOUDY    70  65  84 NW12      30.00R                     .
+ 5AM EDT AUG 28 2012 PTCLDY    68  65  90 W6        30.00S                     .
+ 6AM EDT AUG 28 2012 CLOUDY    68  66  93 NW6       30.01R                     .
+ 7AM EDT AUG 28 2012 PTCLDY    68  65  90 NW7       30.04R                     .
+ 8AM EDT AUG 28 2012 PTSUNNY   66  64  94 NW3       30.06R FOG                 .
+ 9AM EDT AUG 28 2012 CLOUDY    69  64  84 NW8       30.06S HAZE                .
+10AM EDT AUG 28 2012 MOSUNNY   71  63  75 NW9       30.07R                     .
+11AM EDT AUG 28 2012 MOSUNNY   74  60  61 VRB3      30.07S                     .
+12PM EDT AUG 28 2012 MOSUNNY   77  61  57 NW8       30.06F                     .
+ 1PM EDT AUG 28 2012 PTSUNNY   79  58  48 N7        30.05F                     .
+ 2PM EDT AUG 28 2012 PTSUNNY   80  58  46 N13       30.04F                     .
+ 3PM EDT AUG 28 2012 MOSUNNY   82  56  40 NW15      30.02F                     .
+ 4PM EDT AUG 28 2012 MOSUNNY   81  57  43 NW12      30.01F                     .
+ 5PM EDT AUG 28 2012 MOSUNNY   80  56  43 N13       30.00F                     .
+ 6PM EDT AUG 28 2012 MOSUNNY   79  57  46 NW10      30.00S                     .
+ 7PM EDT AUG 28 2012 MOSUNNY   78  56  46 NW13      30.01R                     .
+ 8PM EDT AUG 28 2012 PTCLDY    75  55  49 NW10      30.01S                     .
+ 9PM EDT AUG 28 2012 CLEAR     71  55  56 NW8       30.03R                     .
+10PM EDT AUG 28 2012 CLEAR     69  55  60 NW7       30.04R                     .
+11PM EDT AUG 28 2012 CLEAR     67  55  65 NW7       30.04S                     .
+12AM EDT AUG 29 2012 CLEAR     66  55  67 CALM      30.04S                     .
+ 1AM EDT AUG 29 2012 CLEAR     63  55  75 CALM      30.05R                     .
+ 2AM EDT AUG 29 2012 FAIR      61  56  83 CALM      30.04F                     .
+ 3AM EDT AUG 29 2012 CLEAR     60  55  83 CALM      30.04S                     .
+ 4AM EDT AUG 29 2012 CLEAR     58  55  90 W5        30.04S                     .
+ 5AM EDT AUG 29 2012 CLEAR     58  55  90 NW5       30.03F                     .
+ 6AM EDT AUG 29 2012 CLEAR     59  56  89 NW6       30.04R                     .
+ 7AM EDT AUG 29 2012 FOG       59  58  96 N9        30.05R VSB 1/8             .
+ 8AM EDT AUG 29 2012 FOG       61  57  88 N6        30.07R VSB 1               .
+ 9AM EDT AUG 29 2012 MOSUNNY   62  58  86 NE5       30.08R                     .
+10AM EDT AUG 29 2012 MOSUNNY   67  56  67 NE5       30.10R                     .
+11AM EDT AUG 29 2012 MOSUNNY   72  55  55 VRB6      30.11R                     .
+12PM EDT AUG 29 2012 MOSUNNY   75  53  46 NW8       30.11S                     .
+ 1PM EDT AUG 29 2012 PTSUNNY   75  52  44 VRB6      30.10F                     .
+ 2PM EDT AUG 29 2012 MOSUNNY   77  49  37 N5        30.08F                     .
+ 3PM EDT AUG 29 2012 MOSUNNY   76  49  38 N9        30.07F                     .
+ 4PM EDT AUG 29 2012 MOSUNNY   77  50  38 NW13      30.05F                     .
+ 5PM EDT AUG 29 2012 MOSUNNY   78  49  35 NW14      30.05S                     .
+ 6PM EDT AUG 29 2012 MOSUNNY   77  50  38 NW13      30.04F                     .
+ 7PM EDT AUG 29 2012 PTCLDY    75  50  41 N8        30.04S                     .
+ 8PM EDT AUG 29 2012 CLEAR     73  50  44 N6        30.05R                     .
+ 9PM EDT AUG 29 2012 CLEAR     71  51  49 N5        30.06R                     .
+10PM EDT AUG 29 2012 CLEAR     69  52  54 N7        30.09R                     .
+11PM EDT AUG 29 2012 CLEAR     66  52  60 N3        30.09S                     .
+12AM EDT AUG 30 2012 CLEAR     62  53  72 CALM      30.09S                     .
+ 1AM EDT AUG 30 2012 CLEAR     63  52  67 N3        30.10R                     .
+ 2AM EDT AUG 30 2012 FAIR      62  52  69 CALM      30.11R                     .
+ 3AM EDT AUG 30 2012 CLEAR     55  52  89 CALM      30.08F                     .
+ 4AM EDT AUG 30 2012 CLEAR     56  51  84 CALM      30.09R                     .
+ 5AM EDT AUG 30 2012 CLEAR     54  50  86 CALM      30.09S                     .
+ 6AM EDT AUG 30 2012 PTCLDY    53  49  86 CALM      30.10R                     .
+ 7AM EDT AUG 30 2012 CLEAR     54  50  86 CALM      30.12R                     .
+ 8AM EDT AUG 30 2012 SUNNY     55  51  86 CALM      30.14R                     .
+ 9AM EDT AUG 30 2012 SUNNY     60  53  77 CALM      30.15R                     .
+10AM EDT AUG 30 2012 SUNNY     66  56  70 CALM      30.16R                     .
+11AM EDT AUG 30 2012 SUNNY     72  54  53 CALM      30.16S                     .
+12PM EDT AUG 30 2012 SUNNY     74  53  48 CALM      30.16S                     .
+ 1PM EDT AUG 30 2012 SUNNY     77  52  41 VRB5      30.16S                     .
+ 2PM EDT AUG 30 2012 MOSUNNY   80  47  31 VRB3      30.14F                     .
+ 3PM EDT AUG 30 2012 MOSUNNY   82  48  30 W5        30.12F                     .
+ 4PM EDT AUG 30 2012 MOSUNNY   83  50  31 S5        30.11F                     .
+ 5PM EDT AUG 30 2012 MOSUNNY   83  51  33 CALM      30.10F                     .
+ 6PM EDT AUG 30 2012 MOSUNNY   83  51  33 W3        30.09F                     .
+ 7PM EDT AUG 30 2012 CLEAR     82  52  35 W5        30.09S                     .
+ 8PM EDT AUG 30 2012 CLEAR     79  53  40 CALM      30.09S                     .
+ 9PM EDT AUG 30 2012 CLEAR     73  56  54 CALM      30.10R                     .
+10PM EDT AUG 30 2012 CLEAR     69  56  62 CALM      30.11R                     .
+11PM EDT AUG 30 2012 CLEAR     67  56  67 CALM      30.12R                     .
+12AM EDT AUG 31 2012 CLEAR     65  56  72 CALM      30.11F                     .
+ 1AM EDT AUG 31 2012 CLEAR     63  55  75 CALM      30.11S                     .
+ 2AM EDT AUG 31 2012 FAIR      61  54  77 CALM      30.12R                     .
+ 3AM EDT AUG 31 2012 CLEAR     60  54  80 CALM      30.11F                     .
+ 4AM EDT AUG 31 2012 CLEAR     60  53  77 CALM      30.11S                     .
+ 5AM EDT AUG 31 2012 CLEAR     58  53  84 CALM      30.11S                     .
+ 6AM EDT AUG 31 2012 CLEAR     58  52  80 CALM      30.12R                     .
+ 7AM EDT AUG 31 2012 PTCLDY    57  51  80 CALM      30.13R                     .
+ 8AM EDT AUG 31 2012 SUNNY     59  53  80 CALM      30.15R                     .
+ 9AM EDT AUG 31 2012 SUNNY     65  56  72 CALM      30.16R                     .
+10AM EDT AUG 31 2012 SUNNY     73  57  57 SW8       30.15F                     .
+11AM EDT AUG 31 2012 SUNNY     78  60  53 SW8       30.16R                     .
+12PM EDT AUG 31 2012 FAIR      83  65  54 W10G17    30.15F HX  85              .
+ 1PM EDT AUG 31 2012 SUNNY     86  63  45 W14G22    30.13F HX  87              .
+ 2PM EDT AUG 31 2012 MOSUNNY   89  62  40 W12G17    30.12F HX  89              .
+ 3PM EDT AUG 31 2012 MOSUNNY   90  59  35 W10G20    30.09F HX  89              .
+ 4PM EDT AUG 31 2012 MOSUNNY   90  59  35 W10G21    30.08F HX  89              .
+ 5PM EDT AUG 31 2012 MOSUNNY   91  57  31 W9G18     30.06F HX  89              .
+ 6PM EDT AUG 31 2012 MOSUNNY   90  63  40 SW8       30.06S HX  91              .
+ 7PM EDT AUG 31 2012 PTCLDY    87  64  46 SW7       30.06S HX  88              .

@@ -1,0 +1,765 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT APR 30 2012 CLOUDY    79  49  34 SW7       29.92S                   MAY
+ 9PM EDT APR 30 2012 CLOUDY    75  50  41 S5        29.92S                   MAY
+10PM EDT APR 30 2012 CLOUDY    74  52  46 S5        29.92S                   MAY
+11PM EDT APR 30 2012 CLOUDY    73  53  49 S6        29.91F                   MAY
+12AM EDT MAY 01 2012 LGT RAIN  73  56  54 SW9       29.91S                   MAY
+ 1AM EDT MAY 01 2012 LGT RAIN  71  55  56 NW25G31   29.92R                   MAY
+ 2AM EDT MAY 01 2012 LGT RAIN  64  58  80 W5        29.92S                   MAY
+ 3AM EDT MAY 01 2012 CLOUDY    62  60  93 S3        29.91F                     .
+ 4AM EDT MAY 01 2012 CLOUDY    62  60  93 S3        29.92R                     .
+ 5AM EDT MAY 01 2012 LGT RAIN  63  60  90 SW10      29.93S FOG                 .
+ 6AM EDT MAY 01 2012 DRIZZLE   63  60  90 W13G20    29.95R                     .
+ 7AM EDT MAY 01 2012 CLOUDY    62  59  90 W9        29.99R                     .
+ 8AM EDT MAY 01 2012 CLOUDY    62  59  90 W8        30.01R                     .
+ 9AM EDT MAY 01 2012 CLOUDY    63  59  87 VRB7      30.03R                     .
+10AM EDT MAY 01 2012 PTSUNNY   65  58  78 W8        30.04R                     .
+11AM EDT MAY 01 2012 PTSUNNY   68  57  68 SW10G18   30.05R                     .
+12PM EDT MAY 01 2012 PTSUNNY   70  56  61 W9        30.05F                     .
+ 1PM EDT MAY 01 2012 PTSUNNY   72  55  55 NW13      30.04F                     .
+ 2PM EDT MAY 01 2012 PTSUNNY   73  52  47 W13G20    30.04S                     .
+ 3PM EDT MAY 01 2012 PTSUNNY   74  52  46 W16       30.04S                     .
+ 4PM EDT MAY 01 2012 PTSUNNY   74  49  41 W9G21     30.03F                     .
+ 5PM EDT MAY 01 2012 CLOUDY    75  52  44 W8        30.02F                     .
+ 6PM EDT MAY 01 2012 PTSUNNY   75  50  41 SW5       30.01F                     .
+ 7PM EDT MAY 01 2012 PTSUNNY   74  51  44 CALM      29.99F                     .
+ 8PM EDT MAY 01 2012 CLOUDY    73  51  46 CALM      30.00R                     .
+ 9PM EDT MAY 01 2012 CLOUDY    68  56  65 CALM      30.00S                     .
+10PM EDT MAY 01 2012 CLOUDY    66  55  67 CALM      30.01R                     .
+11PM EDT MAY 01 2012 CLOUDY    67  53  61 N7        30.02R                     .
+12AM EDT MAY 02 2012 LGT RAIN  63  56  78 S7        30.01F                     .
+ 1AM EDT MAY 02 2012 CLOUDY    61  58  90 S5        29.99F                     .
+ 2AM EDT MAY 02 2012 CLOUDY    60  58  92 SE5       29.98F                     .
+ 3AM EDT MAY 02 2012 CLOUDY    61  59  93 S7        29.99R                     .
+ 4AM EDT MAY 02 2012 CLOUDY    61  59  94 SW8       29.98R                     .
+ 5AM EDT MAY 02 2012 LGT RAIN  62  59  90 SW6       29.99R                     .
+ 6AM EDT MAY 02 2012 LGT RAIN  62  59  90 VRB3      30.00R                     .
+ 7AM EDT MAY 02 2012 LGT RAIN  62  59  90 S9        29.99F                     .
+ 8AM EDT MAY 02 2012 CLOUDY    62  60  93 VRB3      30.02R                     .
+ 9AM EDT MAY 02 2012 CLOUDY    64  60  87 SW5       30.04R                     .
+10AM EDT MAY 02 2012 CLOUDY    67  62  84 W6        30.04S                     .
+11AM EDT MAY 02 2012 PTSUNNY   68  62  81 W10G21    30.05R                     .
+12PM EDT MAY 02 2012 MOSUNNY   72  61  68 W10G17    30.03F                     .
+ 1PM EDT MAY 02 2012 MOSUNNY   75  62  64 SW12G17   30.02F                     .
+ 2PM EDT MAY 02 2012 PTSUNNY   78  63  59 SW8       30.01F                     .
+ 3PM EDT MAY 02 2012 MOSUNNY   81  64  56 W8G16     30.01S                     .
+ 4PM EDT MAY 02 2012 NOT AVBL                                                  .
+ 5PM EDT MAY 02 2012 MOSUNNY   82  61  48 SW12G20   30.00                      .
+ 6PM EDT MAY 02 2012 MOSUNNY   83  61  47 SW14      29.99F                     .
+ 7PM EDT MAY 02 2012 MOSUNNY   83  61  47 SW9       29.98F                     .
+ 8PM EDT MAY 02 2012 PTCLDY    81  60  48 SW8       29.99R                     .
+ 9PM EDT MAY 02 2012 PTCLDY    79  59  50 SW6       30.00R                     .
+10PM EDT MAY 02 2012 PTCLDY    77  60  55 SW7       30.02R                     .
+11PM EDT MAY 02 2012 PTCLDY    76  59  55 SW5       30.04R                     .
+12AM EDT MAY 03 2012 PTCLDY    74  59  59 SW5       30.04S                     .
+ 1AM EDT MAY 03 2012 PTCLDY    73  59  61 SW3       30.05R                     .
+ 2AM EDT MAY 03 2012 PTCLDY    72  60  66 SW7       30.04F                     .
+ 3AM EDT MAY 03 2012 PTCLDY    69  62  78 SW5       30.02F                     .
+ 4AM EDT MAY 03 2012 TSTM      66  61  84 W16G24    30.08R VSB 1               .
+ 5AM EDT MAY 03 2012 TSTM      65  61  87 CALM      30.05F                     .
+ 6AM EDT MAY 03 2012 TSTM      64  62  93 CALM      30.06R FOG                 .
+ 7AM EDT MAY 03 2012 CLOUDY    64  62  93 S3        30.08R                     .
+ 8AM EDT MAY 03 2012 PTSUNNY   64  62  93 CALM      30.10R                     .
+ 9AM EDT MAY 03 2012 PTSUNNY   68  64  87 S5        30.12R                     .
+10AM EDT MAY 03 2012 MOSUNNY   71  64  78 S6        30.12S                     .
+11AM EDT MAY 03 2012 MOSUNNY   75  64  68 S8        30.11F                     .
+12PM EDT MAY 03 2012 MOSUNNY   80  64  58 SW9       30.10F                     .
+ 1PM EDT MAY 03 2012 MOSUNNY   82  63  52 W9        30.08F                     .
+ 2PM EDT MAY 03 2012 PTSUNNY   84  63  49 W9        30.06F HX  85              .
+ 3PM EDT MAY 03 2012 MOSUNNY   85  62  46 SW7G18    30.04F HX  85              .
+ 4PM EDT MAY 03 2012 MOSUNNY   87  58  37 SW12      30.02F HX  86              .
+ 5PM EDT MAY 03 2012 MOSUNNY   86  58  38 W10G16    30.01F HX  85              .
+ 6PM EDT MAY 03 2012 MOSUNNY   85  59  41 SW8       30.00F                     .
+ 7PM EDT MAY 03 2012 MOSUNNY   85  59  41 SW9       29.99F                     .
+ 8PM EDT MAY 03 2012 PTCLDY    84  59  42 SW7       29.97F                     .
+ 9PM EDT MAY 03 2012 PTCLDY    79  60  52 SW3       29.98R                     .
+10PM EDT MAY 03 2012 PTCLDY    78  60  53 SW3       30.00R                     .
+11PM EDT MAY 03 2012 PTCLDY    76  60  57 SW5       30.02R                     .
+12AM EDT MAY 04 2012 PTCLDY    75  61  61 W5        30.01F                     .
+ 1AM EDT MAY 04 2012 PTCLDY    73  61  65 W5        30.00F                     .
+ 2AM EDT MAY 04 2012 PTCLDY    72  61  68 W5        30.00S                     .
+ 3AM EDT MAY 04 2012 PTCLDY    70  62  76 CALM      29.99F                     .
+ 4AM EDT MAY 04 2012 PTCLDY    68  61  78 CALM      29.99S                     .
+ 5AM EDT MAY 04 2012 PTCLDY    66  60  81 CALM      29.99S                     .
+ 6AM EDT MAY 04 2012 PTCLDY    65  61  87 CALM      30.00R                     .
+ 7AM EDT MAY 04 2012 PTCLDY    65  61  87 NE7       30.03R                     .
+ 8AM EDT MAY 04 2012 MOSUNNY   68  62  81 CALM      30.03S                     .
+ 9AM EDT MAY 04 2012 MOSUNNY   71  63  75 SW12G18   30.05R                     .
+10AM EDT MAY 04 2012 MOSUNNY   72  63  73 SW10G21   30.05S                     .
+11AM EDT MAY 04 2012 MOSUNNY   75  60  59 SW15      30.04F                     .
+12PM EDT MAY 04 2012 MOSUNNY   74  61  63 S10       30.01F                     .
+ 1PM EDT MAY 04 2012 MOSUNNY   76  61  59 SW6       30.01S                     .
+ 2PM EDT MAY 04 2012 MOSUNNY   78  60  53 SW5       29.98F                     .
+ 3PM EDT MAY 04 2012 PTSUNNY   78  59  51 W12       29.96F                     .
+ 4PM EDT MAY 04 2012 PTSUNNY   79  58  48 S10G16    29.94F                     .
+ 5PM EDT MAY 04 2012 MOSUNNY   79  58  48 SW13G18   29.94S                     .
+ 6PM EDT MAY 04 2012 PTSUNNY   78  57  48 SW10G18   29.92F                     .
+ 7PM EDT MAY 04 2012 PTSUNNY   76  59  55 SW8       29.93R                     .
+ 8PM EDT MAY 04 2012 CLOUDY    74  59  59 W5        29.94R                     .
+ 9PM EDT MAY 04 2012 CLOUDY    73  60  63 SW5       29.95R                     .
+10PM EDT MAY 04 2012 CLOUDY    71  61  70 NW10      29.96R                     .
+11PM EDT MAY 04 2012 CLOUDY    69  59  70 NW5       29.96S                     .
+12AM EDT MAY 05 2012 CLOUDY    68  60  75 N6        29.95F                     .
+ 1AM EDT MAY 05 2012 MOCLDY    67  60  78 N3        29.94F                     .
+ 2AM EDT MAY 05 2012 MOCLDY    65  60  84 CALM      29.94S                     .
+ 3AM EDT MAY 05 2012 MOCLDY    65  60  84 CALM      29.92F                     .
+ 4AM EDT MAY 05 2012 MOCLDY    63  60  90 CALM      29.91F                     .
+ 5AM EDT MAY 05 2012 PTCLDY    63  60  90 N10       29.90F                     .
+ 6AM EDT MAY 05 2012 MOCLDY    63  60  90 N5        29.91R                     .
+ 7AM EDT MAY 05 2012 MOCLDY    62  59  90 CALM      29.92R                     .
+ 8AM EDT MAY 05 2012 FOG       63  60  90 N6        29.94R VSB 1/2             .
+ 9AM EDT MAY 05 2012 CLOUDY    65  60  84 NW5       29.95R HAZE                .
+10AM EDT MAY 05 2012 CLOUDY    67  61  81 N6        29.96R                     .
+11AM EDT MAY 05 2012 CLOUDY    69  62  78 N7        29.97R                     .
+12PM EDT MAY 05 2012 PTSUNNY   70  62  76 N10       29.97S                     .
+ 1PM EDT MAY 05 2012 PTSUNNY   73  61  65 NE7       29.95F                     .
+ 2PM EDT MAY 05 2012 PTSUNNY   76  61  59 N7        29.94F                     .
+ 3PM EDT MAY 05 2012 PTSUNNY   77  60  55 NE8       29.93F                     .
+ 4PM EDT MAY 05 2012 PTSUNNY   78  60  53 NE8       29.91F                     .
+ 5PM EDT MAY 05 2012 MOSUNNY   77  58  51 NE6       29.91S                     .
+ 6PM EDT MAY 05 2012 PTSUNNY   77  59  53 N9        29.92R                     .
+ 7PM EDT MAY 05 2012 MOSUNNY   77  59  53 NE8       29.92S                     .
+ 8PM EDT MAY 05 2012 PTCLDY    76  59  55 NE6       29.94R                     .
+ 9PM EDT MAY 05 2012 MOCLDY    74  59  59 N6        29.96R                     .
+10PM EDT MAY 05 2012 NOT AVBL                                                  .
+11PM EDT MAY 05 2012 MOCLDY    67  54  63 N13       30.01                      .
+12AM EDT MAY 06 2012 PTCLDY    64  52  64 N9        30.01S                     .
+ 1AM EDT MAY 06 2012 CLEAR     61  52  72 NW5       30.00F                     .
+ 2AM EDT MAY 06 2012 PTCLDY    59  51  75 NW9       30.00S                     .
+ 3AM EDT MAY 06 2012 PTCLDY    58  50  75 N7        29.98F                     .
+ 4AM EDT MAY 06 2012 CLOUDY    57  49  74 N7        29.97F                     .
+ 5AM EDT MAY 06 2012 PTCLDY    56  49  77 NW6       29.98R                     .
+ 6AM EDT MAY 06 2012 PTCLDY    55  48  77 N8        29.98S                     .
+ 7AM EDT MAY 06 2012 PTCLDY    54  48  80 N5        30.01R                     .
+ 8AM EDT MAY 06 2012 MOSUNNY   56  49  77 N5        30.03R                     .
+ 9AM EDT MAY 06 2012 MOSUNNY   61  50  67 CALM      30.04R                     .
+10AM EDT MAY 06 2012 MOSUNNY   64  53  67 CALM      30.04S                     .
+11AM EDT MAY 06 2012 MOSUNNY   69  55  60 N5        30.05R                     .
+12PM EDT MAY 06 2012 MOSUNNY   73  54  51 CALM      30.04F                     .
+ 1PM EDT MAY 06 2012 MOSUNNY   74  53  48 VRB3      30.03F                     .
+ 2PM EDT MAY 06 2012 MOSUNNY   78  50  37 N8        30.01F                     .
+ 3PM EDT MAY 06 2012 MOSUNNY   80  44  27 N9        30.00F                     .
+ 4PM EDT MAY 06 2012 PTSUNNY   81  38  21 N5        29.99F                     .
+ 5PM EDT MAY 06 2012 PTSUNNY   81  43  26 NW9       30.00R                     .
+ 6PM EDT MAY 06 2012 PTSUNNY   79  43  27 N8        29.99F                     .
+ 7PM EDT MAY 06 2012 PTSUNNY   78  44  29 N7        29.98F                     .
+ 8PM EDT MAY 06 2012 CLOUDY    76  44  32 N9        29.97F                     .
+ 9PM EDT MAY 06 2012 CLOUDY    73  46  38 N6        29.96F                     .
+10PM EDT MAY 06 2012 CLOUDY    71  46  40 N7        29.96S                     .
+11PM EDT MAY 06 2012 PTCLDY    68  47  46 N5        29.96S                     .
+12AM EDT MAY 07 2012 MOCLDY    67  46  47 NW3       29.98R                     .
+ 1AM EDT MAY 07 2012 MOCLDY    65  46  50 NW3       29.98S                     .
+ 2AM EDT MAY 07 2012 MOCLDY    61  51  70 CALM      29.96F                     .
+ 3AM EDT MAY 07 2012 MOCLDY    59  50  72 CALM      29.94F                     .
+ 4AM EDT MAY 07 2012 MOCLDY    57  51  80 CALM      29.93F                     .
+ 5AM EDT MAY 07 2012 MOCLDY    58  51  78 CALM      29.93S                     .
+ 6AM EDT MAY 07 2012 CLOUDY    58  52  80 SE3       29.92F                     .
+ 7AM EDT MAY 07 2012 CLOUDY    61  55  81 CALM      29.94R                     .
+ 8AM EDT MAY 07 2012 CLOUDY    62  57  83 SE3       29.94S                     .
+ 9AM EDT MAY 07 2012 NOT AVBL                                                  .
+10AM EDT MAY 07 2012 PTSUNNY   71  61  70 S6        29.93                      .
+11AM EDT MAY 07 2012 PTSUNNY   74  62  66 SW6       29.94R                     .
+12PM EDT MAY 07 2012 CLOUDY    76  61  59 SW9       29.93F                     .
+ 1PM EDT MAY 07 2012 PTSUNNY   77  61  57 SW8       29.92F                     .
+ 2PM EDT MAY 07 2012 CLOUDY    79  59  50 SW13G18   29.89F                     .
+ 3PM EDT MAY 07 2012 CLOUDY    79  60  52 SW3       29.88F                     .
+ 4PM EDT MAY 07 2012 PTSUNNY   80  59  48 S6        29.85F                     .
+ 5PM EDT MAY 07 2012 CLOUDY    81  59  47 SW8       29.83F                     .
+ 6PM EDT MAY 07 2012 CLOUDY    77  62  59 N12G25    29.82F THUNDER             .
+ 7PM EDT MAY 07 2012 PTSUNNY   75  62  64 NE6       29.79F                     .
+ 8PM EDT MAY 07 2012 CLOUDY    72  61  68 E5        29.81R                     .
+ 9PM EDT MAY 07 2012 CLOUDY    69  61  75 E6        29.81S                     .
+10PM EDT MAY 07 2012 CLOUDY    69  61  75 E6        29.81S                     .
+11PM EDT MAY 07 2012 CLOUDY    69  61  75 NE10G22   29.81R THUNDER             .
+12AM EDT MAY 08 2012 TSTM      64  63  94 N25G32    29.82R FOG                 .
+ 1AM EDT MAY 08 2012 LGT RAIN  62  60  93 NE6       29.84F                     .
+ 2AM EDT MAY 08 2012 RAIN      62  61  96 SE6       29.83F FOG                 .
+ 3AM EDT MAY 08 2012 RAIN      62  60  93 SE8       29.81S FOG                 .
+ 4AM EDT MAY 08 2012 CLOUDY    62  61  96 S3        29.81S                     .
+ 5AM EDT MAY 08 2012 LGT RAIN  64  61  90 S7        29.79F                     .
+ 6AM EDT MAY 08 2012 LGT RAIN  63  61  93 SW8       29.80R FOG                 .
+ 7AM EDT MAY 08 2012 LGT RAIN  63  61  93 S7        29.80S FOG                 .
+ 8AM EDT MAY 08 2012 HVY RAIN  63  61  93 SW5       29.80S FOG                 .
+ 9AM EDT MAY 08 2012 HVY RAIN  63  61  93 S3        29.80S FOG                 .
+10AM EDT MAY 08 2012 RAIN      63  61  93 SW6       29.79F FOG                 .
+11AM EDT MAY 08 2012 LGT RAIN  64  61  90 SW5       29.79S                     .
+12PM EDT MAY 08 2012 CLOUDY    65  62  90 SW7       29.79S                     .
+ 1PM EDT MAY 08 2012 PTSUNNY   68  63  83 SW7       29.79S                     .
+ 2PM EDT MAY 08 2012 CLOUDY    69  62  78 S6        29.77F                     .
+ 3PM EDT MAY 08 2012 CLOUDY    71  62  73 W9        29.77S                     .
+ 4PM EDT MAY 08 2012 CLOUDY    70  62  76 NW16      29.76F                     .
+ 5PM EDT MAY 08 2012 CLOUDY    72  60  66 NW9       29.75F                     .
+ 6PM EDT MAY 08 2012 PTSUNNY   72  61  68 NW17      29.76R                     .
+ 7PM EDT MAY 08 2012 CLOUDY    69  59  70 N14       29.78R                     .
+ 8PM EDT MAY 08 2012 CLOUDY    66  58  75 N8        29.80R                     .
+ 9PM EDT MAY 08 2012 CLOUDY    65  57  75 NW9       29.82R                     .
+10PM EDT MAY 08 2012 CLOUDY    63  54  72 NW8       29.83R                     .
+11PM EDT MAY 08 2012 MOCLDY    62  55  77 NW5       29.84R                     .
+12AM EDT MAY 09 2012 MOCLDY    59  54  83 CALM      29.84S                     .
+ 1AM EDT MAY 09 2012 CLOUDY    58  54  86 CALM      29.84S                     .
+ 2AM EDT MAY 09 2012 CLOUDY    57  53  86 CALM      29.84S                     .
+ 3AM EDT MAY 09 2012 CLOUDY    56  53  90 CALM      29.82F                     .
+ 4AM EDT MAY 09 2012 CLOUDY    56  53  90 W3        29.82S                     .
+ 5AM EDT MAY 09 2012 CLOUDY    56  53  90 CALM      29.82S                     .
+ 6AM EDT MAY 09 2012 CLOUDY    56  54  93 W3        29.83R                     .
+ 7AM EDT MAY 09 2012 CLOUDY    56  53  90 W3        29.84R                     .
+ 8AM EDT MAY 09 2012 CLOUDY    57  54  89 CALM      29.82F                     .
+ 9AM EDT MAY 09 2012 CLOUDY    59  53  80 W3        29.82S                     .
+10AM EDT MAY 09 2012 CLOUDY    61  47  59 CALM      29.82S                     .
+11AM EDT MAY 09 2012 CLOUDY    63  44  50 CALM      29.81F                     .
+12PM EDT MAY 09 2012 CLOUDY    64  44  48 W5        29.80F                     .
+ 1PM EDT MAY 09 2012 CLOUDY    65  44  46 W8        29.79F                     .
+ 2PM EDT MAY 09 2012 CLOUDY    61  50  67 S3        29.77F                     .
+ 3PM EDT MAY 09 2012 CLOUDY    64  47  53 W5        29.74F                     .
+ 4PM EDT MAY 09 2012 LGT RAIN  64  45  49 NW17G24   29.74S                     .
+ 5PM EDT MAY 09 2012 PTSUNNY   64  47  53 SW5       29.71F                     .
+ 6PM EDT MAY 09 2012 PTSUNNY   65  38  36 W13G24    29.71S                     .
+ 7PM EDT MAY 09 2012 PTSUNNY   64  41  42 W15       29.71S                     .
+ 8PM EDT MAY 09 2012 LGT RAIN  55  47  74 NW20      29.74R                     .
+ 9PM EDT MAY 09 2012 CLOUDY    53  48  83 NW5       29.75R                     .
+10PM EDT MAY 09 2012 PTCLDY    51  47  86 W6        29.76R                     .
+11PM EDT MAY 09 2012 PTCLDY    52  47  83 NW8       29.77R                     .
+12AM EDT MAY 10 2012 CLEAR     51  46  83 NW6       29.76F                     .
+ 1AM EDT MAY 10 2012 PTCLDY    50  45  83 NW7       29.76S                     .
+ 2AM EDT MAY 10 2012 PTCLDY    47  45  93 W9        29.77R                     .
+ 3AM EDT MAY 10 2012 NOT AVBL                                                  .
+ 4AM EDT MAY 10 2012 MOCLDY    47  44  90 NW8       29.77                      .
+ 5AM EDT MAY 10 2012 MOCLDY    47  43  86 NW10      29.77S                     .
+ 6AM EDT MAY 10 2012 MOCLDY    46  41  82 NW9       29.79R                     .
+ 7AM EDT MAY 10 2012 PTCLDY    46  41  82 NW8       29.81R                     .
+ 8AM EDT MAY 10 2012 MOSUNNY   48  42  80 NW9       29.83R                     .
+ 9AM EDT MAY 10 2012 MOSUNNY   50  41  71 NW13      29.84R                     .
+10AM EDT MAY 10 2012 MOSUNNY   53  41  63 NW14G21   29.85R                     .
+11AM EDT MAY 10 2012 PTSUNNY   54  39  57 NW21      29.85S                     .
+12PM EDT MAY 10 2012 PTSUNNY   56  38  50 NW18G24   29.86R                     .
+ 1PM EDT MAY 10 2012 MOSUNNY   57  37  47 NW15      29.86S                     .
+ 2PM EDT MAY 10 2012 PTSUNNY   59  35  40 NW20      29.85F                     .
+ 3PM EDT MAY 10 2012 MOSUNNY   59  35  40 NW14G24   29.85S                     .
+ 4PM EDT MAY 10 2012 MOSUNNY   61  34  36 NW17G26   29.85S                     .
+ 5PM EDT MAY 10 2012 MOSUNNY   62  32  32 NW17G24   29.86R                     .
+ 6PM EDT MAY 10 2012 MOSUNNY   59  30  33 N18G24    29.88R                     .
+ 7PM EDT MAY 10 2012 MOSUNNY   58  30  34 NW16G26   29.90R                     .
+ 8PM EDT MAY 10 2012 PTCLDY    57  30  35 NW14      29.93R                     .
+ 9PM EDT MAY 10 2012 CLEAR     54  33  45 NW9       29.95R                     .
+10PM EDT MAY 10 2012 CLEAR     52  34  50 NW9       29.97R                     .
+11PM EDT MAY 10 2012 CLEAR     51  35  54 NW10      29.99R                     .
+12AM EDT MAY 11 2012 CLEAR     47  36  65 W5        30.00R                     .
+ 1AM EDT MAY 11 2012 CLEAR     45  36  70 W5        30.01R                     .
+ 2AM EDT MAY 11 2012 CLEAR     44  36  73 W5        30.02R                     .
+ 3AM EDT MAY 11 2012 CLEAR     43  36  76 W3        30.03R                     .
+ 4AM EDT MAY 11 2012 CLEAR     41  36  82 W6        30.05R                     .
+ 5AM EDT MAY 11 2012 CLEAR     42  36  79 NW3       30.07R                     .
+ 6AM EDT MAY 11 2012 PTCLDY    41  35  79 W3        30.09R                     .
+ 7AM EDT MAY 11 2012 PTCLDY    42  36  79 W6        30.11R                     .
+ 8AM EDT MAY 11 2012 MOSUNNY   47  38  71 CALM      30.14R                     .
+ 9AM EDT MAY 11 2012 MOSUNNY   53  38  56 W7        30.15R                     .
+10AM EDT MAY 11 2012 SUNNY     57  39  51 W7        30.15S                     .
+11AM EDT MAY 11 2012 SUNNY     61  38  42 W8        30.16R                     .
+12PM EDT MAY 11 2012 MOSUNNY   64  34  32 W14G21    30.15F                     .
+ 1PM EDT MAY 11 2012 MOSUNNY   66  35  31 NW9       30.14F                     .
+ 2PM EDT MAY 11 2012 MOSUNNY   66  32  28 NW12G23   30.14S                     .
+ 3PM EDT MAY 11 2012 MOSUNNY   68  33  27 N9        30.14S                     .
+ 4PM EDT MAY 11 2012 MOSUNNY   68  35  29 NW9       30.14S                     .
+ 5PM EDT MAY 11 2012 MOSUNNY   69  34  27 W12       30.14S                     .
+ 6PM EDT MAY 11 2012 MOSUNNY   69  35  28 NW16      30.15R                     .
+ 7PM EDT MAY 11 2012 MOSUNNY   68  34  28 NW10      30.15S                     .
+ 8PM EDT MAY 11 2012 PTCLDY    66  34  30 NW9       30.16R                     .
+ 9PM EDT MAY 11 2012 PTCLDY    62  37  39 W3        30.18R                     .
+10PM EDT MAY 11 2012 PTCLDY    59  39  47 W3        30.20R                     .
+11PM EDT MAY 11 2012 PTCLDY    55  40  56 CALM      30.21R                     .
+12AM EDT MAY 12 2012 NOT AVBL                                                  .
+ 1AM EDT MAY 12 2012 CLEAR     49  41  74 CALM      30.22                      .
+ 2AM EDT MAY 12 2012 CLEAR     50  41  71 CALM      30.22S                     .
+ 3AM EDT MAY 12 2012 CLEAR     49  41  74 CALM      30.21F                     .
+ 4AM EDT MAY 12 2012 CLEAR     47  40  76 CALM      30.22R                     .
+ 5AM EDT MAY 12 2012 PTCLDY    47  40  76 CALM      30.24R                     .
+ 6AM EDT MAY 12 2012 PTCLDY    47  40  76 CALM      30.26R                     .
+ 7AM EDT MAY 12 2012 MOCLDY    46  41  82 CALM      30.28R                     .
+ 8AM EDT MAY 12 2012 MOSUNNY   50  43  77 CALM      30.30R                     .
+ 9AM EDT MAY 12 2012 PTSUNNY   57  44  62 SE3       30.29F                     .
+10AM EDT MAY 12 2012 PTSUNNY   63  45  51 CALM      30.29S                     .
+11AM EDT MAY 12 2012 CLOUDY    66  41  40 VRB3      30.29S                     .
+12PM EDT MAY 12 2012 CLOUDY    68  39  34 S6        30.30R                     .
+ 1PM EDT MAY 12 2012 CLOUDY    68  40  35 S6        30.29F                     .
+ 2PM EDT MAY 12 2012 CLOUDY    69  36  29 VRB6      30.27F                     .
+ 3PM EDT MAY 12 2012 CLOUDY    70  39  32 S7        30.25F                     .
+ 4PM EDT MAY 12 2012 CLOUDY    70  38  31 S6        30.23F                     .
+ 5PM EDT MAY 12 2012 CLOUDY    71  40  32 VRB3      30.21F                     .
+ 6PM EDT MAY 12 2012 CLOUDY    71  37  28 S6        30.21S                     .
+ 7PM EDT MAY 12 2012 CLOUDY    69  43  38 W3        30.21S                     .
+ 8PM EDT MAY 12 2012 CLOUDY    67  44  43 W3        30.20F                     .
+ 9PM EDT MAY 12 2012 NOT AVBL                                                  .
+10PM EDT MAY 12 2012 CLOUDY    63  48  58 CALM      30.21                      .
+11PM EDT MAY 12 2012 CLOUDY    61  48  62 CALM      30.21S                     .
+12AM EDT MAY 13 2012 CLOUDY    60  46  59 CALM      30.21S                     .
+ 1AM EDT MAY 13 2012 CLOUDY    58  47  66 CALM      30.21S                     .
+ 2AM EDT MAY 13 2012 CLOUDY    57  49  74 CALM      30.19F                     .
+ 3AM EDT MAY 13 2012 CLOUDY    57  49  74 CALM      30.18F                     .
+ 4AM EDT MAY 13 2012 CLOUDY    55  50  83 CALM      30.18S                     .
+ 5AM EDT MAY 13 2012 CLOUDY    55  50  83 CALM      30.18S                     .
+ 6AM EDT MAY 13 2012 CLOUDY    56  50  80 CALM      30.19R                     .
+ 7AM EDT MAY 13 2012 CLOUDY    57  49  74 CALM      30.21R                     .
+ 8AM EDT MAY 13 2012 CLOUDY    57  51  80 CALM      30.21S                     .
+ 9AM EDT MAY 13 2012 CLOUDY    58  51  78 S3        30.21S                     .
+10AM EDT MAY 13 2012 CLOUDY    60  51  72 S3        30.21S                     .
+11AM EDT MAY 13 2012 LGT RAIN  60  51  72 S3        30.22R                     .
+12PM EDT MAY 13 2012 LGT RAIN  60  53  77 S3        30.22S                     .
+ 1PM EDT MAY 13 2012 CLOUDY    61  51  70 SE3       30.20F                     .
+ 2PM EDT MAY 13 2012 CLOUDY    62  49  62 VRB3      30.20S                     .
+ 3PM EDT MAY 13 2012 LGT RAIN  61  50  67 SE5       30.18F                     .
+ 4PM EDT MAY 13 2012 LGT RAIN  58  54  86 SE3       30.17F                     .
+ 5PM EDT MAY 13 2012 LGT RAIN  58  53  84 CALM      30.16F                     .
+ 6PM EDT MAY 13 2012 LGT RAIN  58  55  90 E3        30.15F FOG                 .
+ 7PM EDT MAY 13 2012 LGT RAIN  57  55  93 E5        30.13F FOG                 .
+ 8PM EDT MAY 13 2012 LGT RAIN  57  55  93 NE3       30.13S FOG                 .
+ 9PM EDT MAY 13 2012 LGT RAIN  56  55  97 CALM      30.14R FOG                 .
+10PM EDT MAY 13 2012 LGT RAIN  57  55  93 CALM      30.15R FOG                 .
+11PM EDT MAY 13 2012 LGT RAIN  57  55  93 CALM      30.14F FOG                 .
+12AM EDT MAY 14 2012 LGT RAIN  56  55  97 CALM      30.13F FOG                 .
+ 1AM EDT MAY 14 2012 LGT RAIN  56  54  93 CALM      30.11F FOG                 .
+ 2AM EDT MAY 14 2012 LGT RAIN  56  54  93 CALM      30.10F FOG                 .
+ 3AM EDT MAY 14 2012 LGT RAIN  56  54  93 NE3       30.08F                     .
+ 4AM EDT MAY 14 2012 LGT RAIN  56  55  97 NE3       30.07F                     .
+ 5AM EDT MAY 14 2012 LGT RAIN  56  54  93 E3        30.07S FOG                 .
+ 6AM EDT MAY 14 2012 LGT RAIN  56  54  93 E3        30.06S FOG                 .
+ 7AM EDT MAY 14 2012 LGT RAIN  56  55  97 E5        30.06S FOG                 .
+ 8AM EDT MAY 14 2012 LGT RAIN  57  55  93 NE5       30.07R FOG                 .
+ 9AM EDT MAY 14 2012 LGT RAIN  57  55  93 E6        30.06F FOG                 .
+10AM EDT MAY 14 2012 CLOUDY    59  56  89 N6        30.07R FOG                 .
+11AM EDT MAY 14 2012 CLOUDY    61  56  83 N6        30.06S                     .
+12PM EDT MAY 14 2012 CLOUDY    62  57  83 NE6       30.06S                     .
+ 1PM EDT MAY 14 2012 DRIZZLE   63  57  81 N3        30.05S                     .
+ 2PM EDT MAY 14 2012 CLOUDY    63  57  81 NE6       30.03F                     .
+ 3PM EDT MAY 14 2012 CLOUDY    64  57  78 NE6       30.02F                     .
+ 4PM EDT MAY 14 2012 CLOUDY    64  57  78 N7        30.01F                     .
+ 5PM EDT MAY 14 2012 CLOUDY    63  57  81 NE6       30.00F                     .
+ 6PM EDT MAY 14 2012 CLOUDY    64  57  78 E7        30.00S                     .
+ 7PM EDT MAY 14 2012 CLOUDY    65  57  75 E5        30.00S                     .
+ 8PM EDT MAY 14 2012 CLOUDY    63  57  81 E3        30.00S                     .
+ 9PM EDT MAY 14 2012 MOCLDY    62  57  83 CALM      30.01R                     .
+10PM EDT MAY 14 2012 CLOUDY    61  57  87 NE3       30.02R                     .
+11PM EDT MAY 14 2012 MOCLDY    61  57  87 CALM      30.02S                     .
+12AM EDT MAY 15 2012 MOCLDY    59  56  89 CALM      30.02S                     .
+ 1AM EDT MAY 15 2012 MOCLDY    58  56  93 CALM      30.01F                     .
+ 2AM EDT MAY 15 2012 MOCLDY    57  55  93 CALM      30.00F                     .
+ 3AM EDT MAY 15 2012 MOCLDY    57  55  93 NW3       29.99F                     .
+ 4AM EDT MAY 15 2012 NOT AVBL                                                  .
+ 5AM EDT MAY 15 2012 CLOUDY    57  56  96 NW6       29.98  FOG                 .
+ 6AM EDT MAY 15 2012 FOG       55  55 100 CALM      29.98R VSB 1/2             .
+ 7AM EDT MAY 15 2012 FOG       55  55 100 CALM      29.99R VSB 1/4             .
+ 8AM EDT MAY 15 2012 FOG       55  54  96 CALM      30.00S VSB 1/8             .
+ 9AM EDT MAY 15 2012 FOG       57  55  94 NW3       30.02R VSB 1/2             .
+10AM EDT MAY 15 2012 CLOUDY    62  57  83 W3        30.03S                     .
+11AM EDT MAY 15 2012 PTSUNNY   66  57  72 NW5       30.02F                     .
+12PM EDT MAY 15 2012 PTSUNNY   69  56  62 NW6       30.02S                     .
+ 1PM EDT MAY 15 2012 PTSUNNY   71  55  56 NW5       30.00F                     .
+ 2PM EDT MAY 15 2012 PTSUNNY   73  53  49 VRB6      29.98F                     .
+ 3PM EDT MAY 15 2012 PTSUNNY   74  53  48 S6        29.97F                     .
+ 4PM EDT MAY 15 2012 MOSUNNY   75  51  43 VRB6      29.96F                     .
+ 5PM EDT MAY 15 2012 MOSUNNY   74  46  36 CALM      29.95F                     .
+ 6PM EDT MAY 15 2012 PTSUNNY   75  49  39 W8        29.95S                     .
+ 7PM EDT MAY 15 2012 PTSUNNY   74  49  41 W6        29.94F                     .
+ 8PM EDT MAY 15 2012 MOCLDY    72  49  44 W5        29.95R                     .
+ 9PM EDT MAY 15 2012 MOCLDY    69  50  50 SW3       29.95S                     .
+10PM EDT MAY 15 2012 MOCLDY    65  52  62 CALM      29.96R                     .
+11PM EDT MAY 15 2012 MOCLDY    64  52  64 CALM      29.96S                     .
+12AM EDT MAY 16 2012 MOCLDY    60  51  72 CALM      29.95F                     .
+ 1AM EDT MAY 16 2012 CLEAR     62  50  64 SW5       29.95S                     .
+ 2AM EDT MAY 16 2012 CLEAR     62  53  72 SW5       29.95S                     .
+ 3AM EDT MAY 16 2012 CLEAR     62  54  74 SW7       29.94F                     .
+ 4AM EDT MAY 16 2012 CLEAR     61  54  77 SW8       29.93F                     .
+ 5AM EDT MAY 16 2012 CLEAR     60  54  80 SW6       29.92F                     .
+ 6AM EDT MAY 16 2012 PTCLDY    60  54  80 SW6       29.92S                     .
+ 7AM EDT MAY 16 2012 PTCLDY    60  54  80 SW7       29.93R                     .
+ 8AM EDT MAY 16 2012 SUNNY     62  54  74 SW12      29.94R                     .
+ 9AM EDT MAY 16 2012 SUNNY     65  54  67 SW10G18   29.94S                     .
+10AM EDT MAY 16 2012 MOSUNNY   69  53  56 SW8       29.94S                     .
+11AM EDT MAY 16 2012 MOSUNNY   72  51  47 W9        29.93F                     .
+12PM EDT MAY 16 2012 MOSUNNY   76  51  41 W10       29.93S                     .
+ 1PM EDT MAY 16 2012 MOSUNNY   77  48  35 W13G21    29.92F                     .
+ 2PM EDT MAY 16 2012 PTSUNNY   76  48  37 W12G28    29.90F                     .
+ 3PM EDT MAY 16 2012 CLOUDY    74  53  48 NW13      29.91R                     .
+ 4PM EDT MAY 16 2012 PTSUNNY   68  52  56 N18G26    29.93R                     .
+ 5PM EDT MAY 16 2012 PTSUNNY   66  54  65 N21       29.94R                     .
+ 6PM EDT MAY 16 2012 CLOUDY    62  53  72 N16G28    29.97R                     .
+ 7PM EDT MAY 16 2012 PTSUNNY   59  48  67 N12       30.00R                     .
+ 8PM EDT MAY 16 2012 PTCLDY    59  40  49 N15       30.01R                     .
+ 9PM EDT MAY 16 2012 MOCLDY    56  36  47 N14       30.04R                     .
+10PM EDT MAY 16 2012 PTCLDY    53  34  48 N14       30.08R                     .
+11PM EDT MAY 16 2012 PTCLDY    51  35  54 N8        30.11R                     .
+12AM EDT MAY 17 2012 PTCLDY    49  36  61 NE3       30.11S                     .
+ 1AM EDT MAY 17 2012 CLEAR     47  36  65 N5        30.11S                     .
+ 2AM EDT MAY 17 2012 CLEAR     45  37  73 CALM      30.11S                     .
+ 3AM EDT MAY 17 2012 CLEAR     43  37  79 CALM      30.11S                     .
+ 4AM EDT MAY 17 2012 CLEAR     44  37  76 N3        30.11S                     .
+ 5AM EDT MAY 17 2012 CLEAR     40  36  86 CALM      30.12R                     .
+ 6AM EDT MAY 17 2012 PTCLDY    40  36  86 CALM      30.13R                     .
+ 7AM EDT MAY 17 2012 CLEAR     41  36  82 CALM      30.15R                     .
+ 8AM EDT MAY 17 2012 SUNNY     47  38  71 NE3       30.17R                     .
+ 9AM EDT MAY 17 2012 SUNNY     51  38  60 NE5       30.18R                     .
+10AM EDT MAY 17 2012 SUNNY     53  35  50 NE7       30.19R                     .
+11AM EDT MAY 17 2012 SUNNY     57  33  40 NE9       30.18F                     .
+12PM EDT MAY 17 2012 MOSUNNY   59  35  40 NE10      30.18S                     .
+ 1PM EDT MAY 17 2012 MOSUNNY   62  34  35 NE7       30.16F                     .
+ 2PM EDT MAY 17 2012 MOSUNNY   64  33  31 NE10      30.15F                     .
+ 3PM EDT MAY 17 2012 MOSUNNY   66  34  30 E10       30.13F                     .
+ 4PM EDT MAY 17 2012 MOSUNNY   67  32  27 CALM      30.12F                     .
+ 5PM EDT MAY 17 2012 MOSUNNY   68  32  26 NE6       30.11F                     .
+ 6PM EDT MAY 17 2012 MOSUNNY   68  34  28 N6G16     30.11S                     .
+ 7PM EDT MAY 17 2012 SUNNY     68  34  28 N5        30.11S                     .
+ 8PM EDT MAY 17 2012 PTCLDY    67  35  30 VRB3      30.11S                     .
+ 9PM EDT MAY 17 2012 PTCLDY    64  36  35 N5        30.12R                     .
+10PM EDT MAY 17 2012 CLEAR     61  37  41 N6        30.12S                     .
+11PM EDT MAY 17 2012 CLEAR     58  37  45 N7        30.13R                     .
+12AM EDT MAY 18 2012 CLEAR     56  35  45 N8        30.12F                     .
+ 1AM EDT MAY 18 2012 CLEAR     54  36  50 CALM      30.12S                     .
+ 2AM EDT MAY 18 2012 CLEAR     52  36  54 CALM      30.12S                     .
+ 3AM EDT MAY 18 2012 CLEAR     50  37  61 N3        30.12S                     .
+ 4AM EDT MAY 18 2012 CLEAR     50  38  63 CALM      30.13R                     .
+ 5AM EDT MAY 18 2012 CLEAR     46  39  76 CALM      30.13S                     .
+ 6AM EDT MAY 18 2012 CLEAR     43  39  86 CALM      30.12F                     .
+ 7AM EDT MAY 18 2012 PTCLDY    48  40  73 CALM      30.14R                     .
+ 8AM EDT MAY 18 2012 MOSUNNY   51  41  68 E5        30.15R                     .
+ 9AM EDT MAY 18 2012 MOSUNNY   57  42  57 E6        30.16R                     .
+10AM EDT MAY 18 2012 MOSUNNY   63  42  46 E8        30.17R                     .
+11AM EDT MAY 18 2012 MOSUNNY   66  44  45 E6        30.16F                     .
+12PM EDT MAY 18 2012 MOSUNNY   71  43  36 N5        30.16S                     .
+ 1PM EDT MAY 18 2012 MOSUNNY   73  41  31 VRB3      30.15F                     .
+ 2PM EDT MAY 18 2012 MOSUNNY   76  41  28 CALM      30.14F                     .
+ 3PM EDT MAY 18 2012 MOSUNNY   76  36  23 VRB3      30.13F                     .
+ 4PM EDT MAY 18 2012 MOSUNNY   77  36  22 VRB6      30.12F                     .
+ 5PM EDT MAY 18 2012 SUNNY     77  36  22 E3        30.10F                     .
+ 6PM EDT MAY 18 2012 SUNNY     77  37  23 E7        30.10S                     .
+ 7PM EDT MAY 18 2012 SUNNY     77  35  21 NE5       30.09F                     .
+ 8PM EDT MAY 18 2012 PTCLDY    74  38  27 NE3       30.09S                     .
+ 9PM EDT MAY 18 2012 PTCLDY    71  39  31 NE5       30.10R                     .
+10PM EDT MAY 18 2012 PTCLDY    67  41  38 E3        30.11R                     .
+11PM EDT MAY 18 2012 CLEAR     65  43  44 CALM      30.12R                     .
+12AM EDT MAY 19 2012 CLEAR     62  45  53 CALM      30.12S                     .
+ 1AM EDT MAY 19 2012 CLEAR     60  44  55 CALM      30.12S                     .
+ 2AM EDT MAY 19 2012 CLEAR     58  45  62 CALM      30.13R                     .
+ 3AM EDT MAY 19 2012 CLEAR     56  46  69 CALM      30.12F                     .
+ 4AM EDT MAY 19 2012 CLEAR     53  45  74 CALM      30.12S                     .
+ 5AM EDT MAY 19 2012 CLEAR     52  45  77 CALM      30.13R                     .
+ 6AM EDT MAY 19 2012 CLEAR     49  44  83 CALM      30.14R                     .
+ 7AM EDT MAY 19 2012 PTCLDY    52  46  80 CALM      30.16R                     .
+ 8AM EDT MAY 19 2012 MOSUNNY   57  47  69 CALM      30.17R                     .
+ 9AM EDT MAY 19 2012 MOSUNNY   63  48  58 CALM      30.19R                     .
+10AM EDT MAY 19 2012 MOSUNNY   67  49  52 E5        30.19S                     .
+11AM EDT MAY 19 2012 MOSUNNY   71  45  39 E6        30.19S                     .
+12PM EDT MAY 19 2012 MOSUNNY   75  45  34 E7        30.19S                     .
+ 1PM EDT MAY 19 2012 PTSUNNY   76  45  33 E9        30.18F                     .
+ 2PM EDT MAY 19 2012 PTSUNNY   78  46  32 E7        30.17F                     .
+ 3PM EDT MAY 19 2012 PTSUNNY   81  45  28 N5        30.17S                     .
+ 4PM EDT MAY 19 2012 PTSUNNY   80  44  27 E5        30.15F                     .
+ 5PM EDT MAY 19 2012 PTSUNNY   81  45  28 E6        30.14F                     .
+ 6PM EDT MAY 19 2012 PTSUNNY   81  42  25 VRB3      30.13F                     .
+ 7PM EDT MAY 19 2012 PTSUNNY   79  47  32 E3        30.13S                     .
+ 8PM EDT MAY 19 2012 MOCLDY    79  46  31 CALM      30.13S                     .
+ 9PM EDT MAY 19 2012 MOCLDY    73  53  49 CALM      30.14R                     .
+10PM EDT MAY 19 2012 PTCLDY    71  50  47 CALM      30.15R                     .
+11PM EDT MAY 19 2012 PTCLDY    67  51  56 NW5       30.15S                     .
+12AM EDT MAY 20 2012 PTCLDY    66  51  58 W3        30.15S                     .
+ 1AM EDT MAY 20 2012 PTCLDY    62  52  69 CALM      30.15S                     .
+ 2AM EDT MAY 20 2012 PTCLDY    61  52  72 CALM      30.15S                     .
+ 3AM EDT MAY 20 2012 PTCLDY    57  52  83 S3        30.15S                     .
+ 4AM EDT MAY 20 2012 PTCLDY    59  52  77 CALM      30.15S                     .
+ 5AM EDT MAY 20 2012 PTCLDY    56  51  84 NW3       30.15S                     .
+ 6AM EDT MAY 20 2012 PTCLDY    56  51  84 CALM      30.16R                     .
+ 7AM EDT MAY 20 2012 MOCLDY    58  52  80 CALM      30.19R                     .
+ 8AM EDT MAY 20 2012 PTSUNNY   62  53  72 CALM      30.20R                     .
+ 9AM EDT MAY 20 2012 PTSUNNY   67  55  65 CALM      30.21R                     .
+10AM EDT MAY 20 2012 MOSUNNY   74  56  53 CALM      30.21S                     .
+11AM EDT MAY 20 2012 MOSUNNY   77  56  48 SE5       30.21S                     .
+12PM EDT MAY 20 2012 MOSUNNY   80  51  36 VRB3      30.20F                     .
+ 1PM EDT MAY 20 2012 MOSUNNY   83  48  29 NE8       30.18F                     .
+ 2PM EDT MAY 20 2012 MOSUNNY   83  48  29 NE5       30.17F                     .
+ 3PM EDT MAY 20 2012 MOSUNNY   84  49  29 E10       30.15F                     .
+ 4PM EDT MAY 20 2012 MOSUNNY   85  50  29 E3        30.14F                     .
+ 5PM EDT MAY 20 2012 MOSUNNY   85  52  32 E12       30.11F                     .
+ 6PM EDT MAY 20 2012 MOSUNNY   84  49  29 E7        30.10F                     .
+ 7PM EDT MAY 20 2012 MOSUNNY   83  50  31 E5        30.10S                     .
+ 8PM EDT MAY 20 2012 PTCLDY    79  50  36 E6        30.10S                     .
+ 9PM EDT MAY 20 2012 PTCLDY    75  49  39 E6        30.11R                     .
+10PM EDT MAY 20 2012 PTCLDY    73  49  42 E8        30.11S                     .
+11PM EDT MAY 20 2012 CLEAR     72  47  40 E7        30.11S                     .
+12AM EDT MAY 21 2012 CLEAR     70  47  43 E6        30.09F                     .
+ 1AM EDT MAY 21 2012 CLEAR     68  48  48 E3        30.08F                     .
+ 2AM EDT MAY 21 2012 PTCLDY    68  48  48 SE5       30.07F                     .
+ 3AM EDT MAY 21 2012 PTCLDY    64  49  57 CALM      30.08R                     .
+ 4AM EDT MAY 21 2012 PTCLDY    64  49  57 SE5       30.07F                     .
+ 5AM EDT MAY 21 2012 PTCLDY    64  49  57 CALM      30.08R                     .
+ 6AM EDT MAY 21 2012 NOT AVBL                                                  .
+ 7AM EDT MAY 21 2012 PTCLDY    60  51  72 CALM      30.08                      .
+ 8AM EDT MAY 21 2012 MOSUNNY   64  53  67 E5        30.07F                     .
+ 9AM EDT MAY 21 2012 MOSUNNY   67  55  65 SE5       30.07S                     .
+10AM EDT MAY 21 2012 MOSUNNY   70  56  61 E6        30.07S                     .
+11AM EDT MAY 21 2012 PTSUNNY   71  57  61 SE10      30.05F                     .
+12PM EDT MAY 21 2012 MOSUNNY   74  58  57 SE5       30.02F                     .
+ 1PM EDT MAY 21 2012 PTSUNNY   75  58  55 SE5       30.01F                     .
+ 2PM EDT MAY 21 2012 PTSUNNY   76  58  53 VRB6      29.99F                     .
+ 3PM EDT MAY 21 2012 PTSUNNY   76  59  55 E9        29.97F                     .
+ 4PM EDT MAY 21 2012 PTSUNNY   77  59  53 CALM      29.95F                     .
+ 5PM EDT MAY 21 2012 PTSUNNY   78  58  49 E6        29.93F                     .
+ 6PM EDT MAY 21 2012 PTSUNNY   76  60  57 E6        29.91F                     .
+ 7PM EDT MAY 21 2012 PTSUNNY   73  61  65 SE10      29.92R                     .
+ 8PM EDT MAY 21 2012 MOCLDY    71  61  70 SE7       29.92S                     .
+ 9PM EDT MAY 21 2012 MOCLDY    71  61  70 S3        29.92S                     .
+10PM EDT MAY 21 2012 MOCLDY    70  62  76 SE5       29.93R                     .
+11PM EDT MAY 21 2012 PTCLDY    68  62  81 CALM      29.92F                     .
+12AM EDT MAY 22 2012 PTCLDY    66  60  81 CALM      29.91F                     .
+ 1AM EDT MAY 22 2012 PTCLDY    65  59  81 E5        29.91S                     .
+ 2AM EDT MAY 22 2012 PTCLDY    63  59  87 CALM      29.90F                     .
+ 3AM EDT MAY 22 2012 PTCLDY    63  59  87 CALM      29.90S                     .
+ 4AM EDT MAY 22 2012 MOCLDY    63  59  87 CALM      29.89F                     .
+ 5AM EDT MAY 22 2012 MOCLDY    61  58  90 NE3       29.88F                     .
+ 6AM EDT MAY 22 2012 PTCLDY    60  56  86 CALM      29.88S                     .
+ 7AM EDT MAY 22 2012 PTCLDY    60  58  92 NW3       29.90R                     .
+ 8AM EDT MAY 22 2012 FOG       61  58  90 N7        29.91R VSB 1/2             .
+ 9AM EDT MAY 22 2012 PTSUNNY   64  59  82 CALM      29.91S                     .
+10AM EDT MAY 22 2012 PTSUNNY   67  60  78 NW5       29.92R                     .
+11AM EDT MAY 22 2012 PTSUNNY   68  60  75 W9        29.92S                     .
+12PM EDT MAY 22 2012 CLOUDY    71  61  70 W8        29.92S                     .
+ 1PM EDT MAY 22 2012 PTSUNNY   73  61  65 VRB3      29.91F                     .
+ 2PM EDT MAY 22 2012 PTSUNNY   75  62  64 W14       29.89F                     .
+ 3PM EDT MAY 22 2012 PTSUNNY   74  61  63 NW10      29.88F                     .
+ 4PM EDT MAY 22 2012 CLOUDY    74  60  61 NW10G20   29.86F                     .
+ 5PM EDT MAY 22 2012 CLOUDY    74  60  61 NW12      29.86S                     .
+ 6PM EDT MAY 22 2012 CLOUDY    73  60  63 NW13G20   29.87R                     .
+ 7PM EDT MAY 22 2012 PTSUNNY   73  59  61 NW12      29.88R                     .
+ 8PM EDT MAY 22 2012 MOCLDY    71  58  63 NW12      29.88S                     .
+ 9PM EDT MAY 22 2012 PTCLDY    69  58  67 NW9       29.89R                     .
+10PM EDT MAY 22 2012 MOCLDY    67  57  70 NW9       29.90R                     .
+11PM EDT MAY 22 2012 MOCLDY    65  56  72 N7        29.91R                     .
+12AM EDT MAY 23 2012 PTCLDY    64  56  75 N6        29.93R                     .
+ 1AM EDT MAY 23 2012 NOT AVBL                                                  .
+ 2AM EDT MAY 23 2012 MOCLDY    60  55  83 NW5       29.92                      .
+ 3AM EDT MAY 23 2012 PTCLDY    59  55  87 NW3       29.91F                     .
+ 4AM EDT MAY 23 2012 PTCLDY    58  54  86 NW5       29.90F                     .
+ 5AM EDT MAY 23 2012 CLEAR     57  54  89 N5        29.91R FOG                 .
+ 6AM EDT MAY 23 2012 PTCLDY    57  54  88 N6        29.91S FOG                 .
+ 7AM EDT MAY 23 2012 PTSUNNY   57  54  89 CALM      29.92R FOG                 .
+ 8AM EDT MAY 23 2012 PTSUNNY   60  54  80 NE5       29.93R                     .
+ 9AM EDT MAY 23 2012 CLOUDY    62  56  80 CALM      29.94R                     .
+10AM EDT MAY 23 2012 PTSUNNY   67  58  72 CALM      29.95R                     .
+11AM EDT MAY 23 2012 MOSUNNY   71  59  65 VRB3      29.96R                     .
+12PM EDT MAY 23 2012 PTSUNNY   73  58  59 CALM      29.96S                     .
+ 1PM EDT MAY 23 2012 PTSUNNY   74  58  57 VRB5      29.95F                     .
+ 2PM EDT MAY 23 2012 PTSUNNY   75  58  55 E7        29.94F                     .
+ 3PM EDT MAY 23 2012 PTSUNNY   77  59  53 SE7       29.93F                     .
+ 4PM EDT MAY 23 2012 MOSUNNY   77  57  50 VRB5      29.91F                     .
+ 5PM EDT MAY 23 2012 MOSUNNY   79  58  48 E7        29.89F                     .
+ 6PM EDT MAY 23 2012 NOT AVBL                                                  .
+ 7PM EDT MAY 23 2012 MOSUNNY   77  56  48 E6        29.90                      .
+ 8PM EDT MAY 23 2012 PTCLDY    77  56  48 NE5       29.91R                     .
+ 9PM EDT MAY 23 2012 PTCLDY    73  58  59 E5        29.91S                     .
+10PM EDT MAY 23 2012 PTCLDY    73  58  59 E3        29.92R                     .
+11PM EDT MAY 23 2012 PTCLDY    67  59  75 CALM      29.93R                     .
+12AM EDT MAY 24 2012 PTCLDY    68  58  70 E3        29.93S                     .
+ 1AM EDT MAY 24 2012 PTCLDY    67  59  75 CALM      29.94R                     .
+ 2AM EDT MAY 24 2012 CLEAR     65  59  81 SE3       29.94S                     .
+ 3AM EDT MAY 24 2012 CLEAR     64  59  83 SE5       29.94S                     .
+ 4AM EDT MAY 24 2012 CLEAR     64  59  83 E3        29.94S                     .
+ 5AM EDT MAY 24 2012 CLEAR     62  59  90 E5        29.96R                     .
+ 6AM EDT MAY 24 2012 PTCLDY    62  59  90 E5        29.98R                     .
+ 7AM EDT MAY 24 2012 MOSUNNY   63  60  90 CALM      30.00R                     .
+ 8AM EDT MAY 24 2012 MOSUNNY   66  60  81 SE6       30.01R                     .
+ 9AM EDT MAY 24 2012 MOSUNNY   69  60  73 SE8       30.03R                     .
+10AM EDT MAY 24 2012 PTSUNNY   71  60  68 SE6       30.02F                     .
+11AM EDT MAY 24 2012 MOSUNNY   73  59  61 S9        30.02S                     .
+12PM EDT MAY 24 2012 MOSUNNY   76  59  55 SE8       30.02S                     .
+ 1PM EDT MAY 24 2012 NOT AVBL                                                  .
+ 2PM EDT MAY 24 2012 PTSUNNY   79  58  48 S9        29.99                      .
+ 3PM EDT MAY 24 2012 PTSUNNY   80  58  46 SE10G17   29.98F                     .
+ 4PM EDT MAY 24 2012 PTSUNNY   79  58  48 SE14      29.96F                     .
+ 5PM EDT MAY 24 2012 MOSUNNY   80  59  48 S13G21    29.95F                     .
+ 6PM EDT MAY 24 2012 PTSUNNY   79  59  50 SE10G22   29.95S                     .
+ 7PM EDT MAY 24 2012 MOSUNNY   80  60  50 SE14G20   29.94F                     .
+ 8PM EDT MAY 24 2012 MOCLDY    77  59  53 S14G23    29.95R                     .
+ 9PM EDT MAY 24 2012 PTCLDY    75  60  59 S9        29.96R                     .
+10PM EDT MAY 24 2012 NOT AVBL                                                  .
+11PM EDT MAY 24 2012 PTCLDY    71  61  70 SE9       29.98                      .
+12AM EDT MAY 25 2012 PTCLDY    69  61  75 SE8       29.99R                     .
+ 1AM EDT MAY 25 2012 CLEAR     68  61  78 SE6       30.00R                     .
+ 2AM EDT MAY 25 2012 CLEAR     67  61  81 S3        30.01R                     .
+ 3AM EDT MAY 25 2012 PTCLDY    67  61  81 SE3       30.02R                     .
+ 4AM EDT MAY 25 2012 PTCLDY    65  60  84 SE3       30.02S                     .
+ 5AM EDT MAY 25 2012 PTCLDY    64  60  87 S5        30.04R                     .
+ 6AM EDT MAY 25 2012 PTCLDY    63  59  87 S3        30.05R                     .
+ 7AM EDT MAY 25 2012 MOSUNNY   65  59  81 SE3       30.07R                     .
+ 8AM EDT MAY 25 2012 PTSUNNY   68  60  75 S5        30.08R                     .
+ 9AM EDT MAY 25 2012 PTSUNNY   73  61  65 S8        30.08S                     .
+10AM EDT MAY 25 2012 MOSUNNY   76  61  59 S9        30.07F                     .
+11AM EDT MAY 25 2012 PTSUNNY   79  60  52 SW9G18    30.07S                     .
+12PM EDT MAY 25 2012 PTSUNNY   81  61  50 SW10      30.07S                     .
+ 1PM EDT MAY 25 2012 PTSUNNY   83  63  50 SW9       30.07S                     .
+ 2PM EDT MAY 25 2012 PTSUNNY   84  63  49 W8        30.07S HX  85              .
+ 3PM EDT MAY 25 2012 PTSUNNY   86  62  44 SW8       30.06F HX  86              .
+ 4PM EDT MAY 25 2012 CLOUDY    87  59  38 W13G18    30.07R HX  86              .
+ 5PM EDT MAY 25 2012 PTSUNNY   86  60  41 SW10      30.06F HX  86              .
+ 6PM EDT MAY 25 2012 PTSUNNY   86  61  42 SW12      30.06S HX  86              .
+ 7PM EDT MAY 25 2012 MOSUNNY   85  61  44 SW7       30.06S HX  85              .
+ 8PM EDT MAY 25 2012 PTCLDY    84  62  47 SW5       30.07R HX  85              .
+ 9PM EDT MAY 25 2012 PTCLDY    80  62  54 S5        30.07S                     .
+10PM EDT MAY 25 2012 PTCLDY    78  63  59 S3        30.08R                     .
+11PM EDT MAY 25 2012 CLOUDY    77  63  61 SW3       30.10R                     .
+12AM EDT MAY 26 2012 CLOUDY    76  63  64 SW5       30.11R                     .
+ 1AM EDT MAY 26 2012 CLOUDY    76  63  64 S3        30.10F                     .
+ 2AM EDT MAY 26 2012 CLOUDY    73  64  73 SW3       30.10S                     .
+ 3AM EDT MAY 26 2012 CLOUDY    75  63  66 CALM      30.11R                     .
+ 4AM EDT MAY 26 2012 CLOUDY    73  64  73 CALM      30.12R                     .
+ 5AM EDT MAY 26 2012 CLOUDY    70  64  81 CALM      30.11F                     .
+ 6AM EDT MAY 26 2012 PTCLDY    69  63  81 W3        30.12R                     .
+ 7AM EDT MAY 26 2012 MOSUNNY   70  64  81 W6        30.15R                     .
+ 8AM EDT MAY 26 2012 MOSUNNY   73  65  75 NW5       30.17R                     .
+ 9AM EDT MAY 26 2012 MOSUNNY   76  64  66 N3        30.17S                     .
+10AM EDT MAY 26 2012 SUNNY     78  64  61 CALM      30.17S                     .
+11AM EDT MAY 26 2012 MOSUNNY   82  65  56 N6        30.17S                     .
+12PM EDT MAY 26 2012 MOSUNNY   83  66  56 CALM      30.17S HX  85              .
+ 1PM EDT MAY 26 2012 MOSUNNY   86  66  51 N8        30.17S HX  88              .
+ 2PM EDT MAY 26 2012 PTSUNNY   86  65  49 W6        30.16F HX  88              .
+ 3PM EDT MAY 26 2012 PTSUNNY   87  64  46 N10       30.14F HX  88              .
+ 4PM EDT MAY 26 2012 PTSUNNY   88  65  46 N8        30.13F HX  90              .
+ 5PM EDT MAY 26 2012 PTSUNNY   87  65  47 VRB7      30.11F HX  89              .
+ 6PM EDT MAY 26 2012 MOSUNNY   87  60  40 NE12      30.09F HX  87              .
+ 7PM EDT MAY 26 2012 MOSUNNY   86  58  38 N8        30.11R HX  85              .
+ 8PM EDT MAY 26 2012 PTCLDY    84  58  40 NE7       30.13R                     .
+ 9PM EDT MAY 26 2012 MOCLDY    81  54  39 NE6       30.15R                     .
+10PM EDT MAY 26 2012 MOCLDY    80  53  39 N3        30.15S                     .
+11PM EDT MAY 26 2012 MOCLDY    78  55  44 N8        30.15S                     .
+12AM EDT MAY 27 2012 PTCLDY    75  56  51 N3        30.15S                     .
+ 1AM EDT MAY 27 2012 PTCLDY    74  57  55 N7        30.15S                     .
+ 2AM EDT MAY 27 2012 PTCLDY    73  56  54 N3        30.14F                     .
+ 3AM EDT MAY 27 2012 PTCLDY    68  58  70 CALM      30.12F                     .
+ 4AM EDT MAY 27 2012 PTCLDY    67  58  72 CALM      30.10F                     .
+ 5AM EDT MAY 27 2012 CLEAR     66  58  75 CALM      30.11R                     .
+ 6AM EDT MAY 27 2012 PTCLDY    65  58  78 CALM      30.11S                     .
+ 7AM EDT MAY 27 2012 MOSUNNY   67  59  75 CALM      30.13R                     .
+ 8AM EDT MAY 27 2012 MOSUNNY   70  59  68 CALM      30.13S                     .
+ 9AM EDT MAY 27 2012 NOT AVBL                                                  .
+10AM EDT MAY 27 2012 SUNNY     77  64  64 S5        30.13                      .
+11AM EDT MAY 27 2012 SUNNY     82  67  60 SW3       30.13S                     .
+12PM EDT MAY 27 2012 MOSUNNY   85  67  54 CALM      30.12F HX  87              .
+ 1PM EDT MAY 27 2012 MOSUNNY   86  67  52 VRB6      30.11F HX  89              .
+ 2PM EDT MAY 27 2012 MOSUNNY   88  66  48 CALM      30.09F HX  90              .
+ 3PM EDT MAY 27 2012 PTSUNNY   87  65  47 VRB6      30.06F HX  89              .
+ 4PM EDT MAY 27 2012 PTSUNNY   86  67  52 W6        30.05F HX  89              .
+ 5PM EDT MAY 27 2012 CLOUDY    84  69  60 N10       30.05S HX  88              .
+ 6PM EDT MAY 27 2012 CLOUDY    80  68  66 N15       30.04F                     .
+ 7PM EDT MAY 27 2012 CLOUDY    77  67  71 NE14      30.07R                     .
+ 8PM EDT MAY 27 2012 MOCLDY    74  64  71 NE7       30.08R                     .
+ 9PM EDT MAY 27 2012 CLOUDY    74  63  68 CALM      30.08S                     .
+10PM EDT MAY 27 2012 CLOUDY    75  64  68 NE13      30.10R                     .
+11PM EDT MAY 27 2012 CLOUDY    71  66  84 NE6       30.06F                     .
+12AM EDT MAY 28 2012 CLOUDY    70  66  87 S3        30.04F                     .
+ 1AM EDT MAY 28 2012 PTCLDY    71  65  81 SE6       30.04S                     .
+ 2AM EDT MAY 28 2012 PTCLDY    72  65  78 S6        30.01F                     .
+ 3AM EDT MAY 28 2012 CLEAR     73  65  75 S10       30.01S                     .
+ 4AM EDT MAY 28 2012 CLEAR     72  65  78 S5        29.99F                     .
+ 5AM EDT MAY 28 2012 CLEAR     71  65  81 CALM      30.00R                     .
+ 6AM EDT MAY 28 2012 CLEAR     70  65  84 CALM      30.02R                     .
+ 7AM EDT MAY 28 2012 SUNNY     70  65  84 CALM      30.03R                     .
+ 8AM EDT MAY 28 2012 SUNNY     73  64  73 S6        30.04R                     .
+ 9AM EDT MAY 28 2012 MOSUNNY   77  63  61 SW10G18   30.05R                     .
+10AM EDT MAY 28 2012 MOSUNNY   79  63  57 SW12G18   30.05S                     .
+11AM EDT MAY 28 2012 MOSUNNY   82  64  54 SW8       30.04F                     .
+12PM EDT MAY 28 2012 MOSUNNY   84  64  50 VRB7      30.03F HX  85              .
+ 1PM EDT MAY 28 2012 MOSUNNY   86  65  49 S7        30.01F HX  88              .
+ 2PM EDT MAY 28 2012 PTSUNNY   86  66  51 S9        29.99F HX  88              .
+ 3PM EDT MAY 28 2012 MOSUNNY   88  65  46 VRB7      29.97F HX  90              .
+ 4PM EDT MAY 28 2012 MOSUNNY   89  65  44 VRB6      29.95F HX  91              .
+ 5PM EDT MAY 28 2012 MOSUNNY   89  63  41 S10       29.94F HX  90              .
+ 6PM EDT MAY 28 2012 MOSUNNY   89  65  44 SW8       29.93F HX  91              .
+ 7PM EDT MAY 28 2012 MOSUNNY   87  66  49 S8        29.92F HX  89              .
+ 8PM EDT MAY 28 2012 MOCLDY    84  67  56 CALM      29.92S HX  86              .
+ 9PM EDT MAY 28 2012 MOCLDY    82  67  60 SW6       29.92S                     .
+10PM EDT MAY 28 2012 MOCLDY    80  67  64 S3        29.92S                     .
+11PM EDT MAY 28 2012 MOCLDY    79  67  66 S5        29.92S                     .
+12AM EDT MAY 29 2012 MOCLDY    78  66  66 S6        29.90F                     .
+ 1AM EDT MAY 29 2012 PTCLDY    77  66  68 S3        29.89F                     .
+ 2AM EDT MAY 29 2012 PTCLDY    76  66  71 S5        29.88F                     .
+ 3AM EDT MAY 29 2012 PTCLDY    76  65  68 SW6       29.87F                     .
+ 4AM EDT MAY 29 2012 PTCLDY    75  65  70 SW6       29.87S                     .
+ 5AM EDT MAY 29 2012 PTCLDY    74  65  73 SW3       29.88R                     .
+ 6AM EDT MAY 29 2012 PTCLDY    72  64  76 S6        29.87F                     .
+ 7AM EDT MAY 29 2012 MOSUNNY   72  64  76 S6        29.86F                     .
+ 8AM EDT MAY 29 2012 NOT AVBL                                                  .
+ 9AM EDT MAY 29 2012 MOSUNNY   77  64  64 SW13      29.86                      .
+10AM EDT MAY 29 2012 MOSUNNY   79  65  62 SW9       29.86S                     .
+11AM EDT MAY 29 2012 PTSUNNY   80  66  62 SW13G20   29.84F                     .
+12PM EDT MAY 29 2012 CLOUDY    80  65  59 SW9       29.83F                     .
+ 1PM EDT MAY 29 2012 TSTM      75  63  64 NW16G31   29.83S                     .
+ 2PM EDT MAY 29 2012 LGT RAIN  67  64  90 W7        29.85F                     .
+ 3PM EDT MAY 29 2012 CLOUDY    71  66  84 S7        29.81F                     .
+ 4PM EDT MAY 29 2012 PTSUNNY   75  66  73 CALM      29.81S                     .
+ 5PM EDT MAY 29 2012 PTSUNNY   78  64  61 SW7       29.79F                     .
+ 6PM EDT MAY 29 2012 PTSUNNY   79  64  60 SW10      29.78F                     .
+ 7PM EDT MAY 29 2012 LGT RAIN  77  65  66 W5        29.78S                     .
+ 8PM EDT MAY 29 2012 TSTM      71  63  75 NW14      29.80R                     .
+ 9PM EDT MAY 29 2012 MOCLDY    68  62  81 CALM      29.78F                     .
+10PM EDT MAY 29 2012 MOCLDY    66  63  90 CALM      29.82R                     .
+11PM EDT MAY 29 2012 CLOUDY    67  62  84 CALM      29.84R                     .
+12AM EDT MAY 30 2012 MOCLDY    64  62  93 CALM      29.85R                     .
+ 1AM EDT MAY 30 2012 CLOUDY    64  61  90 CALM      29.85S                     .
+ 2AM EDT MAY 30 2012 MOCLDY    64  62  93 CALM      29.83F                     .
+ 3AM EDT MAY 30 2012 CLOUDY    64  61  90 S5        29.83S                     .
+ 4AM EDT MAY 30 2012 CLOUDY    64  61  90 CALM      29.81F FOG                 .
+ 5AM EDT MAY 30 2012 CLOUDY    66  64  93 SW3       29.81S FOG                 .
+ 6AM EDT MAY 30 2012 MOCLDY    66  63  90 SW3       29.82R FOG                 .
+ 7AM EDT MAY 30 2012 PTSUNNY   64  63  94 CALM      29.84R FOG                 .
+ 8AM EDT MAY 30 2012 MOSUNNY   65  63  93 W5        29.84S FOG                 .
+ 9AM EDT MAY 30 2012 MOSUNNY   69  58  67 CALM      29.85R                     .
+10AM EDT MAY 30 2012 MOSUNNY   72  55  55 W5        29.85S                     .
+11AM EDT MAY 30 2012 MOSUNNY   74  50  42 NW8       29.84F                     .
+12PM EDT MAY 30 2012 MOSUNNY   75  50  41 SW7       29.83F                     .
+ 1PM EDT MAY 30 2012 MOSUNNY   77  50  38 NW7       29.81F                     .
+ 2PM EDT MAY 30 2012 MOSUNNY   79  49  34 W9G21     29.79F                     .
+ 3PM EDT MAY 30 2012 PTSUNNY   81  49  32 W13G22    29.78F                     .
+ 4PM EDT MAY 30 2012 PTSUNNY   81  49  32 W12       29.78S                     .
+ 5PM EDT MAY 30 2012 PTSUNNY   79  49  34 W8G18     29.77F                     .
+ 6PM EDT MAY 30 2012 MOSUNNY   80  49  33 NW15      29.77S                     .
+ 7PM EDT MAY 30 2012 MOSUNNY   78  49  35 W9        29.77S                     .
+ 8PM EDT MAY 30 2012 PTCLDY    73  48  41 N18       29.79R                     .
+ 9PM EDT MAY 30 2012 PTCLDY    69  45  41 N15G21    29.81R                     .
+10PM EDT MAY 30 2012 PTCLDY    67  45  45 N8        29.83R                     .
+11PM EDT MAY 30 2012 PTCLDY    65  45  48 N6        29.85R                     .
+12AM EDT MAY 31 2012 PTCLDY    64  45  49 N5        29.85S                     .
+ 1AM EDT MAY 31 2012 CLEAR     60  48  64 CALM      29.85S                     .
+ 2AM EDT MAY 31 2012 CLEAR     58  49  72 CALM      29.85S                     .
+ 3AM EDT MAY 31 2012 CLEAR     55  49  80 CALM      29.84F                     .
+ 4AM EDT MAY 31 2012 CLEAR     54  48  80 W3        29.86R                     .
+ 5AM EDT MAY 31 2012 CLEAR     53  48  83 CALM      29.88R                     .
+ 6AM EDT MAY 31 2012 PTCLDY    52  48  86 CALM      29.90R                     .
+ 7AM EDT MAY 31 2012 MOSUNNY   56  48  74 N6        29.92R                     .
+ 8AM EDT MAY 31 2012 SUNNY     59  49  69 NE3       29.93R                     .
+ 9AM EDT MAY 31 2012 SUNNY     61  50  67 E5        29.93S                     .
+10AM EDT MAY 31 2012 SUNNY     65  47  52 E3        29.94R                     .
+11AM EDT MAY 31 2012 MOSUNNY   69  47  45 CALM      29.94S                     .
+12PM EDT MAY 31 2012 MOSUNNY   70  46  42 CALM      29.93F                     .
+ 1PM EDT MAY 31 2012 MOSUNNY   72  45  37 CALM      29.93S                     .
+ 2PM EDT MAY 31 2012 MOSUNNY   73  46  38 NW3       29.91F                     .
+ 3PM EDT MAY 31 2012 MOSUNNY   75  46  35 W5        29.89F                     .
+ 4PM EDT MAY 31 2012 MOSUNNY   74  45  35 W5        29.89S                     .
+ 5PM EDT MAY 31 2012 PTSUNNY   75  47  36 NW3       29.88F                     .
+ 6PM EDT MAY 31 2012 MOSUNNY   75  45  34 CALM      29.87F                     .
+ 7PM EDT MAY 31 2012 MOSUNNY   74  47  38 CALM      29.85F                     .

@@ -1,0 +1,765 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 7PM EST FEB 29 2012 MOCLDY    60  53  77 S8        29.59S                   MAR
+ 8PM EST FEB 29 2012 FAIR      58  53  84 S9        29.56F                   MAR
+ 9PM EST FEB 29 2012 MOCLDY    58  53  84 SW7       29.55F                   MAR
+10PM EST FEB 29 2012 PTCLDY    58  52  80 SW12      29.54F                   MAR
+11PM EST FEB 29 2012 PTCLDY    57  52  82 SW10      29.54S                   MAR
+12AM EST MAR 01 2012 PTCLDY    57  51  80 SW10G20   29.54S                   MAR
+ 1AM EST MAR 01 2012 MOCLDY    57  47  69 SW14G23   29.55R                   MAR
+ 2AM EST MAR 01 2012 MOCLDY    57  42  57 W10G22    29.55S                     .
+ 3AM EST MAR 01 2012 CLOUDY    51  34  52 NW23G37   29.59R                     .
+ 4AM EST MAR 01 2012 CLOUDY    50  30  46 W10G21    29.61R                     .
+ 5AM EST MAR 01 2012 CLOUDY    48  30  49 W15G26    29.63R                     .
+ 6AM EST MAR 01 2012 CLOUDY    46  28  49 W15G24    29.64R                     .
+ 7AM EST MAR 01 2012 CLOUDY    45  29  53 W12       29.67R                     .
+ 8AM EST MAR 01 2012 CLOUDY    44  30  57 W12G17    29.70R                     .
+ 9AM EST MAR 01 2012 CLOUDY    42  30  62 W10       29.72R                     .
+10AM EST MAR 01 2012 CLOUDY    42  29  59 SW7       29.74R                     .
+11AM EST MAR 01 2012 CLOUDY    41  28  60 W9G22     29.76R                     .
+12PM EST MAR 01 2012 CLOUDY    40  28  62 W10G20    29.79R                     .
+ 1PM EST MAR 01 2012 CLOUDY    39  28  64 W16G22    29.79S                     .
+ 2PM EST MAR 01 2012 CLOUDY    39  29  67 W13       29.81R                     .
+ 3PM EST MAR 01 2012 CLOUDY    39  28  64 W12G23    29.83R                     .
+ 4PM EST MAR 01 2012 CLOUDY    39  29  67 W13       29.85R                     .
+ 5PM EST MAR 01 2012 CLOUDY    39  28  64 W5        29.87R                     .
+ 6PM EST MAR 01 2012 CLOUDY    40  27  59 W5        29.88R                     .
+ 7PM EST MAR 01 2012 CLOUDY    40  27  59 CALM      29.90R                     .
+ 8PM EST MAR 01 2012 CLOUDY    39  28  64 CALM      29.92R                     .
+ 9PM EST MAR 01 2012 CLOUDY    38  28  67 CALM      29.92S                     .
+10PM EST MAR 01 2012 PTCLDY    35  28  75 CALM      29.93R                     .
+11PM EST MAR 01 2012 CLEAR     34  28  79 CALM      29.91F                     .
+12AM EST MAR 02 2012 CLEAR     32  27  81 CALM      29.91S                     .
+ 1AM EST MAR 02 2012 CLEAR     31  27  85 SE3       29.91S                     .
+ 2AM EST MAR 02 2012 CLEAR     32  26  78 CALM      29.92R                     .
+ 3AM EST MAR 02 2012 CLEAR     31  26  82 CALM      29.91F                     .
+ 4AM EST MAR 02 2012 CLEAR     31  26  82 SE3       29.89F                     .
+ 5AM EST MAR 02 2012 PTCLDY    30  26  85 E3        29.89S                     .
+ 6AM EST MAR 02 2012 PTCLDY    30  26  85 E5        29.86F WCI  25             .
+ 7AM EST MAR 02 2012 MOCLDY    32  26  78 CALM      29.85F                     .
+ 8AM EST MAR 02 2012 PTSUNNY   32  28  85 SE3       29.84F                     .
+ 9AM EST MAR 02 2012 PTSUNNY   38  30  73 SE7       29.82F                     .
+10AM EST MAR 02 2012 CLOUDY    43  32  65 E9        29.77F                     .
+11AM EST MAR 02 2012 CLOUDY    47  33  58 E6        29.75F                     .
+12PM EST MAR 02 2012 CLOUDY    52  34  50 E9        29.73F                     .
+ 1PM EST MAR 02 2012 CLOUDY    55  33  43 SE9       29.70F                     .
+ 2PM EST MAR 02 2012 LGT RAIN  56  34  43 SE10      29.64F                     .
+ 3PM EST MAR 02 2012 CLOUDY    57  34  41 SE13      29.59F                     .
+ 4PM EST MAR 02 2012 LGT RAIN  56  37  49 SE15      29.56F                     .
+ 5PM EST MAR 02 2012 LGT RAIN  51  43  74 SE9       29.52F                     .
+ 6PM EST MAR 02 2012 CLOUDY    51  47  86 SE9       29.48F                     .
+ 7PM EST MAR 02 2012 CLOUDY    52  46  80 SE12      29.46F                     .
+ 8PM EST MAR 02 2012 LGT RAIN  51  47  86 SE13G20   29.42F                     .
+ 9PM EST MAR 02 2012 CLOUDY    51  48  89 S5        29.42S                     .
+10PM EST MAR 02 2012 PTCLDY    55  50  83 S10       29.43R                     .
+11PM EST MAR 02 2012 PTCLDY    56  51  84 S10       29.43S                     .
+12AM EST MAR 03 2012 PTCLDY    57  50  77 S14G22    29.44R                     .
+ 1AM EST MAR 03 2012 PTCLDY    56  44  64 SW15G24   29.44S                     .
+ 2AM EST MAR 03 2012 PTCLDY    52  37  56 W16G25    29.47R                     .
+ 3AM EST MAR 03 2012 NOT AVBL                                                  .
+ 4AM EST MAR 03 2012 MOCLDY    44  33  65 W14G23    29.52R                     .
+ 5AM EST MAR 03 2012 PTCLDY    41  31  67 W14G31    29.57R                     .
+ 6AM EST MAR 03 2012 PTCLDY    39  26  59 W13G25    29.60R                     .
+ 7AM EST MAR 03 2012 MOCLDY    37  27  65 W15G25    29.63R                     .
+ 8AM EST MAR 03 2012 PTSUNNY   37  26  64 SW13G24   29.64R                     .
+ 9AM EST MAR 03 2012 PTSUNNY   38  25  59 SW17G26   29.64S                     .
+10AM EST MAR 03 2012 MOSUNNY   39  25  57 SW17G31   29.64R                     .
+11AM EST MAR 03 2012 PTSUNNY   41  24  51 W18G26    29.65R                     .
+12PM EST MAR 03 2012 PTSUNNY   40  23  50 W21G33    29.67R                     .
+ 1PM EST MAR 03 2012 PTSUNNY   40  23  50 W20G32    29.65F                     .
+ 2PM EST MAR 03 2012 PTSUNNY   40  23  50 W18G28    29.65S                     .
+ 3PM EST MAR 03 2012 PTSUNNY   41  22  46 W16G25    29.65S                     .
+ 4PM EST MAR 03 2012 CLOUDY    40  23  50 W13G22    29.66R                     .
+ 5PM EST MAR 03 2012 MOSUNNY   39  27  62 W12       29.68R                     .
+ 6PM EST MAR 03 2012 MOCLDY    38  25  59 NW14      29.71R                     .
+ 7PM EST MAR 03 2012 CLOUDY    37  23  56 W17       29.74R                     .
+ 8PM EST MAR 03 2012 PTCLDY    35  21  56 W16       29.75R WCI  25             .
+ 9PM EST MAR 03 2012 PTCLDY    33  19  56 W9        29.75S WCI  25             .
+10PM EST MAR 03 2012 PTCLDY    33  18  53 SW5       29.77R WCI  29             .
+11PM EST MAR 03 2012 CLOUDY    32  19  58 CALM      29.76F                     .
+12AM EST MAR 04 2012 MOCLDY    32  20  61 W7        29.76S WCI  26             .
+ 1AM EST MAR 04 2012 MOCLDY    32  18  56 W7        29.75F WCI  26             .
+ 2AM EST MAR 04 2012 MOCLDY    32  18  56 SW5       29.74F WCI  27             .
+ 3AM EST MAR 04 2012 MOCLDY    31  18  58 SW6       29.74S WCI  25             .
+ 4AM EST MAR 04 2012 MOCLDY    31  20  63 SW6       29.72F WCI  25             .
+ 5AM EST MAR 04 2012 FLURRIES  31  20  63 SW7       29.72S WCI  24             .
+ 6AM EST MAR 04 2012 FLURRIES  30  21  69 W7        29.73R WCI  23             .
+ 7AM EST MAR 04 2012 CLOUDY    30  19  63 W5        29.73S WCI  25             .
+ 8AM EST MAR 04 2012 CLOUDY    30  19  63 W9        29.74R WCI  22             .
+ 9AM EST MAR 04 2012 CLOUDY    31  20  63 W12       29.74S WCI  22             .
+10AM EST MAR 04 2012 PTSUNNY   32  20  61 W13       29.74S WCI  22             .
+11AM EST MAR 04 2012 FLURRIES  33  17  51 W16G23    29.74S WCI  23             .
+12PM EST MAR 04 2012 PTSUNNY   35  19  52 W16       29.74S WCI  25             .
+ 1PM EST MAR 04 2012 PTSUNNY   34  20  56 SW12G22   29.73F WCI  25             .
+ 2PM EST MAR 04 2012 LGT SNOW  29  27  92 W10       29.73S VSB 1   WCI  20     .
+ 3PM EST MAR 04 2012 PTSUNNY   34  25  69 W15G25    29.73S WCI  24             .
+ 4PM EST MAR 04 2012 FLURRIES  30  27  86 W8        29.74R WCI  23             .
+ 5PM EST MAR 04 2012 FLURRIES  33  24  69 W13G22    29.76R WCI  24             .
+ 6PM EST MAR 04 2012 LGT SNOW  30  27  86 NW13      29.79R VSB 1   WCI  20     .
+ 7PM EST MAR 04 2012 LGT SNOW  29  27  92 NW18      29.80R VSB 1   WCI  16     .
+ 8PM EST MAR 04 2012 LGT SNOW  28  27  93 W10       29.82R VSB 1   WCI  19     .
+ 9PM EST MAR 04 2012 FLURRIES  29  26  89 W9        29.83R WCI  20             .
+10PM EST MAR 04 2012 FLURRIES  29  25  85 W9        29.84R WCI  20             .
+11PM EST MAR 04 2012 LGT SNOW  28  25  88 W7        29.85R FOG     WCI  21     .
+12AM EST MAR 05 2012 FLURRIES  28  25  88 CALM      29.85S                     .
+ 1AM EST MAR 05 2012 CLOUDY    27  25  92 CALM      29.85S                     .
+ 2AM EST MAR 05 2012 FLURRIES  28  25  88 SW6       29.85S WCI  22             .
+ 3AM EST MAR 05 2012 FLURRIES  28  24  85 SW7       29.85S WCI  21             .
+ 4AM EST MAR 05 2012 FLURRIES  28  24  85 CALM      29.84S                     .
+ 5AM EST MAR 05 2012 CLOUDY    28  24  85 SW3       29.86S                     .
+ 6AM EST MAR 05 2012 LGT SNOW  27  24  89 CALM      29.89R FOG                 .
+ 7AM EST MAR 05 2012 LGT SNOW  27  24  89 W5        29.92R FOG     WCI  22     .
+ 8AM EST MAR 05 2012 LGT SNOW  27  24  89 N13       29.97R VSB 1   WCI  16     .
+ 9AM EST MAR 05 2012 LGT SNOW  26  22  84 N12       30.03R FOG     WCI  16     .
+10AM EST MAR 05 2012 FLURRIES  26  21  81 NW13      30.07R WCI  15             .
+11AM EST MAR 05 2012 CLOUDY    27  19  72 N12       30.12R WCI  17             .
+12PM EST MAR 05 2012 CLOUDY    27  18  69 N13       30.15R WCI  16             .
+ 1PM EST MAR 05 2012 CLOUDY    28  17  63 NW16      30.18R WCI  16             .
+ 2PM EST MAR 05 2012 PTSUNNY   29  16  58 NW14      30.20R WCI  18             .
+ 3PM EST MAR 05 2012 FLURRIES  30  16  56 NW18      30.23R WCI  18             .
+ 4PM EST MAR 05 2012 CLOUDY    29  18  63 NW17      30.26R WCI  17             .
+ 5PM EST MAR 05 2012 MOSUNNY   30  18  60 NW10      30.28R WCI  21             .
+ 6PM EST MAR 05 2012 MOCLDY    29  16  58 NW13      30.31R WCI  19             .
+ 7PM EST MAR 05 2012 NOT AVBL                                                  .
+ 8PM EST MAR 05 2012 LGT SNOW  28  22  78 W10       30.39R WCI  19             .
+ 9PM EST MAR 05 2012 PTCLDY    26  20  77 NW8       30.40R WCI  18             .
+10PM EST MAR 05 2012 PTCLDY    24  18  77 W7        30.43R WCI  16             .
+11PM EST MAR 05 2012 PTCLDY    24  17  74 W3        30.43S                     .
+12AM EST MAR 06 2012 CLEAR     23  17  78 CALM      30.44R                     .
+ 1AM EST MAR 06 2012 CLEAR     22  18  85 CALM      30.45R                     .
+ 2AM EST MAR 06 2012 CLEAR     22  17  81 CALM      30.46R                     .
+ 3AM EST MAR 06 2012 CLEAR     20  17  88 CALM      30.45F                     .
+ 4AM EST MAR 06 2012 CLEAR     20  16  84 CALM      30.46R                     .
+ 5AM EST MAR 06 2012 MOCLDY    20  16  84 CALM      30.47R                     .
+ 6AM EST MAR 06 2012 MOCLDY    22  16  78 CALM      30.48R                     .
+ 7AM EST MAR 06 2012 MOCLDY    23  16  74 CALM      30.50R                     .
+ 8AM EST MAR 06 2012 PTSUNNY   25  17  72 S5        30.51R WCI  19             .
+ 9AM EST MAR 06 2012 CLOUDY    28  17  63 S8        30.51S WCI  20             .
+10AM EST MAR 06 2012 PTSUNNY   31  18  58 S13       30.50F WCI  21             .
+11AM EST MAR 06 2012 PTSUNNY   34  19  54 S14       30.49F WCI  25             .
+12PM EST MAR 06 2012 CLOUDY    36  19  50 S10       30.48F                     .
+ 1PM EST MAR 06 2012 PTSUNNY   38  20  48 S13       30.45F                     .
+ 2PM EST MAR 06 2012 PTSUNNY   40  18  41 S12       30.41F                     .
+ 3PM EST MAR 06 2012 PTSUNNY   42  18  37 S10       30.37F                     .
+ 4PM EST MAR 06 2012 PTSUNNY   45  19  35 S8        30.35F                     .
+ 5PM EST MAR 06 2012 MOSUNNY   48  18  30 S9        30.34F                     .
+ 6PM EST MAR 06 2012 CLEAR     49  18  29 SE8       30.33F                     .
+ 7PM EST MAR 06 2012 CLEAR     45  19  35 SE5       30.33S                     .
+ 8PM EST MAR 06 2012 CLEAR     44  19  36 SE5       30.32F                     .
+ 9PM EST MAR 06 2012 CLEAR     43  18  36 SE5       30.32S                     .
+10PM EST MAR 06 2012 CLEAR     43  18  36 S6        30.32S                     .
+11PM EST MAR 06 2012 CLEAR     44  18  35 S5        30.31F                     .
+12AM EST MAR 07 2012 CLEAR     43  20  39 SE5       30.31S                     .
+ 1AM EST MAR 07 2012 CLEAR     43  21  41 S6        30.31S                     .
+ 2AM EST MAR 07 2012 CLEAR     44  21  40 S7        30.31S                     .
+ 3AM EST MAR 07 2012 CLEAR     45  21  38 S6        30.32R                     .
+ 4AM EST MAR 07 2012 PTCLDY    43  21  41 S6        30.34R                     .
+ 5AM EST MAR 07 2012 PTCLDY    43  20  39 S5        30.36R                     .
+ 6AM EST MAR 07 2012 PTCLDY    41  19  41 S6        30.37R                     .
+ 7AM EST MAR 07 2012 MOCLDY    40  19  43 S6        30.38R                     .
+ 8AM EST MAR 07 2012 CLOUDY    45  20  36 S6        30.39R                     .
+ 9AM EST MAR 07 2012 CLOUDY    51  18  27 SW14G21   30.39S                     .
+10AM EST MAR 07 2012 PTSUNNY   56  22  26 SW17G24   30.38F                     .
+11AM EST MAR 07 2012 PTSUNNY   58  25  28 SW12G29   30.37F                     .
+12PM EST MAR 07 2012 CLOUDY    60  26  27 SW18G28   30.35F                     .
+ 1PM EST MAR 07 2012 CLOUDY    62  26  25 SW18G26   30.30F                     .
+ 2PM EST MAR 07 2012 PTSUNNY   64  28  25 S14G25    30.27F                     .
+ 3PM EST MAR 07 2012 CLOUDY    64  29  26 S17G26    30.25F                     .
+ 4PM EST MAR 07 2012 CLOUDY    64  31  28 SW17G23   30.23F                     .
+ 5PM EST MAR 07 2012 PTSUNNY   65  32  29 SW14G22   30.20F                     .
+ 6PM EST MAR 07 2012 MOCLDY    65  33  30 S9G18     30.20S                     .
+ 7PM EST MAR 07 2012 MOCLDY    62  33  33 S6        30.19F                     .
+ 8PM EST MAR 07 2012 CLOUDY    60  33  36 S3        30.18F                     .
+ 9PM EST MAR 07 2012 CLOUDY    58  33  39 S3        30.18S                     .
+10PM EST MAR 07 2012 CLOUDY    56  33  42 S6        30.18S                     .
+11PM EST MAR 07 2012 CLOUDY    55  32  41 S5        30.18S                     .
+12AM EST MAR 08 2012 CLOUDY    56  31  38 S6        30.19R                     .
+ 1AM EST MAR 08 2012 CLOUDY    55  32  41 S7        30.18F                     .
+ 2AM EST MAR 08 2012 CLOUDY    54  34  46 S7        30.17F                     .
+ 3AM EST MAR 08 2012 CLOUDY    56  37  49 S13       30.13F                     .
+ 4AM EST MAR 08 2012 NOT AVBL                                                  .
+ 5AM EST MAR 08 2012 CLOUDY    57  38  48 S13G23    30.10                      .
+ 6AM EST MAR 08 2012 CLOUDY    57  38  48 SW12G21   30.10S                     .
+ 7AM EST MAR 08 2012 CLOUDY    57  39  51 SW14G22   30.08F                     .
+ 8AM EST MAR 08 2012 CLOUDY    58  40  51 SW17G25   30.05F                     .
+ 9AM EST MAR 08 2012 CLOUDY    60  41  49 SW18G30   30.02F                     .
+10AM EST MAR 08 2012 CLOUDY    60  42  51 SW13G25   30.01F                     .
+11AM EST MAR 08 2012 RAIN      54  48  80 SW12      30.02R                     .
+12PM EST MAR 08 2012 LGT RAIN  54  50  86 SW16G23   30.02S FOG                 .
+ 1PM EST MAR 08 2012 RAIN      54  50  86 S21G26    30.00F FOG                 .
+ 2PM EST MAR 08 2012 LGT RAIN  54  51  90 SW17G25   29.98F FOG                 .
+ 3PM EST MAR 08 2012 LGT RAIN  55  51  86 SW21G33   29.95F FOG                 .
+ 4PM EST MAR 08 2012 LGT RAIN  55  52  89 SW18G26   29.93F FOG                 .
+ 5PM EST MAR 08 2012 NOT AVBL                                                  .
+ 6PM EST MAR 08 2012 LGT RAIN  55  52  89 SW15G28   29.89F FOG                 .
+ 7PM EST MAR 08 2012 HVY RAIN  46  44  93 NW24G33   29.96R FOG                 .
+ 8PM EST MAR 08 2012 LGT RAIN  43  40  89 NW20      30.01R FOG                 .
+ 9PM EST MAR 08 2012 CLOUDY    42  38  85 NW21      30.06R                     .
+10PM EST MAR 08 2012 CLOUDY    41  36  82 NW15G21   30.11R                     .
+11PM EST MAR 08 2012 NOT AVBL                                                  .
+12AM EST MAR 09 2012 CLOUDY    38  31  76 NW7       30.13                      .
+ 1AM EST MAR 09 2012 MOCLDY    36  29  75 W14       30.17R                     .
+ 2AM EST MAR 09 2012 MOCLDY    35  27  72 W7        30.17R WCI  29             .
+ 3AM EST MAR 09 2012 PTCLDY    33  26  75 W10       30.17S WCI  25             .
+ 4AM EST MAR 09 2012 CLEAR     31  24  75 W7        30.16F WCI  24             .
+ 5AM EST MAR 09 2012 PTCLDY    31  24  75 SW3       30.18R                     .
+ 6AM EST MAR 09 2012 MOCLDY    32  24  72 S6        30.18S WCI  26             .
+ 7AM EST MAR 09 2012 PTCLDY    32  24  72 SW8       30.17F WCI  25             .
+ 8AM EST MAR 09 2012 MOSUNNY   33  25  72 SW7       30.18R WCI  27             .
+ 9AM EST MAR 09 2012 MOSUNNY   36  25  64 W8        30.18S                     .
+10AM EST MAR 09 2012 PTSUNNY   38  26  62 W15G23    30.19R                     .
+11AM EST MAR 09 2012 CLOUDY    38  24  57 W17G26    30.20R                     .
+12PM EST MAR 09 2012 FLURRIES  37  24  59 W24G31    30.22R                     .
+ 1PM EST MAR 09 2012 PTSUNNY   38  22  52 W22G33    30.23R                     .
+ 2PM EST MAR 09 2012 PTSUNNY   41  22  46 NW22G30   30.24R                     .
+ 3PM EST MAR 09 2012 MOSUNNY   40  20  44 NW25G31   30.26R                     .
+ 4PM EST MAR 09 2012 MOSUNNY   39  18  42 W20G32    30.28R                     .
+ 5PM EST MAR 09 2012 MOSUNNY   39  18  42 W21G31    30.29R                     .
+ 6PM EST MAR 09 2012 PTCLDY    37  17  44 NW18G30   30.31R                     .
+ 7PM EST MAR 09 2012 PTCLDY    35  18  49 NW18G25   30.33R WCI  24             .
+ 8PM EST MAR 09 2012 PTCLDY    33  16  49 NW14      30.36R WCI  23             .
+ 9PM EST MAR 09 2012 PTCLDY    32  15  49 NW15G21   30.38R WCI  22             .
+10PM EST MAR 09 2012 CLEAR     31  15  52 NW13G21   30.39R WCI  21             .
+11PM EST MAR 09 2012 PTCLDY    30  16  56 NW13      30.40R WCI  20             .
+12AM EST MAR 10 2012 PTCLDY    29  16  58 NW8       30.42R WCI  21             .
+ 1AM EST MAR 10 2012 PTCLDY    28  14  55 NW14      30.43R WCI  17             .
+ 2AM EST MAR 10 2012 PTCLDY    27  15  61 N10       30.45R WCI  17             .
+ 3AM EST MAR 10 2012 PTCLDY    26  13  57 N10       30.45S WCI  16             .
+ 4AM EST MAR 10 2012 PTCLDY    25  12  58 N10       30.46R WCI  15             .
+ 5AM EST MAR 10 2012 CLEAR     23  12  62 NW5       30.47R WCI  17             .
+ 6AM EST MAR 10 2012 CLEAR     23  12  62 NW6       30.50R WCI  16             .
+ 7AM EST MAR 10 2012 PTCLDY    22  13  68 NW3       30.51R                     .
+ 8AM EST MAR 10 2012 MOSUNNY   26  12  55 NW5       30.53R WCI  20             .
+ 9AM EST MAR 10 2012 MOSUNNY   28  12  51 N6        30.55R WCI  22             .
+10AM EST MAR 10 2012 NOT AVBL                                                  .
+11AM EST MAR 10 2012 SUNNY     31  12  45 E7        30.53  WCI  24             .
+12PM EST MAR 10 2012 MOSUNNY   34  11  38 CALM      30.52F                     .
+ 1PM EST MAR 10 2012 PTSUNNY   36  12  37 S7        30.51F                     .
+ 2PM EST MAR 10 2012 PTSUNNY   37  11  34 S7        30.49F                     .
+ 3PM EST MAR 10 2012 MOSUNNY   40  11  30 SW6       30.47F                     .
+ 4PM EST MAR 10 2012 MOSUNNY   42  13  30 VRB5      30.45F                     .
+ 5PM EST MAR 10 2012 MOSUNNY   43  12  28 SW7       30.44F                     .
+ 6PM EST MAR 10 2012 PTCLDY    44  12  27 S5        30.43F                     .
+ 7PM EST MAR 10 2012 PTCLDY    42  14  32 S3        30.42F                     .
+ 8PM EST MAR 10 2012 PTCLDY    40  15  36 CALM      30.41F                     .
+ 9PM EST MAR 10 2012 CLEAR     38  16  40 CALM      30.41S                     .
+10PM EST MAR 10 2012 PTCLDY    35  17  47 CALM      30.40F                     .
+11PM EST MAR 10 2012 PTCLDY    35  17  47 CALM      30.39F                     .
+12AM EST MAR 11 2012 PTCLDY    34  17  50 S3        30.39S                     .
+ 1AM EST MAR 11 2012 CLEAR     33  18  53 CALM      30.39S                     .
+ 3AM EDT MAR 11 2012 CLEAR     34  17  50 CALM      30.39S                     .
+ 4AM EDT MAR 11 2012 CLEAR     33  18  53 CALM      30.37F                     .
+ 5AM EDT MAR 11 2012 CLEAR     32  17  54 CALM      30.37S                     .
+ 6AM EDT MAR 11 2012 NOT AVBL                                                  .
+ 7AM EDT MAR 11 2012 CLEAR     29  19  66 CALM      30.39                      .
+ 8AM EDT MAR 11 2012 PTCLDY    29  19  66 CALM      30.41R                     .
+ 9AM EDT MAR 11 2012 SUNNY     32  21  64 CALM      30.42R                     .
+10AM EDT MAR 11 2012 SUNNY     42  22  44 S3        30.43R                     .
+11AM EDT MAR 11 2012 SUNNY     50  23  34 S3        30.42F                     .
+12PM EDT MAR 11 2012 SUNNY     56  20  24 SW9       30.41F                     .
+ 1PM EDT MAR 11 2012 MOSUNNY   60  21  22 W9G17     30.40F                     .
+ 2PM EDT MAR 11 2012 MOSUNNY   62  21  20 SW8       30.37F                     .
+ 3PM EDT MAR 11 2012 MOSUNNY   64  22  20 SW13      30.35F                     .
+ 4PM EDT MAR 11 2012 PTSUNNY   65  23  20 SW13G23   30.33F                     .
+ 5PM EDT MAR 11 2012 PTSUNNY   65  23  20 S9        30.31F                     .
+ 6PM EDT MAR 11 2012 PTSUNNY   66  22  18 SW9       30.30F                     .
+ 7PM EDT MAR 11 2012 MOCLDY    64  23  21 SW3       30.30S                     .
+ 8PM EDT MAR 11 2012 MOCLDY    60  24  25 CALM      30.29F                     .
+ 9PM EDT MAR 11 2012 MOCLDY    55  26  32 CALM      30.30R                     .
+10PM EDT MAR 11 2012 MOCLDY    54  25  32 CALM      30.30S                     .
+11PM EDT MAR 11 2012 CLOUDY    53  26  35 CALM      30.30S                     .
+12AM EDT MAR 12 2012 CLOUDY    51  27  39 CALM      30.29F                     .
+ 1AM EDT MAR 12 2012 CLOUDY    48  28  46 CALM      30.28F                     .
+ 2AM EDT MAR 12 2012 MOCLDY    48  28  46 CALM      30.28S                     .
+ 3AM EDT MAR 12 2012 MOCLDY    43  28  55 CALM      30.27F                     .
+ 4AM EDT MAR 12 2012 CLOUDY    47  27  45 CALM      30.26F                     .
+ 5AM EDT MAR 12 2012 MOCLDY    44  28  53 CALM      30.24F                     .
+ 6AM EDT MAR 12 2012 MOCLDY    43  29  57 CALM      30.24S                     .
+ 7AM EDT MAR 12 2012 CLOUDY    44  28  53 CALM      30.23F                     .
+ 8AM EDT MAR 12 2012 MOCLDY    45  29  53 CALM      30.24R                     .
+ 9AM EDT MAR 12 2012 CLOUDY    46  28  49 CALM      30.24S                     .
+10AM EDT MAR 12 2012 CLOUDY    50  31  48 CALM      30.23F                     .
+11AM EDT MAR 12 2012 CLOUDY    59  30  33 SW7       30.23S                     .
+12PM EDT MAR 12 2012 RAIN      54  45  71 SW7G17    30.23S                     .
+ 1PM EDT MAR 12 2012 LGT RAIN  52  48  86 S6        30.21F FOG                 .
+ 2PM EDT MAR 12 2012 LGT RAIN  51  49  92 S7        30.19F                     .
+ 3PM EDT MAR 12 2012 LGT RAIN  52  50  93 S6        30.16F FOG                 .
+ 4PM EDT MAR 12 2012 CLOUDY    53  51  93 S7        30.14S                     .
+ 5PM EDT MAR 12 2012 CLOUDY    54  52  93 S9        30.11F                     .
+ 6PM EDT MAR 12 2012 CLOUDY    55  52  89 S7        30.10F                     .
+ 7PM EDT MAR 12 2012 CLOUDY    55  53  93 S7        30.08F                     .
+ 8PM EDT MAR 12 2012 LGT RAIN  55  53  93 S6        30.07F                     .
+ 9PM EDT MAR 12 2012 CLOUDY    55  53  93 S7        30.07S                     .
+10PM EDT MAR 12 2012 CLOUDY    56  53  90 S6        30.05F                     .
+11PM EDT MAR 12 2012 MOCLDY    55  53  93 S7        30.03F                     .
+12AM EDT MAR 13 2012 MOCLDY    57  53  86 SW12      30.03S                     .
+ 1AM EDT MAR 13 2012 MOCLDY    58  53  84 SW9       30.02F                     .
+ 2AM EDT MAR 13 2012 CLOUDY    59  53  80 SW12G17   30.02S                     .
+ 3AM EDT MAR 13 2012 PTCLDY    59  53  80 SW15      30.02S                     .
+ 4AM EDT MAR 13 2012 MOCLDY    59  53  80 SW10G18   30.00F                     .
+ 5AM EDT MAR 13 2012 CLOUDY    59  53  80 SW10G21   30.00S                     .
+ 6AM EDT MAR 13 2012 CLOUDY    60  53  77 SW10      30.01R                     .
+ 7AM EDT MAR 13 2012 CLOUDY    60  53  77 SW9G21    30.02R                     .
+ 8AM EDT MAR 13 2012 CLOUDY    60  54  80 SW12      30.02S                     .
+ 9AM EDT MAR 13 2012 PTSUNNY   60  54  80 SW10      30.02S                     .
+10AM EDT MAR 13 2012 CLOUDY    61  54  77 W6        30.05R                     .
+11AM EDT MAR 13 2012 MOSUNNY   61  51  70 W7        30.05S                     .
+12PM EDT MAR 13 2012 CLOUDY    63  52  67 W12       30.05S                     .
+ 1PM EDT MAR 13 2012 PTSUNNY   65  51  60 W10G20    30.05S                     .
+ 2PM EDT MAR 13 2012 MOSUNNY   66  50  56 W15G31    30.03F                     .
+ 3PM EDT MAR 13 2012 MOSUNNY   70  48  45 W14G25    30.01F                     .
+ 4PM EDT MAR 13 2012 NOT AVBL                                                  .
+ 5PM EDT MAR 13 2012 MOSUNNY   72  43  35 W21       30.01R                     .
+ 6PM EDT MAR 13 2012 MOSUNNY   71  42  35 W17G23    30.01S                     .
+ 7PM EDT MAR 13 2012 MOCLDY    68  40  35 W16G29    30.03R                     .
+ 8PM EDT MAR 13 2012 MOCLDY    64  42  44 W8        30.06R                     .
+ 9PM EDT MAR 13 2012 PTCLDY    62  42  47 W6        30.07R                     .
+10PM EDT MAR 13 2012 FAIR      61  43  51 W6        30.08R                     .
+11PM EDT MAR 13 2012 CLEAR     59  43  55 W6        30.09R                     .
+12AM EDT MAR 14 2012 CLEAR     55  43  63 W8        30.10R                     .
+ 1AM EDT MAR 14 2012 CLEAR     54  43  66 W9        30.11R                     .
+ 2AM EDT MAR 14 2012 CLEAR     51  42  71 W5        30.12R                     .
+ 3AM EDT MAR 14 2012 CLEAR     52  42  69 CALM      30.13R                     .
+ 4AM EDT MAR 14 2012 CLEAR     51  40  65 W3        30.12F                     .
+ 5AM EDT MAR 14 2012 CLEAR     47  39  74 W3        30.12S                     .
+ 6AM EDT MAR 14 2012 PTCLDY    44  38  79 CALM      30.14R                     .
+ 7AM EDT MAR 14 2012 NOT AVBL                                                  .
+ 8AM EDT MAR 14 2012 MOCLDY    42  36  79 CALM      30.19                      .
+ 9AM EDT MAR 14 2012 MOSUNNY   46  39  76 CALM      30.21R                     .
+10AM EDT MAR 14 2012 MOSUNNY   53  37  54 S3        30.22R                     .
+11AM EDT MAR 14 2012 MOSUNNY   57  29  34 S7        30.22S                     .
+12PM EDT MAR 14 2012 MOSUNNY   62  29  28 SE5       30.22S                     .
+ 1PM EDT MAR 14 2012 SUNNY     65  32  29 SE3       30.21F                     .
+ 2PM EDT MAR 14 2012 SUNNY     69  37  30 CALM      30.20F                     .
+ 3PM EDT MAR 14 2012 NOT AVBL                                                  .
+ 4PM EDT MAR 14 2012 SUNNY     72  41  32 VRB3      30.16                      .
+ 5PM EDT MAR 14 2012 SUNNY     74  42  31 SW9       30.15F                     .
+ 6PM EDT MAR 14 2012 SUNNY     74  43  32 SW6       30.14F                     .
+ 7PM EDT MAR 14 2012 PTCLDY    74  41  30 SW7       30.14S                     .
+ 8PM EDT MAR 14 2012 PTCLDY    69  43  38 S3        30.14S                     .
+ 9PM EDT MAR 14 2012 CLEAR     66  43  43 CALM      30.15R                     .
+10PM EDT MAR 14 2012 CLEAR     63  43  48 CALM      30.16R                     .
+11PM EDT MAR 14 2012 CLEAR     61  43  51 S3        30.16S                     .
+12AM EDT MAR 15 2012 CLEAR     60  42  51 CALM      30.15F                     .
+ 1AM EDT MAR 15 2012 CLEAR     60  41  49 CALM      30.15S                     .
+ 2AM EDT MAR 15 2012 CLEAR     58  41  53 CALM      30.15S                     .
+ 3AM EDT MAR 15 2012 CLEAR     58  41  53 CALM      30.14F                     .
+ 4AM EDT MAR 15 2012 CLEAR     57  41  55 CALM      30.14S                     .
+ 5AM EDT MAR 15 2012 CLEAR     52  41  66 CALM      30.13F                     .
+ 6AM EDT MAR 15 2012 PTCLDY    51  41  68 CALM      30.14R                     .
+ 7AM EDT MAR 15 2012 MOCLDY    50  41  71 CALM      30.15R                     .
+ 8AM EDT MAR 15 2012 CLOUDY    53  42  66 S3        30.15S                     .
+ 9AM EDT MAR 15 2012 CLOUDY    54  44  69 W3        30.19R                     .
+10AM EDT MAR 15 2012 CLOUDY    62  44  51 W8G21     30.16F                     .
+11AM EDT MAR 15 2012 CLOUDY    64  46  52 VRB3      30.18R                     .
+12PM EDT MAR 15 2012 CLOUDY    66  46  48 N5        30.18S                     .
+ 1PM EDT MAR 15 2012 CLOUDY    70  46  42 CALM      30.18S                     .
+ 2PM EDT MAR 15 2012 CLOUDY    73  43  33 S12G17    30.15F                     .
+ 3PM EDT MAR 15 2012 CLOUDY    71  46  40 SW15G23   30.15S                     .
+ 4PM EDT MAR 15 2012 PTSUNNY   72  48  42 S16       30.12F                     .
+ 5PM EDT MAR 15 2012 PTSUNNY   71  47  42 SW13G21   30.10F                     .
+ 6PM EDT MAR 15 2012 CLOUDY    71  48  43 S12       30.09F                     .
+ 7PM EDT MAR 15 2012 NOT AVBL                                                  .
+ 8PM EDT MAR 15 2012 NOT AVBL                                                  .
+ 9PM EDT MAR 15 2012 NOT AVBL                                                  .
+10PM EDT MAR 15 2012 NOT AVBL                                                  .
+11PM EDT MAR 15 2012 TSTM      60  54  80 SW8       30.12                      .
+12AM EDT MAR 16 2012 CLOUDY    60  53  77 S7        30.12S THUNDER             .
+ 1AM EDT MAR 16 2012 CLOUDY    59  53  80 S3        30.11F                     .
+ 2AM EDT MAR 16 2012 CLOUDY    57  53  86 S5        30.10F THUNDER             .
+ 3AM EDT MAR 16 2012 TSTM      57  54  89 NW6       30.13R                     .
+ 4AM EDT MAR 16 2012 LGT RAIN  56  54  93 S3        30.11F                     .
+ 5AM EDT MAR 16 2012 LGT RAIN  56  54  93 S6        30.11S                     .
+ 6AM EDT MAR 16 2012 LGT RAIN  57  54  89 SW10      30.09F                     .
+ 7AM EDT MAR 16 2012 CLOUDY    57  54  89 CALM      30.12R                     .
+ 8AM EDT MAR 16 2012 CLOUDY    56  53  90 SW3       30.12S                     .
+ 9AM EDT MAR 16 2012 CLOUDY    57  54  89 CALM      30.13R                     .
+10AM EDT MAR 16 2012 CLOUDY    59  54  83 S5        30.14R                     .
+11AM EDT MAR 16 2012 CLOUDY    62  54  74 S9        30.16R                     .
+12PM EDT MAR 16 2012 CLOUDY    64  53  67 SW7       30.16S                     .
+ 1PM EDT MAR 16 2012 PTSUNNY   66  53  63 VRB7      30.16S                     .
+ 2PM EDT MAR 16 2012 PTSUNNY   67  53  61 W8        30.15F                     .
+ 3PM EDT MAR 16 2012 CLOUDY    67  54  63 W7        30.14S                     .
+ 4PM EDT MAR 16 2012 PTSUNNY   68  53  58 W9        30.14S                     .
+ 5PM EDT MAR 16 2012 PTSUNNY   69  53  56 NW6       30.13F                     .
+ 6PM EDT MAR 16 2012 PTSUNNY   70  54  56 W6        30.14R                     .
+ 7PM EDT MAR 16 2012 MOCLDY    69  53  56 W3        30.15R                     .
+ 8PM EDT MAR 16 2012 PTCLDY    68  53  58 CALM      30.16R                     .
+ 9PM EDT MAR 16 2012 PTCLDY    63  53  70 CALM      30.17R                     .
+10PM EDT MAR 16 2012 PTCLDY    62  53  72 CALM      30.17S                     .
+11PM EDT MAR 16 2012 PTCLDY    59  52  77 CALM      30.18R                     .
+12AM EDT MAR 17 2012 PTCLDY    58  52  80 CALM      30.19R                     .
+ 1AM EDT MAR 17 2012 PTCLDY    56  51  84 CALM      30.19S                     .
+ 2AM EDT MAR 17 2012 CLEAR     53  50  89 CALM      30.19S                     .
+ 3AM EDT MAR 17 2012 CLEAR     53  49  86 CALM      30.20R                     .
+ 4AM EDT MAR 17 2012 CLEAR     52  48  86 CALM      30.20S                     .
+ 5AM EDT MAR 17 2012 PTCLDY    50  48  93 CALM      30.20S                     .
+ 6AM EDT MAR 17 2012 CLEAR     50  48  93 CALM      30.21R                     .
+ 7AM EDT MAR 17 2012 CLEAR     49  46  90 CALM      30.23R                     .
+ 8AM EDT MAR 17 2012 CLEAR     48  46  93 CALM      30.24R                     .
+ 9AM EDT MAR 17 2012 SUNNY     52  50  93 CALM      30.25R                     .
+10AM EDT MAR 17 2012 SUNNY     58  53  84 CALM      30.26R                     .
+11AM EDT MAR 17 2012 SUNNY     64  54  69 SE3       30.26S                     .
+12PM EDT MAR 17 2012 MOSUNNY   68  54  60 SE8       30.25F                     .
+ 1PM EDT MAR 17 2012 MOSUNNY   71  53  52 E9        30.24F                     .
+ 2PM EDT MAR 17 2012 MOSUNNY   73  50  44 S6        30.22F                     .
+ 3PM EDT MAR 17 2012 MOSUNNY   74  45  35 S7        30.19F                     .
+ 4PM EDT MAR 17 2012 MOSUNNY   76  45  33 SE12G18   30.18F                     .
+ 5PM EDT MAR 17 2012 MOSUNNY   77  42  28 SE9       30.16F                     .
+ 6PM EDT MAR 17 2012 MOSUNNY   76  42  29 SE9       30.15F                     .
+ 7PM EDT MAR 17 2012 PTCLDY    76  38  25 S7        30.15S                     .
+ 8PM EDT MAR 17 2012 PTCLDY    72  38  29 E5        30.15S                     .
+ 9PM EDT MAR 17 2012 MOCLDY    69  38  32 E5        30.16R                     .
+10PM EDT MAR 17 2012 MOCLDY    70  41  34 SE9       30.17R                     .
+11PM EDT MAR 17 2012 MOCLDY    67  43  41 S5        30.18R                     .
+12AM EDT MAR 18 2012 CLOUDY    67  44  43 S3        30.19R                     .
+ 1AM EDT MAR 18 2012 CLOUDY    64  47  53 SE6       30.19S                     .
+ 2AM EDT MAR 18 2012 PTCLDY    65  48  54 S5        30.18F                     .
+ 3AM EDT MAR 18 2012 CLOUDY    64  49  57 SE3       30.18S                     .
+ 4AM EDT MAR 18 2012 CLOUDY    63  50  62 CALM      30.18S                     .
+ 5AM EDT MAR 18 2012 CLOUDY    61  50  67 SE5       30.17F                     .
+ 6AM EDT MAR 18 2012 CLOUDY    62  50  64 S3        30.18R                     .
+ 7AM EDT MAR 18 2012 MOCLDY    61  51  70 SE3       30.19R                     .
+ 8AM EDT MAR 18 2012 MOCLDY    60  50  69 CALM      30.20R                     .
+ 9AM EDT MAR 18 2012 PTSUNNY   61  51  70 CALM      30.21R                     .
+10AM EDT MAR 18 2012 CLOUDY    67  52  58 S14G20    30.22R                     .
+11AM EDT MAR 18 2012 LGT RAIN  64  54  69 W9G17     30.25R                     .
+12PM EDT MAR 18 2012 LGT RAIN  61  57  87 CALM      30.24F                     .
+ 1PM EDT MAR 18 2012 PTSUNNY   63  56  78 S5        30.23F                     .
+ 2PM EDT MAR 18 2012 PTSUNNY   69  56  62 S9        30.21F                     .
+ 3PM EDT MAR 18 2012 CLOUDY    71  53  52 S12       30.17F                     .
+ 4PM EDT MAR 18 2012 CLOUDY    71  52  50 SW9       30.16F                     .
+ 5PM EDT MAR 18 2012 PTSUNNY   71  51  49 S9        30.14F                     .
+ 6PM EDT MAR 18 2012 MOSUNNY   71  52  50 SW8G16    30.13F                     .
+ 7PM EDT MAR 18 2012 PTCLDY    71  53  52 S6        30.11F                     .
+ 8PM EDT MAR 18 2012 PTCLDY    69  53  56 CALM      30.12R                     .
+ 9PM EDT MAR 18 2012 PTCLDY    66  53  63 CALM      30.12S                     .
+10PM EDT MAR 18 2012 PTCLDY    64  53  67 CALM      30.12S                     .
+11PM EDT MAR 18 2012 LGT RAIN  63  52  67 W16G23    30.13R                     .
+12AM EDT MAR 19 2012 LGT RAIN  60  55  83 W7        30.12F                     .
+ 1AM EDT MAR 19 2012 LGT RAIN  60  56  86 W5        30.11F                     .
+ 2AM EDT MAR 19 2012 LGT RAIN  59  56  89 CALM      30.10F                     .
+ 3AM EDT MAR 19 2012 RAIN      59  57  93 CALM      30.12R FOG                 .
+ 4AM EDT MAR 19 2012 CLOUDY    59  56  89 S6        30.11F                     .
+ 5AM EDT MAR 19 2012 CLOUDY    58  56  93 S5        30.12R                     .
+ 6AM EDT MAR 19 2012 CLOUDY    58  56  93 VRB3      30.13R                     .
+ 7AM EDT MAR 19 2012 MOCLDY    57  55  93 CALM      30.14R                     .
+ 8AM EDT MAR 19 2012 CLOUDY    57  55  93 SW3       30.15R                     .
+ 9AM EDT MAR 19 2012 PTSUNNY   59  55  87 SW5       30.15S                     .
+10AM EDT MAR 19 2012 MOSUNNY   61  55  81 SW6       30.17R                     .
+11AM EDT MAR 19 2012 CLOUDY    62  56  80 SW5       30.17S                     .
+12PM EDT MAR 19 2012 CLOUDY    64  56  75 SW3       30.16F                     .
+ 1PM EDT MAR 19 2012 PTSUNNY   66  55  68 CALM      30.15F                     .
+ 2PM EDT MAR 19 2012 MOSUNNY   70  55  59 N3        30.14F                     .
+ 3PM EDT MAR 19 2012 MOSUNNY   70  53  54 W3        30.13F                     .
+ 4PM EDT MAR 19 2012 MOSUNNY   74  54  49 N3        30.12F                     .
+ 5PM EDT MAR 19 2012 MOSUNNY   75  54  47 NW6       30.11F                     .
+ 6PM EDT MAR 19 2012 MOSUNNY   73  54  51 N6        30.11S                     .
+ 7PM EDT MAR 19 2012 PTCLDY    72  54  53 N5        30.11S                     .
+ 8PM EDT MAR 19 2012 PTCLDY    70  53  54 NE3       30.12R                     .
+ 9PM EDT MAR 19 2012 PTCLDY    67  53  61 E6        30.14R                     .
+10PM EDT MAR 19 2012 PTCLDY    64  54  69 E5        30.14S                     .
+11PM EDT MAR 19 2012 PTCLDY    64  54  69 CALM      30.15R                     .
+12AM EDT MAR 20 2012 PTCLDY    62  54  74 E3        30.15S                     .
+ 1AM EDT MAR 20 2012 PTCLDY    59  53  80 CALM      30.15S                     .
+ 2AM EDT MAR 20 2012 PTCLDY    58  53  84 CALM      30.14F                     .
+ 3AM EDT MAR 20 2012 PTCLDY    54  51  90 CALM      30.14S                     .
+ 4AM EDT MAR 20 2012 CLEAR     54  51  90 CALM      30.13F                     .
+ 5AM EDT MAR 20 2012 CLEAR     55  53  93 CALM      30.14R                     .
+ 6AM EDT MAR 20 2012 CLEAR     56  53  90 E5        30.16R FOG                 .
+ 7AM EDT MAR 20 2012 PTCLDY    55  52  89 E3        30.18R FOG                 .
+ 8AM EDT MAR 20 2012 MOCLDY    55  52  89 CALM      30.20R FOG                 .
+ 9AM EDT MAR 20 2012 CLOUDY    56  54  93 CALM      30.21R FOG                 .
+10AM EDT MAR 20 2012 PTSUNNY   61  55  81 CALM      30.22R                     .
+11AM EDT MAR 20 2012 PTSUNNY   67  56  67 E5        30.23R                     .
+12PM EDT MAR 20 2012 PTSUNNY   72  55  55 CALM      30.22F                     .
+ 1PM EDT MAR 20 2012 PTSUNNY   76  56  49 VRB7      30.21F                     .
+ 2PM EDT MAR 20 2012 PTSUNNY   77  52  41 CALM      30.20F                     .
+ 3PM EDT MAR 20 2012 PTSUNNY   78  53  41 NE6       30.17F                     .
+ 4PM EDT MAR 20 2012 PTSUNNY   79  54  41 NW3       30.15F                     .
+ 5PM EDT MAR 20 2012 PTSUNNY   77  54  44 E5        30.14F                     .
+ 6PM EDT MAR 20 2012 NOT AVBL                                                  .
+ 7PM EDT MAR 20 2012 PTCLDY    77  51  40 CALM      30.15                      .
+ 8PM EDT MAR 20 2012 PTCLDY    73  49  42 E5        30.16R                     .
+ 9PM EDT MAR 20 2012 PTCLDY    71  49  45 E5        30.17R                     .
+10PM EDT MAR 20 2012 PTCLDY    70  50  49 E6        30.18R                     .
+11PM EDT MAR 20 2012 PTCLDY    68  52  56 SE7       30.20R                     .
+12AM EDT MAR 21 2012 CLEAR     66  53  63 SE8       30.21R                     .
+ 1AM EDT MAR 21 2012 CLEAR     63  52  67 SE7       30.21S                     .
+ 2AM EDT MAR 21 2012 CLEAR     64  52  64 SE5       30.22R                     .
+ 3AM EDT MAR 21 2012 CLEAR     63  52  67 CALM      30.23R                     .
+ 4AM EDT MAR 21 2012 CLEAR     62  52  69 CALM      30.22F                     .
+ 5AM EDT MAR 21 2012 CLEAR     59  51  75 E3        30.22S                     .
+ 6AM EDT MAR 21 2012 CLEAR     58  52  80 E3        30.22S                     .
+ 7AM EDT MAR 21 2012 CLEAR     56  52  86 E5        30.24R                     .
+ 8AM EDT MAR 21 2012 CLEAR     55  52  89 E5        30.24S                     .
+ 9AM EDT MAR 21 2012 SUNNY     59  54  83 E5        30.25R                     .
+10AM EDT MAR 21 2012 SUNNY     64  55  72 E6        30.26R                     .
+11AM EDT MAR 21 2012 SUNNY     67  56  67 E5        30.26S                     .
+12PM EDT MAR 21 2012 SUNNY     71  56  58 E8        30.25F                     .
+ 1PM EDT MAR 21 2012 MOSUNNY   74  54  49 E6        30.24F                     .
+ 2PM EDT MAR 21 2012 MOSUNNY   76  52  43 E9        30.22F                     .
+ 3PM EDT MAR 21 2012 NOT AVBL                                                  .
+ 4PM EDT MAR 21 2012 MOSUNNY   77  52  41 E12G17    30.16                      .
+ 5PM EDT MAR 21 2012 MOSUNNY   77  53  43 E8        30.15F                     .
+ 6PM EDT MAR 21 2012 NOT AVBL                                                  .
+ 7PM EDT MAR 21 2012 PTCLDY    73  54  51 E8        30.16                      .
+ 8PM EDT MAR 21 2012 PTCLDY    69  54  58 E6        30.17R                     .
+ 9PM EDT MAR 21 2012 CLEAR     67  54  63 E9        30.20R                     .
+10PM EDT MAR 21 2012 CLEAR     65  54  67 E7        30.21R                     .
+11PM EDT MAR 21 2012 CLEAR     62  54  74 E6        30.22R                     .
+12AM EDT MAR 22 2012 CLEAR     61  53  75 E5        30.21F                     .
+ 1AM EDT MAR 22 2012 CLEAR     59  53  80 E5        30.19F                     .
+ 2AM EDT MAR 22 2012 CLEAR     59  53  80 E3        30.18F                     .
+ 3AM EDT MAR 22 2012 CLEAR     58  53  84 E3        30.18S                     .
+ 4AM EDT MAR 22 2012 CLEAR     56  53  90 E3        30.16F                     .
+ 5AM EDT MAR 22 2012 CLEAR     56  53  90 CALM      30.16S                     .
+ 6AM EDT MAR 22 2012 CLEAR     55  52  89 CALM      30.18R                     .
+ 7AM EDT MAR 22 2012 CLEAR     55  52  89 CALM      30.18S FOG                 .
+ 8AM EDT MAR 22 2012 PTCLDY    52  50  93 CALM      30.19R FOG                 .
+ 9AM EDT MAR 22 2012 MOSUNNY   57  53  86 CALM      30.20R FOG                 .
+10AM EDT MAR 22 2012 MOSUNNY   62  55  77 CALM      30.20S                     .
+11AM EDT MAR 22 2012 MOSUNNY   67  55  65 VRB3      30.20S                     .
+12PM EDT MAR 22 2012 MOSUNNY   72  56  57 CALM      30.18F                     .
+ 1PM EDT MAR 22 2012 MOSUNNY   74  55  51 CALM      30.16F                     .
+ 2PM EDT MAR 22 2012 MOSUNNY   77  51  40 VRB5      30.14F                     .
+ 3PM EDT MAR 22 2012 MOSUNNY   78  51  38 VRB5      30.12F                     .
+ 4PM EDT MAR 22 2012 MOSUNNY   81  48  31 CALM      30.10F                     .
+ 5PM EDT MAR 22 2012 MOSUNNY   80  49  33 VRB7      30.10S                     .
+ 6PM EDT MAR 22 2012 MOSUNNY   81  46  29 N9        30.09F                     .
+ 7PM EDT MAR 22 2012 PTCLDY    79  43  27 N7        30.09S                     .
+ 8PM EDT MAR 22 2012 PTCLDY    75  44  33 N6        30.10R                     .
+ 9PM EDT MAR 22 2012 PTCLDY    73  44  35 N6        30.11R                     .
+10PM EDT MAR 22 2012 CLEAR     70  44  39 CALM      30.12R                     .
+11PM EDT MAR 22 2012 CLEAR     65  45  48 CALM      30.11F                     .
+12AM EDT MAR 23 2012 CLEAR     62  46  55 CALM      30.11S                     .
+ 1AM EDT MAR 23 2012 CLEAR     61  46  57 CALM      30.10F                     .
+ 2AM EDT MAR 23 2012 CLEAR     59  46  62 CALM      30.09F                     .
+ 3AM EDT MAR 23 2012 PTCLDY    57  46  66 CALM      30.08F                     .
+ 4AM EDT MAR 23 2012 NOT AVBL                                                  .
+ 5AM EDT MAR 23 2012 PTCLDY    56  46  69 CALM      30.07                      .
+ 6AM EDT MAR 23 2012 PTCLDY    53  45  74 CALM      30.08R                     .
+ 7AM EDT MAR 23 2012 MOCLDY    52  46  80 CALM      30.08S                     .
+ 8AM EDT MAR 23 2012 CLOUDY    52  46  80 CALM      30.08S                     .
+ 9AM EDT MAR 23 2012 CLOUDY    58  50  75 CALM      30.09R                     .
+10AM EDT MAR 23 2012 CLOUDY    65  51  60 VRB3      30.08F                     .
+11AM EDT MAR 23 2012 CLOUDY    70  52  52 CALM      30.07F                     .
+12PM EDT MAR 23 2012 CLOUDY    74  53  48 E6        30.06F                     .
+ 1PM EDT MAR 23 2012 CLOUDY    77  50  38 SE7       30.04F                     .
+ 2PM EDT MAR 23 2012 PTSUNNY   78  48  34 CALM      30.01F                     .
+ 3PM EDT MAR 23 2012 PTSUNNY   80  47  31 CALM      29.97F                     .
+ 4PM EDT MAR 23 2012 PTSUNNY   80  45  28 S6        29.94F                     .
+ 5PM EDT MAR 23 2012 PTSUNNY   80  47  31 CALM      29.92F                     .
+ 6PM EDT MAR 23 2012 PTSUNNY   79  49  34 E5        29.90F                     .
+ 7PM EDT MAR 23 2012 CLOUDY    79  47  32 NE5       29.90S                     .
+ 8PM EDT MAR 23 2012 CLOUDY    77  47  34 NE3       29.89F                     .
+ 9PM EDT MAR 23 2012 LGT RAIN  76  49  38 SW14G20   29.89S                     .
+10PM EDT MAR 23 2012 LGT RAIN  70  53  54 SW10      29.95R                     .
+11PM EDT MAR 23 2012 LGT RAIN  66  56  70 S3        29.95S                     .
+12AM EDT MAR 24 2012 LGT RAIN  64  58  80 NE3       29.92F                     .
+ 1AM EDT MAR 24 2012 LGT RAIN  63  59  87 CALM      29.92S                     .
+ 2AM EDT MAR 24 2012 LGT RAIN  62  59  90 CALM      29.92S FOG                 .
+ 3AM EDT MAR 24 2012 LGT RAIN  61  60  97 CALM      29.89F FOG                 .
+ 4AM EDT MAR 24 2012 CLOUDY    61  60  97 E3        29.87F FOG                 .
+ 5AM EDT MAR 24 2012 LGT RAIN  62  60  93 SE5       29.87S FOG                 .
+ 6AM EDT MAR 24 2012 LGT RAIN  62  60  93 SE7       29.86F FOG                 .
+ 7AM EDT MAR 24 2012 LGT RAIN  63  61  94 SE6       29.86S FOG                 .
+ 8AM EDT MAR 24 2012 NOT AVBL                                                  .
+ 9AM EDT MAR 24 2012 CLOUDY    61  59  93 SE6       29.87R FOG                 .
+10AM EDT MAR 24 2012 LGT RAIN  62  59  90 SE5       29.87S                     .
+11AM EDT MAR 24 2012 CLOUDY    63  59  88 SE5       29.86F                     .
+12PM EDT MAR 24 2012 CLOUDY    63  59  87 S6        29.87R                     .
+ 1PM EDT MAR 24 2012 CLOUDY    64  53  67 S6        29.85F                     .
+ 2PM EDT MAR 24 2012 LGT RAIN  63  56  78 SE8       29.84F                     .
+ 3PM EDT MAR 24 2012 CLOUDY    64  52  64 S9        29.84S                     .
+ 4PM EDT MAR 24 2012 CLOUDY    65  53  65 E9        29.81F                     .
+ 5PM EDT MAR 24 2012 PTSUNNY   66  51  58 S5        29.81S                     .
+ 6PM EDT MAR 24 2012 CLOUDY    65  52  62 SE6       29.82R                     .
+ 7PM EDT MAR 24 2012 CLOUDY    64  53  67 E3        29.82S                     .
+ 8PM EDT MAR 24 2012 CLOUDY    63  53  70 CALM      29.83R                     .
+ 9PM EDT MAR 24 2012 CLOUDY    62  53  72 S3        29.83S                     .
+10PM EDT MAR 24 2012 CLOUDY    60  53  77 CALM      29.81F                     .
+11PM EDT MAR 24 2012 PTCLDY    60  53  77 CALM      29.83R                     .
+12AM EDT MAR 25 2012 CLOUDY    58  52  80 E5        29.83S                     .
+ 1AM EDT MAR 25 2012 CLOUDY    58  54  86 CALM      29.83S                     .
+ 2AM EDT MAR 25 2012 MOCLDY    57  54  89 NE6       29.82F                     .
+ 3AM EDT MAR 25 2012 CLOUDY    56  54  93 NE3       29.82S                     .
+ 4AM EDT MAR 25 2012 CLOUDY    56  53  90 CALM      29.80F                     .
+ 5AM EDT MAR 25 2012 CLOUDY    56  53  90 CALM      29.80S                     .
+ 6AM EDT MAR 25 2012 CLOUDY    55  52  89 CALM      29.81R                     .
+ 7AM EDT MAR 25 2012 CLOUDY    55  52  89 N8        29.82R                     .
+ 8AM EDT MAR 25 2012 FOG       54  52  94 N9        29.84R VSB 1               .
+ 9AM EDT MAR 25 2012 FOG       55  53  93 N7        29.84S VSB 1/4             .
+10AM EDT MAR 25 2012 CLOUDY    57  54  88 N12       29.85S                     .
+11AM EDT MAR 25 2012 CLOUDY    59  52  77 N9        29.86R                     .
+12PM EDT MAR 25 2012 CLOUDY    58  51  78 N10       29.87R                     .
+ 1PM EDT MAR 25 2012 CLOUDY    58  51  78 NW7       29.86F                     .
+ 2PM EDT MAR 25 2012 CLOUDY    59  50  72 N12       29.86S                     .
+ 3PM EDT MAR 25 2012 CLOUDY    59  51  75 NW10      29.85F                     .
+ 4PM EDT MAR 25 2012 CLOUDY    60  51  72 NW10      29.86R                     .
+ 5PM EDT MAR 25 2012 CLOUDY    61  51  70 NW13      29.86S                     .
+ 6PM EDT MAR 25 2012 CLOUDY    60  51  72 NW14      29.87R                     .
+ 7PM EDT MAR 25 2012 CLOUDY    58  49  72 NW14      29.88S                     .
+ 8PM EDT MAR 25 2012 PTCLDY    56  49  77 NW9       29.89R                     .
+ 9PM EDT MAR 25 2012 CLOUDY    57  49  74 NW10      29.91R                     .
+10PM EDT MAR 25 2012 MOCLDY    56  47  71 N9        29.93R                     .
+11PM EDT MAR 25 2012 CLEAR     53  47  79 CALM      29.94S                     .
+12AM EDT MAR 26 2012 PTCLDY    52  47  83 NW8       29.95R                     .
+ 1AM EDT MAR 26 2012 MOCLDY    52  46  80 NW9       29.94F                     .
+ 2AM EDT MAR 26 2012 CLEAR     51  45  79 N10       29.96R                     .
+ 3AM EDT MAR 26 2012 CLEAR     50  44  80 N10       29.97R                     .
+ 4AM EDT MAR 26 2012 CLEAR     49  39  68 N12       29.98R                     .
+ 5AM EDT MAR 26 2012 CLEAR     46  26  45 NW18      29.99R                     .
+ 6AM EDT MAR 26 2012 CLEAR     42  25  50 N20G28    30.01R                     .
+ 7AM EDT MAR 26 2012 PTCLDY    39  29  67 N14       30.04R                     .
+ 8AM EDT MAR 26 2012 MOCLDY    38  30  73 NW13      30.09R                     .
+ 9AM EDT MAR 26 2012 PTSUNNY   39  30  70 N17       30.12R                     .
+10AM EDT MAR 26 2012 CLOUDY    41  29  62 NW17      30.14R                     .
+11AM EDT MAR 26 2012 MOSUNNY   44  29  55 N20       30.16R                     .
+12PM EDT MAR 26 2012 MOSUNNY   44  23  43 N22       30.17R                     .
+ 1PM EDT MAR 26 2012 MOSUNNY   45  20  36 N17G29    30.17S                     .
+ 2PM EDT MAR 26 2012 MOSUNNY   46  22  38 NW18G28   30.18R                     .
+ 3PM EDT MAR 26 2012 MOSUNNY   46  20  35 NW16G29   30.18S                     .
+ 4PM EDT MAR 26 2012 MOSUNNY   46  19  34 N23       30.19R                     .
+ 5PM EDT MAR 26 2012 SUNNY     45  20  36 NW16G28   30.20R                     .
+ 6PM EDT MAR 26 2012 SUNNY     44  16  32 N16       30.21R                     .
+ 7PM EDT MAR 26 2012 CLEAR     42  15  33 N17       30.23R                     .
+ 8PM EDT MAR 26 2012 PTCLDY    40  14  34 N13       30.25R                     .
+ 9PM EDT MAR 26 2012 CLEAR     38  16  40 NW14G20   30.27R                     .
+10PM EDT MAR 26 2012 CLEAR     36  17  46 N9        30.29R                     .
+11PM EDT MAR 26 2012 CLEAR     35  16  45 N10       30.30R WCI  27             .
+12AM EDT MAR 27 2012 CLEAR     33  17  51 NW7       30.31R WCI  27             .
+ 1AM EDT MAR 27 2012 CLEAR     33  16  49 N9        30.30F WCI  25             .
+ 2AM EDT MAR 27 2012 CLEAR     32  16  51 N8        30.30S WCI  25             .
+ 3AM EDT MAR 27 2012 CLEAR     32  16  51 N7        30.31R WCI  26             .
+ 4AM EDT MAR 27 2012 CLEAR     30  16  56 N5        30.32R WCI  25             .
+ 5AM EDT MAR 27 2012 CLEAR     29  16  58 N6        30.33R WCI  23             .
+ 6AM EDT MAR 27 2012 CLEAR     28  15  58 NE5       30.33S WCI  23             .
+ 7AM EDT MAR 27 2012 PTCLDY    28  15  58 NE3       30.33S                     .
+ 8AM EDT MAR 27 2012 CLEAR     28  15  58 E3        30.33S                     .
+ 9AM EDT MAR 27 2012 SUNNY     30  15  53 E3        30.35R                     .
+10AM EDT MAR 27 2012 MOSUNNY   33  14  45 SE5       30.35S WCI  29             .
+11AM EDT MAR 27 2012 MOSUNNY   34  11  38 VRB3      30.35S                     .
+12PM EDT MAR 27 2012 MOSUNNY   39  12  33 CALM      30.36R                     .
+ 1PM EDT MAR 27 2012 MOSUNNY   42  11  28 CALM      30.34F                     .
+ 2PM EDT MAR 27 2012 PTSUNNY   44  12  27 CALM      30.31F                     .
+ 3PM EDT MAR 27 2012 PTSUNNY   47  11  23 VRB3      30.26F                     .
+ 4PM EDT MAR 27 2012 PTSUNNY   50  12  21 VRB5      30.24F                     .
+ 5PM EDT MAR 27 2012 PTSUNNY   51  12  21 S8        30.19F                     .
+ 6PM EDT MAR 27 2012 MOSUNNY   52  12  20 S3        30.18F                     .
+ 7PM EDT MAR 27 2012 MOCLDY    52  12  20 S7        30.16F                     .
+ 8PM EDT MAR 27 2012 CLOUDY    51  16  24 SE7       30.12F                     .
+ 9PM EDT MAR 27 2012 CLOUDY    49  18  29 S5        30.10F                     .
+10PM EDT MAR 27 2012 CLOUDY    48  17  29 S5        30.07F                     .
+11PM EDT MAR 27 2012 MOCLDY    48  17  29 S6        30.05F                     .
+12AM EDT MAR 28 2012 MOCLDY    48  18  30 CALM      30.03F                     .
+ 1AM EDT MAR 28 2012 CLOUDY    47  18  31 S3        30.00F                     .
+ 2AM EDT MAR 28 2012 CLOUDY    48  20  32 CALM      29.98F                     .
+ 3AM EDT MAR 28 2012 CLOUDY    47  20  34 S5        29.95F                     .
+ 4AM EDT MAR 28 2012 CLOUDY    51  19  28 S5        29.92F                     .
+ 5AM EDT MAR 28 2012 CLOUDY    56  18  22 SW10      29.89F                     .
+ 6AM EDT MAR 28 2012 MOCLDY    59  21  23 SW10      29.86F                     .
+ 7AM EDT MAR 28 2012 CLOUDY    59  26  28 SW9       29.85F                     .
+ 8AM EDT MAR 28 2012 CLOUDY    60  33  36 SW16G29   29.83F                     .
+ 9AM EDT MAR 28 2012 TSTM      61  37  41 SW14G24   29.82F                     .
+10AM EDT MAR 28 2012 TSTM      61  42  49 SW13      29.81F                     .
+11AM EDT MAR 28 2012 CLOUDY    56  48  74 SW8       29.80F                     .
+12PM EDT MAR 28 2012 PTSUNNY   61  52  72 SW14G22   29.78F                     .
+ 1PM EDT MAR 28 2012 MOSUNNY   66  52  60 W10G26    29.77F                     .
+ 2PM EDT MAR 28 2012 MOSUNNY   70  52  52 SW15G23   29.73F                     .
+ 3PM EDT MAR 28 2012 PTSUNNY   71  50  47 W16G26    29.71F                     .
+ 4PM EDT MAR 28 2012 PTSUNNY   72  50  45 W15G28    29.69F                     .
+ 5PM EDT MAR 28 2012 PTSUNNY   74  45  35 W20G28    29.67F                     .
+ 6PM EDT MAR 28 2012 PTSUNNY   72  34  24 W23G41    29.68R                     .
+ 7PM EDT MAR 28 2012 MOCLDY    70  34  26 NW24G41   29.71R                     .
+ 8PM EDT MAR 28 2012 PTCLDY    67  33  28 NW26G38   29.75R                     .
+ 9PM EDT MAR 28 2012 PTCLDY    62  40  44 NW18G28   29.79R                     .
+10PM EDT MAR 28 2012 CLOUDY    59  40  49 NW15      29.83R                     .
+11PM EDT MAR 28 2012 PTCLDY    55  39  54 NW14      29.84R                     .
+12AM EDT MAR 29 2012 PTCLDY    52  38  58 NW14      29.86R                     .
+ 1AM EDT MAR 29 2012 MOCLDY    50  37  61 NW13      29.86S                     .
+ 2AM EDT MAR 29 2012 MOCLDY    50  38  63 NW9       29.87R                     .
+ 3AM EDT MAR 29 2012 CLOUDY    49  37  63 NW12      29.87S                     .
+ 4AM EDT MAR 29 2012 CLOUDY    47  34  60 NW14G20   29.89R                     .
+ 5AM EDT MAR 29 2012 CLOUDY    46  32  58 NW15      29.91R                     .
+ 6AM EDT MAR 29 2012 CLOUDY    45  31  58 NW10      29.93R                     .
+ 7AM EDT MAR 29 2012 CLOUDY    44  32  62 N10       29.96R                     .
+ 8AM EDT MAR 29 2012 CLOUDY    42  30  62 N14G24    29.99R                     .
+ 9AM EDT MAR 29 2012 CLOUDY    42  30  62 N14       30.02R                     .
+10AM EDT MAR 29 2012 CLOUDY    42  30  62 NW13      30.03R                     .
+11AM EDT MAR 29 2012 CLOUDY    44  29  55 N15       30.05R                     .
+12PM EDT MAR 29 2012 CLOUDY    43  30  60 NW10      30.06R                     .
+ 1PM EDT MAR 29 2012 CLOUDY    43  31  62 NW10      30.06S                     .
+ 2PM EDT MAR 29 2012 PTSUNNY   45  31  58 NW10      30.06S                     .
+ 3PM EDT MAR 29 2012 PTSUNNY   47  31  53 NW13      30.05F                     .
+ 4PM EDT MAR 29 2012 PTSUNNY   50  32  50 N10G18    30.03F                     .
+ 5PM EDT MAR 29 2012 MOSUNNY   49  31  49 N13G18    30.02F                     .
+ 6PM EDT MAR 29 2012 MOSUNNY   47  31  53 N17G23    30.03R                     .
+ 7PM EDT MAR 29 2012 PTCLDY    45  30  55 N12       30.04R                     .
+ 8PM EDT MAR 29 2012 PTCLDY    42  30  62 N9        30.06R                     .
+ 9PM EDT MAR 29 2012 PTCLDY    41  29  62 N8        30.07R                     .
+10PM EDT MAR 29 2012 PTCLDY    40  29  64 N7        30.08R                     .
+11PM EDT MAR 29 2012 PTCLDY    38  28  67 N8        30.09R                     .
+12AM EDT MAR 30 2012 PTCLDY    37  28  70 N6        30.08F                     .
+ 1AM EDT MAR 30 2012 NOT AVBL                                                  .
+ 2AM EDT MAR 30 2012 PTCLDY    35  28  75 CALM      30.07                      .
+ 3AM EDT MAR 30 2012 PTCLDY    34  27  75 NE5       30.05F WCI  30             .
+ 4AM EDT MAR 30 2012 CLOUDY    32  27  81 CALM      30.04F                     .
+ 5AM EDT MAR 30 2012 CLOUDY    33  27  78 CALM      30.03F                     .
+ 6AM EDT MAR 30 2012 MOCLDY    33  27  78 CALM      30.04R                     .
+ 7AM EDT MAR 30 2012 PTCLDY    32  27  81 E6        30.03F WCI  26             .
+ 8AM EDT MAR 30 2012 MOCLDY    33  28  81 E5        30.03S WCI  29             .
+ 9AM EDT MAR 30 2012 NOT AVBL                                                  .
+10AM EDT MAR 30 2012 CLOUDY    38  28  67 NE3       30.02                      .
+11AM EDT MAR 30 2012 CLOUDY    43  30  60 NE6       30.00F                     .
+12PM EDT MAR 30 2012 MOSUNNY   47  32  56 E3        29.96F                     .
+ 1PM EDT MAR 30 2012 MOSUNNY   53  35  50 E5        29.92F                     .
+ 2PM EDT MAR 30 2012 MOSUNNY   57  36  45 S9        29.89F                     .
+ 3PM EDT MAR 30 2012 MOSUNNY   59  39  47 S8        29.84F                     .
+ 4PM EDT MAR 30 2012 PTSUNNY   62  40  44 SE10      29.79F                     .
+ 5PM EDT MAR 30 2012 PTSUNNY   63  43  48 S9        29.76F                     .
+ 6PM EDT MAR 30 2012 CLOUDY    64  45  49 S9        29.74F                     .
+ 7PM EDT MAR 30 2012 CLOUDY    63  46  54 S9        29.71F                     .
+ 8PM EDT MAR 30 2012 MOCLDY    62  47  57 S5        29.70F                     .
+ 9PM EDT MAR 30 2012 TSTM      60  50  69 N10       29.72R                     .
+10PM EDT MAR 30 2012 TSTM      56  52  86 CALM      29.71F FOG                 .
+11PM EDT MAR 30 2012 NOT AVBL                                                  .
+12AM EDT MAR 31 2012 CLOUDY    57  54  89 S7        29.69R                     .
+ 1AM EDT MAR 31 2012 CLOUDY    57  54  89 SW7       29.69S                     .
+ 2AM EDT MAR 31 2012 CLOUDY    57  55  93 SW8       29.71R                     .
+ 3AM EDT MAR 31 2012 DRIZZLE   56  53  90 NW18      29.73R FOG                 .
+ 4AM EDT MAR 31 2012 CLOUDY    50  47  89 NW16      29.75R                     .
+ 5AM EDT MAR 31 2012 CLOUDY    46  43  89 NW13      29.77R                     .
+ 6AM EDT MAR 31 2012 CLOUDY    44  41  89 NW13      29.78R                     .
+ 7AM EDT MAR 31 2012 CLOUDY    44  40  85 NW12      29.81R                     .
+ 8AM EDT MAR 31 2012 CLOUDY    43  39  86 N12       29.83R                     .
+ 9AM EDT MAR 31 2012 CLOUDY    42  37  82 N14       29.86R                     .
+10AM EDT MAR 31 2012 CLOUDY    41  37  86 NW10      29.88R                     .
+11AM EDT MAR 31 2012 CLOUDY    42  37  82 NW12      29.89R                     .
+12PM EDT MAR 31 2012 CLOUDY    44  37  76 NW8       29.89S                     .
+ 1PM EDT MAR 31 2012 CLOUDY    45  37  73 NW13      29.89S                     .
+ 2PM EDT MAR 31 2012 CLOUDY    45  35  68 NW13      29.89S                     .
+ 3PM EDT MAR 31 2012 CLOUDY    46  35  65 NW8       29.88F                     .
+ 4PM EDT MAR 31 2012 CLOUDY    47  35  63 W7        29.88S                     .
+ 5PM EDT MAR 31 2012 CLOUDY    46  35  65 NW9       29.88S                     .
+ 6PM EDT MAR 31 2012 CLOUDY    45  35  68 NW13      29.89R                     .
+ 7PM EDT MAR 31 2012 CLOUDY    44  35  70 W5        29.89S                     .

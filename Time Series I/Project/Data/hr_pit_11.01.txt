@@ -1,0 +1,764 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 7PM EST DEC 31 2010 MOCLDY    52  44  74 S6        30.04R                   JAN
+ 8PM EST DEC 31 2010 CLOUDY    52  44  74 S6        30.04S                   JAN
+ 9PM EST DEC 31 2010 MOCLDY    51  44  77 S6        30.04S                   JAN
+10PM EST DEC 31 2010 MOCLDY    52  44  74 S6        30.02F                   JAN
+11PM EST DEC 31 2010 MOCLDY    51  43  74 S5        30.02S                   JAN
+12AM EST JAN 01 2011 PTCLDY    51  43  74 S6        30.01F                   JAN
+ 1AM EST JAN 01 2011 CLOUDY    50  43  77 S5        30.00F                   JAN
+ 2AM EST JAN 01 2011 CLOUDY    50  43  77 SE5       29.98F                     .
+ 3AM EST JAN 01 2011 CLOUDY    51  43  74 S5        29.98S                     .
+ 4AM EST JAN 01 2011 CLOUDY    51  42  71 SE7       29.94F                     .
+ 5AM EST JAN 01 2011 CLOUDY    51  42  71 S5        29.93F                     .
+ 6AM EST JAN 01 2011 LGT RAIN  51  46  83 S7        29.96R                     .
+ 7AM EST JAN 01 2011 LGT RAIN  51  48  89 S8        29.96S                     .
+ 8AM EST JAN 01 2011 LGT RAIN  50  49  96 SE5       29.94F FOG                 .
+ 9AM EST JAN 01 2011 LGT RAIN  51  50  96 S6        29.95R FOG                 .
+10AM EST JAN 01 2011 RAIN      52  51  97 S7        29.94F FOG                 .
+11AM EST JAN 01 2011 LGT RAIN  54  52  94 S7        29.93F FOG                 .
+12PM EST JAN 01 2011 LGT RAIN  53  51  93 S9        29.90F FOG                 .
+ 1PM EST JAN 01 2011 LGT RAIN  53  51  93 S7        29.86F                     .
+ 2PM EST JAN 01 2011 LGT RAIN  55  51  86 S9        29.83F                     .
+ 3PM EST JAN 01 2011 CLOUDY    56  51  84 SW12G20   29.83S                     .
+ 4PM EST JAN 01 2011 LGT RAIN  55  52  89 SW9       29.83S FOG                 .
+ 5PM EST JAN 01 2011 CLOUDY    55  51  86 SW9       29.85R                     .
+ 6PM EST JAN 01 2011 CLOUDY    54  51  90 SW8       29.86R                     .
+ 7PM EST JAN 01 2011 CLOUDY    48  45  89 W6        29.90R                     .
+ 8PM EST JAN 01 2011 CLOUDY    47  41  80 W7        29.91R                     .
+ 9PM EST JAN 01 2011 CLOUDY    47  40  76 W5        29.92R                     .
+10PM EST JAN 01 2011 LGT RAIN  45  39  79 W12       29.94R                     .
+11PM EST JAN 01 2011 LGT RAIN  42  37  82 W3        29.97R                     .
+12AM EST JAN 02 2011 CLOUDY    42  36  79 W3        29.99R                     .
+ 1AM EST JAN 02 2011 CLOUDY    40  27  59 W6G21     30.02R                     .
+ 2AM EST JAN 02 2011 CLOUDY    39  27  62 W5        30.03R                     .
+ 3AM EST JAN 02 2011 MOCLDY    37  20  50 W12G18    30.04R                     .
+ 4AM EST JAN 02 2011 PTCLDY    33  22  63 W5        30.04S WCI  29             .
+ 5AM EST JAN 02 2011 CLEAR     31  19  61 W6        30.05R WCI  25             .
+ 6AM EST JAN 02 2011 PTCLDY    29  19  66 W8        30.06R WCI  21             .
+ 7AM EST JAN 02 2011 CLEAR     28  18  66 W12G17    30.08R WCI  18             .
+ 8AM EST JAN 02 2011 CLEAR     26  17  68 W7        30.09R WCI  18             .
+ 9AM EST JAN 02 2011 PTSUNNY   26  16  65 W12       30.11R WCI  16             .
+10AM EST JAN 02 2011 PTSUNNY   28  17  63 W10       30.12R WCI  19             .
+11AM EST JAN 02 2011 MOSUNNY   28  16  60 W10       30.12S WCI  19             .
+12PM EST JAN 02 2011 MOSUNNY   30  16  56 W8        30.09F WCI  22             .
+ 1PM EST JAN 02 2011 MOSUNNY   31  16  54 W13       30.06F WCI  21             .
+ 2PM EST JAN 02 2011 MOSUNNY   32  14  47 W13G22    30.06S WCI  22             .
+ 3PM EST JAN 02 2011 MOSUNNY   32  11  41 W15       30.06S WCI  22             .
+ 4PM EST JAN 02 2011 PTCLDY    31  12  45 W17G23    30.08R WCI  19             .
+ 5PM EST JAN 02 2011 PTCLDY    30  11  45 W12       30.11R WCI  20             .
+ 6PM EST JAN 02 2011 PTCLDY    27  12  53 W15       30.13R WCI  15             .
+ 7PM EST JAN 02 2011 CLEAR     26  12  55 W12       30.15R WCI  16             .
+ 8PM EST JAN 02 2011 CLEAR     24  12  60 W13       30.17R WCI  12             .
+ 9PM EST JAN 02 2011 CLEAR     23  11  60 W7        30.18R WCI  15             .
+10PM EST JAN 02 2011 PTCLDY    21  11  65 W7        30.19R WCI  12             .
+11PM EST JAN 02 2011 PTCLDY    21  11  65 W6        30.20R WCI  13             .
+12AM EST JAN 03 2011 CLEAR     20  11  68 W5        30.20S WCI  13             .
+ 1AM EST JAN 03 2011 CLEAR     20  10  65 W3        30.20S                     .
+ 2AM EST JAN 03 2011 CLEAR     20  10  65 CALM      30.20S                     .
+ 3AM EST JAN 03 2011 CLEAR     19  11  70 CALM      30.21R                     .
+ 4AM EST JAN 03 2011 CLEAR     18  11  74 CALM      30.21S                     .
+ 5AM EST JAN 03 2011 CLEAR     18  10  71 CALM      30.20F                     .
+ 6AM EST JAN 03 2011 CLEAR     18  10  71 SW3       30.21R                     .
+ 7AM EST JAN 03 2011 CLEAR     18  10  71 SW3       30.21S                     .
+ 8AM EST JAN 03 2011 PTCLDY    18  10  71 SW6       30.23R WCI  10             .
+ 9AM EST JAN 03 2011 MOSUNNY   20  10  65 SW9       30.23S WCI   9             .
+10AM EST JAN 03 2011 SUNNY     23  11  60 SW10      30.24R WCI  12             .
+11AM EST JAN 03 2011 SUNNY     26  11  52 SW8       30.23F WCI  18             .
+12PM EST JAN 03 2011 SUNNY     28   9  44 SW13      30.21F WCI  17             .
+ 1PM EST JAN 03 2011 SUNNY     31   8  38 SW14      30.17F WCI  21             .
+ 2PM EST JAN 03 2011 SUNNY     33   9  36 SW12G17   30.15F WCI  24             .
+ 3PM EST JAN 03 2011 SUNNY     34   8  33 SW12G20   30.13F WCI  25             .
+ 4PM EST JAN 03 2011 CLEAR     34   9  35 SW12      30.12F WCI  25             .
+ 5PM EST JAN 03 2011 PTCLDY    33  10  38 S9        30.13R WCI  25             .
+ 6PM EST JAN 03 2011 MOCLDY    31  11  43 S9        30.13S WCI  23             .
+ 7PM EST JAN 03 2011 MOCLDY    31  11  43 S7        30.11F WCI  24             .
+ 8PM EST JAN 03 2011 CLOUDY    30  11  45 S7        30.11S WCI  23             .
+ 9PM EST JAN 03 2011 CLOUDY    30  12  47 S6        30.10F WCI  24             .
+10PM EST JAN 03 2011 PTCLDY    30  12  47 S7        30.08F WCI  23             .
+11PM EST JAN 03 2011 PTCLDY    29  12  49 S6        30.08S WCI  23             .
+12AM EST JAN 04 2011 MOCLDY    29  12  49 S6        30.05F WCI  23             .
+ 1AM EST JAN 04 2011 CLOUDY    30  12  47 SW10      30.04F WCI  21             .
+ 2AM EST JAN 04 2011 CLOUDY    30  12  47 SW7       30.03F WCI  23             .
+ 3AM EST JAN 04 2011 CLOUDY    30  11  45 S7        30.02F WCI  23             .
+ 4AM EST JAN 04 2011 CLOUDY    30  11  45 SW7       29.99F WCI  23             .
+ 5AM EST JAN 04 2011 CLOUDY    29  11  47 S6        29.96F WCI  23             .
+ 6AM EST JAN 04 2011 CLOUDY    29  12  49 S6        29.94F WCI  23             .
+ 7AM EST JAN 04 2011 CLOUDY    30  12  47 S6        29.93F WCI  24             .
+ 8AM EST JAN 04 2011 MOCLDY    30  12  47 SW7       29.91F WCI  23             .
+ 9AM EST JAN 04 2011 PTSUNNY   31  12  45 SW7       29.91S WCI  24             .
+10AM EST JAN 04 2011 PTSUNNY   33  13  43 SW10      29.90F WCI  25             .
+11AM EST JAN 04 2011 CLOUDY    34  14  43 W8        29.89F WCI  27             .
+12PM EST JAN 04 2011 PTSUNNY   35  14  42 SW9       29.86F WCI  28             .
+ 1PM EST JAN 04 2011 PTSUNNY   37  16  42 SW10      29.83F                     .
+ 2PM EST JAN 04 2011 PTSUNNY   37  16  42 SW14      29.82F                     .
+ 3PM EST JAN 04 2011 MOSUNNY   38  17  42 W15       29.82S                     .
+ 4PM EST JAN 04 2011 CLOUDY    37  18  46 W7        29.82S                     .
+ 5PM EST JAN 04 2011 CLOUDY    37  18  46 W7        29.83R                     .
+ 6PM EST JAN 04 2011 MOCLDY    36  18  48 W10       29.85R                     .
+ 7PM EST JAN 04 2011 MOCLDY    35  17  47 W14G20    29.86R WCI  26             .
+ 8PM EST JAN 04 2011 MOCLDY    34  16  47 W14G22    29.87R WCI  25             .
+ 9PM EST JAN 04 2011 PTCLDY    32  14  47 W20       29.90R WCI  20             .
+10PM EST JAN 04 2011 PTCLDY    29  13  51 NW24      29.92R WCI  15             .
+11PM EST JAN 04 2011 MOCLDY    28  12  51 W13       29.93R WCI  17             .
+12AM EST JAN 05 2011 PTCLDY    27  11  51 W9        29.94R WCI  18             .
+ 1AM EST JAN 05 2011 PTCLDY    26  12  55 W3        29.95R                     .
+ 2AM EST JAN 05 2011 PTCLDY    24  11  57 W5        29.97R WCI  18             .
+ 3AM EST JAN 05 2011 PTCLDY    24  12  60 W7        29.97S WCI  16             .
+ 4AM EST JAN 05 2011 CLOUDY    24  12  60 W3        29.96F                     .
+ 5AM EST JAN 05 2011 CLOUDY    23  13  65 W6        29.96S WCI  16             .
+ 6AM EST JAN 05 2011 PTCLDY    21  12  68 W5        29.94F WCI  15             .
+ 7AM EST JAN 05 2011 PTCLDY    20  12  71 W7        29.97R WCI  11             .
+ 8AM EST JAN 05 2011 MOCLDY    19  12  74 W3        29.96F                     .
+ 9AM EST JAN 05 2011 PTSUNNY   20  13  74 W6        29.96S WCI  12             .
+10AM EST JAN 05 2011 CLOUDY    22  14  71 W9        29.96S WCI  12             .
+11AM EST JAN 05 2011 CLOUDY    25  14  63 W8        29.97R WCI  16             .
+12PM EST JAN 05 2011 PTSUNNY   26  12  55 NW5       29.93F WCI  20             .
+ 1PM EST JAN 05 2011 PTSUNNY   26  12  55 W6        29.92F WCI  19             .
+ 2PM EST JAN 05 2011 PTSUNNY   27  11  51 NW8       29.88F WCI  19             .
+ 3PM EST JAN 05 2011 PTSUNNY   28  11  48 NW5       29.87F WCI  23             .
+ 4PM EST JAN 05 2011 PTCLDY    27  11  51 SW5       29.86F WCI  22             .
+ 5PM EST JAN 05 2011 PTCLDY    27  11  51 CALM      29.85F                     .
+ 6PM EST JAN 05 2011 PTCLDY    25  11  55 CALM      29.85S                     .
+ 7PM EST JAN 05 2011 PTCLDY    24  11  57 CALM      29.83F                     .
+ 8PM EST JAN 05 2011 PTCLDY    22  12  65 CALM      29.81F                     .
+ 9PM EST JAN 05 2011 MOCLDY    21  12  68 CALM      29.80F                     .
+10PM EST JAN 05 2011 MOCLDY    21  12  68 CALM      29.78F                     .
+11PM EST JAN 05 2011 MOCLDY    21  12  68 CALM      29.77F                     .
+12AM EST JAN 06 2011 MOCLDY    17  12  80 CALM      29.75F                     .
+ 1AM EST JAN 06 2011 MOCLDY    18  12  77 CALM      29.74F                     .
+ 2AM EST JAN 06 2011 PTCLDY    17  12  80 CALM      29.73F                     .
+ 3AM EST JAN 06 2011 CLOUDY    18  12  77 CALM      29.73S                     .
+ 4AM EST JAN 06 2011 CLOUDY    18  12  77 CALM      29.72F                     .
+ 5AM EST JAN 06 2011 MOCLDY    19  12  74 W3        29.71F                     .
+ 6AM EST JAN 06 2011 CLOUDY    20  12  71 SW5       29.70F WCI  13             .
+ 7AM EST JAN 06 2011 FLURRIES  20  13  74 S3        29.68F                     .
+ 8AM EST JAN 06 2011 LGT SNOW  20  14  77 S5        29.67F WCI  13             .
+ 9AM EST JAN 06 2011 LGT SNOW  21  16  81 S6        29.66F WCI  13             .
+10AM EST JAN 06 2011 LGT SNOW  22  18  85 S5        29.64F FOG     WCI  16     .
+11AM EST JAN 06 2011 FLURRIES  25  19  78 S7        29.62F WCI  17             .
+12PM EST JAN 06 2011 FLURRIES  27  20  75 SW8       29.59F WCI  19             .
+ 1PM EST JAN 06 2011 FLURRIES  29  20  69 S12       29.54F WCI  19             .
+ 2PM EST JAN 06 2011 FLURRIES  30  20  66 SW12      29.51F WCI  20             .
+ 3PM EST JAN 06 2011 LGT SNOW  30  21  69 SW8       29.50F WCI  22             .
+ 4PM EST JAN 06 2011 LGT SNOW  29  23  78 SW8       29.50S WCI  21             .
+ 5PM EST JAN 06 2011 LGT SNOW  29  23  78 S7        29.48F WCI  22             .
+ 6PM EST JAN 06 2011 LGT SNOW  29  24  82 S8        29.47F WCI  21             .
+ 7PM EST JAN 06 2011 LGT SNOW  28  25  88 S8        29.46F VSB 1   WCI  20     .
+ 8PM EST JAN 06 2011 LGT SNOW  28  24  85 SW10      29.44F FOG     WCI  19     .
+ 9PM EST JAN 06 2011 LGT SNOW  28  25  86 SW9       29.43F FOG     WCI  20     .
+10PM EST JAN 06 2011 LGT SNOW  28  24  85 SW7       29.42F FOG     WCI  21     .
+11PM EST JAN 06 2011 LGT SNOW  26  21  81 NW18G25   29.41F VSB 1   WCI  13     .
+12AM EST JAN 07 2011 LGT SNOW  24  20  84 W13       29.40F WCI  12             .
+ 1AM EST JAN 07 2011 FLURRIES  23  16  74 W14       29.41R WCI  11             .
+ 2AM EST JAN 07 2011 LGT SNOW  22  17  81 W9        29.42R WCI  12             .
+ 3AM EST JAN 07 2011 FLURRIES  22  16  78 W8        29.44R WCI  12             .
+ 4AM EST JAN 07 2011 FLURRIES  22  13  68 W8        29.43F WCI  12             .
+ 5AM EST JAN 07 2011 CLOUDY    21  13  71 SW7       29.43S WCI  12             .
+ 6AM EST JAN 07 2011 FLURRIES  20  12  71 W6        29.43S WCI  12             .
+ 7AM EST JAN 07 2011 LGT SNOW  19  15  84 SW5       29.43S FOG     WCI  12     .
+ 8AM EST JAN 07 2011 FLURRIES  19  14  79 W3        29.42F                     .
+ 9AM EST JAN 07 2011 FLURRIES  19  14  79 SW8       29.42S WCI   9             .
+10AM EST JAN 07 2011 MOSUNNY   19  13  77 SW9       29.42S WCI   8             .
+11AM EST JAN 07 2011 MOSUNNY   21  12  68 SW9       29.41F WCI  11             .
+12PM EST JAN 07 2011 PTSUNNY   22   9  57 VRB6      29.39F WCI  14             .
+ 1PM EST JAN 07 2011 PTSUNNY   23   7  50 SW8       29.35F WCI  14             .
+ 2PM EST JAN 07 2011 CLOUDY    23   7  50 W5        29.34F WCI  17             .
+ 3PM EST JAN 07 2011 FLURRIES  23  11  60 W8        29.33F WCI  14             .
+ 4PM EST JAN 07 2011 LGT SNOW  22  15  75 CALM      29.34R                     .
+ 5PM EST JAN 07 2011 LGT SNOW  21  16  79 CALM      29.35R                     .
+ 6PM EST JAN 07 2011 LGT SNOW  21  18  86 CALM      29.35S                     .
+ 7PM EST JAN 07 2011 LGT SNOW  21  17  84 CALM      29.35S FOG                 .
+ 8PM EST JAN 07 2011 LGT SNOW  20  17  88 CALM      29.36R                     .
+ 9PM EST JAN 07 2011 FLURRIES  21  16  81 SW3       29.34F                     .
+10PM EST JAN 07 2011 LGT SNOW  21  17  84 CALM      29.34S                     .
+11PM EST JAN 07 2011 LGT SNOW  21  16  81 CALM      29.32F                     .
+12AM EST JAN 08 2011 LGT SNOW  20  15  81 W3        29.32S                     .
+ 1AM EST JAN 08 2011 LGT SNOW  19  15  84 NW7       29.31F FOG     WCI  10     .
+ 2AM EST JAN 08 2011 LGT SNOW  19  14  81 NW9       29.31S WCI   8             .
+ 3AM EST JAN 08 2011 LGT SNOW  19  15  84 W5        29.32R FOG     WCI  12     .
+ 4AM EST JAN 08 2011 LGT SNOW  18  14  84 W6        29.33R FOG     WCI  10     .
+ 5AM EST JAN 08 2011 FLURRIES  16  11  80 W9        29.35R WCI   4             .
+ 6AM EST JAN 08 2011 FLURRIES  16  12  84 W6        29.37R WCI   7             .
+ 7AM EST JAN 08 2011 LGT SNOW  16  12  84 W6        29.39R FOG     WCI   7     .
+ 8AM EST JAN 08 2011 LGT SNOW  16  11  80 W6        29.41R WCI   7             .
+ 9AM EST JAN 08 2011 FLURRIES  16  11  80 W6        29.43R WCI   7             .
+10AM EST JAN 08 2011 FLURRIES  16  10  77 W9        29.45R WCI   4             .
+11AM EST JAN 08 2011 PTSUNNY   18  11  74 W9        29.48R WCI   7             .
+12PM EST JAN 08 2011 PTSUNNY   19   9  65 W17       29.49R WCI   4             .
+ 1PM EST JAN 08 2011 PTSUNNY   19   8  62 W16       29.50R WCI   4             .
+ 2PM EST JAN 08 2011 PTSUNNY   19   6  57 W20       29.52R WCI   3             .
+ 3PM EST JAN 08 2011 PTSUNNY   19   7  59 W12       29.56R WCI   7             .
+ 4PM EST JAN 08 2011 PTSUNNY   19   7  59 W16       29.61R WCI   4             .
+ 5PM EST JAN 08 2011 PTCLDY    18   5  57 W21       29.65R WCI   1             .
+ 6PM EST JAN 08 2011 PTCLDY    17   8  67 W12       29.69R WCI   4             .
+ 7PM EST JAN 08 2011 MOCLDY    16   5  62 W14       29.73R WCI   2             .
+ 8PM EST JAN 08 2011 MOCLDY    15   5  64 W14       29.76R WCI   0             .
+ 9PM EST JAN 08 2011 FLURRIES  15   6  67 W9        29.78R WCI   3             .
+10PM EST JAN 08 2011 FLURRIES  15   8  73 W8        29.80R WCI   4             .
+11PM EST JAN 08 2011 FLURRIES  15   9  76 W10G17    29.83R WCI   2             .
+12AM EST JAN 09 2011 FLURRIES  15   9  76 W10       29.84R WCI   2             .
+ 1AM EST JAN 09 2011 PTCLDY    15   9  76 W10       29.86R WCI   2             .
+ 2AM EST JAN 09 2011 CLEAR     14   8  77 W7        29.89R WCI   4             .
+ 3AM EST JAN 09 2011 CLEAR     13   7  77 W9        29.93R WCI   1             .
+ 4AM EST JAN 09 2011 CLOUDY    13   8  81 W10       29.96R WCI   0             .
+ 5AM EST JAN 09 2011 MOCLDY    12   7  80 W8        29.98R WCI   0             .
+ 6AM EST JAN 09 2011 FLURRIES  12   7  80 W12       30.01R WCI  -2             .
+ 7AM EST JAN 09 2011 FLURRIES  12   6  77 W8        30.05R WCI   0             .
+ 8AM EST JAN 09 2011 FLURRIES  12   6  77 W8        30.07R WCI   0             .
+ 9AM EST JAN 09 2011 FLURRIES  12   7  80 VRB6      30.10R WCI   3             .
+10AM EST JAN 09 2011 FLURRIES  13   7  77 W8        30.13R WCI   2             .
+11AM EST JAN 09 2011 FLURRIES  15   8  73 W10       30.15R WCI   2             .
+12PM EST JAN 09 2011 MOSUNNY   18  10  71 W9        30.14F WCI   7             .
+ 1PM EST JAN 09 2011 MOSUNNY   21  11  65 W10       30.15R WCI  10             .
+ 2PM EST JAN 09 2011 MOSUNNY   23  11  60 W15       30.18R WCI  10             .
+ 3PM EST JAN 09 2011 PTSUNNY   23  11  60 W13       30.20R WCI  11             .
+ 4PM EST JAN 09 2011 MOSUNNY   24  10  55 W13       30.24R WCI  12             .
+ 5PM EST JAN 09 2011 PTCLDY    23   8  52 NW12      30.24S WCI  12             .
+ 6PM EST JAN 09 2011 PTCLDY    20   7  57 W10       30.27R WCI   9             .
+ 7PM EST JAN 09 2011 PTCLDY    20   7  57 W7        30.30R WCI  11             .
+ 8PM EST JAN 09 2011 PTCLDY    17   7  64 NW7       30.31R WCI   8             .
+ 9PM EST JAN 09 2011 MOCLDY    18   8  65 W6        30.31S WCI  10             .
+10PM EST JAN 09 2011 PTCLDY    18   8  65 SW5       30.31S WCI  11             .
+11PM EST JAN 09 2011 MOCLDY    16   7  67 W3        30.32R                     .
+12AM EST JAN 10 2011 PTCLDY    13   6  74 NW3       30.31F                     .
+ 1AM EST JAN 10 2011 PTCLDY    12   6  77 NW5       30.28F WCI   4             .
+ 2AM EST JAN 10 2011 MOCLDY    11   6  81 CALM      30.29R                     .
+ 3AM EST JAN 10 2011 PTCLDY     9   4  80 CALM      30.33R                     .
+ 4AM EST JAN 10 2011 PTCLDY    10   5  80 NW3       30.35R                     .
+ 5AM EST JAN 10 2011 FLURRIES  14   9  80 W5        30.35S WCI   6             .
+ 6AM EST JAN 10 2011 FLURRIES  14   9  80 W7        30.36R WCI   4             .
+ 7AM EST JAN 10 2011 FLURRIES  12   7  80 W8        30.35F WCI   0             .
+ 8AM EST JAN 10 2011 CLOUDY    12   8  84 W7        30.34F WCI   1             .
+ 9AM EST JAN 10 2011 CLOUDY    15  10  80 CALM      30.39R                     .
+10AM EST JAN 10 2011 FLURRIES  17  12  80 CALM      30.38F                     .
+11AM EST JAN 10 2011 FLURRIES  20  14  77 N5        30.36F WCI  13             .
+12PM EST JAN 10 2011 CLOUDY    21  15  78 NW5       30.35S WCI  15             .
+ 1PM EST JAN 10 2011 CLOUDY    23  16  74 NW3       30.31F                     .
+ 2PM EST JAN 10 2011 CLOUDY    25  15  66 N9        30.29F WCI  15             .
+ 3PM EST JAN 10 2011 CLOUDY    26  15  63 NW10      30.29S WCI  16             .
+ 4PM EST JAN 10 2011 PTSUNNY   26  15  63 NW8       30.31R WCI  18             .
+ 5PM EST JAN 10 2011 MOCLDY    25  14  63 N6        30.32R WCI  18             .
+ 6PM EST JAN 10 2011 PTCLDY    22  13  68 CALM      30.30F                     .
+ 7PM EST JAN 10 2011 PTCLDY    21  14  74 N3        30.29F                     .
+ 8PM EST JAN 10 2011 PTCLDY    19  12  74 CALM      30.28F                     .
+ 9PM EST JAN 10 2011 MOCLDY    18  12  77 CALM      30.27F                     .
+10PM EST JAN 10 2011 CLOUDY    16  11  80 CALM      30.26F                     .
+11PM EST JAN 10 2011 MOCLDY    19  12  74 N5        30.25F WCI  12             .
+12AM EST JAN 11 2011 CLOUDY    18  11  74 NE5       30.23F WCI  11             .
+ 1AM EST JAN 11 2011 CLOUDY    18  12  77 CALM      30.22F                     .
+ 2AM EST JAN 11 2011 CLOUDY    19  12  74 E3        30.20F                     .
+ 3AM EST JAN 11 2011 CLOUDY    19  12  74 NE6       30.18F WCI  11             .
+ 4AM EST JAN 11 2011 CLOUDY    19  12  74 E3        30.17F                     .
+ 5AM EST JAN 11 2011 CLOUDY    19  11  70 NE5       30.14F WCI  12             .
+ 6AM EST JAN 11 2011 CLOUDY    19  12  74 E3        30.12F                     .
+ 7AM EST JAN 11 2011 CLOUDY    20  12  71 CALM      30.11F                     .
+ 8AM EST JAN 11 2011 CLOUDY    20  12  71 E5        30.09F WCI  13             .
+ 9AM EST JAN 11 2011 CLOUDY    20  12  71 E5        30.09S WCI  13             .
+10AM EST JAN 11 2011 CLOUDY    22  12  65 E5        30.08F WCI  16             .
+11AM EST JAN 11 2011 CLOUDY    23  14  68 E7        30.04F WCI  15             .
+12PM EST JAN 11 2011 FLURRIES  25  15  66 E6        29.97F WCI  18             .
+ 1PM EST JAN 11 2011 LGT SNOW  25  17  72 E5        29.92F WCI  19             .
+ 2PM EST JAN 11 2011 SNOW      25  21  86 E3        29.90F VSB 1/2             .
+ 3PM EST JAN 11 2011 SNOW      25  21  85 E6        29.88F VSB 1/2 WCI  18     .
+ 4PM EST JAN 11 2011 SNOW      25  22  88 E5        29.85F VSB 1/2 WCI  19     .
+ 5PM EST JAN 11 2011 LGT SNOW  26  24  92 S3        29.85S VSB 1               .
+ 6PM EST JAN 11 2011 LGT SNOW  27  24  89 SW7       29.85S FOG     WCI  19     .
+ 7PM EST JAN 11 2011 LGT SNOW  27  23  85 SW7       29.85S FOG     WCI  19     .
+ 8PM EST JAN 11 2011 LGT SNOW  27  22  81 SW6       29.84F FOG     WCI  20     .
+ 9PM EST JAN 11 2011 FLURRIES  26  20  77 W12       29.83F WCI  16             .
+10PM EST JAN 11 2011 FLURRIES  25  19  78 SW13G20   29.82F WCI  14             .
+11PM EST JAN 11 2011 FLURRIES  25  17  72 SW13      29.81F WCI  14             .
+12AM EST JAN 12 2011 FLURRIES  25  16  68 W14G20    29.79F WCI  13             .
+ 1AM EST JAN 12 2011 LGT SNOW  21  18  86 SW12      29.78F WCI   9             .
+ 2AM EST JAN 12 2011 LGT SNOW  22  16  78 SW14G20   29.78S WCI   9             .
+ 3AM EST JAN 12 2011 LGT SNOW  21  17  84 SW10      29.78S WCI  10             .
+ 4AM EST JAN 12 2011 LGT SNOW  21  17  84 W12G17    29.78S BLWGSNOWWCI   9     .
+ 5AM EST JAN 12 2011 LGT SNOW  21  18  86 W13G20    29.80R BLWGSNOWWCI   9     .
+ 6AM EST JAN 12 2011 LGT SNOW  22  18  85 W16G25    29.81R BLWGSNOWWCI   8     .
+ 7AM EST JAN 12 2011 LGT SNOW  22  17  81 W14       29.84R BLWGSNOWWCI   9     .
+ 8AM EST JAN 12 2011 LGT SNOW  22  17  81 W16       29.88R BLWGSNOWWCI   8     .
+ 9AM EST JAN 12 2011 LGT SNOW  22  17  81 W13       29.91R VSB 1   WCI  10     .
+10AM EST JAN 12 2011 LGT SNOW  22  17  81 W15G23    29.93R BLWGSNOWWCI   9     .
+11AM EST JAN 12 2011 LGT SNOW  23  17  78 NW18      29.95R BLWGSNOWWCI   9     .
+12PM EST JAN 12 2011 LGT SNOW  23  17  78 NW21      29.95S BLWGSNOWWCI   8     .
+ 1PM EST JAN 12 2011 LGT SNOW  24  15  68 NW28G36   29.95S BLWGSNOWWCI   7     .
+ 2PM EST JAN 12 2011 FLURRIES  24  14  65 NW21      29.96R WCI   9             .
+ 3PM EST JAN 12 2011 LGT SNOW  24  16  71 W18       29.98R BLWGSNOWWCI  10     .
+ 4PM EST JAN 12 2011 LGT SNOW  23  19  85 NW17      30.02R BLWGSNOWWCI   9     .
+ 5PM EST JAN 12 2011 LGT SNOW  22  16  78 NW18      30.05R BLWGSNOWWCI   7     .
+ 6PM EST JAN 12 2011 LGT SNOW  22  16  78 W17G28    30.08R VSB 1   WCI   8     .
+ 7PM EST JAN 12 2011 FLURRIES  21  14  74 W21G26    30.10R WCI   5             .
+ 8PM EST JAN 12 2011 FLURRIES  21  14  74 W18       30.12R WCI   6             .
+ 9PM EST JAN 12 2011 FLURRIES  21  14  74 W20       30.14R WCI   6             .
+10PM EST JAN 12 2011 CLOUDY    21  13  71 NW22G28   30.16R WCI   5             .
+11PM EST JAN 12 2011 FLURRIES  20  13  74 W17       30.17R WCI   5             .
+12AM EST JAN 13 2011 FLURRIES  20  14  77 W8        30.19R WCI  10             .
+ 1AM EST JAN 13 2011 LGT SNOW  19  14  81 W10       30.20R WCI   7             .
+ 2AM EST JAN 13 2011 LGT SNOW  19  14  81 W10       30.22R WCI   7             .
+ 3AM EST JAN 13 2011 LGT SNOW  19  13  77 W9        30.25R WCI   8             .
+ 4AM EST JAN 13 2011 LGT SNOW  18  13  80 W7G16     30.26R WCI   9             .
+ 5AM EST JAN 13 2011 LGT SNOW  18  13  80 W8        30.27R WCI   8             .
+ 6AM EST JAN 13 2011 LGT SNOW  19  13  77 W9        30.28R WCI   8             .
+ 7AM EST JAN 13 2011 LGT SNOW  19  14  81 W9        30.31R WCI   8             .
+ 8AM EST JAN 13 2011 LGT SNOW  19  13  77 W9        30.33R WCI   8             .
+ .                                                                              
+ .                                                                              
+ .                                                                              
+ .                                                                              
+ .                                                                              
+ .                                                                              
+ .                                                                              
+ .                                                                              
+ 6PM EST JAN 13 2011 CLOUDY    21  12  68 W6        30.38S WCI  13             .
+ 7PM EST JAN 13 2011 CLOUDY    21  12  68 CALM      30.38S                     .
+ 8PM EST JAN 13 2011 FLURRIES  21  12  68 S3        30.37F                     .
+ 9PM EST JAN 13 2011 FLURRIES  20  13  74 CALM      30.36F                     .
+10PM EST JAN 13 2011 FLURRIES  20  14  77 S3        30.34F                     .
+11PM EST JAN 13 2011 CLOUDY    21  15  78 S5        30.33F WCI  15             .
+12AM EST JAN 14 2011 CLOUDY    20  16  84 SW5       30.31F WCI  13             .
+ 1AM EST JAN 14 2011 CLOUDY    21  16  81 SW5       30.32R WCI  15             .
+ 2AM EST JAN 14 2011 LGT SNOW  20  16  84 W6        30.32S FOG     WCI  12     .
+ 3AM EST JAN 14 2011 FLURRIES  20  16  84 W3        30.33S                     .
+ 4AM EST JAN 14 2011 LGT SNOW  20  16  84 W7        30.33S WCI  11             .
+ 5AM EST JAN 14 2011 LGT SNOW  20  15  81 W5        30.33S WCI  13             .
+ 6AM EST JAN 14 2011 LGT SNOW  19  15  84 SW5       30.32F WCI  12             .
+ 7AM EST JAN 14 2011 LGT SNOW  19  15  84 W5        30.33R WCI  12             .
+ 8AM EST JAN 14 2011 LGT SNOW  19  15  84 SW3       30.33S                     .
+ 9AM EST JAN 14 2011 LGT SNOW  19  16  88 S3        30.34R                     .
+10AM EST JAN 14 2011 LGT SNOW  21  16  81 SW3       30.34S                     .
+11AM EST JAN 14 2011 FLURRIES  22  16  78 SW7       30.34S WCI  13             .
+12PM EST JAN 14 2011 FLURRIES  23  15  71 SW7       30.31F WCI  15             .
+ 1PM EST JAN 14 2011 FLURRIES  24  14  65 SW7       30.30F WCI  16             .
+ 2PM EST JAN 14 2011 FLURRIES  24  15  68 W8        30.28F WCI  15             .
+ 3PM EST JAN 14 2011 LGT SNOW  25  15  66 SW10      30.28S WCI  15             .
+ 4PM EST JAN 14 2011 FLURRIES  25  14  63 S7        30.29R WCI  17             .
+ 5PM EST JAN 14 2011 FLURRIES  25  15  66 SW6       30.28F WCI  18             .
+ 6PM EST JAN 14 2011 CLOUDY    24  15  68 S3        30.28S                     .
+ 7PM EST JAN 14 2011 CLOUDY    24  15  68 CALM      30.27F                     .
+ 8PM EST JAN 14 2011 CLOUDY    24  14  65 S5        30.27S WCI  18             .
+ 9PM EST JAN 14 2011 CLOUDY    24  14  65 S3        30.26F                     .
+10PM EST JAN 14 2011 CLOUDY    23  15  71 S3        30.24F                     .
+11PM EST JAN 14 2011 CLOUDY    23  15  71 S3        30.23F                     .
+12AM EST JAN 15 2011 CLOUDY    23  15  71 S5        30.20F WCI  17             .
+ 1AM EST JAN 15 2011 CLOUDY    24  15  68 S5        30.16F WCI  18             .
+ 2AM EST JAN 15 2011 CLOUDY    24  15  68 S5        30.14F WCI  18             .
+ 3AM EST JAN 15 2011 CLOUDY    24  15  68 S5        30.13F WCI  18             .
+ 4AM EST JAN 15 2011 CLOUDY    24  15  68 S6        30.10F WCI  17             .
+ 5AM EST JAN 15 2011 CLOUDY    24  15  68 S6        30.07F WCI  17             .
+ 6AM EST JAN 15 2011 CLOUDY    25  14  63 S8        30.05F WCI  16             .
+ 7AM EST JAN 15 2011 CLOUDY    25  15  66 S7        30.01F WCI  17             .
+ 8AM EST JAN 15 2011 CLOUDY    27  16  63 S10       29.98F WCI  17             .
+ 9AM EST JAN 15 2011 FLURRIES  28  16  60 S14       29.97F WCI  17             .
+10AM EST JAN 15 2011 CLOUDY    30  17  58 S8G17     29.96F WCI  22             .
+11AM EST JAN 15 2011 FLURRIES  31  19  61 SW20G30   29.93F WCI  19             .
+12PM EST JAN 15 2011 CLOUDY    33  20  58 SW15      29.87F WCI  23             .
+ 1PM EST JAN 15 2011 CLOUDY    35  19  52 SW17G29   29.84F WCI  25             .
+ 2PM EST JAN 15 2011 CLOUDY    36  19  50 W14G28    29.84S                     .
+ 3PM EST JAN 15 2011 CLOUDY    35  20  54 SW13G24   29.86R WCI  26             .
+ 4PM EST JAN 15 2011 CLOUDY    35  22  58 W16G22    29.88R WCI  25             .
+ 5PM EST JAN 15 2011 CLOUDY    34  23  64 W14G23    29.90R WCI  25             .
+ 6PM EST JAN 15 2011 FLURRIES  34  24  67 W13G20    29.91R WCI  25             .
+ 7PM EST JAN 15 2011 FLURRIES  32  25  75 W9        29.94R WCI  24             .
+ 8PM EST JAN 15 2011 LGT SNOW  31  25  78 W18       29.97R WCI  19             .
+ 9PM EST JAN 15 2011 FLURRIES  29  21  72 NW16      30.00R WCI  17             .
+10PM EST JAN 15 2011 CLOUDY    28  19  69 W13       30.00S WCI  17             .
+11PM EST JAN 15 2011 CLOUDY    27  19  72 NW13      30.01R WCI  16             .
+12AM EST JAN 16 2011 CLOUDY    26  17  68 NW10      30.01S WCI  16             .
+ 1AM EST JAN 16 2011 CLOUDY    24  16  71 NW13      30.02R WCI  12             .
+ 2AM EST JAN 16 2011 MOCLDY    23  15  71 W10       30.03R WCI  12             .
+ 3AM EST JAN 16 2011 PTCLDY    20  13  74 W12       30.04R WCI   8             .
+ 4AM EST JAN 16 2011 CLEAR     19  13  77 W6        30.06R WCI  11             .
+ 5AM EST JAN 16 2011 MOCLDY    20  13  74 W5        30.07R WCI  13             .
+ 6AM EST JAN 16 2011 CLOUDY    20  14  77 W6        30.09R WCI  12             .
+ 7AM EST JAN 16 2011 LGT SNOW  19  14  79 W7        30.13R WCI  10             .
+ 8AM EST JAN 16 2011 LGT SNOW  20  15  81 NW9       30.15R FOG     WCI   9     .
+ 9AM EST JAN 16 2011 LGT SNOW  19  14  81 N7        30.17R FOG     WCI  10     .
+10AM EST JAN 16 2011 FLURRIES  20  13  74 N3        30.18R                     .
+11AM EST JAN 16 2011 PTSUNNY   21  12  68 NW6       30.19S WCI  13             .
+12PM EST JAN 16 2011 FLURRIES  21  12  68 NW7       30.17F WCI  12             .
+ 1PM EST JAN 16 2011 PTSUNNY   23   9  55 NW8       30.15F WCI  14             .
+ 2PM EST JAN 16 2011 MOSUNNY   23   8  52 W7        30.15S WCI  15             .
+ 3PM EST JAN 16 2011 PTSUNNY   24   9  52 N7        30.15S WCI  16             .
+ 4PM EST JAN 16 2011 PTSUNNY   23  10  57 N9        30.17R WCI  13             .
+ 5PM EST JAN 16 2011 PTCLDY    21   7  54 N9        30.18R WCI  11             .
+ 6PM EST JAN 16 2011 CLOUDY    20   8  60 N9        30.18S WCI   9             .
+ 7PM EST JAN 16 2011 CLOUDY    20   7  57 NE7       30.18S WCI  11             .
+ 8PM EST JAN 16 2011 CLOUDY    19   6  57 N6        30.19R WCI  11             .
+ 9PM EST JAN 16 2011 CLOUDY    19   6  57 NE6       30.21R WCI  11             .
+10PM EST JAN 16 2011 CLOUDY    18   6  59 NE5       30.21S WCI  11             .
+11PM EST JAN 16 2011 CLOUDY    18   6  59 NE5       30.20F WCI  11             .
+12AM EST JAN 17 2011 CLOUDY    18   6  59 NE3       30.19F                     .
+ 1AM EST JAN 17 2011 CLOUDY    17   7  64 NE7       30.18F WCI   8             .
+ 2AM EST JAN 17 2011 MOCLDY    16   6  65 E3        30.18S                     .
+ 3AM EST JAN 17 2011 PTCLDY    15   6  67 E3        30.18S                     .
+ 4AM EST JAN 17 2011 PTCLDY    14   6  70 NE3       30.17F                     .
+ 5AM EST JAN 17 2011 PTCLDY    13   6  74 CALM      30.16F                     .
+ 6AM EST JAN 17 2011 MOCLDY    13   5  70 NE5       30.16S WCI   5             .
+ 7AM EST JAN 17 2011 MOCLDY    13   6  74 E6        30.14F WCI   4             .
+ 8AM EST JAN 17 2011 MOCLDY    13   6  74 NE3       30.13F                     .
+ 9AM EST JAN 17 2011 MOSUNNY   14   7  73 E5        30.12F WCI   6             .
+10AM EST JAN 17 2011 PTSUNNY   18   8  65 E5        30.12S WCI  11             .
+11AM EST JAN 17 2011 CLOUDY    21  10  62 E7        30.09F WCI  12             .
+12PM EST JAN 17 2011 CLOUDY    23  11  60 E6        30.06F WCI  16             .
+ 1PM EST JAN 17 2011 CLOUDY    25  13  60 E8        30.01F WCI  16             .
+ 2PM EST JAN 17 2011 CLOUDY    27  15  61 E7        29.99F WCI  19             .
+ 3PM EST JAN 17 2011 CLOUDY    29  16  58 E10       29.98F WCI  20             .
+ 4PM EST JAN 17 2011 PTSUNNY   30  16  56 E6        29.98S WCI  24             .
+ 5PM EST JAN 17 2011 MOCLDY    29  17  61 E5        29.96F WCI  24             .
+ 6PM EST JAN 17 2011 CLOUDY    28  17  63 E5        29.96S WCI  23             .
+ 7PM EST JAN 17 2011 CLOUDY    28  17  63 E5        29.95F WCI  23             .
+ 8PM EST JAN 17 2011 CLOUDY    28  18  66 E7        29.94F WCI  21             .
+ 9PM EST JAN 17 2011 CLOUDY    30  19  63 SE7       29.94S WCI  23             .
+10PM EST JAN 17 2011 CLOUDY    30  19  63 SE8       29.94S WCI  22             .
+11PM EST JAN 17 2011 FRZ DRZL  31  20  63 SE7       29.93F WCI  24             .
+12AM EST JAN 18 2011 FRZ RAIN  32  27  81 SE8       29.91F WCI  25             .
+ 1AM EST JAN 18 2011 FRZ RAIN  32  29  88 SE7       29.90F FOG     WCI  26     .
+ 2AM EST JAN 18 2011 LGT SNOW  33  30  88 E6        29.88F FOG     WCI  28     .
+ 3AM EST JAN 18 2011 LGT SNOW  33  30  88 SE8       29.87F FOG     WCI  26     .
+ 4AM EST JAN 18 2011 CLOUDY    33  30  88 SE7       29.85F FOG     WCI  27     .
+ 5AM EST JAN 18 2011 CLOUDY    33  30  88 E3        29.83F                     .
+ 6AM EST JAN 18 2011 MOCLDY    33  30  88 E7        29.81F WCI  27             .
+ 7AM EST JAN 18 2011 PTCLDY    31  29  92 E5        29.81S FOG     WCI  26     .
+ 8AM EST JAN 18 2011 MOCLDY    31  29  92 E5        29.80F WCI  26             .
+ 9AM EST JAN 18 2011 PTSUNNY   32  29  88 E3        29.80S                     .
+10AM EST JAN 18 2011 PTSUNNY   35  30  82 SE5       29.79F WCI  31             .
+11AM EST JAN 18 2011 PTSUNNY   38  31  76 S7        29.78F                     .
+12PM EST JAN 18 2011 PTSUNNY   40  33  76 S5        29.75F                     .
+ 1PM EST JAN 18 2011 CLOUDY    41  33  73 CALM      29.72F                     .
+ 2PM EST JAN 18 2011 LGT RAIN  42  33  70 S6        29.70F                     .
+ 3PM EST JAN 18 2011 CLOUDY    44  34  67 S8        29.69F                     .
+ 4PM EST JAN 18 2011 CLOUDY    44  34  67 SW7       29.69S                     .
+ 5PM EST JAN 18 2011 LGT RAIN  42  35  76 W5        29.69S                     .
+ 6PM EST JAN 18 2011 LGT RAIN  40  35  83 CALM      29.69S                     .
+ 7PM EST JAN 18 2011 LGT RAIN  39  36  89 W3        29.70S                     .
+ 8PM EST JAN 18 2011 LGT RAIN  39  36  89 SW3       29.69F FOG                 .
+ 9PM EST JAN 18 2011 LGT RAIN  38  36  92 W3        29.69S FOG                 .
+10PM EST JAN 18 2011 LGT RAIN  37  35  92 W6        29.69S FOG                 .
+11PM EST JAN 18 2011 LGT RAIN  37  35  92 W6        29.69S                     .
+12AM EST JAN 19 2011 LGT RAIN  36  34  92 W7        29.69S                     .
+ 1AM EST JAN 19 2011 LGT RAIN  36  34  93 NW8       29.70R                     .
+ 2AM EST JAN 19 2011 FLURRIES  34  32  92 NW7       29.71R WCI  28             .
+ 3AM EST JAN 19 2011 CLOUDY    34  31  88 NW7       29.72R WCI  28             .
+ 4AM EST JAN 19 2011 FLURRIES  33  31  92 W8        29.73R WCI  26             .
+ 5AM EST JAN 19 2011 LGT SNOW  33  31  92 NW7       29.74R FOG     WCI  27     .
+ 6AM EST JAN 19 2011 LGT SNOW  33  30  88 NW9       29.75S FOG     WCI  25     .
+ 7AM EST JAN 19 2011 FLURRIES  32  30  92 NW8       29.76S WCI  25             .
+ 8AM EST JAN 19 2011 LGT SNOW  32  30  92 NW9       29.77R FOG     WCI  24     .
+ 9AM EST JAN 19 2011 FLURRIES  32  29  88 NW8       29.80R WCI  25             .
+10AM EST JAN 19 2011 FLURRIES  32  29  88 NW10      29.82R WCI  24             .
+11AM EST JAN 19 2011 LGT SNOW  32  28  85 W9        29.84R FOG     WCI  24     .
+12PM EST JAN 19 2011 FRZ DRZL  31  29  92 W9        29.85S FOG     WCI  23     .
+ 1PM EST JAN 19 2011 FRZ DRZL  31  28  89 W10       29.85S FOG     WCI  22     .
+ 2PM EST JAN 19 2011 LGT SNOW  31  27  85 W13       29.85S FOG     WCI  21     .
+ 3PM EST JAN 19 2011 LGT SNOW  30  27  86 W13       29.89R FOG     WCI  20     .
+ 4PM EST JAN 19 2011 CLOUDY    30  26  85 W12       29.90R WCI  20             .
+ 5PM EST JAN 19 2011 FLURRIES  29  26  89 W12       29.94R WCI  19             .
+ 6PM EST JAN 19 2011 FLURRIES  29  24  82 W14       29.96R WCI  18             .
+ 7PM EST JAN 19 2011 FLURRIES  29  24  82 W13       29.98R WCI  19             .
+ 8PM EST JAN 19 2011 FLURRIES  28  24  85 W15       30.01R WCI  16             .
+ 9PM EST JAN 19 2011 FLURRIES  28  24  85 NW8       30.03R WCI  20             .
+10PM EST JAN 19 2011 FLURRIES  27  22  81 W10       30.04R WCI  17             .
+11PM EST JAN 19 2011 FLURRIES  27  21  78 W12       30.06R WCI  17             .
+12AM EST JAN 20 2011 FLURRIES  27  21  78 W7        30.06S WCI  19             .
+ 1AM EST JAN 20 2011 CLOUDY    26  18  71 W10G18    30.08R WCI  16             .
+ 2AM EST JAN 20 2011 MOCLDY    24  15  68 NW16      30.09R WCI  11             .
+ 3AM EST JAN 20 2011 PTCLDY    21  14  73 W6        30.10R WCI  14             .
+ 4AM EST JAN 20 2011 PTCLDY    21  13  71 W7        30.10S WCI  12             .
+ 5AM EST JAN 20 2011 MOCLDY    21  14  74 W3        30.09F                     .
+ 6AM EST JAN 20 2011 CLOUDY    21  14  74 CALM      30.08F                     .
+ 7AM EST JAN 20 2011 CLOUDY    21  15  78 S3        30.08S                     .
+ 8AM EST JAN 20 2011 CLOUDY    22  15  75 CALM      30.07F                     .
+ 9AM EST JAN 20 2011 CLOUDY    22  16  78 CALM      30.07S                     .
+10AM EST JAN 20 2011 CLOUDY    23  14  68 W3        30.08R                     .
+11AM EST JAN 20 2011 CLOUDY    24  14  65 CALM      30.07F                     .
+12PM EST JAN 20 2011 CLOUDY    24  14  65 SE3       30.05F                     .
+ 1PM EST JAN 20 2011 LGT SNOW  25  17  72 CALM      29.99F                     .
+ 2PM EST JAN 20 2011 LGT SNOW  24  18  77 SE5       29.94F WCI  18             .
+ 3PM EST JAN 20 2011 LGT SNOW  24  20  84 E5        29.90F FOG     WCI  18     .
+ 4PM EST JAN 20 2011 LGT SNOW  25  21  85 E3        29.85F VSB 1               .
+ 5PM EST JAN 20 2011 SNOW      24  21  88 E5        29.82F VSB 1/2 WCI  18     .
+ 6PM EST JAN 20 2011 LGT SNOW  24  21  88 NE5       29.79F VSB 1   WCI  18     .
+ 7PM EST JAN 20 2011 LGT SNOW  24  21  88 NE5       29.76F VSB 1   WCI  18     .
+ 8PM EST JAN 20 2011 LGT SNOW  24  21  88 N5        29.73F VSB 1   WCI  18     .
+ 9PM EST JAN 20 2011 LGT SNOW  24  20  84 N7        29.71F VSB 1   WCI  16     .
+10PM EST JAN 20 2011 LGT SNOW  23  20  88 NW7       29.69F VSB 1   WCI  15     .
+11PM EST JAN 20 2011 LGT SNOW  23  20  88 NW5       29.69S VSB 1   WCI  17     .
+12AM EST JAN 21 2011 LGT SNOW  23  20  88 W3        29.69S VSB 1               .
+ 1AM EST JAN 21 2011 LGT SNOW  23  20  88 W5        29.70R FOG     WCI  17     .
+ 2AM EST JAN 21 2011 LGT SNOW  22  17  81 W17       29.70S FOG     WCI   8     .
+ 3AM EST JAN 21 2011 FLURRIES  21  15  78 W10       29.72R WCI  10             .
+ 4AM EST JAN 21 2011 CLOUDY    20  14  77 W13       29.71F WCI   7             .
+ 5AM EST JAN 21 2011 LGT SNOW  20  14  77 W10       29.73R WCI   9             .
+ 6AM EST JAN 21 2011 FLURRIES  19  11  70 W22G31    29.74R WCI   2             .
+ 7AM EST JAN 21 2011 FLURRIES  17   6  62 W12G22    29.76R WCI   4             .
+ 8AM EST JAN 21 2011 FLURRIES  15   5  64 W15G22    29.79R WCI   0             .
+ 9AM EST JAN 21 2011 LGT SNOW  14   6  70 W16G29    29.82R WCI  -2             .
+10AM EST JAN 21 2011 FLURRIES  14   5  67 W18       29.85R WCI  -3             .
+11AM EST JAN 21 2011 MOSUNNY   14   3  62 W20G26    29.88R WCI  -3             .
+12PM EST JAN 21 2011 CLOUDY    14   2  58 W13G28    29.88S WCI   0             .
+ 1PM EST JAN 21 2011 PTSUNNY   14   2  58 W18G25    29.87F WCI  -3             .
+ 2PM EST JAN 21 2011 MOSUNNY   15   3  59 W18       29.87S WCI  -2             .
+ 3PM EST JAN 21 2011 PTSUNNY   14   1  56 W13       29.89R WCI   0             .
+ 4PM EST JAN 21 2011 MOSUNNY   13  -2  51 W13       29.91R WCI  -2             .
+ 5PM EST JAN 21 2011 MOCLDY    12   0  58 W14       29.94R WCI  -3             .
+ 6PM EST JAN 21 2011 MOCLDY    11  -1  58 W13       29.95R WCI  -4             .
+ 7PM EST JAN 21 2011 MOCLDY    10  -2  58 NW9       29.97R WCI  -3             .
+ 8PM EST JAN 21 2011 MOCLDY     9  -1  64 NW8       29.98R WCI  -3             .
+ 9PM EST JAN 21 2011 PTCLDY     7  -2  66 W3        29.99R                     .
+10PM EST JAN 21 2011 PTCLDY     6  -2  69 W6        30.00R WCI  -4             .
+11PM EST JAN 21 2011 MOCLDY     6  -2  69 SW5       29.99F WCI  -3             .
+12AM EST JAN 22 2011 MOCLDY     6  -2  69 W3        29.98F                     .
+ 1AM EST JAN 22 2011 CLOUDY     4  -3  73 CALM      29.97F                     .
+ 2AM EST JAN 22 2011 CLOUDY     6  -1  73 SW3       29.96F                     .
+ 3AM EST JAN 22 2011 PTCLDY     5  -2  72 CALM      29.96S                     .
+ 4AM EST JAN 22 2011 PTCLDY     3  -2  79 CALM      29.95F                     .
+ 5AM EST JAN 22 2011 PTCLDY     1  -4  79 CALM      29.95S                     .
+ 6AM EST JAN 22 2011 PTCLDY     2  -4  76 CALM      29.93F                     .
+ 7AM EST JAN 22 2011 PTCLDY     0  -4  83 CALM      29.93S                     .
+ 8AM EST JAN 22 2011 PTCLDY     0  -4  83 CALM      29.94R FOG                 .
+ 9AM EST JAN 22 2011 MOSUNNY    2  -2  83 CALM      29.95R                     .
+10AM EST JAN 22 2011 MOSUNNY    4  -1  80 S5        29.95S WCI  -5             .
+11AM EST JAN 22 2011 MOSUNNY   10   1  67 S7        29.95S WCI  -1             .
+12PM EST JAN 22 2011 MOSUNNY   12   1  61 S10       29.93F WCI  -1             .
+ 1PM EST JAN 22 2011 MOSUNNY   13  -1  54 S10       29.90F WCI   0             .
+ 2PM EST JAN 22 2011 MOSUNNY   15  -1  49 CALM      29.88F                     .
+ 3PM EST JAN 22 2011 MOSUNNY   17  -1  45 S6        29.87F WCI   9             .
+ 4PM EST JAN 22 2011 PTSUNNY   18  -3  39 S10       29.87S WCI   6             .
+ 5PM EST JAN 22 2011 MOCLDY    18  -3  39 SW8       29.86F WCI   8             .
+ 6PM EST JAN 22 2011 CLOUDY    18  -3  39 SW6       29.86S WCI  10             .
+ 7PM EST JAN 22 2011 CLOUDY    18  -1  43 S6        29.86S WCI  10             .
+ 8PM EST JAN 22 2011 CLOUDY    18  -1  43 SW3       29.86S                     .
+ 9PM EST JAN 22 2011 CLOUDY    19   0  43 SW8       29.85F WCI   9             .
+10PM EST JAN 22 2011 FLURRIES  19   3  49 W9        29.85S WCI   8             .
+11PM EST JAN 22 2011 FLURRIES  18   7  62 W8        29.86R WCI   8             .
+12AM EST JAN 23 2011 FLURRIES  18   9  68 W7        29.87R WCI   9             .
+ 1AM EST JAN 23 2011 LGT SNOW  17  10  74 W8        29.88R WCI   7             .
+ 2AM EST JAN 23 2011 LGT SNOW  17  10  74 W15       29.89R WCI   2             .
+ 3AM EST JAN 23 2011 FLURRIES  16   4  59 W22G32    29.93R WCI  -2             .
+ 4AM EST JAN 23 2011 CLOUDY    15   3  59 W17       29.95R WCI  -1             .
+ 5AM EST JAN 23 2011 CLOUDY    14   3  62 NW17      29.99R WCI  -3             .
+ 6AM EST JAN 23 2011 MOCLDY    12   3  67 W12       30.02R WCI  -2             .
+ 7AM EST JAN 23 2011 MOCLDY    10   2  69 W13       30.05R WCI  -5             .
+ 8AM EST JAN 23 2011 MOCLDY     9   1  72 W8        30.09R WCI  -4             .
+ 9AM EST JAN 23 2011 PTSUNNY    9   2  73 W8        30.11R WCI  -3             .
+10AM EST JAN 23 2011 PTSUNNY   10   2  69 W9        30.15R WCI  -3             .
+11AM EST JAN 23 2011 MOSUNNY   14   3  61 NW9       30.17R WCI   2             .
+12PM EST JAN 23 2011 PTSUNNY   15   3  59 NW15      30.17S WCI   0             .
+ 1PM EST JAN 23 2011 PTSUNNY   16   3  56 NW13      30.16F WCI   2             .
+ 2PM EST JAN 23 2011 MOSUNNY   17   1  49 W13       30.16S WCI   4             .
+ 3PM EST JAN 23 2011 MOSUNNY   18   1  47 NW8       30.18R WCI   8             .
+ 4PM EST JAN 23 2011 MOSUNNY   18   0  45 NW13      30.20R WCI   5             .
+ 5PM EST JAN 23 2011 PTCLDY    16  -1  47 NW12      30.21R WCI   3             .
+ 6PM EST JAN 23 2011 PTCLDY    14  -1  51 N6        30.22R WCI   5             .
+ 7PM EST JAN 23 2011 PTCLDY    11  -2  56 N6        30.24R WCI   1             .
+ 8PM EST JAN 23 2011 CLEAR     11  -2  56 NW5       30.24S WCI   3             .
+ 9PM EST JAN 23 2011 PTCLDY     7  -3  64 CALM      30.26R                     .
+10PM EST JAN 23 2011 PTCLDY     6  -3  66 CALM      30.27R                     .
+11PM EST JAN 23 2011 CLEAR      4  -4  69 CALM      30.27S                     .
+12AM EST JAN 24 2011 PTCLDY     5  -3  69 CALM      30.27S                     .
+ 1AM EST JAN 24 2011 PTCLDY     4  -1  80 NE5       30.26F WCI  -5             .
+ 2AM EST JAN 24 2011 PTCLDY     4  -3  73 CALM      30.27R                     .
+ 3AM EST JAN 24 2011 PTCLDY     4  -4  69 CALM      30.27S                     .
+ 4AM EST JAN 24 2011 PTCLDY     1  -6  72 CALM      30.26F                     .
+ 5AM EST JAN 24 2011 MOCLDY     2  -5  72 CALM      30.25F                     .
+ 6AM EST JAN 24 2011 CLOUDY     5  -2  72 E3        30.25S                     .
+ 7AM EST JAN 24 2011 CLOUDY     4  -3  73 CALM      30.24F                     .
+ 8AM EST JAN 24 2011 CLOUDY     6  -1  73 SE3       30.24S                     .
+ 9AM EST JAN 24 2011 CLOUDY     8   1  73 SE5       30.24S WCI   0             .
+10AM EST JAN 24 2011 CLOUDY    11   2  67 E3        30.25R                     .
+11AM EST JAN 24 2011 CLOUDY    14   4  64 E7        30.23F WCI   4             .
+12PM EST JAN 24 2011 CLOUDY    17   5  59 E6        30.20F WCI   9             .
+ 1PM EST JAN 24 2011 CLOUDY    21   7  54 SE5       30.17F WCI  15             .
+ 2PM EST JAN 24 2011 FLURRIES  22  10  60 E7        30.14F WCI  13             .
+ 3PM EST JAN 24 2011 FLURRIES  24  12  60 E6        30.13S WCI  17             .
+ 4PM EST JAN 24 2011 FLURRIES  25  15  66 SE7       30.12F WCI  17             .
+ 5PM EST JAN 24 2011 FLURRIES  26  16  65 SE6       30.11F WCI  19             .
+ 6PM EST JAN 24 2011 FLURRIES  27  17  66 SE3       30.11S                     .
+ 7PM EST JAN 24 2011 FLURRIES  28  18  66 SE3       30.11S                     .
+ 8PM EST JAN 24 2011 LGT SNOW  28  19  69 CALM      30.11S                     .
+ 9PM EST JAN 24 2011 FLURRIES  28  21  75 CALM      30.11S                     .
+10PM EST JAN 24 2011 FLURRIES  28  21  75 S3        30.10F                     .
+11PM EST JAN 24 2011 FLURRIES  29  22  75 S3        30.09F                     .
+12AM EST JAN 25 2011 FLURRIES  30  24  78 S3        30.07F                     .
+ 1AM EST JAN 25 2011 FLURRIES  33  28  81 S5        30.06F WCI  29             .
+ 2AM EST JAN 25 2011 FLURRIES  35  30  82 SW9       30.05F WCI  28             .
+ 3AM EST JAN 25 2011 LGT SNOW  34  31  88 SW6       30.06R FOG     WCI  29     .
+ 4AM EST JAN 25 2011 FLURRIES  34  31  88 SW3       30.06S                     .
+ 5AM EST JAN 25 2011 DRZL/FOG  34  32  92 W3        30.06S VSB 1               .
+ 6AM EST JAN 25 2011 DRZL/FOG  34  32  92 SW3       30.06S VSB 1/4             .
+ 7AM EST JAN 25 2011 FOG       34  32  92 SW3       30.06S VSB 1/4             .
+ 8AM EST JAN 25 2011 FOG       34  32  92 SW5       30.07R VSB 1/4 WCI  30     .
+ 9AM EST JAN 25 2011 FOG       34  32  92 SW6       30.09R VSB 1   WCI  29     .
+10AM EST JAN 25 2011 DRIZZLE   34  32  92 SW3       30.09S FOG                 .
+11AM EST JAN 25 2011 CLOUDY    34  30  85 SW6G16    30.09S WCI  29             .
+12PM EST JAN 25 2011 DRIZZLE   34  29  82 W8        30.09S WCI  27             .
+ 1PM EST JAN 25 2011 CLOUDY    36  28  75 W6        30.07F                     .
+ 2PM EST JAN 25 2011 CLOUDY    35  29  78 SW7       30.06F WCI  29             .
+ 3PM EST JAN 25 2011 CLOUDY    35  28  75 SW5       30.05F WCI  31             .
+ 4PM EST JAN 25 2011 CLOUDY    35  28  75 W7        30.04F WCI  29             .
+ 5PM EST JAN 25 2011 CLOUDY    35  27  72 W7        30.04S WCI  29             .
+ 6PM EST JAN 25 2011 CLOUDY    35  27  72 CALM      30.05R                     .
+ 7PM EST JAN 25 2011 CLOUDY    34  28  79 S3        30.06R                     .
+ 8PM EST JAN 25 2011 CLOUDY    35  27  72 CALM      30.05F                     .
+ 9PM EST JAN 25 2011 CLOUDY    34  27  75 NE5       30.03F WCI  30             .
+10PM EST JAN 25 2011 CLOUDY    33  27  78 CALM      30.02F                     .
+11PM EST JAN 25 2011 PTCLDY    33  26  75 N3        30.00F                     .
+12AM EST JAN 26 2011 CLOUDY    31  26  82 NE6       29.96F WCI  25             .
+ 1AM EST JAN 26 2011 CLOUDY    31  26  82 CALM      29.96S                     .
+ 2AM EST JAN 26 2011 CLOUDY    31  26  82 NE5       29.93F HAZE    WCI  26     .
+ 3AM EST JAN 26 2011 CLOUDY    32  26  78 CALM      29.92F                     .
+ 4AM EST JAN 26 2011 CLOUDY    31  26  82 NE3       29.89F                     .
+ 5AM EST JAN 26 2011 CLOUDY    31  26  82 N5        29.88F WCI  26             .
+ 6AM EST JAN 26 2011 CLOUDY    31  26  82 NE6       29.85F WCI  25             .
+ 7AM EST JAN 26 2011 CLOUDY    31  26  82 N6        29.83F WCI  25             .
+ 8AM EST JAN 26 2011 CLOUDY    31  27  85 NE6       29.81F FOG     WCI  25     .
+ 9AM EST JAN 26 2011 CLOUDY    32  27  81 N7        29.80F WCI  26             .
+10AM EST JAN 26 2011 CLOUDY    33  27  78 N6        29.80S WCI  28             .
+11AM EST JAN 26 2011 LGT SNOW  33  28  81 N8        29.79F WCI  26             .
+12PM EST JAN 26 2011 LGT SNOW  33  28  81 N10       29.77F WCI  25             .
+ 1PM EST JAN 26 2011 LGT SNOW  32  28  86 N8        29.74F VSB 1   WCI  25     .
+ 2PM EST JAN 26 2011 LGT SNOW  32  29  88 N7        29.74S FOG     WCI  26     .
+ 3PM EST JAN 26 2011 LGT SNOW  31  28  89 NW8       29.74S VSB 1   WCI  23     .
+ 4PM EST JAN 26 2011 LGT SNOW  31  27  85 NW9       29.75R FOG     WCI  23     .
+ 5PM EST JAN 26 2011 CLOUDY    31  25  78 NW14      29.76R HAZE    WCI  21     .
+ 6PM EST JAN 26 2011 CLOUDY    30  25  81 NW15      29.78R WCI  19             .
+ 7PM EST JAN 26 2011 CLOUDY    28  24  85 NW17G24   29.81R WCI  16             .
+ 8PM EST JAN 26 2011 FLURRIES  27  23  85 NW18      29.83R WCI  14             .
+ 9PM EST JAN 26 2011 FLURRIES  27  21  78 NW16G23   29.85R WCI  15             .
+10PM EST JAN 26 2011 CLOUDY    26  20  77 NW10      29.87R WCI  16             .
+11PM EST JAN 26 2011 CLOUDY    26  19  74 NW12      29.87S WCI  16             .
+12AM EST JAN 27 2011 FLURRIES  26  19  74 NW9       29.89R WCI  17             .
+ 1AM EST JAN 27 2011 LGT SNOW  26  20  77 W10       29.90R WCI  16             .
+ 2AM EST JAN 27 2011 FLURRIES  26  21  81 NW8       29.91R WCI  18             .
+ 3AM EST JAN 27 2011 FLURRIES  26  19  74 W6        29.91S WCI  19             .
+ 4AM EST JAN 27 2011 FLURRIES  26  20  77 W8        29.91S WCI  18             .
+ 5AM EST JAN 27 2011 LGT SNOW  25  21  85 W6        29.91S FOG     WCI  18     .
+ 6AM EST JAN 27 2011 FLURRIES  25  21  85 SW6       29.93R WCI  18             .
+ 7AM EST JAN 27 2011 LGT SNOW  26  22  84 SW6       29.93S FOG     WCI  19     .
+ 8AM EST JAN 27 2011 LGT SNOW  26  21  81 W7        29.94R WCI  18             .
+ 9AM EST JAN 27 2011 LGT SNOW  26  21  81 SW6       29.93S WCI  19             .
+10AM EST JAN 27 2011 LGT SNOW  26  22  84 SW6       29.93S FOG     WCI  19     .
+11AM EST JAN 27 2011 FLURRIES  27  20  75 W13       29.92F WCI  16             .
+12PM EST JAN 27 2011 LGT SNOW  27  21  78 W8        29.90F WCI  19             .
+ 1PM EST JAN 27 2011 LGT SNOW  28  21  74 SW6       29.87F WCI  22             .
+ 2PM EST JAN 27 2011 FLURRIES  28  21  75 SW8       29.85F WCI  20             .
+ 3PM EST JAN 27 2011 FLURRIES  29  21  72 SW7       29.84F WCI  22             .
+ 4PM EST JAN 27 2011 LGT SNOW  28  21  75 SW5       29.83F WCI  23             .
+ 5PM EST JAN 27 2011 LGT SNOW  28  22  78 SW6       29.82F WCI  22             .
+ 6PM EST JAN 27 2011 LGT SNOW  28  22  78 S6        29.82S WCI  22             .
+ 7PM EST JAN 27 2011 CLOUDY    28  21  75 SW9       29.82S WCI  19             .
+ 8PM EST JAN 27 2011 CLOUDY    27  20  75 S9        29.80F WCI  18             .
+ 9PM EST JAN 27 2011 LGT SNOW  27  20  75 S6        29.80S WCI  20             .
+10PM EST JAN 27 2011 LGT SNOW  27  21  78 S7        29.80S WCI  19             .
+11PM EST JAN 27 2011 LGT SNOW  26  23  88 S3        29.80S FOG                 .
+12AM EST JAN 28 2011 LGT SNOW  26  23  88 S3        29.79F FOG                 .
+ 1AM EST JAN 28 2011 LGT SNOW  26  23  88 S5        29.77F FOG     WCI  20     .
+ 2AM EST JAN 28 2011 LGT SNOW  25  23  92 S3        29.76F FOG                 .
+ 3AM EST JAN 28 2011 LGT SNOW  25  23  92 S3        29.74F FOG                 .
+ 4AM EST JAN 28 2011 LGT SNOW  25  22  88 S3        29.71F FOG                 .
+ 5AM EST JAN 28 2011 LGT SNOW  25  22  88 S3        29.70S                     .
+ 6AM EST JAN 28 2011 LGT SNOW  25  22  88 CALM      29.70S                     .
+ 7AM EST JAN 28 2011 LGT SNOW  25  22  88 CALM      29.71R                     .
+ 8AM EST JAN 28 2011 LGT SNOW  26  23  88 CALM      29.72R                     .
+ 9AM EST JAN 28 2011 LGT SNOW  26  24  92 CALM      29.74R                     .
+10AM EST JAN 28 2011 LGT SNOW  28  24  85 W5        29.75R WCI  23             .
+11AM EST JAN 28 2011 LGT SNOW  28  25  88 W7        29.77R WCI  21             .
+12PM EST JAN 28 2011 LGT SNOW  30  24  78 W8        29.76F WCI  22             .
+ 1PM EST JAN 28 2011 LGT SNOW  30  22  72 W8        29.75F WCI  22             .
+ 2PM EST JAN 28 2011 LGT SNOW  29  23  78 W12       29.76R WCI  19             .
+ 3PM EST JAN 28 2011 LGT SNOW  29  22  75 W13       29.77R WCI  19             .
+ 4PM EST JAN 28 2011 LGT SNOW  28  22  78 NW15      29.80R WCI  16             .
+ 5PM EST JAN 28 2011 FLURRIES  28  18  66 W12       29.82R WCI  18             .
+ 6PM EST JAN 28 2011 CLOUDY    27  18  69 W7        29.85R WCI  19             .
+ 7PM EST JAN 28 2011 FLURRIES  27  18  69 W5        29.87R WCI  22             .
+ 8PM EST JAN 28 2011 FLURRIES  27  20  75 W5        29.90R WCI  22             .
+ 9PM EST JAN 28 2011 FLURRIES  26  21  81 SW5       29.92R WCI  20             .
+10PM EST JAN 28 2011 FLURRIES  26  21  81 SW6       29.91S WCI  19             .
+11PM EST JAN 28 2011 FLURRIES  26  21  81 SW5       29.91S WCI  20             .
+12AM EST JAN 29 2011 FLURRIES  26  21  81 SW6       29.91S WCI  19             .
+ 1AM EST JAN 29 2011 MOCLDY    26  21  81 SW6       29.91S WCI  19             .
+ 2AM EST JAN 29 2011 MOCLDY    25  20  81 SW6       29.90F WCI  18             .
+ 3AM EST JAN 29 2011 PTCLDY    25  19  78 SW5       29.91R WCI  19             .
+ 4AM EST JAN 29 2011 CLOUDY    23  19  85 SW5       29.90F WCI  17             .
+ 5AM EST JAN 29 2011 FLURRIES  23  19  85 SW3       29.91R                     .
+ 6AM EST JAN 29 2011 LGT SNOW  23  19  85 S5        29.88F FOG     WCI  17     .
+ 7AM EST JAN 29 2011 LGT SNOW  23  20  88 S5        29.86F FOG     WCI  17     .
+ 8AM EST JAN 29 2011 CLOUDY    24  19  81 SE6       29.85F WCI  17             .
+ 9AM EST JAN 29 2011 LGT SNOW  24  19  81 SE7       29.84F WCI  16             .
+10AM EST JAN 29 2011 LGT SNOW  24  20  84 SE10      29.81F FOG     WCI  14     .
+11AM EST JAN 29 2011 FLURRIES  25  21  85 SE8       29.78F WCI  16             .
+12PM EST JAN 29 2011 FLURRIES  27  22  81 S5        29.76F WCI  22             .
+ 1PM EST JAN 29 2011 CLOUDY    29  23  78 S3        29.73F                     .
+ 2PM EST JAN 29 2011 CLOUDY    32  25  75 W6        29.75R WCI  26             .
+ 3PM EST JAN 29 2011 CLOUDY    33  26  75 W14       29.79R WCI  23             .
+ 4PM EST JAN 29 2011 FLURRIES  33  27  78 W8        29.82R WCI  26             .
+ 5PM EST JAN 29 2011 LGT SNOW  33  27  78 W7        29.86R WCI  27             .
+ 6PM EST JAN 29 2011 LGT SNOW  32  28  85 SW3       29.90R                     .
+ 7PM EST JAN 29 2011 LGT SNOW  32  27  81 W6        29.93R FOG     WCI  26     .
+ 8PM EST JAN 29 2011 CLOUDY    31  25  78 W12       29.96R WCI  22             .
+ 9PM EST JAN 29 2011 CLOUDY    31  22  69 NW12      29.98R WCI  22             .
+10PM EST JAN 29 2011 CLOUDY    30  22  72 NW8       29.99R WCI  22             .
+11PM EST JAN 29 2011 CLOUDY    29  22  75 NW13      30.02R WCI  19             .
+12AM EST JAN 30 2011 CLOUDY    29  21  72 NW12      30.02S WCI  19             .
+ 1AM EST JAN 30 2011 CLOUDY    28  21  75 W3        30.02S                     .
+ 2AM EST JAN 30 2011 CLOUDY    28  22  78 SW5       30.01F WCI  23             .
+ 3AM EST JAN 30 2011 CLOUDY    28  22  78 SW3       30.02R                     .
+ 4AM EST JAN 30 2011 CLOUDY    28  22  78 CALM      30.03R                     .
+ 5AM EST JAN 30 2011 LGT SNOW  28  23  80 W6        30.04R WCI  22             .
+ 6AM EST JAN 30 2011 LGT SNOW  27  24  89 W5        30.06R FOG     WCI  22     .
+ 7AM EST JAN 30 2011 LGT SNOW  27  25  92 CALM      30.07R FOG                 .
+ 8AM EST JAN 30 2011 LGT SNOW  27  25  92 W3        30.10R FOG                 .
+ 9AM EST JAN 30 2011 LGT SNOW  28  25  86 W3        30.12R FOG                 .
+10AM EST JAN 30 2011 FLURRIES  29  24  82 N5        30.13R WCI  24             .
+11AM EST JAN 30 2011 LGT SNOW  30  25  81 NW3       30.14R                     .
+12PM EST JAN 30 2011 LGT SNOW  30  24  78 N8        30.15R WCI  22             .
+ 1PM EST JAN 30 2011 CLOUDY    30  23  75 N7        30.15S WCI  23             .
+ 2PM EST JAN 30 2011 CLOUDY    29  23  78 N6        30.14F WCI  23             .
+ 3PM EST JAN 30 2011 CLOUDY    30  22  72 N6        30.15R WCI  24             .
+ 4PM EST JAN 30 2011 CLOUDY    30  21  69 N6        30.17R WCI  24             .
+ 5PM EST JAN 30 2011 CLOUDY    30  20  66 NW7       30.18R WCI  23             .
+ 6PM EST JAN 30 2011 CLOUDY    29  19  66 NW10      30.22R WCI  20             .
+ 7PM EST JAN 30 2011 PTCLDY    24  16  71 NW5       30.24R WCI  18             .
+ 8PM EST JAN 30 2011 PTCLDY    24  15  68 NW6       30.26R WCI  17             .
+ 9PM EST JAN 30 2011 PTCLDY    22  14  71 N6        30.29R WCI  14             .
+10PM EST JAN 30 2011 PTCLDY    21  12  68 N9        30.30R WCI  11             .
+11PM EST JAN 30 2011 PTCLDY    20  13  74 N12       30.31R WCI   8             .
+12AM EST JAN 31 2011 CLEAR     18  13  80 N9        30.32R WCI   7             .
+ 1AM EST JAN 31 2011 CLEAR     17  11  77 N5        30.32S WCI  10             .
+ 2AM EST JAN 31 2011 CLEAR     15  10  80 N5        30.33R WCI   8             .
+ 3AM EST JAN 31 2011 CLEAR     15  10  80 N9        30.34R WCI   3             .
+ 4AM EST JAN 31 2011 CLEAR     13   9  84 N5        30.33F WCI   5             .
+ 5AM EST JAN 31 2011 CLEAR     13   7  77 N9        30.34R WCI   1             .
+ 6AM EST JAN 31 2011 PTCLDY    12   7  80 NE3       30.36R                     .
+ 7AM EST JAN 31 2011 PTCLDY    10   5  80 NE3       30.37R                     .
+ 8AM EST JAN 31 2011 MOCLDY    11   6  81 N7        30.37S WCI   0             .
+ 9AM EST JAN 31 2011 MOSUNNY   14   7  73 NE9       30.36F WCI   2             .
+10AM EST JAN 31 2011 PTSUNNY   17   9  70 E6        30.35F WCI   9             .
+11AM EST JAN 31 2011 PTSUNNY   21   9  59 E10       30.33F WCI  10             .
+12PM EST JAN 31 2011 PTSUNNY   25   8  48 E7        30.31F WCI  17             .
+ 1PM EST JAN 31 2011 PTSUNNY   27   9  46 NE7       30.27F WCI  19             .
+ 2PM EST JAN 31 2011 CLOUDY    29  11  47 E9        30.25F WCI  20             .
+ 3PM EST JAN 31 2011 CLOUDY    30  11  45 E10       30.22F WCI  21             .
+ 4PM EST JAN 31 2011 PTSUNNY   31  12  45 NE9       30.21F WCI  23             .
+ 5PM EST JAN 31 2011 CLOUDY    31  13  47 NE6       30.20F WCI  25             .
+ 6PM EST JAN 31 2011 CLOUDY    31  14  49 E5        30.18F WCI  26             .
