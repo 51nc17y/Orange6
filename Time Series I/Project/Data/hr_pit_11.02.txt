@@ -1,0 +1,693 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 7PM EST JAN 31 2011 CLOUDY    32  19  58 E9        30.18S WCI  24           FEB
+ 8PM EST JAN 31 2011 CLOUDY    31  20  63 E7        30.16F WCI  24           FEB
+ 9PM EST JAN 31 2011 CLOUDY    31  21  66 E6        30.14F WCI  25           FEB
+10PM EST JAN 31 2011 CLOUDY    31  21  66 SE9       30.14S WCI  23           FEB
+11PM EST JAN 31 2011 CLOUDY    30  21  69 E6        30.12F WCI  24           FEB
+12AM EST FEB 01 2011 CLOUDY    30  22  72 E6        30.10F WCI  24           FEB
+ 1AM EST FEB 01 2011 CLOUDY    30  23  75 SE8       30.09F WCI  22           FEB
+ 2AM EST FEB 01 2011 FRZ RAIN  30  25  81 E9        30.04F WCI  22             .
+ 3AM EST FEB 01 2011 CLOUDY    31  27  85 SE9       30.01F WCI  23             .
+ 4AM EST FEB 01 2011 FRZ RAIN  31  28  89 SE6       29.99F FOG     WCI  25     .
+ 5AM EST FEB 01 2011 FRZ RAIN  30  28  93 N6        30.04R FOG     WCI  24     .
+ 6AM EST FEB 01 2011 FRZ RAIN  31  29  92 CALM      30.04R FOG                 .
+ 7AM EST FEB 01 2011 FRZ RAIN  32  30  92 CALM      30.05R FOG                 .
+ 8AM EST FEB 01 2011 FRZ RAIN  32  30  92 CALM      30.06R FOG                 .
+ 9AM EST FEB 01 2011 FOG       32  30  93 CALM      30.07R VSB 1               .
+10AM EST FEB 01 2011 CLOUDY    33  31  92 CALM      30.07S FOG                 .
+11AM EST FEB 01 2011 FOG       34  32  93 CALM      30.06F VSB 1               .
+12PM EST FEB 01 2011 FOG       35  32  88 CALM      30.04F VSB 1               .
+ 1PM EST FEB 01 2011 FOG       35  32  88 NE6       30.00F VSB 1/4 WCI  30     .
+ 2PM EST FEB 01 2011 DRZL/FOG  36  32  87 N6        29.99S VSB 1/4             .
+ 3PM EST FEB 01 2011 DRZL/FOG  34  33  96 N3        30.00R VSB 1/4             .
+ 4PM EST FEB 01 2011 DRZL/FOG  34  32  92 N7        30.01R VSB 1/4 WCI  28     .
+ 5PM EST FEB 01 2011 DRZL/FOG  34  32  92 N7        30.00F VSB 1/8 WCI  28     .
+ 6PM EST FEB 01 2011 FOG       34  32  92 NE6       29.97F VSB 1/8 WCI  29     .
+ 7PM EST FEB 01 2011 DRZL/FOG  33  32  96 NE8       29.93F VSB 1/4 WCI  26     .
+ 8PM EST FEB 01 2011 DRZL/FOG  34  32  92 E5        29.90F VSB 1/2 WCI  30     .
+ 9PM EST FEB 01 2011 LGT RAIN  34  32  92 NE5       29.84F FOG     WCI  30     .
+10PM EST FEB 01 2011 LGT RAIN  35  33  92 E7        29.81F VSB 1/2 WCI  29     .
+11PM EST FEB 01 2011 LGT RAIN  36  34  92 E7        29.75F VSB 1/2             .
+12AM EST FEB 02 2011 RAIN      37  35  92 E8        29.70F VSB 1/2             .
+ 1AM EST FEB 02 2011 LGT RAIN  38  36  92 SE9G18    29.65F VSB 1/2             .
+ 2AM EST FEB 02 2011 CLOUDY    39  37  93 SE12      29.58F FOG                 .
+ 3AM EST FEB 02 2011 CLOUDY    39  37  92 SE12      29.56F                     .
+ 4AM EST FEB 02 2011 CLOUDY    39  36  89 SE5       29.54F                     .
+ 5AM EST FEB 02 2011 LGT RAIN  41  38  89 SE8       29.53F                     .
+ 6AM EST FEB 02 2011 MOCLDY    42  39  89 SE5       29.52F                     .
+ 7AM EST FEB 02 2011 MOCLDY    41  39  93 S3        29.52S                     .
+ 8AM EST FEB 02 2011 MOCLDY    49  42  77 SW17G23   29.55R                     .
+ 9AM EST FEB 02 2011 MOSUNNY   44  31  60 SW28G41   29.59R                     .
+10AM EST FEB 02 2011 PTSUNNY   41  27  57 W26G39    29.64R                     .
+11AM EST FEB 02 2011 FLURRIES  34  26  72 W18G36    29.74R WCI  23             .
+12PM EST FEB 02 2011 PTSUNNY   31  18  58 W21G33    29.78R WCI  18             .
+ 1PM EST FEB 02 2011 FLURRIES  30  15  53 W15G30    29.80R WCI  19             .
+ 2PM EST FEB 02 2011 LGT SNOW  27  20  75 W14G25    29.84R WCI  16             .
+ 3PM EST FEB 02 2011 FLURRIES  28  14  55 W21G33    29.87R WCI  15             .
+ 4PM EST FEB 02 2011 LGT SNOW  26  16  65 W18G28    29.93R WCI  13             .
+ 5PM EST FEB 02 2011 LGT SNOW  25  18  74 SW16G25   29.99R VSB 3/4 WCI  12     .
+ 6PM EST FEB 02 2011 LGT SNOW  25  19  80 W18G26    30.05R WCI  11             .
+ 7PM EST FEB 02 2011 LGT SNOW  25  16  68 W15G25    30.10R BLWGSNOWWCI  12     .
+ 8PM EST FEB 02 2011 FLURRIES  23  15  71 W17       30.14R WCI   9             .
+ 9PM EST FEB 02 2011 LGT SNOW  23  15  71 W13G20    30.17R WCI  11             .
+10PM EST FEB 02 2011 LGT SNOW  22  17  81 W9G17     30.20R WCI  12             .
+11PM EST FEB 02 2011 LGT SNOW  22  17  81 W20       30.23R WCI   7             .
+12AM EST FEB 03 2011 FLURRIES  20  12  71 W20G26    30.25R WCI   4             .
+ 1AM EST FEB 03 2011 FLURRIES  20  12  71 W15       30.27R WCI   6             .
+ 2AM EST FEB 03 2011 CLOUDY    19  11  70 W14G22    30.30R WCI   6             .
+ 3AM EST FEB 03 2011 CLOUDY    19  11  70 W15       30.32R WCI   5             .
+ 4AM EST FEB 03 2011 CLOUDY    18  10  71 W14       30.34R WCI   4             .
+ 5AM EST FEB 03 2011 PTCLDY    16   9  74 W7        30.35R WCI   6             .
+ 6AM EST FEB 03 2011 MOCLDY    15   8  73 W3        30.37R                     .
+ 7AM EST FEB 03 2011 PTCLDY    14   8  77 W6        30.38R WCI   5             .
+ 8AM EST FEB 03 2011 PTCLDY    14   8  77 W6        30.40R WCI   5             .
+ 9AM EST FEB 03 2011 MOSUNNY   16   9  74 W9        30.42R WCI   4             .
+10AM EST FEB 03 2011 MOSUNNY   19   9  65 VRB3      30.43R                     .
+11AM EST FEB 03 2011 MOSUNNY   21   8  57 VRB5      30.44R WCI  15             .
+12PM EST FEB 03 2011 MOSUNNY   23   6  48 W8        30.43F WCI  14             .
+ 1PM EST FEB 03 2011 MOSUNNY   25   8  48 W9        30.41F WCI  15             .
+ 2PM EST FEB 03 2011 MOSUNNY   27   8  44 W15       30.40F WCI  15             .
+ 3PM EST FEB 03 2011 MOSUNNY   27   6  41 W9        30.38F WCI  18             .
+ 4PM EST FEB 03 2011 MOSUNNY   27   5  39 W13       30.36F WCI  16             .
+ 5PM EST FEB 03 2011 PTCLDY    27   5  39 W9        30.36S WCI  18             .
+ 6PM EST FEB 03 2011 PTCLDY    26   6  42 W3        30.36S                     .
+ 7PM EST FEB 03 2011 PTCLDY    25   7  46 SW5       30.37R WCI  19             .
+ 8PM EST FEB 03 2011 PTCLDY    24   7  48 SW6       30.36F WCI  17             .
+ 9PM EST FEB 03 2011 CLEAR     23   8  52 SW5       30.35F WCI  17             .
+10PM EST FEB 03 2011 CLEAR     22   8  55 SW5       30.35S WCI  16             .
+11PM EST FEB 03 2011 CLEAR     21   9  59 W5        30.34F WCI  15             .
+12AM EST FEB 04 2011 CLEAR     20   9  62 SW5       30.34S WCI  13             .
+ 1AM EST FEB 04 2011 CLEAR     19  10  68 SW5       30.33F WCI  12             .
+ 2AM EST FEB 04 2011 CLEAR     19  10  68 SW6       30.31F WCI  11             .
+ 3AM EST FEB 04 2011 CLEAR     18  11  74 SW6       30.30F WCI  10             .
+ 4AM EST FEB 04 2011 CLEAR     18  11  74 SW5       30.29F WCI  11             .
+ 5AM EST FEB 04 2011 CLEAR     18  11  74 SW6       30.28F WCI  10             .
+ 6AM EST FEB 04 2011 PTCLDY    17  11  77 SW3       30.27F                     .
+ 7AM EST FEB 04 2011 PTCLDY    17  12  80 SW6       30.26F WCI   9             .
+ 8AM EST FEB 04 2011 MOCLDY    18  12  77 SW9       30.24F WCI   7             .
+ 9AM EST FEB 04 2011 PTSUNNY   19  13  77 SW7       30.24S WCI  10             .
+10AM EST FEB 04 2011 MOSUNNY   21  14  74 SW8       30.24S WCI  11             .
+11AM EST FEB 04 2011 MOSUNNY   24  15  68 SW14      30.23F WCI  12             .
+12PM EST FEB 04 2011 MOSUNNY   27  15  61 SW14G22   30.22F WCI  16             .
+ 1PM EST FEB 04 2011 MOSUNNY   30  13  49 SW9       30.17F WCI  22             .
+ 2PM EST FEB 04 2011 MOSUNNY   32  11  41 SW8       30.14F WCI  25             .
+ 3PM EST FEB 04 2011 MOSUNNY   33  12  41 SW3       30.11F                     .
+ 4PM EST FEB 04 2011 MOSUNNY   34  10  37 SW7       30.10F WCI  28             .
+ 5PM EST FEB 04 2011 PTCLDY    34  12  40 S7        30.09F WCI  28             .
+ 6PM EST FEB 04 2011 PTCLDY    32  11  41 CALM      30.07F                     .
+ 7PM EST FEB 04 2011 PTCLDY    30  12  47 CALM      30.05F                     .
+ 8PM EST FEB 04 2011 PTCLDY    27  13  55 CALM      30.03F                     .
+ 9PM EST FEB 04 2011 PTCLDY    26  14  60 CALM      30.01F                     .
+10PM EST FEB 04 2011 MOCLDY    27  13  55 CALM      29.99F                     .
+11PM EST FEB 04 2011 CLOUDY    25  14  63 CALM      29.98F                     .
+12AM EST FEB 05 2011 CLOUDY    25  17  72 CALM      29.95F                     .
+ 1AM EST FEB 05 2011 CLOUDY    28  17  63 CALM      29.92F                     .
+ 2AM EST FEB 05 2011 FLURRIES  27  18  69 CALM      29.90F                     .
+ 3AM EST FEB 05 2011 CLOUDY    29  20  69 CALM      29.88F                     .
+ 4AM EST FEB 05 2011 CLOUDY    30  20  66 CALM      29.86F                     .
+ 5AM EST FEB 05 2011 CLOUDY    28  20  71 SE3       29.83F                     .
+ 6AM EST FEB 05 2011 MOCLDY    28  20  71 CALM      29.79F                     .
+ 7AM EST FEB 05 2011 CLOUDY    28  20  71 E3        29.76F                     .
+ 8AM EST FEB 05 2011 CLOUDY    28  19  69 E6        29.72F WCI  22             .
+ 9AM EST FEB 05 2011 CLOUDY    31  17  56 E5        29.68F WCI  26             .
+10AM EST FEB 05 2011 LGT RAIN  32  19  58 CALM      29.63F                     .
+11AM EST FEB 05 2011 LGT RAIN  33  23  66 NE7       29.56F WCI  27             .
+12PM EST FEB 05 2011 CLOUDY    33  25  72 NE6       29.50F WCI  28             .
+ 1PM EST FEB 05 2011 LGT RAIN  34  28  79 CALM      29.44F                     .
+ 2PM EST FEB 05 2011 LGT RAIN  33  30  88 N3        29.40F FOG                 .
+ 3PM EST FEB 05 2011 DRIZZLE   34  32  93 W6        29.40F FOG     WCI  29     .
+ 4PM EST FEB 05 2011 PTSUNNY   37  33  85 SW17G25   29.40F                     .
+ 5PM EST FEB 05 2011 CLOUDY    36  31  82 W15G25    29.45R                     .
+ 6PM EST FEB 05 2011 CLOUDY    36  29  75 W17G26    29.50R                     .
+ 7PM EST FEB 05 2011 LGT RAIN  36  28  73 W13G29    29.54R                     .
+ 8PM EST FEB 05 2011 LGT SNOW  34  27  75 W13G25    29.57R WCI  25             .
+ 9PM EST FEB 05 2011 LGT SNOW  33  28  81 W17G28    29.63R WCI  22             .
+10PM EST FEB 05 2011 CLOUDY    31  23  72 W18G25    29.70R WCI  19             .
+11PM EST FEB 05 2011 FLURRIES  31  23  72 W20G30    29.74R WCI  19             .
+12AM EST FEB 06 2011 FLURRIES  31  23  72 W14       29.78R WCI  21             .
+ 1AM EST FEB 06 2011 FLURRIES  30  22  72 W14G21    29.80R WCI  19             .
+ 2AM EST FEB 06 2011 FLURRIES  30  22  72 W7G17     29.84R WCI  23             .
+ 3AM EST FEB 06 2011 FLURRIES  30  23  75 W13       29.86R WCI  20             .
+ 4AM EST FEB 06 2011 CLOUDY    30  23  75 W7        29.86S WCI  23             .
+ 5AM EST FEB 06 2011 PTCLDY    29  23  78 SW9       29.88R WCI  20             .
+ 6AM EST FEB 06 2011 CLOUDY    28  22  78 W5        29.90R WCI  23             .
+ 7AM EST FEB 06 2011 CLOUDY    29  23  78 W5        29.91R WCI  24             .
+ 8AM EST FEB 06 2011 CLOUDY    29  23  78 CALM      29.92R                     .
+ 9AM EST FEB 06 2011 PTSUNNY   30  24  78 SW5       29.94R WCI  25             .
+10AM EST FEB 06 2011 CLOUDY    30  24  78 SW5       29.95R WCI  25             .
+11AM EST FEB 06 2011 CLOUDY    31  23  72 SW9       29.98R WCI  23             .
+12PM EST FEB 06 2011 CLOUDY    31  22  69 SW7       29.99R WCI  24             .
+ 1PM EST FEB 06 2011 FLURRIES  31  24  75 SW6       29.97F WCI  25             .
+ 2PM EST FEB 06 2011 FLURRIES  32  23  69 SW10      29.96F WCI  24             .
+ 3PM EST FEB 06 2011 FLURRIES  32  24  72 SW6       29.96S WCI  26             .
+ 4PM EST FEB 06 2011 CLOUDY    32  24  72 S9        29.96S WCI  24             .
+ 5PM EST FEB 06 2011 CLOUDY    32  24  72 S5        29.97R WCI  27             .
+ 6PM EST FEB 06 2011 CLOUDY    32  24  72 S6        29.98R WCI  26             .
+ 7PM EST FEB 06 2011 CLOUDY    32  25  75 SE5       29.98S WCI  27             .
+ 8PM EST FEB 06 2011 CLOUDY    32  24  72 CALM      29.98S                     .
+ 9PM EST FEB 06 2011 CLOUDY    32  24  72 S3        29.97F                     .
+10PM EST FEB 06 2011 CLOUDY    32  25  75 CALM      29.97S                     .
+11PM EST FEB 06 2011 CLOUDY    32  25  75 S5        29.97S WCI  27             .
+12AM EST FEB 07 2011 CLOUDY    32  25  75 S3        29.97S                     .
+ 1AM EST FEB 07 2011 CLOUDY    32  25  75 S3        29.96F                     .
+ 2AM EST FEB 07 2011 CLOUDY    32  25  75 CALM      29.94F                     .
+ 3AM EST FEB 07 2011 CLOUDY    32  25  75 SE3       29.93F                     .
+ 4AM EST FEB 07 2011 CLOUDY    32  26  78 S5        29.91F WCI  27             .
+ 5AM EST FEB 07 2011 FLURRIES  33  27  78 CALM      29.91S                     .
+ 6AM EST FEB 07 2011 CLOUDY    34  28  79 CALM      29.90F                     .
+ 7AM EST FEB 07 2011 FLURRIES  35  31  85 SW6       29.91R WCI  30             .
+ 8AM EST FEB 07 2011 CLOUDY    35  31  85 S3        29.90F                     .
+ 9AM EST FEB 07 2011 CLOUDY    36  31  82 S3        29.88F                     .
+10AM EST FEB 07 2011 CLOUDY    37  31  78 S5        29.87F                     .
+11AM EST FEB 07 2011 FLURRIES  36  32  87 CALM      29.87S                     .
+12PM EST FEB 07 2011 LGT SNOW  36  32  85 SW5       29.86F FOG                 .
+ 1PM EST FEB 07 2011 FLURRIES  36  32  85 SW3       29.82F                     .
+ 2PM EST FEB 07 2011 LGT RAIN  36  32  85 SW5       29.79F FOG                 .
+ 3PM EST FEB 07 2011 LGT RAIN  35  33  92 SW3       29.77F FOG                 .
+ 4PM EST FEB 07 2011 LGT SNOW  36  32  87 CALM      29.76F FOG                 .
+ 5PM EST FEB 07 2011 LGT SNOW  34  32  92 CALM      29.75F FOG                 .
+ 6PM EST FEB 07 2011 SNOW      33  31  92 VRB3      29.74F VSB 1/2             .
+ 7PM EST FEB 07 2011 SNOW      33  31  92 N6        29.73F VSB 1/2 WCI  28     .
+ 8PM EST FEB 07 2011 SNOW      33  30  88 N6        29.73S VSB 1/2 WCI  28     .
+ 9PM EST FEB 07 2011 SNOW      32  30  92 N12       29.71F VSB 1/2 WCI  23     .
+10PM EST FEB 07 2011 SNOW      31  28  89 N15       29.71S VSB 1/2 WCI  20     .
+11PM EST FEB 07 2011 LGT SNOW  29  26  89 N17       29.72R VSB 1   WCI  17     .
+12AM EST FEB 08 2011 LGT SNOW  29  26  89 NW13      29.73R FOG     WCI  19     .
+ 1AM EST FEB 08 2011 LGT SNOW  29  24  82 NW16      29.74R WCI  17             .
+ 2AM EST FEB 08 2011 LGT SNOW  27  22  81 NW15      29.77R WCI  15             .
+ 3AM EST FEB 08 2011 LGT SNOW  25  21  85 NW17      29.81R FOG     WCI  12     .
+ 4AM EST FEB 08 2011 FLURRIES  24  20  84 NW18      29.83R WCI  10             .
+ 5AM EST FEB 08 2011 MOCLDY    23  16  74 NW13      29.87R WCI  11             .
+ 6AM EST FEB 08 2011 FLURRIES  22  16  78 NW13      29.91R WCI  10             .
+ 7AM EST FEB 08 2011 FLURRIES  21  16  81 W10       29.93R WCI  10             .
+ 8AM EST FEB 08 2011 LGT SNOW  21  16  79 NW10      29.97R VSB 1   WCI  10     .
+ 9AM EST FEB 08 2011 FLURRIES  21  18  86 NW13      29.99R WCI   9             .
+10AM EST FEB 08 2011 FLURRIES  21  14  74 NW17      30.00R WCI   7             .
+11AM EST FEB 08 2011 PTSUNNY   22  13  68 W20       30.02R WCI   7             .
+12PM EST FEB 08 2011 FLURRIES  23  12  62 W20G25    30.04R WCI   8             .
+ 1PM EST FEB 08 2011 CLOUDY    22   8  55 NW29G35   30.05S WCI   4             .
+ 2PM EST FEB 08 2011 PTSUNNY   22   9  57 W22G29    30.07R WCI   6             .
+ 3PM EST FEB 08 2011 PTSUNNY   23   7  50 NW24G30   30.09R WCI   7             .
+ 4PM EST FEB 08 2011 MOSUNNY   21   5  50 NW23G29   30.12R WCI   5             .
+ 5PM EST FEB 08 2011 PTCLDY    19  -1  41 NW21G30   30.15R WCI   3             .
+ 6PM EST FEB 08 2011 PTCLDY    17  -1  45 NW14      30.19R WCI   3             .
+ 7PM EST FEB 08 2011 CLEAR     13   1  59 NW6       30.22R WCI   4             .
+ 8PM EST FEB 08 2011 CLEAR     12  -1  56 W10       30.24R WCI  -1             .
+ 9PM EST FEB 08 2011 CLEAR     13  -2  51 W5        30.26R WCI   5             .
+10PM EST FEB 08 2011 CLEAR     11  -2  56 W3        30.27R                     .
+11PM EST FEB 08 2011 CLEAR     10  -1  61 SW3       30.26F                     .
+12AM EST FEB 09 2011 CLEAR      7  -2  66 CALM      30.25F                     .
+ 1AM EST FEB 09 2011 CLEAR      9  -2  61 SW6       30.26R WCI  -1             .
+ 2AM EST FEB 09 2011 CLEAR      8  -2  63 SW5       30.25F WCI   0             .
+ 3AM EST FEB 09 2011 CLEAR      7  -2  66 CALM      30.25S                     .
+ 4AM EST FEB 09 2011 CLEAR      8   0  69 CALM      30.25S                     .
+ 5AM EST FEB 09 2011 MOCLDY    10   1  67 SW6       30.25S WCI   0             .
+ 6AM EST FEB 09 2011 MOCLDY     9   1  70 S3        30.24F                     .
+ 7AM EST FEB 09 2011 CLOUDY     8   2  76 S6        30.23F WCI  -2             .
+ 8AM EST FEB 09 2011 CLOUDY    10   3  73 S7        30.24R WCI  -1             .
+ 9AM EST FEB 09 2011 CLOUDY    12   4  70 S8        30.22F WCI   0             .
+10AM EST FEB 09 2011 CLOUDY    15   5  64 SW10      30.22S WCI   2             .
+11AM EST FEB 09 2011 CLOUDY    17   6  62 SW7       30.20F WCI   8             .
+12PM EST FEB 09 2011 CLOUDY    19   6  57 SW9       30.18F WCI   8             .
+ 1PM EST FEB 09 2011 CLOUDY    21   5  50 W10G22    30.16F WCI  10             .
+ 2PM EST FEB 09 2011 CLOUDY    22   6  50 SW14G20   30.11F WCI   9             .
+ 3PM EST FEB 09 2011 CLOUDY    22   6  50 SW13      30.10F WCI  10             .
+ 4PM EST FEB 09 2011 CLOUDY    22   5  48 SW9G18    30.08F WCI  12             .
+ 5PM EST FEB 09 2011 CLOUDY    21   6  52 SW9       30.07F WCI  11             .
+ 6PM EST FEB 09 2011 CLOUDY    21   6  52 SW8       30.08R WCI  11             .
+ 7PM EST FEB 09 2011 CLOUDY    20   6  55 SW10      30.08S WCI   9             .
+ 8PM EST FEB 09 2011 CLOUDY    20   8  60 SW10      30.08S WCI   9             .
+ 9PM EST FEB 09 2011 CLOUDY    20  10  65 SW8       30.08S WCI  10             .
+10PM EST FEB 09 2011 CLOUDY    19   8  62 W7        30.08S WCI  10             .
+11PM EST FEB 09 2011 CLOUDY    19   4  51 SW7       30.06F WCI  10             .
+12AM EST FEB 10 2011 CLOUDY    17   3  54 W6        30.07R WCI   9             .
+ 1AM EST FEB 10 2011 PTCLDY    16   3  56 W6        30.05F WCI   7             .
+ 2AM EST FEB 10 2011 CLEAR     14   2  58 W8        30.04F WCI   3             .
+ 3AM EST FEB 10 2011 CLEAR     11   1  64 W9        30.04S WCI  -2             .
+ 4AM EST FEB 10 2011 PTCLDY     9  -2  61 NW9       30.05R WCI  -4             .
+ 5AM EST FEB 10 2011 MOCLDY     9  -1  64 W12       30.07R WCI  -6             .
+ 6AM EST FEB 10 2011 MOCLDY     7  -2  66 W8        30.09R WCI  -6             .
+ 7AM EST FEB 10 2011 FLURRIES   7  -2  66 W6        30.10R WCI  -3             .
+ 8AM EST FEB 10 2011 PTCLDY     5  -2  72 W3        30.11R                     .
+ 9AM EST FEB 10 2011 MOSUNNY    8  -1  66 W6        30.13R WCI  -2             .
+10AM EST FEB 10 2011 MOSUNNY   10   1  67 NW7       30.13S WCI  -1             .
+11AM EST FEB 10 2011 MOSUNNY   13   1  59 W8        30.13S WCI   2             .
+12PM EST FEB 10 2011 MOSUNNY   15   2  56 W7        30.13S WCI   5             .
+ 1PM EST FEB 10 2011 MOSUNNY   16   1  51 SW10      30.11F WCI   4             .
+ 2PM EST FEB 10 2011 MOSUNNY   18  -1  43 SW9       30.10F WCI   7             .
+ 3PM EST FEB 10 2011 MOSUNNY   19   1  45 SW10      30.08F WCI   7             .
+ 4PM EST FEB 10 2011 SUNNY     20   0  41 SW9       30.07F WCI   9             .
+ 5PM EST FEB 10 2011 PTCLDY    20  -1  40 SW6       30.09R WCI  12             .
+ 6PM EST FEB 10 2011 PTCLDY    19  -1  41 SW8       30.08F WCI   9             .
+ 7PM EST FEB 10 2011 PTCLDY    17  -1  45 SW6       30.09R WCI   9             .
+ 8PM EST FEB 10 2011 FAIR      17  -2  43 SW5       30.10R WCI  10             .
+ 9PM EST FEB 10 2011 PTCLDY    16  -2  45 SW5       30.09F WCI   9             .
+10PM EST FEB 10 2011 PTCLDY    16   0  49 SW5       30.09S WCI   9             .
+11PM EST FEB 10 2011 MOCLDY    15   0  51 CALM      30.08F                     .
+12AM EST FEB 11 2011 PTCLDY    13   0  56 S3        30.07F                     .
+ 1AM EST FEB 11 2011 PTCLDY    13  -1  54 S3        30.06F                     .
+ 2AM EST FEB 11 2011 PTCLDY    12  -1  56 S5        30.04F WCI   4             .
+ 3AM EST FEB 11 2011 PTCLDY    16   0  49 SW7       30.06R WCI   6             .
+ 4AM EST FEB 11 2011 PTCLDY    16   0  49 SW7       30.05F WCI   6             .
+ 5AM EST FEB 11 2011 PTCLDY    16   0  49 SW6       30.05S WCI   7             .
+ 6AM EST FEB 11 2011 MOCLDY    16   2  54 SW6       30.06R WCI   7             .
+ 7AM EST FEB 11 2011 CLOUDY    16   2  54 SW7       30.06S WCI   6             .
+ 8AM EST FEB 11 2011 MOCLDY    16   3  56 SW7       30.08R WCI   6             .
+ 9AM EST FEB 11 2011 PTSUNNY   18   3  52 SW9       30.10R WCI   7             .
+10AM EST FEB 11 2011 MOSUNNY   20   5  52 SW10      30.10S WCI   9             .
+11AM EST FEB 11 2011 MOSUNNY   22   5  48 SW12      30.10S WCI  10             .
+12PM EST FEB 11 2011 MOSUNNY   25   5  42 SW12      30.08F WCI  14             .
+ 1PM EST FEB 11 2011 PTSUNNY   28   6  39 W10G21    30.05F WCI  19             .
+ 2PM EST FEB 11 2011 PTSUNNY   30   6  36 SW14G21   30.03F WCI  19             .
+ 3PM EST FEB 11 2011 MOSUNNY   32   7  35 SW15G24   30.01F WCI  22             .
+ 4PM EST FEB 11 2011 MOSUNNY   32   7  35 SW13G18   30.00F WCI  22             .
+ 5PM EST FEB 11 2011 MOCLDY    32   7  35 W8        30.00S WCI  25             .
+ 6PM EST FEB 11 2011 MOCLDY    31   8  38 SW7       30.00S WCI  24             .
+ 7PM EST FEB 11 2011 MOCLDY    31   8  38 S6        30.00S WCI  25             .
+ 8PM EST FEB 11 2011 CLOUDY    30   8  39 S5        29.99F WCI  25             .
+ 9PM EST FEB 11 2011 CLOUDY    30   6  36 S8        29.97F WCI  22             .
+10PM EST FEB 11 2011 CLOUDY    30   5  34 SW8       29.96F WCI  22             .
+11PM EST FEB 11 2011 CLOUDY    30   6  36 SW10      29.95F WCI  21             .
+12AM EST FEB 12 2011 CLOUDY    30   5  34 SW9       29.93F WCI  22             .
+ 1AM EST FEB 12 2011 CLOUDY    30   5  34 SW13G20   29.92F WCI  20             .
+ 2AM EST FEB 12 2011 CLOUDY    30   5  34 SW15G23   29.91F WCI  19             .
+ 3AM EST FEB 12 2011 FLURRIES  29   7  39 SW10G25   29.89F WCI  20             .
+ 4AM EST FEB 12 2011 CLOUDY    29  10  45 SW10G20   29.88F WCI  20             .
+ 5AM EST FEB 12 2011 FLURRIES  29  11  47 SW15      29.87F WCI  18             .
+ 6AM EST FEB 12 2011 LGT SNOW  26  18  71 SW13G26   29.88R WCI  15             .
+ 7AM EST FEB 12 2011 FLURRIES  26  20  77 SW10      29.88S WCI  16             .
+ 8AM EST FEB 12 2011 FLURRIES  27  20  75 SW14G21   29.90R WCI  16             .
+ 9AM EST FEB 12 2011 LGT SNOW  27  22  81 SW9       29.93R WCI  18             .
+10AM EST FEB 12 2011 LGT SNOW  29  23  78 W10G21    29.95R WCI  20             .
+11AM EST FEB 12 2011 LGT SNOW  32  21  64 W17G31    29.98R WCI  21             .
+12PM EST FEB 12 2011 LGT SNOW  30  23  74 W16G32    30.02R WCI  19             .
+ 1PM EST FEB 12 2011 FLURRIES  31  22  69 W20G29    30.02S WCI  19             .
+ 2PM EST FEB 12 2011 PTSUNNY   32  20  61 W18       30.03R WCI  20             .
+ 3PM EST FEB 12 2011 PTSUNNY   34  18  52 W20G26    30.04R WCI  23             .
+ 4PM EST FEB 12 2011 MOSUNNY   36  14  40 W17G25    30.04S                     .
+ 5PM EST FEB 12 2011 PTCLDY    35  15  44 W10G26    30.06R WCI  27             .
+ 6PM EST FEB 12 2011 PTCLDY    34  14  43 W10G18    30.08R WCI  26             .
+ 7PM EST FEB 12 2011 PTCLDY    32  15  49 W12       30.10R WCI  23             .
+ 8PM EST FEB 12 2011 PTCLDY    31  16  54 W7        30.12R WCI  24             .
+ 9PM EST FEB 12 2011 PTCLDY    30  16  56 W6        30.12S WCI  24             .
+10PM EST FEB 12 2011 PTCLDY    30  16  56 CALM      30.13R                     .
+11PM EST FEB 12 2011 CLEAR     29  16  58 SW5       30.11F WCI  24             .
+12AM EST FEB 13 2011 MOCLDY    30  18  60 SW5       30.10F WCI  25             .
+ 1AM EST FEB 13 2011 MOCLDY    28  19  69 S5        30.06F WCI  23             .
+ 2AM EST FEB 13 2011 CLOUDY    29  19  66 S3        30.04F                     .
+ 3AM EST FEB 13 2011 CLOUDY    32  19  58 SW8       30.03F WCI  25             .
+ 4AM EST FEB 13 2011 CLOUDY    34  21  59 SW9       29.99F WCI  27             .
+ 5AM EST FEB 13 2011 CLOUDY    34  21  59 S9        29.97F WCI  27             .
+ 6AM EST FEB 13 2011 CLOUDY    35  21  56 SW10      29.95F WCI  27             .
+ 7AM EST FEB 13 2011 CLOUDY    35  22  58 SW12G21   29.95S WCI  27             .
+ 8AM EST FEB 13 2011 MOCLDY    35  22  58 SW8       29.93F WCI  29             .
+ 9AM EST FEB 13 2011 PTSUNNY   36  23  59 S12       29.93S                     .
+10AM EST FEB 13 2011 CLOUDY    40  24  53 SW13G23   29.91F                     .
+11AM EST FEB 13 2011 CLOUDY    41  24  51 SW10G28   29.90F                     .
+12PM EST FEB 13 2011 CLOUDY    43  24  47 SW12G24   29.88F                     .
+ 1PM EST FEB 13 2011 CLOUDY    44  24  45 SW18G26   29.86F                     .
+ 2PM EST FEB 13 2011 PTSUNNY   46  25  43 SW18G31   29.84F                     .
+ 3PM EST FEB 13 2011 PTSUNNY   48  25  40 SW17G28   29.81F                     .
+ 4PM EST FEB 13 2011 PTSUNNY   50  26  39 SW17G24   29.81S                     .
+ 5PM EST FEB 13 2011 MOCLDY    50  26  39 SW10G20   29.81S                     .
+ 6PM EST FEB 13 2011 CLOUDY    49  26  41 SW9       29.81S                     .
+ 7PM EST FEB 13 2011 CLOUDY    47  26  44 SW7       29.81S                     .
+ 8PM EST FEB 13 2011 CLOUDY    48  26  42 SW10      29.80F                     .
+ 9PM EST FEB 13 2011 CLOUDY    49  25  39 SW14G23   29.76F                     .
+10PM EST FEB 13 2011 CLOUDY    50  25  37 SW15G24   29.76S                     .
+11PM EST FEB 13 2011 PTCLDY    49  26  41 SW15G26   29.73F                     .
+12AM EST FEB 14 2011 PTCLDY    49  26  41 SW18G28   29.69F                     .
+ 1AM EST FEB 14 2011 PTCLDY    49  26  41 SW15G25   29.66F                     .
+ 2AM EST FEB 14 2011 PTCLDY    49  25  39 SW15G28   29.63F                     .
+ 3AM EST FEB 14 2011 PTCLDY    50  24  36 SW17G31   29.60F                     .
+ 4AM EST FEB 14 2011 PTCLDY    49  24  37 SW17G26   29.57F                     .
+ 5AM EST FEB 14 2011 PTCLDY    49  24  37 SW20G28   29.57S                     .
+ 6AM EST FEB 14 2011 PTCLDY    48  25  40 SW13G23   29.58R                     .
+ 7AM EST FEB 14 2011 PTCLDY    47  26  44 SW16G24   29.58S                     .
+ 8AM EST FEB 14 2011 PTCLDY    46  27  47 SW13G26   29.59R                     .
+ 9AM EST FEB 14 2011 MOSUNNY   48  28  46 W20G30    29.60R                     .
+10AM EST FEB 14 2011 PTSUNNY   47  29  49 W25G36    29.62R                     .
+11AM EST FEB 14 2011 CLOUDY    43  29  57 W23G35    29.68R                     .
+12PM EST FEB 14 2011 CLOUDY    41  30  65 W22G35    29.71R                     .
+ 1PM EST FEB 14 2011 LGT RAIN  40  31  70 W20G28    29.73R                     .
+ 2PM EST FEB 14 2011 LGT RAIN  38  32  79 W12G24    29.77R                     .
+ 3PM EST FEB 14 2011 LGT RAIN  37  33  85 W16G24    29.81R FOG                 .
+ 4PM EST FEB 14 2011 CLOUDY    37  32  82 W20G29    29.85R                     .
+ 5PM EST FEB 14 2011 CLOUDY    37  31  78 W21G26    29.91R                     .
+ 6PM EST FEB 14 2011 CLOUDY    37  28  70 NW17G25   29.97R                     .
+ 7PM EST FEB 14 2011 CLOUDY    37  26  64 NW16      30.02R                     .
+ 8PM EST FEB 14 2011 FLURRIES  35  26  69 NW20G29   30.07R WCI  24             .
+ 9PM EST FEB 14 2011 FLURRIES  33  24  69 NW21G30   30.11R WCI  21             .
+10PM EST FEB 14 2011 MOCLDY    32  23  69 NW17      30.16R WCI  21             .
+11PM EST FEB 14 2011 MOCLDY    30  21  69 NW16      30.20R WCI  19             .
+12AM EST FEB 15 2011 PTCLDY    28  16  60 N15G28    30.22R WCI  16             .
+ 1AM EST FEB 15 2011 PTCLDY    27  15  61 NW15      30.25R WCI  15             .
+ 2AM EST FEB 15 2011 CLEAR     25  14  63 NW10      30.27R WCI  15             .
+ 3AM EST FEB 15 2011 CLEAR     24  11  57 NW9       30.30R WCI  14             .
+ 4AM EST FEB 15 2011 CLEAR     23  12  62 NW13      30.32R WCI  11             .
+ 5AM EST FEB 15 2011 CLEAR     22  14  71 N7        30.33R WCI  13             .
+ 6AM EST FEB 15 2011 CLEAR     21  13  71 N8        30.35R WCI  11             .
+ 7AM EST FEB 15 2011 CLEAR     20  12  71 W7        30.38R WCI  11             .
+ 8AM EST FEB 15 2011 CLEAR     20  12  71 NW7       30.40R WCI  11             .
+ 9AM EST FEB 15 2011 MOSUNNY   23  11  60 N9        30.42R WCI  13             .
+10AM EST FEB 15 2011 MOSUNNY   25   8  48 CALM      30.43R                     .
+11AM EST FEB 15 2011 MOSUNNY   26   6  42 CALM      30.42F                     .
+12PM EST FEB 15 2011 MOSUNNY   29   8  41 CALM      30.40F                     .
+ 1PM EST FEB 15 2011 MOSUNNY   31   6  35 S5        30.39F WCI  26             .
+ 2PM EST FEB 15 2011 MOSUNNY   34   7  32 S5        30.39S WCI  30             .
+ 3PM EST FEB 15 2011 MOSUNNY   36   8  31 S8        30.38F                     .
+ 4PM EST FEB 15 2011 PTSUNNY   37   9  31 SE3       30.37F                     .
+ 5PM EST FEB 15 2011 MOCLDY    37  10  32 E3        30.34F                     .
+ 6PM EST FEB 15 2011 MOCLDY    36  10  34 CALM      30.35R                     .
+ 7PM EST FEB 15 2011 MOCLDY    34   9  35 CALM      30.34F                     .
+ 8PM EST FEB 15 2011 CLOUDY    32  12  43 SE3       30.31F                     .
+ 9PM EST FEB 15 2011 MOCLDY    32  13  45 SE6       30.27F WCI  26             .
+10PM EST FEB 15 2011 MOCLDY    32  10  40 CALM      30.25F                     .
+11PM EST FEB 15 2011 CLOUDY    32  12  43 CALM      30.24F                     .
+12AM EST FEB 16 2011 CLOUDY    30  14  51 E3        30.21F                     .
+ 1AM EST FEB 16 2011 CLOUDY    31  13  47 E3        30.21S                     .
+ 2AM EST FEB 16 2011 CLOUDY    30  14  51 SE3       30.18F                     .
+ 3AM EST FEB 16 2011 CLOUDY    30  14  51 SE3       30.16F                     .
+ 4AM EST FEB 16 2011 CLOUDY    30  14  51 CALM      30.16S                     .
+ 5AM EST FEB 16 2011 CLOUDY    29  14  53 SE3       30.16S                     .
+ 6AM EST FEB 16 2011 PTCLDY    29  13  51 CALM      30.15F                     .
+ 7AM EST FEB 16 2011 PTCLDY    28  15  58 CALM      30.15S                     .
+ 8AM EST FEB 16 2011 PTCLDY    30  15  53 CALM      30.16R                     .
+ 9AM EST FEB 16 2011 MOSUNNY   35  18  49 SE3       30.16S                     .
+10AM EST FEB 16 2011 PTSUNNY   48  19  31 SW13G24   30.16S                     .
+11AM EST FEB 16 2011 CLOUDY    50  20  30 SW15G24   30.17R                     .
+12PM EST FEB 16 2011 CLOUDY    50  21  32 SW9       30.16F                     .
+ 1PM EST FEB 16 2011 CLOUDY    52  22  30 SW10G18   30.13F                     .
+ 2PM EST FEB 16 2011 PTSUNNY   53  23  31 SW8       30.11F                     .
+ 3PM EST FEB 16 2011 CLOUDY    54  27  35 SW9       30.11S                     .
+ 4PM EST FEB 16 2011 PTSUNNY   54  29  38 SW10      30.11S                     .
+ 5PM EST FEB 16 2011 MOCLDY    53  32  44 SW13G22   30.11S                     .
+ 6PM EST FEB 16 2011 MOCLDY    52  31  44 S7        30.11S                     .
+ 7PM EST FEB 16 2011 MOCLDY    50  32  50 S5        30.11S                     .
+ 8PM EST FEB 16 2011 CLOUDY    49  32  52 S3        30.11S                     .
+ 9PM EST FEB 16 2011 CLOUDY    50  31  48 S3        30.10F                     .
+10PM EST FEB 16 2011 CLOUDY    50  31  48 SW3       30.11R                     .
+11PM EST FEB 16 2011 CLOUDY    49  31  49 CALM      30.10F                     .
+12AM EST FEB 17 2011 CLOUDY    46  31  55 S3        30.10S                     .
+ 1AM EST FEB 17 2011 CLOUDY    49  32  52 S6        30.10S                     .
+ 2AM EST FEB 17 2011 CLOUDY    53  32  44 SW9       30.09F                     .
+ 3AM EST FEB 17 2011 MOCLDY    52  33  48 SW7       30.10R                     .
+ 4AM EST FEB 17 2011 MOCLDY    51  34  52 SW13      30.08F                     .
+ 5AM EST FEB 17 2011 MOCLDY    50  35  56 SW8       30.09R                     .
+ 6AM EST FEB 17 2011 MOCLDY    49  36  61 S5        30.10R                     .
+ 7AM EST FEB 17 2011 CLOUDY    48  36  63 S5        30.10S                     .
+ 8AM EST FEB 17 2011 CLOUDY    50  37  61 S10       30.11R                     .
+ 9AM EST FEB 17 2011 CLOUDY    52  36  54 SW12G17   30.11S                     .
+10AM EST FEB 17 2011 CLOUDY    54  36  50 SW15G21   30.10F                     .
+11AM EST FEB 17 2011 PTSUNNY   58  37  45 SW15G21   30.08F                     .
+12PM EST FEB 17 2011 CLOUDY    59  37  44 S13       30.05F                     .
+ 1PM EST FEB 17 2011 CLOUDY    62  36  37 SW20G29   30.01F                     .
+ 2PM EST FEB 17 2011 CLOUDY    63  38  39 SW12G22   29.98F                     .
+ 3PM EST FEB 17 2011 CLOUDY    64  38  38 SW13G22   29.95F                     .
+ 4PM EST FEB 17 2011 CLOUDY    63  38  39 SW12G20   29.93F                     .
+ 5PM EST FEB 17 2011 CLOUDY    63  38  39 S9        29.91F                     .
+ 6PM EST FEB 17 2011 CLOUDY    60  38  43 S5        29.89F HAZE                .
+ 7PM EST FEB 17 2011 CLOUDY    59  36  42 S5        29.89S                     .
+ 8PM EST FEB 17 2011 CLOUDY    59  36  42 CALM      29.88F                     .
+ 9PM EST FEB 17 2011 CLOUDY    58  35  42 S6        29.86F                     .
+10PM EST FEB 17 2011 CLOUDY    57  35  43 S5        29.86S                     .
+11PM EST FEB 17 2011 CLOUDY    58  35  42 S6        29.85F                     .
+12AM EST FEB 18 2011 CLOUDY    59  36  42 SW7       29.86R                     .
+ 1AM EST FEB 18 2011 CLOUDY    59  39  47 SW13G21   29.86S                     .
+ 2AM EST FEB 18 2011 CLOUDY    59  42  53 SW14G20   29.86S                     .
+ 3AM EST FEB 18 2011 CLOUDY    59  43  55 SW13G21   29.86S                     .
+ 4AM EST FEB 18 2011 CLOUDY    59  44  57 SW14G23   29.86S                     .
+ 5AM EST FEB 18 2011 CLOUDY    59  45  59 SW15G23   29.87R                     .
+ 6AM EST FEB 18 2011 CLOUDY    59  45  59 SW14G20   29.87S                     .
+ 7AM EST FEB 18 2011 CLOUDY    58  46  64 SW13G20   29.87S                     .
+ 8AM EST FEB 18 2011 CLOUDY    58  47  66 SW13G22   29.88R                     .
+ 9AM EST FEB 18 2011 CLOUDY    59  47  64 SW13G18   29.88S                     .
+10AM EST FEB 18 2011 PTSUNNY   61  48  62 W14G25    29.88S                     .
+11AM EST FEB 18 2011 PTSUNNY   64  46  52 W23G38    29.88S                     .
+12PM EST FEB 18 2011 MOSUNNY   63  46  54 W21G29    29.90R                     .
+ 1PM EST FEB 18 2011 MOSUNNY   64  30  27 W22G31    29.88F                     .
+ 2PM EST FEB 18 2011 MOSUNNY   65  25  22 W24G38    29.87F                     .
+ 3PM EST FEB 18 2011 PTSUNNY   64  20  18 W28G38    29.88R                     .
+ 4PM EST FEB 18 2011 MOSUNNY   61  16  17 W21G36    29.90R                     .
+ 5PM EST FEB 18 2011 PTCLDY    57  22  25 NW24G35   29.92R                     .
+ 6PM EST FEB 18 2011 MOCLDY    53  17  24 W23G32    29.94R                     .
+ 7PM EST FEB 18 2011 MOCLDY    50  15  24 W22G33    29.98R                     .
+ 8PM EST FEB 18 2011 MOCLDY    49  15  25 W24G33    30.00R                     .
+ 9PM EST FEB 18 2011 PTCLDY    47  17  30 W20G33    30.00S                     .
+10PM EST FEB 18 2011 CLEAR     46  18  32 W18G33    30.00S                     .
+11PM EST FEB 18 2011 CLEAR     45  19  35 W22G30    30.00S                     .
+12AM EST FEB 19 2011 CLEAR     43  18  36 W21G35    30.00S                     .
+ 1AM EST FEB 19 2011 CLEAR     42  18  37 W17G29    30.01R                     .
+ 2AM EST FEB 19 2011 CLEAR     40  17  39 W17G29    30.01S                     .
+ 3AM EST FEB 19 2011 CLEAR     39  16  39 W17G26    30.01S                     .
+ 4AM EST FEB 19 2011 CLEAR     38  15  39 W18G24    30.02R                     .
+ 5AM EST FEB 19 2011 CLEAR     37  15  40 W17G26    30.03R                     .
+ 6AM EST FEB 19 2011 PTCLDY    36  15  42 W20G29    30.05R                     .
+ 7AM EST FEB 19 2011 CLEAR     34  16  47 W21G30    30.06R WCI  22             .
+ 8AM EST FEB 19 2011 CLEAR     34  17  50 W23G31    30.09R WCI  22             .
+ 9AM EST FEB 19 2011 MOSUNNY   35  17  47 W26G33    30.12R WCI  22             .
+10AM EST FEB 19 2011 MOSUNNY   36  16  44 NW20G32   30.13R                     .
+11AM EST FEB 19 2011 MOSUNNY   37  16  42 NW22G36   30.15R                     .
+12PM EST FEB 19 2011 MOSUNNY   37  16  42 NW22G30   30.16R                     .
+ 1PM EST FEB 19 2011 MOSUNNY   39  16  39 W25G32    30.15F                     .
+ 2PM EST FEB 19 2011 MOSUNNY   40  16  37 NW23G33   30.15S                     .
+ 3PM EST FEB 19 2011 MOSUNNY   39  15  37 NW24G33   30.17R                     .
+ 4PM EST FEB 19 2011 MOSUNNY   38  15  39 NW18      30.19R                     .
+ 5PM EST FEB 19 2011 SUNNY     36  14  40 NW18      30.22R                     .
+ 6PM EST FEB 19 2011 CLEAR     33  14  45 NW17      30.24R WCI  22             .
+ 7PM EST FEB 19 2011 NOT AVBL                                                  .
+ 8PM EST FEB 19 2011 CLEAR     30  13  49 NW10      30.29  WCI  21             .
+ 9PM EST FEB 19 2011 CLEAR     29  14  53 NW14      30.31R WCI  18             .
+10PM EST FEB 19 2011 CLEAR     28  14  55 NW12      30.31S WCI  18             .
+11PM EST FEB 19 2011 PTCLDY    27  14  58 NW10      30.31S WCI  17             .
+12AM EST FEB 20 2011 PTCLDY    27  15  61 NW9       30.34R WCI  18             .
+ 1AM EST FEB 20 2011 PTCLDY    25  15  66 W5        30.35R WCI  19             .
+ 2AM EST FEB 20 2011 PTCLDY    24  15  68 W3        30.35S                     .
+ 3AM EST FEB 20 2011 PTCLDY    23  15  71 NW3       30.36R                     .
+ 4AM EST FEB 20 2011 PTCLDY    24  16  71 N6        30.33F WCI  17             .
+ 5AM EST FEB 20 2011 CLEAR     23  15  71 CALM      30.32F                     .
+ 6AM EST FEB 20 2011 PTCLDY    20  15  81 CALM      30.30F                     .
+ 7AM EST FEB 20 2011 PTCLDY    19  14  81 CALM      30.30S                     .
+ 8AM EST FEB 20 2011 MOCLDY    20  15  81 CALM      30.29F                     .
+ 9AM EST FEB 20 2011 CLOUDY    23  17  78 E5        30.28F WCI  17             .
+10AM EST FEB 20 2011 CLOUDY    25  17  72 SE6       30.25F WCI  18             .
+11AM EST FEB 20 2011 CLOUDY    28  18  66 S6        30.24F WCI  22             .
+12PM EST FEB 20 2011 CLOUDY    30  17  58 SW5       30.23F WCI  25             .
+ 1PM EST FEB 20 2011 CLOUDY    33  16  49 S3        30.19F                     .
+ 2PM EST FEB 20 2011 CLOUDY    35  15  44 SE6       30.12F WCI  30             .
+ 3PM EST FEB 20 2011 CLOUDY    36  15  42 SE5       30.09F                     .
+ 4PM EST FEB 20 2011 CLOUDY    37  15  40 E6        30.05F                     .
+ 5PM EST FEB 20 2011 CLOUDY    37  15  40 SE3       30.02F                     .
+ 6PM EST FEB 20 2011 LGT SNOW  31  26  82 SE6       29.99F VSB 1   WCI  25     .
+ 7PM EST FEB 20 2011 LGT SNOW  30  28  92 SE12      29.93F FOG     WCI  20     .
+ 8PM EST FEB 20 2011 FRZ RAIN  31  29  92 SE10      29.86F FOG     WCI  22     .
+ 9PM EST FEB 20 2011 CLOUDY    34  30  86 SE8       29.80F WCI  27             .
+10PM EST FEB 20 2011 LGT RAIN  33  31  92 E3        29.78F FOG                 .
+11PM EST FEB 20 2011 CLOUDY    33  31  92 E6        29.72F FOG     WCI  28     .
+12AM EST FEB 21 2011 CLOUDY    34  31  88 N5        29.70F WCI  30             .
+ 1AM EST FEB 21 2011 LGT RAIN  34  32  92 N3        29.68F                     .
+ 2AM EST FEB 21 2011 LGT RAIN  34  32  92 N5        29.66F FOG     WCI  30     .
+ 3AM EST FEB 21 2011 LGT RAIN  34  32  92 N3        29.64F FOG                 .
+ 4AM EST FEB 21 2011 LGT RAIN  34  32  92 NE3       29.65R FOG                 .
+ 5AM EST FEB 21 2011 LGT RAIN  34  32  92 CALM      29.64F FOG                 .
+ 6AM EST FEB 21 2011 LGT RAIN  34  32  92 CALM      29.65R FOG                 .
+ 7AM EST FEB 21 2011 DRZL/FOG  34  32  92 N6        29.67R VSB 1   WCI  29     .
+ 8AM EST FEB 21 2011 LGT RAIN  34  32  92 N7        29.68R VSB 1   WCI  28     .
+ 9AM EST FEB 21 2011 CLOUDY    34  32  92 N12       29.73R FOG     WCI  25     .
+10AM EST FEB 21 2011 LGT RAIN  34  32  92 N5        29.73S WCI  30             .
+11AM EST FEB 21 2011 LGT RAIN  34  32  92 SE7       29.68F WCI  28             .
+12PM EST FEB 21 2011 CLOUDY    35  31  85 N12       29.76R WCI  27             .
+ 1PM EST FEB 21 2011 CLOUDY    34  30  86 N9        29.74F WCI  26             .
+ 2PM EST FEB 21 2011 DRIZZLE   34  30  85 NE10      29.74S WCI  26             .
+ 3PM EST FEB 21 2011 LGTSLEET  33  29  85 NE8       29.76R WCI  26             .
+ 4PM EST FEB 21 2011 SNOW      30  28  93 NE9       29.76S VSB 1/2 WCI  22     .
+ 5PM EST FEB 21 2011 SNOW      29  27  92 NE12G20   29.74F VSB 1/2 WCI  19     .
+ 6PM EST FEB 21 2011 SNOW      29  26  89 NE8       29.74S VSB 1/2 WCI  21     .
+ 7PM EST FEB 21 2011 SNOW      28  25  88 NE10      29.75R VSB 1/2 WCI  19     .
+ 8PM EST FEB 21 2011 LGT SNOW  27  25  93 NE14G21   29.78R VSB 3/4 WCI  15     .
+ 9PM EST FEB 21 2011 HVY SNOW  26  23  88 NE13G22   29.76F VSB 1/4 WCI  15     .
+10PM EST FEB 21 2011 SNOW      25  21  86 E9        29.79R VSB 1/2 WCI  15     .
+11PM EST FEB 21 2011 LGT SNOW  23  19  86 E10       29.78F WCI  12             .
+12AM EST FEB 22 2011 LGT SNOW  23  19  85 NE12      29.82R FOG     WCI  12     .
+ 1AM EST FEB 22 2011 LGT SNOW  23  18  81 N15       29.89R WCI  10             .
+ 2AM EST FEB 22 2011 LGT SNOW  21  16  79 NE15G25   29.90R FOG     WCI   8     .
+ 3AM EST FEB 22 2011 FLURRIES  21  15  78 E15       29.89F WCI   8             .
+ 4AM EST FEB 22 2011 FLURRIES  19  14  81 NE8       29.91R WCI   9             .
+ 5AM EST FEB 22 2011 PTCLDY    18  13  80 NE12      29.93R WCI   5             .
+ 6AM EST FEB 22 2011 CLOUDY    19  13  77 NE10      29.96R WCI   7             .
+ 7AM EST FEB 22 2011 MOCLDY    19  12  74 E9        29.99R WCI   8             .
+ 8AM EST FEB 22 2011 PTCLDY    18  11  74 NE9       30.01R WCI   7             .
+ 9AM EST FEB 22 2011 MOSUNNY   20  11  68 E8        30.03R WCI  10             .
+10AM EST FEB 22 2011 MOSUNNY   22  13  68 E5        30.05R WCI  16             .
+11AM EST FEB 22 2011 MOSUNNY   25  14  63 NE6       30.07R WCI  18             .
+12PM EST FEB 22 2011 MOSUNNY   26  15  63 VRB3      30.08R                     .
+ 1PM EST FEB 22 2011 MOSUNNY   29  16  58 NE5       30.08S WCI  24             .
+ 2PM EST FEB 22 2011 PTSUNNY   30  17  58 E5        30.08S WCI  25             .
+ 3PM EST FEB 22 2011 PTSUNNY   31  17  56 E3        30.09R                     .
+ 4PM EST FEB 22 2011 MOSUNNY   31  17  56 E7        30.10R WCI  24             .
+ 5PM EST FEB 22 2011 PTSUNNY   32  18  56 SE5       30.12R WCI  27             .
+ 6PM EST FEB 22 2011 MOCLDY    31  18  58 CALM      30.14R                     .
+ 7PM EST FEB 22 2011 NOT AVBL                                                  .
+ 8PM EST FEB 22 2011 MOCLDY    30  19  63 CALM      30.18R                     .
+ 9PM EST FEB 22 2011 CLOUDY    29  20  69 CALM      30.19R                     .
+10PM EST FEB 22 2011 CLOUDY    30  17  58 CALM      30.19S                     .
+11PM EST FEB 22 2011 CLOUDY    30  17  58 CALM      30.20R                     .
+12AM EST FEB 23 2011 CLOUDY    29  20  69 N6        30.20S WCI  23             .
+ 1AM EST FEB 23 2011 CLOUDY    27  19  72 N8        30.21R WCI  19             .
+ 2AM EST FEB 23 2011 CLOUDY    27  18  69 NW3       30.22R                     .
+ 3AM EST FEB 23 2011 CLOUDY    26  18  71 N3        30.23R                     .
+ 4AM EST FEB 23 2011 CLOUDY    26  18  71 CALM      30.23S                     .
+ 5AM EST FEB 23 2011 CLOUDY    26  18  71 CALM      30.23S                     .
+ 6AM EST FEB 23 2011 CLOUDY    26  18  71 CALM      30.24R                     .
+ 7AM EST FEB 23 2011 CLOUDY    26  19  74 CALM      30.26R                     .
+ 8AM EST FEB 23 2011 CLOUDY    26  19  74 CALM      30.27R                     .
+ 9AM EST FEB 23 2011 CLOUDY    26  20  77 CALM      30.28R                     .
+10AM EST FEB 23 2011 CLOUDY    28  20  71 CALM      30.30R                     .
+11AM EST FEB 23 2011 CLOUDY    30  22  72 CALM      30.30S                     .
+12PM EST FEB 23 2011 CLOUDY    31  23  72 CALM      30.29F                     .
+ 1PM EST FEB 23 2011 CLOUDY    32  23  69 S3        30.27F                     .
+ 2PM EST FEB 23 2011 PTSUNNY   35  24  64 SE5       30.24F WCI  31             .
+ 3PM EST FEB 23 2011 PTSUNNY   35  24  64 E3        30.23S                     .
+ 4PM EST FEB 23 2011 PTSUNNY   36  24  62 SE5       30.24S                     .
+ 5PM EST FEB 23 2011 PTSUNNY   36  24  62 SW5       30.22F                     .
+ 6PM EST FEB 23 2011 MOCLDY    36  23  59 CALM      30.22S                     .
+ 7PM EST FEB 23 2011 CLOUDY    35  24  64 CALM      30.22S                     .
+ 8PM EST FEB 23 2011 PTCLDY    33  24  69 E3        30.20F                     .
+ 9PM EST FEB 23 2011 PTCLDY    30  24  78 CALM      30.19F                     .
+10PM EST FEB 23 2011 PTCLDY    31  23  72 CALM      30.17F                     .
+11PM EST FEB 23 2011 PTCLDY    28  23  81 CALM      30.15F                     .
+12AM EST FEB 24 2011 MOCLDY    26  23  88 CALM      30.14F                     .
+ 1AM EST FEB 24 2011 PTCLDY    25  22  88 CALM      30.12F                     .
+ 2AM EST FEB 24 2011 PTCLDY    25  21  85 CALM      30.10F                     .
+ 3AM EST FEB 24 2011 PTCLDY    25  22  88 CALM      30.08F                     .
+ 4AM EST FEB 24 2011 CLOUDY    27  24  89 CALM      30.04F                     .
+ 5AM EST FEB 24 2011 CLOUDY    29  24  82 CALM      30.04S                     .
+ 6AM EST FEB 24 2011 CLOUDY    30  26  85 E5        30.03F WCI  25             .
+ 7AM EST FEB 24 2011 CLOUDY    31  26  82 CALM      30.02F                     .
+ 8AM EST FEB 24 2011 CLOUDY    32  27  81 CALM      30.02S HAZE                .
+ 9AM EST FEB 24 2011 CLOUDY    32  29  88 CALM      30.01F FOG                 .
+10AM EST FEB 24 2011 CLOUDY    35  30  82 S3        30.01S                     .
+11AM EST FEB 24 2011 CLOUDY    37  33  85 CALM      30.01S FOG                 .
+12PM EST FEB 24 2011 CLOUDY    40  35  83 CALM      29.99F                     .
+ 1PM EST FEB 24 2011 CLOUDY    39  34  82 W8        29.97F                     .
+ 2PM EST FEB 24 2011 CLOUDY    39  34  82 W6        29.95F                     .
+ 3PM EST FEB 24 2011 CLOUDY    39  34  82 NW7       29.94F                     .
+ 4PM EST FEB 24 2011 LGT RAIN  38  35  89 NW6       29.95R FOG                 .
+ 5PM EST FEB 24 2011 LGT RAIN  38  36  92 CALM      29.93F VSB 1               .
+ 6PM EST FEB 24 2011 FOG       37  36  93 NE3       29.92F VSB 1/2             .
+ 7PM EST FEB 24 2011 FOG       37  36  93 N6        29.92R VSB 1/2             .
+ 8PM EST FEB 24 2011 LGT RAIN  36  34  92 N9        29.91F VSB 1/4             .
+ 9PM EST FEB 24 2011 LGT RAIN  36  34  92 N7        29.89F VSB 1/4             .
+10PM EST FEB 24 2011 LGT RAIN  35  33  92 NE8       29.86F VSB 1   WCI  29     .
+11PM EST FEB 24 2011 LGT RAIN  35  33  92 NE5       29.83F FOG     WCI  31     .
+12AM EST FEB 25 2011 LGT RAIN  35  33  92 NE7       29.79F FOG     WCI  29     .
+ 1AM EST FEB 25 2011 LGT RAIN  35  33  92 NE9       29.73F FOG     WCI  28     .
+ 2AM EST FEB 25 2011 LGT RAIN  35  33  92 NE10      29.63F FOG     WCI  27     .
+ 3AM EST FEB 25 2011 LGT RAIN  35  33  92 NE8       29.54F FOG     WCI  29     .
+ 4AM EST FEB 25 2011 RAIN      35  33  92 NE13G18   29.47F FOG     WCI  26     .
+ 5AM EST FEB 25 2011 LGT RAIN  36  34  92 N8G23     29.43F                     .
+ 6AM EST FEB 25 2011 LGT RAIN  35  33  92 E8        29.36F FOG     WCI  29     .
+ 7AM EST FEB 25 2011 LGT RAIN  36  34  93 NW13      29.35R FOG                 .
+ 8AM EST FEB 25 2011 LGT RAIN  36  34  93 NW13G24   29.36R FOG                 .
+ 9AM EST FEB 25 2011 LGT SNOW  34  30  86 NW18G25   29.41R FOG     WCI  23     .
+10AM EST FEB 25 2011 LGT SNOW  32  29  88 NW17      29.44R FOG     WCI  21     .
+11AM EST FEB 25 2011 LGT SNOW  30  27  86 NW18G24   29.56R VSB 1   WCI  18     .
+12PM EST FEB 25 2011 LGT SNOW  32  27  81 NW20      29.62R WCI  20             .
+ 1PM EST FEB 25 2011 LGT SNOW  32  27  80 NW22G29   29.75R WCI  19             .
+ 2PM EST FEB 25 2011 LGT SNOW  31  26  82 NW24G30   29.80R WCI  17             .
+ 3PM EST FEB 25 2011 CLOUDY    32  25  75 NW18G26   29.86R WCI  20             .
+ 4PM EST FEB 25 2011 CLOUDY    32  24  72 NW17G25   29.93R WCI  21             .
+ 5PM EST FEB 25 2011 LGT SNOW  32  24  72 NW15      29.98R WCI  22             .
+ 6PM EST FEB 25 2011 LGT SNOW  30  24  78 NW16      30.04R WCI  19             .
+ 7PM EST FEB 25 2011 FLURRIES  29  23  78 NW15      30.09R WCI  18             .
+ 8PM EST FEB 25 2011 CLOUDY    28  21  75 NW14      30.11R WCI  17             .
+ 9PM EST FEB 25 2011 CLOUDY    28  20  71 NW12      30.13R WCI  18             .
+10PM EST FEB 25 2011 CLOUDY    26  20  77 W5        30.17R WCI  20             .
+11PM EST FEB 25 2011 MOCLDY    27  19  72 SW3       30.17S                     .
+12AM EST FEB 26 2011 PTCLDY    25  18  74 CALM      30.16F                     .
+ 1AM EST FEB 26 2011 MOCLDY    24  18  77 CALM      30.15F                     .
+ 2AM EST FEB 26 2011 CLOUDY    24  19  81 CALM      30.13F                     .
+ 3AM EST FEB 26 2011 CLOUDY    23  19  85 CALM      30.13S                     .
+ 4AM EST FEB 26 2011 CLOUDY    22  19  89 CALM      30.12F                     .
+ 5AM EST FEB 26 2011 CLOUDY    23  20  88 CALM      30.12S                     .
+ 6AM EST FEB 26 2011 CLOUDY    22  19  89 CALM      30.13R                     .
+ 7AM EST FEB 26 2011 CLOUDY    24  19  81 CALM      30.15R                     .
+ 8AM EST FEB 26 2011 CLOUDY    25  19  80 CALM      30.16R                     .
+ 9AM EST FEB 26 2011 PTSUNNY   26  22  84 S6        30.14F WCI  19             .
+10AM EST FEB 26 2011 PTSUNNY   29  21  72 SE7       30.12F WCI  22             .
+11AM EST FEB 26 2011 PTSUNNY   30  22  72 CALM      30.11F                     .
+12PM EST FEB 26 2011 PTSUNNY   32  22  66 SE7       30.08F WCI  26             .
+ 1PM EST FEB 26 2011 PTSUNNY   35  22  58 CALM      30.05F                     .
+ 2PM EST FEB 26 2011 PTSUNNY   36  22  56 NW5       30.00F                     .
+ 3PM EST FEB 26 2011 CLOUDY    36  22  56 E8        29.97F                     .
+ 4PM EST FEB 26 2011 CLOUDY    36  23  59 E8        29.93F                     .
+ 5PM EST FEB 26 2011 CLOUDY    36  24  62 E6        29.91F                     .
+ 6PM EST FEB 26 2011 CLOUDY    37  24  59 SE5       29.88F                     .
+ 7PM EST FEB 26 2011 CLOUDY    36  25  64 CALM      29.89R                     .
+ 8PM EST FEB 26 2011 CLOUDY    36  24  62 CALM      29.87F                     .
+ 9PM EST FEB 26 2011 CLOUDY    35  27  72 CALM      29.85F                     .
+10PM EST FEB 26 2011 CLOUDY    35  25  66 CALM      29.86R                     .
+11PM EST FEB 26 2011 CLOUDY    35  25  66 CALM      29.86S                     .
+12AM EST FEB 27 2011 CLOUDY    34  25  69 W3        29.87R                     .
+ 1AM EST FEB 27 2011 CLOUDY    35  25  66 W5        29.88R WCI  31             .
+ 2AM EST FEB 27 2011 CLOUDY    34  26  72 W5        29.89R WCI  30             .
+ 3AM EST FEB 27 2011 CLOUDY    34  26  72 W6        29.89S WCI  29             .
+ 4AM EST FEB 27 2011 CLOUDY    34  27  75 SW5       29.90R WCI  30             .
+ 5AM EST FEB 27 2011 CLOUDY    34  27  75 CALM      29.91R                     .
+ 6AM EST FEB 27 2011 CLOUDY    34  27  75 CALM      29.92R                     .
+ 7AM EST FEB 27 2011 CLOUDY    34  28  79 S3        29.93R                     .
+ 8AM EST FEB 27 2011 CLOUDY    34  28  79 S3        29.94R                     .
+ 9AM EST FEB 27 2011 CLOUDY    35  29  78 S5        29.95R WCI  31             .
+10AM EST FEB 27 2011 CLOUDY    37  28  70 S8        29.96R                     .
+11AM EST FEB 27 2011 CLOUDY    40  29  64 S8        29.97R                     .
+12PM EST FEB 27 2011 CLOUDY    43  32  65 S8        29.95F                     .
+ 1PM EST FEB 27 2011 PTSUNNY   47  35  63 SW9       29.92F                     .
+ 2PM EST FEB 27 2011 CLOUDY    50  37  61 W10G16    29.90F                     .
+ 3PM EST FEB 27 2011 PTSUNNY   51  36  56 SW6       29.87F                     .
+ 4PM EST FEB 27 2011 MOSUNNY   54  37  52 S7        29.86F                     .
+ 5PM EST FEB 27 2011 PTSUNNY   55  37  50 S7        29.85F                     .
+ 6PM EST FEB 27 2011 MOCLDY    54  38  54 SE7       29.84F                     .
+ 7PM EST FEB 27 2011 CLOUDY    50  37  61 SE3       29.84S                     .
+ 8PM EST FEB 27 2011 CLOUDY    51  37  58 CALM      29.83F                     .
+ 9PM EST FEB 27 2011 CLOUDY    49  38  65 SE5       29.80F                     .
+10PM EST FEB 27 2011 CLOUDY    51  38  60 S5        29.80S                     .
+11PM EST FEB 27 2011 RAIN      50  45  83 SE7       29.79F                     .
+12AM EST FEB 28 2011 CLOUDY    50  48  93 S9        29.74F                     .
+ 1AM EST FEB 28 2011 CLOUDY    51  48  89 SE6       29.69F                     .
+ 2AM EST FEB 28 2011 LGT RAIN  54  50  87 S5        29.63F                     .
+ 3AM EST FEB 28 2011 CLOUDY    54  52  93 S7        29.58F                     .
+ 4AM EST FEB 28 2011 LGT RAIN  55  52  88 S10G20    29.52F                     .
+ 5AM EST FEB 28 2011 TSTM      57  53  86 S13G20    29.48F                     .
+ 6AM EST FEB 28 2011 TSTM      61  54  77 SW12G30   29.47F                     .
+ 7AM EST FEB 28 2011 TSTM      55  52  88 W22G36    29.52R                     .
+ 8AM EST FEB 28 2011 LGT RAIN  55  52  88 SW8G20    29.48F                     .
+ 9AM EST FEB 28 2011 CLOUDY    57  52  82 W14G22    29.52R                     .
+10AM EST FEB 28 2011 DRIZZLE   57  52  83 W14G24    29.54R                     .
+11AM EST FEB 28 2011 DRIZZLE   47  43  86 NW25G32   29.66R                     .
+12PM EST FEB 28 2011 CLOUDY    43  38  82 NW21G26   29.72R                     .
+ 1PM EST FEB 28 2011 CLOUDY    41  37  86 NW18      29.75R                     .
+ 2PM EST FEB 28 2011 CLOUDY    38  34  85 NW15      29.74F                     .
+ 3PM EST FEB 28 2011 CLOUDY    36  31  82 NW24      29.81R                     .
+ 4PM EST FEB 28 2011 CLOUDY    36  30  79 NW15      29.83R                     .
+ 5PM EST FEB 28 2011 CLOUDY    34  29  82 N17       29.86R WCI  23             .
+ 6PM EST FEB 28 2011 CLOUDY    34  25  69 N14G20    29.93R WCI  25             .

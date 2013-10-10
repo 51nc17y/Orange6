@@ -1,0 +1,765 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT JUL 31 2011 PTCLDY    87  59  38 NW9       30.06S HX  86            AUG
+ 9PM EDT JUL 31 2011 FAIR      83  60  45 W5        30.06S                   AUG
+10PM EDT JUL 31 2011 CLEAR     81  61  50 W5        30.07R                   AUG
+11PM EDT JUL 31 2011 CLEAR     78  62  57 CALM      30.07S                   AUG
+12AM EDT AUG 01 2011 CLEAR     76  62  62 W3        30.08R                   AUG
+ 1AM EDT AUG 01 2011 CLEAR     74  63  68 CALM      30.09R                   AUG
+ 2AM EDT AUG 01 2011 CLEAR     73  62  68 CALM      30.07F                   AUG
+ 3AM EDT AUG 01 2011 CLEAR     72  63  73 W3        30.06F                     .
+ 4AM EDT AUG 01 2011 PTCLDY    72  62  71 CALM      30.05F                     .
+ 5AM EDT AUG 01 2011 PTCLDY    71  62  73 W3        30.05S                     .
+ 6AM EDT AUG 01 2011 PTCLDY    71  63  75 W3        30.05S                     .
+ 7AM EDT AUG 01 2011 PTCLDY    71  63  75 CALM      30.05S                     .
+ 8AM EDT AUG 01 2011 MOSUNNY   74  63  68 W3        30.05S                     .
+ 9AM EDT AUG 01 2011 PTSUNNY   77  64  64 W9        30.06R                     .
+10AM EDT AUG 01 2011 PTSUNNY   80  65  59 W5        30.05F                     .
+11AM EDT AUG 01 2011 NOT AVBL                                                  .
+12PM EDT AUG 01 2011 PTSUNNY   86  65  49 W9        30.01F HX  88              .
+ 1PM EDT AUG 01 2011 PTSUNNY   87  64  46 NW10      30.01S HX  88              .
+ 2PM EDT AUG 01 2011 PTSUNNY   89  63  41 W12G22    30.00F HX  90              .
+ 3PM EDT AUG 01 2011 CLOUDY    87  62  43 W12G18    30.00S HX  87              .
+ 4PM EDT AUG 01 2011 PTSUNNY   85  62  46 W10G21    29.98F HX  85              .
+ 5PM EDT AUG 01 2011 PTSUNNY   86  63  45 W10       29.97F HX  87              .
+ 6PM EDT AUG 01 2011 MOSUNNY   86  64  47 W10       29.95F HX  87              .
+ 7PM EDT AUG 01 2011 MOSUNNY   86  66  51 W15G21    29.95S HX  88              .
+ 8PM EDT AUG 01 2011 PTCLDY    83  60  45 NW13      29.95S                     .
+ 9PM EDT AUG 01 2011 PTCLDY    81  60  48 NW10      29.96R                     .
+10PM EDT AUG 01 2011 CLEAR     77  61  57 W5        29.96S                     .
+11PM EDT AUG 01 2011 MOCLDY    77  61  57 NW3       29.97R                     .
+12AM EDT AUG 02 2011 MOCLDY    76  62  62 W5        29.96F                     .
+ 1AM EDT AUG 02 2011 MOCLDY    73  63  70 CALM      29.97R                     .
+ 2AM EDT AUG 02 2011 CLEAR     72  65  78 W5        29.95F                     .
+ 3AM EDT AUG 02 2011 PTCLDY    70  65  84 W6        29.95S                     .
+ 4AM EDT AUG 02 2011 CLEAR     70  65  84 CALM      29.94F                     .
+ 5AM EDT AUG 02 2011 CLEAR     69  65  86 CALM      29.94S                     .
+ 6AM EDT AUG 02 2011 PTCLDY    68  65  90 CALM      29.94S                     .
+ 7AM EDT AUG 02 2011 CLEAR     68  64  87 W3        29.94S                     .
+ 8AM EDT AUG 02 2011 MOSUNNY   71  65  81 CALM      29.94S                     .
+ 9AM EDT AUG 02 2011 PTSUNNY   74  66  76 W3        29.95R                     .
+10AM EDT AUG 02 2011 PTSUNNY   78  67  68 NW3       29.94F                     .
+11AM EDT AUG 02 2011 PTSUNNY   83  66  56 W9        29.93F HX  85              .
+12PM EDT AUG 02 2011 PTSUNNY   86  65  49 W10G20    29.93S HX  88              .
+ 1PM EDT AUG 02 2011 PTSUNNY   89  61  38 W13       29.91F HX  89              .
+ 2PM EDT AUG 02 2011 PTSUNNY   89  62  40 W10G16    29.90F HX  89              .
+ 3PM EDT AUG 02 2011 PTSUNNY   90  61  37 W13G18    29.87F HX  90              .
+ 4PM EDT AUG 02 2011 CLOUDY    91  63  39 W13       29.85F HX  92              .
+ 5PM EDT AUG 02 2011 CLOUDY    89  61  38 W15       29.85S HX  89              .
+ 6PM EDT AUG 02 2011 CLOUDY    87  65  47 NW12      29.86R HX  89              .
+ 7PM EDT AUG 02 2011 CLOUDY    85  64  49 W6        29.84F HX  86              .
+ 8PM EDT AUG 02 2011 CLOUDY    83  65  54 W7        29.85R HX  85              .
+ 9PM EDT AUG 02 2011 CLOUDY    80  63  55 W3        29.84F                     .
+10PM EDT AUG 02 2011 CLOUDY    78  65  63 W6        29.85R                     .
+11PM EDT AUG 02 2011 CLOUDY    78  67  68 W3        29.84F                     .
+12AM EDT AUG 03 2011 CLOUDY    77  68  73 W3        29.85R                     .
+ 1AM EDT AUG 03 2011 CLOUDY    77  70  79 CALM      29.83F                     .
+ 2AM EDT AUG 03 2011 CLOUDY    76  70  82 CALM      29.81F                     .
+ 3AM EDT AUG 03 2011 LGT RAIN  74  71  91 CALM      29.80F FOG                 .
+ 4AM EDT AUG 03 2011 LGT RAIN  74  71  91 S3        29.78S FOG                 .
+ 5AM EDT AUG 03 2011 LGT RAIN  73  71  93 E3        29.77F                     .
+ 6AM EDT AUG 03 2011 LGT RAIN  73  72  94 SE5       29.75F FOG                 .
+ 7AM EDT AUG 03 2011 CLOUDY    74  71  91 SE3       29.75S FOG                 .
+ 8AM EDT AUG 03 2011 LGT RAIN  75  71  87 S3        29.72F FOG                 .
+ 9AM EDT AUG 03 2011 CLOUDY    75  71  87 W3        29.75R FOG                 .
+10AM EDT AUG 03 2011 CLOUDY    75  68  78 W6        29.71F                     .
+11AM EDT AUG 03 2011 CLOUDY    75  68  78 SW8       29.72R                     .
+12PM EDT AUG 03 2011 DRIZZLE   75  69  81 SW7       29.72S                     .
+ 1PM EDT AUG 03 2011 LGT RAIN  74  70  87 SW8       29.73S FOG                 .
+ 2PM EDT AUG 03 2011 DRIZZLE   74  71  91 SW5       29.71F FOG                 .
+ 3PM EDT AUG 03 2011 CLOUDY    76  71  85 SW7       29.70F HAZE                .
+ 4PM EDT AUG 03 2011 CLOUDY    77  71  82 VRB7      29.70S HAZE                .
+ 5PM EDT AUG 03 2011 CLOUDY    76  72  87 W6        29.69F FOG                 .
+ 6PM EDT AUG 03 2011 CLOUDY    76  72  87 SW6       29.70R FOG                 .
+ 7PM EDT AUG 03 2011 CLOUDY    77  72  84 SW3       29.70S HAZE                .
+ 8PM EDT AUG 03 2011 CLOUDY    76  72  87 W3        29.72R FOG                 .
+ 9PM EDT AUG 03 2011 CLOUDY    76  72  87 W6        29.73R FOG                 .
+10PM EDT AUG 03 2011 CLOUDY    76  72  87 NW8       29.75R                     .
+11PM EDT AUG 03 2011 CLOUDY    76  71  85 NW13      29.76S                     .
+12AM EDT AUG 04 2011 CLOUDY    75  70  84 NW10      29.78R                     .
+ 1AM EDT AUG 04 2011 CLOUDY    73  70  88 NW7       29.79R                     .
+ 2AM EDT AUG 04 2011 CLOUDY    74  70  87 NW7       29.79S                     .
+ 3AM EDT AUG 04 2011 MOCLDY    74  69  85 NW9       29.80R                     .
+ 4AM EDT AUG 04 2011 CLOUDY    74  69  85 NW6       29.82R                     .
+ 5AM EDT AUG 04 2011 CLOUDY    73  69  87 NW8       29.84R                     .
+ 6AM EDT AUG 04 2011 CLOUDY    73  69  87 N8        29.86R                     .
+ 7AM EDT AUG 04 2011 MOCLDY    73  69  87 NW6       29.88R                     .
+ 8AM EDT AUG 04 2011 CLOUDY    73  69  87 NW5       29.89S                     .
+ 9AM EDT AUG 04 2011 CLOUDY    74  69  85 N6        29.90R                     .
+10AM EDT AUG 04 2011 CLOUDY    75  68  78 NW3       29.91R                     .
+11AM EDT AUG 04 2011 PTSUNNY   78  69  73 NW8       29.93R                     .
+12PM EDT AUG 04 2011 PTSUNNY   80  66  62 N10       29.94R                     .
+ 1PM EDT AUG 04 2011 PTSUNNY   82  66  58 N14       29.94S                     .
+ 2PM EDT AUG 04 2011 MOSUNNY   84  65  52 NW7       29.94S HX  86              .
+ 3PM EDT AUG 04 2011 MOSUNNY   86  65  49 NW10      29.94S HX  88              .
+ 4PM EDT AUG 04 2011 PTSUNNY   86  64  47 N12       29.94S HX  87              .
+ 5PM EDT AUG 04 2011 PTSUNNY   85  64  49 N6        29.95R HX  86              .
+ 6PM EDT AUG 04 2011 PTSUNNY   86  65  49 N8        29.95S HX  88              .
+ 7PM EDT AUG 04 2011 PTSUNNY   85  64  49 N10       29.95S HX  86              .
+ 8PM EDT AUG 04 2011 MOCLDY    82  65  56 N7        29.96R                     .
+ 9PM EDT AUG 04 2011 MOCLDY    80  65  59 N6        29.97R                     .
+10PM EDT AUG 04 2011 MOCLDY    78  65  63 NE5       29.98R                     .
+11PM EDT AUG 04 2011 PTCLDY    77  65  66 NE6       29.97F                     .
+12AM EDT AUG 05 2011 NOT AVBL                                                  .
+ 1AM EDT AUG 05 2011 PTCLDY    76  64  66 N5        30.00                      .
+ 2AM EDT AUG 05 2011 MOCLDY    74  64  71 CALM      30.00S                     .
+ 3AM EDT AUG 05 2011 PTCLDY    72  66  81 E3        29.99F                     .
+ 4AM EDT AUG 05 2011 PTCLDY    72  66  81 E3        29.99S                     .
+ 5AM EDT AUG 05 2011 PTCLDY    70  66  87 E3        29.99S                     .
+ 6AM EDT AUG 05 2011 PTCLDY    70  66  87 CALM      30.00R                     .
+ 7AM EDT AUG 05 2011 MOCLDY    70  67  90 CALM      30.01R                     .
+ 8AM EDT AUG 05 2011 PTSUNNY   72  67  84 E3        30.02R                     .
+ 9AM EDT AUG 05 2011 CLOUDY    75  67  76 CALM      30.03R                     .
+10AM EDT AUG 05 2011 CLOUDY    79  68  69 SE6       30.03S                     .
+11AM EDT AUG 05 2011 PTSUNNY   82  68  62 SW3       30.03S HX  85              .
+12PM EDT AUG 05 2011 PTSUNNY   86  65  49 SW5       30.03S HX  88              .
+ 1PM EDT AUG 05 2011 PTSUNNY   85  62  46 CALM      30.01F HX  85              .
+ 2PM EDT AUG 05 2011 PTSUNNY   87  61  41 VRB3      30.00F HX  87              .
+ 3PM EDT AUG 05 2011 PTSUNNY   90  58  33 S8        29.99F HX  89              .
+ 4PM EDT AUG 05 2011 MOSUNNY   90  61  37 W6        29.98F HX  90              .
+ 5PM EDT AUG 05 2011 PTSUNNY   90  61  37 SW7       29.98S HX  90              .
+ 6PM EDT AUG 05 2011 MOSUNNY   91  61  36 SW6       29.97F HX  91              .
+ 7PM EDT AUG 05 2011 MOSUNNY   89  62  40 W5        29.97S HX  89              .
+ 8PM EDT AUG 05 2011 PTCLDY    87  61  41 W3        29.97S HX  87              .
+ 9PM EDT AUG 05 2011 PTCLDY    83  66  56 NE8       29.96F HX  85              .
+10PM EDT AUG 05 2011 MOCLDY    80  70  71 E8        29.97R                     .
+11PM EDT AUG 05 2011 PTCLDY    79  70  74 E5        29.97S                     .
+12AM EDT AUG 06 2011 MOCLDY    79  69  71 E5        29.97S                     .
+ 1AM EDT AUG 06 2011 MOCLDY    79  69  71 SE5       29.96F                     .
+ 2AM EDT AUG 06 2011 MOCLDY    79  68  69 SE7       29.95F                     .
+ 3AM EDT AUG 06 2011 MOCLDY    78  68  71 SE6       29.94F                     .
+ 4AM EDT AUG 06 2011 CLOUDY    77  69  76 S8        29.94S                     .
+ 5AM EDT AUG 06 2011 CLOUDY    77  69  76 S5        29.94S                     .
+ 6AM EDT AUG 06 2011 CLOUDY    77  69  76 SW6       29.94S                     .
+ 7AM EDT AUG 06 2011 LGT RAIN  76  70  82 SW7       29.95R                     .
+ 8AM EDT AUG 06 2011 CLOUDY    75  71  87 S5        29.95S                     .
+ 9AM EDT AUG 06 2011 PTSUNNY   75  71  87 SW6       29.95S                     .
+10AM EDT AUG 06 2011 CLOUDY    76  71  85 SW10      29.95S                     .
+11AM EDT AUG 06 2011 PTSUNNY   77  70  79 S8        29.95S                     .
+12PM EDT AUG 06 2011 PTSUNNY   79  70  74 SW9       29.95S                     .
+ 1PM EDT AUG 06 2011 PTSUNNY   82  69  64 S10       29.93F HX  85              .
+ 2PM EDT AUG 06 2011 PTSUNNY   84  68  58 SW7       29.91F HX  87              .
+ 3PM EDT AUG 06 2011 PTSUNNY   85  67  54 SW9       29.90F HX  87              .
+ 4PM EDT AUG 06 2011 MOSUNNY   85  68  56 S12       29.87F HX  88              .
+ 5PM EDT AUG 06 2011 PTSUNNY   85  68  56 S10       29.86F HX  88              .
+ 6PM EDT AUG 06 2011 PTSUNNY   85  69  58 SW9       29.85F HX  89              .
+ 7PM EDT AUG 06 2011 PTSUNNY   84  70  62 SW7       29.85S HX  88              .
+ 8PM EDT AUG 06 2011 CLOUDY    82  71  69 SW9       29.85S HAZE    HX  86      .
+ 9PM EDT AUG 06 2011 MOCLDY    80  71  74 SW6       29.85S                     .
+10PM EDT AUG 06 2011 MOCLDY    78  71  79 S3        29.85S HAZE                .
+11PM EDT AUG 06 2011 MOCLDY    77  71  82 CALM      29.85S HAZE                .
+12AM EDT AUG 07 2011 CLOUDY    77  71  82 S3        29.83F HAZE                .
+ 1AM EDT AUG 07 2011 CLOUDY    75  72  90 S5        29.82F FOG                 .
+ 2AM EDT AUG 07 2011 LGT RAIN  76  72  87 SW6       29.80F FOG                 .
+ 3AM EDT AUG 07 2011 MOCLDY    75  71  87 SW6       29.78F FOG                 .
+ 4AM EDT AUG 07 2011 CLOUDY    74  71  91 SW5       29.78S FOG                 .
+ 5AM EDT AUG 07 2011 CLOUDY    75  72  90 S3        29.76F FOG                 .
+ 6AM EDT AUG 07 2011 CLOUDY    75  72  90 SW7       29.77R FOG                 .
+ 7AM EDT AUG 07 2011 MOCLDY    76  72  87 SW7       29.77S FOG                 .
+ 8AM EDT AUG 07 2011 CLOUDY    76  72  87 W5        29.78R FOG                 .
+ 9AM EDT AUG 07 2011 CLOUDY    76  71  85 W6        29.78S HAZE                .
+10AM EDT AUG 07 2011 CLOUDY    77  72  83 W3        29.78S                     .
+11AM EDT AUG 07 2011 CLOUDY    77  71  82 W8        29.78S                     .
+12PM EDT AUG 07 2011 CLOUDY    78  71  79 W6        29.78S                     .
+ 1PM EDT AUG 07 2011 CLOUDY    81  71  71 W7        29.78S HX  85              .
+ 2PM EDT AUG 07 2011 PTSUNNY   84  69  60 W10       29.76F HX  88              .
+ 3PM EDT AUG 07 2011 PTSUNNY   87  63  44 W12G22    29.75F HX  88              .
+ 4PM EDT AUG 07 2011 MOSUNNY   86  65  49 SW13G18   29.73F HX  88              .
+ 5PM EDT AUG 07 2011 PTSUNNY   87  64  46 W14       29.73S HX  88              .
+ 6PM EDT AUG 07 2011 MOSUNNY   86  64  47 W13       29.72F HX  87              .
+ 7PM EDT AUG 07 2011 PTSUNNY   84  65  52 W10G16    29.72S HX  86              .
+ 8PM EDT AUG 07 2011 MOCLDY    82  66  58 W6        29.71F                     .
+ 9PM EDT AUG 07 2011 CLOUDY    80  66  62 W3        29.71S                     .
+10PM EDT AUG 07 2011 CLOUDY    78  67  68 CALM      29.73R                     .
+11PM EDT AUG 07 2011 MOCLDY    78  67  68 SW6       29.72F                     .
+12AM EDT AUG 08 2011 CLOUDY    76  67  73 SW8       29.72S                     .
+ 1AM EDT AUG 08 2011 PTCLDY    74  67  78 W8        29.72S                     .
+ 2AM EDT AUG 08 2011 PTCLDY    72  67  84 W7        29.72S                     .
+ 3AM EDT AUG 08 2011 PTCLDY    70  66  88 W7        29.72S                     .
+ 4AM EDT AUG 08 2011 CLOUDY    70  66  87 W8        29.73R                     .
+ 5AM EDT AUG 08 2011 CLOUDY    70  66  87 W7        29.72F                     .
+ 6AM EDT AUG 08 2011 CLOUDY    71  66  84 W6        29.73R                     .
+ 7AM EDT AUG 08 2011 CLOUDY    71  66  84 W6        29.74R                     .
+ 8AM EDT AUG 08 2011 CLOUDY    71  66  84 W5        29.75S                     .
+ 9AM EDT AUG 08 2011 CLOUDY    72  66  81 W6        29.77R                     .
+10AM EDT AUG 08 2011 CLOUDY    73  67  81 SW7       29.76F                     .
+11AM EDT AUG 08 2011 CLOUDY    75  67  76 W7        29.77R                     .
+12PM EDT AUG 08 2011 MOSUNNY   79  66  64 W6        29.77S                     .
+ 1PM EDT AUG 08 2011 MOSUNNY   80  65  59 SW9       29.75F                     .
+ 2PM EDT AUG 08 2011 PTSUNNY   82  65  56 W8        29.74F                     .
+ 3PM EDT AUG 08 2011 NOT AVBL                                                  .
+ 4PM EDT AUG 08 2011 PTSUNNY   82  66  58 W5        29.71                      .
+ 5PM EDT AUG 08 2011 MOSUNNY   81  65  58 NW6       29.71S                     .
+ 6PM EDT AUG 08 2011 LGT RAIN  82  66  58 NW12      29.72R                     .
+ 7PM EDT AUG 08 2011 PTSUNNY   81  64  56 N12       29.70F                     .
+ 8PM EDT AUG 08 2011 MOCLDY    80  64  58 N7        29.72R                     .
+ 9PM EDT AUG 08 2011 MOCLDY    78  64  61 NW3       29.73R                     .
+10PM EDT AUG 08 2011 PTCLDY    77  64  64 CALM      29.72F                     .
+11PM EDT AUG 08 2011 PTCLDY    75  65  70 CALM      29.71F                     .
+12AM EDT AUG 09 2011 PTCLDY    73  65  75 CALM      29.70F                     .
+ 1AM EDT AUG 09 2011 MOCLDY    72  66  81 CALM      29.69F                     .
+ 2AM EDT AUG 09 2011 CLOUDY    71  66  84 CALM      29.66F                     .
+ 3AM EDT AUG 09 2011 CLOUDY    71  67  87 CALM      29.64F                     .
+ 4AM EDT AUG 09 2011 LGT RAIN  71  68  90 SE3       29.62F FOG                 .
+ 5AM EDT AUG 09 2011 LGT RAIN  70  66  87 S6        29.61F                     .
+ 6AM EDT AUG 09 2011 CLOUDY    70  67  90 S7        29.60F                     .
+ 7AM EDT AUG 09 2011 MOCLDY    71  67  87 SW10      29.59F                     .
+ 8AM EDT AUG 09 2011 LGT RAIN  72  66  83 SW7       29.60R                     .
+ 9AM EDT AUG 09 2011 CLOUDY    73  67  81 SW8       29.61R                     .
+10AM EDT AUG 09 2011 CLOUDY    72  68  87 SW7       29.61S                     .
+11AM EDT AUG 09 2011 PTSUNNY   72  67  84 W12       29.61S                     .
+12PM EDT AUG 09 2011 MOSUNNY   76  66  71 W8        29.60F                     .
+ 1PM EDT AUG 09 2011 LGT RAIN  78  65  63 W12       29.60S                     .
+ 2PM EDT AUG 09 2011 PTSUNNY   81  64  56 W21G29    29.60S                     .
+ 3PM EDT AUG 09 2011 LGT RAIN  81  63  54 W15G24    29.61R                     .
+ 4PM EDT AUG 09 2011 PTSUNNY   83  61  47 W21G30    29.61S                     .
+ 5PM EDT AUG 09 2011 MOSUNNY   83  58  42 W23G30    29.62R                     .
+ 6PM EDT AUG 09 2011 MOSUNNY   82  59  45 NW16G25   29.63R                     .
+ 7PM EDT AUG 09 2011 MOSUNNY   80  60  50 W12       29.64R                     .
+ 8PM EDT AUG 09 2011 PTCLDY    78  59  51 W8        29.64S                     .
+ 9PM EDT AUG 09 2011 PTCLDY    75  60  59 W5        29.65R                     .
+10PM EDT AUG 09 2011 PTCLDY    73  61  65 W6        29.67R                     .
+11PM EDT AUG 09 2011 TSTM      72  61  68 W15G29    29.69R                     .
+12AM EDT AUG 10 2011 TSTM      65  58  78 W7        29.70R                     .
+ 1AM EDT AUG 10 2011 CLOUDY    65  59  81 SW7       29.69R                     .
+ 2AM EDT AUG 10 2011 CLOUDY    65  59  81 SW9       29.69S                     .
+ 3AM EDT AUG 10 2011 MOCLDY    64  61  90 SW5       29.70R                     .
+ 4AM EDT AUG 10 2011 MOCLDY    64  61  90 W3        29.71R                     .
+ 5AM EDT AUG 10 2011 PTCLDY    64  61  90 W6        29.72R                     .
+ 6AM EDT AUG 10 2011 PTCLDY    64  61  90 SW5       29.72S                     .
+ 7AM EDT AUG 10 2011 PTCLDY    63  60  90 W3        29.72S                     .
+ 8AM EDT AUG 10 2011 MOSUNNY   65  61  87 SW7       29.73R                     .
+ 9AM EDT AUG 10 2011 MOSUNNY   68  62  81 SW10      29.73S                     .
+10AM EDT AUG 10 2011 MOSUNNY   72  61  68 W10       29.73S                     .
+11AM EDT AUG 10 2011 MOSUNNY   74  61  63 W15       29.74R                     .
+12PM EDT AUG 10 2011 PTSUNNY   77  58  51 W16       29.73F                     .
+ 1PM EDT AUG 10 2011 PTSUNNY   79  55  44 W18       29.73S                     .
+ 2PM EDT AUG 10 2011 PTSUNNY   81  55  41 W14       29.73S                     .
+ 3PM EDT AUG 10 2011 PTSUNNY   81  55  41 W26       29.73S                     .
+ 4PM EDT AUG 10 2011 PTSUNNY   81  54  39 W20       29.73S                     .
+ 5PM EDT AUG 10 2011 MOSUNNY   82  54  36 W20       29.75R                     .
+ 6PM EDT AUG 10 2011 NOT AVBL                                                  .
+ 7PM EDT AUG 10 2011 NOT AVBL                                                  .
+ 8PM EDT AUG 10 2011 NOT AVBL                                                  .
+ 9PM EDT AUG 10 2011 PTCLDY    72  54  53 W7        29.80R                     .
+10PM EDT AUG 10 2011 PTCLDY    71  54  54 NW8       29.83R                     .
+11PM EDT AUG 10 2011 NOT AVBL                                                  .
+12AM EDT AUG 11 2011 PTCLDY    66  55  67 CALM      29.85                      .
+ 1AM EDT AUG 11 2011 PTCLDY    64  56  75 CALM      29.86R                     .
+ 2AM EDT AUG 11 2011 PTCLDY    63  56  78 CALM      29.86S                     .
+ 3AM EDT AUG 11 2011 PTCLDY    61  55  81 CALM      29.85F                     .
+ 4AM EDT AUG 11 2011 PTCLDY    61  55  82 CALM      29.87R                     .
+ 5AM EDT AUG 11 2011 PTCLDY    59  54  83 CALM      29.88R                     .
+ 6AM EDT AUG 11 2011 NOT AVBL                                                  .
+ 7AM EDT AUG 11 2011 NOT AVBL                                                  .
+ 8AM EDT AUG 11 2011 MOSUNNY   61  56  83 CALM      29.92R                     .
+ 9AM EDT AUG 11 2011 MOSUNNY   67  58  72 W5        29.94R                     .
+10AM EDT AUG 11 2011 FAIR      70  53  54 NW8       29.94S                     .
+11AM EDT AUG 11 2011 PTSUNNY   74  52  46 N12       29.95R                     .
+12PM EDT AUG 11 2011 PTSUNNY   73  51  46 NW12      29.97R                     .
+ 1PM EDT AUG 11 2011 MOSUNNY   75  48  38 NW9       29.97S                     .
+ 2PM EDT AUG 11 2011 MOSUNNY   77  46  33 NW9G18    29.96F                     .
+ 3PM EDT AUG 11 2011 MOSUNNY   77  45  32 N13G20    29.95F                     .
+ 4PM EDT AUG 11 2011 MOSUNNY   76  46  34 NW10G16   29.95S                     .
+ 5PM EDT AUG 11 2011 MOSUNNY   78  45  30 N12       29.95S                     .
+ 6PM EDT AUG 11 2011 MOSUNNY   78  41  26 N14G20    29.96R                     .
+ 7PM EDT AUG 11 2011 MOSUNNY   76  41  28 N12       29.96S                     .
+ 8PM EDT AUG 11 2011 PTCLDY    73  41  31 NW10      29.97R                     .
+ 9PM EDT AUG 11 2011 PTCLDY    71  42  35 N8        29.98R                     .
+10PM EDT AUG 11 2011 CLEAR     69  45  41 N5        30.01R                     .
+11PM EDT AUG 11 2011 CLEAR     66  47  50 CALM      30.02R                     .
+12AM EDT AUG 12 2011 CLEAR     62  49  62 CALM      30.04R                     .
+ 1AM EDT AUG 12 2011 CLEAR     59  49  69 CALM      30.04S                     .
+ 2AM EDT AUG 12 2011 CLEAR     59  48  67 CALM      30.04S                     .
+ 3AM EDT AUG 12 2011 CLEAR     55  49  80 CALM      30.03F                     .
+ 4AM EDT AUG 12 2011 CLEAR     55  49  80 CALM      30.03S                     .
+ 5AM EDT AUG 12 2011 CLEAR     53  48  83 CALM      30.03S                     .
+ 6AM EDT AUG 12 2011 CLEAR     54  48  80 CALM      30.04R                     .
+ 7AM EDT AUG 12 2011 CLEAR     53  48  83 CALM      30.08R                     .
+ 8AM EDT AUG 12 2011 SUNNY     56  50  80 CALM      30.08S                     .
+ 9AM EDT AUG 12 2011 SUNNY     63  52  67 CALM      30.09R                     .
+10AM EDT AUG 12 2011 SUNNY     69  51  52 VRB3      30.11R                     .
+11AM EDT AUG 12 2011 SUNNY     73  49  42 VRB3      30.11S                     .
+12PM EDT AUG 12 2011 MOSUNNY   76  46  34 SE6       30.11S                     .
+ 1PM EDT AUG 12 2011 MOSUNNY   77  47  34 E8        30.10F                     .
+ 2PM EDT AUG 12 2011 MOSUNNY   80  47  31 E7G21     30.08F                     .
+ 3PM EDT AUG 12 2011 PTSUNNY   80  46  30 VRB5      30.07F                     .
+ 4PM EDT AUG 12 2011 PTSUNNY   81  47  30 SE8       30.04F                     .
+ 5PM EDT AUG 12 2011 MOSUNNY   82  46  28 SE6G17    30.04S                     .
+ 6PM EDT AUG 12 2011 MOSUNNY   81  45  28 SE10      30.03F                     .
+ 7PM EDT AUG 12 2011 NOT AVBL                                                  .
+ 8PM EDT AUG 12 2011 MOCLDY    78  49  35 CALM      30.03                      .
+ 9PM EDT AUG 12 2011 MOCLDY    76  50  40 CALM      30.02F                     .
+10PM EDT AUG 12 2011 MOCLDY    72  53  51 CALM      30.03R                     .
+11PM EDT AUG 12 2011 MOCLDY    70  53  54 CALM      30.03S                     .
+12AM EDT AUG 13 2011 MOCLDY    66  54  65 CALM      30.03S                     .
+ 1AM EDT AUG 13 2011 MOCLDY    65  54  67 CALM      30.03S                     .
+ 2AM EDT AUG 13 2011 MOCLDY    63  55  75 CALM      30.00F                     .
+ 3AM EDT AUG 13 2011 CLOUDY    62  55  77 CALM      29.99F                     .
+ 4AM EDT AUG 13 2011 CLOUDY    61  55  81 S3        29.97F                     .
+ 5AM EDT AUG 13 2011 CLOUDY    62  55  77 CALM      29.98R                     .
+ 6AM EDT AUG 13 2011 CLOUDY    61  56  83 CALM      29.99R                     .
+ 7AM EDT AUG 13 2011 CLOUDY    61  55  81 S3        29.98F                     .
+ 8AM EDT AUG 13 2011 PTSUNNY   65  55  70 CALM      29.99R                     .
+ 9AM EDT AUG 13 2011 CLOUDY    67  58  72 CALM      29.99S                     .
+10AM EDT AUG 13 2011 CLOUDY    72  61  68 CALM      29.99S                     .
+11AM EDT AUG 13 2011 CLOUDY    77  62  59 SW8       30.00R                     .
+12PM EDT AUG 13 2011 CLOUDY    76  62  62 W6        30.00S                     .
+ 1PM EDT AUG 13 2011 PTSUNNY   79  60  52 SW8       29.98F                     .
+ 2PM EDT AUG 13 2011 PTSUNNY   82  58  43 W8        29.97F                     .
+ 3PM EDT AUG 13 2011 PTSUNNY   83  57  41 W9        29.96F                     .
+ 4PM EDT AUG 13 2011 MOSUNNY   85  57  38 W13G18    29.94F                     .
+ 5PM EDT AUG 13 2011 PTSUNNY   84  58  40 SW6       29.92F                     .
+ 6PM EDT AUG 13 2011 MOSUNNY   85  58  39 SW12      29.91F                     .
+ 7PM EDT AUG 13 2011 MOSUNNY   83  59  44 SW5       29.90F                     .
+ 8PM EDT AUG 13 2011 PTCLDY    82  60  47 S5        29.89F                     .
+ 9PM EDT AUG 13 2011 PTCLDY    79  61  53 CALM      29.89S                     .
+10PM EDT AUG 13 2011 MOCLDY    77  62  59 CALM      29.90R                     .
+11PM EDT AUG 13 2011 MOCLDY    75  63  66 CALM      29.89F                     .
+12AM EDT AUG 14 2011 CLOUDY    73  63  70 SE3       29.88F                     .
+ 1AM EDT AUG 14 2011 CLOUDY    73  63  70 SE3       29.85F                     .
+ 2AM EDT AUG 14 2011 CLOUDY    73  63  70 SE3       29.83F                     .
+ 3AM EDT AUG 14 2011 TSTM      71  65  81 CALM      29.82F                     .
+ 4AM EDT AUG 14 2011 TSTM      68  65  90 W5        29.83R FOG                 .
+ 5AM EDT AUG 14 2011 LGT RAIN  68  65  90 CALM      29.86R FOG                 .
+ 6AM EDT AUG 14 2011 LGT RAIN  67  65  93 NE5       29.80F FOG                 .
+ 7AM EDT AUG 14 2011 MOCLDY    66  64  93 S3        29.81R FOG                 .
+ 8AM EDT AUG 14 2011 PTSUNNY   67  65  93 S6        29.84R FOG                 .
+ 9AM EDT AUG 14 2011 CLOUDY    68  64  87 W5        29.85S                     .
+10AM EDT AUG 14 2011 PTSUNNY   71  63  75 N3        29.84F                     .
+11AM EDT AUG 14 2011 PTSUNNY   72  62  71 CALM      29.84S                     .
+12PM EDT AUG 14 2011 PTSUNNY   70  65  84 CALM      29.82F                     .
+ 1PM EDT AUG 14 2011 PTSUNNY   73  64  73 SW3       29.82S                     .
+ 2PM EDT AUG 14 2011 CLOUDY    73  64  73 SW8       29.81F                     .
+ 3PM EDT AUG 14 2011 PTSUNNY   74  64  71 W8        29.79F                     .
+ 4PM EDT AUG 14 2011 CLOUDY    74  64  71 W8        29.78F                     .
+ 5PM EDT AUG 14 2011 CLOUDY    73  63  70 N8        29.78S                     .
+ 6PM EDT AUG 14 2011 CLOUDY    69  65  86 W9        29.79R THUNDER             .
+ 7PM EDT AUG 14 2011 PTSUNNY   69  64  84 NW8       29.78S                     .
+ 8PM EDT AUG 14 2011 MOCLDY    68  63  84 W5        29.79R                     .
+ 9PM EDT AUG 14 2011 CLOUDY    66  63  90 CALM      29.79S                     .
+10PM EDT AUG 14 2011 CLOUDY    66  63  90 W8        29.78F                     .
+11PM EDT AUG 14 2011 CLOUDY    65  62  90 W3        29.80R                     .
+12AM EDT AUG 15 2011 CLOUDY    64  62  93 W3        29.79F                     .
+ 1AM EDT AUG 15 2011 FOG       64  61  90 CALM      29.79S VSB 1/2             .
+ 2AM EDT AUG 15 2011 CLOUDY    63  61  93 SW3       29.78F FOG                 .
+ 3AM EDT AUG 15 2011 CLOUDY    63  62  97 CALM      29.77F FOG                 .
+ 4AM EDT AUG 15 2011 CLOUDY    64  62  93 CALM      29.77S FOG                 .
+ 5AM EDT AUG 15 2011 CLOUDY    63  61  93 W5        29.77S FOG                 .
+ 6AM EDT AUG 15 2011 FOG       63  62  97 CALM      29.78R VSB 1/2             .
+ 7AM EDT AUG 15 2011 FOG       63  62  97 CALM      29.78S VSB 1/4             .
+ 8AM EDT AUG 15 2011 CLOUDY    64  62  93 SW3       29.79R FOG                 .
+ 9AM EDT AUG 15 2011 FOG       65  63  93 SW3       29.81R VSB 3/4             .
+10AM EDT AUG 15 2011 CLOUDY    67  63  87 NW7       29.81S FOG                 .
+11AM EDT AUG 15 2011 CLOUDY    68  63  84 NW9       29.82R                     .
+12PM EDT AUG 15 2011 CLOUDY    70  63  78 N9        29.83S                     .
+ 1PM EDT AUG 15 2011 CLOUDY    73  64  73 NW9       29.83S                     .
+ 2PM EDT AUG 15 2011 LGT RAIN  70  62  76 N15       29.82F                     .
+ 3PM EDT AUG 15 2011 CLOUDY    72  64  78 N14G22    29.82S THUNDER             .
+ 4PM EDT AUG 15 2011 TSTM      67  62  84 N8        29.83R                     .
+ 5PM EDT AUG 15 2011 PTSUNNY   72  63  73 NW9       29.83F                     .
+ 6PM EDT AUG 15 2011 LGT RAIN  74  62  66 NW10      29.84R                     .
+ 7PM EDT AUG 15 2011 PTSUNNY   69  62  78 NW7       29.85R THUNDER             .
+ 8PM EDT AUG 15 2011 MOCLDY    70  62  76 NW6       29.85S                     .
+ 9PM EDT AUG 15 2011 PTCLDY    66  62  87 W6        29.87R                     .
+10PM EDT AUG 15 2011 PTCLDY    67  62  84 NW7       29.90R                     .
+11PM EDT AUG 15 2011 PTCLDY    65  62  90 W3        29.90S                     .
+12AM EDT AUG 16 2011 PTCLDY    65  61  87 W7        29.90S                     .
+ 1AM EDT AUG 16 2011 PTCLDY    66  61  84 NW9       29.89F                     .
+ 2AM EDT AUG 16 2011 PTCLDY    65  61  87 NW9       29.91R                     .
+ 3AM EDT AUG 16 2011 PTCLDY    64  61  90 NW10      29.92R                     .
+ 4AM EDT AUG 16 2011 MOCLDY    65  60  84 NW7       29.93R                     .
+ 5AM EDT AUG 16 2011 PTCLDY    64  60  87 NW8       29.94R                     .
+ 6AM EDT AUG 16 2011 PTCLDY    63  59  87 NW9       29.95R                     .
+ 7AM EDT AUG 16 2011 PTCLDY    63  59  87 NW7       29.97R                     .
+ 8AM EDT AUG 16 2011 MOSUNNY   65  60  84 NW10      29.99R                     .
+ 9AM EDT AUG 16 2011 FAIR      68  60  75 NW7       30.01R                     .
+10AM EDT AUG 16 2011 FAIR      71  59  65 NW8       30.02R                     .
+11AM EDT AUG 16 2011 FAIR      74  57  55 NW9       30.03R                     .
+12PM EDT AUG 16 2011 MOSUNNY   77  55  46 CALM      30.03S                     .
+ 1PM EDT AUG 16 2011 MOSUNNY   80  50  34 N14       30.02F                     .
+ 2PM EDT AUG 16 2011 MOSUNNY   82  49  31 N10       30.03R                     .
+ 3PM EDT AUG 16 2011 MOSUNNY   83  50  31 N9        30.03S                     .
+ 4PM EDT AUG 16 2011 MOSUNNY   82  49  31 NW7       30.04R                     .
+ 5PM EDT AUG 16 2011 MOSUNNY   81  50  33 N9        30.04S                     .
+ 6PM EDT AUG 16 2011 FAIR      82  51  34 NW9       30.05R                     .
+ 7PM EDT AUG 16 2011 MOSUNNY   80  53  39 N10       30.06R                     .
+ 8PM EDT AUG 16 2011 PTCLDY    79  53  40 NW7       30.07R                     .
+ 9PM EDT AUG 16 2011 NOT AVBL                                                  .
+10PM EDT AUG 16 2011 CLEAR     71  56  58 CALM      30.10                      .
+11PM EDT AUG 16 2011 CLEAR     68  57  68 CALM      30.11R                     .
+12AM EDT AUG 17 2011 CLEAR     66  56  70 CALM      30.12R                     .
+ 1AM EDT AUG 17 2011 CLEAR     63  57  81 CALM      30.13R                     .
+ 2AM EDT AUG 17 2011 CLEAR     63  55  75 CALM      30.14R                     .
+ 3AM EDT AUG 17 2011 CLEAR     62  56  80 W3        30.15R                     .
+ 4AM EDT AUG 17 2011 CLEAR     60  55  83 CALM      30.15S                     .
+ 5AM EDT AUG 17 2011 CLEAR     59  55  87 CALM      30.16R                     .
+ 6AM EDT AUG 17 2011 CLEAR     60  54  80 CALM      30.16S                     .
+ 7AM EDT AUG 17 2011 CLEAR     58  54  86 CALM      30.18R                     .
+ 8AM EDT AUG 17 2011 SUNNY     61  56  83 CALM      30.18S                     .
+ 9AM EDT AUG 17 2011 SUNNY     66  59  78 CALM      30.19R                     .
+10AM EDT AUG 17 2011 SUNNY     72  58  61 CALM      30.18F                     .
+11AM EDT AUG 17 2011 SUNNY     77  57  50 CALM      30.19R                     .
+12PM EDT AUG 17 2011 MOSUNNY   79  53  40 VRB3      30.18F                     .
+ 1PM EDT AUG 17 2011 MOSUNNY   81  54  39 CALM      30.16F                     .
+ 2PM EDT AUG 17 2011 MOSUNNY   82  52  35 W7        30.14F                     .
+ 3PM EDT AUG 17 2011 PTSUNNY   82  51  34 CALM      30.12F                     .
+ 4PM EDT AUG 17 2011 PTSUNNY   84  52  33 SW8       30.11F                     .
+ 5PM EDT AUG 17 2011 PTSUNNY   84  51  31 S9G16     30.09F                     .
+ 6PM EDT AUG 17 2011 PTSUNNY   83  53  35 SW5       30.08F                     .
+ 7PM EDT AUG 17 2011 PTSUNNY   82  54  37 W5        30.08S                     .
+ 8PM EDT AUG 17 2011 MOCLDY    78  56  46 W5        30.08S                     .
+ 9PM EDT AUG 17 2011 MOCLDY    76  58  53 CALM      30.07F                     .
+10PM EDT AUG 17 2011 MOCLDY    73  58  59 CALM      30.07S                     .
+11PM EDT AUG 17 2011 MOCLDY    70  58  65 CALM      30.07S                     .
+12AM EDT AUG 18 2011 NOT AVBL                                                  .
+ 1AM EDT AUG 18 2011 MOCLDY    68  58  70 CALM      30.07                      .
+ 2AM EDT AUG 18 2011 MOCLDY    66  58  75 CALM      30.07S                     .
+ 3AM EDT AUG 18 2011 MOCLDY    64  58  80 CALM      30.06F                     .
+ 4AM EDT AUG 18 2011 PTCLDY    63  57  81 CALM      30.06S                     .
+ 5AM EDT AUG 18 2011 PTCLDY    63  57  81 CALM      30.06S                     .
+ 6AM EDT AUG 18 2011 PTCLDY    63  57  81 CALM      30.06S                     .
+ 7AM EDT AUG 18 2011 PTCLDY    62  57  83 CALM      30.06S                     .
+ 8AM EDT AUG 18 2011 MOSUNNY   64  58  80 CALM      30.07R                     .
+ 9AM EDT AUG 18 2011 MOSUNNY   69  60  73 CALM      30.08R                     .
+10AM EDT AUG 18 2011 MOSUNNY   75  59  57 S3        30.07F                     .
+11AM EDT AUG 18 2011 MOSUNNY   79  58  48 SW5       30.07S                     .
+12PM EDT AUG 18 2011 MOSUNNY   81  57  43 VRB7      30.05F                     .
+ 1PM EDT AUG 18 2011 MOSUNNY   80  56  43 VRB3      30.04F                     .
+ 2PM EDT AUG 18 2011 MOSUNNY   84  55  36 SW7       30.02F                     .
+ 3PM EDT AUG 18 2011 MOSUNNY   84  56  38 W8        30.01F                     .
+ 4PM EDT AUG 18 2011 MOSUNNY   85  57  38 W6        29.99F                     .
+ 5PM EDT AUG 18 2011 MOSUNNY   85  57  38 SW9       29.97F                     .
+ 6PM EDT AUG 18 2011 MOSUNNY   85  57  38 W9        29.96F                     .
+ 7PM EDT AUG 18 2011 MOSUNNY   83  58  42 W7        29.95F                     .
+ 8PM EDT AUG 18 2011 PTCLDY    80  59  48 W3        29.95S                     .
+ 9PM EDT AUG 18 2011 PTCLDY    78  60  53 CALM      29.96R                     .
+10PM EDT AUG 18 2011 PTCLDY    75  61  61 CALM      29.95F                     .
+11PM EDT AUG 18 2011 PTCLDY    73  61  65 CALM      29.95S                     .
+12AM EDT AUG 19 2011 PTCLDY    69  62  78 CALM      29.95S                     .
+ 1AM EDT AUG 19 2011 PTCLDY    71  62  73 CALM      29.96R                     .
+ 2AM EDT AUG 19 2011 FAIR      68  62  81 CALM      29.94F                     .
+ 3AM EDT AUG 19 2011 PTCLDY    69  61  75 CALM      29.94S                     .
+ 4AM EDT AUG 19 2011 MOCLDY    68  61  78 CALM      29.93F                     .
+ 5AM EDT AUG 19 2011 MOCLDY    66  61  84 CALM      29.92F                     .
+ 6AM EDT AUG 19 2011 MOCLDY    64  60  87 CALM      29.92S FOG                 .
+ 7AM EDT AUG 19 2011 MOCLDY    65  60  84 CALM      29.93R HAZE                .
+ 8AM EDT AUG 19 2011 PTSUNNY   67  61  81 CALM      29.95R HAZE                .
+ 9AM EDT AUG 19 2011 PTSUNNY   71  63  75 SE3       29.96R                     .
+10AM EDT AUG 19 2011 TSTM      67  63  87 S13       29.95F                     .
+11AM EDT AUG 19 2011 PTSUNNY   71  64  78 S7        29.96R                     .
+12PM EDT AUG 19 2011 MOSUNNY   75  65  70 S6        29.95F                     .
+ 1PM EDT AUG 19 2011 MOSUNNY   79  65  62 VRB3      29.94F                     .
+ 2PM EDT AUG 19 2011 PTSUNNY   83  61  47 S9        29.92F                     .
+ 3PM EDT AUG 19 2011 PTSUNNY   84  63  49 S9        29.90F HX  85              .
+ 4PM EDT AUG 19 2011 NOT AVBL                                                  .
+ 5PM EDT AUG 19 2011 TSTM      69  63  81 W3        29.95F                     .
+ 6PM EDT AUG 19 2011 CLOUDY    70  63  78 S8        29.94F                     .
+ 7PM EDT AUG 19 2011 TSTM      70  63  78 W8        29.92F                     .
+ 8PM EDT AUG 19 2011 PTCLDY    69  63  81 E3        29.92R                     .
+ 9PM EDT AUG 19 2011 PTCLDY    67  63  87 CALM      29.94R                     .
+10PM EDT AUG 19 2011 CLOUDY    67  62  84 CALM      29.96R                     .
+11PM EDT AUG 19 2011 MOCLDY    66  62  87 NE5       29.96S                     .
+12AM EDT AUG 20 2011 PTCLDY    64  61  90 SE3       29.97R FOG                 .
+ 1AM EDT AUG 20 2011 PTCLDY    64  61  90 CALM      29.97S FOG                 .
+ 2AM EDT AUG 20 2011 FAIR      63  60  90 CALM      29.97S                     .
+ 3AM EDT AUG 20 2011 PTCLDY    62  59  90 CALM      29.97S                     .
+ 4AM EDT AUG 20 2011 CLEAR     62  59  90 CALM      29.97S                     .
+ 5AM EDT AUG 20 2011 PTCLDY    62  59  90 CALM      29.98R FOG                 .
+ 6AM EDT AUG 20 2011 CLEAR     61  58  90 CALM      30.00R FOG                 .
+ 7AM EDT AUG 20 2011 CLEAR     60  57  89 CALM      30.02R FOG                 .
+ 8AM EDT AUG 20 2011 SUNNY     60  59  96 S3        30.02S FOG                 .
+ 9AM EDT AUG 20 2011 MOSUNNY   66  62  87 CALM      30.02S                     .
+10AM EDT AUG 20 2011 MOSUNNY   69  62  78 CALM      30.04R                     .
+11AM EDT AUG 20 2011 MOSUNNY   73  65  75 SE3       30.04S                     .
+12PM EDT AUG 20 2011 PTSUNNY   77  65  66 CALM      30.04S                     .
+ 1PM EDT AUG 20 2011 PTSUNNY   80  62  54 S6        30.02F                     .
+ 2PM EDT AUG 20 2011 PTSUNNY   81  60  48 CALM      30.02S                     .
+ 3PM EDT AUG 20 2011 PTSUNNY   83  58  42 SW5       30.00F                     .
+ 4PM EDT AUG 20 2011 PTSUNNY   84  55  36 W7        29.99F                     .
+ 5PM EDT AUG 20 2011 PTSUNNY   84  56  38 W8        29.99S                     .
+ 6PM EDT AUG 20 2011 CLOUDY    83  60  45 W5        29.99S                     .
+ 7PM EDT AUG 20 2011 CLOUDY    81  62  52 W3        29.97F                     .
+ 8PM EDT AUG 20 2011 CLOUDY    79  62  56 W3        29.98R                     .
+ 9PM EDT AUG 20 2011 CLOUDY    76  62  62 CALM      29.97F                     .
+10PM EDT AUG 20 2011 MOCLDY    75  63  66 CALM      29.98R                     .
+11PM EDT AUG 20 2011 CLOUDY    73  64  73 CALM      29.97F                     .
+12AM EDT AUG 21 2011 CLOUDY    72  65  78 CALM      29.97S                     .
+ 1AM EDT AUG 21 2011 CLOUDY    72  64  76 CALM      29.97S                     .
+ 2AM EDT AUG 21 2011 MOCLDY    72  64  76 CALM      29.96F                     .
+ 3AM EDT AUG 21 2011 CLOUDY    70  64  81 CALM      29.95F                     .
+ 4AM EDT AUG 21 2011 CLOUDY    70  64  81 CALM      29.93F                     .
+ 5AM EDT AUG 21 2011 CLOUDY    69  64  84 CALM      29.92F                     .
+ 6AM EDT AUG 21 2011 MOCLDY    70  64  81 CALM      29.93R                     .
+ 7AM EDT AUG 21 2011 MOCLDY    70  64  81 CALM      29.93S                     .
+ 8AM EDT AUG 21 2011 PTSUNNY   72  65  78 CALM      29.95R                     .
+ 9AM EDT AUG 21 2011 PTSUNNY   73  65  75 CALM      29.94F                     .
+10AM EDT AUG 21 2011 PTSUNNY   75  67  76 W3        29.94S                     .
+11AM EDT AUG 21 2011 CLOUDY    78  67  68 NW3       29.94S                     .
+12PM EDT AUG 21 2011 CLOUDY    78  66  66 SW7       29.95R                     .
+ 1PM EDT AUG 21 2011 CLOUDY    78  66  66 SW13      29.90F THUNDER             .
+ 2PM EDT AUG 21 2011 PTSUNNY   76  69  79 SW8       29.88F HAZE                .
+ 3PM EDT AUG 21 2011 PTSUNNY   80  67  64 W9        29.86F                     .
+ 4PM EDT AUG 21 2011 CLOUDY    72  63  73 NW9       29.88R                     .
+ 5PM EDT AUG 21 2011 CLOUDY    76  61  59 W9G16     29.86F                     .
+ 6PM EDT AUG 21 2011 PTSUNNY   77  65  66 W8        29.87R                     .
+ 7PM EDT AUG 21 2011 PTSUNNY   77  65  66 W10       29.86F                     .
+ 8PM EDT AUG 21 2011 PTCLDY    75  65  70 W9        29.87R                     .
+ 9PM EDT AUG 21 2011 LGT RAIN  72  61  68 N13       29.88R                     .
+10PM EDT AUG 21 2011 PTCLDY    68  62  81 NW6       29.91R                     .
+11PM EDT AUG 21 2011 MOCLDY    66  63  90 SW5       29.93R                     .
+12AM EDT AUG 22 2011 PTCLDY    64  60  87 W3        29.94R                     .
+ 1AM EDT AUG 22 2011 PTCLDY    63  60  90 NW12      29.94S                     .
+ 2AM EDT AUG 22 2011 FAIR      63  59  87 NW6       29.95R                     .
+ 3AM EDT AUG 22 2011 CLEAR     60  58  92 W6        29.94F                     .
+ 4AM EDT AUG 22 2011 CLEAR     60  57  89 W5        29.96R                     .
+ 5AM EDT AUG 22 2011 NOT AVBL                                                  .
+ 6AM EDT AUG 22 2011 CLEAR     58  55  90 W5        29.97                      .
+ 7AM EDT AUG 22 2011 PTCLDY    58  55  90 W3        29.99R                     .
+ 8AM EDT AUG 22 2011 MOSUNNY   60  56  86 W5        30.01R                     .
+ 9AM EDT AUG 22 2011 FAIR      64  56  75 NW9       30.03R                     .
+10AM EDT AUG 22 2011 MOSUNNY   67  52  58 N15       30.04R                     .
+11AM EDT AUG 22 2011 MOSUNNY   68  48  48 NW16G23   30.06R                     .
+12PM EDT AUG 22 2011 PTSUNNY   71  47  42 NW16      30.06S                     .
+ 1PM EDT AUG 22 2011 PTSUNNY   71  45  39 NW13G23   30.06S                     .
+ 2PM EDT AUG 22 2011 PTSUNNY   72  46  39 NW10G21   30.04F                     .
+ 3PM EDT AUG 22 2011 CLOUDY    73  45  36 NW10      30.03F                     .
+ 4PM EDT AUG 22 2011 PTSUNNY   75  45  34 NW15G21   30.03S                     .
+ 5PM EDT AUG 22 2011 PTSUNNY   75  45  34 NW16      30.03S                     .
+ 6PM EDT AUG 22 2011 PTSUNNY   73  44  35 N14       30.03S                     .
+ 7PM EDT AUG 22 2011 PTSUNNY   72  44  36 NW10      30.03S                     .
+ 8PM EDT AUG 22 2011 MOCLDY    70  45  40 NW8       30.02F                     .
+ 9PM EDT AUG 22 2011 MOCLDY    67  46  47 NW6       30.03R                     .
+10PM EDT AUG 22 2011 PTCLDY    62  49  62 NW3       30.05R                     .
+11PM EDT AUG 22 2011 CLEAR     62  48  60 CALM      30.06R                     .
+12AM EDT AUG 23 2011 PTCLDY    59  49  69 CALM      30.07R                     .
+ 1AM EDT AUG 23 2011 PTCLDY    57  49  74 CALM      30.07S                     .
+ 2AM EDT AUG 23 2011 FAIR      55  49  80 CALM      30.07S                     .
+ 3AM EDT AUG 23 2011 MOCLDY    54  48  80 CALM      30.06F                     .
+ 4AM EDT AUG 23 2011 PTCLDY    53  48  83 CALM      30.06S                     .
+ 5AM EDT AUG 23 2011 NOT AVBL                                                  .
+ 6AM EDT AUG 23 2011 PTCLDY    52  48  86 CALM      30.07                      .
+ 7AM EDT AUG 23 2011 MOCLDY    53  48  83 CALM      30.08R                     .
+ 8AM EDT AUG 23 2011 PTSUNNY   55  50  83 CALM      30.09R                     .
+ 9AM EDT AUG 23 2011 MOSUNNY   61  51  70 S5        30.10R                     .
+10AM EDT AUG 23 2011 MOSUNNY   66  49  54 SE6       30.09F                     .
+11AM EDT AUG 23 2011 PTSUNNY   70  48  45 S7        30.09S                     .
+12PM EDT AUG 23 2011 PTSUNNY   73  48  41 S7        30.09S                     .
+ 1PM EDT AUG 23 2011 PTSUNNY   75  51  43 S8        30.09S                     .
+ 2PM EDT AUG 23 2011 MOSUNNY   76  50  40 VRB7      30.06F                     .
+ 3PM EDT AUG 23 2011 PTSUNNY   77  52  41 VRB3      30.06S                     .
+ 4PM EDT AUG 23 2011 PTSUNNY   78  52  40 W8        30.04F                     .
+ 5PM EDT AUG 23 2011 PTSUNNY   79  52  38 SW8       30.03F                     .
+ 6PM EDT AUG 23 2011 PTSUNNY   77  52  41 S8        30.03S                     .
+ 7PM EDT AUG 23 2011 PTSUNNY   77  53  43 SW7       30.02F                     .
+ 8PM EDT AUG 23 2011 MOCLDY    74  55  51 S5        30.01F                     .
+ 9PM EDT AUG 23 2011 MOCLDY    70  56  61 S5        30.01S                     .
+10PM EDT AUG 23 2011 MOCLDY    69  56  62 S5        30.02R                     .
+11PM EDT AUG 23 2011 PTCLDY    67  55  65 S3        30.01F                     .
+12AM EDT AUG 24 2011 PTCLDY    66  55  67 S3        30.01S                     .
+ 1AM EDT AUG 24 2011 MOCLDY    65  55  70 S3        30.01S                     .
+ 2AM EDT AUG 24 2011 MOCLDY    65  55  70 SE3       29.99F                     .
+ 3AM EDT AUG 24 2011 MOCLDY    63  55  75 SE6       29.97F                     .
+ 4AM EDT AUG 24 2011 MOCLDY    63  55  75 S3        29.96F                     .
+ 5AM EDT AUG 24 2011 MOCLDY    63  54  72 CALM      29.97R                     .
+ 6AM EDT AUG 24 2011 MOCLDY    62  54  74 S3        29.99R                     .
+ 7AM EDT AUG 24 2011 CLOUDY    62  54  74 S5        29.99S                     .
+ 8AM EDT AUG 24 2011 CLOUDY    64  54  69 S3        30.00R                     .
+ 9AM EDT AUG 24 2011 LGT RAIN  64  55  72 S13       29.93F                     .
+10AM EDT AUG 24 2011 CLOUDY    64  55  72 S10       29.89F                     .
+11AM EDT AUG 24 2011 CLOUDY    66  56  70 SW9       29.92R                     .
+12PM EDT AUG 24 2011 CLOUDY    69  56  62 S8        29.91F                     .
+ 1PM EDT AUG 24 2011 CLOUDY    72  56  57 SW12      29.90F                     .
+ 2PM EDT AUG 24 2011 PTSUNNY   77  57  50 S14G21    29.89F                     .
+ 3PM EDT AUG 24 2011 PTSUNNY   80  59  48 SW14G24   29.87F                     .
+ 4PM EDT AUG 24 2011 NOT AVBL                                                  .
+ 5PM EDT AUG 24 2011 MOSUNNY   81  62  52 SW17      29.82                      .
+ 6PM EDT AUG 24 2011 MOSUNNY   81  63  54 S14       29.82S                     .
+ 7PM EDT AUG 24 2011 MOSUNNY   80  64  58 S9G21     29.82S                     .
+ 8PM EDT AUG 24 2011 PTCLDY    78  65  63 S8        29.82S                     .
+ 9PM EDT AUG 24 2011 PTCLDY    75  64  68 S7        29.81F                     .
+10PM EDT AUG 24 2011 PTCLDY    74  64  71 S7        29.80F                     .
+11PM EDT AUG 24 2011 MOCLDY    75  65  70 S7        29.78F                     .
+12AM EDT AUG 25 2011 MOCLDY    77  65  66 S12G20    29.75F                     .
+ 1AM EDT AUG 25 2011 MOCLDY    78  66  66 SW15      29.79R                     .
+ 2AM EDT AUG 25 2011 CLOUDY    78  65  63 SW13G22   29.79S                     .
+ 3AM EDT AUG 25 2011 CLOUDY    78  65  63 SW9       29.78F                     .
+ 4AM EDT AUG 25 2011 CLOUDY    77  64  65 CALM      29.77F THUNDER             .
+ 5AM EDT AUG 25 2011 TSTM      70  67  90 NW6       29.80R FOG                 .
+ 6AM EDT AUG 25 2011 TSTM      70  68  93 S13       29.80S FOG                 .
+ 7AM EDT AUG 25 2011 TSTM      70  67  90 S8        29.81R FOG                 .
+ 8AM EDT AUG 25 2011 CLOUDY    70  67  90 S5        29.83R                     .
+ 9AM EDT AUG 25 2011 CLOUDY    71  68  90 S6        29.84R                     .
+10AM EDT AUG 25 2011 NOT AVBL                                                  .
+11AM EDT AUG 25 2011 CLOUDY    72  68  87 SW10G17   29.86R                     .
+12PM EDT AUG 25 2011 PTSUNNY   75  68  78 SW10G17   29.88R                     .
+ 1PM EDT AUG 25 2011 PTSUNNY   77  67  71 W8        29.89R                     .
+ 2PM EDT AUG 25 2011 PTSUNNY   82  62  50 W13       29.89S                     .
+ 3PM EDT AUG 25 2011 MOSUNNY   82  60  47 NW15      29.90S                     .
+ 4PM EDT AUG 25 2011 MOSUNNY   83  58  42 NW15      29.91R                     .
+ 5PM EDT AUG 25 2011 MOSUNNY   82  58  43 NW18      29.91S                     .
+ 6PM EDT AUG 25 2011 MOSUNNY   81  59  47 NW15      29.92R                     .
+ 7PM EDT AUG 25 2011 MOSUNNY   79  59  50 NW13      29.93R                     .
+ 8PM EDT AUG 25 2011 PTCLDY    75  60  59 NW10      29.94R                     .
+ 9PM EDT AUG 25 2011 PTCLDY    73  60  63 N7        29.98R                     .
+10PM EDT AUG 25 2011 PTCLDY    71  59  65 N6        30.02R                     .
+11PM EDT AUG 25 2011 CLEAR     70  60  70 N6        30.03R                     .
+12AM EDT AUG 26 2011 CLEAR     68  60  75 N6        30.03S                     .
+ 1AM EDT AUG 26 2011 CLEAR     67  60  78 N3        30.03S                     .
+ 2AM EDT AUG 26 2011 FAIR      66  60  81 N3        30.03S                     .
+ 3AM EDT AUG 26 2011 CLEAR     63  59  87 CALM      30.03S                     .
+ 4AM EDT AUG 26 2011 CLEAR     63  59  87 CALM      30.04R                     .
+ 5AM EDT AUG 26 2011 CLEAR     63  60  90 CALM      30.04S                     .
+ 6AM EDT AUG 26 2011 CLEAR     63  59  87 VRB5      30.03F                     .
+ 7AM EDT AUG 26 2011 PTCLDY    59  57  93 CALM      30.04R                     .
+ 8AM EDT AUG 26 2011 MOSUNNY   63  59  87 NE5       30.05R                     .
+ 9AM EDT AUG 26 2011 MOSUNNY   67  61  81 NE6       30.06R                     .
+10AM EDT AUG 26 2011 MOSUNNY   69  61  75 NE6       30.06S                     .
+11AM EDT AUG 26 2011 MOSUNNY   73  58  59 NE5       30.06S                     .
+12PM EDT AUG 26 2011 PTSUNNY   74  58  57 CALM      30.06S                     .
+ 1PM EDT AUG 26 2011 PTSUNNY   75  58  55 CALM      30.04F                     .
+ 2PM EDT AUG 26 2011 PTSUNNY   76  59  55 NW9       30.03F                     .
+ 3PM EDT AUG 26 2011 PTSUNNY   77  58  51 N8        30.02F                     .
+ 4PM EDT AUG 26 2011 MOSUNNY   78  58  49 N5        30.00F                     .
+ 5PM EDT AUG 26 2011 MOSUNNY   77  58  51 CALM      29.98F                     .
+ 6PM EDT AUG 26 2011 MOSUNNY   78  59  51 N6        29.97F                     .
+ 7PM EDT AUG 26 2011 MOSUNNY   77  58  51 N8        29.96F                     .
+ 8PM EDT AUG 26 2011 PTCLDY    75  59  57 N9        29.95F                     .
+ 9PM EDT AUG 26 2011 PTCLDY    73  59  61 N7        29.96R                     .
+10PM EDT AUG 26 2011 PTCLDY    71  60  68 N8        29.96S                     .
+11PM EDT AUG 26 2011 PTCLDY    69  61  75 N8        29.96S                     .
+12AM EDT AUG 27 2011 PTCLDY    68  60  75 N7        29.95F                     .
+ 1AM EDT AUG 27 2011 MOCLDY    68  60  75 N9        29.94F                     .
+ 2AM EDT AUG 27 2011 FAIR      67  59  75 N8        29.92F                     .
+ 3AM EDT AUG 27 2011 MOCLDY    66  59  78 N5        29.91F                     .
+ 4AM EDT AUG 27 2011 PTCLDY    65  59  81 NW5       29.89F                     .
+ 5AM EDT AUG 27 2011 MOCLDY    64  59  83 NE3       29.88F                     .
+ 6AM EDT AUG 27 2011 MOCLDY    64  60  87 N3        29.88S                     .
+ 7AM EDT AUG 27 2011 MOCLDY    64  59  83 N7        29.89R                     .
+ 8AM EDT AUG 27 2011 CLOUDY    64  59  83 N7        29.88F                     .
+ 9AM EDT AUG 27 2011 PTSUNNY   67  60  78 N8        29.88S                     .
+10AM EDT AUG 27 2011 MOSUNNY   69  61  75 NE6       29.88S                     .
+11AM EDT AUG 27 2011 PTSUNNY   72  63  73 VRB3      29.88S                     .
+12PM EDT AUG 27 2011 PTSUNNY   74  64  71 E5        29.87F                     .
+ 1PM EDT AUG 27 2011 PTSUNNY   78  65  63 NE9       29.84F                     .
+ 2PM EDT AUG 27 2011 PTSUNNY   80  66  62 N12       29.82F                     .
+ 3PM EDT AUG 27 2011 PTSUNNY   82  65  56 N14       29.80F                     .
+ 4PM EDT AUG 27 2011 PTSUNNY   84  64  50 N12       29.76F HX  85              .
+ 5PM EDT AUG 27 2011 PTSUNNY   83  63  50 N13       29.74F                     .
+ 6PM EDT AUG 27 2011 PTSUNNY   83  63  50 N16G26    29.74S                     .
+ 7PM EDT AUG 27 2011 PTSUNNY   80  63  55 N15       29.75R                     .
+ 8PM EDT AUG 27 2011 MOCLDY    78  64  61 N17       29.75S                     .
+ 9PM EDT AUG 27 2011 MOCLDY    74  63  68 N16       29.75S                     .
+10PM EDT AUG 27 2011 CLOUDY    72  61  68 N15G24    29.74F                     .
+11PM EDT AUG 27 2011 CLOUDY    71  59  65 N17G25    29.72F                     .
+12AM EDT AUG 28 2011 MOCLDY    70  59  68 N15       29.71F                     .
+ 1AM EDT AUG 28 2011 MOCLDY    68  58  70 N14       29.69F                     .
+ 2AM EDT AUG 28 2011 CLOUDY    67  60  78 N14       29.67F                     .
+ 3AM EDT AUG 28 2011 CLOUDY    67  60  78 N15       29.64F                     .
+ 4AM EDT AUG 28 2011 CLOUDY    66  61  84 N13       29.63F                     .
+ 5AM EDT AUG 28 2011 CLOUDY    67  61  81 N16G23    29.62S                     .
+ 6AM EDT AUG 28 2011 CLOUDY    67  60  78 N16G25    29.62S                     .
+ 7AM EDT AUG 28 2011 CLOUDY    66  60  81 NW15      29.63R                     .
+ 8AM EDT AUG 28 2011 CLOUDY    66  61  82 NW14G24   29.64R                     .
+ 9AM EDT AUG 28 2011 PTSUNNY   67  60  78 NW17      29.65R                     .
+10AM EDT AUG 28 2011 MOSUNNY   71  60  68 NW20G29   29.65F                     .
+11AM EDT AUG 28 2011 PTSUNNY   73  59  60 N18G29    29.67R                     .
+12PM EDT AUG 28 2011 PTSUNNY   76  58  53 N20G26    29.69R                     .
+ 1PM EDT AUG 28 2011 PTSUNNY   78  57  48 N20G25    29.69S                     .
+ 2PM EDT AUG 28 2011 MOSUNNY   79  58  48 NW17G23   29.70R                     .
+ 3PM EDT AUG 28 2011 PTSUNNY   78  57  48 N13       29.71R                     .
+ 4PM EDT AUG 28 2011 MOSUNNY   76  56  49 NW12      29.72R                     .
+ 5PM EDT AUG 28 2011 PTSUNNY   76  56  49 N20       29.74R                     .
+ 6PM EDT AUG 28 2011 PTSUNNY   76  53  44 N16       29.76R                     .
+ 7PM EDT AUG 28 2011 PTSUNNY   74  54  49 N12       29.79R                     .
+ 8PM EDT AUG 28 2011 PTCLDY    72  53  51 N10       29.81R                     .
+ 9PM EDT AUG 28 2011 PTCLDY    70  53  54 N9        29.82R                     .
+10PM EDT AUG 28 2011 PTCLDY    67  54  63 NW6       29.85R                     .
+11PM EDT AUG 28 2011 PTCLDY    65  54  67 NW5       29.86R                     .
+12AM EDT AUG 29 2011 CLEAR     63  55  75 CALM      29.87R                     .
+ 1AM EDT AUG 29 2011 CLEAR     61  54  77 CALM      29.88R                     .
+ 2AM EDT AUG 29 2011 FAIR      59  54  83 CALM      29.88S                     .
+ 3AM EDT AUG 29 2011 CLEAR     59  53  80 CALM      29.89R                     .
+ 4AM EDT AUG 29 2011 CLEAR     58  53  84 CALM      29.91R                     .
+ 5AM EDT AUG 29 2011 MOCLDY    56  51  84 CALM      29.92R                     .
+ 6AM EDT AUG 29 2011 CLOUDY    58  54  86 CALM      29.94R                     .
+ 7AM EDT AUG 29 2011 CLOUDY    58  53  84 N3        29.97R                     .
+ 8AM EDT AUG 29 2011 CLOUDY    59  52  77 N5        30.00R                     .
+ 9AM EDT AUG 29 2011 CLOUDY    60  52  74 NE3       30.01R                     .
+10AM EDT AUG 29 2011 CLOUDY    63  52  67 E5        30.02R                     .
+11AM EDT AUG 29 2011 CLOUDY    67  50  54 N7        30.04R                     .
+12PM EDT AUG 29 2011 CLOUDY    69  50  50 N5        30.05R                     .
+ 1PM EDT AUG 29 2011 PTSUNNY   71  47  42 N10G18    30.05S                     .
+ 2PM EDT AUG 29 2011 PTSUNNY   74  43  32 NE9       30.04F                     .
+ 3PM EDT AUG 29 2011 PTSUNNY   74  43  32 E8        30.04S                     .
+ 4PM EDT AUG 29 2011 MOSUNNY   75  41  29 NE5       30.03F                     .
+ 5PM EDT AUG 29 2011 MOSUNNY   75  44  33 N5        30.03S                     .
+ 6PM EDT AUG 29 2011 NOT AVBL                                                  .
+ 7PM EDT AUG 29 2011 MOSUNNY   73  45  36 E3        30.03                      .
+ 8PM EDT AUG 29 2011 PTCLDY    71  46  40 E3        30.04R                     .
+ 9PM EDT AUG 29 2011 PTCLDY    67  49  52 CALM      30.06R                     .
+10PM EDT AUG 29 2011 PTCLDY    62  50  64 CALM      30.07R                     .
+11PM EDT AUG 29 2011 PTCLDY    60  49  66 CALM      30.08R                     .
+12AM EDT AUG 30 2011 PTCLDY    60  48  64 CALM      30.09R                     .
+ 1AM EDT AUG 30 2011 CLEAR     57  49  74 CALM      30.10R                     .
+ 2AM EDT AUG 30 2011 FAIR      54  49  83 CALM      30.11R                     .
+ 3AM EDT AUG 30 2011 CLEAR     54  49  83 CALM      30.10F                     .
+ 4AM EDT AUG 30 2011 CLEAR     54  49  83 CALM      30.11R                     .
+ 5AM EDT AUG 30 2011 CLEAR     52  48  86 CALM      30.12R                     .
+ 6AM EDT AUG 30 2011 CLEAR     52  48  86 CALM      30.12S                     .
+ 7AM EDT AUG 30 2011 PTCLDY    51  47  86 CALM      30.14R                     .
+ 8AM EDT AUG 30 2011 MOSUNNY   55  49  80 CALM      30.16R                     .
+ 9AM EDT AUG 30 2011 MOSUNNY   61  54  77 CALM      30.17R                     .
+10AM EDT AUG 30 2011 MOSUNNY   67  53  61 SE5       30.17S                     .
+11AM EDT AUG 30 2011 MOSUNNY   72  50  45 E6        30.18R                     .
+12PM EDT AUG 30 2011 MOSUNNY   74  44  34 SE8       30.18S                     .
+ 1PM EDT AUG 30 2011 MOSUNNY   75  44  33 S6        30.16F                     .
+ 2PM EDT AUG 30 2011 MOSUNNY   79  45  29 N7        30.15F                     .
+ 3PM EDT AUG 30 2011 MOSUNNY   78  43  28 VRB5      30.14F                     .
+ 4PM EDT AUG 30 2011 MOSUNNY   79  43  27 VRB3      30.12F                     .
+ 5PM EDT AUG 30 2011 PTSUNNY   81  43  26 CALM      30.11F                     .
+ 6PM EDT AUG 30 2011 PTSUNNY   79  45  29 E7        30.11S                     .
+ 7PM EDT AUG 30 2011 CLOUDY    77  47  34 E5        30.11S                     .
+ 8PM EDT AUG 30 2011 CLOUDY    74  47  38 E6        30.11S                     .
+ 9PM EDT AUG 30 2011 CLOUDY    72  48  42 CALM      30.13R                     .
+10PM EDT AUG 30 2011 MOCLDY    69  49  48 E3        30.13S                     .
+11PM EDT AUG 30 2011 CLOUDY    65  52  62 CALM      30.13S                     .
+12AM EDT AUG 31 2011 CLOUDY    66  50  56 CALM      30.15R                     .
+ 1AM EDT AUG 31 2011 MOCLDY    62  52  69 CALM      30.15S                     .
+ 2AM EDT AUG 31 2011 MOCLDY    64  52  64 CALM      30.15S                     .
+ 3AM EDT AUG 31 2011 CLOUDY    62  53  72 CALM      30.15S                     .
+ 4AM EDT AUG 31 2011 CLOUDY    60  53  77 CALM      30.14F                     .
+ 5AM EDT AUG 31 2011 CLOUDY    62  55  77 E3        30.14S                     .
+ 6AM EDT AUG 31 2011 CLOUDY    61  54  77 CALM      30.14S                     .
+ 7AM EDT AUG 31 2011 CLOUDY    60  55  83 CALM      30.16R                     .
+ 8AM EDT AUG 31 2011 CLOUDY    60  55  83 CALM      30.17R                     .
+ 9AM EDT AUG 31 2011 CLOUDY    66  57  72 CALM      30.18R                     .
+10AM EDT AUG 31 2011 PTSUNNY   70  59  68 SE5       30.18S                     .
+11AM EDT AUG 31 2011 PTSUNNY   73  60  63 S7        30.19R                     .
+12PM EDT AUG 31 2011 PTSUNNY   78  60  53 SW3       30.17F                     .
+ 1PM EDT AUG 31 2011 PTSUNNY   81  61  50 CALM      30.16F                     .
+ 2PM EDT AUG 31 2011 PTSUNNY   83  61  47 S7        30.14F                     .
+ 3PM EDT AUG 31 2011 PTSUNNY   85  59  41 VRB5      30.12F                     .
+ 4PM EDT AUG 31 2011 PTSUNNY   84  60  44 S6        30.11F                     .
+ 5PM EDT AUG 31 2011 NOT AVBL                                                  .
+ 6PM EDT AUG 31 2011 CLOUDY    82  62  50 SW3       30.11                      .
+ 7PM EDT AUG 31 2011 CLOUDY    81  63  54 SW3       30.11S                     .

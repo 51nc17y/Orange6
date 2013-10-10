@@ -1,0 +1,765 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 7PM EST NOV 30 2012 CLOUDY    49  28  44 S3        30.20R                   DEC
+ 8PM EST NOV 30 2012 CLOUDY    48  28  46 S5        30.20S                   DEC
+ 9PM EST NOV 30 2012 CLOUDY    47  29  49 CALM      30.21R                   DEC
+10PM EST NOV 30 2012 CLOUDY    46  29  51 CALM      30.22R                   DEC
+11PM EST NOV 30 2012 MOCLDY    44  29  55 CALM      30.23R                   DEC
+12AM EST DEC 01 2012 PTCLDY    42  29  59 CALM      30.23S                   DEC
+ 1AM EST DEC 01 2012 PTCLDY    39  29  67 CALM      30.23S                   DEC
+ 2AM EST DEC 01 2012 CLEAR     37  28  70 CALM      30.23S                     .
+ 3AM EST DEC 01 2012 CLEAR     35  28  75 CALM      30.24R                     .
+ 4AM EST DEC 01 2012 PTCLDY    37  29  72 CALM      30.23F                     .
+ 5AM EST DEC 01 2012 CLOUDY    36  28  73 CALM      30.26R                     .
+ 6AM EST DEC 01 2012 MOCLDY    34  28  79 CALM      30.28R                     .
+ 7AM EST DEC 01 2012 MOCLDY    34  28  79 CALM      30.28S                     .
+ 8AM EST DEC 01 2012 PTCLDY    35  29  78 CALM      30.29R                     .
+ 9AM EST DEC 01 2012 MOSUNNY   38  31  76 CALM      30.30R                     .
+10AM EST DEC 01 2012 MOSUNNY   45  33  63 CALM      30.31R                     .
+11AM EST DEC 01 2012 MOSUNNY   50  35  56 S6        30.30F                     .
+12PM EST DEC 01 2012 CLOUDY    54  37  52 S8        30.28F                     .
+ 1PM EST DEC 01 2012 CLOUDY    55  37  50 SW10      30.26F                     .
+ 2PM EST DEC 01 2012 CLOUDY    56  37  49 SW7       30.24F                     .
+ 3PM EST DEC 01 2012 PTSUNNY   57  38  48 S7        30.24S                     .
+ 4PM EST DEC 01 2012 PTCLDY    58  38  47 S9        30.23F                     .
+ 5PM EST DEC 01 2012 MOCLDY    56  39  53 S3        30.23S                     .
+ 6PM EST DEC 01 2012 MOCLDY    53  38  56 S3        30.24R                     .
+ 7PM EST DEC 01 2012 MOCLDY    50  38  63 S5        30.24S                     .
+ 8PM EST DEC 01 2012 MOCLDY    49  37  63 S3        30.24S                     .
+ 9PM EST DEC 01 2012 MOCLDY    49  37  63 S5        30.24S                     .
+10PM EST DEC 01 2012 MOCLDY    48  37  65 S3        30.23F                     .
+11PM EST DEC 01 2012 NOT AVBL                                                  .
+12AM EST DEC 02 2012 CLOUDY    45  37  73 SE3       30.21                      .
+ 1AM EST DEC 02 2012 CLOUDY    45  37  73 SE3       30.20F                     .
+ 2AM EST DEC 02 2012 CLOUDY    46  38  73 S5        30.19F                     .
+ 3AM EST DEC 02 2012 CLOUDY    48  38  68 S6        30.20R                     .
+ 4AM EST DEC 02 2012 CLOUDY    50  39  66 S6        30.17F                     .
+ 5AM EST DEC 02 2012 CLOUDY    49  39  68 S7        30.15F                     .
+ 6AM EST DEC 02 2012 CLOUDY    49  40  71 S7        30.14F                     .
+ 7AM EST DEC 02 2012 CLOUDY    49  40  71 S7        30.14S                     .
+ 8AM EST DEC 02 2012 MOCLDY    50  41  71 S7        30.11F                     .
+ 9AM EST DEC 02 2012 CLOUDY    55  41  59 SW12G23   30.12R                     .
+10AM EST DEC 02 2012 PTSUNNY   58  41  53 SW16G24   30.10F                     .
+11AM EST DEC 02 2012 CLOUDY    59  42  53 SW16G25   30.10S                     .
+12PM EST DEC 02 2012 LGT RAIN  55  46  71 SW10      30.07F                     .
+ 1PM EST DEC 02 2012 LGT RAIN  55  47  74 SW9G18    30.06F                     .
+ 2PM EST DEC 02 2012 DRIZZLE   53  49  86 SW15      30.04F                     .
+ 3PM EST DEC 02 2012 DRIZZLE   54  50  87 SW13G21   30.04S FOG                 .
+ 4PM EST DEC 02 2012 DRIZZLE   53  50  89 SW10      30.05R                     .
+ 5PM EST DEC 02 2012 DRIZZLE   53  51  93 SW12      30.06S FOG                 .
+ 6PM EST DEC 02 2012 CLOUDY    53  51  93 SW9       30.07R                     .
+ 7PM EST DEC 02 2012 CLOUDY    54  51  90 SW12      30.08R                     .
+ 8PM EST DEC 02 2012 DRIZZLE   54  52  93 SW7       30.10R                     .
+ 9PM EST DEC 02 2012 CLOUDY    54  52  93 SW9       30.12R                     .
+10PM EST DEC 02 2012 CLOUDY    54  53  97 W7        30.13R                     .
+11PM EST DEC 02 2012 CLOUDY    54  53  97 W6        30.12F                     .
+12AM EST DEC 03 2012 CLOUDY    55  53  93 SW6       30.13R                     .
+ 1AM EST DEC 03 2012 FOG       54  53  97 SW7       30.14R VSB 1/2             .
+ 2AM EST DEC 03 2012 FOG       54  53  97 SW5       30.15R VSB 1/4             .
+ 3AM EST DEC 03 2012 FOG       54  53  97 CALM      30.16R VSB 1/2             .
+ 4AM EST DEC 03 2012 DRZL/FOG  54  53  97 SW3       30.16S VSB 1/2             .
+ 5AM EST DEC 03 2012 CLOUDY    54  53  97 SW3       30.16S FOG                 .
+ 6AM EST DEC 03 2012 CLOUDY    54  53  97 CALM      30.17S FOG                 .
+ 7AM EST DEC 03 2012 CLOUDY    54  53  97 CALM      30.19R FOG                 .
+ 8AM EST DEC 03 2012 FOG       53  53 100 CALM      30.21R VSB 1/4             .
+ 9AM EST DEC 03 2012 FOG       54  54 100 CALM      30.21S VSB 1/8             .
+10AM EST DEC 03 2012 CLOUDY    55  54  96 VRB5      30.21S FOG                 .
+11AM EST DEC 03 2012 CLOUDY    58  54  86 S9        30.20S                     .
+12PM EST DEC 03 2012 CLOUDY    59  55  87 S5        30.18F                     .
+ 1PM EST DEC 03 2012 CLOUDY    58  55  90 S8        30.16F FOG                 .
+ 2PM EST DEC 03 2012 CLOUDY    60  55  83 SW8       30.15F                     .
+ 3PM EST DEC 03 2012 CLOUDY    60  55  83 S5        30.15S                     .
+ 4PM EST DEC 03 2012 CLOUDY    60  55  83 S5        30.14F                     .
+ 5PM EST DEC 03 2012 CLOUDY    60  54  80 S6        30.15R                     .
+ 6PM EST DEC 03 2012 CLOUDY    60  54  80 S5        30.16R                     .
+ 7PM EST DEC 03 2012 CLOUDY    58  55  90 S6        30.16S                     .
+ 8PM EST DEC 03 2012 CLOUDY    57  55  93 S3        30.16S                     .
+ 9PM EST DEC 03 2012 CLOUDY    57  55  93 CALM      30.16S                     .
+10PM EST DEC 03 2012 PTCLDY    55  54  96 S5        30.15F                     .
+11PM EST DEC 03 2012 PTCLDY    55  53  93 S5        30.14F                     .
+12AM EST DEC 04 2012 MOCLDY    54  52  93 S5        30.14S                     .
+ 1AM EST DEC 04 2012 MOCLDY    54  52  93 S5        30.13F                     .
+ 2AM EST DEC 04 2012 MOCLDY    54  52  93 S6        30.13S                     .
+ 3AM EST DEC 04 2012 MOCLDY    54  51  90 S5        30.14R                     .
+ 4AM EST DEC 04 2012 MOCLDY    55  51  86 S6        30.14S                     .
+ 5AM EST DEC 04 2012 CLOUDY    56  50  80 S6        30.13F                     .
+ 6AM EST DEC 04 2012 MOCLDY    54  49  83 S6        30.13S                     .
+ 7AM EST DEC 04 2012 MOCLDY    55  48  77 S7        30.13S                     .
+ 8AM EST DEC 04 2012 PTCLDY    55  48  77 S7        30.13S                     .
+ 9AM EST DEC 04 2012 MOSUNNY   56  49  77 S7        30.13S                     .
+10AM EST DEC 04 2012 PTSUNNY   60  49  66 SW9       30.13S                     .
+11AM EST DEC 04 2012 PTSUNNY   63  49  60 SW12      30.10F                     .
+12PM EST DEC 04 2012 PTSUNNY   64  50  60 SW16G23   30.07F                     .
+ 1PM EST DEC 04 2012 CLOUDY    65  51  60 SW10G22   30.04F                     .
+ 2PM EST DEC 04 2012 LGT RAIN  63  52  67 SW14      30.02F                     .
+ 3PM EST DEC 04 2012 LGT RAIN  61  54  77 SW13      30.01F                     .
+ 4PM EST DEC 04 2012 CLOUDY    61  54  77 SW16      30.01S                     .
+ 5PM EST DEC 04 2012 CLOUDY    60  54  80 SW15G28   30.00F                     .
+ 6PM EST DEC 04 2012 CLOUDY    60  54  80 S14G21    29.99F                     .
+ 7PM EST DEC 04 2012 CLOUDY    61  54  77 SW14G23   29.98F                     .
+ 8PM EST DEC 04 2012 RAIN      58  56  93 NW18G24   30.00R FOG                 .
+ 9PM EST DEC 04 2012 LGT RAIN  51  49  92 NW17G25   30.05R                     .
+10PM EST DEC 04 2012 LGT RAIN  47  42  83 NW10      30.08R                     .
+11PM EST DEC 04 2012 LGT RAIN  45  43  93 W6        30.09R                     .
+12AM EST DEC 05 2012 CLOUDY    45  42  89 W6        30.11R                     .
+ 1AM EST DEC 05 2012 CLOUDY    43  40  89 CALM      30.13R                     .
+ 2AM EST DEC 05 2012 PTCLDY    41  39  93 W3        30.13S                     .
+ 3AM EST DEC 05 2012 PTCLDY    40  38  93 CALM      30.14R                     .
+ 4AM EST DEC 05 2012 MOCLDY    40  38  93 SW3       30.15R                     .
+ 5AM EST DEC 05 2012 PTCLDY    39  37  92 SW5       30.16R                     .
+ 6AM EST DEC 05 2012 PTCLDY    38  36  92 W6        30.17R                     .
+ 7AM EST DEC 05 2012 PTCLDY    38  35  89 CALM      30.19R                     .
+ 8AM EST DEC 05 2012 MOCLDY    35  34  96 W3        30.20R                     .
+ 9AM EST DEC 05 2012 PTSUNNY   38  35  89 W7        30.23R                     .
+10AM EST DEC 05 2012 PTSUNNY   39  34  82 NW12      30.25R                     .
+11AM EST DEC 05 2012 PTSUNNY   41  32  70 NW16      30.25S                     .
+12PM EST DEC 05 2012 CLOUDY    40  31  70 NW9       30.25S                     .
+ 1PM EST DEC 05 2012 PTSUNNY   41  28  60 NW15      30.25S                     .
+ 2PM EST DEC 05 2012 PTSUNNY   39  26  59 NW12      30.26R                     .
+ 3PM EST DEC 05 2012 PTSUNNY   37  24  59 NW14      30.28R                     .
+ 4PM EST DEC 05 2012 MOCLDY    35  21  56 NW13      30.30R WCI  26             .
+ 5PM EST DEC 05 2012 MOCLDY    34  21  59 N13       30.32R WCI  25             .
+ 6PM EST DEC 05 2012 MOCLDY    34  20  56 N9        30.34R WCI  27             .
+ 7PM EST DEC 05 2012 CLOUDY    34  20  56 N3        30.34S                     .
+ 8PM EST DEC 05 2012 CLOUDY    33  21  61 NW3       30.33F                     .
+ 9PM EST DEC 05 2012 CLOUDY    33  22  63 NW5       30.33S WCI  29             .
+10PM EST DEC 05 2012 CLOUDY    33  23  66 CALM      30.33S                     .
+11PM EST DEC 05 2012 PTCLDY    32  21  64 N6        30.32F WCI  26             .
+12AM EST DEC 06 2012 PTCLDY    31  21  66 NE5       30.32S WCI  26             .
+ 1AM EST DEC 06 2012 PTCLDY    29  21  72 N5        30.30F WCI  24             .
+ 2AM EST DEC 06 2012 PTCLDY    27  22  81 CALM      30.31R                     .
+ 3AM EST DEC 06 2012 CLEAR     28  22  78 NE5       30.31S WCI  23             .
+ 4AM EST DEC 06 2012 PTCLDY    26  21  81 CALM      30.30F                     .
+ 5AM EST DEC 06 2012 PTCLDY    25  21  85 CALM      30.29F                     .
+ 6AM EST DEC 06 2012 MOCLDY    26  21  81 NE6       30.27F WCI  19             .
+ 7AM EST DEC 06 2012 MOCLDY    26  21  81 CALM      30.28R                     .
+ 8AM EST DEC 06 2012 MOCLDY    25  20  81 E5        30.27F WCI  19             .
+ 9AM EST DEC 06 2012 NOT AVBL                                                  .
+10AM EST DEC 06 2012 PTSUNNY   31  22  69 E8        30.24  WCI  23             .
+11AM EST DEC 06 2012 PTSUNNY   34  22  61 E5        30.22F WCI  30             .
+12PM EST DEC 06 2012 CLOUDY    38  22  52 E6        30.18F                     .
+ 1PM EST DEC 06 2012 CLOUDY    41  23  48 SE5       30.14F                     .
+ 2PM EST DEC 06 2012 PTSUNNY   43  23  45 SE5       30.11F                     .
+ 3PM EST DEC 06 2012 PTSUNNY   44  23  43 VRB5      30.10F                     .
+ 4PM EST DEC 06 2012 MOCLDY    44  24  45 E6        30.09F                     .
+ 5PM EST DEC 06 2012 MOCLDY    43  23  45 SE3       30.08F                     .
+ 6PM EST DEC 06 2012 MOCLDY    41  23  48 CALM      30.07F                     .
+ 7PM EST DEC 06 2012 CLOUDY    39  24  55 CALM      30.06F                     .
+ 8PM EST DEC 06 2012 CLOUDY    38  24  57 CALM      30.05F                     .
+ 9PM EST DEC 06 2012 CLOUDY    37  25  61 CALM      30.05S                     .
+10PM EST DEC 06 2012 CLOUDY    36  26  67 CALM      30.04F                     .
+11PM EST DEC 06 2012 CLOUDY    38  26  62 CALM      30.03F                     .
+12AM EST DEC 07 2012 CLOUDY    38  27  64 CALM      30.02F                     .
+ 1AM EST DEC 07 2012 CLOUDY    40  30  67 SE3       30.01F                     .
+ 2AM EST DEC 07 2012 CLOUDY    41  32  70 CALM      30.00F                     .
+ 3AM EST DEC 07 2012 CLOUDY    41  33  73 CALM      30.00S                     .
+ 4AM EST DEC 07 2012 LGT RAIN  40  38  93 CALM      29.98F FOG                 .
+ 5AM EST DEC 07 2012 LGT RAIN  41  39  93 N5        29.98S FOG                 .
+ 6AM EST DEC 07 2012 RAIN      41  40  96 CALM      29.98S FOG                 .
+ 7AM EST DEC 07 2012 LGT RAIN  41  40  96 CALM      29.98S FOG                 .
+ 8AM EST DEC 07 2012 LGT RAIN  42  41  96 SE3       29.98F VSB 1               .
+ 9AM EST DEC 07 2012 FOG       44  43  96 CALM      29.98S VSB 1               .
+10AM EST DEC 07 2012 DRIZZLE   46  45  96 S3        29.99S                     .
+11AM EST DEC 07 2012 DRIZZLE   49  47  93 SW6       29.99F FOG                 .
+12PM EST DEC 07 2012 LGT RAIN  49  47  93 SW8       29.97F FOG                 .
+ 1PM EST DEC 07 2012 LGT RAIN  50  47  89 SW10      29.96F                     .
+ 2PM EST DEC 07 2012 LGT RAIN  50  48  93 SW5       29.94F                     .
+ 3PM EST DEC 07 2012 LGT RAIN  50  48  93 S5        29.93F FOG                 .
+ 4PM EST DEC 07 2012 LGT RAIN  50  48  93 S3        29.94R FOG                 .
+ 5PM EST DEC 07 2012 LGT RAIN  49  48  97 CALM      29.94S FOG                 .
+ 6PM EST DEC 07 2012 LGT RAIN  49  48  97 CALM      29.93F FOG                 .
+ 7PM EST DEC 07 2012 LGT RAIN  49  48  97 E5        29.92F FOG                 .
+ 8PM EST DEC 07 2012 LGT RAIN  49  48  97 CALM      29.93R VSB 1/2             .
+ 9PM EST DEC 07 2012 NOT AVBL                                                  .
+10PM EST DEC 07 2012 FOG       49  49 100 CALM      29.89  VSB 1/2             .
+11PM EST DEC 07 2012 LGT RAIN  49  49 100 CALM      29.88F VSB 1/2             .
+12AM EST DEC 08 2012 LGT RAIN  49  49 100 CALM      29.87F VSB 1/2             .
+ 1AM EST DEC 08 2012 LGT RAIN  50  49  96 CALM      29.85F VSB 1/2             .
+ 2AM EST DEC 08 2012 LGT RAIN  49  49 100 S3        29.84F VSB 1/2             .
+ 3AM EST DEC 08 2012 LGT RAIN  50  49  96 S5        29.83F                     .
+ 4AM EST DEC 08 2012 CLOUDY    51  50  96 SW8       29.83S                     .
+ 5AM EST DEC 08 2012 CLOUDY    52  50  93 SW7       29.82F                     .
+ 6AM EST DEC 08 2012 CLOUDY    52  50  93 SW7       29.82S                     .
+ 7AM EST DEC 08 2012 MOCLDY    53  49  86 SW9       29.84R                     .
+ 8AM EST DEC 08 2012 PTCLDY    52  48  86 SW7       29.84S                     .
+ 9AM EST DEC 08 2012 PTSUNNY   52  49  89 SW6       29.85R                     .
+10AM EST DEC 08 2012 CLOUDY    53  49  86 SW7       29.86R                     .
+11AM EST DEC 08 2012 CLOUDY    54  49  83 SW9       29.87R                     .
+12PM EST DEC 08 2012 LGT RAIN  54  50  86 SW7       29.85F                     .
+ 1PM EST DEC 08 2012 LGT RAIN  54  51  90 W7        29.85S                     .
+ 2PM EST DEC 08 2012 LGT RAIN  54  50  86 SW8       29.83F                     .
+ 3PM EST DEC 08 2012 CLOUDY    54  51  90 SW6       29.84R                     .
+ 4PM EST DEC 08 2012 CLOUDY    53  51  93 W9        29.87R                     .
+ 5PM EST DEC 08 2012 CLOUDY    52  49  89 W8        29.90R                     .
+ 6PM EST DEC 08 2012 CLOUDY    52  47  83 NW9       29.93R                     .
+ 7PM EST DEC 08 2012 CLOUDY    50  45  83 NW7       29.96R                     .
+ 8PM EST DEC 08 2012 CLOUDY    49  44  83 NW10      29.99R                     .
+ 9PM EST DEC 08 2012 CLOUDY    47  42  83 N15       30.03R                     .
+10PM EST DEC 08 2012 CLOUDY    44  40  85 N14       30.05R                     .
+11PM EST DEC 08 2012 CLOUDY    43  38  82 N12       30.06R                     .
+12AM EST DEC 09 2012 NOT AVBL                                                  .
+ 1AM EST DEC 09 2012 MOCLDY    40  36  86 N3        30.08S                     .
+ 2AM EST DEC 09 2012 CLOUDY    41  36  82 NE8       30.10R                     .
+ 3AM EST DEC 09 2012 CLOUDY    40  35  83 N7        30.11R                     .
+ 4AM EST DEC 09 2012 CLOUDY    39  34  82 N9        30.11S                     .
+ 5AM EST DEC 09 2012 CLOUDY    39  34  82 NE8       30.10F                     .
+ 6AM EST DEC 09 2012 CLOUDY    39  33  79 NE9       30.11S                     .
+ 7AM EST DEC 09 2012 CLOUDY    39  32  76 NE8       30.10S                     .
+ 8AM EST DEC 09 2012 CLOUDY    39  32  76 E6        30.11R                     .
+ 9AM EST DEC 09 2012 CLOUDY    40  33  76 NE7       30.10F                     .
+10AM EST DEC 09 2012 CLOUDY    41  35  79 E7        30.08F                     .
+11AM EST DEC 09 2012 CLOUDY    43  36  76 E12       30.07F                     .
+12PM EST DEC 09 2012 CLOUDY    44  37  76 E7        30.03F                     .
+ 1PM EST DEC 09 2012 CLOUDY    46  39  76 SE6       29.99F                     .
+ 2PM EST DEC 09 2012 CLOUDY    48  43  81 E6        29.96F                     .
+ 3PM EST DEC 09 2012 CLOUDY    50  42  74 SE6       29.94F                     .
+ 4PM EST DEC 09 2012 LGT RAIN  48  44  86 E6        29.92F FOG                 .
+ 5PM EST DEC 09 2012 LGT RAIN  49  47  93 SE6       29.91F                     .
+ 6PM EST DEC 09 2012 LGT RAIN  50  48  93 SE9       29.89F                     .
+ 7PM EST DEC 09 2012 CLOUDY    50  48  93 S9        29.87S                     .
+ 8PM EST DEC 09 2012 CLOUDY    51  49  92 S7        29.86F                     .
+ 9PM EST DEC 09 2012 LGT RAIN  52  50  93 SE5       29.83F                     .
+10PM EST DEC 09 2012 CLOUDY    53  52  96 S6        29.80F                     .
+11PM EST DEC 09 2012 LGT RAIN  54  53  97 S7        29.77F                     .
+12AM EST DEC 10 2012 CLOUDY    55  54  96 S7        29.74F                     .
+ 1AM EST DEC 10 2012 LGT RAIN  56  54  93 S7        29.71F                     .
+ 2AM EST DEC 10 2012 LGT RAIN  56  54  93 S8        29.68F                     .
+ 3AM EST DEC 10 2012 LGT RAIN  57  54  89 S9        29.66F                     .
+ 4AM EST DEC 10 2012 LGT RAIN  57  55  93 SW12      29.65F                     .
+ 5AM EST DEC 10 2012 LGT RAIN  56  52  86 SW13      29.63F                     .
+ 6AM EST DEC 10 2012 LGT RAIN  55  52  89 S8        29.64R                     .
+ 7AM EST DEC 10 2012 CLOUDY    55  51  86 SW8       29.64S                     .
+ 8AM EST DEC 10 2012 LGT RAIN  54  52  93 SW9       29.63F                     .
+ 9AM EST DEC 10 2012 LGT RAIN  55  52  89 SW10G17   29.63S FOG                 .
+10AM EST DEC 10 2012 DRIZZLE   55  52  89 S9G17     29.63S                     .
+11AM EST DEC 10 2012 DRIZZLE   56  52  86 S13       29.60F                     .
+12PM EST DEC 10 2012 CLOUDY    56  52  86 SW8       29.57F                     .
+ 1PM EST DEC 10 2012 LGT RAIN  50  48  93 NW9       29.57S FOG                 .
+ 2PM EST DEC 10 2012 LGT RAIN  49  47  93 NW7       29.56F FOG                 .
+ 3PM EST DEC 10 2012 RAIN      48  46  93 NW10      29.57R FOG                 .
+ 4PM EST DEC 10 2012 LGT RAIN  46  43  89 N14       29.60R FOG                 .
+ 5PM EST DEC 10 2012 LGT RAIN  42  39  89 NW15G25   29.62R                     .
+ 6PM EST DEC 10 2012 LGT RAIN  39  36  89 NW13      29.67R                     .
+ 7PM EST DEC 10 2012 LGT RAIN  38  35  89 NW12      29.72R                     .
+ 8PM EST DEC 10 2012 NOT AVBL                                                  .
+ 9PM EST DEC 10 2012 LGT RAIN  36  34  92 NW3       29.72                      .
+10PM EST DEC 10 2012 LGT RAIN  36  34  92 W6        29.75R                     .
+11PM EST DEC 10 2012 FLURRIES  36  34  92 W5        29.78R                     .
+12AM EST DEC 11 2012 FLURRIES  36  34  92 W7        29.79R                     .
+ 1AM EST DEC 11 2012 FLURRIES  36  33  89 W7        29.79S                     .
+ 2AM EST DEC 11 2012 DRIZZLE   36  33  89 W8        29.80R                     .
+ 3AM EST DEC 11 2012 NOT AVBL                                                  .
+ 4AM EST DEC 11 2012 FLURRIES  35  32  88 NW12      29.85R WCI  27             .
+ 5AM EST DEC 11 2012 FLURRIES  34  31  88 NW8       29.87R WCI  27             .
+ 6AM EST DEC 11 2012 FLURRIES  34  31  88 W8        29.90R WCI  27             .
+ 7AM EST DEC 11 2012 FLURRIES  33  30  88 W7        29.93R WCI  27             .
+ 8AM EST DEC 11 2012 CLOUDY    33  30  88 W6        29.95R WCI  28             .
+ 9AM EST DEC 11 2012 CLOUDY    33  30  88 W6        29.99R WCI  28             .
+10AM EST DEC 11 2012 CLOUDY    34  29  82 W5        30.01R WCI  30             .
+11AM EST DEC 11 2012 CLOUDY    35  29  78 W6        30.03R WCI  30             .
+12PM EST DEC 11 2012 CLOUDY    36  28  73 W7        30.03S                     .
+ 1PM EST DEC 11 2012 FLURRIES  37  27  67 VRB6      30.03S                     .
+ 2PM EST DEC 11 2012 CLOUDY    37  27  67 VRB7      30.02F                     .
+ 3PM EST DEC 11 2012 CLOUDY    37  26  64 SW8       30.03R                     .
+ 4PM EST DEC 11 2012 CLOUDY    36  28  73 SW5       30.05R                     .
+ 5PM EST DEC 11 2012 CLOUDY    36  28  73 SW7       30.08R                     .
+ 6PM EST DEC 11 2012 CLOUDY    35  28  75 W6        30.10R WCI  30             .
+ 7PM EST DEC 11 2012 NOT AVBL                                                  .
+ 8PM EST DEC 11 2012 CLOUDY    34  28  79 SW3       30.13R                     .
+ 9PM EST DEC 11 2012 CLOUDY    34  28  79 SW5       30.15R WCI  30             .
+10PM EST DEC 11 2012 CLOUDY    34  28  79 SW6       30.17R WCI  29             .
+11PM EST DEC 11 2012 PTCLDY    32  27  81 SW3       30.17S                     .
+12AM EST DEC 12 2012 PTCLDY    31  25  78 SW3       30.19R                     .
+ 1AM EST DEC 12 2012 PTCLDY    30  26  85 CALM      30.21R                     .
+ 2AM EST DEC 12 2012 MOCLDY    30  26  85 SW3       30.23R                     .
+ 3AM EST DEC 12 2012 MOCLDY    28  24  85 W5        30.25R WCI  23             .
+ 4AM EST DEC 12 2012 PTCLDY    28  24  85 CALM      30.26R                     .
+ 5AM EST DEC 12 2012 PTCLDY    27  24  89 CALM      30.29R                     .
+ 6AM EST DEC 12 2012 CLEAR     27  23  85 CALM      30.30R                     .
+ 7AM EST DEC 12 2012 PTCLDY    25  22  88 CALM      30.32R                     .
+ 8AM EST DEC 12 2012 PTCLDY    25  22  88 CALM      30.34R                     .
+ 9AM EST DEC 12 2012 MOSUNNY   27  24  89 CALM      30.36R                     .
+10AM EST DEC 12 2012 MOSUNNY   30  24  78 S5        30.37R WCI  25             .
+11AM EST DEC 12 2012 MOSUNNY   32  23  69 W3        30.38R                     .
+12PM EST DEC 12 2012 MOSUNNY   35  23  61 S6        30.38S WCI  30             .
+ 1PM EST DEC 12 2012 MOSUNNY   36  22  56 SW6       30.36F                     .
+ 2PM EST DEC 12 2012 MOSUNNY   38  21  50 NW6       30.35F                     .
+ 3PM EST DEC 12 2012 MOSUNNY   39  20  46 CALM      30.35S                     .
+ 4PM EST DEC 12 2012 PTCLDY    39  20  46 CALM      30.35S                     .
+ 5PM EST DEC 12 2012 PTCLDY    37  21  52 CALM      30.36R                     .
+ 6PM EST DEC 12 2012 CLEAR     34  23  64 CALM      30.36S                     .
+ 7PM EST DEC 12 2012 NOT AVBL                                                  .
+ 8PM EST DEC 12 2012 CLEAR     30  22  72 CALM      30.37S                     .
+ 9PM EST DEC 12 2012 CLEAR     29  22  75 CALM      30.38R                     .
+10PM EST DEC 12 2012 CLEAR     27  22  81 CALM      30.40R                     .
+11PM EST DEC 12 2012 CLEAR     28  21  75 CALM      30.40S                     .
+12AM EST DEC 13 2012 CLEAR     25  20  81 CALM      30.39F                     .
+ 1AM EST DEC 13 2012 CLEAR     24  20  84 N3        30.38F                     .
+ 2AM EST DEC 13 2012 CLEAR     25  21  85 CALM      30.37F                     .
+ 3AM EST DEC 13 2012 CLEAR     23  19  85 CALM      30.38R                     .
+ 4AM EST DEC 13 2012 CLEAR     23  19  85 CALM      30.37F                     .
+ 5AM EST DEC 13 2012 CLEAR     22  18  85 CALM      30.37S                     .
+ 6AM EST DEC 13 2012 CLEAR     21  17  84 CALM      30.37S                     .
+ 7AM EST DEC 13 2012 CLEAR     23  18  81 CALM      30.38R                     .
+ 8AM EST DEC 13 2012 CLEAR     23  19  85 CALM      30.39R                     .
+ 9AM EST DEC 13 2012 SUNNY     24  21  88 CALM      30.40R                     .
+10AM EST DEC 13 2012 SUNNY     29  23  78 CALM      30.40S                     .
+11AM EST DEC 13 2012 MOSUNNY   33  25  72 E3        30.39F                     .
+12PM EST DEC 13 2012 MOSUNNY   38  23  55 SE5       30.37F                     .
+ 1PM EST DEC 13 2012 MOSUNNY   40  21  46 S6        30.34F                     .
+ 2PM EST DEC 13 2012 MOSUNNY   41  21  44 E5        30.32F                     .
+ 3PM EST DEC 13 2012 MOSUNNY   43  19  38 CALM      30.32S                     .
+ 4PM EST DEC 13 2012 PTCLDY    43  19  38 S3        30.31F                     .
+ 5PM EST DEC 13 2012 PTCLDY    42  20  41 CALM      30.31S                     .
+ 6PM EST DEC 13 2012 PTCLDY    37  21  52 CALM      30.31S                     .
+ 7PM EST DEC 13 2012 PTCLDY    33  23  66 CALM      30.28F                     .
+ 8PM EST DEC 13 2012 PTCLDY    34  22  61 CALM      30.28S                     .
+ 9PM EST DEC 13 2012 PTCLDY    30  22  72 CALM      30.27F                     .
+10PM EST DEC 13 2012 CLEAR     30  22  72 CALM      30.27S                     .
+11PM EST DEC 13 2012 CLEAR     28  22  78 CALM      30.26F                     .
+12AM EST DEC 14 2012 CLEAR     28  21  75 CALM      30.26S                     .
+ 1AM EST DEC 14 2012 CLEAR     24  20  84 CALM      30.24F                     .
+ 2AM EST DEC 14 2012 CLEAR     26  20  77 CALM      30.23F                     .
+ 3AM EST DEC 14 2012 CLEAR     26  21  81 CALM      30.24R                     .
+ 4AM EST DEC 14 2012 CLEAR     25  20  81 CALM      30.25R                     .
+ 5AM EST DEC 14 2012 CLEAR     25  20  81 CALM      30.25S                     .
+ 6AM EST DEC 14 2012 CLEAR     26  20  77 CALM      30.25S                     .
+ 7AM EST DEC 14 2012 PTCLDY    25  19  78 CALM      30.25S                     .
+ 8AM EST DEC 14 2012 PTCLDY    28  20  71 CALM      30.25S                     .
+ 9AM EST DEC 14 2012 MOSUNNY   32  23  69 S3        30.25S                     .
+10AM EST DEC 14 2012 MOSUNNY   37  26  64 SW6       30.28R                     .
+11AM EST DEC 14 2012 MOSUNNY   40  25  55 SW9       30.27F                     .
+12PM EST DEC 14 2012 PTSUNNY   43  25  49 VRB3      30.26F                     .
+ 1PM EST DEC 14 2012 PTSUNNY   46  25  43 W6        30.25F                     .
+ 2PM EST DEC 14 2012 PTSUNNY   46  25  43 SW9       30.23F                     .
+ 3PM EST DEC 14 2012 MOSUNNY   47  25  42 SW8       30.21F                     .
+ 4PM EST DEC 14 2012 PTCLDY    47  26  44 SW6       30.20F                     .
+ 5PM EST DEC 14 2012 PTCLDY    46  26  45 SW3       30.21R                     .
+ 6PM EST DEC 14 2012 PTCLDY    42  27  55 CALM      30.22R                     .
+ 7PM EST DEC 14 2012 PTCLDY    39  26  59 CALM      30.21F                     .
+ 8PM EST DEC 14 2012 PTCLDY    35  26  69 CALM      30.22R                     .
+ 9PM EST DEC 14 2012 MOCLDY    34  25  69 CALM      30.22S                     .
+10PM EST DEC 14 2012 CLOUDY    34  25  69 CALM      30.23R                     .
+11PM EST DEC 14 2012 CLOUDY    34  25  69 CALM      30.22F                     .
+12AM EST DEC 15 2012 CLOUDY    32  26  78 CALM      30.21F                     .
+ 1AM EST DEC 15 2012 CLOUDY    31  25  78 CALM      30.20F                     .
+ 2AM EST DEC 15 2012 CLOUDY    30  25  81 CALM      30.20S                     .
+ 3AM EST DEC 15 2012 CLOUDY    31  25  78 CALM      30.18F                     .
+ 4AM EST DEC 15 2012 CLOUDY    30  25  81 CALM      30.18S                     .
+ 5AM EST DEC 15 2012 CLOUDY    31  26  82 CALM      30.17F                     .
+ 6AM EST DEC 15 2012 CLOUDY    30  25  81 CALM      30.16F                     .
+ 7AM EST DEC 15 2012 MOCLDY    31  26  82 CALM      30.17R                     .
+ 8AM EST DEC 15 2012 CLOUDY    31  26  82 CALM      30.18R                     .
+ 9AM EST DEC 15 2012 NOT AVBL                                                  .
+10AM EST DEC 15 2012 CLOUDY    36  27  69 E5        30.15F                     .
+11AM EST DEC 15 2012 CLOUDY    42  25  50 SE5       30.14F                     .
+12PM EST DEC 15 2012 CLOUDY    45  25  45 E7        30.09F                     .
+ 1PM EST DEC 15 2012 CLOUDY    47  26  44 SE7       30.06F                     .
+ 2PM EST DEC 15 2012 CLOUDY    49  23  36 SE9       30.03F                     .
+ 3PM EST DEC 15 2012 CLOUDY    49  24  37 SE5       30.01F                     .
+ 4PM EST DEC 15 2012 CLOUDY    48  24  39 SE6       30.00F                     .
+ 5PM EST DEC 15 2012 CLOUDY    49  24  37 S6        29.97F                     .
+ 6PM EST DEC 15 2012 CLOUDY    49  25  39 SE8       29.94F                     .
+ 7PM EST DEC 15 2012 CLOUDY    47  26  44 CALM      29.95R                     .
+ 8PM EST DEC 15 2012 LGT RAIN  47  29  49 SE3       29.96R                     .
+ 9PM EST DEC 15 2012 CLOUDY    46  32  58 SE5       29.94F                     .
+10PM EST DEC 15 2012 CLOUDY    47  31  53 SE8       29.92F                     .
+11PM EST DEC 15 2012 CLOUDY    46  31  55 SE8       29.90F                     .
+12AM EST DEC 16 2012 CLOUDY    47  29  49 SE7       29.88F                     .
+ 1AM EST DEC 16 2012 CLOUDY    47  30  51 SE8       29.86F                     .
+ 2AM EST DEC 16 2012 CLOUDY    47  30  51 SE6       29.85F                     .
+ 3AM EST DEC 16 2012 CLOUDY    47  32  56 S6        29.84F                     .
+ 4AM EST DEC 16 2012 CLOUDY    49  34  56 S6        29.83F                     .
+ 5AM EST DEC 16 2012 CLOUDY    50  35  56 S6        29.82F                     .
+ 6AM EST DEC 16 2012 CLOUDY    50  36  58 S6        29.82S                     .
+ 7AM EST DEC 16 2012 CLOUDY    50  36  58 S6        29.82S                     .
+ 8AM EST DEC 16 2012 CLOUDY    51  37  58 S6        29.82S                     .
+ 9AM EST DEC 16 2012 CLOUDY    52  38  58 S6        29.81F                     .
+10AM EST DEC 16 2012 CLOUDY    53  40  61 S6        29.81S                     .
+11AM EST DEC 16 2012 CLOUDY    54  43  66 S8        29.81S                     .
+12PM EST DEC 16 2012 CLOUDY    56  45  66 S9        29.77F                     .
+ 1PM EST DEC 16 2012 LGT RAIN  55  47  74 S9        29.75F                     .
+ 2PM EST DEC 16 2012 CLOUDY    56  49  77 S6        29.74F                     .
+ 3PM EST DEC 16 2012 CLOUDY    56  49  77 S5        29.72F                     .
+ 4PM EST DEC 16 2012 CLOUDY    56  49  77 S5        29.70F                     .
+ 5PM EST DEC 16 2012 CLOUDY    56  49  77 S6        29.70S                     .
+ 6PM EST DEC 16 2012 CLOUDY    54  48  80 S3        29.70S                     .
+ 7PM EST DEC 16 2012 CLOUDY    53  48  83 SE3       29.70S                     .
+ 8PM EST DEC 16 2012 CLOUDY    53  48  83 S5        29.70S                     .
+ 9PM EST DEC 16 2012 CLOUDY    53  48  83 S5        29.70S                     .
+10PM EST DEC 16 2012 CLOUDY    53  48  83 S5        29.71R                     .
+11PM EST DEC 16 2012 CLOUDY    53  48  83 S6        29.70F                     .
+12AM EST DEC 17 2012 CLOUDY    55  49  80 SW7       29.71R                     .
+ 1AM EST DEC 17 2012 MOCLDY    54  49  83 SW6       29.72R                     .
+ 2AM EST DEC 17 2012 PTCLDY    52  48  86 CALM      29.72S                     .
+ 3AM EST DEC 17 2012 PTCLDY    49  47  93 S3        29.73R                     .
+ 4AM EST DEC 17 2012 MOCLDY    48  47  96 CALM      29.72F                     .
+ 5AM EST DEC 17 2012 LGT RAIN  50  48  93 S5        29.72S                     .
+ 6AM EST DEC 17 2012 LGT RAIN  50  48  93 S3        29.72S                     .
+ 7AM EST DEC 17 2012 CLOUDY    49  48  97 S5        29.73R                     .
+ 8AM EST DEC 17 2012 CLOUDY    50  48  93 CALM      29.73S                     .
+ 9AM EST DEC 17 2012 CLOUDY    50  48  93 S5        29.75R                     .
+10AM EST DEC 17 2012 CLOUDY    51  49  92 S5        29.74F                     .
+11AM EST DEC 17 2012 CLOUDY    53  49  86 S6        29.74S                     .
+12PM EST DEC 17 2012 LGT RAIN  53  50  89 S7        29.68F                     .
+ 1PM EST DEC 17 2012 CLOUDY    54  48  80 S8        29.64F                     .
+ 2PM EST DEC 17 2012 LGT RAIN  54  48  80 S6        29.62F                     .
+ 3PM EST DEC 17 2012 LGT RAIN  52  50  93 S3        29.61F FOG                 .
+ 4PM EST DEC 17 2012 RAIN      51  49  92 CALM      29.61S FOG                 .
+ 5PM EST DEC 17 2012 RAIN      50  49  96 W3        29.60F FOG                 .
+ 6PM EST DEC 17 2012 LGT RAIN  48  45  89 NW3       29.59F                     .
+ 7PM EST DEC 17 2012 LGT RAIN  48  45  89 NE5       29.57F                     .
+ 8PM EST DEC 17 2012 CLOUDY    47  46  97 E7        29.53F                     .
+ 9PM EST DEC 17 2012 NOT AVBL                                                  .
+10PM EST DEC 17 2012 LGT RAIN  47  46  97 W3        29.54                      .
+11PM EST DEC 17 2012 LGT RAIN  47  45  93 SE3       29.52F FOG                 .
+12AM EST DEC 18 2012 CLOUDY    47  46  97 SE3       29.51S FOG                 .
+ 1AM EST DEC 18 2012 CLOUDY    47  45  93 S5        29.50F FOG                 .
+ 2AM EST DEC 18 2012 CLOUDY    47  44  90 SW9       29.50S                     .
+ 3AM EST DEC 18 2012 CLOUDY    46  43  89 SW7       29.51R                     .
+ 4AM EST DEC 18 2012 CLOUDY    46  42  86 W7        29.52R                     .
+ 5AM EST DEC 18 2012 DRIZZLE   45  43  93 W9        29.52S FOG                 .
+ 6AM EST DEC 18 2012 LGT RAIN  44  41  89 W10       29.54R                     .
+ 7AM EST DEC 18 2012 LGT RAIN  42  39  89 W20       29.57R                     .
+ 8AM EST DEC 18 2012 LGT RAIN  39  36  89 NW20      29.61R                     .
+ 9AM EST DEC 18 2012 LGT RAIN  38  35  89 W14       29.64R                     .
+10AM EST DEC 18 2012 DRIZZLE   38  35  89 W14       29.67R                     .
+11AM EST DEC 18 2012 DRIZZLE   38  34  85 W13       29.70R                     .
+12PM EST DEC 18 2012 LGT RAIN  37  34  89 W13       29.72R                     .
+ 1PM EST DEC 18 2012 LGT RAIN  38  33  82 NW12      29.72S                     .
+ 2PM EST DEC 18 2012 CLOUDY    38  32  79 W12       29.73R                     .
+ 3PM EST DEC 18 2012 MOSUNNY   39  30  70 W9        29.74R                     .
+ 4PM EST DEC 18 2012 PTCLDY    41  28  60 W9        29.74S                     .
+ 5PM EST DEC 18 2012 PTCLDY    39  28  64 W5        29.76R                     .
+ 6PM EST DEC 18 2012 PTCLDY    38  28  67 W7        29.78R                     .
+ 7PM EST DEC 18 2012 PTCLDY    37  29  72 SW6       29.79R                     .
+ 8PM EST DEC 18 2012 PTCLDY    37  29  72 SW5       29.78F                     .
+ 9PM EST DEC 18 2012 MOCLDY    36  29  75 SW6       29.80R                     .
+10PM EST DEC 18 2012 CLOUDY    36  30  79 SW5       29.81R                     .
+11PM EST DEC 18 2012 CLOUDY    36  30  79 CALM      29.80F                     .
+12AM EST DEC 19 2012 CLOUDY    36  31  82 SE6       29.79F                     .
+ 1AM EST DEC 19 2012 CLOUDY    36  31  82 SE3       29.75F                     .
+ 2AM EST DEC 19 2012 CLOUDY    36  32  85 CALM      29.75S                     .
+ 3AM EST DEC 19 2012 LGT RAIN  36  33  89 CALM      29.76R                     .
+ 4AM EST DEC 19 2012 LGT RAIN  37  34  89 W3        29.77R                     .
+ 5AM EST DEC 19 2012 CLOUDY    38  35  89 W3        29.79R                     .
+ 6AM EST DEC 19 2012 CLOUDY    38  35  89 CALM      29.82R                     .
+ 7AM EST DEC 19 2012 CLOUDY    38  35  89 CALM      29.86R                     .
+ 8AM EST DEC 19 2012 CLOUDY    39  35  86 W3        29.90R                     .
+ 9AM EST DEC 19 2012 CLOUDY    39  35  86 W5        29.92R                     .
+10AM EST DEC 19 2012 CLOUDY    41  35  79 W5        29.96R                     .
+11AM EST DEC 19 2012 CLOUDY    42  36  79 W7        29.98R                     .
+12PM EST DEC 19 2012 CLOUDY    42  36  79 W7        29.99R                     .
+ 1PM EST DEC 19 2012 CLOUDY    43  35  73 W9        30.00R                     .
+ 2PM EST DEC 19 2012 CLOUDY    44  36  73 W10       30.02R                     .
+ 3PM EST DEC 19 2012 CLOUDY    44  35  70 W9        30.03R                     .
+ 4PM EST DEC 19 2012 MOCLDY    44  34  67 NW10      30.04R                     .
+ 5PM EST DEC 19 2012 NOT AVBL                                                  .
+ 6PM EST DEC 19 2012 PTCLDY    40  31  70 W3        30.09                      .
+ 7PM EST DEC 19 2012 PTCLDY    37  31  78 CALM      30.11R                     .
+ 8PM EST DEC 19 2012 PTCLDY    35  30  82 CALM      30.13R                     .
+ 9PM EST DEC 19 2012 MOCLDY    35  31  85 CALM      30.14R                     .
+10PM EST DEC 19 2012 PTCLDY    32  29  88 CALM      30.13F                     .
+11PM EST DEC 19 2012 PTCLDY    34  31  88 CALM      30.13S                     .
+12AM EST DEC 20 2012 PTCLDY    32  30  92 CALM      30.12F                     .
+ 1AM EST DEC 20 2012 MOCLDY    33  31  92 CALM      30.12S FOG                 .
+ 2AM EST DEC 20 2012 CLOUDY    32  31  96 E6        30.09F FOG     WCI  26     .
+ 3AM EST DEC 20 2012 CLOUDY    35  33  92 E8        30.07F FOG     WCI  29     .
+ 4AM EST DEC 20 2012 CLOUDY    35  33  92 E8        30.06F FOG     WCI  29     .
+ 5AM EST DEC 20 2012 CLOUDY    36  33  89 E6        30.01F                     .
+ 6AM EST DEC 20 2012 CLOUDY    36  32  85 E9        29.97F                     .
+ 7AM EST DEC 20 2012 CLOUDY    37  32  82 E10       29.94F                     .
+ 8AM EST DEC 20 2012 NOT AVBL                                                  .
+ 9AM EST DEC 20 2012 CLOUDY    38  31  76 SE10      29.85                      .
+10AM EST DEC 20 2012 CLOUDY    40  31  70 SE12      29.81F                     .
+11AM EST DEC 20 2012 CLOUDY    44  32  62 SE12      29.77F                     .
+12PM EST DEC 20 2012 CLOUDY    45  32  60 SE16G22   29.74F                     .
+ 1PM EST DEC 20 2012 LGT RAIN  45  33  63 SE15G21   29.72F                     .
+ 2PM EST DEC 20 2012 LGT RAIN  42  37  82 SE12G21   29.67F                     .
+ 3PM EST DEC 20 2012 LGT RAIN  41  37  86 SE14      29.60F FOG                 .
+ 4PM EST DEC 20 2012 LGT RAIN  41  39  93 SE14      29.57F FOG                 .
+ 5PM EST DEC 20 2012 LGT RAIN  42  40  92 SE17      29.51F FOG                 .
+ 6PM EST DEC 20 2012 LGT RAIN  43  40  89 SE20G26   29.46F                     .
+ 7PM EST DEC 20 2012 LGT RAIN  43  40  89 SE15      29.43F                     .
+ 8PM EST DEC 20 2012 DRIZZLE   44  41  89 SE10      29.42F                     .
+ 9PM EST DEC 20 2012 LGT RAIN  45  42  89 SE13      29.39F                     .
+10PM EST DEC 20 2012 CLOUDY    45  41  86 SE15G23   29.34F                     .
+11PM EST DEC 20 2012 LGT RAIN  44  38  79 SW25G35   29.36R                     .
+12AM EST DEC 21 2012 CLOUDY    42  33  70 SW17G24   29.38R                     .
+ 1AM EST DEC 21 2012 CLOUDY    40  29  64 SW15G26   29.40R                     .
+ 2AM EST DEC 21 2012 FLURRIES  37  28  70 SW9G18    29.41R                     .
+ 3AM EST DEC 21 2012 CLOUDY    36  25  64 SW17G24   29.40F                     .
+ 4AM EST DEC 21 2012 FLURRIES  33  25  72 SW17G31   29.39F WCI  22             .
+ 5AM EST DEC 21 2012 FLURRIES  33  24  69 SW12G24   29.37F WCI  24             .
+ 6AM EST DEC 21 2012 FLURRIES  33  23  66 SW21G37   29.35F WCI  21             .
+ 7AM EST DEC 21 2012 FLURRIES  32  23  69 SW17G25   29.36R WCI  21             .
+ 8AM EST DEC 21 2012 FLURRIES  31  23  72 W20G28    29.35F WCI  19             .
+ 9AM EST DEC 21 2012 FLURRIES  31  23  72 SW12G29   29.34F WCI  22             .
+10AM EST DEC 21 2012 NOT AVBL                                                  .
+11AM EST DEC 21 2012 LGT SNOW  30  25  81 SW17G31   29.34  WCI  18             .
+12PM EST DEC 21 2012 LGT SNOW  31  25  78 SW14G29   29.33F WCI  21             .
+ 1PM EST DEC 21 2012 FLURRIES  31  26  82 SW15G25   29.33S WCI  20             .
+ 2PM EST DEC 21 2012 LGT SNOW  32  27  81 W9G23     29.34R VSB 1   WCI  24     .
+ 3PM EST DEC 21 2012 SNOW      32  28  85 W20G29    29.37R VSB 1/2 WCI  20     .
+ 4PM EST DEC 21 2012 LGT SNOW  31  25  78 W18G26    29.42R WCI  19             .
+ 5PM EST DEC 21 2012 LGT SNOW  31  24  75 W21G26    29.44R WCI  18             .
+ 6PM EST DEC 21 2012 LGT SNOW  30  24  78 W21G36    29.50R WCI  17             .
+ 7PM EST DEC 21 2012 LGT SNOW  30  25  81 W20G33    29.53R WCI  17             .
+ 8PM EST DEC 21 2012 LGT SNOW  30  23  75 W22G32    29.56R WCI  17             .
+ 9PM EST DEC 21 2012 LGT SNOW  30  25  81 W16G26    29.58R WCI  19             .
+10PM EST DEC 21 2012 LGT SNOW  30  25  81 W20G26    29.61R WCI  17             .
+11PM EST DEC 21 2012 LGT SNOW  30  25  81 W23G29    29.64R WCI  17             .
+12AM EST DEC 22 2012 LGT SNOW  30  25  81 W18G30    29.67R WCI  18             .
+ 1AM EST DEC 22 2012 FLURRIES  30  24  78 W22G35    29.69R WCI  17             .
+ 2AM EST DEC 22 2012 LGT SNOW  29  25  85 W21       29.72R FOG     WCI  16     .
+ 3AM EST DEC 22 2012 LGT SNOW  29  25  85 W23       29.75R FOG     WCI  15     .
+ 4AM EST DEC 22 2012 FLURRIES  30  23  75 NW22G30   29.78R WCI  17             .
+ 5AM EST DEC 22 2012 FLURRIES  30  22  72 NW28G36   29.81R WCI  15             .
+ 6AM EST DEC 22 2012 FLURRIES  30  21  69 NW18G29   29.84R WCI  18             .
+ 7AM EST DEC 22 2012 CLOUDY    30  20  66 NW20G29   29.87R WCI  17             .
+ 8AM EST DEC 22 2012 CLOUDY    30  21  69 W16       29.91R WCI  19             .
+ 9AM EST DEC 22 2012 CLOUDY    30  22  72 W17G26    29.93R WCI  18             .
+10AM EST DEC 22 2012 CLOUDY    31  22  69 W18G28    29.96R WCI  19             .
+11AM EST DEC 22 2012 FLURRIES  30  21  69 W16       29.99R WCI  19             .
+12PM EST DEC 22 2012 FLURRIES  30  22  72 W15G25    30.00R WCI  19             .
+ 1PM EST DEC 22 2012 FLURRIES  30  20  66 W15G26    29.99F WCI  19             .
+ 2PM EST DEC 22 2012 CLOUDY    30  20  66 W21G26    29.99S WCI  17             .
+ 3PM EST DEC 22 2012 CLOUDY    30  21  69 W17G26    30.01R WCI  18             .
+ 4PM EST DEC 22 2012 CLOUDY    30  21  69 W15       30.02R WCI  19             .
+ 5PM EST DEC 22 2012 CLOUDY    30  21  69 W7        30.03R WCI  23             .
+ 6PM EST DEC 22 2012 CLOUDY    30  19  63 W10       30.04R WCI  21             .
+ 7PM EST DEC 22 2012 CLOUDY    30  20  66 W9        30.04S WCI  22             .
+ 8PM EST DEC 22 2012 CLOUDY    29  19  66 W9G20     30.05R WCI  20             .
+ 9PM EST DEC 22 2012 CLOUDY    29  19  66 SW9       30.06R WCI  20             .
+10PM EST DEC 22 2012 CLOUDY    27  18  69 SW9G17    30.06S WCI  18             .
+11PM EST DEC 22 2012 MOCLDY    26  18  71 W6        30.06S WCI  19             .
+12AM EST DEC 23 2012 PTCLDY    26  19  74 SW6       30.05F WCI  19             .
+ 1AM EST DEC 23 2012 CLEAR     25  19  78 SW6       30.03F WCI  18             .
+ 2AM EST DEC 23 2012 CLEAR     24  18  77 SW3       30.02F                     .
+ 3AM EST DEC 23 2012 CLEAR     23  18  81 S5        30.02S WCI  17             .
+ 4AM EST DEC 23 2012 CLEAR     22  18  85 S3        30.00F                     .
+ 5AM EST DEC 23 2012 CLEAR     22  18  85 S7        29.97F WCI  13             .
+ 6AM EST DEC 23 2012 CLEAR     22  18  85 S6        29.96F WCI  14             .
+ 7AM EST DEC 23 2012 CLEAR     22  18  85 S7        29.94F WCI  13             .
+ 8AM EST DEC 23 2012 CLEAR     23  18  81 SW7       29.94S WCI  15             .
+ 9AM EST DEC 23 2012 MOSUNNY   24  19  81 S3        29.94S                     .
+10AM EST DEC 23 2012 MOSUNNY   28  19  69 SW7       29.94S WCI  21             .
+11AM EST DEC 23 2012 MOSUNNY   32  19  58 SW9       29.92F WCI  24             .
+12PM EST DEC 23 2012 MOSUNNY   34  20  56 SW8       29.89F WCI  27             .
+ 1PM EST DEC 23 2012 MOSUNNY   36  21  54 SW10      29.88F                     .
+ 2PM EST DEC 23 2012 PTSUNNY   37  22  54 SW10      29.87F                     .
+ 3PM EST DEC 23 2012 PTSUNNY   38  22  52 SW9       29.88R                     .
+ 4PM EST DEC 23 2012 MOCLDY    38  23  55 W6        29.90R                     .
+ 5PM EST DEC 23 2012 MOCLDY    36  23  59 W6        29.91R                     .
+ 6PM EST DEC 23 2012 MOCLDY    34  22  61 SW3       29.92R                     .
+ 7PM EST DEC 23 2012 MOCLDY    32  22  66 CALM      29.94R                     .
+ 8PM EST DEC 23 2012 PTCLDY    29  22  75 W3        29.95R                     .
+ 9PM EST DEC 23 2012 PTCLDY    28  22  78 NW3       29.97R                     .
+10PM EST DEC 23 2012 PTCLDY    28  22  78 NW3       29.98R                     .
+11PM EST DEC 23 2012 PTCLDY    28  22  78 N7        29.99R WCI  21             .
+12AM EST DEC 24 2012 PTCLDY    29  22  75 CALM      29.98F                     .
+ 1AM EST DEC 24 2012 MOCLDY    26  21  81 CALM      29.97F                     .
+ 2AM EST DEC 24 2012 MOCLDY    25  20  81 CALM      29.97S                     .
+ 3AM EST DEC 24 2012 MOCLDY    24  20  84 CALM      29.98R                     .
+ 4AM EST DEC 24 2012 PTCLDY    22  20  92 CALM      29.98S                     .
+ 5AM EST DEC 24 2012 PTCLDY    22  19  89 CALM      29.97F                     .
+ 6AM EST DEC 24 2012 MOCLDY    24  21  88 E5        29.96F WCI  18             .
+ 7AM EST DEC 24 2012 CLOUDY    24  21  88 NE3       29.94F                     .
+ 8AM EST DEC 24 2012 NOT AVBL                                                  .
+ 9AM EST DEC 24 2012 CLOUDY    26  22  84 E6        29.89  WCI  19             .
+10AM EST DEC 24 2012 CLOUDY    29  23  78 SE5       29.91R WCI  24             .
+11AM EST DEC 24 2012 CLOUDY    33  25  72 E8        29.88F WCI  26             .
+12PM EST DEC 24 2012 CLOUDY    35  25  66 CALM      29.85F                     .
+ 1PM EST DEC 24 2012 CLOUDY    36  26  67 E9        29.80F                     .
+ 2PM EST DEC 24 2012 CLOUDY    37  26  64 E6        29.78F                     .
+ 3PM EST DEC 24 2012 LGT RAIN  37  28  70 CALM      29.76F                     .
+ 4PM EST DEC 24 2012 LGT RAIN  35  31  85 E5        29.76S WCI  31             .
+ 5PM EST DEC 24 2012 LGT RAIN  35  32  88 E6        29.74F FOG     WCI  30     .
+ 6PM EST DEC 24 2012 DRIZZLE   35  33  92 SE6       29.75R FOG     WCI  30     .
+ 7PM EST DEC 24 2012 DRZL/FOG  35  34  96 SE5       29.76R VSB 1   WCI  31     .
+ 8PM EST DEC 24 2012 DRZL/FOG  35  34  96 N3        29.77R VSB 1/2             .
+ 9PM EST DEC 24 2012 DRZL/FOG  35  34  96 W5        29.79R VSB 1/4 WCI  31     .
+10PM EST DEC 24 2012 DRZL/FOG  34  33  96 W5        29.82R VSB 1/4 WCI  30     .
+11PM EST DEC 24 2012 FOG       34  33  96 W7        29.84R VSB 1/4 WCI  28     .
+12AM EST DEC 25 2012 CLOUDY    34  33  96 W5        29.86R FOG     WCI  30     .
+ 1AM EST DEC 25 2012 CLOUDY    34  33  96 W6        29.88R FOG     WCI  29     .
+ 2AM EST DEC 25 2012 CLOUDY    34  33  96 W6        29.91R FOG     WCI  29     .
+ 3AM EST DEC 25 2012 CLOUDY    34  32  92 W9        29.94R FOG     WCI  27     .
+ 4AM EST DEC 25 2012 CLOUDY    34  32  92 W7        29.95R FOG     WCI  28     .
+ 5AM EST DEC 25 2012 CLOUDY    34  31  88 NW9       29.98R FOG     WCI  27     .
+ 6AM EST DEC 25 2012 DRIZZLE   33  31  92 W9        30.01R FOG     WCI  25     .
+ 7AM EST DEC 25 2012 DRIZZLE   33  31  92 NW7       30.05R FOG     WCI  27     .
+ 8AM EST DEC 25 2012 DRIZZLE   34  30  86 N9        30.07R FOG     WCI  26     .
+ 9AM EST DEC 25 2012 DRIZZLE   33  30  88 N8        30.09R FOG     WCI  26     .
+10AM EST DEC 25 2012 CLOUDY    33  29  85 N8        30.11R WCI  26             .
+11AM EST DEC 25 2012 CLOUDY    33  28  81 N10       30.13R WCI  25             .
+12PM EST DEC 25 2012 CLOUDY    33  25  72 N8        30.15R WCI  26             .
+ 1PM EST DEC 25 2012 CLOUDY    33  25  72 N8        30.14S WCI  26             .
+ 2PM EST DEC 25 2012 CLOUDY    34  25  69 N8        30.12F WCI  27             .
+ 3PM EST DEC 25 2012 CLOUDY    34  25  69 NE7       30.13R WCI  28             .
+ 4PM EST DEC 25 2012 CLOUDY    34  25  69 NW6       30.17R WCI  29             .
+ 5PM EST DEC 25 2012 CLOUDY    33  25  72 N7        30.18R WCI  27             .
+ 6PM EST DEC 25 2012 CLOUDY    33  25  72 N6        30.17F WCI  28             .
+ 7PM EST DEC 25 2012 CLOUDY    34  27  75 N9        30.16F WCI  26             .
+ 8PM EST DEC 25 2012 CLOUDY    33  26  75 NE7       30.17R WCI  27             .
+ 9PM EST DEC 25 2012 CLOUDY    33  25  72 E5        30.17S WCI  29             .
+10PM EST DEC 25 2012 CLOUDY    33  26  75 NE6       30.17S WCI  28             .
+11PM EST DEC 25 2012 CLOUDY    33  27  78 NE8       30.17S WCI  26             .
+12AM EST DEC 26 2012 CLOUDY    32  26  78 E8        30.16F WCI  25             .
+ 1AM EST DEC 26 2012 CLOUDY    32  25  75 NE13      30.12F WCI  22             .
+ 2AM EST DEC 26 2012 CLOUDY    32  24  72 NE13      30.10F WCI  22             .
+ 3AM EST DEC 26 2012 CLOUDY    31  23  72 E12G18    30.08F WCI  22             .
+ 4AM EST DEC 26 2012 CLOUDY    31  23  72 NE13      30.02F WCI  21             .
+ 5AM EST DEC 26 2012 CLOUDY    31  23  72 E10       30.02S WCI  22             .
+ 6AM EST DEC 26 2012 CLOUDY    30  23  75 E10       30.00F WCI  21             .
+ 7AM EST DEC 26 2012 CLOUDY    30  23  75 E12G22    29.97F WCI  20             .
+ 8AM EST DEC 26 2012 CLOUDY    30  23  75 E14       29.91F WCI  19             .
+ 9AM EST DEC 26 2012 FRZ DRZL  28  23  80 E15G22    29.84F WCI  17             .
+10AM EST DEC 26 2012 LGT SNOW  28  23  80 E14G24    29.86R VSB 1   WCI  17     .
+11AM EST DEC 26 2012 SNOW      27  25  92 E15G22    29.83F VSB 1/2 WCI  15     .
+12PM EST DEC 26 2012 LGTSLEET  27  24  89 E16G26    29.76F WCI  15             .
+ 1PM EST DEC 26 2012 HVY SNOW  27  25  93 E15       29.71F VSB 1/4 WCI  15     .
+ 2PM EST DEC 26 2012 LGT SNOW  28  24  85 E20G26    29.65R BLWGSNOWWCI  15     .
+ 3PM EST DEC 26 2012 LGT SNOW  28  25  86 E14       29.61F FOG     WCI  17     .
+ 4PM EST DEC 26 2012 FLURRIES  29  24  82 E12G20    29.60F WCI  19             .
+ 5PM EST DEC 26 2012 FLURRIES  29  25  85 E10       29.57F WCI  20             .
+ 6PM EST DEC 26 2012 FLURRIES  29  25  85 E9        29.57S WCI  20             .
+ 7PM EST DEC 26 2012 LGT SNOW  29  26  89 NE8       29.58R FOG     WCI  21     .
+ 8PM EST DEC 26 2012 LGT SNOW  28  26  92 NE8       29.58S FOG     WCI  20     .
+ 9PM EST DEC 26 2012 FLURRIES  28  26  92 NE7       29.57F WCI  21             .
+10PM EST DEC 26 2012 LGT SNOW  28  26  92 NE7       29.59R FOG     WCI  21     .
+11PM EST DEC 26 2012 LGT SNOW  28  26  92 N6        29.60R FOG     WCI  22     .
+12AM EST DEC 27 2012 LGT SNOW  28  26  92 N3        29.59S FOG                 .
+ 1AM EST DEC 27 2012 LGT SNOW  28  27  96 NW5       29.59S FOG     WCI  23     .
+ 2AM EST DEC 27 2012 LGT SNOW  29  27  92 W8        29.63R FOG     WCI  21     .
+ 3AM EST DEC 27 2012 FRZ DRZL  29  27  92 NW14      29.66R FOG     WCI  18     .
+ 4AM EST DEC 27 2012 FRZ DRZL  27  25  92 NW15      29.68R FOG     WCI  15     .
+ 5AM EST DEC 27 2012 FRZ DRZL  27  25  92 W12       29.70R FOG     WCI  17     .
+ 6AM EST DEC 27 2012 FLURRIES  28  25  88 W15       29.73R WCI  16             .
+ 7AM EST DEC 27 2012 CLOUDY    28  24  85 W18G24    29.78R WCI  15             .
+ 8AM EST DEC 27 2012 NOT AVBL                                                  .
+ 9AM EST DEC 27 2012 FRZ DRZL  29  26  89 W18       29.86R WCI  16             .
+10AM EST DEC 27 2012 LGT SNOW  28  25  86 W17       29.90R WCI  16             .
+11AM EST DEC 27 2012 LGT SNOW  28  25  88 W13       29.92R WCI  17             .
+12PM EST DEC 27 2012 FLURRIES  29  25  85 W13       29.92S WCI  19             .
+ 1PM EST DEC 27 2012 FLURRIES  29  25  85 W14       29.91F WCI  18             .
+ 2PM EST DEC 27 2012 CLOUDY    29  25  85 W15G21    29.91S WCI  18             .
+ 3PM EST DEC 27 2012 CLOUDY    30  26  85 W13       29.93R WCI  20             .
+ 4PM EST DEC 27 2012 CLOUDY    31  25  78 W10       29.95R WCI  22             .
+ 5PM EST DEC 27 2012 CLOUDY    32  25  75 NW17G25   29.97R WCI  21             .
+ 6PM EST DEC 27 2012 FLURRIES  32  26  78 W7        30.00R WCI  26             .
+ 7PM EST DEC 27 2012 FLURRIES  31  26  82 W8        30.02R WCI  23             .
+ 8PM EST DEC 27 2012 FLURRIES  31  27  85 W10       30.04R WCI  22             .
+ 9PM EST DEC 27 2012 CLOUDY    30  24  78 NW14      30.05R WCI  19             .
+10PM EST DEC 27 2012 CLOUDY    30  22  72 NW12      30.06R WCI  20             .
+11PM EST DEC 27 2012 CLOUDY    30  23  75 NW12      30.08R WCI  20             .
+12AM EST DEC 28 2012 CLOUDY    29  22  75 NW9       30.08S WCI  20             .
+ 1AM EST DEC 28 2012 CLOUDY    28  21  75 NW8       30.07F WCI  20             .
+ 2AM EST DEC 28 2012 CLOUDY    28  21  75 NW6       30.08R WCI  22             .
+ 3AM EST DEC 28 2012 CLOUDY    28  21  75 W8        30.09R WCI  20             .
+ 4AM EST DEC 28 2012 CLOUDY    27  21  78 W6        30.10R WCI  20             .
+ 5AM EST DEC 28 2012 CLOUDY    27  21  78 W6        30.10S WCI  20             .
+ 6AM EST DEC 28 2012 CLOUDY    27  20  75 W5        30.12R WCI  22             .
+ 7AM EST DEC 28 2012 CLOUDY    27  20  75 CALM      30.12S                     .
+ 8AM EST DEC 28 2012 CLOUDY    27  20  75 CALM      30.11F                     .
+ 9AM EST DEC 28 2012 CLOUDY    27  20  75 CALM      30.11S                     .
+10AM EST DEC 28 2012 CLOUDY    27  20  75 CALM      30.12R                     .
+11AM EST DEC 28 2012 CLOUDY    28  21  75 CALM      30.12S                     .
+12PM EST DEC 28 2012 NOT AVBL                                                  .
+ 1PM EST DEC 28 2012 CLOUDY    29  21  72 CALM      30.09                      .
+ 2PM EST DEC 28 2012 CLOUDY    30  22  72 NW8       30.07F WCI  22             .
+ 3PM EST DEC 28 2012 MOSUNNY   31  21  66 CALM      30.05F                     .
+ 4PM EST DEC 28 2012 PTCLDY    30  21  69 E5        30.02F WCI  25             .
+ 5PM EST DEC 28 2012 NOT AVBL                                                  .
+ 6PM EST DEC 28 2012 PTCLDY    27  21  78 SE3       30.01                      .
+ 7PM EST DEC 28 2012 MOCLDY    26  19  74 E3        30.00F                     .
+ 8PM EST DEC 28 2012 MOCLDY    26  20  77 E5        29.98F WCI  20             .
+ 9PM EST DEC 28 2012 CLOUDY    26  20  77 E3        29.96F                     .
+10PM EST DEC 28 2012 NOT AVBL                                                  .
+11PM EST DEC 28 2012 CLOUDY    27  20  75 E7        29.91  WCI  19             .
+12AM EST DEC 29 2012 CLOUDY    27  21  78 E7        29.86F WCI  19             .
+ 1AM EST DEC 29 2012 CLOUDY    28  21  75 SE6       29.84F WCI  22             .
+ 2AM EST DEC 29 2012 FLURRIES  28  21  75 CALM      29.83F                     .
+ 3AM EST DEC 29 2012 LGT SNOW  27  24  89 N6        29.82F FOG     WCI  20     .
+ 4AM EST DEC 29 2012 LGT SNOW  26  24  92 E8        29.74F VSB 3/4 WCI  18     .
+ 5AM EST DEC 29 2012 LGT SNOW  27  25  92 NE7       29.70F FOG     WCI  19     .
+ 6AM EST DEC 29 2012 SNOW      27  25  92 NE5       29.66F VSB 1/2 WCI  22     .
+ 7AM EST DEC 29 2012 NOT AVBL                                                  .
+ 8AM EST DEC 29 2012 LGT SNOW  28  26  92 NE3       29.63F FOG                 .
+ 9AM EST DEC 29 2012 LGT SNOW  28  27  93 N5        29.62F FOG     WCI  23     .
+10AM EST DEC 29 2012 SNOW      28  26  92 N8        29.62S VSB 1/2 WCI  20     .
+11AM EST DEC 29 2012 SNOW      28  27  96 NW7       29.63R VSB 1/2 WCI  21     .
+12PM EST DEC 29 2012 SNOW      29  26  89 NW8       29.63S VSB 1/2 WCI  21     .
+ 1PM EST DEC 29 2012 LGT SNOW  29  27  92 W10       29.63S FOG     WCI  20     .
+ 2PM EST DEC 29 2012 CLOUDY    30  26  85 W13       29.64R FOG     WCI  20     .
+ 3PM EST DEC 29 2012 CLOUDY    30  25  81 W15       29.67R WCI  19             .
+ 4PM EST DEC 29 2012 CLOUDY    31  26  82 W12       29.71R WCI  22             .
+ 5PM EST DEC 29 2012 LGT SNOW  31  26  82 W13       29.74R FOG     WCI  21     .
+ 6PM EST DEC 29 2012 LGT SNOW  31  27  85 W15       29.77R FOG     WCI  20     .
+ 7PM EST DEC 29 2012 LGT SNOW  31  27  85 NW14      29.81R FOG     WCI  21     .
+ 8PM EST DEC 29 2012 LGT SNOW  30  27  88 NW12      29.84R FOG     WCI  20     .
+ 9PM EST DEC 29 2012 LGT SNOW  30  26  85 NW14      29.85R FOG     WCI  19     .
+10PM EST DEC 29 2012 FLURRIES  29  25  85 W10       29.87R WCI  20             .
+11PM EST DEC 29 2012 FLURRIES  29  25  85 W13       29.88R WCI  19             .
+12AM EST DEC 30 2012 LGT SNOW  29  25  85 W14       29.90R FOG     WCI  18     .
+ 1AM EST DEC 30 2012 LGT SNOW  28  24  85 W14       29.92R FOG     WCI  17     .
+ 2AM EST DEC 30 2012 LGT SNOW  28  24  85 W21       29.96R FOG     WCI  15     .
+ 3AM EST DEC 30 2012 FLURRIES  28  23  81 W17G24    30.00R WCI  16             .
+ 4AM EST DEC 30 2012 FLURRIES  28  22  78 W15       30.03R WCI  16             .
+ 5AM EST DEC 30 2012 CLOUDY    27  20  75 W20G25    30.06R WCI  13             .
+ 6AM EST DEC 30 2012 CLOUDY    26  19  74 W17       30.09R WCI  13             .
+ 7AM EST DEC 30 2012 FLURRIES  26  20  77 W16G26    30.15R WCI  14             .
+ 8AM EST DEC 30 2012 FLURRIES  26  20  77 W13       30.19R WCI  15             .
+ 9AM EST DEC 30 2012 LGT SNOW  26  21  81 W13       30.21R WCI  15             .
+10AM EST DEC 30 2012 LGT SNOW  27  21  78 W9        30.24R WCI  18             .
+11AM EST DEC 30 2012 LGT SNOW  27  22  81 W10G20    30.26R WCI  17             .
+12PM EST DEC 30 2012 LGT SNOW  27  22  81 W10G20    30.26S WCI  17             .
+ 1PM EST DEC 30 2012 FLURRIES  27  22  81 W9        30.25F WCI  18             .
+ 2PM EST DEC 30 2012 FLURRIES  27  21  78 SW12G22   30.25S WCI  17             .
+ 3PM EST DEC 30 2012 CLOUDY    27  20  75 W15G26    30.27R WCI  15             .
+ 4PM EST DEC 30 2012 CLOUDY    26  20  77 SW12G21   30.30R WCI  16             .
+ 5PM EST DEC 30 2012 CLOUDY    26  19  74 SW13      30.30S WCI  15             .
+ 6PM EST DEC 30 2012 CLOUDY    25  18  74 SW9       30.29F WCI  15             .
+ 7PM EST DEC 30 2012 CLOUDY    25  18  74 SW7       30.29S WCI  17             .
+ 8PM EST DEC 30 2012 CLOUDY    24  18  77 W7        30.31R WCI  16             .
+ 9PM EST DEC 30 2012 CLOUDY    24  17  74 SW7       30.31S WCI  16             .
+10PM EST DEC 30 2012 PTCLDY    24  18  77 SW8       30.30F WCI  15             .
+11PM EST DEC 30 2012 CLOUDY    24  18  77 SW8       30.31R WCI  15             .
+12AM EST DEC 31 2012 PTCLDY    24  18  77 SW7       30.29F WCI  16             .
+ 1AM EST DEC 31 2012 PTCLDY    22  18  85 SW6       30.27F WCI  14             .
+ 2AM EST DEC 31 2012 PTCLDY    22  17  81 SW8       30.25F WCI  12             .
+ 3AM EST DEC 31 2012 MOCLDY    21  17  84 S5        30.24F WCI  15             .
+ 4AM EST DEC 31 2012 MOCLDY    21  17  84 SW7       30.22F WCI  12             .
+ 5AM EST DEC 31 2012 MOCLDY    20  17  88 SW6       30.19F WCI  12             .
+ 6AM EST DEC 31 2012 CLOUDY    21  17  84 SW8       30.19S WCI  11             .
+ 7AM EST DEC 31 2012 CLOUDY    22  18  85 SW8       30.19S WCI  12             .
+ 8AM EST DEC 31 2012 CLOUDY    23  18  81 S8        30.18F WCI  14             .
+ 9AM EST DEC 31 2012 CLOUDY    24  19  81 SW9       30.16F WCI  14             .
+10AM EST DEC 31 2012 CLOUDY    27  20  75 SW10      30.15F WCI  17             .
+11AM EST DEC 31 2012 CLOUDY    29  21  72 S12       30.14F WCI  19             .
+12PM EST DEC 31 2012 CLOUDY    31  21  66 SW12      30.12F WCI  22             .
+ 1PM EST DEC 31 2012 CLOUDY    33  20  58 SW10G18   30.06F WCI  25             .
+ 2PM EST DEC 31 2012 CLOUDY    33  19  56 SW10      30.04F WCI  25             .
+ 3PM EST DEC 31 2012 CLOUDY    33  20  58 SW13G20   30.02F WCI  24             .
+ 4PM EST DEC 31 2012 SNOW      30  26  85 SW10      30.03S VSB 1/2 WCI  21     .
+ 5PM EST DEC 31 2012 LGT SNOW  30  27  88 SW9       30.03S VSB 3/4 WCI  22     .
+ 6PM EST DEC 31 2012 LGT SNOW  30  28  92 SW9       30.03S VSB 1   WCI  22     .

@@ -1,0 +1,693 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 7PM EST JAN 31 2013 FLURRIES  24  16  71 SW9       29.78S WCI  14           FEB
+ 8PM EST JAN 31 2013 CLOUDY    25  16  68 SW16      29.79R WCI  12           FEB
+ 9PM EST JAN 31 2013 FLURRIES  24  15  68 W10G17    29.80R WCI  14           FEB
+10PM EST JAN 31 2013 FLURRIES  24  16  71 W9G18     29.81R WCI  14           FEB
+11PM EST JAN 31 2013 LGT SNOW  23  18  81 W10       29.81S WCI  12           FEB
+12AM EST FEB 01 2013 MOCLDY    22  16  78 W6        29.79F WCI  14           FEB
+ 1AM EST FEB 01 2013 FLURRIES  21  14  74 NW15      29.80R WCI   8           FEB
+ 2AM EST FEB 01 2013 MOCLDY    20  10  65 NW15      29.81R WCI   6             .
+ 3AM EST FEB 01 2013 LGT SNOW  18  12  77 NW17      29.82R WCI   3             .
+ 4AM EST FEB 01 2013 CLOUDY    17   5  59 W18       29.86R WCI   1             .
+ 5AM EST FEB 01 2013 PTCLDY    15   5  64 W20G26    29.90R WCI  -2             .
+ 6AM EST FEB 01 2013 MOCLDY    15   5  64 W15G24    29.94R WCI   0             .
+ 7AM EST FEB 01 2013 FLURRIES  15   5  64 W14G20    29.99R WCI   0             .
+ 8AM EST FEB 01 2013 FLURRIES  14   4  64 W15G26    30.03R WCI  -1             .
+ 9AM EST FEB 01 2013 FLURRIES  14   5  67 W17G26    30.08R WCI  -3             .
+10AM EST FEB 01 2013 FLURRIES  14   4  64 W17G25    30.10R WCI  -3             .
+11AM EST FEB 01 2013 FLURRIES  15   5  64 W17G26    30.13R WCI  -1             .
+12PM EST FEB 01 2013 FLURRIES  14   4  64 W17G26    30.16R WCI  -3             .
+ 1PM EST FEB 01 2013 PTSUNNY   15   4  61 W13G23    30.17R WCI   1             .
+ 2PM EST FEB 01 2013 PTSUNNY   17   5  59 W10G26    30.17S WCI   5             .
+ 3PM EST FEB 01 2013 CLOUDY    17   4  56 W16G22    30.19R WCI   2             .
+ 4PM EST FEB 01 2013 FLURRIES  16   4  59 SW13G21   30.21R WCI   2             .
+ 5PM EST FEB 01 2013 FLURRIES  15   4  61 SW12      30.22R WCI   2             .
+ 6PM EST FEB 01 2013 FLURRIES  14   7  73 W10G18    30.23R WCI   1             .
+ 7PM EST FEB 01 2013 LGT SNOW  14   4  64 W8        30.26R WCI   3             .
+ 8PM EST FEB 01 2013 MOCLDY    13   2  61 SW13      30.27R WCI  -2             .
+ 9PM EST FEB 01 2013 PTCLDY    11   0  61 W6        30.27S WCI   1             .
+10PM EST FEB 01 2013 PTCLDY    11   0  61 SW5       30.28R WCI   3             .
+11PM EST FEB 01 2013 PTCLDY    10   1  67 SW5       30.28S WCI   2             .
+12AM EST FEB 02 2013 PTCLDY    10   1  67 SW6       30.27F WCI   0             .
+ 1AM EST FEB 02 2013 MOCLDY     9   1  70 S6        30.26F WCI  -1             .
+ 2AM EST FEB 02 2013 CLOUDY     9   2  73 S3        30.25F                     .
+ 3AM EST FEB 02 2013 MOCLDY     8   2  76 S3        30.24S                     .
+ 4AM EST FEB 02 2013 PTCLDY     8   2  76 S3        30.23F                     .
+ 5AM EST FEB 02 2013 PTCLDY     8   2  76 S5        30.21F WCI   0             .
+ 6AM EST FEB 02 2013 CLOUDY     8   2  76 S7        30.19F WCI  -3             .
+ 7AM EST FEB 02 2013 CLOUDY     9   3  77 S5        30.18F WCI   1             .
+ 8AM EST FEB 02 2013 FLURRIES  10   4  76 S6        30.18S WCI   0             .
+ 9AM EST FEB 02 2013 FLURRIES  12   4  70 S6        30.16F WCI   3             .
+10AM EST FEB 02 2013 LGT SNOW  14   7  73 SW13G22   30.13F WCI   0             .
+11AM EST FEB 02 2013 LGT SNOW  16  10  77 S8        30.10F VSB 1   WCI   5     .
+12PM EST FEB 02 2013 LGT SNOW  18  12  77 S9        30.06F WCI   7             .
+ 1PM EST FEB 02 2013 LGT SNOW  20  14  77 SW14G22   30.02F WCI   7             .
+ 2PM EST FEB 02 2013 LGT SNOW  22  16  78 S7        29.97F WCI  13             .
+ 3PM EST FEB 02 2013 LGT SNOW  23  16  74 SW13G20   29.95F WCI  11             .
+ 4PM EST FEB 02 2013 LGT SNOW  21  18  86 SW6       29.94F VSB 1   WCI  14     .
+ 5PM EST FEB 02 2013 LGT SNOW  22  18  85 SW7       29.94S VSB 1   WCI  13     .
+ 6PM EST FEB 02 2013 LGT SNOW  22  19  89 S3        29.94S VSB 1               .
+ 7PM EST FEB 02 2013 LGT SNOW  22  20  92 CALM      29.94S VSB 1               .
+ 8PM EST FEB 02 2013 LGT SNOW  22  20  92 S3        29.95R VSB 1               .
+ 9PM EST FEB 02 2013 FLURRIES  22  20  92 S3        29.95S                     .
+10PM EST FEB 02 2013 FLURRIES  23  19  85 SW5       29.95S WCI  17             .
+11PM EST FEB 02 2013 FLURRIES  23  20  88 SW5       29.94F WCI  17             .
+12AM EST FEB 03 2013 LGT SNOW  23  20  88 SW6       29.93F FOG     WCI  16     .
+ 1AM EST FEB 03 2013 LGT SNOW  23  20  88 SW6       29.91F FOG     WCI  16     .
+ 2AM EST FEB 03 2013 LGT SNOW  23  20  88 SW5       29.90F FOG     WCI  17     .
+ 3AM EST FEB 03 2013 FLURRIES  22  20  92 CALM      29.89F                     .
+ 4AM EST FEB 03 2013 FLURRIES  22  20  92 SW3       29.86F                     .
+ 5AM EST FEB 03 2013 LGT SNOW  23  20  88 SW5       29.85F FOG     WCI  17     .
+ 6AM EST FEB 03 2013 LGT SNOW  23  20  88 SW3       29.84S FOG                 .
+ 7AM EST FEB 03 2013 FLURRIES  23  20  88 SW5       29.83F WCI  17             .
+ 8AM EST FEB 03 2013 FLURRIES  22  18  85 W3        29.83F                     .
+ 9AM EST FEB 03 2013 FLURRIES  22  18  85 W6        29.84R WCI  14             .
+10AM EST FEB 03 2013 LGT SNOW  23  18  81 W7        29.84S FOG     WCI  15     .
+11AM EST FEB 03 2013 LGT SNOW  23  19  85 W6        29.83F FOG     WCI  16     .
+12PM EST FEB 03 2013 LGT SNOW  22  18  85 NW10      29.82F FOG     WCI  11     .
+ 1PM EST FEB 03 2013 LGT SNOW  22  17  81 NW10      29.81F FOG     WCI  11     .
+ 2PM EST FEB 03 2013 LGT SNOW  23  16  74 W10       29.80F FOG     WCI  12     .
+ 3PM EST FEB 03 2013 LGT SNOW  23  15  71 W12       29.81R WCI  12             .
+ 4PM EST FEB 03 2013 FLURRIES  22  13  68 W15       29.83R WCI   9             .
+ 5PM EST FEB 03 2013 FLURRIES  21  12  68 NW13      29.84R WCI   9             .
+ 6PM EST FEB 03 2013 FLURRIES  20  13  74 W16       29.87R WCI   6             .
+ 7PM EST FEB 03 2013 LGT SNOW  20  13  74 W7        29.89R WCI  11             .
+ 8PM EST FEB 03 2013 LGT SNOW  19  14  81 W6        29.92R WCI  11             .
+ 9PM EST FEB 03 2013 LGT SNOW  19  13  77 W13G20    29.94R WCI   6             .
+10PM EST FEB 03 2013 LGT SNOW  18  12  77 W10G21    29.96R WCI   6             .
+11PM EST FEB 03 2013 FLURRIES  18  10  71 W14G21    29.98R WCI   4             .
+12AM EST FEB 04 2013 LGT SNOW  17  10  74 W10       29.99R WCI   5             .
+ 1AM EST FEB 04 2013 LGT SNOW  18  10  71 W10G16    29.99S WCI   6             .
+ 2AM EST FEB 04 2013 FLURRIES  18   9  68 W12G17    29.99S WCI   5             .
+ 3AM EST FEB 04 2013 FLURRIES  18  10  71 W12       30.00R WCI   5             .
+ 4AM EST FEB 04 2013 FLURRIES  17   9  70 W10       30.01R WCI   5             .
+ 5AM EST FEB 04 2013 FLURRIES  17   8  67 W8        30.02R WCI   7             .
+ 6AM EST FEB 04 2013 FLURRIES  17   9  70 W5        30.02S WCI  10             .
+ 7AM EST FEB 04 2013 CLOUDY    17   9  70 SW7       30.02S WCI   8             .
+ 8AM EST FEB 04 2013 MOCLDY    17  10  74 S6        30.02S WCI   9             .
+ 9AM EST FEB 04 2013 LGT SNOW  18  11  74 S7        30.01F WCI   9             .
+10AM EST FEB 04 2013 LGT SNOW  19  13  77 SW7       29.99F WCI  10             .
+11AM EST FEB 04 2013 FLURRIES  21  13  71 SW7       29.97F WCI  12             .
+12PM EST FEB 04 2013 LGT SNOW  23  14  68 W9        29.95F WCI  13             .
+ 1PM EST FEB 04 2013 LGT SNOW  24  17  74 SW10      29.94F WCI  14             .
+ 2PM EST FEB 04 2013 LGT SNOW  24  18  77 SW8       29.91F WCI  15             .
+ 3PM EST FEB 04 2013 LGT SNOW  23  20  88 S5        29.89F WCI  17             .
+ 4PM EST FEB 04 2013 LGT SNOW  24  20  84 SW3       29.87F                     .
+ 5PM EST FEB 04 2013 LGT SNOW  24  20  84 S5        29.85F VSB 3/4 WCI  18     .
+ 6PM EST FEB 04 2013 LGT SNOW  23  21  92 CALM      29.84F VSB 3/4             .
+ 7PM EST FEB 04 2013 LGT SNOW  24  21  88 CALM      29.85R                     .
+ 8PM EST FEB 04 2013 FLURRIES  24  22  91 CALM      29.84F                     .
+ 9PM EST FEB 04 2013 CLOUDY    24  22  91 CALM      29.83F                     .
+10PM EST FEB 04 2013 CLOUDY    24  22  91 CALM      29.83S                     .
+11PM EST FEB 04 2013 CLOUDY    25  22  88 CALM      29.83S                     .
+12AM EST FEB 05 2013 LGT SNOW  25  23  92 CALM      29.83S FOG                 .
+ 1AM EST FEB 05 2013 LGT SNOW  25  22  88 CALM      29.82F FOG                 .
+ 2AM EST FEB 05 2013 CLOUDY    25  23  92 CALM      29.82S FOG                 .
+ 3AM EST FEB 05 2013 LGT SNOW  26  24  92 W7        29.83S FOG     WCI  18     .
+ 4AM EST FEB 05 2013 CLOUDY    26  24  92 W3        29.83R FOG                 .
+ 5AM EST FEB 05 2013 LGT SNOW  26  24  92 W3        29.83S FOG                 .
+ 6AM EST FEB 05 2013 LGT SNOW  25  23  93 NW5       29.84S FOG     WCI  19     .
+ 7AM EST FEB 05 2013 LGT SNOW  26  24  92 CALM      29.84S FOG                 .
+ 8AM EST FEB 05 2013 CLOUDY    26  23  88 CALM      29.84S FOG                 .
+ 9AM EST FEB 05 2013 CLOUDY    26  24  92 CALM      29.86R FOG                 .
+10AM EST FEB 05 2013 CLOUDY    26  24  92 CALM      29.86S FOG                 .
+11AM EST FEB 05 2013 FRZ DRZL  27  25  92 CALM      29.86S FOG                 .
+12PM EST FEB 05 2013 FRZ DRZL  28  27  96 CALM      29.84F FOG                 .
+ 1PM EST FEB 05 2013 LGT SNOW  29  26  89 W5        29.82F FOG     WCI  24     .
+ 2PM EST FEB 05 2013 LGT SNOW  30  26  85 CALM      29.80F FOG                 .
+ 3PM EST FEB 05 2013 FLURRIES  31  26  82 W7        29.80S WCI  24             .
+ 4PM EST FEB 05 2013 FLURRIES  31  25  78 W12       29.82R WCI  22             .
+ 5PM EST FEB 05 2013 MOCLDY    30  22  72 W10       29.83R WCI  21             .
+ 6PM EST FEB 05 2013 MOCLDY    29  21  72 W5        29.84R WCI  24             .
+ 7PM EST FEB 05 2013 CLOUDY    27  21  78 CALM      29.85R                     .
+ 8PM EST FEB 05 2013 LGT SNOW  28  22  78 W6        29.88R WCI  22             .
+ 9PM EST FEB 05 2013 LGT SNOW  27  24  89 SW5       29.89R FOG     WCI  22     .
+10PM EST FEB 05 2013 FLURRIES  27  24  89 S3        29.90R                     .
+11PM EST FEB 05 2013 LGT SNOW  27  25  92 CALM      29.90S VSB 1               .
+12AM EST FEB 06 2013 FLURRIES  27  25  92 SW3       29.91R                     .
+ 1AM EST FEB 06 2013 CLOUDY    27  25  92 SW3       29.93R                     .
+ 2AM EST FEB 06 2013 CLOUDY    27  24  89 W6        29.95R WCI  20             .
+ 3AM EST FEB 06 2013 CLOUDY    27  24  89 W7        29.98R WCI  19             .
+ 4AM EST FEB 06 2013 CLOUDY    28  23  81 SW5       29.99R WCI  23             .
+ 5AM EST FEB 06 2013 FLURRIES  28  25  86 SW6       30.03R WCI  22             .
+ 6AM EST FEB 06 2013 LGT SNOW  28  24  85 W6        30.06R FOG     WCI  22     .
+ 7AM EST FEB 06 2013 LGT SNOW  28  25  88 W6        30.09R FOG     WCI  22     .
+ 8AM EST FEB 06 2013 CLOUDY    28  24  85 W6        30.11R FOG     WCI  22     .
+ 9AM EST FEB 06 2013 LGT SNOW  28  23  81 W8        30.15R WCI  20             .
+10AM EST FEB 06 2013 NOT AVBL                                                  .
+11AM EST FEB 06 2013 CLOUDY    29  21  72 N12       30.19R WCI  19             .
+12PM EST FEB 06 2013 FLURRIES  28  22  78 N10       30.21R WCI  19             .
+ 1PM EST FEB 06 2013 PTSUNNY   29  20  69 NW6       30.20F WCI  23             .
+ 2PM EST FEB 06 2013 MOSUNNY   29  17  61 W9        30.21R WCI  20             .
+ 3PM EST FEB 06 2013 MOSUNNY   30  16  56 NW8       30.23R WCI  22             .
+ 4PM EST FEB 06 2013 MOSUNNY   31  13  47 NW6       30.24R WCI  25             .
+ 5PM EST FEB 06 2013 PTCLDY    30  14  51 NW6       30.25R WCI  24             .
+ 6PM EST FEB 06 2013 PTCLDY    28  13  53 CALM      30.25S                     .
+ 7PM EST FEB 06 2013 CLEAR     26  15  63 CALM      30.27R                     .
+ 8PM EST FEB 06 2013 CLEAR     24  14  65 CALM      30.28R                     .
+ 9PM EST FEB 06 2013 CLEAR     24  14  65 VRB3      30.29R                     .
+10PM EST FEB 06 2013 PTCLDY    21  13  71 CALM      30.29S                     .
+11PM EST FEB 06 2013 CLEAR     20  14  77 CALM      30.28F                     .
+12AM EST FEB 07 2013 CLEAR     20  14  77 CALM      30.27F                     .
+ 1AM EST FEB 07 2013 MOCLDY    17  12  80 CALM      30.26F                     .
+ 2AM EST FEB 07 2013 MOCLDY    17  13  84 CALM      30.25F                     .
+ 3AM EST FEB 07 2013 CLOUDY    20  15  81 E5        30.23F WCI  13             .
+ 4AM EST FEB 07 2013 CLOUDY    21  16  81 NE3       30.22F                     .
+ 5AM EST FEB 07 2013 CLOUDY    22  15  75 CALM      30.25R                     .
+ 6AM EST FEB 07 2013 CLOUDY    21  15  78 CALM      30.26R                     .
+ 7AM EST FEB 07 2013 CLOUDY    21  15  78 E5        30.25F WCI  15             .
+ 8AM EST FEB 07 2013 CLOUDY    22  17  81 CALM      30.24F                     .
+ 9AM EST FEB 07 2013 CLOUDY    24  18  77 E5        30.24S WCI  18             .
+10AM EST FEB 07 2013 NOT AVBL                                                  .
+11AM EST FEB 07 2013 CLOUDY    29  21  72 E6        30.22  WCI  23             .
+12PM EST FEB 07 2013 CLOUDY    32  22  66 SE6       30.19F WCI  26             .
+ 1PM EST FEB 07 2013 CLOUDY    35  23  61 SE5       30.16F WCI  31             .
+ 2PM EST FEB 07 2013 PTSUNNY   38  24  57 E6        30.12F                     .
+ 3PM EST FEB 07 2013 PTSUNNY   40  25  55 E7        30.09F                     .
+ 4PM EST FEB 07 2013 NOT AVBL                                                  .
+ 5PM EST FEB 07 2013 MOCLDY    40  26  57 E10       30.06                      .
+ 6PM EST FEB 07 2013 MOCLDY    39  26  59 E8        30.04F                     .
+ 7PM EST FEB 07 2013 MOCLDY    38  26  62 E10       30.03F                     .
+ 8PM EST FEB 07 2013 MOCLDY    37  26  64 E10       30.01F                     .
+ 9PM EST FEB 07 2013 MOCLDY    36  26  67 SE12      29.99F                     .
+10PM EST FEB 07 2013 NOT AVBL                                                  .
+11PM EST FEB 07 2013 PTCLDY    35  26  69 SE8       29.96  WCI  29             .
+12AM EST FEB 08 2013 PTCLDY    34  26  72 SE8       29.93F WCI  27             .
+ 1AM EST FEB 08 2013 PTCLDY    33  27  78 SE9       29.92F WCI  25             .
+ 2AM EST FEB 08 2013 PTCLDY    34  27  75 SE9       29.89F WCI  27             .
+ 3AM EST FEB 08 2013 PTCLDY    34  27  75 SE8       29.86F WCI  27             .
+ 4AM EST FEB 08 2013 MOCLDY    34  27  75 SE9       29.85F WCI  27             .
+ 5AM EST FEB 08 2013 PTCLDY    35  28  75 SE10      29.83F WCI  27             .
+ 6AM EST FEB 08 2013 MOCLDY    34  28  79 SE8       29.81F WCI  27             .
+ 7AM EST FEB 08 2013 CLOUDY    35  29  78 SE9       29.80F WCI  28             .
+ 8AM EST FEB 08 2013 CLOUDY    36  29  75 SE9       29.78F                     .
+ 9AM EST FEB 08 2013 LGT RAIN  36  30  79 S5        29.78S                     .
+10AM EST FEB 08 2013 LGT RAIN  36  32  85 S3        29.79R FOG                 .
+11AM EST FEB 08 2013 LGT RAIN  38  35  89 SW6       29.78F                     .
+12PM EST FEB 08 2013 LGT RAIN  37  35  92 W13G21    29.79R                     .
+ 1PM EST FEB 08 2013 DRIZZLE   34  32  92 W18G26    29.81R FOG     WCI  23     .
+ 2PM EST FEB 08 2013 LGT SNOW  32  29  88 W21       29.84R FOG     WCI  20     .
+ 3PM EST FEB 08 2013 CLOUDY    32  27  81 W20G30    29.86R WCI  20             .
+ 4PM EST FEB 08 2013 FLURRIES  30  24  78 W22G32    29.89R WCI  17             .
+ 5PM EST FEB 08 2013 CLOUDY    28  22  78 NW24G31   29.93R WCI  14             .
+ 6PM EST FEB 08 2013 CLOUDY    28  21  75 NW21G32   29.97R WCI  15             .
+ 7PM EST FEB 08 2013 LGT SNOW  27  21  78 NW20G30   30.00R WCI  13             .
+ 8PM EST FEB 08 2013 LGT SNOW  27  21  78 NW20      30.03R WCI  13             .
+ 9PM EST FEB 08 2013 FLURRIES  26  21  81 W18G29    30.06R WCI  13             .
+10PM EST FEB 08 2013 LGT SNOW  26  21  81 NW18G26   30.09R WCI  13             .
+11PM EST FEB 08 2013 LGT SNOW  26  21  81 NW15      30.11R WCI  14             .
+12AM EST FEB 09 2013 LGT SNOW  26  19  74 NW23      30.13R WCI  11             .
+ 1AM EST FEB 09 2013 FLURRIES  25  18  74 NW24      30.15R WCI   9             .
+ 2AM EST FEB 09 2013 FLURRIES  24  17  74 NW21G30   30.17R WCI   9             .
+ 3AM EST FEB 09 2013 FLURRIES  23  15  71 NW18G30   30.21R WCI   9             .
+ 4AM EST FEB 09 2013 FLURRIES  23  16  74 NW17      30.21S WCI   9             .
+ 5AM EST FEB 09 2013 FLURRIES  23  16  74 NW15      30.24R WCI  10             .
+ 6AM EST FEB 09 2013 FLURRIES  23  16  74 NW14      30.26R WCI  11             .
+ 7AM EST FEB 09 2013 FLURRIES  23  15  71 NW12      30.29R WCI  12             .
+ 8AM EST FEB 09 2013 FLURRIES  23  15  71 NW13      30.32R WCI  11             .
+ 9AM EST FEB 09 2013 FLURRIES  23  15  71 NW13      30.34R WCI  11             .
+10AM EST FEB 09 2013 PTSUNNY   24  16  71 N6        30.35R WCI  17             .
+11AM EST FEB 09 2013 PTSUNNY   25  16  68 NW9       30.36R WCI  15             .
+12PM EST FEB 09 2013 MOSUNNY   27  16  63 NW6       30.35F WCI  20             .
+ 1PM EST FEB 09 2013 MOSUNNY   29  16  58 NW9       30.34F WCI  20             .
+ 2PM EST FEB 09 2013 MOSUNNY   30  16  56 W6        30.32F WCI  24             .
+ 3PM EST FEB 09 2013 MOSUNNY   32  16  51 NW8       30.31F WCI  25             .
+ 4PM EST FEB 09 2013 MOSUNNY   33  15  47 NW7       30.32R WCI  27             .
+ 5PM EST FEB 09 2013 PTCLDY    33  16  49 NW5       30.32S WCI  29             .
+ 6PM EST FEB 09 2013 PTCLDY    31  14  49 CALM      30.32S                     .
+ 7PM EST FEB 09 2013 PTCLDY    30  14  51 CALM      30.32S                     .
+ 8PM EST FEB 09 2013 PTCLDY    26  16  65 CALM      30.33R                     .
+ 9PM EST FEB 09 2013 PTCLDY    25  15  66 CALM      30.34R                     .
+10PM EST FEB 09 2013 CLEAR     24  16  71 CALM      30.35R                     .
+11PM EST FEB 09 2013 CLEAR     21  15  78 CALM      30.34F                     .
+12AM EST FEB 10 2013 CLEAR     20  14  77 CALM      30.31F                     .
+ 1AM EST FEB 10 2013 CLEAR     20  15  81 S3        30.31S                     .
+ 2AM EST FEB 10 2013 CLEAR     20  14  77 CALM      30.29F                     .
+ 3AM EST FEB 10 2013 NOT AVBL                                                  .
+ 4AM EST FEB 10 2013 CLEAR     18  14  84 CALM      30.27                      .
+ 5AM EST FEB 10 2013 PTCLDY    20  15  81 E3        30.25F                     .
+ 6AM EST FEB 10 2013 CLOUDY    20  15  81 CALM      30.24F                     .
+ 7AM EST FEB 10 2013 MOCLDY    20  15  81 CALM      30.26R                     .
+ 8AM EST FEB 10 2013 CLOUDY    21  16  81 E3        30.26S                     .
+ 9AM EST FEB 10 2013 CLOUDY    23  17  78 CALM      30.25F                     .
+10AM EST FEB 10 2013 CLOUDY    26  16  65 SE5       30.24F WCI  20             .
+11AM EST FEB 10 2013 PTSUNNY   31  17  56 SE8       30.21F WCI  23             .
+12PM EST FEB 10 2013 PTSUNNY   38  16  40 SE3       30.21S                     .
+ 1PM EST FEB 10 2013 PTSUNNY   43  15  32 SE5       30.16F                     .
+ 2PM EST FEB 10 2013 PTSUNNY   44  17  33 SE5       30.11F                     .
+ 3PM EST FEB 10 2013 PTSUNNY   47  18  31 SE7       30.10F                     .
+ 4PM EST FEB 10 2013 CLOUDY    47  19  33 SE7       30.07F                     .
+ 5PM EST FEB 10 2013 CLOUDY    46  21  37 E5        30.05F                     .
+ 6PM EST FEB 10 2013 CLOUDY    46  21  37 SE10      30.02F                     .
+ 7PM EST FEB 10 2013 CLOUDY    44  22  41 E6        30.03R                     .
+ 8PM EST FEB 10 2013 CLOUDY    43  22  43 SE10      30.01F                     .
+ 9PM EST FEB 10 2013 CLOUDY    42  21  43 SE7       29.99F                     .
+10PM EST FEB 10 2013 LGT RAIN  44  20  38 SE9       29.96F                     .
+11PM EST FEB 10 2013 CLOUDY    44  21  40 SE8       29.94F                     .
+12AM EST FEB 11 2013 LGT RAIN  44  25  47 S13G18    29.93F                     .
+ 1AM EST FEB 11 2013 LGT RAIN  39  37  92 SE9       29.90F FOG                 .
+ 2AM EST FEB 11 2013 CLOUDY    39  36  89 SE8       29.88F                     .
+ 3AM EST FEB 11 2013 CLOUDY    39  37  92 SE8       29.85F                     .
+ 4AM EST FEB 11 2013 LGT RAIN  39  37  92 SE5       29.83F FOG                 .
+ 5AM EST FEB 11 2013 DRIZZLE   40  39  97 S5        29.82F                     .
+ 6AM EST FEB 11 2013 CLOUDY    41  39  93 S6        29.81F                     .
+ 7AM EST FEB 11 2013 PTCLDY    40  39  97 S3        29.79F                     .
+ 8AM EST FEB 11 2013 PTCLDY    41  39  93 S6        29.78F                     .
+ 9AM EST FEB 11 2013 MOSUNNY   46  41  82 S8        29.77F                     .
+10AM EST FEB 11 2013 PTSUNNY   53  44  71 SW20G26   29.73F                     .
+11AM EST FEB 11 2013 MOSUNNY   55  40  56 SW24G33   29.70F                     .
+12PM EST FEB 11 2013 PTSUNNY   57  37  47 SW18G28   29.70S                     .
+ 1PM EST FEB 11 2013 PTSUNNY   58  34  40 SW21G41   29.67F                     .
+ 2PM EST FEB 11 2013 MOSUNNY   57  32  38 W21G36    29.65F                     .
+ 3PM EST FEB 11 2013 MOSUNNY   58  27  30 W18G32    29.65S                     .
+ 4PM EST FEB 11 2013 MOSUNNY   56  29  35 W20G38    29.68R                     .
+ 5PM EST FEB 11 2013 PTCLDY    50  29  44 W18G36    29.72R                     .
+ 6PM EST FEB 11 2013 PTCLDY    44  29  55 NW26      29.78R                     .
+ 7PM EST FEB 11 2013 PTCLDY    39  26  59 W17G24    29.82R                     .
+ 8PM EST FEB 11 2013 MOCLDY    39  26  59 W22G30    29.83R                     .
+ 9PM EST FEB 11 2013 CLOUDY    38  26  62 W21G26    29.86R                     .
+10PM EST FEB 11 2013 CLOUDY    38  25  59 W24G30    29.88R                     .
+11PM EST FEB 11 2013 CLOUDY    37  22  54 W15G40    29.89R                     .
+12AM EST FEB 12 2013 CLOUDY    37  22  54 W12G22    29.90R                     .
+ 1AM EST FEB 12 2013 CLOUDY    36  24  62 W12       29.92R                     .
+ 2AM EST FEB 12 2013 NOT AVBL                                                  .
+ 3AM EST FEB 12 2013 FLURRIES  35  24  64 W13       29.94  WCI  26             .
+ 4AM EST FEB 12 2013 FLURRIES  35  23  61 W14G24    29.94S WCI  26             .
+ 5AM EST FEB 12 2013 CLOUDY    34  23  64 W13G24    29.96R WCI  25             .
+ 6AM EST FEB 12 2013 CLOUDY    34  23  64 W13       29.98R WCI  25             .
+ 7AM EST FEB 12 2013 CLOUDY    32  22  66 W14G22    30.00R WCI  22             .
+ 8AM EST FEB 12 2013 CLOUDY    32  22  66 W14G21    30.01R WCI  22             .
+ 9AM EST FEB 12 2013 CLOUDY    32  22  66 NW13      30.03R WCI  22             .
+10AM EST FEB 12 2013 CLOUDY    32  23  69 W14       30.05R WCI  22             .
+11AM EST FEB 12 2013 CLOUDY    32  22  66 W9        30.05S WCI  24             .
+12PM EST FEB 12 2013 CLOUDY    34  23  64 W9        30.04F WCI  27             .
+ 1PM EST FEB 12 2013 PTSUNNY   35  23  61 W7        30.00F WCI  29             .
+ 2PM EST FEB 12 2013 MOSUNNY   37  23  56 W10       29.97F                     .
+ 3PM EST FEB 12 2013 MOSUNNY   38  24  57 NW6       29.92F                     .
+ 4PM EST FEB 12 2013 MOSUNNY   41  23  48 W14       29.96R                     .
+ 5PM EST FEB 12 2013 PTCLDY    41  23  48 W8        29.97R                     .
+ 6PM EST FEB 12 2013 PTCLDY    40  22  48 W5        29.97S                     .
+ 7PM EST FEB 12 2013 PTCLDY    39  22  50 CALM      29.95F                     .
+ 8PM EST FEB 12 2013 PTCLDY    37  22  54 CALM      29.93F                     .
+ 9PM EST FEB 12 2013 PTCLDY    32  22  66 CALM      29.92F                     .
+10PM EST FEB 12 2013 PTCLDY    33  23  66 CALM      29.91F                     .
+11PM EST FEB 12 2013 CLEAR     28  22  78 CALM      29.90F                     .
+12AM EST FEB 13 2013 CLEAR     28  22  78 CALM      29.89F                     .
+ 1AM EST FEB 13 2013 CLEAR     27  22  81 CALM      29.88F                     .
+ 2AM EST FEB 13 2013 CLEAR     27  21  78 CALM      29.86F                     .
+ 3AM EST FEB 13 2013 CLEAR     25  21  85 CALM      29.85F                     .
+ 4AM EST FEB 13 2013 CLEAR     24  20  84 CALM      29.83F                     .
+ 5AM EST FEB 13 2013 PTCLDY    24  20  84 CALM      29.83S                     .
+ 6AM EST FEB 13 2013 NOT AVBL                                                  .
+ 7AM EST FEB 13 2013 MOCLDY    25  22  88 CALM      29.80                      .
+ 8AM EST FEB 13 2013 MOCLDY    27  23  85 CALM      29.78F                     .
+ 9AM EST FEB 13 2013 CLOUDY    28  24  85 CALM      29.76F                     .
+10AM EST FEB 13 2013 PTSUNNY   32  25  75 SE3       29.75F                     .
+11AM EST FEB 13 2013 CLOUDY    36  26  67 N8        29.74F                     .
+12PM EST FEB 13 2013 CLOUDY    34  25  69 N6        29.75R WCI  29             .
+ 1PM EST FEB 13 2013 CLOUDY    35  26  69 N7        29.70F WCI  29             .
+ 2PM EST FEB 13 2013 CLOUDY    36  25  64 N3        29.69F                     .
+ 3PM EST FEB 13 2013 CLOUDY    36  25  64 NW3       29.67F                     .
+ 4PM EST FEB 13 2013 SNOW      33  29  85 CALM      29.68R VSB 1/2             .
+ 5PM EST FEB 13 2013 SNOW      32  30  92 NW7       29.69R VSB 1/2 WCI  26     .
+ 6PM EST FEB 13 2013 SNOW      32  31  96 NW8       29.70R VSB 1/2 WCI  25     .
+ 7PM EST FEB 13 2013 LGT SNOW  32  30  92 NW10      29.72R FOG     WCI  24     .
+ 8PM EST FEB 13 2013 CLOUDY    31  29  92 W6        29.75R FOG     WCI  25     .
+ 9PM EST FEB 13 2013 MOCLDY    29  27  92 W5        29.77R FOG     WCI  24     .
+10PM EST FEB 13 2013 PTCLDY    28  26  92 W6        29.79R FOG     WCI  22     .
+11PM EST FEB 13 2013 CLEAR     28  25  88 W5        29.80R FOG     WCI  23     .
+12AM EST FEB 14 2013 MOCLDY    26  23  88 W6        29.83R FOG     WCI  19     .
+ 1AM EST FEB 14 2013 CLOUDY    27  24  89 W3        29.85R FOG                 .
+ 2AM EST FEB 14 2013 CLOUDY    28  24  85 SW3       29.86R FOG                 .
+ 3AM EST FEB 14 2013 PTCLDY    27  24  89 SW3       29.86S FOG                 .
+ 4AM EST FEB 14 2013 MOCLDY    26  24  92 SW6       29.87R FOG     WCI  19     .
+ 5AM EST FEB 14 2013 CLOUDY    28  25  88 SW8       29.88R FOG     WCI  20     .
+ 6AM EST FEB 14 2013 CLOUDY    28  26  92 S6        29.89R FOG     WCI  22     .
+ 7AM EST FEB 14 2013 CLOUDY    29  26  89 S5        29.90R FOG     WCI  24     .
+ 8AM EST FEB 14 2013 CLOUDY    29  27  92 S6        29.91R FOG     WCI  23     .
+ 9AM EST FEB 14 2013 LGT SNOW  30  27  88 S7        29.91S FOG     WCI  23     .
+10AM EST FEB 14 2013 CLOUDY    31  28  89 S8        29.90F FOG     WCI  23     .
+11AM EST FEB 14 2013 CLOUDY    32  29  88 S8G17     29.91R FOG     WCI  25     .
+12PM EST FEB 14 2013 CLOUDY    34  30  85 S9        29.90F FOG     WCI  27     .
+ 1PM EST FEB 14 2013 CLOUDY    36  31  82 S13G20    29.89F                     .
+ 2PM EST FEB 14 2013 CLOUDY    37  31  78 S12G20    29.87F                     .
+ 3PM EST FEB 14 2013 CLOUDY    38  31  76 S9        29.85F                     .
+ 4PM EST FEB 14 2013 CLOUDY    41  31  67 S8        29.84F                     .
+ 5PM EST FEB 14 2013 CLOUDY    41  30  65 S7        29.84S                     .
+ 6PM EST FEB 14 2013 CLOUDY    42  30  62 SW6       29.84S                     .
+ 7PM EST FEB 14 2013 CLOUDY    41  29  62 S6        29.85R                     .
+ 8PM EST FEB 14 2013 CLOUDY    41  30  65 S5        29.87R                     .
+ 9PM EST FEB 14 2013 MOCLDY    39  29  67 S6        29.85F                     .
+10PM EST FEB 14 2013 PTCLDY    41  32  70 SW9G23    29.86R                     .
+11PM EST FEB 14 2013 PTCLDY    40  32  73 SW8       29.85F                     .
+12AM EST FEB 15 2013 CLOUDY    39  33  79 W8        29.88R                     .
+ 1AM EST FEB 15 2013 CLOUDY    39  32  76 W10       29.89R                     .
+ 2AM EST FEB 15 2013 CLOUDY    37  29  72 W10       29.91R                     .
+ 3AM EST FEB 15 2013 PTCLDY    35  25  66 W7        29.92R WCI  29             .
+ 4AM EST FEB 15 2013 CLEAR     33  25  72 SW5       29.93R WCI  29             .
+ 5AM EST FEB 15 2013 PTCLDY    33  25  72 SW7       29.94R WCI  27             .
+ 6AM EST FEB 15 2013 CLOUDY    32  26  78 S3        29.96R                     .
+ 7AM EST FEB 15 2013 CLOUDY    33  26  75 SW5       29.97R WCI  29             .
+ 8AM EST FEB 15 2013 CLOUDY    33  26  75 SW7       29.99R WCI  27             .
+ 9AM EST FEB 15 2013 CLOUDY    33  26  75 SW8       30.01R WCI  26             .
+10AM EST FEB 15 2013 PTSUNNY   34  26  72 VRB7      30.00F WCI  28             .
+11AM EST FEB 15 2013 PTSUNNY   35  24  64 W10G16    30.01R WCI  27             .
+12PM EST FEB 15 2013 CLOUDY    38  23  55 W12       30.01S                     .
+ 1PM EST FEB 15 2013 CLOUDY    37  23  56 W8G21     29.98F                     .
+ 2PM EST FEB 15 2013 CLOUDY    38  23  55 W10G17    29.97F                     .
+ 3PM EST FEB 15 2013 CLOUDY    37  22  54 SW10      29.97S                     .
+ 4PM EST FEB 15 2013 FLURRIES  37  24  59 W8        29.97S                     .
+ 5PM EST FEB 15 2013 MOCLDY    36  23  59 SW8       29.98R                     .
+ 6PM EST FEB 15 2013 CLOUDY    35  25  66 W7        29.99R WCI  29             .
+ 7PM EST FEB 15 2013 CLOUDY    34  26  72 W3        29.99S                     .
+ 8PM EST FEB 15 2013 LGT SNOW  30  28  92 NW9       30.01R VSB 1   WCI  22     .
+ 9PM EST FEB 15 2013 LGT SNOW  30  27  88 N12       30.01S VSB 1   WCI  20     .
+10PM EST FEB 15 2013 CLOUDY    29  25  85 N13       30.03R WCI  19             .
+11PM EST FEB 15 2013 MOCLDY    28  22  78 N8        30.03S WCI  20             .
+12AM EST FEB 16 2013 CLOUDY    27  19  72 NW8       30.02F WCI  19             .
+ 1AM EST FEB 16 2013 FLURRIES  26  19  74 NW8       30.02S WCI  18             .
+ 2AM EST FEB 16 2013 FLURRIES  25  19  78 NW6       30.02S WCI  18             .
+ 3AM EST FEB 16 2013 LGT SNOW  25  20  81 W5        30.01F WCI  19             .
+ 4AM EST FEB 16 2013 CLOUDY    25  20  81 NW5       30.00F WCI  19             .
+ 5AM EST FEB 16 2013 MOCLDY    24  19  81 NW6       29.99F WCI  17             .
+ 6AM EST FEB 16 2013 MOCLDY    23  18  81 CALM      29.99S                     .
+ 7AM EST FEB 16 2013 FLURRIES  22  17  81 CALM      29.99S                     .
+ 8AM EST FEB 16 2013 NOT AVBL                                                  .
+ 9AM EST FEB 16 2013 PTSUNNY   23  17  78 W6        30.00  WCI  16             .
+10AM EST FEB 16 2013 PTSUNNY   25  18  74 W7        29.99F WCI  17             .
+11AM EST FEB 16 2013 PTSUNNY   25  13  60 CALM      29.98F                     .
+12PM EST FEB 16 2013 PTSUNNY   27  10  49 VRB3      29.96F                     .
+ 1PM EST FEB 16 2013 PTSUNNY   27  12  53 W7        29.94F WCI  19             .
+ 2PM EST FEB 16 2013 FLURRIES  28  15  58 NW9       29.92F WCI  19             .
+ 3PM EST FEB 16 2013 PTSUNNY   27  16  63 W9        29.91F WCI  18             .
+ 4PM EST FEB 16 2013 CLOUDY    27  12  53 W9        29.91S WCI  18             .
+ 5PM EST FEB 16 2013 CLOUDY    27  11  51 W13G18    29.92R WCI  16             .
+ 6PM EST FEB 16 2013 MOCLDY    26  10  50 W8        29.92S WCI  18             .
+ 7PM EST FEB 16 2013 PTCLDY    24  10  55 CALM      29.92S                     .
+ 8PM EST FEB 16 2013 PTCLDY    24   9  52 CALM      29.92S                     .
+ 9PM EST FEB 16 2013 MOCLDY    23  11  60 CALM      29.90F                     .
+10PM EST FEB 16 2013 CLOUDY    22  13  68 CALM      29.90S                     .
+11PM EST FEB 16 2013 LGT SNOW  22  19  89 NW9       29.89F FOG     WCI  12     .
+12AM EST FEB 17 2013 LGT SNOW  22  17  81 NW14      29.89S FOG     WCI   9     .
+ 1AM EST FEB 17 2013 FLURRIES  20  15  81 W15       29.88F WCI   6             .
+ 2AM EST FEB 17 2013 LGT SNOW  19  16  86 NW12      29.90R VSB 3/4 WCI   7     .
+ 3AM EST FEB 17 2013 LGT SNOW  19  15  84 NW12      29.91R VSB 1   WCI   7     .
+ 4AM EST FEB 17 2013 LGT SNOW  17  13  84 W10       29.91S FOG     WCI   5     .
+ 5AM EST FEB 17 2013 LGT SNOW  16  11  80 W12       29.92R WCI   3             .
+ 6AM EST FEB 17 2013 LGT SNOW  16  11  80 W12       29.94R WCI   3             .
+ 7AM EST FEB 17 2013 LGT SNOW  15  10  80 W13G18    29.95R WCI   1             .
+ 8AM EST FEB 17 2013 LGT SNOW  15  11  83 W12G21    29.97R WCI   2             .
+ 9AM EST FEB 17 2013 LGT SNOW  16  11  80 W17       29.99R WCI   0             .
+10AM EST FEB 17 2013 LGT SNOW  17  11  77 W16       30.00R WCI   2             .
+11AM EST FEB 17 2013 FLURRIES  18  11  74 W14G20    30.02R WCI   4             .
+12PM EST FEB 17 2013 FLURRIES  20  11  68 W15       30.04R WCI   6             .
+ 1PM EST FEB 17 2013 FLURRIES  21   9  59 W22G28    30.03F WCI   5             .
+ 2PM EST FEB 17 2013 LGT SNOW  21  13  71 NW21      30.04R WCI   5             .
+ 3PM EST FEB 17 2013 PTSUNNY   21   7  54 NW20G28   30.04S WCI   6             .
+ 4PM EST FEB 17 2013 FLURRIES  21   7  54 W17G29    30.06R WCI   7             .
+ 5PM EST FEB 17 2013 CLOUDY    20   7  57 W20G26    30.08R WCI   4             .
+ 6PM EST FEB 17 2013 MOCLDY    19   5  54 W23       30.11R WCI   2             .
+ 7PM EST FEB 17 2013 MOCLDY    19   5  54 NW17G24   30.13R WCI   4             .
+ 8PM EST FEB 17 2013 CLOUDY    18   5  57 NW13      30.16R WCI   5             .
+ 9PM EST FEB 17 2013 MOCLDY    17   4  56 NW13      30.18R WCI   4             .
+10PM EST FEB 17 2013 MOCLDY    17   3  54 W7        30.19R WCI   8             .
+11PM EST FEB 17 2013 PTCLDY    16   4  59 SW3       30.20R                     .
+12AM EST FEB 18 2013 NOT AVBL                                                  .
+ 1AM EST FEB 18 2013 CLEAR     11   3  70 CALM      30.22                      .
+ 2AM EST FEB 18 2013 CLEAR     12   4  70 CALM      30.23R                     .
+ 3AM EST FEB 18 2013 PTCLDY    11   4  73 CALM      30.22F                     .
+ 4AM EST FEB 18 2013 PTCLDY    10   4  76 CALM      30.22S                     .
+ 5AM EST FEB 18 2013 CLEAR      9   3  77 CALM      30.22S                     .
+ 6AM EST FEB 18 2013 PTCLDY     8   3  80 CALM      30.23R                     .
+ 7AM EST FEB 18 2013 PTCLDY     8   3  80 CALM      30.24R                     .
+ 8AM EST FEB 18 2013 PTCLDY    10   4  76 CALM      30.24S                     .
+ 9AM EST FEB 18 2013 MOSUNNY   15   6  67 S6        30.23F WCI   6             .
+10AM EST FEB 18 2013 MOSUNNY   21   7  54 S9        30.22F WCI  11             .
+11AM EST FEB 18 2013 PTSUNNY   25   8  48 SE9       30.20F WCI  15             .
+12PM EST FEB 18 2013 MOSUNNY   28  10  46 SE12      30.18F WCI  18             .
+ 1PM EST FEB 18 2013 PTSUNNY   32  13  45 SE9       30.14F WCI  24             .
+ 2PM EST FEB 18 2013 PTSUNNY   35  16  45 S12       30.08F WCI  27             .
+ 3PM EST FEB 18 2013 NOT AVBL                                                  .
+ 4PM EST FEB 18 2013 CLOUDY    41  18  39 S9        30.04                      .
+ 5PM EST FEB 18 2013 CLOUDY    42  20  41 S8        30.02F                     .
+ 6PM EST FEB 18 2013 CLOUDY    41  21  44 SE6       29.99F                     .
+ 7PM EST FEB 18 2013 CLOUDY    39  22  50 SE5       29.98F                     .
+ 8PM EST FEB 18 2013 CLOUDY    37  22  54 SE5       29.96F                     .
+ 9PM EST FEB 18 2013 MOCLDY    38  23  55 SE6       29.93F                     .
+10PM EST FEB 18 2013 MOCLDY    36  24  62 S3        29.91F                     .
+11PM EST FEB 18 2013 PTCLDY    39  26  59 S6        29.88F                     .
+12AM EST FEB 19 2013 PTCLDY    41  27  57 S6        29.85F                     .
+ 1AM EST FEB 19 2013 CLOUDY    43  27  53 S9        29.83F                     .
+ 2AM EST FEB 19 2013 CLOUDY    45  25  45 S13G22    29.81F                     .
+ 3AM EST FEB 19 2013 LGT RAIN  44  30  57 SW17G29   29.82R                     .
+ 4AM EST FEB 19 2013 LGT RAIN  41  34  76 SW17G23   29.78F                     .
+ 5AM EST FEB 19 2013 LGT RAIN  40  35  83 S14       29.75F                     .
+ 6AM EST FEB 19 2013 LGT RAIN  39  35  86 S9        29.72F                     .
+ 7AM EST FEB 19 2013 LGT RAIN  40  35  83 S10       29.70F                     .
+ 8AM EST FEB 19 2013 LGT RAIN  40  36  86 S12       29.69F                     .
+ 9AM EST FEB 19 2013 LGT RAIN  41  36  82 S13G23    29.68F                     .
+10AM EST FEB 19 2013 DRIZZLE   41  36  82 SW18G24   29.66F                     .
+11AM EST FEB 19 2013 LGT RAIN  43  37  79 SW16G28   29.64F                     .
+12PM EST FEB 19 2013 FLURRIES  38  32  79 SW18G33   29.68R                     .
+ 1PM EST FEB 19 2013 NOT AVBL                                                  .
+ 2PM EST FEB 19 2013 CLOUDY    35  26  69 W21G31    29.70  WCI  24             .
+ 3PM EST FEB 19 2013 CLOUDY    34  24  67 W17       29.72R WCI  23             .
+ 4PM EST FEB 19 2013 FLURRIES  32  23  69 W15G25    29.74R WCI  22             .
+ 5PM EST FEB 19 2013 FLURRIES  30  25  81 W12G21    29.78R WCI  20             .
+ 6PM EST FEB 19 2013 LGT SNOW  28  23  81 W18G36    29.81R VSB 1   WCI  15     .
+ 7PM EST FEB 19 2013 CLOUDY    28  15  58 W12G20    29.84R WCI  18             .
+ 8PM EST FEB 19 2013 LGT SNOW  26  20  77 W13G20    29.87R WCI  15             .
+ 9PM EST FEB 19 2013 CLOUDY    25  15  66 W17G29    29.88R WCI  12             .
+10PM EST FEB 19 2013 FLURRIES  24  13  62 W10G21    29.89R WCI  14             .
+11PM EST FEB 19 2013 FLURRIES  24  15  68 W13G26    29.89S WCI  12             .
+12AM EST FEB 20 2013 FLURRIES  23  12  62 W12G21    29.91R WCI  12             .
+ 1AM EST FEB 20 2013 LGT SNOW  20  14  77 W10G18    29.92R WCI   9             .
+ 2AM EST FEB 20 2013 FLURRIES  20  12  71 W17G25    29.94R WCI   5             .
+ 3AM EST FEB 20 2013 FLURRIES  19  11  70 W14G29    29.95R WCI   6             .
+ 4AM EST FEB 20 2013 FLURRIES  18   8  65 W18G29    29.96R WCI   2             .
+ 5AM EST FEB 20 2013 NOT AVBL                                                  .
+ 6AM EST FEB 20 2013 FLURRIES  18   7  62 W16G28    29.99R WCI   3             .
+ 7AM EST FEB 20 2013 FLURRIES  18   7  62 W21       30.00R WCI   1             .
+ 8AM EST FEB 20 2013 LGT SNOW  18   7  62 W15G25    30.03R WCI   4             .
+ 9AM EST FEB 20 2013 LGT SNOW  17   9  70 W12G20    30.04R WCI   4             .
+10AM EST FEB 20 2013 FLURRIES  19  10  68 W18G28    30.04S WCI   4             .
+11AM EST FEB 20 2013 FLURRIES  18   9  68 W16G25    30.04F WCI   3             .
+12PM EST FEB 20 2013 FLURRIES  20   6  55 W14G30    30.05R WCI   7             .
+ 1PM EST FEB 20 2013 LGT SNOW  19   9  63 W17G23    30.06R WCI   4             .
+ 2PM EST FEB 20 2013 NOT AVBL                                                  .
+ 3PM EST FEB 20 2013 NOT AVBL                                                  .
+ 4PM EST FEB 20 2013 NOT AVBL                                                  .
+ 5PM EST FEB 20 2013 NOT AVBL                                                  .
+ 6PM EST FEB 20 2013 NOT AVBL                                                  .
+ 7PM EST FEB 20 2013 FLURRIES  19  14  81 W7        30.16R WCI  10             .
+ 8PM EST FEB 20 2013 LGT SNOW  19  13  77 W7        30.16S WCI  10             .
+ 9PM EST FEB 20 2013 FLURRIES  19  14  81 W8        30.16S WCI   9             .
+10PM EST FEB 20 2013 FLURRIES  19  13  77 W6        30.17R WCI  11             .
+11PM EST FEB 20 2013 LGT SNOW  19  14  81 W7        30.16F WCI  10             .
+12AM EST FEB 21 2013 FLURRIES  19  13  77 W10       30.15F WCI   7             .
+ 1AM EST FEB 21 2013 NOT AVBL                                                  .
+ 2AM EST FEB 21 2013 NOT AVBL                                                  .
+ 3AM EST FEB 21 2013 NOT AVBL                                                  .
+ 4AM EST FEB 21 2013 NOT AVBL                                                  .
+ 5AM EST FEB 21 2013 NOT AVBL                                                  .
+ 6AM EST FEB 21 2013 NOT AVBL                                                  .
+ 7AM EST FEB 21 2013 NOT AVBL                                                  .
+ 8AM EST FEB 21 2013 LGT SNOW  19  13  77 W6        30.22R WCI  11             .
+ 9AM EST FEB 21 2013 LGT SNOW  20  15  81 W9        30.24R WCI   9             .
+10AM EST FEB 21 2013 LGT SNOW  21  16  81 NW10      30.26R VSB 1   WCI  10     .
+11AM EST FEB 21 2013 LGT SNOW  20  15  81 NW13      30.26S WCI   7             .
+12PM EST FEB 21 2013 FLURRIES  21  13  71 NW12      30.27R WCI   9             .
+ 1PM EST FEB 21 2013 FLURRIES  21  13  71 NW12G21   30.26F WCI   9             .
+ 2PM EST FEB 21 2013 FLURRIES  22  12  65 NW9       30.26S WCI  12             .
+ 3PM EST FEB 21 2013 FLURRIES  23  12  62 N9        30.25F WCI  13             .
+ 4PM EST FEB 21 2013 FLURRIES  23  12  62 N5        30.25S WCI  17             .
+ 5PM EST FEB 21 2013 MOSUNNY   23  12  62 NW6       30.26R WCI  16             .
+ 6PM EST FEB 21 2013 MOCLDY    23  12  62 N6        30.29R WCI  16             .
+ 7PM EST FEB 21 2013 PTCLDY    22  12  65 N5        30.30R WCI  16             .
+ 8PM EST FEB 21 2013 PTCLDY    22  12  65 CALM      30.31R                     .
+ 9PM EST FEB 21 2013 PTCLDY    20  12  71 NE7       30.28F WCI  11             .
+10PM EST FEB 21 2013 MOCLDY    19  12  74 E3        30.25F                     .
+11PM EST FEB 21 2013 CLOUDY    20  12  71 E6        30.23F WCI  12             .
+12AM EST FEB 22 2013 CLOUDY    20  13  74 E6        30.22F WCI  12             .
+ 1AM EST FEB 22 2013 CLOUDY    21  13  71 CALM      30.24R                     .
+ 2AM EST FEB 22 2013 CLOUDY    21  13  71 E6        30.23F WCI  13             .
+ 3AM EST FEB 22 2013 CLOUDY    21  14  74 E7        30.18F WCI  12             .
+ 4AM EST FEB 22 2013 CLOUDY    22  14  71 E15       30.14F WCI   9             .
+ 5AM EST FEB 22 2013 CLOUDY    23  14  68 E9        30.14S WCI  13             .
+ 6AM EST FEB 22 2013 CLOUDY    24  15  68 E12       30.11F WCI  13             .
+ 7AM EST FEB 22 2013 CLOUDY    26  16  65 E13       30.07F WCI  15             .
+ 8AM EST FEB 22 2013 FRZ RAIN  28  16  60 E9        30.05F WCI  19             .
+ 9AM EST FEB 22 2013 FRZ RAIN  30  18  60 E9        30.03F WCI  22             .
+10AM EST FEB 22 2013 FRZ RAIN  32  21  64 SE10      30.01S WCI  24             .
+11AM EST FEB 22 2013 FRZ RAIN  32  27  80 SE12      30.01S WCI  23             .
+12PM EST FEB 22 2013 FRZ DRZL  30  28  93 E10       30.01S FOG     WCI  21     .
+ 1PM EST FEB 22 2013 FRZ DRZL  31  30  96 E9        30.00F FOG     WCI  23     .
+ 2PM EST FEB 22 2013 NOT AVBL                                                  .
+ 3PM EST FEB 22 2013 NOT AVBL                                                  .
+ 4PM EST FEB 22 2013 CLOUDY    34  32  92 E7        29.96S FOG     WCI  28     .
+ 5PM EST FEB 22 2013 CLOUDY    35  33  92 E5        29.96S WCI  31             .
+ 6PM EST FEB 22 2013 CLOUDY    35  32  88 NE6       29.98R WCI  30             .
+ 7PM EST FEB 22 2013 CLOUDY    34  32  92 E5        29.97F WCI  30             .
+ 8PM EST FEB 22 2013 CLOUDY    35  32  88 N3        29.99R                     .
+ 9PM EST FEB 22 2013 CLOUDY    34  32  92 E3        29.99S                     .
+10PM EST FEB 22 2013 CLOUDY    34  31  88 E5        29.99S WCI  30             .
+11PM EST FEB 22 2013 CLOUDY    34  31  88 E5        29.98F WCI  30             .
+12AM EST FEB 23 2013 CLOUDY    34  31  88 SE3       29.97F                     .
+ 1AM EST FEB 23 2013 CLOUDY    34  31  88 E5        29.96F WCI  30             .
+ 2AM EST FEB 23 2013 CLOUDY    34  30  85 CALM      29.95F                     .
+ 3AM EST FEB 23 2013 CLOUDY    34  30  85 CALM      29.93F                     .
+ 4AM EST FEB 23 2013 CLOUDY    34  30  85 CALM      29.90F                     .
+ 5AM EST FEB 23 2013 CLOUDY    33  30  88 CALM      29.92R                     .
+ 6AM EST FEB 23 2013 CLOUDY    34  30  85 NW6       29.93R WCI  29             .
+ 7AM EST FEB 23 2013 CLOUDY    34  31  88 CALM      29.92F                     .
+ 8AM EST FEB 23 2013 DRIZZLE   33  31  92 N7        29.92S FOG     WCI  27     .
+ 9AM EST FEB 23 2013 LGT RAIN  33  32  96 CALM      29.92F VSB 1/2             .
+10AM EST FEB 23 2013 CLOUDY    34  33  96 CALM      29.92S FOG                 .
+11AM EST FEB 23 2013 CLOUDY    36  33  89 CALM      29.92S FOG                 .
+12PM EST FEB 23 2013 CLOUDY    38  33  82 CALM      29.90F                     .
+ 1PM EST FEB 23 2013 CLOUDY    38  34  85 SW3       29.88F                     .
+ 2PM EST FEB 23 2013 CLOUDY    40  34  79 SW6       29.87F                     .
+ 3PM EST FEB 23 2013 CLOUDY    41  32  70 W8        29.85F                     .
+ 4PM EST FEB 23 2013 CLOUDY    42  33  70 NW10      29.86R                     .
+ 5PM EST FEB 23 2013 PTSUNNY   41  30  65 W5        29.84F                     .
+ 6PM EST FEB 23 2013 MOCLDY    40  30  67 CALM      29.85R                     .
+ 7PM EST FEB 23 2013 MOCLDY    38  30  73 NW6       29.86R                     .
+ 8PM EST FEB 23 2013 CLOUDY    37  30  75 NW3       29.85F                     .
+ 9PM EST FEB 23 2013 PTCLDY    35  29  78 NW10      29.84F WCI  27             .
+10PM EST FEB 23 2013 PTCLDY    34  27  75 NW12      29.85R WCI  25             .
+11PM EST FEB 23 2013 PTCLDY    32  25  75 NW8       29.85S WCI  25             .
+12AM EST FEB 24 2013 MOCLDY    30  24  78 NW8       29.84F WCI  22             .
+ 1AM EST FEB 24 2013 MOCLDY    29  23  78 NW3       29.86R                     .
+ 2AM EST FEB 24 2013 MOCLDY    29  23  78 CALM      29.88R                     .
+ 3AM EST FEB 24 2013 CLOUDY    28  23  81 CALM      29.87F                     .
+ 4AM EST FEB 24 2013 MOCLDY    25  22  88 CALM      29.87S                     .
+ 5AM EST FEB 24 2013 CLOUDY    28  23  81 W5        29.88R WCI  23             .
+ 6AM EST FEB 24 2013 CLOUDY    29  22  75 W5        29.89R WCI  24             .
+ 7AM EST FEB 24 2013 CLOUDY    29  22  75 W5        29.91R WCI  24             .
+ 8AM EST FEB 24 2013 CLOUDY    29  23  78 W5        29.93R WCI  24             .
+ 9AM EST FEB 24 2013 CLOUDY    29  22  75 W10       29.94R WCI  20             .
+10AM EST FEB 24 2013 LGT SNOW  29  23  78 W13       29.95R WCI  19             .
+11AM EST FEB 24 2013 FLURRIES  29  22  75 NW10      29.96R WCI  20             .
+12PM EST FEB 24 2013 FLURRIES  29  20  69 W14G23    29.98R WCI  18             .
+ 1PM EST FEB 24 2013 LGT SNOW  28  21  75 NW17      29.99R WCI  16             .
+ 2PM EST FEB 24 2013 CLOUDY    28  20  71 W14       29.99S WCI  17             .
+ 3PM EST FEB 24 2013 CLOUDY    31  19  61 W12       30.00R WCI  22             .
+ 4PM EST FEB 24 2013 CLOUDY    31  18  58 W12       30.02R WCI  22             .
+ 5PM EST FEB 24 2013 CLOUDY    30  19  63 NW12      30.04R WCI  20             .
+ 6PM EST FEB 24 2013 CLOUDY    30  19  63 W7        30.06R WCI  23             .
+ 7PM EST FEB 24 2013 CLOUDY    30  19  63 W7        30.08R WCI  23             .
+ 8PM EST FEB 24 2013 FLURRIES  30  20  66 W6        30.10R WCI  24             .
+ 9PM EST FEB 24 2013 FLURRIES  30  20  66 CALM      30.11R                     .
+10PM EST FEB 24 2013 FLURRIES  29  22  75 W3        30.11S                     .
+11PM EST FEB 24 2013 CLOUDY    29  21  72 CALM      30.10F                     .
+12AM EST FEB 25 2013 CLOUDY    29  21  72 CALM      30.11R                     .
+ 1AM EST FEB 25 2013 CLOUDY    29  20  69 CALM      30.11S                     .
+ 2AM EST FEB 25 2013 CLOUDY    29  20  69 CALM      30.12R                     .
+ 3AM EST FEB 25 2013 CLOUDY    29  21  72 CALM      30.12S                     .
+ 4AM EST FEB 25 2013 MOCLDY    28  22  78 CALM      30.12S                     .
+ 5AM EST FEB 25 2013 PTCLDY    26  20  77 CALM      30.12S                     .
+ 6AM EST FEB 25 2013 CLEAR     23  19  85 CALM      30.15R                     .
+ 7AM EST FEB 25 2013 PTCLDY    24  19  81 CALM      30.15S                     .
+ 8AM EST FEB 25 2013 MOSUNNY   24  20  84 CALM      30.17R                     .
+ 9AM EST FEB 25 2013 MOSUNNY   30  23  75 CALM      30.18R                     .
+10AM EST FEB 25 2013 MOSUNNY   32  23  69 E3        30.19R                     .
+11AM EST FEB 25 2013 MOSUNNY   35  22  58 CALM      30.19S                     .
+12PM EST FEB 25 2013 MOSUNNY   36  22  56 NE7       30.17F                     .
+ 1PM EST FEB 25 2013 MOSUNNY   38  21  50 VRB5      30.16F                     .
+ 2PM EST FEB 25 2013 MOSUNNY   42  21  43 NW3       30.12F                     .
+ 3PM EST FEB 25 2013 MOSUNNY   42  21  43 NE6       30.11F                     .
+ 4PM EST FEB 25 2013 MOSUNNY   43  21  41 E6        30.11S                     .
+ 5PM EST FEB 25 2013 MOSUNNY   43  21  41 E6        30.10F                     .
+ 6PM EST FEB 25 2013 PTCLDY    41  20  43 NE8       30.09F                     .
+ 7PM EST FEB 25 2013 PTCLDY    39  20  46 E5        30.10R                     .
+ 8PM EST FEB 25 2013 CLEAR     38  20  48 NE5       30.10S                     .
+ 9PM EST FEB 25 2013 CLEAR     36  20  52 NE7       30.09F                     .
+10PM EST FEB 25 2013 CLEAR     36  21  54 E9        30.04F                     .
+11PM EST FEB 25 2013 PTCLDY    34  21  59 E7        30.04S WCI  28             .
+12AM EST FEB 26 2013 CLEAR     34  20  56 E7        30.04S WCI  28             .
+ 1AM EST FEB 26 2013 PTCLDY    32  20  61 E6        30.04S WCI  26             .
+ 2AM EST FEB 26 2013 PTCLDY    32  19  58 E6        30.03F WCI  26             .
+ 3AM EST FEB 26 2013 NOT AVBL                                                  .
+ 4AM EST FEB 26 2013 CLOUDY    32  20  61 E7        29.97  WCI  26             .
+ 5AM EST FEB 26 2013 CLOUDY    33  20  58 E7        29.94F WCI  27             .
+ 6AM EST FEB 26 2013 CLOUDY    34  20  56 E7        29.95R WCI  28             .
+ 7AM EST FEB 26 2013 CLOUDY    34  20  56 E7        29.92F WCI  28             .
+ 8AM EST FEB 26 2013 CLOUDY    36  20  52 E10       29.91F                     .
+ 9AM EST FEB 26 2013 CLOUDY    38  21  50 E12       29.90F                     .
+10AM EST FEB 26 2013 CLOUDY    40  22  48 E14       29.88F                     .
+11AM EST FEB 26 2013 LGT RAIN  41  24  51 SE17      29.88S                     .
+12PM EST FEB 26 2013 RAIN      39  27  62 SE17G23   29.85F                     .
+ 1PM EST FEB 26 2013 LGT RAIN  38  30  73 E16G25    29.81F                     .
+ 2PM EST FEB 26 2013 LGT RAIN  36  30  79 E16       29.76F FOG                 .
+ 3PM EST FEB 26 2013 RAIN      36  31  82 E17G24    29.70F FOG                 .
+ 4PM EST FEB 26 2013 LGT RAIN  36  32  87 E16G24    29.67F                     .
+ 5PM EST FEB 26 2013 LGT RAIN  38  33  82 E13       29.65F                     .
+ 6PM EST FEB 26 2013 LGT RAIN  37  34  89 E10       29.62F FOG                 .
+ 7PM EST FEB 26 2013 LGT RAIN  36  33  89 E9        29.65F FOG                 .
+ 8PM EST FEB 26 2013 LGT RAIN  37  34  89 E12       29.62F                     .
+ 9PM EST FEB 26 2013 LGT RAIN  38  34  85 E14       29.59F                     .
+10PM EST FEB 26 2013 LGT RAIN  38  34  85 E14G21    29.57F                     .
+11PM EST FEB 26 2013 LGT RAIN  39  34  82 E8        29.56F                     .
+12AM EST FEB 27 2013 LGT RAIN  39  34  82 SE7       29.55S                     .
+ 1AM EST FEB 27 2013 CLOUDY    40  35  83 E9        29.54F                     .
+ 2AM EST FEB 27 2013 CLOUDY    40  35  83 E6        29.53F                     .
+ 3AM EST FEB 27 2013 LGT RAIN  40  36  86 E7        29.52F                     .
+ 4AM EST FEB 27 2013 LGT RAIN  40  36  86 SE9       29.53R FOG                 .
+ 5AM EST FEB 27 2013 LGT RAIN  39  37  93 SE5       29.53S                     .
+ 6AM EST FEB 27 2013 LGT RAIN  41  37  86 SW8       29.54R                     .
+ 7AM EST FEB 27 2013 LGT RAIN  40  36  86 W5        29.56R                     .
+ 8AM EST FEB 27 2013 LGT RAIN  41  36  82 W8        29.58R                     .
+ 9AM EST FEB 27 2013 PTSUNNY   41  36  82 SW9       29.60R                     .
+10AM EST FEB 27 2013 PTSUNNY   42  34  73 W13G22    29.60S                     .
+11AM EST FEB 27 2013 PTSUNNY   44  32  62 SW15G25   29.61R                     .
+12PM EST FEB 27 2013 CLOUDY    44  32  62 W9        29.61S                     .
+ 1PM EST FEB 27 2013 NOT AVBL                                                  .
+ 2PM EST FEB 27 2013 CLOUDY    41  34  76 SW12      29.62                      .
+ 3PM EST FEB 27 2013 CLOUDY    41  34  76 SW7       29.61F                     .
+ 4PM EST FEB 27 2013 CLOUDY    41  35  79 SW3       29.62R                     .
+ 5PM EST FEB 27 2013 LGT RAIN  40  35  83 W5        29.62S FOG                 .
+ 6PM EST FEB 27 2013 LGT RAIN  39  34  82 SW12      29.63R FOG                 .
+ 7PM EST FEB 27 2013 FLURRIES  39  34  82 W6        29.65R                     .
+ 8PM EST FEB 27 2013 FLURRIES  37  34  89 W3        29.65S                     .
+ 9PM EST FEB 27 2013 FLURRIES  36  31  82 W12       29.65S                     .
+10PM EST FEB 27 2013 FLURRIES  35  32  88 SW5       29.65S WCI  31             .
+11PM EST FEB 27 2013 FLURRIES  35  30  82 SW7       29.64F WCI  29             .
+12AM EST FEB 28 2013 LGT SNOW  35  30  82 SW7       29.63F WCI  29             .
+ 1AM EST FEB 28 2013 FLURRIES  35  30  82 W8        29.62F WCI  29             .
+ 2AM EST FEB 28 2013 FLURRIES  35  28  75 SW8       29.62S WCI  29             .
+ 3AM EST FEB 28 2013 FLURRIES  34  28  79 SW7       29.61F WCI  28             .
+ 4AM EST FEB 28 2013 FLURRIES  34  28  79 SW7       29.59F WCI  28             .
+ 5AM EST FEB 28 2013 FLURRIES  34  28  79 SW8       29.59S WCI  27             .
+ 6AM EST FEB 28 2013 FLURRIES  34  27  75 SW10      29.59S WCI  26             .
+ 7AM EST FEB 28 2013 FLURRIES  34  26  72 SW7       29.60R WCI  28             .
+ 8AM EST FEB 28 2013 FLURRIES  33  26  75 W8        29.60S WCI  26             .
+ 9AM EST FEB 28 2013 NOT AVBL                                                  .
+10AM EST FEB 28 2013 FLURRIES  34  27  75 W7        29.61  WCI  28             .
+11AM EST FEB 28 2013 LGT SNOW  34  28  80 SW9       29.62R VSB 1   WCI  26     .
+12PM EST FEB 28 2013 LGT SNOW  34  29  82 SW12G21   29.62S VSB 1   WCI  25     .
+ 1PM EST FEB 28 2013 LGT SNOW  35  29  78 SW10      29.62S VSB 1   WCI  27     .
+ 2PM EST FEB 28 2013 NOT AVBL                                                  .
+ 3PM EST FEB 28 2013 LGT SNOW  35  31  85 W6        29.62R VSB 1   WCI  30     .
+ 4PM EST FEB 28 2013 LGT SNOW  35  31  85 W8        29.64R FOG     WCI  29     .
+ 5PM EST FEB 28 2013 CLOUDY    35  31  85 W9        29.65R WCI  28             .
+ 6PM EST FEB 28 2013 CLOUDY    36  30  79 W9        29.68R                     .

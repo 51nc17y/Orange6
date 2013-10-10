@@ -1,0 +1,741 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT AUG 31 2012 MOCLDY    84  63  49 SW7       30.06S HX  85            SEP
+ 9PM EDT AUG 31 2012 MOCLDY    82  62  50 SW3       30.07R                   SEP
+10PM EDT AUG 31 2012 MOCLDY    79  63  57 CALM      30.07S                   SEP
+11PM EDT AUG 31 2012 CLOUDY    77  63  61 W3        30.08R                   SEP
+12AM EDT SEP 01 2012 MOCLDY    77  65  66 W3        30.08S                   SEP
+ 1AM EDT SEP 01 2012 CLOUDY    76  66  71 W3        30.09R                   SEP
+ 2AM EDT SEP 01 2012 CLOUDY    76  66  71 W3        30.09S                   SEP
+ 3AM EDT SEP 01 2012 CLOUDY    75  66  73 W3        30.09S                     .
+ 4AM EDT SEP 01 2012 CLOUDY    75  67  76 W3        30.10R                     .
+ 5AM EDT SEP 01 2012 CLOUDY    74  67  78 W6        30.11R                     .
+ 6AM EDT SEP 01 2012 CLOUDY    74  67  78 W3        30.12R                     .
+ 7AM EDT SEP 01 2012 CLOUDY    75  67  76 SW3       30.12S                     .
+ 8AM EDT SEP 01 2012 PTSUNNY   74  67  78 CALM      30.13R                     .
+ 9AM EDT SEP 01 2012 PTSUNNY   77  68  73 W3        30.13S                     .
+10AM EDT SEP 01 2012 CLOUDY    78  68  71 W6        30.14R                     .
+11AM EDT SEP 01 2012 CLOUDY    79  69  71 SW5       30.14S                     .
+12PM EDT SEP 01 2012 CLOUDY    82  69  64 W7        30.13F HX  85              .
+ 1PM EDT SEP 01 2012 NOT AVBL                                                  .
+ 2PM EDT SEP 01 2012 CLOUDY    85  68  56 W9        30.09F HX  88              .
+ 3PM EDT SEP 01 2012 PTSUNNY   86  69  56 W9G16     30.08F HX  90              .
+ 4PM EDT SEP 01 2012 CLOUDY    85  68  56 SW6       30.07F THUNDER HX  88      .
+ 5PM EDT SEP 01 2012 CLOUDY    82  69  64 VRB6      30.07S THUNDER HX  85      .
+ 6PM EDT SEP 01 2012 CLOUDY    79  66  64 NW8       30.05F THUNDER             .
+ 7PM EDT SEP 01 2012 TSTM      72  70  93 CALM      30.09R FOG                 .
+ 8PM EDT SEP 01 2012 TSTM      73  70  90 NW8       30.08F                     .
+ 9PM EDT SEP 01 2012 TSTM      71  69  93 VRB3      30.09R                     .
+10PM EDT SEP 01 2012 LGT RAIN  71  69  93 CALM      30.10R                     .
+11PM EDT SEP 01 2012 CLOUDY    70  68  93 S3        30.10S                     .
+12AM EDT SEP 02 2012 CLOUDY    70  68  93 CALM      30.09F                     .
+ 1AM EDT SEP 02 2012 CLOUDY    71  68  90 N3        30.09S                     .
+ 2AM EDT SEP 02 2012 CLOUDY    70  68  93 CALM      30.08F                     .
+ 3AM EDT SEP 02 2012 CLOUDY    70  68  94 CALM      30.06F FOG                 .
+ 4AM EDT SEP 02 2012 FOG       69  68  96 S3        30.06S VSB 1/2             .
+ 5AM EDT SEP 02 2012 CLOUDY    70  68  93 NE3       30.05F FOG                 .
+ 6AM EDT SEP 02 2012 CLOUDY    69  68  96 CALM      30.06R FOG                 .
+ 7AM EDT SEP 02 2012 CLOUDY    70  68  94 CALM      30.06S FOG                 .
+ 8AM EDT SEP 02 2012 CLOUDY    71  68  90 CALM      30.07R FOG                 .
+ 9AM EDT SEP 02 2012 CLOUDY    71  69  93 CALM      30.07S FOG                 .
+10AM EDT SEP 02 2012 CLOUDY    71  69  93 S3        30.07S FOG                 .
+11AM EDT SEP 02 2012 CLOUDY    74  69  85 SE6       30.06F                     .
+12PM EDT SEP 02 2012 CLOUDY    74  69  85 SE6       30.06F                     .
+ 1PM EDT SEP 02 2012 CLOUDY    75  69  81 S3        30.05F                     .
+ 2PM EDT SEP 02 2012 CLOUDY    77  69  76 SE3       30.04F                     .
+ 3PM EDT SEP 02 2012 CLOUDY    78  68  71 CALM      30.02F                     .
+ 4PM EDT SEP 02 2012 CLOUDY    79  68  69 S6        29.99F                     .
+ 5PM EDT SEP 02 2012 CLOUDY    80  67  64 SE3       29.99S                     .
+ 6PM EDT SEP 02 2012 CLOUDY    81  67  62 NE6       29.98F                     .
+ 7PM EDT SEP 02 2012 CLOUDY    79  67  66 NE3       29.98S                     .
+ 8PM EDT SEP 02 2012 CLOUDY    78  68  71 NE5       29.98S                     .
+ 9PM EDT SEP 02 2012 CLOUDY    75  68  78 E3        30.00R                     .
+10PM EDT SEP 02 2012 CLOUDY    74  68  81 E6        29.99F                     .
+11PM EDT SEP 02 2012 MOCLDY    73  68  84 E3        29.99S                     .
+12AM EDT SEP 03 2012 CLOUDY    72  68  87 E6        29.99S                     .
+ 1AM EDT SEP 03 2012 CLOUDY    71  68  90 E5        29.99S                     .
+ 2AM EDT SEP 03 2012 MOCLDY    72  67  84 SE5       29.98F                     .
+ 3AM EDT SEP 03 2012 MOCLDY    71  67  87 E5        29.97F                     .
+ 4AM EDT SEP 03 2012 MOCLDY    70  67  90 E3        29.97S                     .
+ 5AM EDT SEP 03 2012 MOCLDY    69  66  90 E5        29.97S                     .
+ 6AM EDT SEP 03 2012 MOCLDY    69  66  90 E3        29.98R                     .
+ 7AM EDT SEP 03 2012 CLOUDY    70  67  90 CALM      29.98S                     .
+ 8AM EDT SEP 03 2012 PTSUNNY   70  67  90 E5        29.99R                     .
+ 9AM EDT SEP 03 2012 PTSUNNY   73  68  84 E5        30.00R                     .
+10AM EDT SEP 03 2012 PTSUNNY   76  68  76 SE6       30.01R                     .
+11AM EDT SEP 03 2012 PTSUNNY   78  68  71 SE8       30.01S                     .
+12PM EDT SEP 03 2012 PTSUNNY   80  69  69 SE8       30.01S                     .
+ 1PM EDT SEP 03 2012 PTSUNNY   80  68  66 SE8       30.00F                     .
+ 2PM EDT SEP 03 2012 PTSUNNY   82  68  62 SE7       30.00S HX  85              .
+ 3PM EDT SEP 03 2012 CLOUDY    84  68  58 E8        29.98F HX  87              .
+ 4PM EDT SEP 03 2012 PTSUNNY   85  69  58 VRB5      29.96F HX  89              .
+ 5PM EDT SEP 03 2012 PTSUNNY   84  69  60 SE9       29.95F HX  88              .
+ 6PM EDT SEP 03 2012 PTSUNNY   83  69  62 S8        29.95S HX  86              .
+ 7PM EDT SEP 03 2012 MOCLDY    82  68  62 SE10      29.94F HX  85              .
+ 8PM EDT SEP 03 2012 PTCLDY    80  68  66 SE6       29.95R                     .
+ 9PM EDT SEP 03 2012 PTCLDY    78  68  71 CALM      29.96R                     .
+10PM EDT SEP 03 2012 MOCLDY    76  68  76 E3        29.98R                     .
+11PM EDT SEP 03 2012 CLOUDY    75  69  81 CALM      29.99R THUNDER             .
+12AM EDT SEP 04 2012 LGT RAIN  70  68  93 W7        30.01R                     .
+ 1AM EDT SEP 04 2012 CLOUDY    72  68  87 CALM      30.00F                     .
+ 2AM EDT SEP 04 2012 CLOUDY    71  69  93 NE7       29.97F                     .
+ 3AM EDT SEP 04 2012 CLOUDY    70  68  93 CALM      29.94F                     .
+ 4AM EDT SEP 04 2012 MOCLDY    70  68  93 CALM      29.94S                     .
+ 5AM EDT SEP 04 2012 NOT AVBL                                                  .
+ 6AM EDT SEP 04 2012 LGT RAIN  71  69  93 VRB3      29.94S                     .
+ 7AM EDT SEP 04 2012 CLOUDY    71  69  93 CALM      29.95R                     .
+ 8AM EDT SEP 04 2012 DRIZZLE   72  70  93 CALM      29.95S                     .
+ 9AM EDT SEP 04 2012 CLOUDY    73  70  90 S6        29.95S                     .
+10AM EDT SEP 04 2012 CLOUDY    74  69  85 S5        29.94F                     .
+11AM EDT SEP 04 2012 PTSUNNY   76  69  79 S8        29.93F                     .
+12PM EDT SEP 04 2012 CLOUDY    78  69  73 S10       29.92F                     .
+ 1PM EDT SEP 04 2012 CLOUDY    81  70  69 S7        29.91F                     .
+ 2PM EDT SEP 04 2012 LGT RAIN  77  70  79 SW7G17    29.90F                     .
+ 3PM EDT SEP 04 2012 PTSUNNY   82  69  64 S10       29.87F HX  85              .
+ 4PM EDT SEP 04 2012 PTSUNNY   84  68  58 SW7       29.85F HX  87              .
+ 5PM EDT SEP 04 2012 PTSUNNY   83  67  58 SW8       29.84F HX  85              .
+ 6PM EDT SEP 04 2012 LGT RAIN  82  69  64 SW8       29.84S HX  85              .
+ 7PM EDT SEP 04 2012 TSTM      73  72  94 W10       29.86R FOG                 .
+ 8PM EDT SEP 04 2012 MOCLDY    73  71  93 SW3       29.85S                     .
+ 9PM EDT SEP 04 2012 CLOUDY    74  71  91 SW5       29.85S                     .
+10PM EDT SEP 04 2012 NOT AVBL                                                  .
+11PM EDT SEP 04 2012 CLOUDY    73  70  90 W5        29.86F                     .
+12AM EDT SEP 05 2012 CLOUDY    73  70  90 NW7       29.86S                     .
+ 1AM EDT SEP 05 2012 CLOUDY    73  70  90 SW3       29.86S                     .
+ 2AM EDT SEP 05 2012 CLOUDY    73  70  90 NW5       29.86S                     .
+ 3AM EDT SEP 05 2012 CLOUDY    72  69  90 NW6       29.86S                     .
+ 4AM EDT SEP 05 2012 CLOUDY    72  68  87 N8        29.87R                     .
+ 5AM EDT SEP 05 2012 CLOUDY    71  67  87 NW6       29.88R                     .
+ 6AM EDT SEP 05 2012 CLOUDY    70  67  90 NW6       29.89R                     .
+ 7AM EDT SEP 05 2012 CLOUDY    70  67  90 NW7       29.90R                     .
+ 8AM EDT SEP 05 2012 CLOUDY    70  66  87 N7        29.91R                     .
+ 9AM EDT SEP 05 2012 PTSUNNY   71  65  81 N9        29.91S                     .
+10AM EDT SEP 05 2012 PTSUNNY   72  64  76 NE6       29.91S                     .
+11AM EDT SEP 05 2012 PTSUNNY   72  64  76 NW5       29.93R                     .
+12PM EDT SEP 05 2012 PTSUNNY   75  64  68 CALM      29.93S                     .
+ 1PM EDT SEP 05 2012 MOSUNNY   77  64  64 NW5       29.91F                     .
+ 2PM EDT SEP 05 2012 MOSUNNY   80  64  58 N5        29.90F                     .
+ 3PM EDT SEP 05 2012 MOSUNNY   82  63  52 N3        29.89F                     .
+ 4PM EDT SEP 05 2012 MOSUNNY   83  64  52 CALM      29.87F                     .
+ 5PM EDT SEP 05 2012 MOSUNNY   83  64  52 CALM      29.86F                     .
+ 6PM EDT SEP 05 2012 MOSUNNY   82  64  54 NW5       29.85F                     .
+ 7PM EDT SEP 05 2012 MOCLDY    80  64  58 CALM      29.87R                     .
+ 8PM EDT SEP 05 2012 MOCLDY    77  65  66 W3        29.86F                     .
+ 9PM EDT SEP 05 2012 MOCLDY    75  67  76 CALM      29.87R                     .
+10PM EDT SEP 05 2012 MOCLDY    75  66  73 CALM      29.86F                     .
+11PM EDT SEP 05 2012 CLOUDY    74  66  76 CALM      29.87R                     .
+12AM EDT SEP 06 2012 CLOUDY    71  66  84 CALM      29.87S                     .
+ 1AM EDT SEP 06 2012 CLOUDY    70  66  87 W5        29.88R                     .
+ 2AM EDT SEP 06 2012 CLOUDY    71  66  84 CALM      29.89R                     .
+ 3AM EDT SEP 06 2012 CLOUDY    70  66  87 CALM      29.89S                     .
+ 4AM EDT SEP 06 2012 CLOUDY    71  66  84 CALM      29.88F                     .
+ 5AM EDT SEP 06 2012 CLOUDY    70  66  87 CALM      29.88S                     .
+ 6AM EDT SEP 06 2012 MOCLDY    69  65  86 CALM      29.90R                     .
+ 7AM EDT SEP 06 2012 PTCLDY    68  65  90 CALM      29.91R                     .
+ 8AM EDT SEP 06 2012 MOSUNNY   70  65  84 NW3       29.92R                     .
+ 9AM EDT SEP 06 2012 SUNNY     73  66  78 CALM      29.92S                     .
+10AM EDT SEP 06 2012 MOSUNNY   77  66  68 W7        29.93R                     .
+11AM EDT SEP 06 2012 SUNNY     79  66  64 NW8       29.94R                     .
+12PM EDT SEP 06 2012 MOSUNNY   81  66  60 SW7       29.94S                     .
+ 1PM EDT SEP 06 2012 MOSUNNY   83  64  52 SW7       29.94S                     .
+ 2PM EDT SEP 06 2012 MOSUNNY   85  66  53 W7        29.93F HX  87              .
+ 3PM EDT SEP 06 2012 MOSUNNY   86  63  45 W9        29.92F HX  87              .
+ 4PM EDT SEP 06 2012 MOSUNNY   86  59  39 W9        29.90F HX  85              .
+ 5PM EDT SEP 06 2012 MOSUNNY   86  59  39 SW9       29.89F HX  85              .
+ 6PM EDT SEP 06 2012 MOSUNNY   85  60  42 W7        29.89S HX  85              .
+ 7PM EDT SEP 06 2012 PTCLDY    83  61  47 W6        29.90R                     .
+ 8PM EDT SEP 06 2012 PTCLDY    81  62  52 SW6       29.91R                     .
+ 9PM EDT SEP 06 2012 PTCLDY    78  62  57 W5        29.92R                     .
+10PM EDT SEP 06 2012 PTCLDY    77  62  59 SW5       29.93R                     .
+11PM EDT SEP 06 2012 PTCLDY    76  63  64 W7        29.94R                     .
+12AM EDT SEP 07 2012 PTCLDY    74  64  71 CALM      29.95R                     .
+ 1AM EDT SEP 07 2012 PTCLDY    72  64  76 NW3       29.95S                     .
+ 2AM EDT SEP 07 2012 PTCLDY    68  64  87 S5        29.95S                     .
+ 3AM EDT SEP 07 2012 PTCLDY    69  64  84 CALM      29.94F                     .
+ 4AM EDT SEP 07 2012 CLEAR     68  64  87 CALM      29.93F                     .
+ 5AM EDT SEP 07 2012 CLEAR     66  63  90 CALM      29.94R                     .
+ 6AM EDT SEP 07 2012 CLEAR     67  63  87 CALM      29.95R                     .
+ 7AM EDT SEP 07 2012 PTCLDY    67  63  87 CALM      29.96R                     .
+ 8AM EDT SEP 07 2012 MOSUNNY   66  64  93 CALM      29.96S FOG                 .
+ 9AM EDT SEP 07 2012 MOSUNNY   70  66  87 VRB3      29.97R                     .
+10AM EDT SEP 07 2012 MOSUNNY   75  68  78 SW3       29.96F                     .
+11AM EDT SEP 07 2012 MOSUNNY   78  68  71 S5        29.97R                     .
+12PM EDT SEP 07 2012 MOSUNNY   80  66  62 S7        29.96F                     .
+ 1PM EDT SEP 07 2012 MOSUNNY   80  67  64 S9        29.96S                     .
+ 2PM EDT SEP 07 2012 PTSUNNY   81  67  62 SW9       29.93F                     .
+ 3PM EDT SEP 07 2012 PTSUNNY   83  66  56 SW8       29.91F HX  85              .
+ 4PM EDT SEP 07 2012 PTSUNNY   83  65  54 S8        29.89F HX  85              .
+ 5PM EDT SEP 07 2012 PTSUNNY   84  64  50 SW7       29.88F HX  85              .
+ 6PM EDT SEP 07 2012 CLOUDY    83  65  54 S6        29.88S HX  85              .
+ 7PM EDT SEP 07 2012 CLOUDY    81  67  62 SW5       29.87F                     .
+ 8PM EDT SEP 07 2012 CLOUDY    80  66  62 CALM      29.84F                     .
+ 9PM EDT SEP 07 2012 PTCLDY    76  65  68 NE8       29.82F                     .
+10PM EDT SEP 07 2012 MOCLDY    72  64  76 E5        29.78F                     .
+11PM EDT SEP 07 2012 MOCLDY    72  64  76 CALM      29.80R                     .
+12AM EDT SEP 08 2012 CLOUDY    71  65  81 SE3       29.76F                     .
+ 1AM EDT SEP 08 2012 CLOUDY    72  64  76 S6        29.73F                     .
+ 2AM EDT SEP 08 2012 CLOUDY    73  63  70 S6        29.70F                     .
+ 3AM EDT SEP 08 2012 CLOUDY    75  63  66 S10       29.68F                     .
+ 4AM EDT SEP 08 2012 CLOUDY    75  63  66 S13G23    29.65F                     .
+ 5AM EDT SEP 08 2012 CLOUDY    75  63  66 S9        29.62F                     .
+ 6AM EDT SEP 08 2012 TSTM      68  64  88 SW12G23   29.66R FOG                 .
+ 7AM EDT SEP 08 2012 LGT RAIN  68  64  87 S6        29.64F                     .
+ 8AM EDT SEP 08 2012 LGT RAIN  67  64  90 S8        29.64S                     .
+ 9AM EDT SEP 08 2012 LGT RAIN  68  64  87 S7        29.64S                     .
+10AM EDT SEP 08 2012 LGT RAIN  68  64  88 W15G22    29.66R FOG                 .
+11AM EDT SEP 08 2012 LGT RAIN  62  60  93 NW14      29.69R                     .
+12PM EDT SEP 08 2012 LGT RAIN  63  59  87 W10       29.73R                     .
+ 1PM EDT SEP 08 2012 CLOUDY    63  59  87 NW12      29.71F                     .
+ 2PM EDT SEP 08 2012 CLOUDY    61  56  83 W10       29.79R                     .
+ 3PM EDT SEP 08 2012 CLOUDY    62  56  80 W13       29.77F                     .
+ 4PM EDT SEP 08 2012 CLOUDY    64  56  75 W10       29.76F                     .
+ 5PM EDT SEP 08 2012 CLOUDY    65  54  67 W13       29.77R                     .
+ 6PM EDT SEP 08 2012 PTSUNNY   66  54  65 W9        29.79R                     .
+ 7PM EDT SEP 08 2012 MOCLDY    64  55  72 W5        29.80R                     .
+ 8PM EDT SEP 08 2012 MOCLDY    63  55  75 SW5       29.82R                     .
+ 9PM EDT SEP 08 2012 PTCLDY    60  55  83 CALM      29.84R                     .
+10PM EDT SEP 08 2012 PTCLDY    60  55  83 SW7       29.86R                     .
+11PM EDT SEP 08 2012 PTCLDY    58  54  86 SW6       29.87R                     .
+12AM EDT SEP 09 2012 CLEAR     58  54  86 SW8       29.88R                     .
+ 1AM EDT SEP 09 2012 CLEAR     58  53  84 SW9       29.88S                     .
+ 2AM EDT SEP 09 2012 PTCLDY    57  53  86 CALM      29.88S                     .
+ 3AM EDT SEP 09 2012 PTCLDY    57  53  86 S5        29.87F                     .
+ 4AM EDT SEP 09 2012 MOCLDY    56  53  90 SW7       29.87S                     .
+ 5AM EDT SEP 09 2012 CLOUDY    56  53  90 W3        29.87S                     .
+ 6AM EDT SEP 09 2012 PTCLDY    56  53  90 CALM      29.88R                     .
+ 7AM EDT SEP 09 2012 PTCLDY    55  52  89 CALM      29.89R                     .
+ 8AM EDT SEP 09 2012 MOSUNNY   55  52  89 W3        29.91R                     .
+ 9AM EDT SEP 09 2012 MOSUNNY   58  53  84 W6        29.93R                     .
+10AM EDT SEP 09 2012 MOSUNNY   61  53  75 W5        29.95R                     .
+11AM EDT SEP 09 2012 MOSUNNY   64  53  67 W9        29.96R                     .
+12PM EDT SEP 09 2012 PTSUNNY   65  51  60 W8        29.95F                     .
+ 1PM EDT SEP 09 2012 PTSUNNY   66  48  52 W12       29.96R                     .
+ 2PM EDT SEP 09 2012 MOSUNNY   70  49  47 NW16G22   29.95F                     .
+ 3PM EDT SEP 09 2012 PTSUNNY   70  48  45 W12       29.95S                     .
+ 4PM EDT SEP 09 2012 PTSUNNY   67  47  48 NW12      29.95S                     .
+ 5PM EDT SEP 09 2012 PTSUNNY   66  48  52 NW14      29.96R                     .
+ 6PM EDT SEP 09 2012 PTSUNNY   66  47  50 NW15      29.97R                     .
+ 7PM EDT SEP 09 2012 CLOUDY    62  50  64 W7        29.99R                     .
+ 8PM EDT SEP 09 2012 CLOUDY    63  50  62 NW7       29.99S                     .
+ 9PM EDT SEP 09 2012 NOT AVBL                                                  .
+10PM EDT SEP 09 2012 PTCLDY    60  48  64 NW7       30.03                      .
+11PM EDT SEP 09 2012 PTCLDY    56  49  77 W6        30.05R                     .
+12AM EDT SEP 10 2012 PTCLDY    55  49  80 W5        30.06R                     .
+ 1AM EDT SEP 10 2012 PTCLDY    54  48  80 W6        30.07R                     .
+ 2AM EDT SEP 10 2012 MOCLDY    54  49  83 NW3       30.07S                     .
+ 3AM EDT SEP 10 2012 PTCLDY    54  48  80 NW9       30.07S                     .
+ 4AM EDT SEP 10 2012 PTCLDY    53  47  79 NW8       30.08R                     .
+ 5AM EDT SEP 10 2012 PTCLDY    52  46  80 NW6       30.09R                     .
+ 6AM EDT SEP 10 2012 CLEAR     50  45  83 NW5       30.11R                     .
+ 7AM EDT SEP 10 2012 PTCLDY    50  44  80 NW7       30.14R                     .
+ 8AM EDT SEP 10 2012 MOSUNNY   52  45  77 NW7       30.16R                     .
+ 9AM EDT SEP 10 2012 MOSUNNY   57  45  64 N9        30.18R                     .
+10AM EDT SEP 10 2012 MOSUNNY   60  45  57 N9        30.19R                     .
+11AM EDT SEP 10 2012 MOSUNNY   63  43  48 N10       30.21R                     .
+12PM EDT SEP 10 2012 MOSUNNY   66  43  43 VRB7G17   30.21S                     .
+ 1PM EDT SEP 10 2012 PTSUNNY   66  42  41 N12       30.20F                     .
+ 2PM EDT SEP 10 2012 PTSUNNY   67  43  41 NW8       30.20S                     .
+ 3PM EDT SEP 10 2012 PTSUNNY   68  44  42 N10       30.18F                     .
+ 4PM EDT SEP 10 2012 MOSUNNY   70  45  40 NW13      30.16F                     .
+ 5PM EDT SEP 10 2012 PTSUNNY   68  45  43 N9        30.17R                     .
+ 6PM EDT SEP 10 2012 MOSUNNY   69  46  43 NW10      30.17S                     .
+ 7PM EDT SEP 10 2012 PTCLDY    67  46  47 NW8       30.18R                     .
+ 8PM EDT SEP 10 2012 PTCLDY    64  46  52 NW7       30.17F                     .
+ 9PM EDT SEP 10 2012 PTCLDY    59  48  67 NW3       30.19R                     .
+10PM EDT SEP 10 2012 PTCLDY    61  46  57 N5        30.20R                     .
+11PM EDT SEP 10 2012 CLEAR     57  48  72 CALM      30.22R                     .
+12AM EDT SEP 11 2012 CLEAR     54  48  80 CALM      30.22S                     .
+ 1AM EDT SEP 11 2012 CLEAR     53  48  83 CALM      30.23R                     .
+ 2AM EDT SEP 11 2012 CLEAR     51  47  86 CALM      30.23S                     .
+ 3AM EDT SEP 11 2012 CLEAR     52  46  80 CALM      30.23S                     .
+ 4AM EDT SEP 11 2012 CLEAR     49  46  90 CALM      30.24R                     .
+ 5AM EDT SEP 11 2012 CLEAR     49  45  86 CALM      30.25R                     .
+ 6AM EDT SEP 11 2012 CLEAR     48  44  86 CALM      30.27R                     .
+ 7AM EDT SEP 11 2012 PTCLDY    47  44  90 CALM      30.28R                     .
+ 8AM EDT SEP 11 2012 MOSUNNY   49  46  90 CALM      30.30R                     .
+ 9AM EDT SEP 11 2012 MOSUNNY   53  49  86 SE3       30.31R                     .
+10AM EDT SEP 11 2012 MOSUNNY   59  50  72 SE3       30.32R                     .
+11AM EDT SEP 11 2012 MOSUNNY   63  47  55 S5        30.32S                     .
+12PM EDT SEP 11 2012 MOSUNNY   67  48  50 S7        30.32S                     .
+ 1PM EDT SEP 11 2012 PTSUNNY   69  47  45 VRB3      30.31F                     .
+ 2PM EDT SEP 11 2012 PTSUNNY   70  47  43 SE5       30.29F                     .
+ 3PM EDT SEP 11 2012 PTSUNNY   73  48  41 CALM      30.27F                     .
+ 4PM EDT SEP 11 2012 MOSUNNY   73  47  39 CALM      30.25F                     .
+ 5PM EDT SEP 11 2012 MOSUNNY   74  46  36 CALM      30.25S                     .
+ 6PM EDT SEP 11 2012 MOSUNNY   74  45  35 SW6       30.24F                     .
+ 7PM EDT SEP 11 2012 PTCLDY    73  46  38 CALM      30.24S                     .
+ 8PM EDT SEP 11 2012 PTCLDY    69  52  54 CALM      30.24S                     .
+ 9PM EDT SEP 11 2012 PTCLDY    63  52  67 CALM      30.26R                     .
+10PM EDT SEP 11 2012 PTCLDY    62  51  67 CALM      30.27R                     .
+11PM EDT SEP 11 2012 CLEAR     58  51  78 CALM      30.27S                     .
+12AM EDT SEP 12 2012 PTCLDY    59  51  75 CALM      30.27S                     .
+ 1AM EDT SEP 12 2012 PTCLDY    56  50  80 CALM      30.28R                     .
+ 2AM EDT SEP 12 2012 CLEAR     55  49  80 CALM      30.27F                     .
+ 3AM EDT SEP 12 2012 CLEAR     53  49  86 CALM      30.28R                     .
+ 4AM EDT SEP 12 2012 CLEAR     52  48  86 CALM      30.28S                     .
+ 5AM EDT SEP 12 2012 CLEAR     51  48  89 CALM      30.28S                     .
+ 6AM EDT SEP 12 2012 CLEAR     51  47  86 CALM      30.29R                     .
+ 7AM EDT SEP 12 2012 PTCLDY    50  47  89 CALM      30.30R                     .
+ 8AM EDT SEP 12 2012 MOSUNNY   51  47  86 CALM      30.33R                     .
+ 9AM EDT SEP 12 2012 MOSUNNY   57  52  83 CALM      30.34R                     .
+10AM EDT SEP 12 2012 MOSUNNY   62  52  69 CALM      30.34S                     .
+11AM EDT SEP 12 2012 MOSUNNY   69  53  56 CALM      30.35R                     .
+12PM EDT SEP 12 2012 MOSUNNY   73  53  49 CALM      30.34F                     .
+ 1PM EDT SEP 12 2012 MOSUNNY   75  49  39 VRB6      30.33F                     .
+ 2PM EDT SEP 12 2012 NOT AVBL                                                  .
+ 3PM EDT SEP 12 2012 MOSUNNY   78  49  35 S7        30.28F                     .
+ 4PM EDT SEP 12 2012 MOSUNNY   79  50  36 SW6       30.27F                     .
+ 5PM EDT SEP 12 2012 MOSUNNY   80  49  33 VRB6      30.26F                     .
+ 6PM EDT SEP 12 2012 NOT AVBL                                                  .
+ 7PM EDT SEP 12 2012 PTCLDY    79  49  34 W5        30.26                      .
+ 8PM EDT SEP 12 2012 PTCLDY    74  53  48 CALM      30.27R                     .
+ 9PM EDT SEP 12 2012 PTCLDY    69  55  60 CALM      30.28R                     .
+10PM EDT SEP 12 2012 PTCLDY    67  54  63 CALM      30.29R                     .
+11PM EDT SEP 12 2012 PTCLDY    64  55  72 CALM      30.30R                     .
+12AM EDT SEP 13 2012 CLEAR     63  55  75 CALM      30.30S                     .
+ 1AM EDT SEP 13 2012 CLEAR     59  54  83 W3        30.30S                     .
+ 2AM EDT SEP 13 2012 CLEAR     60  54  80 CALM      30.30S                     .
+ 3AM EDT SEP 13 2012 CLEAR     60  54  80 CALM      30.29F                     .
+ 4AM EDT SEP 13 2012 CLEAR     57  52  83 CALM      30.29S                     .
+ 5AM EDT SEP 13 2012 CLEAR     57  52  83 CALM      30.30R                     .
+ 6AM EDT SEP 13 2012 CLEAR     56  52  86 CALM      30.31R                     .
+ 7AM EDT SEP 13 2012 NOT AVBL                                                  .
+ 8AM EDT SEP 13 2012 MOSUNNY   57  52  83 CALM      30.34                      .
+ 9AM EDT SEP 13 2012 PTSUNNY   63  55  75 CALM      30.35R                     .
+10AM EDT SEP 13 2012 MOSUNNY   68  57  68 W3        30.35S                     .
+11AM EDT SEP 13 2012 FAIR      72  59  63 S3        30.35S                     .
+12PM EDT SEP 13 2012 FAIR      76  59  55 W5        30.35S                     .
+ 1PM EDT SEP 13 2012 FAIR      79  57  46 S3        30.33F                     .
+ 2PM EDT SEP 13 2012 FAIR      80  54  40 SW5       30.31F                     .
+ 3PM EDT SEP 13 2012 FAIR      80  53  39 CALM      30.29F                     .
+ 4PM EDT SEP 13 2012 FAIR      82  53  36 CALM      30.26F                     .
+ 5PM EDT SEP 13 2012 MOSUNNY   81  53  37 W5        30.25F                     .
+ 6PM EDT SEP 13 2012 MOSUNNY   81  55  40 VRB6      30.24F                     .
+ 7PM EDT SEP 13 2012 MOCLDY    78  56  46 S3        30.24S                     .
+ 8PM EDT SEP 13 2012 CLOUDY    75  56  51 S5        30.24S                     .
+ 9PM EDT SEP 13 2012 CLOUDY    73  57  57 CALM      30.24S                     .
+10PM EDT SEP 13 2012 CLOUDY    73  57  57 CALM      30.24S                     .
+11PM EDT SEP 13 2012 MOCLDY    66  57  72 CALM      30.25R                     .
+12AM EDT SEP 14 2012 MOCLDY    67  58  72 CALM      30.25S                     .
+ 1AM EDT SEP 14 2012 MOCLDY    65  58  78 CALM      30.25S                     .
+ 2AM EDT SEP 14 2012 MOCLDY    62  57  83 CALM      30.25S                     .
+ 3AM EDT SEP 14 2012 MOCLDY    63  57  81 CALM      30.24F                     .
+ 4AM EDT SEP 14 2012 MOCLDY    60  57  89 CALM      30.23F                     .
+ 5AM EDT SEP 14 2012 MOCLDY    60  56  86 CALM      30.22F                     .
+ 6AM EDT SEP 14 2012 MOCLDY    61  56  83 CALM      30.21F                     .
+ 7AM EDT SEP 14 2012 MOCLDY    58  55  90 CALM      30.21S                     .
+ 8AM EDT SEP 14 2012 PTSUNNY   60  56  86 CALM      30.21S                     .
+ 9AM EDT SEP 14 2012 PTSUNNY   67  58  72 SW5       30.21S                     .
+10AM EDT SEP 14 2012 MOSUNNY   68  57  68 SW7       30.22R                     .
+11AM EDT SEP 14 2012 MOSUNNY   72  59  63 SW8       30.22S                     .
+12PM EDT SEP 14 2012 MOSUNNY   75  59  57 VRB7      30.21F                     .
+ 1PM EDT SEP 14 2012 PTSUNNY   79  59  50 SW9G17    30.20F                     .
+ 2PM EDT SEP 14 2012 PTSUNNY   78  59  51 W7G17     30.18F                     .
+ 3PM EDT SEP 14 2012 MOSUNNY   80  55  42 W8G18     30.15F                     .
+ 4PM EDT SEP 14 2012 MOSUNNY   80  56  43 W7        30.14F                     .
+ 5PM EDT SEP 14 2012 CLOUDY    72  60  66 NW22      30.16R                     .
+ 6PM EDT SEP 14 2012 LGT RAIN  63  59  87 NW15      30.19R FOG                 .
+ 7PM EDT SEP 14 2012 CLOUDY    62  57  83 NW14      30.21R                     .
+ 8PM EDT SEP 14 2012 CLOUDY    61  56  83 NW14      30.23R                     .
+ 9PM EDT SEP 14 2012 CLOUDY    61  54  77 NW14      30.25R                     .
+10PM EDT SEP 14 2012 CLOUDY    59  54  83 NW12      30.26R                     .
+11PM EDT SEP 14 2012 CLOUDY    59  54  83 NW5       30.27R                     .
+12AM EDT SEP 15 2012 MOCLDY    57  53  86 NW7       30.27S                     .
+ 1AM EDT SEP 15 2012 MOCLDY    55  52  88 NW8       30.28R                     .
+ 2AM EDT SEP 15 2012 CLOUDY    56  53  90 NW5       30.28S                     .
+ 3AM EDT SEP 15 2012 CLOUDY    55  52  89 NW6       30.27F                     .
+ 4AM EDT SEP 15 2012 CLOUDY    55  52  89 NW5       30.26F                     .
+ 5AM EDT SEP 15 2012 FOG       54  52  94 NW3       30.26S VSB 1               .
+ 6AM EDT SEP 15 2012 FOG       53  52  96 N5        30.28R VSB 1/2             .
+ 7AM EDT SEP 15 2012 FOG       53  52  96 CALM      30.29R VSB 1               .
+ 8AM EDT SEP 15 2012 FOG       53  52  96 W6        30.31R VSB 1/2             .
+ 9AM EDT SEP 15 2012 PTSUNNY   54  51  90 SW3       30.31S FOG                 .
+10AM EDT SEP 15 2012 PTSUNNY   57  52  83 SE3       30.31S                     .
+11AM EDT SEP 15 2012 PTSUNNY   61  52  72 CALM      30.30F                     .
+12PM EDT SEP 15 2012 PTSUNNY   64  51  62 CALM      30.29F                     .
+ 1PM EDT SEP 15 2012 PTSUNNY   68  49  50 VRB6      30.27F                     .
+ 2PM EDT SEP 15 2012 PTSUNNY   69  48  47 VRB6      30.25F                     .
+ 3PM EDT SEP 15 2012 PTSUNNY   69  48  47 NW9       30.23F                     .
+ 4PM EDT SEP 15 2012 PTSUNNY   70  47  43 N7        30.21F                     .
+ 5PM EDT SEP 15 2012 PTSUNNY   71  47  42 VRB6      30.19F                     .
+ 6PM EDT SEP 15 2012 PTSUNNY   70  46  42 NW10      30.19S                     .
+ 7PM EDT SEP 15 2012 PTCLDY    67  47  48 W6        30.18F                     .
+ 8PM EDT SEP 15 2012 PTCLDY    64  48  56 W5        30.18S                     .
+ 9PM EDT SEP 15 2012 PTCLDY    61  48  62 W3        30.18S                     .
+10PM EDT SEP 15 2012 PTCLDY    60  48  64 NW5       30.19R                     .
+11PM EDT SEP 15 2012 PTCLDY    59  46  62 N6        30.20R                     .
+12AM EDT SEP 16 2012 PTCLDY    58  45  62 CALM      30.20S                     .
+ 1AM EDT SEP 16 2012 PTCLDY    54  46  74 CALM      30.20S                     .
+ 2AM EDT SEP 16 2012 PTCLDY    52  46  80 CALM      30.20S                     .
+ 3AM EDT SEP 16 2012 PTCLDY    50  45  83 CALM      30.18F                     .
+ 4AM EDT SEP 16 2012 PTCLDY    49  45  86 CALM      30.17F                     .
+ 5AM EDT SEP 16 2012 PTCLDY    47  44  90 CALM      30.17S                     .
+ 6AM EDT SEP 16 2012 MOCLDY    48  44  86 CALM      30.18R                     .
+ 7AM EDT SEP 16 2012 MOCLDY    49  44  83 CALM      30.18S                     .
+ 8AM EDT SEP 16 2012 CLOUDY    47  44  90 CALM      30.20R                     .
+ 9AM EDT SEP 16 2012 PTSUNNY   51  47  86 CALM      30.20S                     .
+10AM EDT SEP 16 2012 MOSUNNY   59  48  67 CALM      30.20S                     .
+11AM EDT SEP 16 2012 PTSUNNY   63  46  54 CALM      30.20S                     .
+12PM EDT SEP 16 2012 PTSUNNY   64  44  48 VRB5      30.18F                     .
+ 1PM EDT SEP 16 2012 MOSUNNY   68  46  45 SE7       30.17F                     .
+ 2PM EDT SEP 16 2012 MOSUNNY   68  41  37 VRB5      30.15F                     .
+ 3PM EDT SEP 16 2012 MOSUNNY   71  42  35 NE7       30.12F                     .
+ 4PM EDT SEP 16 2012 MOSUNNY   72  43  35 E8        30.11F                     .
+ 5PM EDT SEP 16 2012 MOSUNNY   71  42  35 CALM      30.09F                     .
+ 6PM EDT SEP 16 2012 MOSUNNY   72  42  34 N3        30.08F                     .
+ 7PM EDT SEP 16 2012 PTCLDY    70  44  39 CALM      30.08S                     .
+ 8PM EDT SEP 16 2012 PTCLDY    64  47  53 CALM      30.09R                     .
+ 9PM EDT SEP 16 2012 PTCLDY    64  45  49 S5        30.10R                     .
+10PM EDT SEP 16 2012 CLEAR     61  46  57 CALM      30.10S                     .
+11PM EDT SEP 16 2012 PTCLDY    56  47  71 CALM      30.10S                     .
+12AM EDT SEP 17 2012 PTCLDY    55  47  74 CALM      30.09F                     .
+ 1AM EDT SEP 17 2012 PTCLDY    53  45  74 CALM      30.09S                     .
+ 2AM EDT SEP 17 2012 PTCLDY    51  45  79 CALM      30.09S                     .
+ 3AM EDT SEP 17 2012 CLEAR     50  45  83 CALM      30.09S                     .
+ 4AM EDT SEP 17 2012 CLEAR     50  45  83 CALM      30.07F                     .
+ 5AM EDT SEP 17 2012 CLEAR     47  43  86 CALM      30.07S                     .
+ 6AM EDT SEP 17 2012 CLEAR     48  44  86 CALM      30.07S                     .
+ 7AM EDT SEP 17 2012 MOCLDY    48  43  82 CALM      30.07S                     .
+ 8AM EDT SEP 17 2012 MOCLDY    48  43  82 CALM      30.07S                     .
+ 9AM EDT SEP 17 2012 CLOUDY    52  48  86 CALM      30.06F                     .
+10AM EDT SEP 17 2012 CLOUDY    57  48  72 SE5       30.06S                     .
+11AM EDT SEP 17 2012 CLOUDY    63  48  58 S6        30.05F                     .
+12PM EDT SEP 17 2012 CLOUDY    67  46  47 SE6       30.04F                     .
+ 1PM EDT SEP 17 2012 CLOUDY    71  44  37 VRB6      30.02F                     .
+ 2PM EDT SEP 17 2012 PTSUNNY   75  46  35 CALM      29.99F                     .
+ 3PM EDT SEP 17 2012 CLOUDY    76  46  34 SE5       29.96F                     .
+ 4PM EDT SEP 17 2012 CLOUDY    76  44  32 S3        29.94F                     .
+ 5PM EDT SEP 17 2012 CLOUDY    76  46  34 SE7       29.92F                     .
+ 6PM EDT SEP 17 2012 CLOUDY    75  48  38 S6        29.91F                     .
+ 7PM EDT SEP 17 2012 CLOUDY    73  50  44 S5        29.89F                     .
+ 8PM EDT SEP 17 2012 CLOUDY    70  54  56 CALM      29.89S                     .
+ 9PM EDT SEP 17 2012 CLOUDY    69  53  56 S3        29.88F                     .
+10PM EDT SEP 17 2012 LGT RAIN  67  57  70 S9        29.89R                     .
+11PM EDT SEP 17 2012 DRIZZLE   65  59  81 S3        29.88F                     .
+12AM EDT SEP 18 2012 CLOUDY    64  60  87 SE3       29.87F                     .
+ 1AM EDT SEP 18 2012 LGT RAIN  64  61  90 S6        29.85F                     .
+ 2AM EDT SEP 18 2012 LGT RAIN  65  61  87 S8        29.81F                     .
+ 3AM EDT SEP 18 2012 LGT RAIN  63  62  97 S5        29.78F FOG                 .
+ 4AM EDT SEP 18 2012 LGT RAIN  63  62  97 SE6       29.74F FOG                 .
+ 5AM EDT SEP 18 2012 LGT RAIN  63  61  93 SE6       29.70F FOG                 .
+ 6AM EDT SEP 18 2012 RAIN      63  61  93 E3        29.65F FOG                 .
+ 7AM EDT SEP 18 2012 HVY RAIN  63  62  97 NE5       29.61F FOG                 .
+ 8AM EDT SEP 18 2012 LGT RAIN  63  62  97 NW6       29.60S VSB 1               .
+ 9AM EDT SEP 18 2012 LGT RAIN  63  62  97 CALM      29.59F FOG                 .
+10AM EDT SEP 18 2012 CLOUDY    64  63  94 SW7       29.61R                     .
+11AM EDT SEP 18 2012 CLOUDY    65  61  87 SW8       29.61S                     .
+12PM EDT SEP 18 2012 CLOUDY    66  61  84 SW9       29.62R                     .
+ 1PM EDT SEP 18 2012 CLOUDY    68  61  78 SW9       29.61F                     .
+ 2PM EDT SEP 18 2012 LGT RAIN  68  62  81 SW8       29.61S                     .
+ 3PM EDT SEP 18 2012 CLOUDY    68  62  81 SW12      29.61S                     .
+ 4PM EDT SEP 18 2012 LGT RAIN  62  59  90 NW18G25   29.64R                     .
+ 5PM EDT SEP 18 2012 CLOUDY    60  56  86 NW20G28   29.69R                     .
+ 6PM EDT SEP 18 2012 CLOUDY    59  53  80 NW13      29.73R                     .
+ 7PM EDT SEP 18 2012 CLOUDY    59  50  72 NW14      29.77R                     .
+ 8PM EDT SEP 18 2012 CLOUDY    57  49  74 NW7       29.81R                     .
+ 9PM EDT SEP 18 2012 MOCLDY    55  49  80 W5        29.85R                     .
+10PM EDT SEP 18 2012 CLOUDY    54  50  86 NW5       29.87R                     .
+11PM EDT SEP 18 2012 MOCLDY    54  50  86 W6        29.90R                     .
+12AM EDT SEP 19 2012 PTCLDY    52  48  86 W6        29.92R                     .
+ 1AM EDT SEP 19 2012 PTCLDY    51  47  86 W6        29.94R                     .
+ 2AM EDT SEP 19 2012 PTCLDY    50  46  86 W6        29.97R                     .
+ 3AM EDT SEP 19 2012 PTCLDY    48  45  89 W6        29.98R                     .
+ 4AM EDT SEP 19 2012 PTCLDY    47  43  86 W6        29.99R                     .
+ 5AM EDT SEP 19 2012 CLEAR     46  42  86 W7        30.01R                     .
+ 6AM EDT SEP 19 2012 CLEAR     45  41  86 W7        30.03R                     .
+ 7AM EDT SEP 19 2012 PTCLDY    43  40  89 W3        30.06R                     .
+ 8AM EDT SEP 19 2012 PTCLDY    44  40  85 W8        30.09R                     .
+ 9AM EDT SEP 19 2012 MOSUNNY   48  41  76 W8        30.11R                     .
+10AM EDT SEP 19 2012 MOSUNNY   52  42  69 NW7       30.14R                     .
+11AM EDT SEP 19 2012 MOSUNNY   55  39  54 NW7       30.15R                     .
+12PM EDT SEP 19 2012 PTSUNNY   57  38  48 SW5       30.17R                     .
+ 1PM EDT SEP 19 2012 PTSUNNY   60  39  45 N6        30.17S                     .
+ 2PM EDT SEP 19 2012 PTSUNNY   61  36  39 VRB5      30.15F                     .
+ 3PM EDT SEP 19 2012 MOSUNNY   61  36  39 VRB6      30.14F                     .
+ 4PM EDT SEP 19 2012 MOSUNNY   62  36  37 NW6       30.13F                     .
+ 5PM EDT SEP 19 2012 MOSUNNY   62  35  36 S7        30.14R                     .
+ 6PM EDT SEP 19 2012 MOSUNNY   61  36  39 VRB3      30.14S                     .
+ 7PM EDT SEP 19 2012 PTCLDY    60  36  40 CALM      30.14S                     .
+ 8PM EDT SEP 19 2012 CLEAR     57  40  52 CALM      30.14S                     .
+ 9PM EDT SEP 19 2012 CLEAR     53  42  66 CALM      30.14S                     .
+10PM EDT SEP 19 2012 NOT AVBL                                                  .
+11PM EDT SEP 19 2012 CLEAR     51  42  71 CALM      30.15                      .
+12AM EDT SEP 20 2012 CLEAR     47  42  83 CALM      30.14F                     .
+ 1AM EDT SEP 20 2012 CLEAR     48  42  80 CALM      30.14S                     .
+ 2AM EDT SEP 20 2012 CLEAR     46  42  86 CALM      30.12F                     .
+ 3AM EDT SEP 20 2012 CLEAR     45  40  82 CALM      30.11F                     .
+ 4AM EDT SEP 20 2012 CLEAR     46  40  79 CALM      30.10F                     .
+ 5AM EDT SEP 20 2012 CLEAR     45  40  82 CALM      30.09F                     .
+ 6AM EDT SEP 20 2012 CLEAR     43  39  86 CALM      30.10R                     .
+ 7AM EDT SEP 20 2012 PTCLDY    42  38  85 CALM      30.10S                     .
+ 8AM EDT SEP 20 2012 PTCLDY    42  39  89 CALM      30.11R                     .
+ 9AM EDT SEP 20 2012 MOSUNNY   48  43  82 SE5       30.09F                     .
+10AM EDT SEP 20 2012 MOSUNNY   55  44  66 S6        30.08F                     .
+11AM EDT SEP 20 2012 MOSUNNY   62  44  51 S8        30.06F                     .
+12PM EDT SEP 20 2012 MOSUNNY   65  42  43 SW8       30.05F                     .
+ 1PM EDT SEP 20 2012 MOSUNNY   68  40  35 W5        30.04F                     .
+ 2PM EDT SEP 20 2012 MOSUNNY   69  39  33 SW9       30.03F                     .
+ 3PM EDT SEP 20 2012 MOSUNNY   72  36  26 SW10G16   30.01F                     .
+ 4PM EDT SEP 20 2012 MOSUNNY   73  38  27 S12       29.98F                     .
+ 5PM EDT SEP 20 2012 MOSUNNY   73  41  31 S9        29.97F                     .
+ 6PM EDT SEP 20 2012 MOSUNNY   73  43  33 S10       29.96F                     .
+ 7PM EDT SEP 20 2012 MOCLDY    70  46  42 S5        29.96S                     .
+ 8PM EDT SEP 20 2012 MOCLDY    69  47  45 SW3       29.98R                     .
+ 9PM EDT SEP 20 2012 CLOUDY    66  49  54 S3        29.98S                     .
+10PM EDT SEP 20 2012 CLOUDY    65  50  58 S3        29.97F                     .
+11PM EDT SEP 20 2012 CLOUDY    65  50  58 S3        29.98R                     .
+12AM EDT SEP 21 2012 CLOUDY    64  51  62 S3        29.98S                     .
+ 1AM EDT SEP 21 2012 CLOUDY    63  51  65 S5        29.97F                     .
+ 2AM EDT SEP 21 2012 CLOUDY    64  51  62 S5        29.97S                     .
+ 3AM EDT SEP 21 2012 CLOUDY    64  51  62 S3        29.96F                     .
+ 4AM EDT SEP 21 2012 CLOUDY    63  52  67 S3        29.96S                     .
+ 5AM EDT SEP 21 2012 CLOUDY    61  53  75 S5        29.96S                     .
+ 6AM EDT SEP 21 2012 CLOUDY    60  53  77 S6        29.96S                     .
+ 7AM EDT SEP 21 2012 MOCLDY    61  53  75 S6        29.96S                     .
+ 8AM EDT SEP 21 2012 CLOUDY    61  54  77 S5        29.97R                     .
+ 9AM EDT SEP 21 2012 MOSUNNY   64  54  69 S8        29.97S                     .
+10AM EDT SEP 21 2012 PTSUNNY   66  54  65 SW10      29.99R                     .
+11AM EDT SEP 21 2012 PTSUNNY   66  54  65 SW8       30.00R                     .
+12PM EDT SEP 21 2012 PTSUNNY   68  53  58 SW13G18   29.98F                     .
+ 1PM EDT SEP 21 2012 PTSUNNY   71  51  49 SW14      29.97F                     .
+ 2PM EDT SEP 21 2012 PTSUNNY   73  48  41 SW13G20   29.97S                     .
+ 3PM EDT SEP 21 2012 PTSUNNY   74  47  38 SW13      29.96F                     .
+ 4PM EDT SEP 21 2012 PTSUNNY   73  45  36 SW15      29.95F                     .
+ 5PM EDT SEP 21 2012 CLOUDY    71  47  42 W7        29.94F                     .
+ 6PM EDT SEP 21 2012 CLOUDY    70  50  49 W3        29.94S                     .
+ 7PM EDT SEP 21 2012 CLOUDY    69  50  50 CALM      29.93F                     .
+ 8PM EDT SEP 21 2012 LGT RAIN  67  50  54 CALM      29.91F                     .
+ 9PM EDT SEP 21 2012 CLOUDY    64  55  72 CALM      29.91S                     .
+10PM EDT SEP 21 2012 CLOUDY    63  54  72 CALM      29.86F                     .
+11PM EDT SEP 21 2012 CLOUDY    64  51  62 SE5       29.82F                     .
+12AM EDT SEP 22 2012 MOCLDY    65  51  60 SE10      29.77F                     .
+ 1AM EDT SEP 22 2012 CLOUDY    66  54  65 S8        29.74F                     .
+ 2AM EDT SEP 22 2012 MOCLDY    68  54  60 S14G22    29.73F                     .
+ 3AM EDT SEP 22 2012 CLOUDY    68  53  58 S15G21    29.72F                     .
+ 4AM EDT SEP 22 2012 CLOUDY    70  52  52 SW16G26   29.71F                     .
+ 5AM EDT SEP 22 2012 NOT AVBL                                                  .
+ 6AM EDT SEP 22 2012 RAIN      59  55  87 W6        29.79R FOG                 .
+ 7AM EDT SEP 22 2012 CLOUDY    59  57  94 S8        29.79S                     .
+ 8AM EDT SEP 22 2012 MOCLDY    60  57  89 SW9       29.80R                     .
+ 9AM EDT SEP 22 2012 PTSUNNY   61  57  87 SW6       29.81R                     .
+10AM EDT SEP 22 2012 CLOUDY    61  57  87 SW8       29.82R                     .
+11AM EDT SEP 22 2012 PTSUNNY   62  57  83 SW10      29.83R                     .
+12PM EDT SEP 22 2012 PTSUNNY   64  56  75 W8        29.84R                     .
+ 1PM EDT SEP 22 2012 MOSUNNY   65  53  65 W16       29.84S                     .
+ 2PM EDT SEP 22 2012 MOSUNNY   65  51  60 W14G24    29.85R                     .
+ 3PM EDT SEP 22 2012 MOSUNNY   66  50  56 W15G24    29.85S                     .
+ 4PM EDT SEP 22 2012 MOSUNNY   67  44  43 W12G22    29.86R                     .
+ 5PM EDT SEP 22 2012 MOSUNNY   66  42  41 W14G20    29.85F                     .
+ 6PM EDT SEP 22 2012 MOSUNNY   66  42  41 W8        29.85S                     .
+ 7PM EDT SEP 22 2012 MOCLDY    65  42  43 SW9       29.85S                     .
+ 8PM EDT SEP 22 2012 LGT RAIN  53  48  83 NW21G28   29.95R                     .
+ 9PM EDT SEP 22 2012 MOCLDY    52  47  83 NW12      29.99R                     .
+10PM EDT SEP 22 2012 MOCLDY    51  47  86 W9        30.02R                     .
+11PM EDT SEP 22 2012 PTCLDY    49  45  86 W10       30.05R                     .
+12AM EDT SEP 23 2012 PTCLDY    48  44  86 W12       30.07R                     .
+ 1AM EDT SEP 23 2012 PTCLDY    46  43  89 W7        30.08R                     .
+ 2AM EDT SEP 23 2012 PTCLDY    45  42  89 W7        30.09R                     .
+ 3AM EDT SEP 23 2012 PTCLDY    44  41  89 W3        30.10R                     .
+ 4AM EDT SEP 23 2012 PTCLDY    43  41  93 S3        30.10S                     .
+ 5AM EDT SEP 23 2012 PTCLDY    42  40  92 S5        30.11R                     .
+ 6AM EDT SEP 23 2012 CLEAR     41  39  93 S3        30.12R                     .
+ 7AM EDT SEP 23 2012 PTCLDY    41  39  93 S3        30.14R                     .
+ 8AM EDT SEP 23 2012 CLEAR     41  39  93 CALM      30.15R                     .
+ 9AM EDT SEP 23 2012 PTSUNNY   44  41  89 W6        30.17R                     .
+10AM EDT SEP 23 2012 CLOUDY    44  42  93 SW3       30.17S FOG                 .
+11AM EDT SEP 23 2012 CLOUDY    47  44  90 SW3       30.18R                     .
+12PM EDT SEP 23 2012 PTSUNNY   54  45  71 CALM      30.16F                     .
+ 1PM EDT SEP 23 2012 PTSUNNY   57  41  55 SW9       30.15F                     .
+ 2PM EDT SEP 23 2012 CLOUDY    58  40  51 W12       30.14F                     .
+ 3PM EDT SEP 23 2012 PTSUNNY   60  39  45 W9        30.13F                     .
+ 4PM EDT SEP 23 2012 PTSUNNY   61  38  42 W12       30.12F                     .
+ 5PM EDT SEP 23 2012 PTSUNNY   60  36  40 W13       30.12S                     .
+ 6PM EDT SEP 23 2012 CLOUDY    57  38  48 NW9       30.13R                     .
+ 7PM EDT SEP 23 2012 MOCLDY    56  40  55 NW8       30.14R                     .
+ 8PM EDT SEP 23 2012 CLOUDY    54  42  64 NE3       30.14S                     .
+ 9PM EDT SEP 23 2012 CLOUDY    53  43  68 CALM      30.16R                     .
+10PM EDT SEP 23 2012 MOCLDY    52  44  74 NE3       30.17R                     .
+11PM EDT SEP 23 2012 CLOUDY    52  44  74 CALM      30.19R                     .
+12AM EDT SEP 24 2012 CLOUDY    52  44  74 CALM      30.18F                     .
+ 1AM EDT SEP 24 2012 CLOUDY    52  43  71 CALM      30.18S                     .
+ 2AM EDT SEP 24 2012 FAIR      47  44  90 W5        30.18S                     .
+ 3AM EDT SEP 24 2012 FAIR      45  43  93 W5        30.18S                     .
+ 4AM EDT SEP 24 2012 FAIR      46  42  86 W5        30.18S                     .
+ 5AM EDT SEP 24 2012 FAIR      44  41  89 CALM      30.19R                     .
+ 6AM EDT SEP 24 2012 FAIR      43  39  86 W6        30.20R                     .
+ 7AM EDT SEP 24 2012 FAIR      42  39  89 CALM      30.21R                     .
+ 8AM EDT SEP 24 2012 FAIR      41  39  93 W3        30.23R                     .
+ 9AM EDT SEP 24 2012 FAIR      44  40  85 W6        30.24R                     .
+10AM EDT SEP 24 2012 FAIR      48  41  76 W3        30.25R                     .
+11AM EDT SEP 24 2012 FAIR      52  42  69 VRB7      30.25S                     .
+12PM EDT SEP 24 2012 PTSUNNY   53  37  54 W6        30.24F                     .
+ 1PM EDT SEP 24 2012 FAIR      54  37  52 NW5       30.23F                     .
+ 2PM EDT SEP 24 2012 FAIR      58  34  40 VRB7      30.20F                     .
+ 3PM EDT SEP 24 2012 MOSUNNY   59  32  36 SW9       30.17F                     .
+ 4PM EDT SEP 24 2012 FAIR      59  32  36 SW9G20    30.14F                     .
+ 5PM EDT SEP 24 2012 MOSUNNY   60  31  33 SW10      30.11F                     .
+ 6PM EDT SEP 24 2012 PTSUNNY   60  31  33 SW10      30.09F                     .
+ 7PM EDT SEP 24 2012 MOCLDY    59  34  39 SW5       30.09S                     .
+ 8PM EDT SEP 24 2012 MOCLDY    55  37  50 CALM      30.09S                     .
+ 9PM EDT SEP 24 2012 PTCLDY    53  37  54 S5        30.09S                     .
+10PM EDT SEP 24 2012 CLEAR     52  36  54 S3        30.09S                     .
+11PM EDT SEP 24 2012 CLEAR     50  36  58 S3        30.09S                     .
+12AM EDT SEP 25 2012 CLEAR     49  37  63 S3        30.09S                     .
+ 1AM EDT SEP 25 2012 CLEAR     47  37  68 S5        30.10R                     .
+ 2AM EDT SEP 25 2012 CLEAR     48  37  65 CALM      30.10S                     .
+ 3AM EDT SEP 25 2012 CLEAR     44  37  76 CALM      30.09F                     .
+ 4AM EDT SEP 25 2012 CLEAR     44  37  76 S5        30.10R                     .
+ 5AM EDT SEP 25 2012 CLEAR     45  37  73 S3        30.10S                     .
+ 6AM EDT SEP 25 2012 CLEAR     43  37  79 SE5       30.10S                     .
+ 7AM EDT SEP 25 2012 PTCLDY    43  37  79 CALM      30.11R                     .
+ 8AM EDT SEP 25 2012 PTCLDY    44  37  76 VRB3      30.11S                     .
+ 9AM EDT SEP 25 2012 MOSUNNY   48  39  71 S6        30.10F                     .
+10AM EDT SEP 25 2012 MOSUNNY   54  41  61 S7        30.11R                     .
+11AM EDT SEP 25 2012 CLOUDY    57  42  57 SW6       30.13R                     .
+12PM EDT SEP 25 2012 CLOUDY    59  42  53 S6        30.11F                     .
+ 1PM EDT SEP 25 2012 CLOUDY    61  44  53 S9        30.10F                     .
+ 2PM EDT SEP 25 2012 CLOUDY    64  44  48 S9        30.08F                     .
+ 3PM EDT SEP 25 2012 NOT AVBL                                                  .
+ 4PM EDT SEP 25 2012 NOT AVBL                                                  .
+ 5PM EDT SEP 25 2012 CLOUDY    67  45  45 S8        30.01F                     .
+ 6PM EDT SEP 25 2012 LGT RAIN  64  45  49 SW9       30.02R                     .
+ 7PM EDT SEP 25 2012 LGT RAIN  60  49  66 CALM      30.04R                     .
+ 8PM EDT SEP 25 2012 CLOUDY    59  52  77 CALM      30.02F                     .
+ 9PM EDT SEP 25 2012 NOT AVBL                                                  .
+10PM EDT SEP 25 2012 LGT RAIN  60  52  74 S7        30.02                      .
+11PM EDT SEP 25 2012 CLOUDY    60  53  77 S7        30.03S                     .
+12AM EDT SEP 26 2012 CLOUDY    60  53  77 SW7       30.03S                     .
+ 1AM EDT SEP 26 2012 CLOUDY    60  53  77 SW8       30.04R                     .
+ 2AM EDT SEP 26 2012 CLOUDY    59  54  83 SW7       30.04S                     .
+ 3AM EDT SEP 26 2012 CLOUDY    58  54  86 S5        30.02F                     .
+ 4AM EDT SEP 26 2012 CLOUDY    59  55  87 S6        30.01F                     .
+ 5AM EDT SEP 26 2012 LGT RAIN  60  56  86 SW7       30.01S                     .
+ 6AM EDT SEP 26 2012 LGT RAIN  61  57  88 SW12G17   30.00F                     .
+ 7AM EDT SEP 26 2012 LGT RAIN  61  57  88 SW14G21   30.03R                     .
+ 8AM EDT SEP 26 2012 CLOUDY    61  58  90 SW8       30.04R                     .
+ 9AM EDT SEP 26 2012 LGT RAIN  61  58  90 SW8       30.05R                     .
+10AM EDT SEP 26 2012 CLOUDY    62  58  86 SW9G23    30.06R                     .
+11AM EDT SEP 26 2012 CLOUDY    63  59  87 SW10      30.07R                     .
+12PM EDT SEP 26 2012 CLOUDY    63  59  87 SW10      30.06F                     .
+ 1PM EDT SEP 26 2012 CLOUDY    65  59  81 SW13G18   30.07R                     .
+ 2PM EDT SEP 26 2012 LGT RAIN  64  60  87 SW9       30.04F                     .
+ 3PM EDT SEP 26 2012 CLOUDY    65  60  84 SW14      30.04S                     .
+ 4PM EDT SEP 26 2012 CLOUDY    64  60  87 SW8       30.06R                     .
+ 5PM EDT SEP 26 2012 LGT RAIN  64  61  88 SW6       30.08R                     .
+ 6PM EDT SEP 26 2012 LGT RAIN  65  60  84 SW6       30.08S                     .
+ 7PM EDT SEP 26 2012 CLOUDY    66  60  81 SW6       30.09R                     .
+ 8PM EDT SEP 26 2012 LGT RAIN  65  61  87 SE3       30.06F                     .
+ 9PM EDT SEP 26 2012 CLOUDY    64  61  90 SW5       30.10R                     .
+10PM EDT SEP 26 2012 LGT RAIN  64  60  87 SW5       30.11R                     .
+11PM EDT SEP 26 2012 LGT RAIN  64  60  87 SW6       30.10F                     .
+12AM EDT SEP 27 2012 LGT RAIN  63  61  93 W6        30.11R                     .
+ 1AM EDT SEP 27 2012 LGT RAIN  63  61  93 NW3       30.11S FOG                 .
+ 2AM EDT SEP 27 2012 RAIN      63  61  93 VRB3      30.13R FOG                 .
+ 3AM EDT SEP 27 2012 LGT RAIN  62  61  96 NW3       30.12F FOG                 .
+ 4AM EDT SEP 27 2012 LGT RAIN  62  60  93 CALM      30.13S FOG                 .
+ 5AM EDT SEP 27 2012 CLOUDY    63  61  94 CALM      30.15R FOG                 .
+ 6AM EDT SEP 27 2012 CLOUDY    62  61  96 CALM      30.16R FOG                 .
+ 7AM EDT SEP 27 2012 CLOUDY    62  60  93 CALM      30.16S FOG                 .
+ 8AM EDT SEP 27 2012 FOG       63  61  94 CALM      30.17S VSB 1               .
+ 9AM EDT SEP 27 2012 LGT RAIN  62  61  96 CALM      30.19R VSB 1               .
+10AM EDT SEP 27 2012 CLOUDY    63  61  93 CALM      30.19S FOG                 .
+11AM EDT SEP 27 2012 LGT RAIN  64  61  90 NE6       30.19F FOG                 .
+12PM EDT SEP 27 2012 DRIZZLE   64  61  90 E5        30.17F FOG                 .
+ 1PM EDT SEP 27 2012 LGT RAIN  64  62  93 E7        30.16F FOG                 .
+ 2PM EDT SEP 27 2012 LGT RAIN  64  62  93 E7        30.13F FOG                 .
+ 3PM EDT SEP 27 2012 LGT RAIN  64  62  93 E5        30.11F FOG                 .
+ 4PM EDT SEP 27 2012 RAIN      64  62  93 E8        30.08F VSB 1               .
+ 5PM EDT SEP 27 2012 LGT RAIN  63  62  97 E12       30.05F VSB 1               .
+ 6PM EDT SEP 27 2012 NOT AVBL                                                  .
+ 7PM EDT SEP 27 2012 CLOUDY    63  60  90 NW7       30.09R                     .
+ 8PM EDT SEP 27 2012 FOG       61  59  93 NW8       30.10R VSB 1/2             .
+ 9PM EDT SEP 27 2012 DRZL/FOG  59  57  93 NW8       30.10S VSB 1               .
+10PM EDT SEP 27 2012 DRIZZLE   58  56  93 NW7       30.12R FOG                 .
+11PM EDT SEP 27 2012 CLOUDY    57  56  96 N5        30.11F FOG                 .
+12AM EDT SEP 28 2012 CLOUDY    57  55  93 NW5       30.11S FOG                 .
+ 1AM EDT SEP 28 2012 CLOUDY    56  54  93 NW9       30.11S                     .
+ 2AM EDT SEP 28 2012 CLOUDY    55  53  93 NW8       30.12R FOG                 .
+ 3AM EDT SEP 28 2012 CLOUDY    54  53  97 NW7       30.11S FOG                 .
+ 4AM EDT SEP 28 2012 CLOUDY    55  53  93 W6        30.10F FOG                 .
+ 5AM EDT SEP 28 2012 CLOUDY    54  53  97 W7        30.11R FOG                 .
+ 6AM EDT SEP 28 2012 CLOUDY    54  52  93 NW8       30.11S                     .
+ 7AM EDT SEP 28 2012 CLOUDY    54  51  90 NW9       30.11S                     .
+ 8AM EDT SEP 28 2012 CLOUDY    54  51  90 NW7       30.13R                     .
+ 9AM EDT SEP 28 2012 PTSUNNY   54  51  90 NW5       30.13S                     .
+10AM EDT SEP 28 2012 PTSUNNY   56  51  84 N7        30.14R                     .
+11AM EDT SEP 28 2012 PTSUNNY   59  50  72 NW6       30.14S                     .
+12PM EDT SEP 28 2012 CLOUDY    60  47  61 NW7       30.13F                     .
+ 1PM EDT SEP 28 2012 CLOUDY    60  46  59 N10       30.13S                     .
+ 2PM EDT SEP 28 2012 CLOUDY    61  46  57 W7        30.12F                     .
+ 3PM EDT SEP 28 2012 PTSUNNY   62  46  55 W9        30.10F                     .
+ 4PM EDT SEP 28 2012 CLOUDY    64  45  49 NW9       30.08F                     .
+ 5PM EDT SEP 28 2012 PTSUNNY   63  44  50 NW13      30.07F                     .
+ 6PM EDT SEP 28 2012 PTSUNNY   61  44  53 NW9       30.07S                     .
+ 7PM EDT SEP 28 2012 MOCLDY    61  45  55 NW9       30.06F                     .
+ 8PM EDT SEP 28 2012 NOT AVBL                                                  .
+ 9PM EDT SEP 28 2012 NOT AVBL                                                  .
+10PM EDT SEP 28 2012 CLOUDY    55  43  63 N7        30.08                      .
+11PM EDT SEP 28 2012 MOCLDY    54  43  66 N5        30.08S                     .
+12AM EDT SEP 29 2012 PTCLDY    51  44  77 CALM      30.08S                     .
+ 1AM EDT SEP 29 2012 PTCLDY    47  43  86 W5        30.08S                     .
+ 2AM EDT SEP 29 2012 PTCLDY    46  43  89 W6        30.09R                     .
+ 3AM EDT SEP 29 2012 MOCLDY    46  43  89 CALM      30.07F                     .
+ 4AM EDT SEP 29 2012 MOCLDY    45  42  89 CALM      30.06F                     .
+ 5AM EDT SEP 29 2012 MOCLDY    44  41  89 CALM      30.06S                     .
+ 6AM EDT SEP 29 2012 MOCLDY    43  40  89 CALM      30.07R                     .
+ 7AM EDT SEP 29 2012 MOCLDY    44  41  89 CALM      30.06F                     .
+ 8AM EDT SEP 29 2012 MOCLDY    47  44  90 W5        30.07R                     .
+ 9AM EDT SEP 29 2012 PTSUNNY   47  45  93 CALM      30.07S                     .
+10AM EDT SEP 29 2012 PTSUNNY   50  47  89 CALM      30.07S                     .
+11AM EDT SEP 29 2012 CLOUDY    54  47  77 CALM      30.07S                     .
+12PM EDT SEP 29 2012 CLOUDY    60  44  55 W5        30.05F                     .
+ 1PM EDT SEP 29 2012 CLOUDY    61  45  55 NW9       30.03F                     .
+ 2PM EDT SEP 29 2012 PTSUNNY   64  46  52 W12       30.01F                     .
+ 3PM EDT SEP 29 2012 PTSUNNY   64  45  49 VRB6      29.98F                     .
+ 4PM EDT SEP 29 2012 PTSUNNY   64  44  48 NW7       29.97F                     .
+ 5PM EDT SEP 29 2012 PTSUNNY   64  44  48 N7        29.95F                     .
+ 6PM EDT SEP 29 2012 PTSUNNY   64  44  48 NW3       29.95S                     .
+ 7PM EDT SEP 29 2012 MOCLDY    61  45  55 W3        29.95S                     .
+ 8PM EDT SEP 29 2012 CLOUDY    60  46  59 CALM      29.95S                     .
+ 9PM EDT SEP 29 2012 CLOUDY    58  47  66 CALM      29.95S                     .
+10PM EDT SEP 29 2012 MOCLDY    56  49  77 W5        29.95S                     .
+11PM EDT SEP 29 2012 MOCLDY    55  47  74 CALM      29.95S                     .
+12AM EDT SEP 30 2012 MOCLDY    55  46  71 N3        29.94F                     .
+ 1AM EDT SEP 30 2012 LGT RAIN  53  48  83 CALM      29.92F                     .
+ 2AM EDT SEP 30 2012 MOCLDY    52  48  86 CALM      29.92S                     .
+ 3AM EDT SEP 30 2012 PTCLDY    51  49  92 CALM      29.90F                     .
+ 4AM EDT SEP 30 2012 PTCLDY    49  47  93 CALM      29.89F                     .
+ 5AM EDT SEP 30 2012 MOCLDY    48  47  96 S3        29.89S FOG                 .
+ 6AM EDT SEP 30 2012 MOCLDY    48  47  96 CALM      29.89S FOG                 .
+ 7AM EDT SEP 30 2012 MOCLDY    49  46  90 NE6       29.89S                     .
+ 8AM EDT SEP 30 2012 MOCLDY    49  47  93 CALM      29.89S FOG                 .
+ 9AM EDT SEP 30 2012 PTSUNNY   50  48  93 E3        29.88F FOG                 .
+10AM EDT SEP 30 2012 LGT RAIN  51  48  89 CALM      29.89R FOG                 .
+11AM EDT SEP 30 2012 PTSUNNY   53  50  89 E6        29.88F FOG                 .
+12PM EDT SEP 30 2012 CLOUDY    53  49  86 CALM      29.88S                     .
+ 1PM EDT SEP 30 2012 LGT RAIN  55  49  80 CALM      29.89R                     .
+ 2PM EDT SEP 30 2012 LGT RAIN  55  50  83 NE7       29.88F                     .
+ 3PM EDT SEP 30 2012 PTSUNNY   56  49  77 SE5       29.87F                     .
+ 4PM EDT SEP 30 2012 FAIR      59  48  67 E3        29.86F                     .
+ 5PM EDT SEP 30 2012 MOSUNNY   62  47  57 CALM      29.85F                     .
+ 6PM EDT SEP 30 2012 PTSUNNY   60  46  59 CALM      29.86R                     .
+ 7PM EDT SEP 30 2012 PTCLDY    59  48  67 CALM      29.88R                     .

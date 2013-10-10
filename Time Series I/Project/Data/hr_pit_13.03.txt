@@ -1,0 +1,763 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 7PM EST FEB 28 2013 FLURRIES  35  30  82 NW10      29.72R WCI  27           MAR
+ 8PM EST FEB 28 2013 LGT SNOW  34  30  85 NW10      29.75R FOG     WCI  26   MAR
+ 9PM EST FEB 28 2013 LGT SNOW  34  30  85 W14       29.77R FOG     WCI  25   MAR
+10PM EST FEB 28 2013 FLURRIES  34  30  85 NW14      29.78R WCI  25           MAR
+11PM EST FEB 28 2013 LGT SNOW  33  30  88 NW14      29.78S FOG     WCI  23   MAR
+12AM EST MAR 01 2013 LGT SNOW  33  29  85 NW14      29.79R FOG     WCI  23   MAR
+ 1AM EST MAR 01 2013 MOCLDY    32  27  81 NW10      29.80R WCI  24           MAR
+ 2AM EST MAR 01 2013 CLOUDY    32  27  81 NW13      29.81R WCI  22             .
+ 3AM EST MAR 01 2013 CLOUDY    32  27  81 NW13      29.81S WCI  22             .
+ 4AM EST MAR 01 2013 CLOUDY    32  25  75 N13       29.81S WCI  22             .
+ 5AM EST MAR 01 2013 CLOUDY    31  25  78 N10       29.82R WCI  22             .
+ 6AM EST MAR 01 2013 FLURRIES  31  25  78 NW9       29.82S WCI  23             .
+ 7AM EST MAR 01 2013 FLURRIES  31  24  75 NW14      29.83R WCI  21             .
+ 8AM EST MAR 01 2013 LGT SNOW  31  24  75 NW9       29.86R WCI  23             .
+ 9AM EST MAR 01 2013 LGT SNOW  31  24  75 NW13      29.88R WCI  21             .
+10AM EST MAR 01 2013 LGT SNOW  31  25  78 NW12      29.88S WCI  22             .
+11AM EST MAR 01 2013 LGT SNOW  31  24  75 NW13      29.88S WCI  21             .
+12PM EST MAR 01 2013 LGT SNOW  31  24  75 NW13      29.90R WCI  21             .
+ 1PM EST MAR 01 2013 LGT SNOW  30  23  75 NW15      29.89F VSB 1   WCI  19     .
+ 2PM EST MAR 01 2013 LGT SNOW  30  23  75 NW12      29.88F WCI  20             .
+ 3PM EST MAR 01 2013 LGT SNOW  31  21  66 NW12      29.89R WCI  22             .
+ 4PM EST MAR 01 2013 FLURRIES  31  21  66 N10       29.88F WCI  22             .
+ 5PM EST MAR 01 2013 FLURRIES  30  22  72 N10G17    29.90R WCI  21             .
+ 6PM EST MAR 01 2013 CLOUDY    30  21  69 NW9       29.91R WCI  22             .
+ 7PM EST MAR 01 2013 FLURRIES  30  20  66 N8        29.92R WCI  22             .
+ 8PM EST MAR 01 2013 FLURRIES  29  20  69 N10       29.93R WCI  20             .
+ 9PM EST MAR 01 2013 FLURRIES  29  19  66 N12       29.94R WCI  19             .
+10PM EST MAR 01 2013 FLURRIES  28  19  69 N12       29.95R WCI  18             .
+11PM EST MAR 01 2013 FLURRIES  27  19  72 N9        29.94F WCI  18             .
+12AM EST MAR 02 2013 FLURRIES  26  21  81 N8        29.94S WCI  18             .
+ 1AM EST MAR 02 2013 FLURRIES  26  20  77 CALM      29.92F                     .
+ 2AM EST MAR 02 2013 LGT SNOW  27  19  74 W5        29.92S WCI  21             .
+ 3AM EST MAR 02 2013 FLURRIES  27  20  75 W3        29.91F                     .
+ 4AM EST MAR 02 2013 LGT SNOW  27  20  75 W6        29.90F WCI  20             .
+ 5AM EST MAR 02 2013 LGT SNOW  27  22  81 NW8       29.90S WCI  19             .
+ 6AM EST MAR 02 2013 FLURRIES  27  21  78 N9        29.90S WCI  18             .
+ 7AM EST MAR 02 2013 FLURRIES  26  20  77 N10       29.90S WCI  16             .
+ 8AM EST MAR 02 2013 FLURRIES  25  19  78 N9        29.91R WCI  15             .
+ 9AM EST MAR 02 2013 LGT SNOW  26  19  74 NW10      29.92R WCI  16             .
+10AM EST MAR 02 2013 FLURRIES  27  17  66 NW10      29.91F WCI  17             .
+11AM EST MAR 02 2013 LGT SNOW  27  19  72 N10       29.91S WCI  17             .
+12PM EST MAR 02 2013 FLURRIES  29  20  69 W9        29.90F WCI  20             .
+ 1PM EST MAR 02 2013 LGT SNOW  30  17  58 N7        29.89F WCI  23             .
+ 2PM EST MAR 02 2013 LGT SNOW  30  19  63 NW13      29.88F WCI  20             .
+ 3PM EST MAR 02 2013 LGT SNOW  29  20  69 NW13      29.88S WCI  19             .
+ 4PM EST MAR 02 2013 LGT SNOW  29  19  66 N13       29.88S WCI  19             .
+ 5PM EST MAR 02 2013 FLURRIES  29  18  63 NW14      29.88S WCI  18             .
+ 6PM EST MAR 02 2013 CLOUDY    28  18  66 N16       29.90R WCI  16             .
+ 7PM EST MAR 02 2013 FLURRIES  28  18  66 NW9       29.91R WCI  19             .
+ 8PM EST MAR 02 2013 FLURRIES  28  19  69 NW12      29.91S WCI  18             .
+ 9PM EST MAR 02 2013 LGT SNOW  28  20  71 NW8       29.92R WCI  20             .
+10PM EST MAR 02 2013 LGT SNOW  28  21  75 NW10      29.92S WCI  19             .
+11PM EST MAR 02 2013 FLURRIES  28  22  78 W8        29.91F WCI  20             .
+12AM EST MAR 03 2013 FLURRIES  28  20  71 NW13      29.90F WCI  17             .
+ 1AM EST MAR 03 2013 LGT SNOW  27  20  75 NW13      29.90S WCI  16             .
+ 2AM EST MAR 03 2013 LGT SNOW  27  21  78 NW8       29.90S WCI  19             .
+ 3AM EST MAR 03 2013 LGT SNOW  26  22  84 NW10      29.89F FOG     WCI  16     .
+ 4AM EST MAR 03 2013 LGT SNOW  26  20  77 NW13      29.89S WCI  15             .
+ 5AM EST MAR 03 2013 LGT SNOW  25  19  78 NW8       29.90R WCI  16             .
+ 6AM EST MAR 03 2013 FLURRIES  25  17  72 NW13      29.91R WCI  14             .
+ 7AM EST MAR 03 2013 FLURRIES  25  15  66 NW13      29.91S WCI  14             .
+ 8AM EST MAR 03 2013 LGT SNOW  25  17  72 W14       29.92R WCI  13             .
+ 9AM EST MAR 03 2013 CLOUDY    25  15  66 W14       29.92S WCI  13             .
+12PM EST MAR 03 2013 LGT SNOW  27  17  66 NW16      29.92S WCI  15             .
+ 1PM EST MAR 03 2013 FLURRIES  28  17  63 W15       29.91F WCI  16             .
+ 2PM EST MAR 03 2013 FLURRIES  28  18  66 W15       29.89F WCI  16             .
+ 3PM EST MAR 03 2013 FLURRIES  28  16  60 W10       29.89S WCI  19             .
+ 4PM EST MAR 03 2013 FLURRIES  28  16  60 W10       29.90R WCI  19             .
+ 5PM EST MAR 03 2013 FLURRIES  28  16  60 W10       29.91R WCI  19             .
+ 6PM EST MAR 03 2013 LGT SNOW  27  18  69 W12       29.93R WCI  16             .
+ 7PM EST MAR 03 2013 LGT SNOW  26  20  77 W15       29.94R WCI  14             .
+ 8PM EST MAR 03 2013 FLURRIES  26  18  71 W13       29.96R WCI  15             .
+ 9PM EST MAR 03 2013 FLURRIES  25  18  74 NW10      29.97R WCI  15             .
+10PM EST MAR 03 2013 FLURRIES  25  17  72 NW10      29.97S WCI  15             .
+11PM EST MAR 03 2013 LGT SNOW  24  19  81 W9        29.97S WCI  14             .
+12AM EST MAR 04 2013 NOT AVBL                                                  .
+ 1AM EST MAR 04 2013 FLURRIES  24  16  71 W3        29.97F                     .
+ 2AM EST MAR 04 2013 FLURRIES  24  16  71 W7        29.99R WCI  16             .
+ 3AM EST MAR 04 2013 FLURRIES  24  15  68 W9        29.99S WCI  14             .
+ 4AM EST MAR 04 2013 LGT SNOW  24  14  65 NW16G22   30.00R WCI  11             .
+ 5AM EST MAR 04 2013 NOT AVBL                                                  .
+ 6AM EST MAR 04 2013 NOT AVBL                                                  .
+ 7AM EST MAR 04 2013 NOT AVBL                                                  .
+ 8AM EST MAR 04 2013 CLOUDY    24  14  65 W6        30.06  WCI  17             .
+ 9AM EST MAR 04 2013 FLURRIES  25  16  68 W10       30.08R WCI  15             .
+10AM EST MAR 04 2013 PTSUNNY   27  16  63 W8        30.08S WCI  19             .
+11AM EST MAR 04 2013 PTSUNNY   29  15  56 W13       30.08S WCI  19             .
+12PM EST MAR 04 2013 MOSUNNY   31  16  54 W14G20    30.06F WCI  21             .
+ 1PM EST MAR 04 2013 FAIR      34  17  50 W13       30.05F WCI  25             .
+ 2PM EST MAR 04 2013 MOSUNNY   35  17  47 NW13G20   30.03F WCI  26             .
+ 3PM EST MAR 04 2013 MOSUNNY   37  17  44 W13       30.02F                     .
+ 4PM EST MAR 04 2013 MOSUNNY   38  18  44 W13       30.02S                     .
+ 5PM EST MAR 04 2013 MOSUNNY   37  17  44 W14       30.02S                     .
+ 6PM EST MAR 04 2013 MOCLDY    36  17  46 NW10      30.02S                     .
+ 7PM EST MAR 04 2013 MOCLDY    33  18  53 NW7       30.04R WCI  27             .
+ 8PM EST MAR 04 2013 PTCLDY    31  17  56 NW3       30.04S                     .
+ 9PM EST MAR 04 2013 PTCLDY    31  17  56 CALM      30.04S                     .
+10PM EST MAR 04 2013 PTCLDY    29  18  63 CALM      30.04S                     .
+11PM EST MAR 04 2013 PTCLDY    27  17  66 NW3       30.04S                     .
+12AM EST MAR 05 2013 PTCLDY    29  17  61 N3        30.04S                     .
+ 1AM EST MAR 05 2013 PTCLDY    27  15  61 N3        30.05R                     .
+ 2AM EST MAR 05 2013 NOT AVBL                                                  .
+ 3AM EST MAR 05 2013 PTCLDY    24  16  71 N3        30.05                      .
+ 4AM EST MAR 05 2013 PTCLDY    23  15  71 CALM      30.05S                     .
+ 5AM EST MAR 05 2013 PTCLDY    21  15  78 CALM      30.04F                     .
+ 6AM EST MAR 05 2013 CLEAR     22  16  78 NE5       30.04S WCI  16             .
+ 7AM EST MAR 05 2013 PTCLDY    21  15  78 E3        30.03F                     .
+ 8AM EST MAR 05 2013 MOSUNNY   23  16  74 E6        30.03S WCI  16             .
+ 9AM EST MAR 05 2013 MOSUNNY   26  18  71 E7        30.02F WCI  18             .
+10AM EST MAR 05 2013 PTSUNNY   28  17  63 E7        30.01F WCI  21             .
+11AM EST MAR 05 2013 PTSUNNY   31  17  56 VRB5      30.00F WCI  26             .
+12PM EST MAR 05 2013 PTSUNNY   35  16  45 E3        29.97F                     .
+ 1PM EST MAR 05 2013 PTSUNNY   38  17  42 NE6       29.93F                     .
+ 2PM EST MAR 05 2013 PTSUNNY   41  16  36 E6        29.88F                     .
+ 3PM EST MAR 05 2013 PTSUNNY   42  12  29 E9        29.83F                     .
+ 4PM EST MAR 05 2013 PTSUNNY   43  15  32 E7        29.81F                     .
+ 5PM EST MAR 05 2013 PTSUNNY   44  13  28 E9        29.79F                     .
+ 6PM EST MAR 05 2013 CLOUDY    43  14  31 E10       29.75F                     .
+ 7PM EST MAR 05 2013 CLOUDY    41  14  33 NE10      29.74F                     .
+ 8PM EST MAR 05 2013 CLOUDY    40  15  36 E12       29.71F                     .
+ 9PM EST MAR 05 2013 CLOUDY    40  15  36 E13G21    29.67F                     .
+10PM EST MAR 05 2013 CLOUDY    39  17  41 E13       29.65F                     .
+11PM EST MAR 05 2013 CLOUDY    39  18  42 E15       29.65S                     .
+12AM EST MAR 06 2013 FLURRIES  39  20  46 SE15G26   29.64F                     .
+ 1AM EST MAR 06 2013 LGT SNOW  33  30  88 E13       29.65R VSB 1   WCI  24     .
+ 2AM EST MAR 06 2013 HVY SNOW  33  30  88 E15       29.65S VSB 1/4 WCI  23     .
+ 3AM EST MAR 06 2013 HVY SNOW  33  30  88 E12       29.66R VSB 1/4 WCI  24     .
+ 4AM EST MAR 06 2013 LGT SNOW  32  30  92 E12       29.69R VSB 1   WCI  23     .
+ 5AM EST MAR 06 2013 LGT SNOW  33  30  88 E12       29.73R FOG     WCI  24     .
+ 6AM EST MAR 06 2013 LGT SNOW  33  30  88 E9        29.75R FOG     WCI  25     .
+ 7AM EST MAR 06 2013 LGT SNOW  40  30  67 E9        29.79R VSB 1               .
+ 8AM EST MAR 06 2013 LGT SNOW  33  30  88 NE8       29.83R FOG     WCI  26     .
+ 9AM EST MAR 06 2013 LGT SNOW  34  30  85 NE9       29.86R FOG     WCI  27     .
+10AM EST MAR 06 2013 LGT SNOW  34  30  85 NE8       29.89R FOG     WCI  27     .
+11AM EST MAR 06 2013 FLURRIES  36  29  75 NE9       29.91R                     .
+12PM EST MAR 06 2013 PTSUNNY   39  28  64 NE13      29.94R                     .
+ 1PM EST MAR 06 2013 PTSUNNY   41  28  60 NE10      29.95R                     .
+ 2PM EST MAR 06 2013 CLOUDY    41  26  55 N9        29.95S                     .
+ 3PM EST MAR 06 2013 CLOUDY    41  25  53 N8        29.97R                     .
+ 4PM EST MAR 06 2013 CLOUDY    41  25  53 N8        29.99R                     .
+ 5PM EST MAR 06 2013 CLOUDY    41  24  51 N9        30.02R                     .
+ 6PM EST MAR 06 2013 MOCLDY    40  23  50 N12       30.03R                     .
+ 7PM EST MAR 06 2013 MOCLDY    39  23  52 N7        30.05R                     .
+ 8PM EST MAR 06 2013 CLOUDY    39  24  55 N3        30.07R                     .
+ 9PM EST MAR 06 2013 CLOUDY    39  24  55 N5        30.08R                     .
+10PM EST MAR 06 2013 CLOUDY    38  23  55 NE5       30.08S                     .
+11PM EST MAR 06 2013 CLOUDY    37  25  61 NW8       30.09R                     .
+12AM EST MAR 07 2013 CLOUDY    36  26  67 NW6       30.08F                     .
+ 1AM EST MAR 07 2013 CLOUDY    35  27  72 NW7       30.09R WCI  29             .
+ 2AM EST MAR 07 2013 CLOUDY    35  27  72 NW7       30.10R WCI  29             .
+ 3AM EST MAR 07 2013 CLOUDY    34  28  79 NW7       30.10S WCI  28             .
+ 4AM EST MAR 07 2013 CLOUDY    34  28  79 W7        30.11R WCI  28             .
+ 5AM EST MAR 07 2013 CLOUDY    34  29  82 NW10      30.12R WCI  26             .
+ 6AM EST MAR 07 2013 CLOUDY    34  28  79 NW10      30.13R WCI  26             .
+ 7AM EST MAR 07 2013 CLOUDY    34  28  79 NW10      30.15R WCI  26             .
+ 8AM EST MAR 07 2013 CLOUDY    34  28  79 NW12      30.18R WCI  25             .
+ 9AM EST MAR 07 2013 CLOUDY    34  28  79 NW14      30.19R WCI  25             .
+10AM EST MAR 07 2013 CLOUDY    36  28  73 NW12      30.20S                     .
+11AM EST MAR 07 2013 FLURRIES  37  28  70 NW12G20   30.21R                     .
+12PM EST MAR 07 2013 CLOUDY    39  27  62 NW10      30.21S                     .
+ 1PM EST MAR 07 2013 LGT SNOW  38  28  67 NW7       30.21S                     .
+ 2PM EST MAR 07 2013 CLOUDY    39  30  70 NW12      30.20F                     .
+ 3PM EST MAR 07 2013 PTSUNNY   40  30  67 NW7       30.19F                     .
+ 4PM EST MAR 07 2013 LGT SNOW  36  29  75 N14       30.20R                     .
+ 5PM EST MAR 07 2013 PTSUNNY   38  30  73 N10       30.22R                     .
+ 6PM EST MAR 07 2013 LGT SNOW  34  31  88 NW14      30.23R WCI  25             .
+ 7PM EST MAR 07 2013 LGT SNOW  35  31  85 NW8       30.24R WCI  29             .
+ 8PM EST MAR 07 2013 FLURRIES  34  30  86 N12       30.25R WCI  25             .
+ 9PM EST MAR 07 2013 MOCLDY    34  29  82 NW12      30.26R WCI  25             .
+10PM EST MAR 07 2013 CLOUDY    33  27  78 NW9       30.26S WCI  25             .
+11PM EST MAR 07 2013 CLOUDY    34  26  72 NW15      30.26S WCI  24             .
+12AM EST MAR 08 2013 CLOUDY    33  25  72 N13       30.27R WCI  24             .
+ 1AM EST MAR 08 2013 CLOUDY    32  25  75 N9        30.27S WCI  24             .
+ 2AM EST MAR 08 2013 CLOUDY    32  24  72 NW15      30.28R WCI  22             .
+ 3AM EST MAR 08 2013 CLOUDY    31  24  75 NW12      30.28S WCI  22             .
+ 4AM EST MAR 08 2013 CLOUDY    31  24  75 NW12      30.27F WCI  22             .
+ 5AM EST MAR 08 2013 CLOUDY    31  23  72 NW9       30.29R WCI  23             .
+ 6AM EST MAR 08 2013 CLOUDY    30  23  75 NW12      30.32R WCI  20             .
+ 7AM EST MAR 08 2013 CLOUDY    30  24  78 N12       30.34R WCI  20             .
+ 8AM EST MAR 08 2013 CLOUDY    31  24  75 NW10      30.35R WCI  22             .
+ 9AM EST MAR 08 2013 CLOUDY    32  25  75 NW12      30.36R WCI  23             .
+10AM EST MAR 08 2013 CLOUDY    32  26  78 NW10      30.38R WCI  24             .
+11AM EST MAR 08 2013 CLOUDY    34  26  72 NW12      30.38S WCI  25             .
+12PM EST MAR 08 2013 FLURRIES  34  26  72 NW13      30.37F WCI  25             .
+ 1PM EST MAR 08 2013 FLURRIES  35  26  69 NW14      30.36F WCI  26             .
+ 2PM EST MAR 08 2013 CLOUDY    36  26  67 NW17      30.34F                     .
+ 3PM EST MAR 08 2013 CLOUDY    37  26  64 NW12      30.34S                     .
+ 4PM EST MAR 08 2013 CLOUDY    37  26  64 NW12      30.35R                     .
+ 5PM EST MAR 08 2013 CLOUDY    37  26  64 NW16      30.36R                     .
+ 6PM EST MAR 08 2013 PTCLDY    37  25  61 NW8       30.36S                     .
+ 7PM EST MAR 08 2013 PTCLDY    34  25  69 W8        30.37R WCI  27             .
+ 8PM EST MAR 08 2013 CLEAR     32  24  72 W8        30.38R WCI  25             .
+ 9PM EST MAR 08 2013 CLEAR     31  23  72 NW3       30.37F                     .
+10PM EST MAR 08 2013 CLEAR     31  24  75 NW5       30.36F WCI  26             .
+11PM EST MAR 08 2013 CLEAR     30  23  75 NW7       30.38R WCI  23             .
+12AM EST MAR 09 2013 CLEAR     28  22  78 W7        30.39R WCI  21             .
+ 1AM EST MAR 09 2013 CLEAR     27  21  78 NW6       30.38F WCI  20             .
+ 2AM EST MAR 09 2013 CLEAR     27  21  78 CALM      30.37F                     .
+ 3AM EST MAR 09 2013 CLEAR     26  21  81 CALM      30.34F                     .
+ 4AM EST MAR 09 2013 CLEAR     25  20  81 CALM      30.34S                     .
+ 5AM EST MAR 09 2013 CLEAR     24  20  84 CALM      30.33F                     .
+ 6AM EST MAR 09 2013 CLEAR     23  19  85 CALM      30.34R                     .
+ 7AM EST MAR 09 2013 CLEAR     22  18  85 CALM      30.36R                     .
+ 8AM EST MAR 09 2013 MOSUNNY   27  23  85 CALM      30.37R                     .
+ 9AM EST MAR 09 2013 MOSUNNY   32  26  78 E3        30.36F                     .
+10AM EST MAR 09 2013 MOSUNNY   36  26  67 E6        30.35F                     .
+11AM EST MAR 09 2013 PTSUNNY   39  26  59 VRB6      30.34F                     .
+12PM EST MAR 09 2013 MOSUNNY   43  25  49 VRB5      30.33F                     .
+ 1PM EST MAR 09 2013 MOSUNNY   47  27  45 NW3       30.31F                     .
+ 2PM EST MAR 09 2013 MOSUNNY   50  27  40 VRB5      30.27F                     .
+ 3PM EST MAR 09 2013 MOSUNNY   53  26  35 CALM      30.25F                     .
+ 4PM EST MAR 09 2013 MOSUNNY   53  24  32 SE8       30.22F                     .
+ 5PM EST MAR 09 2013 PTSUNNY   54  21  27 SE8       30.21F                     .
+ 6PM EST MAR 09 2013 MOCLDY    53  22  29 SE8       30.21S                     .
+ 7PM EST MAR 09 2013 PTCLDY    50  23  34 E3        30.20F                     .
+ 8PM EST MAR 09 2013 PTCLDY    48  23  37 E5        30.19F                     .
+ 9PM EST MAR 09 2013 PTCLDY    46  25  43 SE3       30.18F                     .
+10PM EST MAR 09 2013 PTCLDY    43  25  49 E8        30.17F                     .
+11PM EST MAR 09 2013 PTCLDY    44  22  41 SE3       30.16F                     .
+12AM EST MAR 10 2013 MOCLDY    42  22  44 SE6       30.16S                     .
+ 1AM EST MAR 10 2013 CLOUDY    44  22  41 CALM      30.16S                     .
+ 3AM EDT MAR 10 2013 CLOUDY    43  22  43 SE5       30.13F                     .
+ 4AM EDT MAR 10 2013 CLOUDY    45  22  40 SE5       30.11F                     .
+ 5AM EDT MAR 10 2013 CLOUDY    44  24  45 E3        30.11S                     .
+ 6AM EDT MAR 10 2013 CLOUDY    44  23  43 E5        30.11S                     .
+ 7AM EDT MAR 10 2013 CLOUDY    44  23  43 S3        30.11S                     .
+ 8AM EDT MAR 10 2013 CLOUDY    45  22  40 SE6       30.12R                     .
+ 9AM EDT MAR 10 2013 CLOUDY    44  24  45 SE3       30.13R                     .
+10AM EDT MAR 10 2013 CLOUDY    48  23  37 CALM      30.14R                     .
+11AM EDT MAR 10 2013 CLOUDY    51  26  37 CALM      30.14S                     .
+12PM EDT MAR 10 2013 CLOUDY    57  25  29 S8        30.13F                     .
+ 1PM EDT MAR 10 2013 PTSUNNY   62  27  26 S6        30.11F                     .
+ 2PM EDT MAR 10 2013 MOSUNNY   66  29  24 VRB7      30.07F                     .
+ 3PM EDT MAR 10 2013 MOSUNNY   68  30  24 S8        30.05F                     .
+ 4PM EDT MAR 10 2013 PTSUNNY   70  30  22 S9        30.02F                     .
+ 5PM EDT MAR 10 2013 CLOUDY    70  29  21 SE15      29.99F                     .
+ 6PM EDT MAR 10 2013 CLOUDY    70  29  21 S7        29.99S                     .
+ 7PM EDT MAR 10 2013 CLOUDY    68  28  22 SE10      29.99S                     .
+ 8PM EDT MAR 10 2013 CLOUDY    64  29  26 SE12      30.00R                     .
+ 9PM EDT MAR 10 2013 CLOUDY    62  29  28 SE9       30.00S                     .
+10PM EDT MAR 10 2013 CLOUDY    60  29  30 SE13      29.99F                     .
+11PM EDT MAR 10 2013 CLOUDY    59  29  31 SE12      29.99S                     .
+12AM EDT MAR 11 2013 CLOUDY    56  30  37 SE8       29.98F                     .
+ 1AM EDT MAR 11 2013 CLOUDY    56  30  37 SE7       29.97F                     .
+ 2AM EDT MAR 11 2013 CLOUDY    56  29  35 SE9       29.94F                     .
+ 3AM EDT MAR 11 2013 CLOUDY    56  29  35 S5        29.95R                     .
+ 4AM EDT MAR 11 2013 CLOUDY    53  30  41 SE7       29.92F                     .
+ 5AM EDT MAR 11 2013 CLOUDY    53  30  41 E6        29.89F                     .
+ 6AM EDT MAR 11 2013 CLOUDY    52  30  43 SE6       29.89S                     .
+ 7AM EDT MAR 11 2013 CLOUDY    52  30  43 CALM      29.91R                     .
+ 8AM EDT MAR 11 2013 CLOUDY    52  29  41 E3        29.91S                     .
+ 9AM EDT MAR 11 2013 CLOUDY    51  30  44 SE3       29.92R                     .
+10AM EDT MAR 11 2013 CLOUDY    53  31  42 SE3       29.92S                     .
+11AM EDT MAR 11 2013 CLOUDY    56  30  37 SE6       29.91F                     .
+12PM EDT MAR 11 2013 CLOUDY    59  28  30 SE12      29.88F                     .
+ 1PM EDT MAR 11 2013 CLOUDY    61  29  29 S10       29.84F                     .
+ 2PM EDT MAR 11 2013 CLOUDY    63  30  28 S14G20    29.82F                     .
+ 3PM EDT MAR 11 2013 CLOUDY    63  31  30 S14G22    29.80F                     .
+ 4PM EDT MAR 11 2013 CLOUDY    63  30  28 S13G24    29.75F                     .
+ 5PM EDT MAR 11 2013 CLOUDY    63  31  30 SE14      29.70F                     .
+ 6PM EDT MAR 11 2013 LGT RAIN  61  29  29 SE15      29.68F                     .
+ 7PM EDT MAR 11 2013 LGT RAIN  59  39  47 S12G26    29.69R                     .
+ 8PM EDT MAR 11 2013 CLOUDY    58  40  51 S20G26    29.68F                     .
+ 9PM EDT MAR 11 2013 CLOUDY    57  41  55 S12       29.69R                     .
+10PM EDT MAR 11 2013 LGT RAIN  53  45  74 S8        29.71R                     .
+11PM EDT MAR 11 2013 LGT RAIN  50  44  80 W20G29    29.74R                     .
+12AM EDT MAR 12 2013 LGT RAIN  47  43  86 SW10      29.76S FOG                 .
+ 1AM EDT MAR 12 2013 LGT RAIN  46  41  82 SW9       29.76S                     .
+ 2AM EDT MAR 12 2013 DRIZZLE   45  41  86 W6        29.77R                     .
+ 3AM EDT MAR 12 2013 DRIZZLE   42  39  89 W15       29.79R FOG                 .
+ 4AM EDT MAR 12 2013 CLOUDY    42  36  79 W9        29.80R                     .
+ 5AM EDT MAR 12 2013 CLOUDY    41  35  79 W7        29.81R                     .
+ 6AM EDT MAR 12 2013 LGT RAIN  40  35  83 W14       29.82R                     .
+ 7AM EDT MAR 12 2013 CLOUDY    40  34  79 SW6       29.84R                     .
+ 8AM EDT MAR 12 2013 CLOUDY    39  33  79 W7        29.85R                     .
+ 9AM EDT MAR 12 2013 CLOUDY    38  31  76 W5        29.87R                     .
+10AM EDT MAR 12 2013 CLOUDY    39  31  72 W6        29.88R                     .
+11AM EDT MAR 12 2013 CLOUDY    38  31  76 W9        29.88S                     .
+12PM EDT MAR 12 2013 FLURRIES  37  32  82 W12G22    29.89R                     .
+ 1PM EDT MAR 12 2013 NOT AVBL                                                  .
+ 2PM EDT MAR 12 2013 NOT AVBL                                                  .
+ 3PM EDT MAR 12 2013 CLOUDY    37  28  70 SW10      29.89S                     .
+ 4PM EDT MAR 12 2013 CLOUDY    38  27  64 W8G17     29.90R                     .
+ 5PM EDT MAR 12 2013 CLOUDY    38  27  64 W9        29.90S                     .
+ 6PM EDT MAR 12 2013 CLOUDY    38  27  64 W12G18    29.91R                     .
+ 7PM EDT MAR 12 2013 CLOUDY    38  27  64 W6        29.92R                     .
+ 8PM EDT MAR 12 2013 CLOUDY    37  26  64 W10G18    29.94R                     .
+ 9PM EDT MAR 12 2013 CLOUDY    37  26  64 W7        29.95S                     .
+10PM EDT MAR 12 2013 CLOUDY    37  26  64 W8        29.96R                     .
+11PM EDT MAR 12 2013 FLURRIES  36  27  69 W7        29.97R                     .
+12AM EDT MAR 13 2013 MOCLDY    35  27  72 CALM      29.96F                     .
+ 1AM EDT MAR 13 2013 CLOUDY    35  27  72 SW3       29.95F                     .
+ 2AM EDT MAR 13 2013 CLOUDY    34  27  75 CALM      29.94F                     .
+ 3AM EDT MAR 13 2013 CLOUDY    34  27  75 SW7       29.93F WCI  28             .
+ 4AM EDT MAR 13 2013 MOCLDY    34  27  75 SW7       29.91F WCI  28             .
+ 5AM EDT MAR 13 2013 PTCLDY    32  27  81 SW6       29.89F WCI  26             .
+ 6AM EDT MAR 13 2013 FLURRIES  33  28  81 SW7       29.89S WCI  27             .
+ 7AM EDT MAR 13 2013 LGT SNOW  33  28  81 SW7       29.89S WCI  27             .
+ 8AM EDT MAR 13 2013 CLOUDY    32  28  85 W7        29.90R WCI  26             .
+ 9AM EDT MAR 13 2013 CLOUDY    32  25  75 W6        29.91R WCI  26             .
+10AM EDT MAR 13 2013 FLURRIES  33  23  66 W7G18     29.92R WCI  27             .
+11AM EDT MAR 13 2013 SNOW      31  27  85 W9        29.93S VSB 1/2 WCI  23     .
+12PM EDT MAR 13 2013 FLURRIES  32  26  78 W12       29.93S WCI  23             .
+ 1PM EDT MAR 13 2013 LGT SNOW  34  27  75 W21       29.94R WCI  22             .
+ 2PM EDT MAR 13 2013 FLURRIES  35  22  58 W18G25    29.95R WCI  24             .
+ 3PM EDT MAR 13 2013 FLURRIES  34  22  61 NW16G26   29.96R WCI  24             .
+ 4PM EDT MAR 13 2013 FLURRIES  32  22  66 W24G32    29.97R WCI  19             .
+ 5PM EDT MAR 13 2013 PTSUNNY   33  19  56 W16G26    29.99R WCI  23             .
+ 6PM EDT MAR 13 2013 CLOUDY    31  18  58 W23G32    30.01R WCI  18             .
+ 7PM EDT MAR 13 2013 MOCLDY    30  15  53 W18G24    30.03R WCI  18             .
+ 8PM EDT MAR 13 2013 MOCLDY    29  19  66 W18       30.05R WCI  16             .
+ 9PM EDT MAR 13 2013 FLURRIES  29  20  69 W17G24    30.07R WCI  17             .
+10PM EDT MAR 13 2013 FLURRIES  28  19  69 W13G25    30.08R WCI  17             .
+11PM EDT MAR 13 2013 CLOUDY    28  20  71 W10       30.10R WCI  19             .
+12AM EDT MAR 14 2013 FLURRIES  28  19  69 W17       30.10S WCI  16             .
+ 1AM EDT MAR 14 2013 FLURRIES  28  18  66 W18G24    30.10S WCI  15             .
+ 2AM EDT MAR 14 2013 CLOUDY    28  17  63 W16       30.10S WCI  16             .
+ 3AM EDT MAR 14 2013 FLURRIES  27  18  69 W16G22    30.11R WCI  15             .
+ 4AM EDT MAR 14 2013 FLURRIES  26  17  68 W13       30.11S WCI  15             .
+ 5AM EDT MAR 14 2013 FLURRIES  25  16  68 W10G21    30.11S WCI  15             .
+ 6AM EDT MAR 14 2013 FLURRIES  25  16  68 W12       30.12R WCI  14             .
+ 7AM EDT MAR 14 2013 MOCLDY    24  15  68 W9        30.14R WCI  14             .
+ 8AM EDT MAR 14 2013 MOCLDY    24  15  68 W9        30.17R WCI  14             .
+ 9AM EDT MAR 14 2013 MOSUNNY   25  15  66 W7G16     30.18R WCI  17             .
+10AM EDT MAR 14 2013 MOSUNNY   28  16  60 W14       30.17F WCI  17             .
+11AM EDT MAR 14 2013 PTSUNNY   30  15  53 W15G25    30.17S WCI  19             .
+12PM EDT MAR 14 2013 CLOUDY    31  16  54 NW17G28   30.17S WCI  19             .
+ 1PM EDT MAR 14 2013 PTSUNNY   33  16  49 NW22G30   30.16F WCI  21             .
+ 2PM EDT MAR 14 2013 PTSUNNY   35  17  47 W20G29    30.15F WCI  24             .
+ 3PM EDT MAR 14 2013 PTSUNNY   36  16  44 W23G30    30.13F                     .
+ 4PM EDT MAR 14 2013 PTSUNNY   39  17  41 W18G26    30.12F                     .
+ 5PM EDT MAR 14 2013 MOSUNNY   38  16  40 NW17      30.11F                     .
+ 6PM EDT MAR 14 2013 MOSUNNY   38  16  40 W20       30.10F                     .
+ 7PM EDT MAR 14 2013 PTCLDY    37  17  44 NW18      30.11R                     .
+ 8PM EDT MAR 14 2013 PTCLDY    34  17  50 W9        30.11S WCI  27             .
+ 9PM EDT MAR 14 2013 PTCLDY    32  18  56 NW8       30.11S WCI  25             .
+10PM EDT MAR 14 2013 PTCLDY    32  17  54 W5        30.12R WCI  27             .
+11PM EDT MAR 14 2013 PTCLDY    31  17  56 W5        30.12S WCI  26             .
+12AM EDT MAR 15 2013 CLEAR     30  17  58 W3        30.11F                     .
+ 1AM EDT MAR 15 2013 CLEAR     30  18  60 SW3       30.08F                     .
+ 2AM EDT MAR 15 2013 PTCLDY    28  18  66 CALM      30.07F                     .
+ 3AM EDT MAR 15 2013 PTCLDY    29  18  63 SW5       30.06F WCI  24             .
+ 4AM EDT MAR 15 2013 MOCLDY    29  18  63 SW5       30.04F WCI  24             .
+ 5AM EDT MAR 15 2013 CLOUDY    29  18  63 SW3       30.02F                     .
+ 6AM EDT MAR 15 2013 CLOUDY    30  18  60 SW7       30.00F WCI  23             .
+ 7AM EDT MAR 15 2013 CLOUDY    30  18  60 SW7       30.00S WCI  23             .
+ 8AM EDT MAR 15 2013 CLOUDY    31  19  61 SW6       29.98F WCI  25             .
+ 9AM EDT MAR 15 2013 CLOUDY    32  18  56 SW8       29.97F WCI  25             .
+10AM EDT MAR 15 2013 CLOUDY    35  20  54 SW9       29.95F WCI  28             .
+11AM EDT MAR 15 2013 CLOUDY    38  24  57 SW10G16   29.94F                     .
+12PM EDT MAR 15 2013 CLOUDY    39  26  59 W12G22    29.92F                     .
+ 1PM EDT MAR 15 2013 CLOUDY    42  25  50 W13G22    29.90F                     .
+ 2PM EDT MAR 15 2013 CLOUDY    45  26  47 W13G22    29.86F                     .
+ 3PM EDT MAR 15 2013 CLOUDY    47  27  45 W17G24    29.84F                     .
+ 4PM EDT MAR 15 2013 CLOUDY    50  29  44 W13G20    29.82F                     .
+ 5PM EDT MAR 15 2013 CLOUDY    49  29  46 W15G21    29.81F                     .
+ 6PM EDT MAR 15 2013 CLOUDY    49  30  48 W14       29.80F                     .
+ 7PM EDT MAR 15 2013 CLOUDY    48  30  49 W10       29.82R                     .
+ 8PM EDT MAR 15 2013 CLOUDY    47  31  53 NW7       29.83R                     .
+ 9PM EDT MAR 15 2013 CLOUDY    45  31  58 NW7       29.84R                     .
+10PM EDT MAR 15 2013 CLOUDY    44  33  65 N6        29.84S                     .
+11PM EDT MAR 15 2013 LGT RAIN  42  35  76 N7        29.84S                     .
+12AM EDT MAR 16 2013 LGT RAIN  40  36  86 N6        29.84S                     .
+ 1AM EDT MAR 16 2013 LGT RAIN  38  35  89 N7        29.82F                     .
+ 2AM EDT MAR 16 2013 LGT RAIN  37  34  89 NE5       29.81F FOG                 .
+ 3AM EDT MAR 16 2013 LGT RAIN  36  33  89 NE5       29.79F FOG                 .
+ 4AM EDT MAR 16 2013 DRIZZLE   35  32  88 NE6       29.76F FOG     WCI  30     .
+ 5AM EDT MAR 16 2013 CLOUDY    35  32  88 E6        29.73F FOG     WCI  30     .
+ 6AM EDT MAR 16 2013 LGT RAIN  34  32  92 E8        29.72F FOG     WCI  27     .
+ 7AM EDT MAR 16 2013 LGT RAIN  35  32  88 E7        29.72S FOG     WCI  29     .
+ 8AM EDT MAR 16 2013 LGT RAIN  34  32  92 NE5       29.72S FOG     WCI  30     .
+ 9AM EDT MAR 16 2013 CLOUDY    34  32  92 E7        29.69F FOG     WCI  28     .
+10AM EDT MAR 16 2013 CLOUDY    35  33  92 NE6       29.68F FOG     WCI  30     .
+11AM EDT MAR 16 2013 CLOUDY    36  33  89 E5        29.66F FOG                 .
+12PM EDT MAR 16 2013 CLOUDY    36  34  92 E5        29.63F FOG                 .
+ 1PM EDT MAR 16 2013 CLOUDY    38  35  89 NE8       29.62F FOG                 .
+ 2PM EDT MAR 16 2013 CLOUDY    38  35  89 NE3       29.65R FOG                 .
+ 3PM EDT MAR 16 2013 CLOUDY    38  35  89 N5        29.66R FOG                 .
+ 4PM EDT MAR 16 2013 CLOUDY    39  36  89 W6        29.68R FOG                 .
+ 5PM EDT MAR 16 2013 DRZL/FOG  39  37  92 NW13      29.72R VSB 1               .
+ 6PM EDT MAR 16 2013 FOG       37  36  93 N17       29.78R VSB 1               .
+ 7PM EDT MAR 16 2013 CLOUDY    36  34  92 N10       29.81R FOG                 .
+ 8PM EDT MAR 16 2013 CLOUDY    35  32  88 NW12      29.85R WCI  27             .
+ 9PM EDT MAR 16 2013 CLOUDY    34  31  88 N9        29.89R WCI  27             .
+10PM EDT MAR 16 2013 CLOUDY    33  30  88 NW8       29.93R WCI  26             .
+11PM EDT MAR 16 2013 CLOUDY    33  29  85 NW6       29.94R WCI  28             .
+12AM EDT MAR 17 2013 CLOUDY    32  28  85 N5        29.94S WCI  27             .
+ 1AM EDT MAR 17 2013 CLOUDY    32  27  81 NW7       29.96R WCI  26             .
+ 2AM EDT MAR 17 2013 CLOUDY    31  26  82 NW10      29.98R WCI  22             .
+ 3AM EDT MAR 17 2013 CLOUDY    30  25  81 NW12      30.00R WCI  20             .
+ 4AM EDT MAR 17 2013 CLOUDY    29  22  75 N12       30.01R WCI  19             .
+ 5AM EDT MAR 17 2013 CLOUDY    29  21  72 N6        30.02S WCI  23             .
+ 6AM EDT MAR 17 2013 CLOUDY    29  21  72 N5        30.04R WCI  24             .
+ 7AM EDT MAR 17 2013 CLOUDY    29  21  72 CALM      30.06R                     .
+ 8AM EDT MAR 17 2013 CLOUDY    29  21  72 CALM      30.09R                     .
+ 9AM EDT MAR 17 2013 CLOUDY    29  22  75 CALM      30.12R                     .
+10AM EDT MAR 17 2013 CLOUDY    30  20  66 CALM      30.14R                     .
+11AM EDT MAR 17 2013 CLOUDY    31  21  66 CALM      30.16R                     .
+12PM EDT MAR 17 2013 CLOUDY    32  22  66 CALM      30.16S                     .
+ 1PM EDT MAR 17 2013 CLOUDY    33  21  61 NE6       30.15F WCI  28             .
+ 2PM EDT MAR 17 2013 CLOUDY    35  21  56 VRB5      30.15S WCI  31             .
+ 3PM EDT MAR 17 2013 CLOUDY    35  21  56 CALM      30.14F                     .
+ 4PM EDT MAR 17 2013 CLOUDY    36  21  54 CALM      30.14S                     .
+ 5PM EDT MAR 17 2013 CLOUDY    34  24  67 N10       30.14S WCI  26             .
+ 6PM EDT MAR 17 2013 CLOUDY    35  23  61 NE9       30.14S WCI  28             .
+ 7PM EDT MAR 17 2013 CLOUDY    34  22  61 NE7       30.15R WCI  28             .
+ 8PM EDT MAR 17 2013 CLOUDY    33  22  63 NE9       30.16R WCI  25             .
+ 9PM EDT MAR 17 2013 CLOUDY    32  22  66 NE6       30.16S WCI  26             .
+10PM EDT MAR 17 2013 MOCLDY    31  22  69 NE7       30.16S WCI  24             .
+11PM EDT MAR 17 2013 MOCLDY    30  21  69 E7        30.16S WCI  23             .
+12AM EDT MAR 18 2013 MOCLDY    30  21  69 NE8       30.14F WCI  22             .
+ 1AM EDT MAR 18 2013 CLOUDY    30  20  66 E8        30.11F WCI  22             .
+ 2AM EDT MAR 18 2013 CLOUDY    31  20  63 E10       30.10F WCI  22             .
+ 3AM EDT MAR 18 2013 CLOUDY    31  20  63 E9        30.08F WCI  23             .
+ 4AM EDT MAR 18 2013 CLOUDY    32  21  64 E12       30.07F WCI  23             .
+ 5AM EDT MAR 18 2013 CLOUDY    33  21  61 E10       30.05F WCI  25             .
+ 6AM EDT MAR 18 2013 FRZ RAIN  32  26  78 SE14      30.02F WCI  22             .
+ 7AM EDT MAR 18 2013 LGTSLEET  33  29  85 SE17G23   30.00F FOG     WCI  22     .
+ 8AM EDT MAR 18 2013 FRZ RAIN  33  29  85 SE18G24   29.97F FOG     WCI  22     .
+ 9AM EDT MAR 18 2013 FRZ RAIN  33  28  81 E16G22    29.94F WCI  23             .
+10AM EDT MAR 18 2013 FRZ RAIN  34  28  80 E12       29.93R WCI  25             .
+11AM EDT MAR 18 2013 LGT RAIN  33  28  81 E17       29.88F WCI  22             .
+12PM EDT MAR 18 2013 LGTSLEET  34  28  80 E15G22    29.85F FOG     WCI  24     .
+ 1PM EDT MAR 18 2013 LGT RAIN  33  30  88 SE14      29.85S FOG     WCI  23     .
+ 2PM EDT MAR 18 2013 DRIZZLE   34  31  88 SE13      29.82F FOG     WCI  25     .
+ 3PM EDT MAR 18 2013 CLOUDY    35  32  88 SE14      29.79F WCI  26             .
+ 4PM EDT MAR 18 2013 DRIZZLE   36  34  93 SE13      29.74F FOG                 .
+ 5PM EDT MAR 18 2013 DRIZZLE   37  34  89 SE14      29.72F FOG                 .
+ 6PM EDT MAR 18 2013 LGT RAIN  37  33  85 SE12      29.71F                     .
+ 7PM EDT MAR 18 2013 CLOUDY    39  33  79 SE12      29.70F                     .
+ 8PM EDT MAR 18 2013 LGT RAIN  40  33  76 SE12      29.69F                     .
+ 9PM EDT MAR 18 2013 DRIZZLE   40  33  76 SE8       29.69S                     .
+10PM EDT MAR 18 2013 DRIZZLE   40  34  79 SE10      29.68F                     .
+11PM EDT MAR 18 2013 DRIZZLE   40  34  79 SE8       29.67F                     .
+12AM EDT MAR 19 2013 DRIZZLE   40  36  86 SE6       29.67S FOG                 .
+ 1AM EDT MAR 19 2013 DRIZZLE   40  37  89 SE5       29.67S FOG                 .
+ 2AM EDT MAR 19 2013 DRIZZLE   41  39  93 CALM      29.67S FOG                 .
+ 3AM EDT MAR 19 2013 CLOUDY    43  38  82 W17G23    29.70R                     .
+ 4AM EDT MAR 19 2013 DRIZZLE   38  34  85 W23G31    29.73R FOG                 .
+ 5AM EDT MAR 19 2013 CLOUDY    37  32  82 W12       29.75R                     .
+ 6AM EDT MAR 19 2013 CLOUDY    38  30  73 SW6       29.77R                     .
+ 7AM EDT MAR 19 2013 CLOUDY    37  30  75 SW7       29.78R                     .
+ 8AM EDT MAR 19 2013 CLOUDY    37  28  70 S7        29.77F                     .
+ 9AM EDT MAR 19 2013 CLOUDY    38  27  64 SW17G23   29.76F                     .
+10AM EDT MAR 19 2013 PTSUNNY   40  26  57 W16G26    29.75F                     .
+11AM EDT MAR 19 2013 MOSUNNY   41  25  53 SW14G26   29.74F                     .
+12PM EDT MAR 19 2013 PTSUNNY   41  22  46 W18G38    29.74S                     .
+ 1PM EDT MAR 19 2013 PTSUNNY   41  19  41 W23G37    29.75R                     .
+ 2PM EDT MAR 19 2013 PTSUNNY   38  21  50 W21G35    29.78R                     .
+ 3PM EDT MAR 19 2013 PTSUNNY   38  16  40 W26G36    29.78S                     .
+ 4PM EDT MAR 19 2013 PTSUNNY   36  17  46 W22G30    29.81R                     .
+ 5PM EDT MAR 19 2013 FLURRIES  36  16  44 W23G40    29.84R                     .
+ 6PM EDT MAR 19 2013 PTSUNNY   35  18  49 W23G35    29.86R WCI  23             .
+ 7PM EDT MAR 19 2013 MOCLDY    34  16  47 W21G32    29.88R WCI  22             .
+ 8PM EDT MAR 19 2013 CLOUDY    33  15  47 W22G33    29.89R WCI  21             .
+ 9PM EDT MAR 19 2013 MOCLDY    32  14  47 W16G26    29.91R WCI  21             .
+10PM EDT MAR 19 2013 PTCLDY    31  14  49 W16G23    29.93R WCI  20             .
+11PM EDT MAR 19 2013 PTCLDY    31  15  52 W10G18    29.93S WCI  22             .
+12AM EDT MAR 20 2013 PTCLDY    30  16  56 W12G17    29.94R WCI  20             .
+ 1AM EDT MAR 20 2013 PTCLDY    30  16  56 W9        29.93F WCI  22             .
+ 2AM EDT MAR 20 2013 PTCLDY    29  16  58 W9        29.92F WCI  20             .
+ 3AM EDT MAR 20 2013 PTCLDY    29  15  56 W9        29.93R WCI  20             .
+ 4AM EDT MAR 20 2013 PTCLDY    28  15  58 W6        29.93S WCI  22             .
+ 5AM EDT MAR 20 2013 PTCLDY    28  15  58 W6        29.92F WCI  22             .
+ 6AM EDT MAR 20 2013 PTCLDY    28  15  58 SW5       29.93R WCI  23             .
+ 7AM EDT MAR 20 2013 PTCLDY    27  15  61 SW5       29.93S WCI  22             .
+ 8AM EDT MAR 20 2013 PTCLDY    27  15  61 W9        29.93S WCI  18             .
+ 9AM EDT MAR 20 2013 MOSUNNY   29  15  56 W9G16     29.92F WCI  20             .
+10AM EDT MAR 20 2013 MOSUNNY   31  13  47 W13G21    29.91F WCI  21             .
+11AM EDT MAR 20 2013 CLOUDY    33  11  39 W13G23    29.90F WCI  24             .
+12PM EDT MAR 20 2013 CLOUDY    35  14  42 SW17G24   29.87F WCI  25             .
+ 1PM EDT MAR 20 2013 CLOUDY    36  15  42 SW16G26   29.86F                     .
+ 2PM EDT MAR 20 2013 FLURRIES  35  17  47 W20G28    29.84F WCI  24             .
+ 3PM EDT MAR 20 2013 FLURRIES  37  19  48 W18G26    29.82F                     .
+ 4PM EDT MAR 20 2013 PTSUNNY   38  17  42 W13G31    29.80F                     .
+ 5PM EDT MAR 20 2013 FLURRIES  34  23  64 NW18G29   29.81R WCI  23             .
+ 6PM EDT MAR 20 2013 PTSUNNY   34  20  56 NW16G28   29.80F WCI  24             .
+ 7PM EDT MAR 20 2013 MOCLDY    32  16  51 NW16G23   29.82R WCI  21             .
+ 8PM EDT MAR 20 2013 MOCLDY    31  16  54 NW14      29.83R WCI  21             .
+ 9PM EDT MAR 20 2013 MOCLDY    28  16  60 NW14      29.85R WCI  17             .
+10PM EDT MAR 20 2013 FAIR      27  16  63 NW10      29.86R WCI  17             .
+11PM EDT MAR 20 2013 PTCLDY    26  17  68 NW9       29.86S WCI  17             .
+12AM EDT MAR 21 2013 LGT SNOW  25  18  74 W10       29.87R WCI  15             .
+ 1AM EDT MAR 21 2013 LGT SNOW  25  18  74 W8        29.86F WCI  16             .
+ 2AM EDT MAR 21 2013 LGT SNOW  23  17  78 NW6       29.85F WCI  16             .
+ 3AM EDT MAR 21 2013 LGT SNOW  22  16  78 W10       29.84F WCI  11             .
+ 4AM EDT MAR 21 2013 FLURRIES  21  17  84 NW6       29.83F WCI  13             .
+ 5AM EDT MAR 21 2013 PTCLDY    20  10  65 NW10      29.82F WCI   9             .
+ 6AM EDT MAR 21 2013 MOCLDY    19   8  62 W5        29.83R WCI  12             .
+ 7AM EDT MAR 21 2013 PTCLDY    18   7  62 W8        29.82F WCI   8             .
+ 8AM EDT MAR 21 2013 PTCLDY    17   7  64 W7        29.82S WCI   8             .
+ 9AM EDT MAR 21 2013 MOSUNNY   19   7  59 W9        29.83R WCI   8             .
+10AM EDT MAR 21 2013 MOSUNNY   21   7  54 W10G20    29.83S WCI  10             .
+11AM EDT MAR 21 2013 PTSUNNY   22   7  52 NW14      29.83S WCI   9             .
+12PM EDT MAR 21 2013 PTSUNNY   23   7  50 NW17G23   29.84R WCI   9             .
+ 1PM EDT MAR 21 2013 CLOUDY    25   6  44 NW13      29.83F WCI  14             .
+ 2PM EDT MAR 21 2013 CLOUDY    26   8  46 W13G20    29.83S WCI  15             .
+ 3PM EDT MAR 21 2013 CLOUDY    27   9  46 W15G22    29.82F WCI  15             .
+ 4PM EDT MAR 21 2013 CLOUDY    27   9  46 W15G23    29.82S WCI  15             .
+ 5PM EDT MAR 21 2013 CLOUDY    28  11  48 W13       29.83R WCI  17             .
+ 6PM EDT MAR 21 2013 CLOUDY    28  14  55 W14G20    29.83S WCI  17             .
+ 7PM EDT MAR 21 2013 FLURRIES  28  15  58 W12       29.84R WCI  18             .
+ 8PM EDT MAR 21 2013 LGT SNOW  27  17  66 W8        29.85R WCI  19             .
+ 9PM EDT MAR 21 2013 FLURRIES  26  18  71 W10       29.85S WCI  16             .
+10PM EDT MAR 21 2013 LGT SNOW  26  20  77 W8        29.87R WCI  18             .
+11PM EDT MAR 21 2013 FLURRIES  27  19  72 W9        29.87S WCI  18             .
+12AM EDT MAR 22 2013 FLURRIES  27  19  72 W12G18    29.87S WCI  17             .
+ 1AM EDT MAR 22 2013 FLURRIES  27  19  72 W12G18    29.86F WCI  17             .
+ 2AM EDT MAR 22 2013 FLURRIES  27  18  69 W12G20    29.87R WCI  17             .
+ 3AM EDT MAR 22 2013 FLURRIES  27  18  69 W10G20    29.87S WCI  17             .
+ 4AM EDT MAR 22 2013 MOCLDY    27  18  69 W15       29.87S WCI  15             .
+ 5AM EDT MAR 22 2013 PTCLDY    26  16  65 W13       29.86F WCI  15             .
+ 6AM EDT MAR 22 2013 CLOUDY    26  17  68 W10G21    29.88R WCI  16             .
+ 7AM EDT MAR 22 2013 MOCLDY    26  16  65 W12G17    29.88S WCI  16             .
+ 8AM EDT MAR 22 2013 CLOUDY    25  16  68 W10       29.91R WCI  15             .
+ 9AM EDT MAR 22 2013 CLOUDY    26  17  68 W12       29.92R WCI  16             .
+10AM EDT MAR 22 2013 PTSUNNY   28  17  63 W8G21     29.93R WCI  20             .
+11AM EDT MAR 22 2013 FLURRIES  28  17  63 W12       29.93S WCI  18             .
+12PM EDT MAR 22 2013 FLURRIES  29  17  61 W13G20    29.94R WCI  19             .
+ 1PM EDT MAR 22 2013 FLURRIES  29  17  61 W14       29.94S WCI  18             .
+ 2PM EDT MAR 22 2013 FLURRIES  29  17  61 W15       29.95S WCI  18             .
+ 3PM EDT MAR 22 2013 PTSUNNY   33  15  47 W16G23    29.94F WCI  23             .
+ 4PM EDT MAR 22 2013 CLOUDY    33  17  51 W13       29.94S WCI  24             .
+ 5PM EDT MAR 22 2013 CLOUDY    33  17  51 W14       29.95R WCI  23             .
+ 6PM EDT MAR 22 2013 PTSUNNY   34  18  52 NW12      29.95S WCI  25             .
+ 7PM EDT MAR 22 2013 PTCLDY    33  18  53 NW8       29.95S WCI  26             .
+ 8PM EDT MAR 22 2013 PTCLDY    32  17  54 N5        29.96R WCI  27             .
+ 9PM EDT MAR 22 2013 PTCLDY    31  18  58 CALM      29.97R                     .
+10PM EDT MAR 22 2013 PTCLDY    29  18  63 CALM      29.98R                     .
+11PM EDT MAR 22 2013 CLEAR     27  18  69 CALM      29.99R                     .
+12AM EDT MAR 23 2013 CLEAR     26  18  71 CALM      29.99S                     .
+ 1AM EDT MAR 23 2013 CLEAR     26  17  68 CALM      29.98F                     .
+ 2AM EDT MAR 23 2013 PTCLDY    24  18  77 CALM      29.98S                     .
+ 3AM EDT MAR 23 2013 MOCLDY    24  17  74 CALM      29.97F                     .
+ 4AM EDT MAR 23 2013 MOCLDY    23  16  74 CALM      29.96F                     .
+ 5AM EDT MAR 23 2013 PTCLDY    21  16  81 CALM      29.96S                     .
+ 6AM EDT MAR 23 2013 CLEAR     22  16  78 CALM      29.95F                     .
+ 7AM EDT MAR 23 2013 PTCLDY    22  16  78 CALM      29.97R                     .
+ 8AM EDT MAR 23 2013 PTCLDY    21  15  78 CALM      29.98R                     .
+ 9AM EDT MAR 23 2013 MOSUNNY   28  21  75 W5        29.99R WCI  23             .
+10AM EDT MAR 23 2013 MOSUNNY   34  22  61 CALM      30.00R                     .
+11AM EDT MAR 23 2013 MOSUNNY   36  20  52 CALM      30.01R                     .
+12PM EDT MAR 23 2013 MOSUNNY   38  20  48 VRB5      30.01S                     .
+ 1PM EDT MAR 23 2013 MOSUNNY   40  20  44 VRB6      30.00F                     .
+ 2PM EDT MAR 23 2013 PTSUNNY   42  20  41 VRB5      29.99F                     .
+ 3PM EDT MAR 23 2013 MOSUNNY   43  20  39 NW8G17    29.98F                     .
+ 4PM EDT MAR 23 2013 MOSUNNY   45  20  36 NW10G18   29.97F                     .
+ 5PM EDT MAR 23 2013 MOSUNNY   45  20  36 NW12      29.97S                     .
+ 6PM EDT MAR 23 2013 MOSUNNY   44  20  38 N12G20    29.98R                     .
+ 7PM EDT MAR 23 2013 CLEAR     42  20  41 N15       29.98S                     .
+ 8PM EDT MAR 23 2013 PTCLDY    39  21  48 N12       29.97F                     .
+ 9PM EDT MAR 23 2013 CLEAR     37  21  52 NE7       29.99R                     .
+10PM EDT MAR 23 2013 PTCLDY    35  21  56 NE7       30.00R WCI  29             .
+11PM EDT MAR 23 2013 PTCLDY    34  20  56 N3        30.01R                     .
+12AM EDT MAR 24 2013 PTCLDY    32  20  61 NE8       29.98F WCI  25             .
+ 1AM EDT MAR 24 2013 PTCLDY    30  19  63 NE5       29.95F WCI  25             .
+ 2AM EDT MAR 24 2013 PTCLDY    29  19  66 NE5       29.95S WCI  24             .
+ 3AM EDT MAR 24 2013 PTCLDY    28  19  69 NE3       29.95S                     .
+ 4AM EDT MAR 24 2013 MOCLDY    28  19  69 NE6       29.93F WCI  22             .
+ 5AM EDT MAR 24 2013 CLOUDY    28  19  69 CALM      29.94R                     .
+ 6AM EDT MAR 24 2013 CLOUDY    27  19  72 NE5       29.93F WCI  22             .
+ 7AM EDT MAR 24 2013 MOCLDY    27  19  72 E5        29.93S WCI  22             .
+ 8AM EDT MAR 24 2013 CLOUDY    27  20  75 NE6       29.92F WCI  20             .
+ 9AM EDT MAR 24 2013 CLOUDY    28  20  71 NE9       29.90F WCI  19             .
+10AM EDT MAR 24 2013 CLOUDY    30  21  69 E9        29.87F WCI  22             .
+11AM EDT MAR 24 2013 CLOUDY    32  20  61 E12       29.81F WCI  23             .
+12PM EDT MAR 24 2013 CLOUDY    35  20  54 E13       29.76F WCI  26             .
+ 1PM EDT MAR 24 2013 CLOUDY    37  20  50 E12       29.73F                     .
+ 2PM EDT MAR 24 2013 CLOUDY    39  20  46 E8        29.71F                     .
+ 3PM EDT MAR 24 2013 CLOUDY    41  20  43 NE13      29.68F                     .
+ 4PM EDT MAR 24 2013 CLOUDY    42  20  41 E10       29.65F                     .
+ 5PM EDT MAR 24 2013 CLOUDY    43  20  39 E9G17     29.61F                     .
+ 6PM EDT MAR 24 2013 CLOUDY    43  20  39 SE14      29.59F                     .
+ 7PM EDT MAR 24 2013 CLOUDY    42  20  41 E15G21    29.56F                     .
+ 8PM EDT MAR 24 2013 LGT SNOW  37  27  67 SE15G22   29.57R                     .
+ 9PM EDT MAR 24 2013 LGT SNOW  34  30  85 SE10      29.56F WCI  26             .
+10PM EDT MAR 24 2013 LGT SNOW  34  28  80 E14G21    29.53F WCI  24             .
+11PM EDT MAR 24 2013 LGT SNOW  33  29  85 E12       29.51F WCI  24             .
+12AM EDT MAR 25 2013 LGT SNOW  33  29  85 E13G23    29.49F WCI  24             .
+ 1AM EDT MAR 25 2013 SNOW      32  30  92 E12       29.49F VSB 1/2 WCI  23     .
+ 2AM EDT MAR 25 2013 SNOW      32  30  92 E14       29.48F VSB 1/2 WCI  22     .
+ 3AM EDT MAR 25 2013 SNOW      32  29  88 E13       29.47F VSB 1/2 WCI  22     .
+ 4AM EDT MAR 25 2013 LGT SNOW  32  29  88 E10       29.44F VSB 3/4 WCI  24     .
+ 5AM EDT MAR 25 2013 SNOW      32  29  88 E13       29.42F VSB 1/2 WCI  22     .
+ 6AM EDT MAR 25 2013 LGT SNOW  32  29  88 E12       29.41F VSB 1   WCI  23     .
+ 7AM EDT MAR 25 2013 LGT SNOW  32  30  92 SE8       29.42R FOG     WCI  25     .
+ 8AM EDT MAR 25 2013 FRZ DRZL  32  30  92 SE7       29.43R FOG     WCI  26     .
+ 9AM EDT MAR 25 2013 SNOW      33  31  92 SE6       29.43S VSB 1/2 WCI  28     .
+10AM EDT MAR 25 2013 SNOW      33  31  92 SE3       29.43S VSB 1/2             .
+11AM EDT MAR 25 2013 LGT SNOW  34  32  92 W3        29.44S FOG                 .
+12PM EDT MAR 25 2013 LGT SNOW  34  32  92 SW6       29.46R VSB 1   WCI  29     .
+ 1PM EDT MAR 25 2013 LGT SNOW  34  31  88 SW6       29.47R VSB 1   WCI  29     .
+ 2PM EDT MAR 25 2013 LGT SNOW  35  32  88 SW8       29.49R FOG     WCI  29     .
+ 3PM EDT MAR 25 2013 LGT SNOW  35  32  88 SW6       29.49S FOG     WCI  30     .
+ 4PM EDT MAR 25 2013 LGT SNOW  36  32  85 W6        29.50R FOG                 .
+ 5PM EDT MAR 25 2013 LGT SNOW  36  33  89 W6        29.53R FOG                 .
+ 6PM EDT MAR 25 2013 LGT SNOW  36  33  89 W6        29.55R                     .
+ 7PM EDT MAR 25 2013 LGT SNOW  34  32  93 W7        29.59R VSB 1   WCI  28     .
+ 8PM EDT MAR 25 2013 LGT SNOW  33  32  96 W5        29.62R VSB 1   WCI  29     .
+ 9PM EDT MAR 25 2013 LGT SNOW  33  31  92 W5        29.65R VSB 1   WCI  29     .
+10PM EDT MAR 25 2013 LGT SNOW  34  31  88 N8        29.68R FOG     WCI  27     .
+11PM EDT MAR 25 2013 LGT SNOW  34  31  88 N9        29.70R FOG     WCI  27     .
+12AM EDT MAR 26 2013 LGT SNOW  34  31  88 N10       29.72R FOG     WCI  26     .
+ 1AM EDT MAR 26 2013 LGT SNOW  34  31  88 N9        29.74R FOG     WCI  27     .
+ 2AM EDT MAR 26 2013 LGT SNOW  34  31  88 NW10      29.76R FOG     WCI  26     .
+ 3AM EDT MAR 26 2013 CLOUDY    33  30  88 NW10      29.77R WCI  25             .
+ 4AM EDT MAR 26 2013 CLOUDY    33  29  85 NW12      29.79R WCI  24             .
+ 5AM EDT MAR 26 2013 CLOUDY    33  29  85 NW9       29.80R WCI  25             .
+ 6AM EDT MAR 26 2013 FLURRIES  33  28  81 NW8       29.82R WCI  26             .
+ 7AM EDT MAR 26 2013 FLURRIES  32  29  88 W7        29.84R WCI  26             .
+ 8AM EDT MAR 26 2013 CLOUDY    32  28  85 W7        29.86R WCI  26             .
+ 9AM EDT MAR 26 2013 FLURRIES  33  29  85 W9        29.88R WCI  25             .
+10AM EDT MAR 26 2013 CLOUDY    34  28  80 NW10      29.91R WCI  26             .
+11AM EDT MAR 26 2013 CLOUDY    35  29  78 W9        29.92R WCI  28             .
+12PM EDT MAR 26 2013 CLOUDY    37  29  72 NW10      29.93R                     .
+ 1PM EDT MAR 26 2013 CLOUDY    38  30  73 NW15      29.94S                     .
+ 2PM EDT MAR 26 2013 CLOUDY    40  29  64 NW14      29.94S                     .
+ 3PM EDT MAR 26 2013 CLOUDY    41  30  65 NW14      29.94S                     .
+ 4PM EDT MAR 26 2013 CLOUDY    40  30  67 NW13      29.95R                     .
+ 5PM EDT MAR 26 2013 FLURRIES  37  30  75 NW14      29.96R                     .
+ 6PM EDT MAR 26 2013 FLURRIES  38  31  76 NW10      29.97R                     .
+ 7PM EDT MAR 26 2013 FLURRIES  37  31  78 NW12      29.99R                     .
+ 8PM EDT MAR 26 2013 CLOUDY    37  29  72 W12       30.00R                     .
+ 9PM EDT MAR 26 2013 CLOUDY    36  29  75 W9        30.02R                     .
+10PM EDT MAR 26 2013 CLOUDY    35  29  78 W9        30.04R WCI  28             .
+11PM EDT MAR 26 2013 CLOUDY    34  30  85 NW9       30.05R WCI  27             .
+12AM EDT MAR 27 2013 CLOUDY    34  28  79 W6        30.05S WCI  29             .
+ 1AM EDT MAR 27 2013 LGT SNOW  34  28  80 W8        30.05S WCI  27             .
+ 2AM EDT MAR 27 2013 LGT SNOW  33  29  85 W6        30.05S FOG     WCI  28     .
+ 3AM EDT MAR 27 2013 LGT SNOW  33  30  88 W7        30.05S FOG     WCI  27     .
+ 4AM EDT MAR 27 2013 LGT SNOW  33  30  88 W7        30.04S FOG     WCI  27     .
+ 5AM EDT MAR 27 2013 LGT SNOW  33  30  88 W7        30.04S FOG     WCI  27     .
+ 6AM EDT MAR 27 2013 LGT SNOW  33  30  88 W9        30.04S FOG     WCI  25     .
+ 7AM EDT MAR 27 2013 LGT SNOW  32  30  92 W8        30.06R FOG     WCI  25     .
+ 8AM EDT MAR 27 2013 LGT SNOW  33  30  88 W9        30.08R FOG     WCI  25     .
+ 9AM EDT MAR 27 2013 LGT SNOW  33  29  85 W12       30.09R FOG     WCI  24     .
+10AM EDT MAR 27 2013 CLOUDY    34  29  82 W10       30.10R WCI  26             .
+11AM EDT MAR 27 2013 PTSUNNY   36  28  73 W15G22    30.11R                     .
+12PM EDT MAR 27 2013 PTSUNNY   40  29  64 NW14      30.11S                     .
+ 1PM EDT MAR 27 2013 CLOUDY    41  25  53 W18G25    30.11S                     .
+ 2PM EDT MAR 27 2013 CLOUDY    42  25  50 W20G26    30.10F                     .
+ 3PM EDT MAR 27 2013 CLOUDY    43  24  47 W15G25    30.10S                     .
+ 4PM EDT MAR 27 2013 PTSUNNY   42  23  46 W16G25    30.09F                     .
+ 5PM EDT MAR 27 2013 PTSUNNY   42  24  49 W14       30.09S                     .
+ 6PM EDT MAR 27 2013 CLOUDY    41  25  53 W12       30.10R                     .
+ 7PM EDT MAR 27 2013 FLURRIES  39  28  64 NW12      30.12R                     .
+ 8PM EDT MAR 27 2013 CLOUDY    38  28  67 W14       30.13R                     .
+ 9PM EDT MAR 27 2013 CLOUDY    36  29  75 W5        30.13S                     .
+10PM EDT MAR 27 2013 CLOUDY    38  25  59 W7        30.14R                     .
+11PM EDT MAR 27 2013 CLOUDY    38  25  59 W10       30.13F                     .
+12AM EDT MAR 28 2013 CLOUDY    38  26  62 W13       30.13S                     .
+ 1AM EDT MAR 28 2013 FLURRIES  37  27  67 W12       30.12F                     .
+ 2AM EDT MAR 28 2013 FLURRIES  37  26  64 W9        30.11F                     .
+ 3AM EDT MAR 28 2013 CLOUDY    36  27  69 W15       30.11F                     .
+ 4AM EDT MAR 28 2013 FLURRIES  35  27  72 W12       30.11S WCI  27             .
+ 5AM EDT MAR 28 2013 FLURRIES  35  26  69 W12       30.11S WCI  27             .
+ 6AM EDT MAR 28 2013 FLURRIES  35  26  69 W13       30.12R WCI  26             .
+ 7AM EDT MAR 28 2013 FLURRIES  35  27  72 W12       30.13R WCI  27             .
+ 8AM EDT MAR 28 2013 NOT AVBL                                                  .
+ 9AM EDT MAR 28 2013 NOT AVBL                                                  .
+10AM EDT MAR 28 2013 CLOUDY    37  27  67 W13       30.18R                     .
+11AM EDT MAR 28 2013 CLOUDY    39  26  59 W13       30.19R                     .
+12PM EDT MAR 28 2013 CLOUDY    40  26  57 NW13      30.19S                     .
+ 1PM EDT MAR 28 2013 CLOUDY    40  26  57 NW15G22   30.19S                     .
+ 2PM EDT MAR 28 2013 CLOUDY    42  27  55 NW16      30.19S                     .
+ 3PM EDT MAR 28 2013 CLOUDY    42  27  55 NW13      30.19S                     .
+ 4PM EDT MAR 28 2013 CLOUDY    41  27  57 NW10      30.19S                     .
+ 5PM EDT MAR 28 2013 CLOUDY    42  27  55 NW12      30.19S                     .
+ 6PM EDT MAR 28 2013 CLOUDY    41  28  60 W10       30.20R                     .
+ 7PM EDT MAR 28 2013 CLOUDY    41  28  60 NW7       30.21R                     .
+ 8PM EDT MAR 28 2013 CLOUDY    41  28  60 NW3       30.22R                     .
+ 9PM EDT MAR 28 2013 CLOUDY    41  27  57 CALM      30.23R                     .
+10PM EDT MAR 28 2013 CLOUDY    40  28  62 N5        30.24R                     .
+11PM EDT MAR 28 2013 CLOUDY    40  28  62 NW6       30.24S                     .
+12AM EDT MAR 29 2013 CLOUDY    40  28  62 NW5       30.24S                     .
+ 1AM EDT MAR 29 2013 CLOUDY    38  28  67 CALM      30.25R                     .
+ 2AM EDT MAR 29 2013 CLOUDY    37  29  72 W3        30.25S                     .
+ 3AM EDT MAR 29 2013 CLOUDY    36  29  75 W3        30.24F                     .
+ 4AM EDT MAR 29 2013 CLOUDY    36  28  73 CALM      30.23F                     .
+ 5AM EDT MAR 29 2013 CLOUDY    37  27  67 W3        30.23S                     .
+ 6AM EDT MAR 29 2013 CLOUDY    37  27  67 CALM      30.22F                     .
+ 7AM EDT MAR 29 2013 CLOUDY    37  27  67 W3        30.22S                     .
+ 8AM EDT MAR 29 2013 MOCLDY    37  27  67 W3        30.23R                     .
+ 9AM EDT MAR 29 2013 PTSUNNY   38  27  64 W3        30.24R                     .
+10AM EDT MAR 29 2013 PTSUNNY   40  27  59 W6        30.24S                     .
+11AM EDT MAR 29 2013 PTSUNNY   44  30  57 NW6       30.23F                     .
+12PM EDT MAR 29 2013 MOSUNNY   48  27  44 NW8       30.23S                     .
+ 1PM EDT MAR 29 2013 PTSUNNY   48  23  37 NW12      30.21F                     .
+ 2PM EDT MAR 29 2013 PTSUNNY   50  22  33 NW14      30.19F                     .
+ 3PM EDT MAR 29 2013 PTSUNNY   52  23  32 W6        30.17F                     .
+ 4PM EDT MAR 29 2013 PTSUNNY   51  21  30 NW9       30.16F                     .
+ 5PM EDT MAR 29 2013 PTSUNNY   50  19  29 W10       30.15F                     .
+ 6PM EDT MAR 29 2013 PTSUNNY   50  21  32 W12       30.15S                     .
+ 7PM EDT MAR 29 2013 MOCLDY    48  21  34 NW12      30.15S                     .
+ 8PM EDT MAR 29 2013 PTCLDY    46  22  38 NW8       30.16R                     .
+ 9PM EDT MAR 29 2013 FAIR      43  22  43 NW8       30.18R                     .
+10PM EDT MAR 29 2013 PTCLDY    42  22  44 N9        30.20R                     .
+11PM EDT MAR 29 2013 PTCLDY    41  21  44 N6        30.21R                     .
+12AM EDT MAR 30 2013 CLEAR     38  20  48 CALM      30.21S                     .
+ 1AM EDT MAR 30 2013 CLEAR     34  21  59 CALM      30.20F                     .
+ 2AM EDT MAR 30 2013 CLEAR     31  21  66 CALM      30.20S                     .
+ 3AM EDT MAR 30 2013 CLEAR     30  20  66 CALM      30.19F                     .
+ 4AM EDT MAR 30 2013 CLEAR     30  20  66 NW3       30.19S                     .
+ 5AM EDT MAR 30 2013 CLEAR     28  19  69 CALM      30.19S                     .
+ 6AM EDT MAR 30 2013 CLEAR     27  20  75 CALM      30.19S                     .
+ 7AM EDT MAR 30 2013 CLEAR     27  19  72 CALM      30.20R                     .
+ 8AM EDT MAR 30 2013 PTCLDY    29  21  72 CALM      30.21R                     .
+ 9AM EDT MAR 30 2013 MOSUNNY   35  25  66 CALM      30.23R                     .
+10AM EDT MAR 30 2013 MOSUNNY   43  24  47 CALM      30.23S                     .
+11AM EDT MAR 30 2013 SUNNY     47  22  37 CALM      30.22F                     .
+12PM EDT MAR 30 2013 SUNNY     48  19  31 VRB3      30.20F                     .
+ 1PM EDT MAR 30 2013 MOSUNNY   49  20  31 CALM      30.18F                     .
+ 2PM EDT MAR 30 2013 MOSUNNY   51  20  29 S8        30.15F                     .
+ 3PM EDT MAR 30 2013 MOSUNNY   52  17  25 SW8G16    30.14F                     .
+ 4PM EDT MAR 30 2013 MOSUNNY   53  19  26 E5        30.11F                     .
+ 5PM EDT MAR 30 2013 MOSUNNY   53  16  23 VRB6      30.09F                     .
+ 6PM EDT MAR 30 2013 MOSUNNY   54  17  23 CALM      30.07F                     .
+ 7PM EDT MAR 30 2013 MOCLDY    53  15  22 S7        30.07S                     .
+ 8PM EDT MAR 30 2013 MOCLDY    52  16  24 CALM      30.06F                     .
+ 9PM EDT MAR 30 2013 CLOUDY    48  18  30 CALM      30.05F                     .
+10PM EDT MAR 30 2013 CLOUDY    45  19  35 CALM      30.05S                     .
+11PM EDT MAR 30 2013 MOCLDY    45  19  35 SE3       30.04F                     .
+12AM EDT MAR 31 2013 CLOUDY    45  19  35 SE3       30.01F                     .
+ 1AM EDT MAR 31 2013 CLOUDY    45  18  34 CALM      29.99F                     .
+ 2AM EDT MAR 31 2013 CLOUDY    43  20  39 SE6       29.97F                     .
+ 3AM EDT MAR 31 2013 CLOUDY    43  20  39 SE3       29.94F                     .
+ 4AM EDT MAR 31 2013 CLOUDY    42  21  43 SE5       29.90F                     .
+ 5AM EDT MAR 31 2013 CLOUDY    43  21  41 CALM      29.87F                     .
+ 6AM EDT MAR 31 2013 CLOUDY    42  22  44 CALM      29.86F                     .
+ 7AM EDT MAR 31 2013 CLOUDY    43  22  43 SE3       29.84F                     .
+ 8AM EDT MAR 31 2013 CLOUDY    43  23  45 SE5       29.83F                     .
+ 9AM EDT MAR 31 2013 CLOUDY    45  25  45 S7        29.83S                     .
+10AM EDT MAR 31 2013 LGT RAIN  47  34  60 SW8       29.83S                     .
+11AM EDT MAR 31 2013 LGT RAIN  46  40  79 S5        29.82F                     .
+12PM EDT MAR 31 2013 LGT RAIN  47  42  83 S3        29.79F                     .
+ 1PM EDT MAR 31 2013 CLOUDY    49  41  74 SE5       29.77F                     .
+ 2PM EDT MAR 31 2013 LGT RAIN  49  43  80 W6        29.75F                     .
+ 3PM EDT MAR 31 2013 LGT RAIN  48  43  82 W5        29.73F                     .
+ 4PM EDT MAR 31 2013 LGT RAIN  47  44  90 W6        29.73S FOG                 .
+ 5PM EDT MAR 31 2013 CLOUDY    48  44  86 SW7       29.72F                     .
+ 6PM EDT MAR 31 2013 CLOUDY    48  45  87 SW7       29.72S                     .
+ 7PM EDT MAR 31 2013 CLOUDY    49  43  80 SW9       29.72S                     .

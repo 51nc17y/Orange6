@@ -1,0 +1,131 @@
+%let path=C:\Users\Phill\Documents\GitHub\Orange6\Time Series I\Project\data;
+
+libname electric "&path"; 
+
+proc import datafile="&path\Duquesne Light 2013.csv"
+			out = electric.data
+			dbms= csv
+			replace; 
+run; 
+
+*creating 1-week hold out and train data sets;
+proc sql; 
+	create table electric.train as 
+		select * 
+		from electric.data
+		where  day<19624;
+ *19624=09/23/2013 in SAS, '09/23/2013'd produced error in log:: 
+"ERROR: Invalid date/time/datetime constant '09/23/2013'd.";
+quit; 
+ 
+data my_text_files;
+infile "&path\*.txt" lrecl=80 eov=eovmark;
+*firstobs=27 is only respected for the first file - so we have to track with eovmark;
+if eovmark then do;
+  eovmark=0;
+  linecounter=0;
+end;
+linecounter+1;
+if linecounter ge 27 then do;
+   input time $ Month $ 10-13 Day Year temp 32-34; 
+        Date = Day||Month||Year;
+        if time = '12AM' then time = 2400;
+        else if time = '1AM ' then time = 100; 
+        else if time = '2AM ' then time = 200; 
+        else if time = '3AM ' then time = 300; 
+        else if time = '4AM ' then time = 400; 
+        else if time = '5AM ' then time = 500; 
+        else if time = '6AM ' then time = 600; 
+        else if time = '7AM ' then time = 700; 
+        else if time = '8AM ' then time = 800; 
+        else if time = '9AM ' then time = 900; 
+        else if time = '10AM' then time = 1000;
+        else if time = '11AM' then time = 1100; 
+        else if time = '12PM' then time = 1200;
+        else if time = '1PM ' then time = 1300;
+        else if time = '2PM ' then time = 1400;
+        else if time = '3PM ' then time = 1500;
+        else if time = '4PM ' then time = 1600;
+        else if time = '5PM ' then time = 1700;
+        else if time = '6PM ' then time = 1800;
+        else if time = '7PM ' then time = 1900;
+        else if time = '8PM ' then time = 2000;
+        else if time = '9PM ' then time = 2100;
+        else if time = '10PM' then time = 2200;
+        else if time = '11PM' then time = 2300;
+        _time = input(time,4.);
+        time = _time; 
+        drop month day year; 
+    run; 
+  output;
+run;
+
+
+proc sql;
+drop table work.all_data;
+quit;
+
+%let path=F:;
+%loop; 
+
+
+data _&year&month; 
+	set _&year&month; 
+	format date2 date9.;
+	date2 = input(date,date9.);
+run; 
+
+PROC IMPORT OUT= WORK.Load_2011 DATAFILE= "&path\Electric Load.xlsx" 
+            DBMS=xlsx REPLACE;
+     SHEET="2011"; 
+     GETNAMES=YES;
+RUN;
+
+PROC IMPORT OUT= WORK.Load_2012 DATAFILE= "&path\Electric Load.xlsx" 
+            DBMS=xlsx REPLACE;
+     SHEET="2012"; 
+     GETNAMES=YES;
+RUN;
+
+PROC IMPORT OUT= WORK.Load_2013 DATAFILE= "&path\Electric Load.xlsx" 
+            DBMS=xlsx REPLACE;
+     SHEET="2013"; 
+     GETNAMES=YES;
+RUN;
+
+data Load; 
+	set load_2013 load_2012 load_2011;
+	if hour = '100' then AM01 = 1; else AM01 = 0;
+	if hour = '200' then AM02 = 1; else AM02 = 0;
+	if hour = '300' then AM03 = 1; else AM03 = 0;
+	if hour = '400' then AM04 = 1; else AM04 = 0;
+	if hour = '500' then AM05 = 1; else AM05 = 0;
+	if hour = '600' then AM06 = 1; else AM06 = 0;
+	if hour = '700' then AM07 = 1; else AM07 = 0;
+	if hour = '800' then AM08 = 1; else AM08 = 0;
+	if hour = '900' then AM09 = 1; else AM09 = 0;
+	if hour = '1000' then AM10 = 1; else AM10 = 0;
+	if hour = '1100' then AM11 = 1; else AM11 = 0;
+	if hour = '1200' then PM12 = 1; else PM12 = 0;
+	if hour = '1300' then PM01 = 1; else PM01 = 0;
+	if hour = '1400' then PM02 = 1; else PM02 = 0;
+	if hour = '1500' then PM03 = 1; else PM03 = 0;
+	if hour = '1600' then PM04 = 1; else PM04 = 0;
+	if hour = '1700' then PM05 = 1; else PM05 = 0;
+	if hour = '1800' then PM06 = 1; else PM06 = 0;
+	if hour = '1900' then PM07 = 1; else PM07 = 0;
+	if hour = '2000' then PM08 = 1; else PM08 = 0; 
+ 	if hour = '2100' then PM09 = 1; else PM09 = 0;
+	if hour = '2200' then PM10 = 1; else PM10 = 0;
+	if hour = '2300' then PM11 = 1; else PM11 = 0;
+	if hour = '2400' then AM12 = 1; else AM12 = 0;	
+run; 
+ 
+proc sql; 
+	create table electric.val as 
+		select * 
+		from electric.data
+		where  day>=19624;
+quit;  
+
+

@@ -1,0 +1,741 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT OCT 31 2012 LGT RAIN  39  37  92 W8        29.61R                   NOV
+ 9PM EDT OCT 31 2012 LGT RAIN  39  36  89 W7        29.62R                   NOV
+10PM EDT OCT 31 2012 LGT RAIN  38  36  92 W6        29.63R                   NOV
+11PM EDT OCT 31 2012 LGT RAIN  38  36  92 SW7       29.63S                   NOV
+12AM EDT NOV 01 2012 NOT AVBL                                                NOV
+ 1AM EDT NOV 01 2012 LGT RAIN  39  37  92 W10       29.63                    NOV
+ 2AM EDT NOV 01 2012 LGT RAIN  39  37  92 W10G16    29.63S                   NOV
+ 3AM EDT NOV 01 2012 LGT RAIN  39  37  92 W7        29.64R                     .
+ 4AM EDT NOV 01 2012 LGT RAIN  39  36  89 W9G17     29.63F                     .
+ 5AM EDT NOV 01 2012 FLURRIES  39  36  89 W9        29.63S                     .
+ 6AM EDT NOV 01 2012 FLURRIES  39  36  89 W8        29.64R                     .
+ 7AM EDT NOV 01 2012 FLURRIES  39  36  89 W9        29.65R                     .
+ 8AM EDT NOV 01 2012 FLURRIES  39  36  89 W8        29.66R                     .
+ 9AM EDT NOV 01 2012 DRIZZLE   39  36  89 W9        29.67R FOG                 .
+10AM EDT NOV 01 2012 LGT RAIN  39  37  92 W9G16     29.69R                     .
+11AM EDT NOV 01 2012 LGT SNOW  40  37  89 W10G18    29.70R FOG                 .
+12PM EDT NOV 01 2012 LGT RAIN  41  38  89 W7G18     29.70S                     .
+ 1PM EDT NOV 01 2012 DRIZZLE   42  38  85 W10G20    29.69F                     .
+ 2PM EDT NOV 01 2012 LGT RAIN  41  37  86 W13G21    29.68F FOG                 .
+ 3PM EDT NOV 01 2012 LGT RAIN  41  37  86 W12G22    29.68S                     .
+ 4PM EDT NOV 01 2012 CLOUDY    40  37  89 W9        29.69R                     .
+ 5PM EDT NOV 01 2012 DRIZZLE   40  37  89 W12       29.70R                     .
+ 6PM EDT NOV 01 2012 CLOUDY    39  35  86 W16G24    29.72R                     .
+ 7PM EDT NOV 01 2012 LGT RAIN  39  35  86 W12       29.74R                     .
+ 8PM EDT NOV 01 2012 CLOUDY    38  34  85 W9G18     29.76R                     .
+ 9PM EDT NOV 01 2012 CLOUDY    38  34  85 SW5       29.76S                     .
+10PM EDT NOV 01 2012 CLOUDY    38  34  85 CALM      29.75F                     .
+11PM EDT NOV 01 2012 CLOUDY    38  33  82 SW5       29.75S                     .
+12AM EDT NOV 02 2012 CLOUDY    38  32  79 SW6       29.74F                     .
+ 1AM EDT NOV 02 2012 CLOUDY    38  32  79 SW7       29.73F                     .
+ 2AM EDT NOV 02 2012 CLOUDY    38  32  79 W6        29.73S                     .
+ 3AM EDT NOV 02 2012 CLOUDY    38  32  79 W5        29.72F                     .
+ 4AM EDT NOV 02 2012 CLOUDY    38  32  79 W5        29.72S                     .
+ 5AM EDT NOV 02 2012 MOCLDY    38  31  76 W9        29.73R                     .
+ 6AM EDT NOV 02 2012 PTCLDY    36  30  79 W8        29.74R                     .
+ 7AM EDT NOV 02 2012 PTCLDY    35  30  82 W6        29.75R WCI  30             .
+ 8AM EDT NOV 02 2012 MOCLDY    35  30  82 W6        29.76R WCI  30             .
+ 9AM EDT NOV 02 2012 PTSUNNY   36  30  79 W5        29.79R                     .
+10AM EDT NOV 02 2012 PTSUNNY   38  31  76 W6        29.80R                     .
+11AM EDT NOV 02 2012 PTSUNNY   40  32  73 W13       29.82R                     .
+12PM EDT NOV 02 2012 PTSUNNY   41  32  70 W14G22    29.83R                     .
+ 1PM EDT NOV 02 2012 CLOUDY    41  31  67 W20       29.84R                     .
+ 2PM EDT NOV 02 2012 CLOUDY    40  30  67 W14G24    29.85R                     .
+ 3PM EDT NOV 02 2012 CLOUDY    39  32  76 W12       29.86R                     .
+ 4PM EDT NOV 02 2012 CLOUDY    39  32  76 W12G20    29.88R                     .
+ 5PM EDT NOV 02 2012 LGT RAIN  38  32  79 W16       29.90R                     .
+ 6PM EDT NOV 02 2012 CLOUDY    37  33  85 W12       29.93R                     .
+ 7PM EDT NOV 02 2012 CLOUDY    36  32  85 NW16      29.95R                     .
+ 8PM EDT NOV 02 2012 CLOUDY    37  31  78 W12       29.96R                     .
+ 9PM EDT NOV 02 2012 DRIZZLE   37  30  75 W10       29.97R                     .
+10PM EDT NOV 02 2012 CLOUDY    37  30  75 W13       29.98R                     .
+11PM EDT NOV 02 2012 CLOUDY    36  31  82 NW10      29.99R                     .
+12AM EDT NOV 03 2012 CLOUDY    36  30  79 W9        29.99S                     .
+ 1AM EDT NOV 03 2012 CLOUDY    36  30  79 W10       30.00R                     .
+ 2AM EDT NOV 03 2012 CLOUDY    35  31  85 W9        30.00S WCI  28             .
+ 3AM EDT NOV 03 2012 CLOUDY    35  31  85 W8        30.00S WCI  29             .
+ 4AM EDT NOV 03 2012 CLOUDY    36  30  79 W10       30.00S                     .
+ 5AM EDT NOV 03 2012 CLOUDY    36  30  79 W8        30.01R                     .
+ 6AM EDT NOV 03 2012 CLOUDY    36  30  79 W13       30.02R                     .
+ 7AM EDT NOV 03 2012 CLOUDY    36  30  79 W7        30.04R                     .
+ 8AM EDT NOV 03 2012 CLOUDY    36  31  82 W8        30.06R                     .
+ 9AM EDT NOV 03 2012 PTSUNNY   36  31  82 W7        30.08R                     .
+10AM EDT NOV 03 2012 CLOUDY    38  31  76 W12       30.09R                     .
+11AM EDT NOV 03 2012 CLOUDY    38  31  76 W9        30.09S                     .
+12PM EDT NOV 03 2012 CLOUDY    39  31  72 NW14      30.10R                     .
+ 1PM EDT NOV 03 2012 LGT RAIN  41  32  70 NW13      30.09F                     .
+ 2PM EDT NOV 03 2012 CLOUDY    41  31  67 W14       30.08F                     .
+ 3PM EDT NOV 03 2012 CLOUDY    43  32  65 NW12      30.07F                     .
+ 4PM EDT NOV 03 2012 PTSUNNY   43  32  65 NW13      30.07S                     .
+ 5PM EDT NOV 03 2012 PTSUNNY   43  32  65 NW9       30.08R                     .
+ 6PM EDT NOV 03 2012 MOCLDY    41  31  67 NW8       30.07F                     .
+ 7PM EDT NOV 03 2012 CLOUDY    41  31  67 N8        30.07S                     .
+ 8PM EDT NOV 03 2012 CLOUDY    40  32  73 NW6       30.08R                     .
+ 9PM EDT NOV 03 2012 CLOUDY    40  30  67 NW10      30.09R                     .
+10PM EDT NOV 03 2012 CLOUDY    39  28  64 NW8       30.10R                     .
+11PM EDT NOV 03 2012 CLOUDY    38  30  73 NW6       30.10S                     .
+12AM EDT NOV 04 2012 CLOUDY    38  31  76 NW5       30.09F                     .
+ 1AM EDT NOV 04 2012 CLOUDY    38  32  79 NW6       30.08F                     .
+ 1AM EST NOV 04 2012 LGT RAIN  37  32  82 NW7       30.09R                     .
+ 2AM EST NOV 04 2012 CLOUDY    37  34  89 NW3       30.08F                     .
+ 3AM EST NOV 04 2012 CLOUDY    37  34  89 NW7       30.08S                     .
+ 4AM EST NOV 04 2012 CLOUDY    37  32  82 N8        30.08S                     .
+ 5AM EST NOV 04 2012 CLOUDY    37  31  78 N8        30.08S                     .
+ 6AM EST NOV 04 2012 CLOUDY    36  28  73 N7        30.09R                     .
+ 7AM EST NOV 04 2012 CLOUDY    35  27  72 CALM      30.09S                     .
+ 8AM EST NOV 04 2012 CLOUDY    36  27  69 NW8       30.10R                     .
+ 9AM EST NOV 04 2012 CLOUDY    36  26  67 NW6       30.10S                     .
+10AM EST NOV 04 2012 CLOUDY    37  26  64 N6        30.11R                     .
+11AM EST NOV 04 2012 CLOUDY    37  25  61 NW10      30.11S                     .
+12PM EST NOV 04 2012 CLOUDY    37  24  59 NW8       30.10F                     .
+ 1PM EST NOV 04 2012 CLOUDY    38  24  57 N8        30.10S                     .
+ 2PM EST NOV 04 2012 CLOUDY    38  25  59 NW9       30.09F                     .
+ 3PM EST NOV 04 2012 CLOUDY    38  25  59 NW10      30.09S                     .
+ 4PM EST NOV 04 2012 CLOUDY    38  25  59 N8        30.09S                     .
+ 5PM EST NOV 04 2012 CLOUDY    38  25  59 NW6       30.09S                     .
+ 6PM EST NOV 04 2012 CLOUDY    38  24  57 N8        30.09S                     .
+ 7PM EST NOV 04 2012 CLOUDY    37  25  61 NW5       30.10R                     .
+ 8PM EST NOV 04 2012 CLOUDY    37  26  64 NW5       30.09F                     .
+ 9PM EST NOV 04 2012 CLOUDY    37  26  64 N8        30.09S                     .
+10PM EST NOV 04 2012 CLOUDY    36  26  67 NW3       30.09S                     .
+11PM EST NOV 04 2012 CLOUDY    36  26  67 NW5       30.09S                     .
+12AM EST NOV 05 2012 CLOUDY    36  26  67 W3        30.08F                     .
+ 1AM EST NOV 05 2012 CLOUDY    36  28  73 CALM      30.08S                     .
+ 2AM EST NOV 05 2012 CLOUDY    36  29  75 W3        30.07F                     .
+ 3AM EST NOV 05 2012 CLOUDY    35  30  82 W6        30.07S WCI  30             .
+ 4AM EST NOV 05 2012 CLOUDY    35  30  82 W5        30.07S WCI  31             .
+ 5AM EST NOV 05 2012 CLOUDY    36  30  79 NW6       30.08S                     .
+ 6AM EST NOV 05 2012 NOT AVBL                                                  .
+ 7AM EST NOV 05 2012 FLURRIES  36  31  82 W5        30.11R                     .
+ 8AM EST NOV 05 2012 CLOUDY    36  31  82 NW6       30.12S                     .
+ 9AM EST NOV 05 2012 CLOUDY    36  27  69 N8        30.13R                     .
+10AM EST NOV 05 2012 CLOUDY    36  26  67 N10       30.14R                     .
+11AM EST NOV 05 2012 CLOUDY    37  26  64 N10       30.14S                     .
+12PM EST NOV 05 2012 CLOUDY    38  26  62 N8        30.14S                     .
+ 1PM EST NOV 05 2012 CLOUDY    38  25  59 N5        30.13F                     .
+ 2PM EST NOV 05 2012 CLOUDY    38  24  57 NW7       30.12F                     .
+ 3PM EST NOV 05 2012 CLOUDY    39  24  55 NW5       30.11F                     .
+ 4PM EST NOV 05 2012 CLOUDY    39  24  55 N7        30.11S                     .
+ 5PM EST NOV 05 2012 CLOUDY    38  25  59 NW9       30.12R                     .
+ 6PM EST NOV 05 2012 CLOUDY    37  25  61 N8        30.13R                     .
+ 7PM EST NOV 05 2012 CLOUDY    36  24  62 NE5       30.14R                     .
+ 8PM EST NOV 05 2012 CLOUDY    36  24  62 N5        30.14S                     .
+ 9PM EST NOV 05 2012 CLOUDY    36  23  59 NE8       30.16R                     .
+10PM EST NOV 05 2012 CLOUDY    36  23  59 CALM      30.16S                     .
+11PM EST NOV 05 2012 CLOUDY    36  22  56 CALM      30.15F                     .
+12AM EST NOV 06 2012 CLOUDY    35  23  61 CALM      30.14F                     .
+ 1AM EST NOV 06 2012 CLOUDY    35  23  61 CALM      30.12F                     .
+ 2AM EST NOV 06 2012 CLOUDY    33  25  72 CALM      30.12S                     .
+ 3AM EST NOV 06 2012 MOCLDY    31  25  78 CALM      30.11F                     .
+ 4AM EST NOV 06 2012 PTCLDY    31  24  75 E5        30.09F WCI  26             .
+ 5AM EST NOV 06 2012 CLEAR     30  23  75 NE7       30.08F WCI  23             .
+ 6AM EST NOV 06 2012 CLEAR     30  22  72 NE8       30.09R WCI  22             .
+ 7AM EST NOV 06 2012 PTCLDY    29  21  72 NE6       30.08F WCI  23             .
+ 8AM EST NOV 06 2012 NOT AVBL                                                  .
+ 9AM EST NOV 06 2012 MOSUNNY   33  22  63 E7        30.07  WCI  27             .
+10AM EST NOV 06 2012 MOSUNNY   36  23  59 NE7       30.07S                     .
+11AM EST NOV 06 2012 FAIR      38  24  57 E3        30.07S                     .
+12PM EST NOV 06 2012 MOSUNNY   41  25  53 SE7       30.05F                     .
+ 1PM EST NOV 06 2012 MOSUNNY   44  26  49 E5        30.02F                     .
+ 2PM EST NOV 06 2012 MOSUNNY   46  25  43 SE6       29.99F                     .
+ 3PM EST NOV 06 2012 MOSUNNY   47  26  44 VRB5      29.98F                     .
+ 4PM EST NOV 06 2012 MOSUNNY   47  26  44 E7        29.97F                     .
+ 5PM EST NOV 06 2012 PTCLDY    45  25  45 E6        29.96F                     .
+ 6PM EST NOV 06 2012 PTCLDY    44  25  47 E5        29.96S                     .
+ 7PM EST NOV 06 2012 CLEAR     42  25  50 E6        29.96S                     .
+ 8PM EST NOV 06 2012 CLEAR     39  25  57 E6        29.96S                     .
+ 9PM EST NOV 06 2012 CLEAR     38  26  62 E6        29.96S                     .
+10PM EST NOV 06 2012 CLEAR     37  25  61 E6        29.95F                     .
+11PM EST NOV 06 2012 CLEAR     34  25  69 E5        29.94F WCI  30             .
+12AM EST NOV 07 2012 NOT AVBL                                                  .
+ 1AM EST NOV 07 2012 PTCLDY    32  24  72 E6        29.94  WCI  26             .
+ 2AM EST NOV 07 2012 PTCLDY    31  24  75 NE3       29.93F                     .
+ 3AM EST NOV 07 2012 PTCLDY    30  24  78 E6        29.92F WCI  24             .
+ 4AM EST NOV 07 2012 PTCLDY    30  24  78 CALM      29.91F                     .
+ 5AM EST NOV 07 2012 MOCLDY    29  23  78 NE5       29.92R WCI  24             .
+ 6AM EST NOV 07 2012 CLOUDY    29  23  78 NE5       29.92S WCI  24             .
+ 7AM EST NOV 07 2012 CLOUDY    29  23  78 NE5       29.91F WCI  24             .
+ 8AM EST NOV 07 2012 CLOUDY    30  23  75 NE5       29.94R WCI  25             .
+ 9AM EST NOV 07 2012 PTSUNNY   31  24  75 NE6       29.96R WCI  25             .
+10AM EST NOV 07 2012 CLOUDY    33  24  69 NE7       29.97R WCI  27             .
+11AM EST NOV 07 2012 CLOUDY    36  25  64 E7        29.97S                     .
+12PM EST NOV 07 2012 CLOUDY    38  25  59 CALM      29.95F                     .
+ 1PM EST NOV 07 2012 CLOUDY    39  25  57 NE6       29.93F                     .
+ 2PM EST NOV 07 2012 CLOUDY    40  24  53 NE7       29.93S                     .
+ 3PM EST NOV 07 2012 CLOUDY    41  25  53 N7        29.94R                     .
+ 4PM EST NOV 07 2012 CLOUDY    41  21  44 N7        29.96R                     .
+ 5PM EST NOV 07 2012 MOCLDY    40  20  44 NE5       29.98R                     .
+ 6PM EST NOV 07 2012 NOT AVBL                                                  .
+ 7PM EST NOV 07 2012 MOCLDY    33  22  63 NW7       30.01  WCI  27             .
+ 8PM EST NOV 07 2012 MOCLDY    33  21  61 N5        30.01S WCI  29             .
+ 9PM EST NOV 07 2012 MOCLDY    34  20  56 VRB5      30.01S WCI  30             .
+10PM EST NOV 07 2012 MOCLDY    32  21  64 N3        30.02R                     .
+11PM EST NOV 07 2012 MOCLDY    32  19  58 NW5       30.02S WCI  27             .
+12AM EST NOV 08 2012 MOCLDY    30  19  63 NW3       30.03R                     .
+ 1AM EST NOV 08 2012 MOCLDY    28  19  69 NW3       30.03S                     .
+ 2AM EST NOV 08 2012 MOCLDY    28  19  69 NW7       30.03S WCI  21             .
+ 3AM EST NOV 08 2012 MOCLDY    27  19  72 NW6       30.04R WCI  20             .
+ 4AM EST NOV 08 2012 MOCLDY    26  19  74 NW3       30.05R                     .
+ 5AM EST NOV 08 2012 PTCLDY    26  19  74 CALM      30.06R                     .
+ 6AM EST NOV 08 2012 PTCLDY    25  19  78 NW7       30.08R WCI  17             .
+ 7AM EST NOV 08 2012 PTCLDY    24  19  81 NW5       30.09R WCI  18             .
+ 8AM EST NOV 08 2012 PTCLDY    27  21  78 NW6       30.12R WCI  20             .
+ 9AM EST NOV 08 2012 CLOUDY    32  24  72 W7        30.15R WCI  26             .
+10AM EST NOV 08 2012 PTSUNNY   34  25  69 NW6       30.16R WCI  29             .
+11AM EST NOV 08 2012 PTSUNNY   37  27  67 NW6       30.16S                     .
+12PM EST NOV 08 2012 MOSUNNY   40  28  62 NW13      30.14F                     .
+ 1PM EST NOV 08 2012 MOSUNNY   42  28  57 W9        30.12F                     .
+ 2PM EST NOV 08 2012 MOSUNNY   45  28  51 W10       30.11F                     .
+ 3PM EST NOV 08 2012 SUNNY     45  27  49 NW9G18    30.10F                     .
+ 4PM EST NOV 08 2012 SUNNY     45  28  51 NW10      30.10S                     .
+ 5PM EST NOV 08 2012 CLEAR     44  28  53 NW10      30.10S                     .
+ 6PM EST NOV 08 2012 PTCLDY    40  28  62 W7        30.12R                     .
+ 7PM EST NOV 08 2012 CLEAR     38  28  67 W6        30.13R                     .
+ 8PM EST NOV 08 2012 PTCLDY    38  28  67 NW9       30.14R                     .
+ 9PM EST NOV 08 2012 CLEAR     36  28  73 NW7       30.15R                     .
+10PM EST NOV 08 2012 CLEAR     35  28  75 NW3       30.15S                     .
+11PM EST NOV 08 2012 CLEAR     32  27  81 CALM      30.15S                     .
+12AM EST NOV 09 2012 CLEAR     31  26  82 CALM      30.15S                     .
+ 1AM EST NOV 09 2012 CLEAR     29  25  85 NW3       30.15S                     .
+ 2AM EST NOV 09 2012 CLEAR     29  25  85 CALM      30.16R                     .
+ 3AM EST NOV 09 2012 CLEAR     28  24  85 CALM      30.17R                     .
+ 4AM EST NOV 09 2012 CLEAR     28  25  88 CALM      30.17S                     .
+ 5AM EST NOV 09 2012 CLEAR     28  25  88 CALM      30.19R                     .
+ 6AM EST NOV 09 2012 CLEAR     27  24  89 CALM      30.21R                     .
+ 7AM EST NOV 09 2012 CLEAR     28  24  85 CALM      30.22R FOG                 .
+ 8AM EST NOV 09 2012 CLEAR     28  25  88 CALM      30.23R FOG                 .
+ 9AM EST NOV 09 2012 SUNNY     32  29  88 CALM      30.23S FOG                 .
+10AM EST NOV 09 2012 SUNNY     39  32  76 CALM      30.24R                     .
+11AM EST NOV 09 2012 SUNNY     45  33  63 SW5       30.24S                     .
+12PM EST NOV 09 2012 MOSUNNY   49  32  52 W8        30.22F                     .
+ 1PM EST NOV 09 2012 MOSUNNY   50  32  50 SW7G16    30.19F                     .
+ 2PM EST NOV 09 2012 MOSUNNY   52  33  48 SW10      30.18F                     .
+ 3PM EST NOV 09 2012 SUNNY     52  32  46 SW5       30.16F                     .
+ 4PM EST NOV 09 2012 SUNNY     53  32  44 SW6       30.17R                     .
+ 5PM EST NOV 09 2012 CLEAR     52  32  46 SW5       30.17S                     .
+ 6PM EST NOV 09 2012 CLEAR     49  33  54 SW3       30.17S                     .
+ 7PM EST NOV 09 2012 CLEAR     47  33  58 SW3       30.17S                     .
+ 8PM EST NOV 09 2012 CLEAR     46  32  58 SW3       30.18R                     .
+ 9PM EST NOV 09 2012 CLEAR     44  32  62 S3        30.18S                     .
+10PM EST NOV 09 2012 CLEAR     43  31  62 CALM      30.19R                     .
+11PM EST NOV 09 2012 CLEAR     41  31  67 CALM      30.18F                     .
+12AM EST NOV 10 2012 PTCLDY    39  31  72 CALM      30.18S                     .
+ 1AM EST NOV 10 2012 MOCLDY    37  30  75 SE5       30.17F                     .
+ 2AM EST NOV 10 2012 CLOUDY    41  32  70 CALM      30.19R                     .
+ 3AM EST NOV 10 2012 LGT RAIN  42  35  76 N8        30.23R                     .
+ 4AM EST NOV 10 2012 LGT RAIN  41  37  86 CALM      30.23S                     .
+ 5AM EST NOV 10 2012 CLOUDY    41  37  87 S3        30.24R                     .
+ 6AM EST NOV 10 2012 DRIZZLE   41  38  89 SE3       30.23F                     .
+ 7AM EST NOV 10 2012 CLOUDY    41  38  89 S5        30.23S                     .
+ 8AM EST NOV 10 2012 CLOUDY    43  36  76 SE5       30.25R                     .
+ 9AM EST NOV 10 2012 CLOUDY    45  36  70 SE5       30.26R                     .
+10AM EST NOV 10 2012 PTSUNNY   48  37  65 S6        30.25F                     .
+11AM EST NOV 10 2012 PTSUNNY   53  38  56 S6        30.24F                     .
+12PM EST NOV 10 2012 PTSUNNY   60  37  42 SW10      30.21F                     .
+ 1PM EST NOV 10 2012 PTSUNNY   62  36  37 S9        30.19F                     .
+ 2PM EST NOV 10 2012 PTSUNNY   63  35  35 S7        30.17F                     .
+ 3PM EST NOV 10 2012 PTSUNNY   64  33  31 S10       30.16F                     .
+ 4PM EST NOV 10 2012 MOSUNNY   66  33  29 S8        30.17R                     .
+ 5PM EST NOV 10 2012 PTCLDY    64  33  31 S3        30.17S                     .
+ 6PM EST NOV 10 2012 PTCLDY    61  34  36 CALM      30.19R                     .
+ 7PM EST NOV 10 2012 CLEAR     56  34  43 CALM      30.22R                     .
+ 8PM EST NOV 10 2012 CLEAR     53  35  50 S3        30.22S                     .
+ 9PM EST NOV 10 2012 CLEAR     53  34  48 S3        30.23R                     .
+10PM EST NOV 10 2012 CLEAR     54  33  45 S3        30.23S                     .
+11PM EST NOV 10 2012 PTCLDY    50  33  52 S5        30.23S                     .
+12AM EST NOV 11 2012 PTCLDY    51  33  50 S6        30.23S                     .
+ 1AM EST NOV 11 2012 PTCLDY    52  33  48 S5        30.24R                     .
+ 2AM EST NOV 11 2012 PTCLDY    49  33  54 SE3       30.23F                     .
+ 3AM EST NOV 11 2012 PTCLDY    49  33  54 CALM      30.24R                     .
+ 4AM EST NOV 11 2012 CLEAR     48  33  56 CALM      30.25R                     .
+ 5AM EST NOV 11 2012 CLEAR     48  33  56 CALM      30.27R                     .
+ 6AM EST NOV 11 2012 CLEAR     45  33  63 CALM      30.29R                     .
+ 7AM EST NOV 11 2012 CLEAR     47  33  58 CALM      30.32R                     .
+ 8AM EST NOV 11 2012 PTCLDY    48  34  58 CALM      30.34R                     .
+ 9AM EST NOV 11 2012 MOSUNNY   52  38  58 CALM      30.36R                     .
+10AM EST NOV 11 2012 MOSUNNY   60  37  42 S7        30.35F                     .
+11AM EST NOV 11 2012 PTSUNNY   65  34  31 SW12      30.34F                     .
+12PM EST NOV 11 2012 PTSUNNY   67  33  28 SW7       30.31F                     .
+ 1PM EST NOV 11 2012 PTSUNNY   68  33  27 SW9       30.28F                     .
+ 2PM EST NOV 11 2012 PTSUNNY   69  34  27 S13       30.25F                     .
+ 3PM EST NOV 11 2012 CLOUDY    69  33  26 S9        30.24F                     .
+ 4PM EST NOV 11 2012 CLOUDY    69  33  26 S7        30.24S                     .
+ 5PM EST NOV 11 2012 MOCLDY    66  33  29 SE6       30.22F                     .
+ 6PM EST NOV 11 2012 CLOUDY    60  34  37 SE3       30.23R                     .
+ 7PM EST NOV 11 2012 CLOUDY    61  33  35 SE3       30.22F                     .
+ 8PM EST NOV 11 2012 CLOUDY    60  34  37 SE5       30.22S                     .
+ 9PM EST NOV 11 2012 CLOUDY    60  33  36 SE9       30.21F                     .
+10PM EST NOV 11 2012 CLOUDY    60  32  34 S8        30.21S                     .
+11PM EST NOV 11 2012 CLOUDY    59  33  37 S8        30.20F                     .
+12AM EST NOV 12 2012 CLOUDY    59  33  37 S7        30.20S                     .
+ 1AM EST NOV 12 2012 CLOUDY    59  34  39 S7        30.19F                     .
+ 2AM EST NOV 12 2012 CLOUDY    59  36  42 S6        30.20R                     .
+ 3AM EST NOV 12 2012 CLOUDY    59  38  45 S6        30.20S                     .
+ 4AM EST NOV 12 2012 CLOUDY    56  39  53 SE5       30.19F                     .
+ 5AM EST NOV 12 2012 CLOUDY    56  40  55 SE6       30.19S                     .
+ 6AM EST NOV 12 2012 CLOUDY    56  41  57 SE8       30.17F                     .
+ 7AM EST NOV 12 2012 CLOUDY    56  42  59 SE8       30.16F                     .
+ 8AM EST NOV 12 2012 CLOUDY    57  43  59 SE8       30.16S                     .
+ 9AM EST NOV 12 2012 CLOUDY    61  45  55 S12       30.15F                     .
+10AM EST NOV 12 2012 CLOUDY    65  47  52 S13G26    30.14F                     .
+11AM EST NOV 12 2012 CLOUDY    67  47  48 S18G25    30.12F                     .
+12PM EST NOV 12 2012 CLOUDY    68  47  46 S15G24    30.07F                     .
+ 1PM EST NOV 12 2012 CLOUDY    69  47  45 S16G23    30.03F                     .
+ 2PM EST NOV 12 2012 CLOUDY    69  46  43 S14G24    30.00F                     .
+ 3PM EST NOV 12 2012 CLOUDY    69  46  43 S16G26    29.97F                     .
+ 4PM EST NOV 12 2012 LGT RAIN  69  46  43 S12       29.96F                     .
+ 5PM EST NOV 12 2012 LGT RAIN  58  54  86 W15G24    30.03R                     .
+ 6PM EST NOV 12 2012 LGT RAIN  50  48  93 W16       30.09R FOG                 .
+ 7PM EST NOV 12 2012 LGT RAIN  44  41  89 W15G26    30.16R                     .
+ 8PM EST NOV 12 2012 LGT RAIN  41  37  86 W16G24    30.21R                     .
+ 9PM EST NOV 12 2012 LGT RAIN  39  36  89 SW8       30.26R                     .
+10PM EST NOV 12 2012 LGT RAIN  39  35  86 S5        30.27R                     .
+11PM EST NOV 12 2012 CLOUDY    38  35  89 SW8       30.30R                     .
+12AM EST NOV 13 2012 MOCLDY    35  29  78 W10G21    30.32R WCI  27             .
+ 1AM EST NOV 13 2012 MOCLDY    34  27  75 W8        30.32S WCI  27             .
+ 2AM EST NOV 13 2012 CLOUDY    34  26  72 W10       30.32S WCI  26             .
+ 3AM EST NOV 13 2012 CLOUDY    34  26  72 W7        30.33R WCI  28             .
+ 4AM EST NOV 13 2012 CLOUDY    34  24  67 W8        30.33S WCI  27             .
+ 5AM EST NOV 13 2012 PTCLDY    32  23  69 W5        30.34R WCI  27             .
+ 6AM EST NOV 13 2012 MOCLDY    32  23  69 W5        30.35R WCI  27             .
+ 7AM EST NOV 13 2012 MOCLDY    32  22  66 W7        30.37R WCI  26             .
+ 8AM EST NOV 13 2012 MOCLDY    32  21  64 W9        30.40R WCI  24             .
+ 9AM EST NOV 13 2012 NOT AVBL                                                  .
+10AM EST NOV 13 2012 PTSUNNY   35  23  61 W10       30.43  WCI  27             .
+11AM EST NOV 13 2012 PTSUNNY   34  21  59 W10       30.43S WCI  26             .
+12PM EST NOV 13 2012 CLOUDY    35  21  56 W9        30.43S WCI  28             .
+ 1PM EST NOV 13 2012 PTSUNNY   37  20  50 W10       30.41F                     .
+ 2PM EST NOV 13 2012 CLOUDY    36  20  52 W9        30.41S                     .
+ 3PM EST NOV 13 2012 CLOUDY    37  20  50 SW6       30.41S                     .
+ 4PM EST NOV 13 2012 CLOUDY    37  20  50 W6        30.42R                     .
+ 5PM EST NOV 13 2012 CLOUDY    36  21  54 W3        30.43R                     .
+ 6PM EST NOV 13 2012 CLOUDY    36  21  54 W3        30.44R                     .
+ 7PM EST NOV 13 2012 CLOUDY    36  22  56 W3        30.45R                     .
+ 8PM EST NOV 13 2012 CLOUDY    36  23  59 N7        30.47R                     .
+ 9PM EST NOV 13 2012 CLOUDY    35  24  64 VRB7      30.48R WCI  29             .
+10PM EST NOV 13 2012 CLOUDY    35  24  64 N7        30.49R WCI  29             .
+11PM EST NOV 13 2012 CLOUDY    34  25  69 N3        30.50R                     .
+12AM EST NOV 14 2012 CLOUDY    34  25  69 N3        30.50S                     .
+ 1AM EST NOV 14 2012 CLOUDY    34  26  72 N5        30.50S WCI  30             .
+ 2AM EST NOV 14 2012 CLOUDY    34  26  72 NE5       30.50S WCI  30             .
+ 3AM EST NOV 14 2012 CLOUDY    33  25  72 NE5       30.49F WCI  29             .
+ 4AM EST NOV 14 2012 CLOUDY    33  25  72 NE6       30.49S WCI  28             .
+ 5AM EST NOV 14 2012 CLOUDY    33  23  66 NE6       30.49S WCI  28             .
+ 6AM EST NOV 14 2012 CLOUDY    33  21  61 NE6       30.52R WCI  28             .
+ 7AM EST NOV 14 2012 CLOUDY    33  22  63 CALM      30.52S                     .
+ 8AM EST NOV 14 2012 CLOUDY    34  23  64 E5        30.53R WCI  30             .
+ 9AM EST NOV 14 2012 CLOUDY    34  23  64 NE9       30.53S WCI  27             .
+10AM EST NOV 14 2012 CLOUDY    34  23  64 NE12      30.53S WCI  25             .
+11AM EST NOV 14 2012 CLOUDY    35  23  61 NE10      30.53S WCI  27             .
+12PM EST NOV 14 2012 CLOUDY    35  23  61 NE8       30.52F WCI  29             .
+ 1PM EST NOV 14 2012 CLOUDY    37  24  59 SE6       30.49F                     .
+ 2PM EST NOV 14 2012 CLOUDY    38  24  57 NE9       30.46F                     .
+ 3PM EST NOV 14 2012 CLOUDY    38  23  55 E3        30.44F                     .
+ 4PM EST NOV 14 2012 CLOUDY    38  24  57 E8        30.43F                     .
+ 5PM EST NOV 14 2012 MOCLDY    37  23  56 E5        30.42F                     .
+ 6PM EST NOV 14 2012 NOT AVBL                                                  .
+ 7PM EST NOV 14 2012 NOT AVBL                                                  .
+ 8PM EST NOV 14 2012 MOCLDY    34  24  67 NE3       30.42                      .
+ 9PM EST NOV 14 2012 MOCLDY    33  24  69 CALM      30.41F                     .
+10PM EST NOV 14 2012 MOCLDY    28  23  81 NE6       30.40F WCI  22             .
+11PM EST NOV 14 2012 CLOUDY    30  23  75 E3        30.37F                     .
+12AM EST NOV 15 2012 CLOUDY    31  23  72 E5        30.35F WCI  26             .
+ 1AM EST NOV 15 2012 MOCLDY    31  23  72 CALM      30.33F                     .
+ 2AM EST NOV 15 2012 MOCLDY    30  23  75 N3        30.33S                     .
+ 3AM EST NOV 15 2012 PTCLDY    29  23  78 CALM      30.33S                     .
+ 4AM EST NOV 15 2012 PTCLDY    29  22  75 NE3       30.32F                     .
+ 5AM EST NOV 15 2012 PTCLDY    28  22  78 CALM      30.31F                     .
+ 6AM EST NOV 15 2012 PTCLDY    27  22  81 CALM      30.30F                     .
+ 7AM EST NOV 15 2012 PTCLDY    26  21  81 CALM      30.32R                     .
+ 8AM EST NOV 15 2012 PTCLDY    27  22  81 CALM      30.33R                     .
+ 9AM EST NOV 15 2012 MOSUNNY   31  25  78 CALM      30.33S                     .
+10AM EST NOV 15 2012 MOSUNNY   37  26  64 CALM      30.32F                     .
+11AM EST NOV 15 2012 MOSUNNY   39  25  57 VRB3      30.32S                     .
+12PM EST NOV 15 2012 MOSUNNY   42  25  50 CALM      30.31F                     .
+ 1PM EST NOV 15 2012 MOSUNNY   45  25  45 CALM      30.29F                     .
+ 2PM EST NOV 15 2012 MOSUNNY   46  25  43 CALM      30.29S                     .
+ 3PM EST NOV 15 2012 NOT AVBL                                                  .
+ 4PM EST NOV 15 2012 PTCLDY    48  25  40 CALM      30.27                      .
+ 5PM EST NOV 15 2012 PTCLDY    46  24  42 CALM      30.27S                     .
+ 6PM EST NOV 15 2012 PTCLDY    43  25  49 N3        30.27S                     .
+ 7PM EST NOV 15 2012 PTCLDY    41  25  53 N3        30.28R                     .
+ 8PM EST NOV 15 2012 PTCLDY    38  25  59 CALM      30.29R                     .
+ 9PM EST NOV 15 2012 PTCLDY    36  25  64 CALM      30.29S                     .
+10PM EST NOV 15 2012 MOCLDY    34  25  69 NW6       30.29S WCI  29             .
+11PM EST NOV 15 2012 CLOUDY    36  25  64 CALM      30.29S                     .
+12AM EST NOV 16 2012 CLOUDY    35  25  66 NW3       30.29S                     .
+ 1AM EST NOV 16 2012 CLOUDY    36  25  64 CALM      30.30R                     .
+ 2AM EST NOV 16 2012 MOCLDY    33  25  72 CALM      30.30S                     .
+ 3AM EST NOV 16 2012 PTCLDY    32  25  75 NW5       30.31R WCI  27             .
+ 4AM EST NOV 16 2012 PTCLDY    30  25  81 NW5       30.31S WCI  25             .
+ 5AM EST NOV 16 2012 PTCLDY    31  25  78 NW5       30.31S WCI  26             .
+ 6AM EST NOV 16 2012 PTCLDY    30  25  81 NW5       30.33R WCI  25             .
+ 7AM EST NOV 16 2012 PTCLDY    30  25  81 N5        30.34R WCI  25             .
+ 8AM EST NOV 16 2012 PTCLDY    32  27  81 N3        30.37R                     .
+ 9AM EST NOV 16 2012 MOSUNNY   35  29  78 N5        30.38R WCI  31             .
+10AM EST NOV 16 2012 MOSUNNY   38  30  73 N5        30.40R                     .
+11AM EST NOV 16 2012 MOSUNNY   43  31  62 N7        30.41R                     .
+12PM EST NOV 16 2012 MOSUNNY   45  31  58 NE5       30.38F                     .
+ 1PM EST NOV 16 2012 MOSUNNY   48  30  49 N9        30.38S                     .
+ 2PM EST NOV 16 2012 MOSUNNY   49  29  46 NW7       30.37F                     .
+ 3PM EST NOV 16 2012 MOSUNNY   50  29  44 N5        30.38R                     .
+ 4PM EST NOV 16 2012 PTCLDY    49  29  46 N7        30.39R                     .
+ 5PM EST NOV 16 2012 PTCLDY    47  30  51 N8        30.40R                     .
+ 6PM EST NOV 16 2012 CLEAR     44  29  55 NW5       30.42R                     .
+ 7PM EST NOV 16 2012 CLEAR     41  29  62 N5        30.42S                     .
+ 8PM EST NOV 16 2012 CLEAR     39  28  64 N5        30.43R                     .
+ 9PM EST NOV 16 2012 CLEAR     39  29  67 N6        30.45R                     .
+10PM EST NOV 16 2012 CLEAR     39  29  67 N5        30.46R                     .
+11PM EST NOV 16 2012 CLEAR     39  29  67 VRB3      30.46S                     .
+12AM EST NOV 17 2012 CLEAR     37  29  72 NE3       30.47R                     .
+ 1AM EST NOV 17 2012 CLEAR     34  29  82 CALM      30.47S                     .
+ 2AM EST NOV 17 2012 CLEAR     33  28  81 N3        30.48R                     .
+ 3AM EST NOV 17 2012 CLEAR     33  28  81 CALM      30.49R                     .
+ 4AM EST NOV 17 2012 CLEAR     32  28  85 N3        30.49S                     .
+ 5AM EST NOV 17 2012 CLEAR     29  26  89 CALM      30.50R                     .
+ 6AM EST NOV 17 2012 CLEAR     29  27  92 CALM      30.52R                     .
+ 7AM EST NOV 17 2012 CLEAR     29  24  82 CALM      30.53R                     .
+ 8AM EST NOV 17 2012 PTCLDY    30  26  85 CALM      30.55R                     .
+ 9AM EST NOV 17 2012 MOSUNNY   34  29  82 CALM      30.57R                     .
+10AM EST NOV 17 2012 MOSUNNY   40  29  64 E5        30.58R                     .
+11AM EST NOV 17 2012 MOSUNNY   45  29  53 CALM      30.58S                     .
+12PM EST NOV 17 2012 MOSUNNY   49  29  46 SE5       30.57F                     .
+ 1PM EST NOV 17 2012 MOSUNNY   51  28  41 E6        30.55F                     .
+ 2PM EST NOV 17 2012 MOSUNNY   53  28  38 NE7       30.53F                     .
+ 3PM EST NOV 17 2012 MOSUNNY   54  28  36 E6        30.52F                     .
+ 4PM EST NOV 17 2012 NOT AVBL                                                  .
+ 5PM EST NOV 17 2012 PTCLDY    51  27  39 NE6       30.52                      .
+ 6PM EST NOV 17 2012 PTCLDY    47  28  47 NE6       30.53R                     .
+ 7PM EST NOV 17 2012 PTCLDY    46  28  49 NE6       30.53S                     .
+ 8PM EST NOV 17 2012 PTCLDY    46  28  49 E6        30.53S                     .
+ 9PM EST NOV 17 2012 CLEAR     42  27  55 E6        30.53S                     .
+10PM EST NOV 17 2012 CLEAR     43  27  53 NE3       30.53S                     .
+11PM EST NOV 17 2012 CLEAR     39  27  62 CALM      30.52F                     .
+12AM EST NOV 18 2012 CLEAR     39  26  59 CALM      30.52S                     .
+ 1AM EST NOV 18 2012 CLEAR     38  27  64 NE5       30.51F                     .
+ 2AM EST NOV 18 2012 CLEAR     36  26  67 E5        30.51S                     .
+ 3AM EST NOV 18 2012 CLEAR     36  26  67 E5        30.51S                     .
+ 4AM EST NOV 18 2012 NOT AVBL                                                  .
+ 5AM EST NOV 18 2012 CLEAR     35  26  69 E3        30.51                      .
+ 6AM EST NOV 18 2012 CLEAR     32  26  78 E5        30.51S WCI  27             .
+ 7AM EST NOV 18 2012 PTCLDY    32  26  78 E5        30.51S WCI  27             .
+ 8AM EST NOV 18 2012 PTCLDY    33  27  78 E5        30.52R WCI  29             .
+ 9AM EST NOV 18 2012 MOSUNNY   37  29  72 E5        30.52S                     .
+10AM EST NOV 18 2012 SUNNY     42  29  59 E6        30.52S                     .
+11AM EST NOV 18 2012 MOSUNNY   46  29  51 E9        30.51F                     .
+12PM EST NOV 18 2012 MOSUNNY   50  30  46 VRB3      30.49F                     .
+ 1PM EST NOV 18 2012 MOSUNNY   51  30  44 CALM      30.47F                     .
+ 2PM EST NOV 18 2012 MOSUNNY   53  30  41 E8        30.44F                     .
+ 3PM EST NOV 18 2012 MOSUNNY   55  30  38 SE10      30.43F                     .
+ 4PM EST NOV 18 2012 MOCLDY    55  29  36 E5        30.44R                     .
+ 5PM EST NOV 18 2012 PTCLDY    52  28  39 E5        30.44S                     .
+ 6PM EST NOV 18 2012 PTCLDY    50  28  42 E3        30.44S                     .
+ 7PM EST NOV 18 2012 PTCLDY    47  28  47 E6        30.44S                     .
+ 8PM EST NOV 18 2012 CLEAR     45  27  49 SE7       30.44S                     .
+ 9PM EST NOV 18 2012 CLEAR     45  26  47 E5        30.44S                     .
+10PM EST NOV 18 2012 CLEAR     41  26  55 E3        30.44S                     .
+11PM EST NOV 18 2012 CLEAR     40  27  59 E5        30.43F                     .
+12AM EST NOV 19 2012 CLEAR     38  27  64 E7        30.42F                     .
+ 1AM EST NOV 19 2012 CLEAR     34  26  72 CALM      30.41F                     .
+ 2AM EST NOV 19 2012 CLEAR     38  28  67 E3        30.40F                     .
+ 3AM EST NOV 19 2012 CLEAR     34  28  79 E5        30.40S WCI  30             .
+ 4AM EST NOV 19 2012 PTCLDY    34  27  75 E3        30.38F                     .
+ 5AM EST NOV 19 2012 CLEAR     34  28  79 CALM      30.38S                     .
+ 6AM EST NOV 19 2012 CLEAR     33  28  81 CALM      30.39R                     .
+ 7AM EST NOV 19 2012 PTCLDY    31  28  89 CALM      30.39S                     .
+ 8AM EST NOV 19 2012 PTCLDY    29  26  89 CALM      30.38F                     .
+ 9AM EST NOV 19 2012 PTSUNNY   36  31  82 CALM      30.39R                     .
+10AM EST NOV 19 2012 PTSUNNY   40  32  73 VRB3      30.38F                     .
+11AM EST NOV 19 2012 PTSUNNY   45  33  63 CALM      30.37F                     .
+12PM EST NOV 19 2012 CLOUDY    49  33  54 CALM      30.34F                     .
+ 1PM EST NOV 19 2012 CLOUDY    50  34  54 E3        30.31F                     .
+ 2PM EST NOV 19 2012 CLOUDY    52  32  46 N3        30.30F                     .
+ 3PM EST NOV 19 2012 CLOUDY    52  29  41 CALM      30.28F                     .
+ 4PM EST NOV 19 2012 CLOUDY    51  31  46 CALM      30.27F                     .
+ 5PM EST NOV 19 2012 CLOUDY    50  31  48 CALM      30.27S                     .
+ 6PM EST NOV 19 2012 CLOUDY    46  31  55 N3        30.26F                     .
+ 7PM EST NOV 19 2012 CLOUDY    43  32  65 CALM      30.25F                     .
+ 8PM EST NOV 19 2012 CLOUDY    42  32  67 CALM      30.24F                     .
+ 9PM EST NOV 19 2012 CLOUDY    40  32  73 CALM      30.23F                     .
+10PM EST NOV 19 2012 CLOUDY    40  32  73 NW3       30.22F                     .
+11PM EST NOV 19 2012 CLOUDY    39  32  76 CALM      30.20F                     .
+12AM EST NOV 20 2012 CLOUDY    40  32  73 CALM      30.19F                     .
+ 1AM EST NOV 20 2012 CLOUDY    37  31  78 CALM      30.18F                     .
+ 2AM EST NOV 20 2012 CLOUDY    36  31  82 CALM      30.17F                     .
+ 3AM EST NOV 20 2012 CLOUDY    35  31  85 W3        30.17S                     .
+ 4AM EST NOV 20 2012 CLOUDY    35  30  82 CALM      30.16F                     .
+ 5AM EST NOV 20 2012 CLOUDY    34  30  85 CALM      30.14F                     .
+ 6AM EST NOV 20 2012 CLOUDY    34  30  85 CALM      30.14S                     .
+ 7AM EST NOV 20 2012 CLOUDY    35  31  85 CALM      30.14S                     .
+ 8AM EST NOV 20 2012 CLOUDY    34  31  88 CALM      30.16R                     .
+ 9AM EST NOV 20 2012 CLOUDY    38  33  82 CALM      30.18R                     .
+10AM EST NOV 20 2012 CLOUDY    43  34  70 CALM      30.16F                     .
+11AM EST NOV 20 2012 PTSUNNY   48  35  60 CALM      30.15F                     .
+12PM EST NOV 20 2012 PTSUNNY   51  33  50 NW5       30.14F                     .
+ 1PM EST NOV 20 2012 CLOUDY    52  33  48 CALM      30.11F                     .
+ 2PM EST NOV 20 2012 CLOUDY    52  33  48 CALM      30.10F                     .
+ 3PM EST NOV 20 2012 CLOUDY    52  33  48 E3        30.08F                     .
+ 4PM EST NOV 20 2012 MOCLDY    53  33  46 SE3       30.08S                     .
+ 5PM EST NOV 20 2012 MOCLDY    52  32  46 CALM      30.09R                     .
+ 6PM EST NOV 20 2012 MOCLDY    49  32  52 N5        30.10R                     .
+ 7PM EST NOV 20 2012 MOCLDY    48  32  53 CALM      30.11R                     .
+ 8PM EST NOV 20 2012 CLOUDY    47  32  56 CALM      30.12R                     .
+ 9PM EST NOV 20 2012 CLOUDY    46  32  58 CALM      30.13R                     .
+10PM EST NOV 20 2012 MOCLDY    43  32  65 W3        30.13S                     .
+11PM EST NOV 20 2012 PTCLDY    40  31  70 NW3       30.13S                     .
+12AM EST NOV 21 2012 MOCLDY    39  31  72 CALM      30.13S                     .
+ 1AM EST NOV 21 2012 CLOUDY    39  31  72 CALM      30.14R                     .
+ 2AM EST NOV 21 2012 CLOUDY    39  31  72 CALM      30.13F                     .
+ 3AM EST NOV 21 2012 PTCLDY    36  30  79 CALM      30.14R                     .
+ 4AM EST NOV 21 2012 PTCLDY    35  30  82 CALM      30.14S                     .
+ 5AM EST NOV 21 2012 PTCLDY    33  29  85 CALM      30.15R                     .
+ 6AM EST NOV 21 2012 PTCLDY    32  29  88 W3        30.17R                     .
+ 7AM EST NOV 21 2012 PTCLDY    32  28  85 CALM      30.18R                     .
+ 8AM EST NOV 21 2012 PTCLDY    33  29  85 CALM      30.20R                     .
+ 9AM EST NOV 21 2012 SUNNY     36  32  85 CALM      30.21R                     .
+10AM EST NOV 21 2012 SUNNY     45  33  63 CALM      30.23R                     .
+11AM EST NOV 21 2012 SUNNY     48  34  58 CALM      30.22F                     .
+12PM EST NOV 21 2012 MOSUNNY   52  32  46 CALM      30.21F                     .
+ 1PM EST NOV 21 2012 MOSUNNY   54  29  38 CALM      30.20F                     .
+ 2PM EST NOV 21 2012 MOSUNNY   56  25  30 CALM      30.18F                     .
+ 3PM EST NOV 21 2012 MOSUNNY   58  27  30 N3        30.18S                     .
+ 4PM EST NOV 21 2012 PTCLDY    58  21  24 NW3       30.19R                     .
+ 5PM EST NOV 21 2012 PTCLDY    55  25  31 CALM      30.19S                     .
+ 6PM EST NOV 21 2012 CLEAR     50  25  37 CALM      30.19S                     .
+ 7PM EST NOV 21 2012 CLEAR     48  26  42 CALM      30.20R                     .
+ 8PM EST NOV 21 2012 CLEAR     43  26  51 CALM      30.20S                     .
+ 9PM EST NOV 21 2012 CLEAR     41  27  57 CALM      30.20S                     .
+10PM EST NOV 21 2012 CLEAR     39  26  59 CALM      30.21R                     .
+11PM EST NOV 21 2012 CLEAR     39  25  57 CALM      30.21S                     .
+12AM EST NOV 22 2012 CLEAR     36  26  67 CALM      30.21S                     .
+ 1AM EST NOV 22 2012 CLEAR     36  26  67 CALM      30.21S                     .
+ 2AM EST NOV 22 2012 CLEAR     34  25  69 CALM      30.21S                     .
+ 3AM EST NOV 22 2012 CLEAR     32  24  72 CALM      30.21S                     .
+ 4AM EST NOV 22 2012 CLEAR     31  24  75 CALM      30.21S                     .
+ 5AM EST NOV 22 2012 PTCLDY    31  24  75 CALM      30.21S                     .
+ 6AM EST NOV 22 2012 PTCLDY    30  24  78 CALM      30.22R                     .
+ 7AM EST NOV 22 2012 PTCLDY    30  24  78 CALM      30.22S                     .
+ 8AM EST NOV 22 2012 PTCLDY    30  25  81 CALM      30.23R                     .
+ 9AM EST NOV 22 2012 MOSUNNY   35  27  72 CALM      30.23S                     .
+10AM EST NOV 22 2012 MOSUNNY   42  30  62 CALM      30.22F                     .
+11AM EST NOV 22 2012 MOSUNNY   50  31  48 SE3       30.22S                     .
+12PM EST NOV 22 2012 MOSUNNY   55  31  39 S3        30.19F                     .
+ 1PM EST NOV 22 2012 MOSUNNY   58  29  33 VRB7      30.16F                     .
+ 2PM EST NOV 22 2012 MOSUNNY   59  29  31 S9        30.15F                     .
+ 3PM EST NOV 22 2012 MOSUNNY   60  29  30 S7        30.13F                     .
+ 4PM EST NOV 22 2012 PTCLDY    60  30  32 S8        30.11F                     .
+ 5PM EST NOV 22 2012 PTCLDY    58  29  33 S3        30.11S                     .
+ 6PM EST NOV 22 2012 PTCLDY    53  29  39 S3        30.11S                     .
+ 7PM EST NOV 22 2012 PTCLDY    50  29  44 CALM      30.10F                     .
+ 8PM EST NOV 22 2012 PTCLDY    45  29  53 CALM      30.09F                     .
+ 9PM EST NOV 22 2012 PTCLDY    48  29  47 S5        30.07F                     .
+10PM EST NOV 22 2012 MOCLDY    46  29  51 S6        30.05F                     .
+11PM EST NOV 22 2012 CLOUDY    45  29  53 S3        30.03F                     .
+12AM EST NOV 23 2012 CLOUDY    44  29  55 CALM      30.03S                     .
+ 1AM EST NOV 23 2012 CLOUDY    41  29  62 S6        30.00F                     .
+ 2AM EST NOV 23 2012 CLOUDY    43  29  57 S6        29.98F                     .
+ 3AM EST NOV 23 2012 MOCLDY    45  28  51 S7        29.97F                     .
+ 4AM EST NOV 23 2012 MOCLDY    48  29  47 S6        29.95F                     .
+ 5AM EST NOV 23 2012 MOCLDY    50  30  46 S6        29.92F                     .
+ 6AM EST NOV 23 2012 CLOUDY    51  32  48 S8        29.90F                     .
+ 7AM EST NOV 23 2012 MOCLDY    51  34  52 S10       29.88F                     .
+ 8AM EST NOV 23 2012 CLOUDY    52  35  52 S10G16    29.87F                     .
+ 9AM EST NOV 23 2012 CLOUDY    53  37  54 SW10      29.86F                     .
+10AM EST NOV 23 2012 LGT RAIN  49  41  74 SW10      29.86S                     .
+11AM EST NOV 23 2012 DRIZZLE   49  42  77 SW10      29.85F                     .
+12PM EST NOV 23 2012 DRIZZLE   48  44  86 SW9       29.83F FOG                 .
+ 1PM EST NOV 23 2012 CLOUDY    49  43  80 SW12      29.80F                     .
+ 2PM EST NOV 23 2012 NOT AVBL                                                  .
+ 3PM EST NOV 23 2012 MOSUNNY   52  39  61 SW12G24   29.77F                     .
+ 4PM EST NOV 23 2012 PTCLDY    52  22  30 W18G31    29.79R                     .
+ 5PM EST NOV 23 2012 MOCLDY    45  27  49 W20G29    29.83R                     .
+ 6PM EST NOV 23 2012 MOCLDY    41  24  51 W26G37    29.89R                     .
+ 7PM EST NOV 23 2012 CLOUDY    36  23  59 W17G32    29.94R                     .
+ 8PM EST NOV 23 2012 FLURRIES  34  23  64 W17G30    29.96R WCI  23             .
+ 9PM EST NOV 23 2012 CLOUDY    32  20  61 W22G30    29.97R WCI  19             .
+10PM EST NOV 23 2012 CLOUDY    32  20  61 W13G25    29.97S WCI  22             .
+11PM EST NOV 23 2012 MOCLDY    31  19  61 W13       29.97S WCI  21             .
+12AM EST NOV 24 2012 MOCLDY    31  19  61 W13G20    29.97S WCI  21             .
+ 1AM EST NOV 24 2012 FLURRIES  30  19  63 W14G22    29.96F WCI  19             .
+ 2AM EST NOV 24 2012 FLURRIES  30  19  63 W9        29.95F WCI  22             .
+ 3AM EST NOV 24 2012 FLURRIES  30  20  66 W9        29.96R WCI  22             .
+ 4AM EST NOV 24 2012 FLURRIES  30  21  69 W14G20    29.96S WCI  19             .
+ 5AM EST NOV 24 2012 FLURRIES  30  21  69 W9G21     29.97R WCI  22             .
+ 6AM EST NOV 24 2012 FLURRIES  30  22  72 W12G18    29.99R WCI  20             .
+ 7AM EST NOV 24 2012 LGT SNOW  28  24  85 SW8       29.99S FOG     WCI  20     .
+ 8AM EST NOV 24 2012 LGT SNOW  28  25  88 W8        30.01R FOG     WCI  20     .
+ 9AM EST NOV 24 2012 LGT SNOW  29  25  85 W10       30.01S FOG     WCI  20     .
+10AM EST NOV 24 2012 FLURRIES  30  24  78 W13       30.01S WCI  20             .
+11AM EST NOV 24 2012 FLURRIES  31  23  72 W18G24    30.03R WCI  19             .
+12PM EST NOV 24 2012 FLURRIES  31  24  75 W15G24    30.01F WCI  20             .
+ 1PM EST NOV 24 2012 LGT SNOW  31  24  75 W17G24    30.00F WCI  19             .
+ 2PM EST NOV 24 2012 LGT SNOW  31  23  72 W17G23    30.00S WCI  19             .
+ 3PM EST NOV 24 2012 FLURRIES  32  23  69 W14       30.00S WCI  22             .
+ 4PM EST NOV 24 2012 FLURRIES  31  22  69 W15       30.02R WCI  20             .
+ 5PM EST NOV 24 2012 MOCLDY    31  20  63 W12G18    30.03R WCI  22             .
+ 6PM EST NOV 24 2012 CLOUDY    31  19  61 W10G17    30.04R WCI  22             .
+ 7PM EST NOV 24 2012 MOCLDY    30  18  60 W13G22    30.05R WCI  20             .
+ 8PM EST NOV 24 2012 CLOUDY    30  18  60 W13       30.06R WCI  20             .
+ 9PM EST NOV 24 2012 CLOUDY    30  17  58 W12G20    30.06S WCI  20             .
+10PM EST NOV 24 2012 CLOUDY    30  18  60 W14       30.05F WCI  19             .
+11PM EST NOV 24 2012 CLOUDY    30  18  60 W7        30.04F WCI  23             .
+12AM EST NOV 25 2012 CLOUDY    30  18  60 W9        30.03F WCI  22             .
+ 1AM EST NOV 25 2012 CLOUDY    29  18  63 W8        30.02F WCI  21             .
+ 2AM EST NOV 25 2012 CLOUDY    29  18  63 W9        30.03S WCI  20             .
+ 3AM EST NOV 25 2012 CLOUDY    29  17  61 W7        30.03S WCI  22             .
+ 4AM EST NOV 25 2012 CLOUDY    28  17  63 W6        30.02F WCI  22             .
+ 5AM EST NOV 25 2012 CLOUDY    28  17  63 W7        30.01F WCI  21             .
+ 6AM EST NOV 25 2012 CLOUDY    28  18  66 SW5       30.01S WCI  23             .
+ 7AM EST NOV 25 2012 CLOUDY    28  17  63 W8G17     30.00F WCI  20             .
+ 8AM EST NOV 25 2012 LGT SNOW  28  19  69 SW7       29.99F WCI  21             .
+ 9AM EST NOV 25 2012 FLURRIES  28  21  75 SW6       29.99S WCI  22             .
+10AM EST NOV 25 2012 CLOUDY    30  18  60 SW12G20   29.97F WCI  20             .
+11AM EST NOV 25 2012 CLOUDY    31  18  58 SW13G20   29.96F WCI  21             .
+12PM EST NOV 25 2012 CLOUDY    33  18  53 SW12G18   29.92F WCI  24             .
+ 1PM EST NOV 25 2012 NOT AVBL                                                  .
+ 2PM EST NOV 25 2012 MOSUNNY   38  17  42 W9G22     29.85F                     .
+ 3PM EST NOV 25 2012 MOSUNNY   38  18  44 W12       29.85S                     .
+ 4PM EST NOV 25 2012 PTCLDY    39  18  42 SW9       29.86R                     .
+ 5PM EST NOV 25 2012 PTCLDY    38  18  44 SW5       29.87R                     .
+ 6PM EST NOV 25 2012 PTCLDY    35  19  52 SW3       29.88R                     .
+ 7PM EST NOV 25 2012 PTCLDY    34  19  54 SW3       29.91R                     .
+ 8PM EST NOV 25 2012 NOT AVBL                                                  .
+ 9PM EST NOV 25 2012 PTCLDY    33  19  56 SW5       29.93  WCI  29             .
+10PM EST NOV 25 2012 PTCLDY    33  19  56 SW6       29.94R WCI  28             .
+11PM EST NOV 25 2012 PTCLDY    34  20  56 SW7       29.94S WCI  28             .
+12AM EST NOV 26 2012 PTCLDY    31  20  63 W6        29.97R WCI  25             .
+ 1AM EST NOV 26 2012 MOCLDY    32  21  64 W5        29.98R WCI  27             .
+ 2AM EST NOV 26 2012 CLOUDY    32  22  66 CALM      29.99R                     .
+ 3AM EST NOV 26 2012 CLOUDY    32  22  66 CALM      30.01R                     .
+ 4AM EST NOV 26 2012 CLOUDY    31  23  72 CALM      30.03R                     .
+ 5AM EST NOV 26 2012 NOT AVBL                                                  .
+ 6AM EST NOV 26 2012 CLOUDY    32  24  72 W3        30.07                      .
+ 7AM EST NOV 26 2012 MOCLDY    33  23  66 W3        30.09R                     .
+ 8AM EST NOV 26 2012 PTCLDY    31  23  72 W3        30.11R                     .
+ 9AM EST NOV 26 2012 PTSUNNY   33  25  72 W5        30.13R WCI  29             .
+10AM EST NOV 26 2012 MOSUNNY   36  26  67 W5        30.15R                     .
+11AM EST NOV 26 2012 MOSUNNY   39  26  59 W8        30.17R                     .
+12PM EST NOV 26 2012 MOSUNNY   40  26  57 VRB6      30.16F                     .
+ 1PM EST NOV 26 2012 MOSUNNY   42  25  50 NW9       30.14F                     .
+ 2PM EST NOV 26 2012 MOSUNNY   43  23  45 W6        30.13F                     .
+ 3PM EST NOV 26 2012 NOT AVBL                                                  .
+ 4PM EST NOV 26 2012 PTCLDY    44  22  41 W6        30.14                      .
+ 5PM EST NOV 26 2012 MOCLDY    42  23  46 NW5       30.14S                     .
+ 6PM EST NOV 26 2012 PTCLDY    42  22  44 NW3       30.14S                     .
+ 7PM EST NOV 26 2012 CLOUDY    39  24  55 N5        30.15R                     .
+ 8PM EST NOV 26 2012 CLOUDY    39  24  55 N3        30.17R                     .
+ 9PM EST NOV 26 2012 CLOUDY    39  24  55 CALM      30.18R                     .
+10PM EST NOV 26 2012 CLOUDY    38  23  55 CALM      30.19R                     .
+11PM EST NOV 26 2012 CLOUDY    37  24  59 NE6       30.17F                     .
+12AM EST NOV 27 2012 CLOUDY    36  24  62 N6        30.19R                     .
+ 1AM EST NOV 27 2012 CLOUDY    36  25  64 NE7       30.18F                     .
+ 2AM EST NOV 27 2012 CLOUDY    35  25  66 N5        30.19R WCI  31             .
+ 3AM EST NOV 27 2012 CLOUDY    36  25  64 CALM      30.21R                     .
+ 4AM EST NOV 27 2012 CLOUDY    35  25  66 CALM      30.19F                     .
+ 5AM EST NOV 27 2012 FLURRIES  34  28  79 N7        30.18F WCI  28             .
+ 6AM EST NOV 27 2012 LGT SNOW  34  30  85 N7        30.18S FOG     WCI  28     .
+ 7AM EST NOV 27 2012 LGT SNOW  34  30  86 N3        30.20R FOG                 .
+ 8AM EST NOV 27 2012 LGT SNOW  33  31  92 N6        30.21R FOG     WCI  28     .
+ 9AM EST NOV 27 2012 LGT SNOW  34  30  86 NW9       30.24R VSB 1   WCI  26     .
+10AM EST NOV 27 2012 LGT SNOW  33  30  88 N9        30.25R FOG     WCI  25     .
+11AM EST NOV 27 2012 LGT SNOW  33  30  88 N12       30.27R FOG     WCI  24     .
+12PM EST NOV 27 2012 CLOUDY    34  29  82 N8        30.25F WCI  27             .
+ 1PM EST NOV 27 2012 PTSUNNY   36  29  75 NW6       30.24F                     .
+ 2PM EST NOV 27 2012 PTSUNNY   36  27  69 N8        30.24S                     .
+ 3PM EST NOV 27 2012 CLOUDY    35  27  72 NW7       30.24S WCI  29             .
+ 4PM EST NOV 27 2012 CLOUDY    35  26  69 NW6       30.22F WCI  30             .
+ 5PM EST NOV 27 2012 CLOUDY    35  25  66 NW5       30.22S WCI  31             .
+ 6PM EST NOV 27 2012 CLOUDY    35  21  56 NW6       30.23R WCI  30             .
+ 7PM EST NOV 27 2012 CLOUDY    34  22  61 NW5       30.25R WCI  30             .
+ 8PM EST NOV 27 2012 CLOUDY    34  23  64 NW6       30.26R WCI  29             .
+ 9PM EST NOV 27 2012 CLOUDY    33  22  63 W5        30.26S WCI  29             .
+10PM EST NOV 27 2012 CLOUDY    33  21  61 W6        30.26S WCI  28             .
+11PM EST NOV 27 2012 CLOUDY    32  21  64 W5        30.25F WCI  27             .
+12AM EST NOV 28 2012 CLOUDY    32  21  64 W3        30.25S                     .
+ 1AM EST NOV 28 2012 CLOUDY    31  20  63 W5        30.25S WCI  26             .
+ 2AM EST NOV 28 2012 CLOUDY    32  20  61 CALM      30.24F                     .
+ 3AM EST NOV 28 2012 CLOUDY    32  20  61 W5        30.24S WCI  27             .
+ 4AM EST NOV 28 2012 CLOUDY    32  20  61 SW5       30.23F WCI  27             .
+ 5AM EST NOV 28 2012 CLOUDY    32  21  64 SW5       30.23S WCI  27             .
+ 6AM EST NOV 28 2012 CLOUDY    32  21  64 W6        30.24R WCI  26             .
+ 7AM EST NOV 28 2012 MOCLDY    31  21  66 W9        30.25R WCI  23             .
+ 8AM EST NOV 28 2012 CLOUDY    30  20  66 W8        30.27R WCI  22             .
+ 9AM EST NOV 28 2012 CLOUDY    31  20  63 SW7       30.28R WCI  24             .
+10AM EST NOV 28 2012 CLOUDY    32  21  64 W14       30.29R WCI  22             .
+11AM EST NOV 28 2012 MOSUNNY   33  21  61 W12G21    30.30R WCI  24             .
+12PM EST NOV 28 2012 MOSUNNY   36  21  54 W12G18    30.28F                     .
+ 1PM EST NOV 28 2012 MOSUNNY   37  18  46 SW8G24    30.27F                     .
+ 2PM EST NOV 28 2012 NOT AVBL                                                  .
+ 3PM EST NOV 28 2012 MOSUNNY   39  15  37 W13G20    30.25                      .
+ 4PM EST NOV 28 2012 PTCLDY    39  16  39 W10G21    30.26R                     .
+ 5PM EST NOV 28 2012 NOT AVBL                                                  .
+ 6PM EST NOV 28 2012 CLEAR     35  17  47 W3        30.28                      .
+ 7PM EST NOV 28 2012 CLEAR     32  17  54 W3        30.31R                     .
+ 8PM EST NOV 28 2012 PTCLDY    30  17  58 W3        30.32R                     .
+ 9PM EST NOV 28 2012 MOCLDY    30  17  58 W3        30.33R                     .
+10PM EST NOV 28 2012 MOCLDY    31  18  58 SW3       30.33S                     .
+11PM EST NOV 28 2012 CLOUDY    30  18  60 CALM      30.33S                     .
+12AM EST NOV 29 2012 PTCLDY    28  18  66 CALM      30.33S                     .
+ 1AM EST NOV 29 2012 CLEAR     28  18  66 SW3       30.33S                     .
+ 2AM EST NOV 29 2012 CLEAR     28  19  69 CALM      30.33S                     .
+ 3AM EST NOV 29 2012 CLEAR     28  19  69 CALM      30.34R                     .
+ 4AM EST NOV 29 2012 CLEAR     25  18  74 CALM      30.33F                     .
+ 5AM EST NOV 29 2012 PTCLDY    27  19  72 CALM      30.34R                     .
+ 6AM EST NOV 29 2012 MOCLDY    25  18  74 CALM      30.35R                     .
+ 7AM EST NOV 29 2012 MOCLDY    27  20  75 CALM      30.35S                     .
+ 8AM EST NOV 29 2012 MOCLDY    27  20  75 CALM      30.36R                     .
+ 9AM EST NOV 29 2012 MOSUNNY   30  21  69 SW5       30.37R WCI  25             .
+10AM EST NOV 29 2012 PTSUNNY   33  23  66 SW3       30.37S                     .
+11AM EST NOV 29 2012 PTSUNNY   36  24  62 SW8       30.37S                     .
+12PM EST NOV 29 2012 FAIR      39  23  52 SW7       30.34F                     .
+ 1PM EST NOV 29 2012 MOSUNNY   41  21  44 SW8       30.31F                     .
+ 2PM EST NOV 29 2012 SUNNY     42  20  41 S8        30.29F                     .
+ 3PM EST NOV 29 2012 SUNNY     44  19  36 S12       30.28F                     .
+ 4PM EST NOV 29 2012 PTCLDY    44  18  35 S7        30.26F                     .
+ 5PM EST NOV 29 2012 PTCLDY    43  19  38 S5        30.26S                     .
+ 6PM EST NOV 29 2012 PTCLDY    41  19  41 SW3       30.26S                     .
+ 7PM EST NOV 29 2012 PTCLDY    38  19  46 CALM      30.26S                     .
+ 8PM EST NOV 29 2012 PTCLDY    36  20  52 CALM      30.26S                     .
+ 9PM EST NOV 29 2012 PTCLDY    33  20  58 CALM      30.27R                     .
+10PM EST NOV 29 2012 PTCLDY    31  20  63 CALM      30.26F                     .
+11PM EST NOV 29 2012 PTCLDY    33  20  58 CALM      30.27R                     .
+12AM EST NOV 30 2012 MOCLDY    28  20  71 CALM      30.27S                     .
+ 1AM EST NOV 30 2012 CLOUDY    28  20  71 CALM      30.27S                     .
+ 2AM EST NOV 30 2012 CLOUDY    29  20  69 CALM      30.27S                     .
+ 3AM EST NOV 30 2012 CLOUDY    30  21  69 CALM      30.27S                     .
+ 4AM EST NOV 30 2012 CLOUDY    32  22  66 CALM      30.26F                     .
+ 5AM EST NOV 30 2012 CLOUDY    33  23  66 CALM      30.26S                     .
+ 6AM EST NOV 30 2012 CLOUDY    33  22  63 CALM      30.26S                     .
+ 7AM EST NOV 30 2012 MOCLDY    32  23  69 CALM      30.26S                     .
+ 8AM EST NOV 30 2012 CLOUDY    33  22  63 CALM      30.25F                     .
+ 9AM EST NOV 30 2012 CLOUDY    35  23  61 S3        30.24F                     .
+10AM EST NOV 30 2012 CLOUDY    40  24  53 S3        30.25R                     .
+11AM EST NOV 30 2012 PTSUNNY   45  25  45 SW6       30.26R                     .
+12PM EST NOV 30 2012 CLOUDY    50  26  39 SW10      30.23F                     .
+ 1PM EST NOV 30 2012 CLOUDY    51  26  37 S7        30.20F                     .
+ 2PM EST NOV 30 2012 CLOUDY    51  26  37 S9        30.19F                     .
+ 3PM EST NOV 30 2012 PTSUNNY   52  26  36 SW6       30.19S                     .
+ 4PM EST NOV 30 2012 MOCLDY    52  26  36 SW5       30.19S                     .
+ 5PM EST NOV 30 2012 MOCLDY    51  27  39 S6        30.18F                     .
+ 6PM EST NOV 30 2012 CLOUDY    50  27  40 S3        30.19R                     .

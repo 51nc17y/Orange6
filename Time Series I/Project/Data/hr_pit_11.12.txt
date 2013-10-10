@@ -1,0 +1,766 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+
+ 7PM EST NOV 30 2011 PTCLDY    33  25  72 W5        30.07R WCI  29           DEC
+ 8PM EST NOV 30 2011 FAIR      33  24  69 CALM      30.09R                   DEC
+ 9PM EST NOV 30 2011 MOCLDY    32  24  72 CALM      30.11R                   DEC
+10PM EST NOV 30 2011 PTCLDY    31  24  75 W3        30.14R                   DEC
+11PM EST NOV 30 2011 PTCLDY    31  24  75 CALM      30.15R                   DEC
+12AM EST DEC 01 2011 CLEAR     30  23  75 CALM      30.16R                   DEC
+ 1AM EST DEC 01 2011 CLEAR     29  24  82 CALM      30.17R                   DEC
+ 2AM EST DEC 01 2011 CLEAR     29  24  82 SW3       30.19R                     .
+ 3AM EST DEC 01 2011 CLEAR     29  24  82 W5        30.21R WCI  24             .
+ 4AM EST DEC 01 2011 CLEAR     27  23  85 CALM      30.23R                     .
+ 5AM EST DEC 01 2011 CLEAR     27  24  89 CALM      30.25R                     .
+ 6AM EST DEC 01 2011 CLEAR     26  23  88 CALM      30.26R                     .
+ 7AM EST DEC 01 2011 PTCLDY    26  23  88 CALM      30.29R                     .
+ 8AM EST DEC 01 2011 NOT AVBL                                                  .
+ 9AM EST DEC 01 2011 NOT AVBL                                                  .
+10AM EST DEC 01 2011 PTSUNNY   32  28  85 SW7       30.33R FOG     WCI  26     .
+11AM EST DEC 01 2011 PTSUNNY   34  28  79 W6        30.34R WCI  29             .
+12PM EST DEC 01 2011 PTSUNNY   36  28  73 W8        30.32F                     .
+ 1PM EST DEC 01 2011 MOSUNNY   37  27  67 SW6       30.29F                     .
+ 2PM EST DEC 01 2011 MOSUNNY   39  27  62 SW8       30.29S                     .
+ 3PM EST DEC 01 2011 MOSUNNY   39  27  62 W5        30.30R                     .
+ 4PM EST DEC 01 2011 PTCLDY    39  26  59 W3        30.29F                     .
+ 5PM EST DEC 01 2011 PTCLDY    37  26  64 NW3       30.29S                     .
+ 6PM EST DEC 01 2011 PTCLDY    36  26  67 CALM      30.29S                     .
+ 7PM EST DEC 01 2011 CLEAR     33  26  75 N5        30.29S WCI  29             .
+ 8PM EST DEC 01 2011 CLEAR     32  26  78 CALM      30.30R                     .
+ 9PM EST DEC 01 2011 CLEAR     30  26  85 CALM      30.29F                     .
+10PM EST DEC 01 2011 CLEAR     30  25  81 CALM      30.29S                     .
+11PM EST DEC 01 2011 CLEAR     28  24  85 CALM      30.28F                     .
+12AM EST DEC 02 2011 CLEAR     27  24  89 CALM      30.27F                     .
+ 1AM EST DEC 02 2011 CLEAR     27  24  89 CALM      30.27S                     .
+ 2AM EST DEC 02 2011 PTCLDY    26  23  88 CALM      30.26F                     .
+ 3AM EST DEC 02 2011 PTCLDY    25  22  88 CALM      30.27R                     .
+ 4AM EST DEC 02 2011 PTCLDY    26  23  88 CALM      30.25F                     .
+ 5AM EST DEC 02 2011 MOCLDY    28  23  81 CALM      30.26R                     .
+ 6AM EST DEC 02 2011 MOCLDY    25  21  85 CALM      30.27R                     .
+ 7AM EST DEC 02 2011 PTCLDY    26  22  84 CALM      30.29R                     .
+ 8AM EST DEC 02 2011 PTCLDY    28  23  81 S3        30.29S                     .
+ 9AM EST DEC 02 2011 MOSUNNY   33  28  81 S3        30.30R                     .
+10AM EST DEC 02 2011 PTSUNNY   36  29  75 W7        30.33R                     .
+11AM EST DEC 02 2011 CLOUDY    37  29  72 W6        30.34R                     .
+12PM EST DEC 02 2011 PTSUNNY   39  29  67 W7        30.35R                     .
+ 1PM EST DEC 02 2011 MOSUNNY   41  30  65 W10       30.36R                     .
+ 2PM EST DEC 02 2011 PTSUNNY   43  30  60 W10       30.38R                     .
+ 3PM EST DEC 02 2011 CLOUDY    41  30  65 N10       30.41R                     .
+ 4PM EST DEC 02 2011 CLOUDY    40  29  64 NW9       30.44R                     .
+ 5PM EST DEC 02 2011 CLOUDY    39  29  67 NW7       30.46R                     .
+ 6PM EST DEC 02 2011 CLOUDY    38  29  70 NW5       30.48R                     .
+ 7PM EST DEC 02 2011 PTCLDY    36  27  69 CALM      30.49R                     .
+ 8PM EST DEC 02 2011 PTCLDY    34  27  75 CALM      30.51R                     .
+ 9PM EST DEC 02 2011 CLEAR     32  26  78 CALM      30.52R                     .
+10PM EST DEC 02 2011 CLEAR     31  26  82 CALM      30.53R                     .
+11PM EST DEC 02 2011 CLEAR     30  27  88 NE3       30.52F                     .
+12AM EST DEC 03 2011 CLEAR     29  24  82 CALM      30.53R                     .
+ 1AM EST DEC 03 2011 PTCLDY    28  25  88 CALM      30.51F                     .
+ 2AM EST DEC 03 2011 PTCLDY    27  23  85 CALM      30.51S                     .
+ 3AM EST DEC 03 2011 CLEAR     26  23  88 CALM      30.51S                     .
+ 4AM EST DEC 03 2011 CLEAR     25  21  85 CALM      30.52R                     .
+ 5AM EST DEC 03 2011 PTCLDY    26  23  88 CALM      30.52S FOG                 .
+ 6AM EST DEC 03 2011 PTCLDY    27  25  92 E5        30.52S FOG     WCI  22     .
+ 7AM EST DEC 03 2011 MOCLDY    26  22  84 CALM      30.52S                     .
+ 8AM EST DEC 03 2011 MOCLDY    26  22  84 CALM      30.52S                     .
+ 9AM EST DEC 03 2011 PTSUNNY   30  27  88 CALM      30.51F FOG                 .
+10AM EST DEC 03 2011 SUNNY     33  28  81 SE6       30.51S WCI  28             .
+11AM EST DEC 03 2011 MOSUNNY   38  30  73 S5        30.50F                     .
+12PM EST DEC 03 2011 PTSUNNY   42  30  62 E6        30.47F                     .
+ 1PM EST DEC 03 2011 PTSUNNY   46  29  51 SE5       30.46F                     .
+ 2PM EST DEC 03 2011 PTSUNNY   48  29  47 SE6       30.43F                     .
+ 3PM EST DEC 03 2011 CLOUDY    49  31  49 E6        30.42F                     .
+ 4PM EST DEC 03 2011 MOCLDY    48  31  51 CALM      30.42S                     .
+ 5PM EST DEC 03 2011 CLOUDY    47  30  51 E5        30.41F                     .
+ 6PM EST DEC 03 2011 MOCLDY    45  30  55 E3        30.40F                     .
+ 7PM EST DEC 03 2011 CLOUDY    43  29  57 E6        30.39F                     .
+ 8PM EST DEC 03 2011 CLOUDY    42  29  59 SE3       30.38F                     .
+ 9PM EST DEC 03 2011 PTCLDY    41  29  62 E3        30.37F                     .
+10PM EST DEC 03 2011 PTCLDY    40  29  64 SE3       30.36F                     .
+11PM EST DEC 03 2011 PTCLDY    40  30  67 SE6       30.35F                     .
+12AM EST DEC 04 2011 PTCLDY    39  30  70 SE5       30.34F                     .
+ 1AM EST DEC 04 2011 PTCLDY    40  30  67 SE6       30.32F                     .
+ 2AM EST DEC 04 2011 PTCLDY    37  29  72 SE3       30.31F                     .
+ 3AM EST DEC 04 2011 PTCLDY    37  29  72 SE5       30.30F                     .
+ 4AM EST DEC 04 2011 PTCLDY    37  29  72 S5        30.28F                     .
+ 5AM EST DEC 04 2011 PTCLDY    36  29  75 S5        30.27F                     .
+ 6AM EST DEC 04 2011 PTCLDY    36  27  69 CALM      30.27S                     .
+ 7AM EST DEC 04 2011 MOCLDY    38  27  64 CALM      30.28R                     .
+ 8AM EST DEC 04 2011 CLOUDY    39  27  62 S6        30.27F                     .
+ 9AM EST DEC 04 2011 PTSUNNY   42  27  55 S6        30.29R                     .
+10AM EST DEC 04 2011 PTSUNNY   47  27  45 S6        30.29S                     .
+11AM EST DEC 04 2011 PTSUNNY   55  23  28 SW10G16   30.29S                     .
+12PM EST DEC 04 2011 PTSUNNY   58  25  28 SW15      30.26F                     .
+ 1PM EST DEC 04 2011 PTSUNNY   60  30  32 SW14      30.23F                     .
+ 2PM EST DEC 04 2011 CLOUDY    60  34  37 SW10G22   30.22F                     .
+ 3PM EST DEC 04 2011 CLOUDY    60  35  39 S10       30.21F                     .
+ 4PM EST DEC 04 2011 CLOUDY    60  36  40 S6        30.21S                     .
+ 5PM EST DEC 04 2011 CLOUDY    59  35  40 S6        30.21S                     .
+ 6PM EST DEC 04 2011 CLOUDY    58  35  42 S5        30.23R                     .
+ 7PM EST DEC 04 2011 CLOUDY    57  36  45 S3        30.23S                     .
+ 8PM EST DEC 04 2011 CLOUDY    56  35  45 CALM      30.24R                     .
+ 9PM EST DEC 04 2011 CLOUDY    55  35  47 SE3       30.24S                     .
+10PM EST DEC 04 2011 CLOUDY    54  34  46 CALM      30.24S                     .
+11PM EST DEC 04 2011 MOCLDY    52  33  48 S5        30.22F                     .
+12AM EST DEC 05 2011 CLOUDY    51  30  44 S6        30.21F                     .
+ 1AM EST DEC 05 2011 CLOUDY    51  29  42 S5        30.20F                     .
+ 2AM EST DEC 05 2011 CLOUDY    53  30  41 S6        30.20S                     .
+ 3AM EST DEC 05 2011 CLOUDY    54  32  43 S7        30.20S                     .
+ 4AM EST DEC 05 2011 CLOUDY    54  33  45 SW3       30.19F                     .
+ 5AM EST DEC 05 2011 CLOUDY    53  35  50 CALM      30.17F                     .
+ 6AM EST DEC 05 2011 CLOUDY    52  36  54 S3        30.19R                     .
+ 7AM EST DEC 05 2011 CLOUDY    51  37  58 CALM      30.19S                     .
+ 8AM EST DEC 05 2011 CLOUDY    48  38  68 NW3       30.20R                     .
+ 9AM EST DEC 05 2011 CLOUDY    51  38  60 SE5       30.21R                     .
+10AM EST DEC 05 2011 CLOUDY    53  40  61 SE3       30.21S                     .
+11AM EST DEC 05 2011 CLOUDY    56  41  57 S6        30.19F                     .
+12PM EST DEC 05 2011 CLOUDY    60  42  51 SW9       30.16F                     .
+ 1PM EST DEC 05 2011 LGT RAIN  60  44  55 SW9       30.13F                     .
+ 2PM EST DEC 05 2011 LGT RAIN  59  45  59 SW7       30.11F                     .
+ 3PM EST DEC 05 2011 CLOUDY    59  44  57 S5        30.09F                     .
+ 4PM EST DEC 05 2011 CLOUDY    57  46  66 CALM      30.08F                     .
+ 5PM EST DEC 05 2011 CLOUDY    55  47  74 CALM      30.10R                     .
+ 6PM EST DEC 05 2011 CLOUDY    56  46  69 W5        30.08F                     .
+ 7PM EST DEC 05 2011 CLOUDY    56  46  69 CALM      30.08S                     .
+ 8PM EST DEC 05 2011 LGT RAIN  53  47  79 E6        30.06F                     .
+ 9PM EST DEC 05 2011 LGT RAIN  52  48  86 NW3       30.07R FOG                 .
+10PM EST DEC 05 2011 LGT RAIN  51  49  92 E3        30.04F FOG                 .
+11PM EST DEC 05 2011 LGT RAIN  51  49  92 E3        30.02F FOG                 .
+12AM EST DEC 06 2011 DRIZZLE   52  50  93 CALM      29.99F FOG                 .
+ 1AM EST DEC 06 2011 CLOUDY    51  49  92 SE5       29.98F                     .
+ 2AM EST DEC 06 2011 LGT RAIN  51  49  92 NW8       29.99R FOG                 .
+ 3AM EST DEC 06 2011 DRIZZLE   47  45  93 NW13      30.00R                     .
+ 4AM EST DEC 06 2011 DRIZZLE   44  42  93 NW8       30.00S                     .
+ 5AM EST DEC 06 2011 DRIZZLE   43  41  93 NW9       30.02R FOG                 .
+ 6AM EST DEC 06 2011 DRIZZLE   42  40  92 NW8       30.03R FOG                 .
+ 7AM EST DEC 06 2011 DRIZZLE   41  38  89 NW10      30.04R                     .
+ 8AM EST DEC 06 2011 CLOUDY    40  38  93 NW9       30.04S                     .
+ 9AM EST DEC 06 2011 CLOUDY    40  37  89 N8        30.04S                     .
+10AM EST DEC 06 2011 LGT RAIN  39  37  92 N7        30.06R                     .
+11AM EST DEC 06 2011 CLOUDY    41  38  89 N9        30.05F                     .
+12PM EST DEC 06 2011 CLOUDY    41  38  89 N10       30.03F                     .
+ 1PM EST DEC 06 2011 LGT RAIN  41  38  89 N9        30.01F                     .
+ 2PM EST DEC 06 2011 CLOUDY    41  39  93 N5        30.00F                     .
+ 3PM EST DEC 06 2011 CLOUDY    41  38  89 N8        29.99F                     .
+ 4PM EST DEC 06 2011 DRIZZLE   41  39  93 NW6       29.99S FOG                 .
+ 5PM EST DEC 06 2011 DRIZZLE   41  39  93 N6        30.00R FOG                 .
+ 6PM EST DEC 06 2011 DRIZZLE   41  39  93 N6        30.00S FOG                 .
+ 7PM EST DEC 06 2011 DRIZZLE   41  39  93 NW7       30.01R FOG                 .
+ 8PM EST DEC 06 2011 FOG       40  38  93 NW10      30.02R VSB 1/4             .
+ 9PM EST DEC 06 2011 DRIZZLE   40  38  93 NW12      30.02S FOG                 .
+10PM EST DEC 06 2011 DRIZZLE   40  38  93 N7        29.98F FOG                 .
+11PM EST DEC 06 2011 CLOUDY    39  37  93 CALM      29.97S                     .
+12AM EST DEC 07 2011 CLOUDY    40  37  89 NW3       29.98R                     .
+ 1AM EST DEC 07 2011 CLOUDY    40  38  93 W3        30.00F                     .
+ 2AM EST DEC 07 2011 CLOUDY    39  37  93 NW8       29.98F                     .
+ 3AM EST DEC 07 2011 CLOUDY    39  37  92 NW5       29.96F                     .
+ 4AM EST DEC 07 2011 CLOUDY    39  36  89 NW3       29.96S                     .
+ 5AM EST DEC 07 2011 NOT AVBL                                                  .
+ 6AM EST DEC 07 2011 FLURRIES  39  36  89 N7        29.91S                     .
+ 7AM EST DEC 07 2011 FLURRIES  39  36  89 N8        29.90F                     .
+ 8AM EST DEC 07 2011 LGT RAIN  39  36  89 N8        29.90R                     .
+ 9AM EST DEC 07 2011 LGT RAIN  39  36  89 N7        29.88F FOG                 .
+10AM EST DEC 07 2011 DRIZZLE   38  36  92 NW10      29.89R FOG                 .
+11AM EST DEC 07 2011 LGT RAIN  37  34  89 NW13      29.88F FOG                 .
+12PM EST DEC 07 2011 DRIZZLE   36  33  89 NW13      29.87F FOG                 .
+ 1PM EST DEC 07 2011 DRIZZLE   35  32  88 N12       29.85F FOG     WCI  27     .
+ 2PM EST DEC 07 2011 LGT SNOW  35  31  85 NW12      29.83F FOG     WCI  27     .
+ 3PM EST DEC 07 2011 LGT SNOW  34  31  88 N10       29.79F FOG     WCI  26     .
+ 4PM EST DEC 07 2011 LGT SNOW  34  31  88 NW13      29.81R FOG     WCI  25     .
+ 5PM EST DEC 07 2011 FLURRIES  34  31  88 NW8       29.84R WCI  27             .
+ 6PM EST DEC 07 2011 FLURRIES  34  31  88 NW8       29.85R WCI  27             .
+ 7PM EST DEC 07 2011 FLURRIES  34  31  88 NW16G22   29.85S WCI  24             .
+ 8PM EST DEC 07 2011 FLURRIES  33  29  85 NW12      29.89R WCI  24             .
+ 9PM EST DEC 07 2011 CLOUDY    32  26  78 NW20      29.92R WCI  20             .
+10PM EST DEC 07 2011 CLOUDY    31  22  69 W18G25    29.93R WCI  19             .
+11PM EST DEC 07 2011 CLOUDY    31  21  66 NW18      29.96R WCI  19             .
+12AM EST DEC 08 2011 MOCLDY    30  20  66 W10       29.98R WCI  21             .
+ 1AM EST DEC 08 2011 PTCLDY    30  22  72 W7        29.99R WCI  23             .
+ 2AM EST DEC 08 2011 CLEAR     29  22  75 W10       30.01R WCI  20             .
+ 3AM EST DEC 08 2011 CLEAR     29  21  72 W9        30.04R WCI  20             .
+ 4AM EST DEC 08 2011 CLEAR     28  21  75 W10G17    30.05R WCI  19             .
+ 5AM EST DEC 08 2011 CLOUDY    28  21  75 W9        30.08R WCI  19             .
+ 6AM EST DEC 08 2011 CLOUDY    29  21  72 W12       30.12R WCI  19             .
+ 7AM EST DEC 08 2011 CLOUDY    29  22  75 SW7       30.14R WCI  22             .
+ 8AM EST DEC 08 2011 MOCLDY    29  21  72 SW9       30.18R WCI  20             .
+ 9AM EST DEC 08 2011 MOSUNNY   30  22  72 SW8       30.19R WCI  22             .
+10AM EST DEC 08 2011 MOSUNNY   31  22  69 SW9       30.21R WCI  23             .
+11AM EST DEC 08 2011 CLOUDY    31  22  69 W12       30.23R WCI  22             .
+12PM EST DEC 08 2011 MOSUNNY   32  22  66 W7        30.23S WCI  26             .
+ 1PM EST DEC 08 2011 MOSUNNY   34  22  61 SW10      30.22F WCI  26             .
+ 2PM EST DEC 08 2011 MOSUNNY   34  21  59 SW9       30.21F WCI  27             .
+ 3PM EST DEC 08 2011 MOSUNNY   34  22  61 S9        30.21S WCI  27             .
+ 4PM EST DEC 08 2011 PTCLDY    34  22  61 SW9       30.22R WCI  27             .
+ 5PM EST DEC 08 2011 MOCLDY    34  23  64 S6        30.23R WCI  29             .
+ 6PM EST DEC 08 2011 PTCLDY    32  23  69 S6        30.23S WCI  26             .
+ 7PM EST DEC 08 2011 PTCLDY    31  23  72 S5        30.24R WCI  26             .
+ 8PM EST DEC 08 2011 CLOUDY    30  23  75 S3        30.24S                     .
+ 9PM EST DEC 08 2011 CLOUDY    30  24  78 S3        30.24S                     .
+10PM EST DEC 08 2011 CLOUDY    29  24  82 S3        30.23F                     .
+11PM EST DEC 08 2011 CLOUDY    30  25  81 S3        30.24R                     .
+12AM EST DEC 09 2011 CLOUDY    31  26  82 CALM      30.23F                     .
+ 1AM EST DEC 09 2011 CLOUDY    32  26  78 CALM      30.23S                     .
+ 2AM EST DEC 09 2011 CLOUDY    32  26  78 CALM      30.21F                     .
+ 3AM EST DEC 09 2011 CLOUDY    30  26  85 CALM      30.21S                     .
+ 4AM EST DEC 09 2011 MOCLDY    30  25  81 CALM      30.19F                     .
+ 5AM EST DEC 09 2011 CLOUDY    30  25  81 CALM      30.19S                     .
+ 6AM EST DEC 09 2011 CLOUDY    29  25  85 CALM      30.18F                     .
+ 7AM EST DEC 09 2011 MOCLDY    29  25  85 S3        30.19R                     .
+ 8AM EST DEC 09 2011 CLOUDY    30  25  81 S3        30.19S                     .
+ 9AM EST DEC 09 2011 CLOUDY    32  26  78 S3        30.20R                     .
+10AM EST DEC 09 2011 PTSUNNY   35  25  66 SW9       30.21R WCI  28             .
+11AM EST DEC 09 2011 PTSUNNY   39  24  55 SW10      30.21S                     .
+12PM EST DEC 09 2011 PTSUNNY   40  23  50 SW12G20   30.20F                     .
+ 1PM EST DEC 09 2011 PTSUNNY   41  22  46 SW12      30.18F                     .
+ 2PM EST DEC 09 2011 PTSUNNY   41  22  46 SW9       30.17F                     .
+ 3PM EST DEC 09 2011 PTSUNNY   42  22  44 W8        30.16F                     .
+ 4PM EST DEC 09 2011 MOCLDY    42  22  44 SW6       30.17R                     .
+ 5PM EST DEC 09 2011 MOCLDY    41  23  48 W3        30.18R                     .
+ 6PM EST DEC 09 2011 CLOUDY    40  23  50 SW6       30.20R                     .
+ 7PM EST DEC 09 2011 CLOUDY    39  24  55 W8        30.22R                     .
+ 8PM EST DEC 09 2011 FLURRIES  38  25  59 W7        30.24R                     .
+ 9PM EST DEC 09 2011 FLURRIES  36  28  73 W9        30.24S                     .
+10PM EST DEC 09 2011 FLURRIES  35  29  78 W6        30.25R WCI  30             .
+11PM EST DEC 09 2011 CLOUDY    35  29  78 W5        30.26R WCI  31             .
+12AM EST DEC 10 2011 FLURRIES  35  29  78 NW14      30.26S WCI  26             .
+ 1AM EST DEC 10 2011 FLURRIES  33  25  72 NW9       30.27R WCI  25             .
+ 2AM EST DEC 10 2011 FLURRIES  32  25  75 NW15      30.27S WCI  22             .
+ 3AM EST DEC 10 2011 CLOUDY    32  23  69 NW9       30.28R WCI  24             .
+ 4AM EST DEC 10 2011 MOCLDY    31  22  69 NW13      30.30R WCI  21             .
+ 5AM EST DEC 10 2011 PTCLDY    28  18  66 W8        30.31R WCI  20             .
+ 6AM EST DEC 10 2011 CLOUDY    29  19  66 NW9       30.34R WCI  20             .
+ 7AM EST DEC 10 2011 CLOUDY    27  16  63 W12       30.37R WCI  17             .
+ 8AM EST DEC 10 2011 CLEAR     24  13  62 NW12      30.39R WCI  13             .
+ 9AM EST DEC 10 2011 SUNNY     26  14  60 W10       30.41R WCI  16             .
+10AM EST DEC 10 2011 SUNNY     27  12  53 W7        30.43R WCI  19             .
+11AM EST DEC 10 2011 MOSUNNY   28  11  48 W7        30.43S WCI  21             .
+12PM EST DEC 10 2011 MOSUNNY   30  12  47 NW8       30.42F WCI  22             .
+ 1PM EST DEC 10 2011 MOSUNNY   31  12  45 W8        30.41F WCI  23             .
+ 2PM EST DEC 10 2011 MOSUNNY   32  11  41 NW10      30.40F WCI  24             .
+ 3PM EST DEC 10 2011 MOSUNNY   31   8  38 W7G17     30.40S WCI  24             .
+ 4PM EST DEC 10 2011 PTCLDY    31   7  36 NW12      30.42R WCI  22             .
+ 5PM EST DEC 10 2011 CLEAR     29   8  41 NW8       30.42S WCI  21             .
+ 6PM EST DEC 10 2011 CLEAR     28   8  43 W3        30.43R                     .
+ 7PM EST DEC 10 2011 CLEAR     26   9  48 W3        30.45R                     .
+ 8PM EST DEC 10 2011 CLEAR     26  10  50 W3        30.46R                     .
+ 9PM EST DEC 10 2011 CLEAR     25  11  55 CALM      30.46S                     .
+10PM EST DEC 10 2011 CLEAR     23  12  62 CALM      30.48R                     .
+11PM EST DEC 10 2011 CLEAR     22  13  68 CALM      30.49R                     .
+12AM EST DEC 11 2011 CLEAR     22  11  62 CALM      30.50R                     .
+ 1AM EST DEC 11 2011 CLEAR     20  13  74 CALM      30.50S                     .
+ 2AM EST DEC 11 2011 CLEAR     21  13  71 CALM      30.50S                     .
+ 3AM EST DEC 11 2011 CLEAR     19  12  74 CALM      30.51R                     .
+ 4AM EST DEC 11 2011 CLEAR     19  12  74 CALM      30.52R                     .
+ 5AM EST DEC 11 2011 CLEAR     18  12  77 CALM      30.51F                     .
+ 6AM EST DEC 11 2011 CLEAR     18  12  77 CALM      30.53R                     .
+ 7AM EST DEC 11 2011 CLEAR     17  12  80 CALM      30.55R                     .
+ 8AM EST DEC 11 2011 CLEAR     17  11  77 CALM      30.56R                     .
+ 9AM EST DEC 11 2011 SUNNY     20  14  77 CALM      30.58R                     .
+10AM EST DEC 11 2011 SUNNY     25  15  66 CALM      30.60R                     .
+11AM EST DEC 11 2011 SUNNY     29  12  49 W6        30.60S WCI  23             .
+12PM EST DEC 11 2011 SUNNY     31   9  39 SW7       30.57F WCI  24             .
+ 1PM EST DEC 11 2011 SUNNY     33   9  36 VRB5      30.54F WCI  29             .
+ 2PM EST DEC 11 2011 SUNNY     35   7  31 S3        30.52F                     .
+ 3PM EST DEC 11 2011 SUNNY     37   8  30 S3        30.50F                     .
+ 4PM EST DEC 11 2011 CLEAR     37   6  27 S5        30.49F                     .
+ 5PM EST DEC 11 2011 CLEAR     36   9  32 CALM      30.48F                     .
+ 6PM EST DEC 11 2011 CLEAR     33  10  38 CALM      30.49R                     .
+ 7PM EST DEC 11 2011 CLEAR     32  10  40 CALM      30.49S                     .
+ 8PM EST DEC 11 2011 CLEAR     29  12  49 CALM      30.49S                     .
+ 9PM EST DEC 11 2011 CLEAR     27  14  58 CALM      30.49S                     .
+10PM EST DEC 11 2011 CLEAR     25  13  60 CALM      30.48F                     .
+11PM EST DEC 11 2011 CLEAR     25  14  63 CALM      30.48S                     .
+12AM EST DEC 12 2011 CLEAR     22  14  71 CALM      30.47F                     .
+ 1AM EST DEC 12 2011 CLEAR     22  13  68 CALM      30.47S                     .
+ 2AM EST DEC 12 2011 CLEAR     22  13  68 CALM      30.45F                     .
+ 3AM EST DEC 12 2011 CLEAR     21  14  74 CALM      30.46R                     .
+ 4AM EST DEC 12 2011 CLEAR     20  12  71 CALM      30.44F                     .
+ 5AM EST DEC 12 2011 CLEAR     19  12  74 CALM      30.43F                     .
+ 6AM EST DEC 12 2011 CLEAR     18  12  77 CALM      30.44R                     .
+ 7AM EST DEC 12 2011 PTCLDY    19  13  77 CALM      30.45R                     .
+ 8AM EST DEC 12 2011 PTCLDY    18  12  77 CALM      30.45S                     .
+ 9AM EST DEC 12 2011 MOSUNNY   21  16  81 CALM      30.45S                     .
+10AM EST DEC 12 2011 MOSUNNY   26  19  74 CALM      30.47R                     .
+11AM EST DEC 12 2011 MOSUNNY   30  20  66 CALM      30.47S                     .
+12PM EST DEC 12 2011 PTSUNNY   37  20  50 CALM      30.45F                     .
+ 1PM EST DEC 12 2011 PTSUNNY   40  19  43 CALM      30.44F                     .
+ 2PM EST DEC 12 2011 CLOUDY    43  17  35 SW5       30.43F                     .
+ 3PM EST DEC 12 2011 PTSUNNY   43  13  29 S7        30.42F                     .
+ 4PM EST DEC 12 2011 MOCLDY    43  17  35 SW6       30.42S                     .
+ 5PM EST DEC 12 2011 MOCLDY    41  17  38 CALM      30.42S                     .
+ 6PM EST DEC 12 2011 MOCLDY    36  18  48 CALM      30.41F                     .
+ 7PM EST DEC 12 2011 MOCLDY    33  18  53 CALM      30.41S                     .
+ 8PM EST DEC 12 2011 FAIR      31  19  61 CALM      30.42R                     .
+ 9PM EST DEC 12 2011 FAIR      29  18  63 CALM      30.42S                     .
+10PM EST DEC 12 2011 FAIR      28  18  66 CALM      30.41F                     .
+11PM EST DEC 12 2011 FAIR      28  18  66 CALM      30.42R                     .
+12AM EST DEC 13 2011 FAIR      27  18  69 CALM      30.43R                     .
+ 1AM EST DEC 13 2011 FAIR      25  18  74 CALM      30.43S                     .
+ 2AM EST DEC 13 2011 FAIR      25  18  74 CALM      30.42F                     .
+ 3AM EST DEC 13 2011 FAIR      23  17  78 CALM      30.43R                     .
+ 4AM EST DEC 13 2011 FAIR      23  17  78 CALM      30.44R                     .
+ 5AM EST DEC 13 2011 FAIR      23  17  78 CALM      30.43F                     .
+ 6AM EST DEC 13 2011 FAIR      23  17  78 CALM      30.42F                     .
+ 7AM EST DEC 13 2011 FAIR      22  16  78 CALM      30.44R                     .
+ 8AM EST DEC 13 2011 FAIR      23  17  78 CALM      30.44S                     .
+ 9AM EST DEC 13 2011 PTSUNNY   26  20  77 CALM      30.46R                     .
+10AM EST DEC 13 2011 CLOUDY    30  23  75 CALM      30.46S                     .
+11AM EST DEC 13 2011 CLOUDY    35  24  64 CALM      30.47R                     .
+12PM EST DEC 13 2011 PTSUNNY   40  25  55 CALM      30.45F                     .
+ 1PM EST DEC 13 2011 PTSUNNY   43  25  49 SE5       30.42F                     .
+ 2PM EST DEC 13 2011 MOSUNNY   45  26  47 VRB5      30.42S                     .
+ 3PM EST DEC 13 2011 PTSUNNY   46  25  43 SW7       30.40F                     .
+ 4PM EST DEC 13 2011 MOCLDY    46  23  40 SW5       30.39F                     .
+ 5PM EST DEC 13 2011 CLOUDY    44  24  45 W3        30.40R                     .
+ 6PM EST DEC 13 2011 CLOUDY    43  25  49 CALM      30.40S                     .
+ 7PM EST DEC 13 2011 CLOUDY    42  25  50 W3        30.41R                     .
+ 8PM EST DEC 13 2011 CLOUDY    40  26  57 CALM      30.40F                     .
+ 9PM EST DEC 13 2011 CLOUDY    42  25  50 CALM      30.40S                     .
+10PM EST DEC 13 2011 CLOUDY    40  26  57 SE3       30.38F                     .
+11PM EST DEC 13 2011 CLOUDY    40  30  67 CALM      30.38S                     .
+12AM EST DEC 14 2011 CLOUDY    40  28  62 CALM      30.38S                     .
+ 1AM EST DEC 14 2011 CLOUDY    39  27  62 CALM      30.36F                     .
+ 2AM EST DEC 14 2011 NOT AVBL                                                  .
+ 3AM EST DEC 14 2011 CLOUDY    39  27  62 CALM      30.34                      .
+ 4AM EST DEC 14 2011 CLOUDY    38  29  70 CALM      30.33F                     .
+ 5AM EST DEC 14 2011 CLOUDY    39  27  62 CALM      30.32F                     .
+ 6AM EST DEC 14 2011 CLOUDY    38  28  67 CALM      30.33R                     .
+ 7AM EST DEC 14 2011 CLOUDY    39  28  64 CALM      30.33R                     .
+ 8AM EST DEC 14 2011 LGT RAIN  39  29  67 CALM      30.33S                     .
+ 9AM EST DEC 14 2011 LGT RAIN  38  34  85 CALM      30.33S                     .
+10AM EST DEC 14 2011 LGT RAIN  39  35  86 SE3       30.32F                     .
+11AM EST DEC 14 2011 LGT RAIN  40  35  83 SE6       30.30F                     .
+12PM EST DEC 14 2011 CLOUDY    42  37  82 S5        30.27F                     .
+ 1PM EST DEC 14 2011 DRIZZLE   43  39  86 CALM      30.25F                     .
+ 2PM EST DEC 14 2011 CLOUDY    44  40  85 SE6       30.23F                     .
+ 3PM EST DEC 14 2011 CLOUDY    45  41  86 CALM      30.22F                     .
+ 4PM EST DEC 14 2011 CLOUDY    45  42  89 SE5       30.20F                     .
+ 5PM EST DEC 14 2011 CLOUDY    46  42  86 S6        30.19F                     .
+ 6PM EST DEC 14 2011 CLOUDY    45  43  93 S6        30.16F                     .
+ 7PM EST DEC 14 2011 CLOUDY    45  42  89 S7        30.14F                     .
+ 8PM EST DEC 14 2011 CLOUDY    46  42  86 S7        30.12F                     .
+ 9PM EST DEC 14 2011 CLOUDY    46  42  86 S6        30.10F                     .
+10PM EST DEC 14 2011 CLOUDY    47  43  86 S6        30.08F                     .
+11PM EST DEC 14 2011 CLOUDY    47  43  86 S3        30.07F                     .
+12AM EST DEC 15 2011 CLOUDY    46  42  86 S6        30.05F                     .
+ 1AM EST DEC 15 2011 CLOUDY    48  42  80 S6        30.02F                     .
+ 2AM EST DEC 15 2011 CLOUDY    49  42  77 S8        29.98F                     .
+ 3AM EST DEC 15 2011 CLOUDY    56  42  59 SW14G23   29.98S                     .
+ 4AM EST DEC 15 2011 CLOUDY    58  42  55 SW18G29   29.96F                     .
+ 5AM EST DEC 15 2011 CLOUDY    58  43  57 SW15G25   29.93F                     .
+ 6AM EST DEC 15 2011 CLOUDY    58  43  57 SW20G26   29.91F                     .
+ 7AM EST DEC 15 2011 CLOUDY    58  44  60 S17G28    29.89F                     .
+ 8AM EST DEC 15 2011 LGT RAIN  57  45  64 SW16G28   29.88F                     .
+ 9AM EST DEC 15 2011 CLOUDY    56  48  74 SW14G23   29.88R                     .
+10AM EST DEC 15 2011 LGT RAIN  55  49  80 SW18G25   29.86F                     .
+11AM EST DEC 15 2011 LGT RAIN  54  50  87 SW15G35   29.85F FOG                 .
+12PM EST DEC 15 2011 DRIZZLE   54  51  90 SW20G29   29.83F FOG                 .
+ 1PM EST DEC 15 2011 DRIZZLE   56  50  80 SW17G29   29.78F                     .
+ 2PM EST DEC 15 2011 CLOUDY    57  51  80 SW18G29   29.77F                     .
+ 3PM EST DEC 15 2011 DRIZZLE   56  52  86 SW18G29   29.76F                     .
+ 4PM EST DEC 15 2011 LGT RAIN  56  52  86 SW14G22   29.77S FOG                 .
+ 5PM EST DEC 15 2011 CLOUDY    57  52  83 SW13G23   29.77S                     .
+ 6PM EST DEC 15 2011 LGT RAIN  54  49  83 W22G32    29.81R                     .
+ 7PM EST DEC 15 2011 CLOUDY    54  48  80 W10       29.83R                     .
+ 8PM EST DEC 15 2011 CLOUDY    54  45  71 W17G31    29.86R                     .
+ 9PM EST DEC 15 2011 PTCLDY    51  42  71 W15G26    29.88R                     .
+10PM EST DEC 15 2011 MOCLDY    47  36  65 W16G25    29.93R                     .
+11PM EST DEC 15 2011 MOCLDY    43  33  68 W15G21    29.97R                     .
+12AM EST DEC 16 2011 CLOUDY    41  29  62 W15G24    30.00R                     .
+ 1AM EST DEC 16 2011 CLOUDY    40  29  64 W15G23    30.03R                     .
+ 2AM EST DEC 16 2011 CLOUDY    39  27  62 W23G33    30.06R                     .
+ 3AM EST DEC 16 2011 CLOUDY    36  24  62 W21G31    30.13R                     .
+ 4AM EST DEC 16 2011 CLOUDY    35  23  61 W17G25    30.16R WCI  25             .
+ 5AM EST DEC 16 2011 CLOUDY    35  23  61 W8        30.18R WCI  29             .
+ 6AM EST DEC 16 2011 CLOUDY    35  23  61 W7        30.20R WCI  29             .
+ 7AM EST DEC 16 2011 CLOUDY    35  23  61 SW6       30.22R WCI  30             .
+ 8AM EST DEC 16 2011 CLOUDY    34  24  67 SW6       30.22S WCI  29             .
+ 9AM EST DEC 16 2011 CLOUDY    34  24  67 W5        30.21F WCI  30             .
+10AM EST DEC 16 2011 CLOUDY    35  24  64 NW8       30.24R WCI  29             .
+11AM EST DEC 16 2011 CLOUDY    35  22  58 NW9       30.25S WCI  28             .
+12PM EST DEC 16 2011 CLOUDY    35  23  61 W8        30.25S WCI  29             .
+ 1PM EST DEC 16 2011 CLOUDY    35  23  61 W7        30.23F WCI  29             .
+ 2PM EST DEC 16 2011 CLOUDY    36  22  56 W6        30.22F                     .
+ 3PM EST DEC 16 2011 CLOUDY    36  24  62 SW6       30.20F                     .
+ 4PM EST DEC 16 2011 CLOUDY    36  24  62 W7        30.21R                     .
+ 5PM EST DEC 16 2011 CLOUDY    35  24  64 W5        30.21S WCI  31             .
+ 6PM EST DEC 16 2011 CLOUDY    35  24  64 W5        30.21S WCI  31             .
+ 7PM EST DEC 16 2011 CLOUDY    35  24  64 CALM      30.19F                     .
+ 8PM EST DEC 16 2011 CLOUDY    34  22  61 NW6       30.20R WCI  29             .
+ 9PM EST DEC 16 2011 CLOUDY    34  23  64 NW5       30.20S WCI  30             .
+10PM EST DEC 16 2011 CLOUDY    33  22  63 NW8       30.21R WCI  26             .
+11PM EST DEC 16 2011 CLOUDY    33  22  63 W5        30.21S WCI  29             .
+12AM EST DEC 17 2011 CLOUDY    33  21  61 W7        30.21S WCI  27             .
+ 1AM EST DEC 17 2011 CLOUDY    32  21  64 NW12      30.20F WCI  23             .
+ 2AM EST DEC 17 2011 CLOUDY    32  20  61 NW12      30.18F WCI  23             .
+ 3AM EST DEC 17 2011 CLOUDY    32  21  64 W7        30.21R WCI  26             .
+ 4AM EST DEC 17 2011 FLURRIES  32  21  64 W6        30.20F WCI  26             .
+ 5AM EST DEC 17 2011 CLOUDY    31  21  66 W10       30.21R WCI  22             .
+ 6AM EST DEC 17 2011 CLOUDY    31  21  66 W7        30.21S WCI  24             .
+ 7AM EST DEC 17 2011 CLOUDY    31  21  66 W7        30.22R WCI  24             .
+ 8AM EST DEC 17 2011 CLOUDY    31  21  66 W6        30.22S WCI  25             .
+ 9AM EST DEC 17 2011 CLOUDY    31  21  66 W5        30.21F WCI  26             .
+10AM EST DEC 17 2011 LGT SNOW  30  21  69 W8        30.23R WCI  22             .
+11AM EST DEC 17 2011 LGT SNOW  30  25  80 W6        30.23S WCI  24             .
+12PM EST DEC 17 2011 LGT SNOW  30  24  78 W8        30.21F WCI  22             .
+ 1PM EST DEC 17 2011 LGT SNOW  31  24  75 W9        30.18F WCI  23             .
+ 2PM EST DEC 17 2011 LGT SNOW  31  25  78 W8        30.17F WCI  23             .
+ 3PM EST DEC 17 2011 LGT SNOW  30  24  78 W8        30.17S WCI  22             .
+ 4PM EST DEC 17 2011 LGT SNOW  30  24  78 W6        30.17S WCI  24             .
+ 5PM EST DEC 17 2011 LGT SNOW  30  25  81 W5        30.18R WCI  25             .
+ 6PM EST DEC 17 2011 LGT SNOW  29  25  85 W3        30.19R FOG                 .
+ 7PM EST DEC 17 2011 FLURRIES  30  26  85 W3        30.17F                     .
+ 8PM EST DEC 17 2011 FLURRIES  30  25  81 W3        30.17S                     .
+ 9PM EST DEC 17 2011 FLURRIES  29  25  85 W3        30.17S                     .
+10PM EST DEC 17 2011 FLURRIES  29  25  85 W6        30.17S WCI  23             .
+11PM EST DEC 17 2011 FLURRIES  29  25  85 W7        30.17S WCI  22             .
+12AM EST DEC 18 2011 LGT SNOW  29  25  85 W5        30.16F FOG     WCI  24     .
+ 1AM EST DEC 18 2011 LGT SNOW  29  26  89 CALM      30.15F FOG                 .
+ 2AM EST DEC 18 2011 FLURRIES  29  25  85 CALM      30.15S                     .
+ 3AM EST DEC 18 2011 FLURRIES  29  25  85 CALM      30.15S                     .
+ 4AM EST DEC 18 2011 LGT SNOW  28  25  88 SW3       30.16R FOG                 .
+ 5AM EST DEC 18 2011 LGT SNOW  28  25  88 W3        30.16S FOG                 .
+ 6AM EST DEC 18 2011 FLURRIES  28  25  88 SW5       30.17R WCI  23             .
+ 7AM EST DEC 18 2011 FLURRIES  28  24  85 SW5       30.19R WCI  23             .
+ 8AM EST DEC 18 2011 FLURRIES  28  24  85 SW6       30.20R WCI  22             .
+ 9AM EST DEC 18 2011 FLURRIES  29  25  85 SW6       30.21R WCI  23             .
+10AM EST DEC 18 2011 LGT SNOW  30  26  85 SW7       30.22R FOG     WCI  23     .
+11AM EST DEC 18 2011 FLURRIES  32  26  78 SW9G17    30.22S WCI  24             .
+12PM EST DEC 18 2011 PTSUNNY   33  25  72 W7G18     30.22S WCI  27             .
+ 1PM EST DEC 18 2011 PTSUNNY   34  24  67 W7        30.21F WCI  28             .
+ 2PM EST DEC 18 2011 PTSUNNY   36  23  59 W12       30.20F                     .
+ 3PM EST DEC 18 2011 CLOUDY    34  22  61 SW8       30.21R WCI  27             .
+ 4PM EST DEC 18 2011 CLOUDY    35  22  58 VRB7      30.21S WCI  29             .
+ 5PM EST DEC 18 2011 CLOUDY    34  22  61 SW5       30.22R WCI  30             .
+ 6PM EST DEC 18 2011 CLOUDY    34  22  61 SW6       30.23R WCI  29             .
+ 7PM EST DEC 18 2011 PTCLDY    32  22  66 S3        30.22F                     .
+ 8PM EST DEC 18 2011 PTCLDY    31  23  72 S5        30.20F WCI  26             .
+ 9PM EST DEC 18 2011 CLOUDY    31  23  72 S3        30.19F                     .
+10PM EST DEC 18 2011 PTCLDY    30  23  75 S5        30.18F WCI  25             .
+11PM EST DEC 18 2011 PTCLDY    29  23  78 S5        30.17F WCI  24             .
+12AM EST DEC 19 2011 CLEAR     30  23  75 S5        30.15F WCI  25             .
+ 1AM EST DEC 19 2011 CLEAR     31  23  72 S7        30.13F WCI  24             .
+ 2AM EST DEC 19 2011 CLEAR     30  23  75 S6        30.12F WCI  24             .
+ 3AM EST DEC 19 2011 CLEAR     33  24  69 S6        30.12S WCI  28             .
+ 4AM EST DEC 19 2011 CLEAR     34  25  69 S7        30.10F WCI  28             .
+ 5AM EST DEC 19 2011 CLEAR     34  25  69 S7        30.08F WCI  28             .
+ 6AM EST DEC 19 2011 CLEAR     35  25  66 S7        30.07F WCI  29             .
+ 7AM EST DEC 19 2011 PTCLDY    36  25  64 S9        30.07S                     .
+ 8AM EST DEC 19 2011 PTCLDY    36  25  64 SW8       30.07S                     .
+ 9AM EST DEC 19 2011 PTSUNNY   38  26  62 S13       30.06F                     .
+10AM EST DEC 19 2011 PTSUNNY   40  27  59 SW15G21   30.05F                     .
+11AM EST DEC 19 2011 CLOUDY    43  27  53 SW13G20   30.06R                     .
+12PM EST DEC 19 2011 CLOUDY    44  29  55 SW16G23   30.04F                     .
+ 1PM EST DEC 19 2011 DRIZZLE   43  30  60 SW15G24   30.02F                     .
+ 2PM EST DEC 19 2011 CLOUDY    43  30  60 SW10G21   30.01F                     .
+ 3PM EST DEC 19 2011 DRIZZLE   43  34  70 SW13G24   30.01S                     .
+ 4PM EST DEC 19 2011 CLOUDY    42  34  73 SW9       30.02R                     .
+ 5PM EST DEC 19 2011 CLOUDY    44  32  62 SW12G18   30.03R                     .
+ 6PM EST DEC 19 2011 CLOUDY    44  31  60 SW10G21   30.03S                     .
+ 7PM EST DEC 19 2011 CLOUDY    45  31  58 SW9       30.04R                     .
+ 8PM EST DEC 19 2011 CLOUDY    44  33  65 SW12      30.05R                     .
+ 9PM EST DEC 19 2011 CLOUDY    44  33  65 SW7       30.07R                     .
+10PM EST DEC 19 2011 CLOUDY    44  34  67 SW9G17    30.06F                     .
+11PM EST DEC 19 2011 CLOUDY    45  35  68 SW12      30.06S                     .
+12AM EST DEC 20 2011 CLOUDY    45  36  70 SW10      30.06S                     .
+ 1AM EST DEC 20 2011 LGT RAIN  45  36  70 W8        30.08R                     .
+ 2AM EST DEC 20 2011 LGT RAIN  43  39  86 W6        30.08S                     .
+ 3AM EST DEC 20 2011 LGT RAIN  43  39  86 W6        30.10R                     .
+ 4AM EST DEC 20 2011 LGT RAIN  42  39  89 VRB5      30.09F                     .
+ 5AM EST DEC 20 2011 LGT RAIN  40  37  89 N12       30.09S                     .
+ 6AM EST DEC 20 2011 FLURRIES  38  35  89 N8        30.11R                     .
+ 7AM EST DEC 20 2011 FLURRIES  37  35  92 N3        30.12R                     .
+ 8AM EST DEC 20 2011 LGT SNOW  37  34  89 N7        30.14R FOG                 .
+ 9AM EST DEC 20 2011 LGT RAIN  37  35  92 N3        30.13F FOG                 .
+10AM EST DEC 20 2011 LGT RAIN  37  34  89 NE3       30.15R                     .
+11AM EST DEC 20 2011 LGT RAIN  37  35  92 E3        30.14F FOG                 .
+12PM EST DEC 20 2011 LGT RAIN  38  35  89 CALM      30.11F FOG                 .
+ 1PM EST DEC 20 2011 LGT RAIN  39  36  89 SE5       30.08F FOG                 .
+ 2PM EST DEC 20 2011 LGT RAIN  39  37  92 SE3       30.06F FOG                 .
+ 3PM EST DEC 20 2011 LGT RAIN  40  38  93 E5        30.03F FOG                 .
+ 4PM EST DEC 20 2011 CLOUDY    40  38  93 CALM      30.04R FOG                 .
+ 5PM EST DEC 20 2011 FOG       41  39  93 E3        30.04S VSB 1/4             .
+ 6PM EST DEC 20 2011 FOG       41  39  93 CALM      30.04S VSB 1/4             .
+ 7PM EST DEC 20 2011 FOG       40  39  97 CALM      30.02F VSB 1/4             .
+ 8PM EST DEC 20 2011 CLOUDY    40  39  97 E3        30.02S FOG                 .
+ 9PM EST DEC 20 2011 CLOUDY    42  40  92 E3        30.00F FOG                 .
+10PM EST DEC 20 2011 CLOUDY    42  40  92 CALM      29.98F FOG                 .
+11PM EST DEC 20 2011 LGT RAIN  42  40  92 SE3       29.97F FOG                 .
+12AM EST DEC 21 2011 LGT RAIN  43  41  93 N3        29.97S FOG                 .
+ 1AM EST DEC 21 2011 LGT RAIN  42  41  96 S5        29.93F FOG                 .
+ 2AM EST DEC 21 2011 CLOUDY    43  41  93 CALM      29.91F FOG                 .
+ 3AM EST DEC 21 2011 CLOUDY    44  42  93 CALM      29.90S FOG                 .
+ 4AM EST DEC 21 2011 CLOUDY    45  43  93 S3        29.87F                     .
+ 5AM EST DEC 21 2011 CLOUDY    46  44  93 SE5       29.84F                     .
+ 6AM EST DEC 21 2011 LGT RAIN  48  45  89 S6        29.82F                     .
+ 7AM EST DEC 21 2011 CLOUDY    49  46  90 SE6       29.80F                     .
+ 8AM EST DEC 21 2011 CLOUDY    51  48  89 S3        29.79F                     .
+ 9AM EST DEC 21 2011 LGT RAIN  53  48  83 S5        29.79S                     .
+10AM EST DEC 21 2011 LGT RAIN  53  49  86 S5        29.78F FOG                 .
+11AM EST DEC 21 2011 LGT RAIN  53  50  89 S6        29.77F                     .
+12PM EST DEC 21 2011 LGT RAIN  54  51  90 S5        29.73F                     .
+ 1PM EST DEC 21 2011 CLOUDY    55  52  89 S3        29.69F                     .
+ 2PM EST DEC 21 2011 CLOUDY    59  51  75 SW14G21   29.66F                     .
+ 3PM EST DEC 21 2011 LGT RAIN  59  52  77 SW14G22   29.64S                     .
+ 4PM EST DEC 21 2011 MOCLDY    57  52  82 SW10      29.64R                     .
+ 5PM EST DEC 21 2011 MOCLDY    56  51  84 SW8       29.66R                     .
+ 6PM EST DEC 21 2011 LGT RAIN  55  49  80 W14G20    29.71R                     .
+ 7PM EST DEC 21 2011 CLOUDY    51  45  79 W9G21     29.80R                     .
+ 8PM EST DEC 21 2011 CLOUDY    50  44  80 W9        29.84R                     .
+ 9PM EST DEC 21 2011 CLOUDY    49  42  77 W12       29.89R                     .
+10PM EST DEC 21 2011 CLOUDY    49  42  77 W5        29.92R                     .
+11PM EST DEC 21 2011 CLOUDY    48  39  71 W5        29.95R                     .
+12AM EST DEC 22 2011 CLOUDY    48  38  68 W9G16     29.95S                     .
+ 1AM EST DEC 22 2011 CLOUDY    47  39  74 W7        29.96R                     .
+ 2AM EST DEC 22 2011 CLOUDY    47  39  74 W3        29.97R                     .
+ 3AM EST DEC 22 2011 CLOUDY    46  39  76 CALM      30.00R                     .
+ 4AM EST DEC 22 2011 CLOUDY    46  39  76 SW3       30.01R                     .
+ 5AM EST DEC 22 2011 CLOUDY    46  39  76 CALM      30.01S                     .
+ 6AM EST DEC 22 2011 CLOUDY    45  39  79 SW6       30.03R                     .
+ 7AM EST DEC 22 2011 CLOUDY    45  39  79 S3        30.06R                     .
+ 8AM EST DEC 22 2011 CLOUDY    45  39  79 SW3       30.08R                     .
+ 9AM EST DEC 22 2011 CLOUDY    45  40  82 CALM      30.07F                     .
+10AM EST DEC 22 2011 CLOUDY    46  40  79 SW6       30.07S                     .
+11AM EST DEC 22 2011 CLOUDY    47  41  80 SW6       30.10R                     .
+12PM EST DEC 22 2011 CLOUDY    48  41  76 W5        30.07F                     .
+ 1PM EST DEC 22 2011 CLOUDY    48  39  71 VRB5      30.05F                     .
+ 2PM EST DEC 22 2011 CLOUDY    49  40  71 W5        30.07R                     .
+ 3PM EST DEC 22 2011 CLOUDY    48  40  73 N9        30.01F                     .
+ 4PM EST DEC 22 2011 LGT RAIN  48  40  73 CALM      30.01S                     .
+ 5PM EST DEC 22 2011 CLOUDY    47  41  80 VRB3      30.01S                     .
+ 6PM EST DEC 22 2011 LGT RAIN  45  41  86 N7        29.97F                     .
+ 7PM EST DEC 22 2011 LGT RAIN  45  41  87 N6        29.99R FOG                 .
+ 8PM EST DEC 22 2011 LGT RAIN  43  41  93 N6        29.99S FOG                 .
+ 9PM EST DEC 22 2011 LGT RAIN  43  40  89 N7        29.97F FOG                 .
+10PM EST DEC 22 2011 LGT RAIN  43  40  89 N14       29.91F FOG                 .
+11PM EST DEC 22 2011 LGT RAIN  41  38  89 N17       29.94R FOG                 .
+12AM EST DEC 23 2011 CLOUDY    40  37  89 N10       29.95R                     .
+ 1AM EST DEC 23 2011 LGT RAIN  39  36  89 NW9       29.95S                     .
+ 2AM EST DEC 23 2011 CLOUDY    38  35  89 NW10      29.96R                     .
+ 3AM EST DEC 23 2011 CLOUDY    37  34  89 NW14      30.02R                     .
+ 4AM EST DEC 23 2011 CLOUDY    37  34  89 NW7       30.04R                     .
+ 5AM EST DEC 23 2011 CLOUDY    37  34  89 NW10      30.04S                     .
+ 6AM EST DEC 23 2011 CLOUDY    37  34  89 NW9       30.09R                     .
+ 7AM EST DEC 23 2011 CLOUDY    37  34  89 NW7       30.11R                     .
+ 8AM EST DEC 23 2011 CLOUDY    37  33  85 NW10      30.13R                     .
+ 9AM EST DEC 23 2011 PTSUNNY   37  32  82 NW8       30.14R                     .
+10AM EST DEC 23 2011 NOT AVBL                                                  .
+11AM EST DEC 23 2011 DRIZZLE   36  31  82 NW13      30.20R                     .
+12PM EST DEC 23 2011 DRIZZLE   35  32  88 NW8       30.20S WCI  29             .
+ 1PM EST DEC 23 2011 FLURRIES  35  30  82 NW10      30.19F WCI  27             .
+ 2PM EST DEC 23 2011 FLURRIES  35  30  82 NW7       30.19S WCI  29             .
+ 3PM EST DEC 23 2011 CLOUDY    35  29  78 NW9       30.19S WCI  28             .
+ 4PM EST DEC 23 2011 CLOUDY    34  29  82 NW6       30.20R WCI  29             .
+ 5PM EST DEC 23 2011 LGT SNOW  34  28  79 NW7       30.21R WCI  28             .
+ 6PM EST DEC 23 2011 LGT SNOW  33  29  85 N7        30.23R FOG     WCI  27     .
+ 7PM EST DEC 23 2011 FLURRIES  32  28  85 N7        30.24R WCI  26             .
+ 8PM EST DEC 23 2011 FLURRIES  32  27  81 N7        30.24S WCI  26             .
+ 9PM EST DEC 23 2011 CLOUDY    32  26  78 NW6       30.23F WCI  26             .
+10PM EST DEC 23 2011 CLOUDY    32  27  81 NW5       30.23S WCI  27             .
+11PM EST DEC 23 2011 CLOUDY    32  26  78 W7        30.24R WCI  26             .
+12AM EST DEC 24 2011 CLOUDY    31  26  82 W9        30.26R WCI  23             .
+ 1AM EST DEC 24 2011 FLURRIES  31  24  75 NW14      30.27R WCI  21             .
+ 2AM EST DEC 24 2011 CLOUDY    30  21  69 NW9       30.27S WCI  22             .
+ 3AM EST DEC 24 2011 CLOUDY    29  20  69 W3        30.30R                     .
+ 4AM EST DEC 24 2011 CLOUDY    30  21  69 W3        30.32R                     .
+ 5AM EST DEC 24 2011 CLOUDY    30  21  69 CALM      30.33R                     .
+ 6AM EST DEC 24 2011 CLOUDY    30  22  72 SW3       30.35R                     .
+ 7AM EST DEC 24 2011 CLOUDY    30  23  75 CALM      30.37R                     .
+ 8AM EST DEC 24 2011 MOCLDY    30  23  75 CALM      30.38R                     .
+ 9AM EST DEC 24 2011 CLOUDY    31  24  75 CALM      30.39R                     .
+10AM EST DEC 24 2011 PTSUNNY   32  24  72 CALM      30.41R                     .
+11AM EST DEC 24 2011 CLOUDY    34  27  75 W6        30.40F WCI  29             .
+12PM EST DEC 24 2011 PTSUNNY   36  26  67 W7        30.38F                     .
+ 1PM EST DEC 24 2011 PTSUNNY   36  25  64 SW7       30.35F                     .
+ 2PM EST DEC 24 2011 PTSUNNY   36  24  62 S6        30.33F                     .
+ 3PM EST DEC 24 2011 PTSUNNY   37  24  59 SW6       30.32F                     .
+ 4PM EST DEC 24 2011 CLOUDY    37  25  61 SW5       30.33R                     .
+ 5PM EST DEC 24 2011 CLOUDY    37  25  61 SW3       30.33S                     .
+ 6PM EST DEC 24 2011 PTCLDY    35  26  69 CALM      30.32F                     .
+ 7PM EST DEC 24 2011 PTCLDY    33  26  75 S3        30.32S                     .
+ 8PM EST DEC 24 2011 CLEAR     33  25  72 S3        30.31F                     .
+ 9PM EST DEC 24 2011 CLEAR     33  24  69 S5        30.31S WCI  29             .
+10PM EST DEC 24 2011 NOT AVBL                                                  .
+11PM EST DEC 24 2011 CLEAR     32  24  72 S5        30.28  WCI  27             .
+12AM EST DEC 25 2011 CLEAR     30  24  78 S5        30.27F WCI  25             .
+ 1AM EST DEC 25 2011 CLEAR     31  24  75 S5        30.25F WCI  26             .
+ 2AM EST DEC 25 2011 CLEAR     31  24  75 S5        30.24F WCI  26             .
+ 3AM EST DEC 25 2011 CLEAR     30  24  78 SW6       30.24S WCI  24             .
+ 4AM EST DEC 25 2011 CLEAR     30  24  78 S5        30.22F WCI  25             .
+ 5AM EST DEC 25 2011 CLEAR     30  25  81 S7        30.20F WCI  23             .
+ 6AM EST DEC 25 2011 CLEAR     31  25  78 S7        30.19F WCI  24             .
+ 7AM EST DEC 25 2011 CLEAR     31  25  78 S8        30.19S WCI  23             .
+ 8AM EST DEC 25 2011 CLEAR     31  25  78 SW7       30.18F WCI  24             .
+ 9AM EST DEC 25 2011 SUNNY     32  25  75 S10       30.16F WCI  24             .
+10AM EST DEC 25 2011 MOSUNNY   34  26  72 S13G20    30.16S WCI  25             .
+11AM EST DEC 25 2011 PTSUNNY   36  26  67 SW12G21   30.14F                     .
+12PM EST DEC 25 2011 MOSUNNY   39  26  59 SW20G26   30.09F                     .
+ 1PM EST DEC 25 2011 PTSUNNY   43  26  51 SW12G22   30.06F                     .
+ 2PM EST DEC 25 2011 CLOUDY    44  24  45 SW18G26   30.02F                     .
+ 3PM EST DEC 25 2011 PTSUNNY   44  24  45 SW12G20   29.98F                     .
+ 4PM EST DEC 25 2011 PTCLDY    46  23  40 SW16G24   29.98S                     .
+ 5PM EST DEC 25 2011 PTCLDY    44  23  43 SW13G18   29.97F                     .
+ 6PM EST DEC 25 2011 CLOUDY    44  24  45 W7        29.99R                     .
+ 7PM EST DEC 25 2011 CLOUDY    44  24  45 W12       30.02R                     .
+ 8PM EST DEC 25 2011 CLOUDY    42  27  55 W17G23    30.03R                     .
+ 9PM EST DEC 25 2011 CLOUDY    41  25  53 NW28      30.05R                     .
+10PM EST DEC 25 2011 CLOUDY    40  26  57 NW20G25   30.08R                     .
+11PM EST DEC 25 2011 CLOUDY    38  25  59 NW20G28   30.11R                     .
+12AM EST DEC 26 2011 FLURRIES  37  25  61 NW14G23   30.13R                     .
+ 1AM EST DEC 26 2011 CLOUDY    37  25  61 W12       30.16R                     .
+ 2AM EST DEC 26 2011 CLOUDY    37  25  61 W12       30.18R                     .
+ 3AM EST DEC 26 2011 CLOUDY    37  25  61 W13       30.22R                     .
+ 4AM EST DEC 26 2011 CLOUDY    36  26  67 W8        30.22S                     .
+ 5AM EST DEC 26 2011 CLOUDY    36  27  69 W10       30.23R                     .
+ 6AM EST DEC 26 2011 CLOUDY    36  26  67 W12       30.26R                     .
+ 7AM EST DEC 26 2011 MOCLDY    35  26  69 W9        30.29R WCI  28             .
+ 8AM EST DEC 26 2011 PTCLDY    32  26  78 W7        30.32R WCI  26             .
+ 9AM EST DEC 26 2011 CLOUDY    34  26  72 W5        30.33R WCI  30             .
+10AM EST DEC 26 2011 CLOUDY    35  27  72 W6        30.35R WCI  30             .
+11AM EST DEC 26 2011 CLOUDY    37  25  61 NW12      30.35S                     .
+12PM EST DEC 26 2011 CLOUDY    37  23  56 W7        30.32F                     .
+ 1PM EST DEC 26 2011 MOSUNNY   38  23  55 SW6       30.28F                     .
+ 2PM EST DEC 26 2011 MOSUNNY   40  23  50 VRB3      30.26F                     .
+ 3PM EST DEC 26 2011 MOSUNNY   41  24  51 SW10      30.25F                     .
+ 4PM EST DEC 26 2011 MOCLDY    41  24  51 S9        30.25S                     .
+ 5PM EST DEC 26 2011 MOCLDY    40  24  53 CALM      30.21F                     .
+ 6PM EST DEC 26 2011 PTCLDY    35  24  64 E3        30.18F                     .
+ 7PM EST DEC 26 2011 PTCLDY    35  24  64 S5        30.17F WCI  31             .
+ 8PM EST DEC 26 2011 PTCLDY    35  24  64 S3        30.15F                     .
+ 9PM EST DEC 26 2011 CLOUDY    36  24  62 CALM      30.12F                     .
+10PM EST DEC 26 2011 CLOUDY    34  25  69 SE6       30.09F WCI  29             .
+11PM EST DEC 26 2011 CLOUDY    33  25  72 SE3       30.04F                     .
+12AM EST DEC 27 2011 CLOUDY    35  25  66 CALM      30.01F                     .
+ 1AM EST DEC 27 2011 CLOUDY    34  25  69 CALM      29.98F                     .
+ 2AM EST DEC 27 2011 CLOUDY    35  25  66 SE3       29.94F                     .
+ 3AM EST DEC 27 2011 CLOUDY    35  25  66 E5        29.89F WCI  31             .
+ 4AM EST DEC 27 2011 CLOUDY    34  26  72 NE3       29.86F                     .
+ 5AM EST DEC 27 2011 CLOUDY    35  26  69 CALM      29.82F                     .
+ 6AM EST DEC 27 2011 CLOUDY    35  26  69 CALM      29.78F                     .
+ 7AM EST DEC 27 2011 CLOUDY    34  26  72 E3        29.78S                     .
+ 8AM EST DEC 27 2011 CLOUDY    35  26  69 SE3       29.75F                     .
+ 9AM EST DEC 27 2011 LGT RAIN  35  29  78 SE3       29.74F                     .
+10AM EST DEC 27 2011 LGT RAIN  35  31  85 E6        29.68F FOG     WCI  30     .
+11AM EST DEC 27 2011 LGT RAIN  36  34  93 SE9       29.60F FOG                 .
+12PM EST DEC 27 2011 LGT RAIN  38  36  92 SE9       29.53F FOG                 .
+ 1PM EST DEC 27 2011 LGT RAIN  38  37  97 SE6       29.45F VSB 1/2             .
+ 2PM EST DEC 27 2011 LGT RAIN  39  37  92 SE7       29.37F VSB 1/4             .
+ 3PM EST DEC 27 2011 LGT RAIN  40  39  97 S3        29.34F VSB 1               .
+ 4PM EST DEC 27 2011 LGT RAIN  41  39  93 SW5       29.34S FOG                 .
+ 5PM EST DEC 27 2011 LGT RAIN  42  38  85 SW16G25   29.35R                     .
+ 6PM EST DEC 27 2011 LGT RAIN  40  36  86 SW14G22   29.39R                     .
+ 7PM EST DEC 27 2011 LGT RAIN  40  36  86 W9G17     29.42R                     .
+ 8PM EST DEC 27 2011 LGT RAIN  38  35  89 W12G21    29.45R                     .
+ 9PM EST DEC 27 2011 LGT RAIN  36  32  85 W14       29.48R                     .
+10PM EST DEC 27 2011 FLURRIES  35  31  85 W13G20    29.51R WCI  26             .
+11PM EST DEC 27 2011 FLURRIES  34  30  85 W9G22     29.53R WCI  27             .
+12AM EST DEC 28 2011 FLURRIES  35  30  82 W12       29.55R WCI  27             .
+ 1AM EST DEC 28 2011 FLURRIES  35  31  85 W16G24    29.57R WCI  25             .
+ 2AM EST DEC 28 2011 FLURRIES  35  30  82 W14G25    29.60R WCI  26             .
+ 3AM EST DEC 28 2011 NOT AVBL                                                  .
+ 4AM EST DEC 28 2011 FLURRIES  34  29  82 W23G30    29.66R WCI  22             .
+ 5AM EST DEC 28 2011 FLURRIES  33  28  81 NW24G30   29.68R WCI  20             .
+ 6AM EST DEC 28 2011 FLURRIES  32  26  78 NW21      29.72R WCI  20             .
+ 7AM EST DEC 28 2011 FLURRIES  30  22  72 NW25G32   29.76R WCI  16             .
+ 8AM EST DEC 28 2011 FLURRIES  29  22  75 W18G32    29.80R WCI  16             .
+ 9AM EST DEC 28 2011 FLURRIES  28  19  69 W20G28    29.84R WCI  15             .
+10AM EST DEC 28 2011 FLURRIES  28  19  69 W18G26    29.88R WCI  15             .
+11AM EST DEC 28 2011 FLURRIES  29  18  63 W18       29.90R WCI  16             .
+12PM EST DEC 28 2011 FLURRIES  29  18  63 W17G24    29.89F WCI  17             .
+ 1PM EST DEC 28 2011 FLURRIES  30  15  53 W20G33    29.88F WCI  17             .
+ 2PM EST DEC 28 2011 PTSUNNY   30  16  56 W22G28    29.89R WCI  17             .
+ 3PM EST DEC 28 2011 MOSUNNY   31  14  49 NW20G28   29.91R WCI  19             .
+ 4PM EST DEC 28 2011 PTCLDY    31  13  47 NW16G24   29.94R WCI  20             .
+ 5PM EST DEC 28 2011 PTCLDY    29  14  53 NW17      29.96R WCI  17             .
+ 6PM EST DEC 28 2011 PTCLDY    27  13  55 NW10      29.98R WCI  17             .
+ 7PM EST DEC 28 2011 PTCLDY    26  14  60 NW7       30.00R WCI  18             .
+ 8PM EST DEC 28 2011 PTCLDY    25  14  63 NW6       30.00S WCI  18             .
+ 9PM EST DEC 28 2011 PTCLDY    23  14  68 W6        29.99F WCI  16             .
+10PM EST DEC 28 2011 PTCLDY    23  15  71 CALM      30.00R                     .
+11PM EST DEC 28 2011 MOCLDY    24  15  68 CALM      29.99F                     .
+12AM EST DEC 29 2011 PTCLDY    22  16  78 CALM      29.98F                     .
+ 1AM EST DEC 29 2011 PTCLDY    21  16  81 CALM      29.97F                     .
+ 2AM EST DEC 29 2011 PTCLDY    20  15  81 CALM      29.97S                     .
+ 3AM EST DEC 29 2011 PTCLDY    20  15  81 CALM      29.97S                     .
+ 4AM EST DEC 29 2011 MOCLDY    20  16  84 CALM      29.96F                     .
+ 5AM EST DEC 29 2011 MOCLDY    21  16  81 CALM      29.94F                     .
+ 6AM EST DEC 29 2011 CLOUDY    21  17  84 CALM      29.93F                     .
+ 7AM EST DEC 29 2011 CLOUDY    23  18  81 CALM      29.93S                     .
+ 8AM EST DEC 29 2011 CLOUDY    25  19  78 S5        29.93S WCI  19             .
+ 9AM EST DEC 29 2011 LGT SNOW  26  22  84 S5        29.94R FOG     WCI  20     .
+10AM EST DEC 29 2011 FLURRIES  28  25  88 SE5       29.93F WCI  23             .
+11AM EST DEC 29 2011 PTSUNNY   31  26  82 S7        29.91F WCI  24             .
+12PM EST DEC 29 2011 CLOUDY    35  27  72 S8        29.87F WCI  29             .
+ 1PM EST DEC 29 2011 CLOUDY    37  28  70 S10       29.82F                     .
+ 2PM EST DEC 29 2011 CLOUDY    39  28  64 SW10G18   29.80F                     .
+ 3PM EST DEC 29 2011 CLOUDY    40  28  62 S12       29.78F                     .
+ 4PM EST DEC 29 2011 CLOUDY    40  29  64 S8        29.77F                     .
+ 5PM EST DEC 29 2011 CLOUDY    39  28  64 SE7       29.77S                     .
+ 6PM EST DEC 29 2011 MOCLDY    38  28  67 SE7       29.76F                     .
+ 7PM EST DEC 29 2011 MOCLDY    37  28  70 S6        29.76S                     .
+ 8PM EST DEC 29 2011 CLOUDY    38  28  67 S5        29.77R                     .
+ 9PM EST DEC 29 2011 MOCLDY    37  28  70 SE5       29.78R                     .
+10PM EST DEC 29 2011 PTCLDY    38  27  64 S6        29.79R                     .
+11PM EST DEC 29 2011 PTCLDY    40  26  57 S8        29.79S                     .
+12AM EST DEC 30 2011 MOCLDY    41  26  55 S8        29.80R                     .
+ 1AM EST DEC 30 2011 CLOUDY    42  26  53 SW12      29.80S                     .
+ 2AM EST DEC 30 2011 CLOUDY    43  28  55 SW8       29.82R                     .
+ 3AM EST DEC 30 2011 CLOUDY    44  28  53 SW9       29.84R                     .
+ 4AM EST DEC 30 2011 CLOUDY    43  28  55 SW8       29.85R                     .
+ 5AM EST DEC 30 2011 CLOUDY    42  28  57 SW6       29.85S                     .
+ 6AM EST DEC 30 2011 PTCLDY    39  28  64 S3        29.85S                     .
+ 7AM EST DEC 30 2011 CLOUDY    39  28  64 S5        29.87R                     .
+ 8AM EST DEC 30 2011 CLOUDY    39  28  64 S7        29.88R                     .
+ 9AM EST DEC 30 2011 CLOUDY    41  29  62 S9        29.89R                     .
+10AM EST DEC 30 2011 CLOUDY    44  30  57 SW9       29.89S                     .
+11AM EST DEC 30 2011 CLOUDY    45  32  60 S7        29.89S                     .
+12PM EST DEC 30 2011 DRIZZLE   47  34  60 S9G17     29.85F                     .
+ 1PM EST DEC 30 2011 NOT AVBL                                                  .
+ 2PM EST DEC 30 2011 CLOUDY    50  36  58 S7        29.77                      .
+ 3PM EST DEC 30 2011 CLOUDY    50  36  58 SE9       29.75F                     .
+ 4PM EST DEC 30 2011 MOCLDY    51  37  58 SE6       29.75S                     .
+ 5PM EST DEC 30 2011 CLOUDY    51  37  58 SE9       29.73F                     .
+ 6PM EST DEC 30 2011 CLOUDY    50  37  61 SE10      29.72F                     .
+ 7PM EST DEC 30 2011 CLOUDY    51  37  58 SE10      29.70F                     .
+ 8PM EST DEC 30 2011 CLOUDY    51  37  58 S7        29.70S                     .
+ 9PM EST DEC 30 2011 LGT RAIN  50  38  63 SW6       29.72R                     .
+10PM EST DEC 30 2011 LGT RAIN  47  41  80 W17G23    29.72S                     .
+11PM EST DEC 30 2011 CLOUDY    45  40  82 SW5       29.74F                     .
+12AM EST DEC 31 2011 CLOUDY    44  40  85 S5        29.73F                     .
+ 1AM EST DEC 31 2011 MOCLDY    43  39  86 S5        29.72F                     .
+ 2AM EST DEC 31 2011 PTCLDY    42  38  85 SE3       29.73R                     .
+ 3AM EST DEC 31 2011 CLOUDY    42  39  89 CALM      29.75R                     .
+ 4AM EST DEC 31 2011 LGT RAIN  44  38  79 SW7       29.75F                     .
+ 5AM EST DEC 31 2011 CLOUDY    43  38  82 SW8       29.74F                     .
+ 6AM EST DEC 31 2011 CLOUDY    44  38  79 SW6       29.77R                     .
+ 7AM EST DEC 31 2011 CLOUDY    43  38  82 SW6       29.79R                     .
+ 8AM EST DEC 31 2011 CLOUDY    43  37  79 W7        29.82R                     .
+ 9AM EST DEC 31 2011 CLOUDY    43  37  79 W9        29.86R                     .
+10AM EST DEC 31 2011 CLOUDY    42  37  82 W10       29.90R                     .
+11AM EST DEC 31 2011 CLOUDY    42  36  79 W10G17    29.93R                     .
+12PM EST DEC 31 2011 CLOUDY    41  36  82 W10       29.93S                     .
+ 1PM EST DEC 31 2011 DRIZZLE   41  36  82 W9G20     29.95R                     .
+ 2PM EST DEC 31 2011 CLOUDY    42  37  82 W8        29.96R                     .
+ 3PM EST DEC 31 2011 DRIZZLE   42  37  82 W10G17    29.98R                     .
+ 4PM EST DEC 31 2011 CLOUDY    42  37  82 W7        30.01R                     .
+ 5PM EST DEC 31 2011 CLOUDY    41  37  86 SW7       30.03R                     .
+ 6PM EST DEC 31 2011 CLOUDY    41  37  86 SW7       30.05R                     .
