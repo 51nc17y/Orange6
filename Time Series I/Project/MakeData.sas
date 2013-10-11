@@ -87,6 +87,14 @@ data Electric.Master;
 	if weekday(date) in(1, 7) then Weekend = 1; 
 	else Weekend = 0; 
 
+	if month(date)<4 then Season="Winter"; 
+	else if month(date)<10 then Season="Summer"; 
+	else Season="Winter"; 
+	
+	hour2=hour/100;
+	DateTime = put(dhms(date, hour2, 0, 0), datetime10.); 
+	drop hour2; 
+
 	if hour = '100' then AM01 = 1; else AM01 = 0;
 	if hour = '200' then AM02 = 1; else AM02 = 0;
 	if hour = '300' then AM03 = 1; else AM03 = 0;
