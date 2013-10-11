@@ -17,12 +17,28 @@ proc arima data=electric.training1 plot(unpack)=all;
 run;
 quit;
 
+
+/* I am pretty confident this is the best model*/
+ods output forecasts=predicted1;
 proc arima data=electric.training1 plot(unpack)=all;
 	identify var=DUQ (1 24) nlag=100;
 	estimate p=(1,2,3,4,7,9,12,15,17,20,48,72,96) q= (12) (24) method=ML;
 	forecast lead=168;
 run;
 quit;
+
+/*Calculating the MAPE For The Best Model*/
+data combined1;
+merge predicted1 electric.weekone;
+forecast1 = forecast;
+difference1 = DUQ - forecast1;
+MAPE_1 = abs((DUQ-forecast1)/DUQ);
+run;
+
+/*We get 12.052, which we divide by 144 hours to get = 0.08368*/
+proc means data=combined1 sum;
+var MAPE_1;
+run;
 
 /*Still good White Noise after adding 5*/
 proc arima data=electric.training1 plot(unpack)=all;
