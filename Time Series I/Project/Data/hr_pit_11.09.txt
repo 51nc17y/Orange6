@@ -1,0 +1,741 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT AUG 31 2011 MOCLDY    80  64  58 S3        30.10F                   SEP
+ 9PM EDT AUG 31 2011 FAIR      75  65  70 CALM      30.11R                   SEP
+10PM EDT AUG 31 2011 CLEAR     74  65  73 CALM      30.12R                   SEP
+11PM EDT AUG 31 2011 CLEAR     71  65  81 CALM      30.12S                   SEP
+12AM EDT SEP 01 2011 CLEAR     71  65  81 CALM      30.13R                   SEP
+ 1AM EDT SEP 01 2011 PTCLDY    70  65  84 CALM      30.12F                   SEP
+ 2AM EDT SEP 01 2011 MOCLDY    69  65  86 CALM      30.12S                   SEP
+ 3AM EDT SEP 01 2011 CLOUDY    69  65  86 CALM      30.12S                     .
+ 4AM EDT SEP 01 2011 MOCLDY    69  64  84 CALM      30.11F                     .
+ 5AM EDT SEP 01 2011 CLOUDY    68  64  87 CALM      30.10F                     .
+ 6AM EDT SEP 01 2011 CLOUDY    69  65  86 SE5       30.09F                     .
+ 7AM EDT SEP 01 2011 CLOUDY    69  65  86 S7        30.08F                     .
+ 8AM EDT SEP 01 2011 CLOUDY    70  64  81 NE7       30.12R                     .
+ 9AM EDT SEP 01 2011 TSTM      68  64  88 N7        30.15R VSB 1               .
+10AM EDT SEP 01 2011 LGT RAIN  68  64  87 E9        30.16S                     .
+11AM EDT SEP 01 2011 CLOUDY    68  64  87 S8        30.17R                     .
+12PM EDT SEP 01 2011 PTSUNNY   71  65  81 S13       30.14F                     .
+ 1PM EDT SEP 01 2011 MOSUNNY   75  65  70 S10G17    30.11F                     .
+ 2PM EDT SEP 01 2011 PTSUNNY   77  65  66 S8        30.11S THUNDER             .
+ 3PM EDT SEP 01 2011 MOSUNNY   79  66  64 S10G16    30.07F                     .
+ 4PM EDT SEP 01 2011 MOSUNNY   81  66  60 SW10G22   30.05F                     .
+ 5PM EDT SEP 01 2011 MOSUNNY   82  67  60 SW9       30.03F                     .
+ 6PM EDT SEP 01 2011 MOSUNNY   80  66  62 SW9       30.02F                     .
+ 7PM EDT SEP 01 2011 PTCLDY    79  67  66 SW5       30.02S                     .
+ 8PM EDT SEP 01 2011 MOCLDY    78  68  71 SW5       30.02S                     .
+ 9PM EDT SEP 01 2011 PTCLDY    76  68  76 CALM      30.02S                     .
+10PM EDT SEP 01 2011 PTCLDY    74  69  85 S3        30.03R                     .
+11PM EDT SEP 01 2011 PTCLDY    74  68  81 SE5       30.03S                     .
+12AM EDT SEP 02 2011 MOCLDY    73  68  84 SE3       30.03S                     .
+ 1AM EDT SEP 02 2011 PTCLDY    72  68  87 CALM      30.03S                     .
+ 2AM EDT SEP 02 2011 FAIR      71  68  90 CALM      30.01F                     .
+ 3AM EDT SEP 02 2011 PTCLDY    70  68  93 CALM      30.00F FOG                 .
+ 4AM EDT SEP 02 2011 PTCLDY    71  68  90 CALM      30.00S FOG                 .
+ 5AM EDT SEP 02 2011 CLEAR     69  66  90 CALM      30.00S FOG                 .
+ 6AM EDT SEP 02 2011 CLEAR     68  66  93 CALM      30.00S FOG                 .
+ 7AM EDT SEP 02 2011 FOG       68  66  93 CALM      30.02R VSB 1               .
+ 8AM EDT SEP 02 2011 MOSUNNY   70  68  94 S3        30.04R FOG                 .
+ 9AM EDT SEP 02 2011 MOSUNNY   72  69  90 CALM      30.04S FOG                 .
+10AM EDT SEP 02 2011 MOSUNNY   76  70  82 CALM      30.04S HAZE                .
+11AM EDT SEP 02 2011 MOSUNNY   80  71  74 SE3       30.04S                     .
+12PM EDT SEP 02 2011 MOSUNNY   84  71  65 CALM      30.03F HX  89              .
+ 1PM EDT SEP 02 2011 MOSUNNY   86  69  56 CALM      30.01F HX  90              .
+ 2PM EDT SEP 02 2011 MOSUNNY   90  70  51 VRB3      30.01S HX  95              .
+ 3PM EDT SEP 02 2011 MOSUNNY   90  69  50 W3        30.00F HX  94              .
+ 4PM EDT SEP 02 2011 PTSUNNY   90  68  48 VRB3      29.99F HX  94              .
+ 5PM EDT SEP 02 2011 PTSUNNY   90  69  50 W3        29.99S HX  94              .
+ 6PM EDT SEP 02 2011 PTSUNNY   89  70  53 W5        29.98F HX  94              .
+ 7PM EDT SEP 02 2011 PTCLDY    89  71  55 W3        29.98S HX  95              .
+ 8PM EDT SEP 02 2011 PTCLDY    88  70  55 NE3       29.98S HX  93              .
+ 9PM EDT SEP 02 2011 MOCLDY    84  71  65 CALM      29.99R HX  89              .
+10PM EDT SEP 02 2011 MOCLDY    82  72  71 CALM      29.99S HX  87              .
+11PM EDT SEP 02 2011 PTCLDY    81  72  74 CALM      29.99S HX  85              .
+12AM EDT SEP 03 2011 PTCLDY    78  73  84 CALM      29.97F HAZE                .
+ 1AM EDT SEP 03 2011 PTCLDY    78  72  81 CALM      29.97S HAZE                .
+ 2AM EDT SEP 03 2011 MOCLDY    78  72  81 CALM      29.97S HAZE                .
+ 3AM EDT SEP 03 2011 MOCLDY    78  72  81 CALM      29.96F HAZE                .
+ 4AM EDT SEP 03 2011 CLOUDY    77  72  84 NW5       29.97R HAZE                .
+ 5AM EDT SEP 03 2011 MOCLDY    75  71  87 CALM      29.97S FOG                 .
+ 6AM EDT SEP 03 2011 MOCLDY    73  71  93 CALM      29.98R FOG                 .
+ 7AM EDT SEP 03 2011 PTCLDY    72  70  93 CALM      29.99R FOG                 .
+ 8AM EDT SEP 03 2011 MOSUNNY   74  71  91 CALM      30.00R FOG                 .
+ 9AM EDT SEP 03 2011 MOSUNNY   77  72  84 S3        30.00S HAZE                .
+10AM EDT SEP 03 2011 SUNNY     82  71  69 CALM      29.99F HX  86              .
+11AM EDT SEP 03 2011 SUNNY     84  71  65 CALM      29.99S HX  89              .
+12PM EDT SEP 03 2011 SUNNY     88  71  57 CALM      29.99S HX  94              .
+ 1PM EDT SEP 03 2011 MOSUNNY   92  68  45 CALM      29.98F HX  96              .
+ 2PM EDT SEP 03 2011 MOSUNNY   91  68  46 CALM      29.96F HX  95              .
+ 3PM EDT SEP 03 2011 MOSUNNY   93  66  40 CALM      29.95F HX  96              .
+ 4PM EDT SEP 03 2011 MOSUNNY   95  65  37 W10       29.92F HX  97              .
+ 5PM EDT SEP 03 2011 MOSUNNY   94  60  32 SW6       29.91F HX  94              .
+ 6PM EDT SEP 03 2011 MOSUNNY   93  62  35 W5        29.91S HX  93              .
+ 7PM EDT SEP 03 2011 PTCLDY    90  64  42 W5        29.90F HX  91              .
+ 8PM EDT SEP 03 2011 PTCLDY    86  66  51 CALM      29.90S HX  88              .
+ 9PM EDT SEP 03 2011 PTCLDY    84  67  56 SW3       29.92R HX  86              .
+10PM EDT SEP 03 2011 CLEAR     83  66  56 SW3       29.92S HX  85              .
+11PM EDT SEP 03 2011 CLEAR     80  67  64 CALM      29.93R                     .
+12AM EDT SEP 04 2011 CLEAR     78  68  71 CALM      29.91F                     .
+ 1AM EDT SEP 04 2011 CLEAR     79  67  66 S3        29.90F                     .
+ 2AM EDT SEP 04 2011 CLEAR     79  66  64 SW8       29.89F                     .
+ 3AM EDT SEP 04 2011 CLEAR     77  67  71 S6        29.88F                     .
+ 4AM EDT SEP 04 2011 MOCLDY    75  67  76 W10       29.91R                     .
+ 5AM EDT SEP 04 2011 NOT AVBL                                                  .
+ 6AM EDT SEP 04 2011 CLOUDY    72  65  78 W6        29.94                      .
+ 7AM EDT SEP 04 2011 CLOUDY    72  65  78 CALM      29.93F                     .
+ 8AM EDT SEP 04 2011 CLOUDY    71  66  84 S5        29.93S                     .
+ 9AM EDT SEP 04 2011 CLOUDY    74  66  76 S6        29.92F                     .
+10AM EDT SEP 04 2011 CLOUDY    75  65  70 S8        29.90F                     .
+11AM EDT SEP 04 2011 CLOUDY    78  66  66 SE7       29.89F                     .
+12PM EDT SEP 04 2011 CLOUDY    78  64  61 S6        29.91R                     .
+ 1PM EDT SEP 04 2011 CLOUDY    80  64  58 S6        29.88F                     .
+ 2PM EDT SEP 04 2011 CLOUDY    79  65  62 S7        29.89R                     .
+ 3PM EDT SEP 04 2011 CLOUDY    76  68  76 SW6       29.89S                     .
+ 4PM EDT SEP 04 2011 LGT RAIN  76  67  73 S3        29.88F                     .
+ 5PM EDT SEP 04 2011 CLOUDY    76  70  82 CALM      29.85F                     .
+ 6PM EDT SEP 04 2011 CLOUDY    76  63  64 NW12      29.86R                     .
+ 7PM EDT SEP 04 2011 RAIN      69  64  84 S5        29.86S                     .
+ 8PM EDT SEP 04 2011 CLOUDY    68  65  90 SE7       29.82F                     .
+ 9PM EDT SEP 04 2011 LGT RAIN  67  65  93 W6        29.87R                     .
+10PM EDT SEP 04 2011 LGT RAIN  68  65  90 SW7       29.88R                     .
+11PM EDT SEP 04 2011 LGT RAIN  68  65  90 SW7       29.86F                     .
+12AM EDT SEP 05 2011 LGT RAIN  67  65  93 SW5       29.85F                     .
+ 1AM EDT SEP 05 2011 LGT RAIN  67  65  93 S3        29.85S                     .
+ 2AM EDT SEP 05 2011 LGT RAIN  67  65  93 SW3       29.83F FOG                 .
+ 3AM EDT SEP 05 2011 LGT RAIN  67  65  93 W3        29.81F FOG                 .
+ 4AM EDT SEP 05 2011 LGT RAIN  67  65  93 SW3       29.81S FOG                 .
+ 5AM EDT SEP 05 2011 LGT RAIN  67  65  93 W5        29.80S FOG                 .
+ 6AM EDT SEP 05 2011 LGT RAIN  64  61  90 N8        29.81R                     .
+ 7AM EDT SEP 05 2011 LGT RAIN  64  61  90 N7        29.82S                     .
+ 8AM EDT SEP 05 2011 NOT AVBL                                                  .
+ 9AM EDT SEP 05 2011 LGT RAIN  64  61  90 NW6       29.84  FOG                 .
+10AM EDT SEP 05 2011 LGT RAIN  65  62  90 N8        29.85R                     .
+11AM EDT SEP 05 2011 LGT RAIN  65  62  90 N8        29.86R                     .
+12PM EDT SEP 05 2011 LGT RAIN  64  60  87 NE9G18    29.87R                     .
+ 1PM EDT SEP 05 2011 LGT RAIN  64  59  83 N8        29.88R                     .
+ 2PM EDT SEP 05 2011 NOT AVBL                                                  .
+ 3PM EDT SEP 05 2011 LGT RAIN  64  59  83 NE6       29.89                      .
+ 4PM EDT SEP 05 2011 LGT RAIN  63  59  87 NE6       29.89S FOG                 .
+ 5PM EDT SEP 05 2011 LGT RAIN  62  59  90 N10       29.90R                     .
+ 6PM EDT SEP 05 2011 LGT RAIN  62  59  90 N8        29.90S                     .
+ 7PM EDT SEP 05 2011 LGT RAIN  62  58  86 N10       29.91R FOG                 .
+ 8PM EDT SEP 05 2011 CLOUDY    61  57  87 N9        29.91S                     .
+ 9PM EDT SEP 05 2011 CLOUDY    60  55  83 N10       29.93R                     .
+10PM EDT SEP 05 2011 CLOUDY    59  55  87 N10       29.96R                     .
+11PM EDT SEP 05 2011 LGT RAIN  59  54  83 N10       29.96S                     .
+12AM EDT SEP 06 2011 LGT RAIN  58  54  86 N9        29.96S                     .
+ 1AM EDT SEP 06 2011 LGT RAIN  58  54  86 N10       29.98R                     .
+ 2AM EDT SEP 06 2011 LGT RAIN  58  54  86 N10       29.96F                     .
+ 3AM EDT SEP 06 2011 LGT RAIN  57  54  89 N8        29.97R                     .
+ 4AM EDT SEP 06 2011 LGT RAIN  57  54  89 N7        29.96F                     .
+ 5AM EDT SEP 06 2011 NOT AVBL                                                  .
+ 6AM EDT SEP 06 2011 LGT RAIN  57  54  89 N9        29.98                      .
+ 7AM EDT SEP 06 2011 LGT RAIN  56  54  93 NE9       29.97F                     .
+ 8AM EDT SEP 06 2011 LGT RAIN  56  53  90 NE9       29.97S                     .
+ 9AM EDT SEP 06 2011 LGT RAIN  56  54  93 E6        30.02R                     .
+10AM EDT SEP 06 2011 LGT RAIN  57  54  89 NE9       30.02S                     .
+11AM EDT SEP 06 2011 LGT RAIN  58  54  86 NE10      30.03R                     .
+12PM EDT SEP 06 2011 CLOUDY    59  55  87 NE9G20    30.03S                     .
+ 1PM EDT SEP 06 2011 LGT RAIN  60  55  83 NE10      30.02F                     .
+ 2PM EDT SEP 06 2011 CLOUDY    62  56  80 NE9       30.02S                     .
+ 3PM EDT SEP 06 2011 CLOUDY    62  55  77 NE13      30.01F                     .
+ 4PM EDT SEP 06 2011 NOT AVBL                                                  .
+ 5PM EDT SEP 06 2011 CLOUDY    61  55  81 E10G16    30.01S                     .
+ 6PM EDT SEP 06 2011 CLOUDY    61  55  81 E9G17     30.01S                     .
+ 7PM EDT SEP 06 2011 CLOUDY    60  53  77 NE16G22   30.01S                     .
+ 8PM EDT SEP 06 2011 CLOUDY    60  54  80 E10G18    30.00F                     .
+ 9PM EDT SEP 06 2011 CLOUDY    60  54  80 NE14G22   29.99F                     .
+10PM EDT SEP 06 2011 DRIZZLE   59  53  80 E16G23    29.99S                     .
+11PM EDT SEP 06 2011 LGT RAIN  58  54  86 NE12      29.98F                     .
+12AM EDT SEP 07 2011 LGT RAIN  58  55  90 E12G21    29.97F                     .
+ 1AM EDT SEP 07 2011 LGT RAIN  58  55  90 E8        29.98R                     .
+ 2AM EDT SEP 07 2011 DRIZZLE   58  55  90 E10       29.96F                     .
+ 3AM EDT SEP 07 2011 CLOUDY    58  56  93 E6        29.95S                     .
+ 4AM EDT SEP 07 2011 CLOUDY    59  56  89 E7        29.94F                     .
+ 5AM EDT SEP 07 2011 CLOUDY    59  56  89 NE7       29.94S                     .
+ 6AM EDT SEP 07 2011 CLOUDY    59  57  94 E3        29.94S                     .
+ 7AM EDT SEP 07 2011 CLOUDY    59  57  93 E5        29.95R                     .
+ 8AM EDT SEP 07 2011 CLOUDY    60  57  89 NE5       29.96R                     .
+ 9AM EDT SEP 07 2011 CLOUDY    60  57  89 NE6       29.96S                     .
+10AM EDT SEP 07 2011 CLOUDY    61  58  90 NE7       29.96S                     .
+11AM EDT SEP 07 2011 CLOUDY    63  58  83 E6        29.96S                     .
+12PM EDT SEP 07 2011 CLOUDY    64  59  83 E8        29.95F                     .
+ 1PM EDT SEP 07 2011 CLOUDY    66  61  82 E5        29.92F                     .
+ 2PM EDT SEP 07 2011 CLOUDY    67  60  78 E7        29.93R                     .
+ 3PM EDT SEP 07 2011 CLOUDY    69  61  75 E6        29.91F                     .
+ 4PM EDT SEP 07 2011 CLOUDY    71  63  75 NE7       29.90F                     .
+ 5PM EDT SEP 07 2011 CLOUDY    72  63  73 NE8       29.88F                     .
+ 6PM EDT SEP 07 2011 NOT AVBL                                                  .
+ 7PM EDT SEP 07 2011 MOCLDY    71  62  73 E9        29.88                      .
+ 8PM EDT SEP 07 2011 MOCLDY    68  62  81 E7        29.89R                     .
+ 9PM EDT SEP 07 2011 MOCLDY    67  61  81 E6        29.91R                     .
+10PM EDT SEP 07 2011 CLOUDY    68  62  81 S8        29.93R                     .
+11PM EDT SEP 07 2011 CLOUDY    67  61  81 CALM      29.93S                     .
+12AM EDT SEP 08 2011 MOCLDY    66  62  87 CALM      29.93S                     .
+ 1AM EDT SEP 08 2011 MOCLDY    66  61  84 CALM      29.92F                     .
+ 2AM EDT SEP 08 2011 MOCLDY    64  61  90 CALM      29.92S                     .
+ 3AM EDT SEP 08 2011 MOCLDY    64  61  90 CALM      29.93R                     .
+ 4AM EDT SEP 08 2011 CLOUDY    64  61  90 SE3       29.93S                     .
+ 5AM EDT SEP 08 2011 CLOUDY    63  61  93 CALM      29.92F                     .
+ 6AM EDT SEP 08 2011 CLOUDY    64  61  90 CALM      29.92S                     .
+ 7AM EDT SEP 08 2011 CLOUDY    63  61  93 E3        29.94R                     .
+ 8AM EDT SEP 08 2011 CLOUDY    64  61  90 E3        29.96R                     .
+ 9AM EDT SEP 08 2011 CLOUDY    64  61  90 E5        29.96S                     .
+10AM EDT SEP 08 2011 CLOUDY    65  62  90 CALM      29.96S                     .
+11AM EDT SEP 08 2011 LGT RAIN  67  63  87 S3        29.97R                     .
+12PM EDT SEP 08 2011 LGT RAIN  68  61  78 CALM      29.97S                     .
+ 1PM EDT SEP 08 2011   N/A    N/A N/A N/A MISG        N/A                      .
+ 2PM EDT SEP 08 2011 MOSUNNY   73  61  65 CALM      29.94                      .
+ 3PM EDT SEP 08 2011 PTSUNNY   75  59  57 CALM      29.93F                     .
+ 4PM EDT SEP 08 2011 MOSUNNY   76  59  55 S3        29.91F                     .
+ 5PM EDT SEP 08 2011 MOSUNNY   77  61  57 VRB3      29.91S                     .
+ 6PM EDT SEP 08 2011 PTSUNNY   76  62  62 W7        29.91S                     .
+ 7PM EDT SEP 08 2011 MOCLDY    74  62  66 NW10      29.91S                     .
+ 8PM EDT SEP 08 2011 PTCLDY    72  62  71 NW9       29.91S                     .
+ 9PM EDT SEP 08 2011 CLOUDY    69  64  84 N6        29.94R                     .
+10PM EDT SEP 08 2011 CLOUDY    69  64  84 N6        29.94S                     .
+11PM EDT SEP 08 2011 MOCLDY    68  64  87 NW3       29.93F                     .
+12AM EDT SEP 09 2011 MOCLDY    67  64  90 CALM      29.93S                     .
+ 1AM EDT SEP 09 2011 PTCLDY    65  63  93 CALM      29.92F FOG                 .
+ 2AM EDT SEP 09 2011 CLOUDY    64  63  96 CALM      29.92S FOG                 .
+ 3AM EDT SEP 09 2011 CLOUDY    66  63  90 NW5       29.91F FOG                 .
+ 4AM EDT SEP 09 2011 CLOUDY    66  63  88 SW3       29.91S FOG                 .
+ 5AM EDT SEP 09 2011 CLOUDY    65  63  93 CALM      29.91S FOG                 .
+ 6AM EDT SEP 09 2011 FOG       64  63  94 CALM      29.90S VSB 1/2             .
+ 7AM EDT SEP 09 2011 FOG       63  62  97 CALM      29.91S VSB 1/4             .
+ 8AM EDT SEP 09 2011 FOG       64  62  93 SW5       29.92R VSB 1/4             .
+ 9AM EDT SEP 09 2011 CLOUDY    65  63  93 CALM      29.92S FOG                 .
+10AM EDT SEP 09 2011 CLOUDY    66  63  90 NW5       29.93R FOG                 .
+11AM EDT SEP 09 2011 CLOUDY    68  64  87 W3        29.93S                     .
+12PM EDT SEP 09 2011 CLOUDY    70  63  78 NW6       29.93S                     .
+ 1PM EDT SEP 09 2011 CLOUDY    73  63  68 NW5       29.93S                     .
+ 2PM EDT SEP 09 2011 CLOUDY    76  62  62 CALM      29.92F                     .
+ 3PM EDT SEP 09 2011 CLOUDY    74  62  66 VRB3      29.91F                     .
+ 4PM EDT SEP 09 2011 CLOUDY    73  64  73 E3        29.89F                     .
+ 5PM EDT SEP 09 2011 PTSUNNY   75  63  66 CALM      29.90R                     .
+ 6PM EDT SEP 09 2011 PTSUNNY   75  64  68 NE5       29.90S                     .
+ 7PM EDT SEP 09 2011 LGT RAIN  74  63  68 N3        29.91R                     .
+ 8PM EDT SEP 09 2011 MOCLDY    72  64  76 N5        29.91S                     .
+ 9PM EDT SEP 09 2011 PTCLDY    69  65  86 CALM      29.93R                     .
+10PM EDT SEP 09 2011 PTCLDY    67  64  90 W5        29.94R                     .
+11PM EDT SEP 09 2011 MOCLDY    68  64  87 CALM      29.95R FOG                 .
+12AM EDT SEP 10 2011 MOCLDY    67  62  84 W5        29.95S                     .
+ 1AM EDT SEP 10 2011 MOCLDY    66  61  84 W3        29.94F                     .
+ 2AM EDT SEP 10 2011 MOCLDY    64  61  90 W5        29.95R                     .
+ 3AM EDT SEP 10 2011 MOCLDY    64  61  90 W5        29.94F                     .
+ 4AM EDT SEP 10 2011 CLOUDY    64  62  93 SW3       29.95R FOG                 .
+ 5AM EDT SEP 10 2011 CLOUDY    64  61  90 SW6       29.96R                     .
+ 6AM EDT SEP 10 2011 CLOUDY    63  61  93 W7        29.96S FOG                 .
+ 7AM EDT SEP 10 2011 FOG       63  61  93 W7        29.98R VSB 1               .
+ 8AM EDT SEP 10 2011 FOG       64  61  90 W6        29.99R VSB 1               .
+ 9AM EDT SEP 10 2011 CLOUDY    64  61  90 W6        30.00R FOG                 .
+10AM EDT SEP 10 2011 CLOUDY    67  62  84 W8        30.01R HAZE                .
+11AM EDT SEP 10 2011 PTSUNNY   68  61  78 SW5       30.03R                     .
+12PM EDT SEP 10 2011 PTSUNNY   70  61  73 VRB3      30.03S                     .
+ 1PM EDT SEP 10 2011 PTSUNNY   73  59  60 W5        30.01F                     .
+ 2PM EDT SEP 10 2011 NOT AVBL                                                  .
+ 3PM EDT SEP 10 2011 PTSUNNY   75  59  57 W6        29.99                      .
+ 4PM EDT SEP 10 2011 LGT RAIN  73  61  65 N14       29.99S                     .
+ 5PM EDT SEP 10 2011 MOSUNNY   76  61  59 VRB7      29.98F                     .
+ 6PM EDT SEP 10 2011 MOSUNNY   73  60  63 SW6       29.99R                     .
+ 7PM EDT SEP 10 2011 MOCLDY    73  61  65 SW5       30.00R                     .
+ 8PM EDT SEP 10 2011 MOCLDY    71  62  73 CALM      30.01R                     .
+ 9PM EDT SEP 10 2011 MOCLDY    69  61  75 W5        30.02R                     .
+10PM EDT SEP 10 2011 CLOUDY    68  61  78 W3        30.04R                     .
+11PM EDT SEP 10 2011 MOCLDY    67  61  81 W3        30.05R                     .
+12AM EDT SEP 11 2011 MOCLDY    65  61  87 CALM      30.04F                     .
+ 1AM EDT SEP 11 2011 CLOUDY    65  62  90 CALM      30.05R                     .
+ 2AM EDT SEP 11 2011 CLOUDY    65  61  87 CALM      30.05S                     .
+ 3AM EDT SEP 11 2011 CLOUDY    64  60  87 CALM      30.05S                     .
+ 4AM EDT SEP 11 2011 MOCLDY    64  60  87 CALM      30.04F                     .
+ 5AM EDT SEP 11 2011 CLOUDY    61  59  93 CALM      30.05R                     .
+ 6AM EDT SEP 11 2011 CLOUDY    62  59  90 CALM      30.05S                     .
+ 7AM EDT SEP 11 2011 CLOUDY    62  59  90 CALM      30.06R                     .
+ 8AM EDT SEP 11 2011 PTSUNNY   63  59  87 CALM      30.07R                     .
+ 9AM EDT SEP 11 2011 PTSUNNY   64  59  83 CALM      30.08R                     .
+10AM EDT SEP 11 2011 PTSUNNY   67  59  75 SW3       30.09R                     .
+11AM EDT SEP 11 2011 PTSUNNY   71  59  65 W7        30.09S                     .
+12PM EDT SEP 11 2011 PTSUNNY   73  57  57 SW9       30.08F                     .
+ 1PM EDT SEP 11 2011 PTSUNNY   75  57  53 S8        30.06F                     .
+ 2PM EDT SEP 11 2011 PTSUNNY   75  57  53 S12       30.04F                     .
+ 3PM EDT SEP 11 2011 PTSUNNY   72  59  63 S8        30.03F                     .
+ 4PM EDT SEP 11 2011 PTSUNNY   73  59  61 SW7       30.01F                     .
+ 5PM EDT SEP 11 2011 MOSUNNY   73  60  63 SW5       30.01S                     .
+ 6PM EDT SEP 11 2011 PTSUNNY   72  60  66 SW6       30.02R                     .
+ 7PM EDT SEP 11 2011 TSTM      65  58  78 NW15      30.05R                     .
+ 8PM EDT SEP 11 2011 CLOUDY    63  57  81 CALM      30.04F                     .
+ 9PM EDT SEP 11 2011 MOCLDY    62  58  86 CALM      30.04S                     .
+10PM EDT SEP 11 2011 PTCLDY    61  57  87 SE3       30.04S                     .
+11PM EDT SEP 11 2011 PTCLDY    60  57  89 CALM      30.05R                     .
+12AM EDT SEP 12 2011 CLEAR     60  57  89 CALM      30.05S                     .
+ 1AM EDT SEP 12 2011 FAIR      61  56  83 CALM      30.05S                     .
+ 2AM EDT SEP 12 2011 CLEAR     59  56  89 CALM      30.05S                     .
+ 3AM EDT SEP 12 2011 CLEAR     59  56  89 CALM      30.05S                     .
+ 4AM EDT SEP 12 2011 CLEAR     60  56  86 CALM      30.05S                     .
+ 5AM EDT SEP 12 2011 CLEAR     57  55  93 S3        30.05S                     .
+ 6AM EDT SEP 12 2011 CLEAR     57  55  93 S3        30.05S                     .
+ 7AM EDT SEP 12 2011 CLEAR     57  54  89 CALM      30.06R                     .
+ 8AM EDT SEP 12 2011 SUNNY     57  55  93 S3        30.08R                     .
+ 9AM EDT SEP 12 2011 MOSUNNY   62  58  86 SW3       30.09R                     .
+10AM EDT SEP 12 2011 MOSUNNY   65  59  81 W3        30.10R                     .
+11AM EDT SEP 12 2011 MOSUNNY   68  60  75 SW5       30.10S                     .
+12PM EDT SEP 12 2011 MOSUNNY   71  60  68 SW8       30.09F                     .
+ 1PM EDT SEP 12 2011 MOSUNNY   73  59  61 SW5       30.07F                     .
+ 2PM EDT SEP 12 2011 PTSUNNY   75  59  57 W6        30.05F                     .
+ 3PM EDT SEP 12 2011 PTSUNNY   76  59  55 VRB7      30.03F                     .
+ 4PM EDT SEP 12 2011 PTSUNNY   77  59  53 SW7       30.01F                     .
+ 5PM EDT SEP 12 2011 MOSUNNY   76  59  55 SW6       30.00F                     .
+ 6PM EDT SEP 12 2011 MOSUNNY   76  60  57 S7        30.00S                     .
+ 7PM EDT SEP 12 2011 PTCLDY    75  60  59 SW7       29.99F                     .
+ 8PM EDT SEP 12 2011 PTCLDY    72  60  66 S6        29.99S                     .
+ 9PM EDT SEP 12 2011 MOCLDY    71  60  68 SW6       30.01R                     .
+10PM EDT SEP 12 2011 NOT AVBL                                                  .
+11PM EDT SEP 12 2011 CLOUDY    70  61  73 SW7       30.01                      .
+12AM EDT SEP 13 2011 PTCLDY    69  61  75 SW7       30.01S                     .
+ 1AM EDT SEP 13 2011 FAIR      67  60  78 S3        30.00F                     .
+ 2AM EDT SEP 13 2011 CLEAR     66  59  78 SW3       30.00S                     .
+ 3AM EDT SEP 13 2011 NOT AVBL                                                  .
+ 4AM EDT SEP 13 2011 PTCLDY    66  59  78 SW6       29.98                      .
+ 5AM EDT SEP 13 2011 PTCLDY    65  59  81 SW6       29.97F                     .
+ 6AM EDT SEP 13 2011 CLEAR     65  59  81 SW7       29.97S                     .
+ 7AM EDT SEP 13 2011 PTCLDY    64  59  83 SW8       29.97S                     .
+ 8AM EDT SEP 13 2011 MOSUNNY   65  59  81 SW8       29.98R                     .
+ 9AM EDT SEP 13 2011 MOSUNNY   68  59  73 SW9       29.98S                     .
+10AM EDT SEP 13 2011 MOSUNNY   71  59  65 SW10      29.98S                     .
+11AM EDT SEP 13 2011 MOSUNNY   74  59  59 SW9G21    29.98S                     .
+12PM EDT SEP 13 2011 MOSUNNY   77  58  51 SW15G24   29.96F                     .
+ 1PM EDT SEP 13 2011 MOSUNNY   79  58  48 SW12G22   29.94F                     .
+ 2PM EDT SEP 13 2011 MOSUNNY   80  57  45 SW15G24   29.92F                     .
+ 3PM EDT SEP 13 2011 MOSUNNY   81  57  43 SW16G23   29.91F                     .
+ 4PM EDT SEP 13 2011 MOSUNNY   81  58  45 SW14      29.90F                     .
+ 5PM EDT SEP 13 2011 MOSUNNY   81  58  45 SW15G22   29.89F                     .
+ 6PM EDT SEP 13 2011 MOSUNNY   80  59  48 SW17G23   29.90R                     .
+ 7PM EDT SEP 13 2011 CLEAR     78  60  53 SW9       29.90S                     .
+ 8PM EDT SEP 13 2011 PTCLDY    76  61  59 SW8       29.90S                     .
+ 9PM EDT SEP 13 2011 CLEAR     74  60  61 SW8       29.91R                     .
+10PM EDT SEP 13 2011 PTCLDY    74  60  61 SW10      29.91S                     .
+11PM EDT SEP 13 2011 PTCLDY    73  60  63 SW9       29.91S                     .
+12AM EDT SEP 14 2011 PTCLDY    72  60  66 SW8       29.92R                     .
+ 1AM EDT SEP 14 2011 FAIR      71  60  68 SW8       29.93R                     .
+ 2AM EDT SEP 14 2011 CLEAR     70  60  70 SW7       29.93S                     .
+ 3AM EDT SEP 14 2011 CLEAR     69  60  73 SW7       29.92F                     .
+ 4AM EDT SEP 14 2011 MOCLDY    68  60  75 SW5       29.91F                     .
+ 5AM EDT SEP 14 2011 PTCLDY    67  60  78 SW5       29.92R                     .
+ 6AM EDT SEP 14 2011 CLEAR     66  60  81 SW5       29.92S                     .
+ 7AM EDT SEP 14 2011 PTCLDY    65  60  84 W5        29.93R                     .
+ 8AM EDT SEP 14 2011 MOSUNNY   64  60  87 W3        29.96R                     .
+ 9AM EDT SEP 14 2011 CLOUDY    66  61  84 W3        29.97R                     .
+10AM EDT SEP 14 2011 CLOUDY    67  62  84 W6        29.99R                     .
+11AM EDT SEP 14 2011 PTSUNNY   70  62  76 W7        30.00R                     .
+12PM EDT SEP 14 2011 PTSUNNY   73  61  65 SW6       30.00S                     .
+ 1PM EDT SEP 14 2011 PTSUNNY   75  62  64 VRB6      29.98F                     .
+ 2PM EDT SEP 14 2011 MOSUNNY   76  59  55 W6        29.97F                     .
+ 3PM EDT SEP 14 2011 PTSUNNY   76  59  55 W9        29.98R                     .
+ 4PM EDT SEP 14 2011 PTSUNNY   76  57  51 SW5       29.94F                     .
+ 5PM EDT SEP 14 2011 CLOUDY    75  60  59 W3        29.93F                     .
+ 6PM EDT SEP 14 2011 CLOUDY    75  60  59 NW8       29.94R                     .
+ 7PM EDT SEP 14 2011 CLOUDY    73  60  63 NW8       29.94S                     .
+ 8PM EDT SEP 14 2011 MOCLDY    70  57  63 NW9       29.96R                     .
+ 9PM EDT SEP 14 2011 CLOUDY    66  55  67 N16       29.99R                     .
+10PM EDT SEP 14 2011 CLOUDY    64  55  72 N14G21    30.01R                     .
+11PM EDT SEP 14 2011 CLOUDY    63  51  65 N8G17     30.00F                     .
+12AM EDT SEP 15 2011 CLOUDY    62  50  64 N6        29.99F                     .
+ 1AM EDT SEP 15 2011 LGT RAIN  60  53  77 NW8       30.03R                     .
+ 2AM EDT SEP 15 2011 LGT RAIN  58  53  84 NW7       30.03S                     .
+ 3AM EDT SEP 15 2011 LGT RAIN  56  51  84 N5        30.00F                     .
+ 4AM EDT SEP 15 2011 LGT RAIN  55  52  89 N3        29.99F                     .
+ 5AM EDT SEP 15 2011 LGT RAIN  56  52  86 CALM      29.99S FOG                 .
+ 6AM EDT SEP 15 2011 LGT RAIN  55  53  93 CALM      30.00R FOG                 .
+ 7AM EDT SEP 15 2011 LGT RAIN  55  53  93 W3        29.99F FOG                 .
+ 8AM EDT SEP 15 2011 DRIZZLE   55  53  93 NW7       30.00R FOG                 .
+ 9AM EDT SEP 15 2011 LGT RAIN  54  51  90 N13       30.02R FOG                 .
+10AM EDT SEP 15 2011 CLOUDY    54  50  86 N14G21    30.04R                     .
+11AM EDT SEP 15 2011 CLOUDY    52  48  86 N16G22    30.09R                     .
+12PM EDT SEP 15 2011 DRIZZLE   53  47  79 N17G23    30.12R                     .
+ 1PM EDT SEP 15 2011 NOT AVBL                                                  .
+ 2PM EDT SEP 15 2011 PTSUNNY   57  40  52 N16G28    30.15R                     .
+ 3PM EDT SEP 15 2011 PTSUNNY   58  41  53 N16       30.17R                     .
+ 4PM EDT SEP 15 2011 MOSUNNY   57  41  55 N20G30    30.18R                     .
+ 5PM EDT SEP 15 2011 MOSUNNY   58  35  42 N12G23    30.18S                     .
+ 6PM EDT SEP 15 2011 MOSUNNY   59  36  42 NW18G26   30.20R                     .
+ 7PM EDT SEP 15 2011 PTCLDY    56  36  47 N16G25    30.22R                     .
+ 8PM EDT SEP 15 2011 PTCLDY    53  35  50 N9        30.23R                     .
+ 9PM EDT SEP 15 2011 PTCLDY    52  36  54 N6        30.26R                     .
+10PM EDT SEP 15 2011 PTCLDY    49  37  63 NW5       30.27R                     .
+11PM EDT SEP 15 2011 CLEAR     48  38  68 NW5       30.28R                     .
+12AM EDT SEP 16 2011 PTCLDY    45  39  79 CALM      30.30R                     .
+ 1AM EDT SEP 16 2011 FAIR      43  39  86 CALM      30.30S                     .
+ 2AM EDT SEP 16 2011 LGT RAIN  42  38  85 CALM      30.31R                     .
+ 3AM EDT SEP 16 2011 PTCLDY    41  38  89 NW3       30.32R                     .
+ 4AM EDT SEP 16 2011 PTCLDY    41  37  86 NW3       30.32S                     .
+ 5AM EDT SEP 16 2011 PTCLDY    39  36  89 CALM      30.32S                     .
+ 6AM EDT SEP 16 2011 PTCLDY    39  36  89 CALM      30.32S                     .
+ 7AM EDT SEP 16 2011 MOCLDY    41  36  82 CALM      30.33R                     .
+ 8AM EDT SEP 16 2011 CLOUDY    41  37  86 CALM      30.35R                     .
+ 9AM EDT SEP 16 2011 CLOUDY    43  40  89 S3        30.37R                     .
+10AM EDT SEP 16 2011 CLOUDY    48  42  80 CALM      30.39R                     .
+11AM EDT SEP 16 2011 NOT AVBL                                                  .
+12PM EDT SEP 16 2011 CLOUDY    55  41  59 E6        30.38                      .
+ 1PM EDT SEP 16 2011 CLOUDY    58  40  51 NW5       30.38S                     .
+ 2PM EDT SEP 16 2011 CLOUDY    58  40  51 VRB3      30.37F                     .
+ 3PM EDT SEP 16 2011 CLOUDY    58  39  49 VRB5      30.35F                     .
+ 4PM EDT SEP 16 2011 CLOUDY    59  40  49 CALM      30.34F                     .
+ 5PM EDT SEP 16 2011 PTSUNNY   59  40  49 E5        30.33F                     .
+ 6PM EDT SEP 16 2011 PTSUNNY   59  40  49 N7        30.32F                     .
+ 7PM EDT SEP 16 2011 MOCLDY    59  40  49 N6        30.32S                     .
+ 8PM EDT SEP 16 2011 CLOUDY    57  41  55 CALM      30.31F                     .
+ 9PM EDT SEP 16 2011 CLOUDY    55  44  66 CALM      30.32R                     .
+10PM EDT SEP 16 2011 CLOUDY    56  41  57 E3        30.32S                     .
+11PM EDT SEP 16 2011 CLOUDY    54  44  69 CALM      30.32S                     .
+12AM EDT SEP 17 2011 CLOUDY    53  44  71 E5        30.31F                     .
+ 1AM EDT SEP 17 2011 CLOUDY    52  45  77 CALM      30.32R                     .
+ 2AM EDT SEP 17 2011 CLOUDY    52  46  80 CALM      30.32S                     .
+ 3AM EDT SEP 17 2011 CLOUDY    51  45  79 NE5       30.31F                     .
+ 4AM EDT SEP 17 2011 CLOUDY    50  45  83 NE7       30.31S                     .
+ 5AM EDT SEP 17 2011 CLOUDY    50  44  80 NE6       30.31S                     .
+ 6AM EDT SEP 17 2011 CLOUDY    50  43  77 NE8       30.32R                     .
+ 7AM EDT SEP 17 2011 CLOUDY    50  44  80 NE7       30.32S                     .
+ 8AM EDT SEP 17 2011 CLOUDY    50  44  80 E6        30.32S                     .
+ 9AM EDT SEP 17 2011 PTSUNNY   52  44  74 E9        30.31F                     .
+10AM EDT SEP 17 2011 PTSUNNY   56  44  64 E8        30.33R                     .
+11AM EDT SEP 17 2011 MOSUNNY   58  43  57 SE13      30.34R                     .
+12PM EDT SEP 17 2011 PTSUNNY   60  43  53 SE8       30.35R                     .
+ 1PM EDT SEP 17 2011 MOSUNNY   63  44  50 E10       30.33F                     .
+ 2PM EDT SEP 17 2011 MOSUNNY   64  41  42 SE14      30.32F                     .
+ 3PM EDT SEP 17 2011 PTSUNNY   65  41  41 SE12      30.30F                     .
+ 4PM EDT SEP 17 2011 CLOUDY    65  41  41 E10       30.29F                     .
+ 5PM EDT SEP 17 2011 CLOUDY    65  40  39 SE10      30.29S                     .
+ 6PM EDT SEP 17 2011 CLOUDY    64  41  42 SE8       30.29S                     .
+ 7PM EDT SEP 17 2011 MOCLDY    62  43  49 E8        30.29S                     .
+ 8PM EDT SEP 17 2011 MOCLDY    59  43  55 E6        30.29S                     .
+ 9PM EDT SEP 17 2011 MOCLDY    58  43  57 E7        30.31R                     .
+10PM EDT SEP 17 2011 MOCLDY    56  44  64 E7        30.32R                     .
+11PM EDT SEP 17 2011 MOCLDY    55  43  63 E5        30.32S                     .
+12AM EDT SEP 18 2011 PTCLDY    53  44  71 E3        30.32S                     .
+ 1AM EDT SEP 18 2011 PTCLDY    51  44  77 E3        30.32S                     .
+ 2AM EDT SEP 18 2011 CLEAR     50  43  77 E5        30.31F                     .
+ 3AM EDT SEP 18 2011 CLEAR     50  42  74 E5        30.31S                     .
+ 4AM EDT SEP 18 2011 CLEAR     49  42  77 E3        30.31S                     .
+ 5AM EDT SEP 18 2011 CLEAR     48  43  82 E3        30.32R                     .
+ 6AM EDT SEP 18 2011 PTCLDY    47  43  86 E5        30.33R                     .
+ 7AM EDT SEP 18 2011 MOCLDY    47  44  90 E5        30.34R                     .
+ 8AM EDT SEP 18 2011 MOCLDY    50  45  83 E3        30.36R                     .
+ 9AM EDT SEP 18 2011 CLOUDY    51  46  83 E5        30.36S                     .
+10AM EDT SEP 18 2011 CLOUDY    54  47  77 SE7       30.37R                     .
+11AM EDT SEP 18 2011 PTSUNNY   57  47  69 E8        30.36F                     .
+12PM EDT SEP 18 2011 PTSUNNY   62  48  60 E8        30.35F                     .
+ 1PM EDT SEP 18 2011 PTSUNNY   63  47  55 SE6       30.34F                     .
+ 2PM EDT SEP 18 2011 PTSUNNY   66  47  50 SE9       30.32F                     .
+ 3PM EDT SEP 18 2011 PTSUNNY   65  47  52 VRB7      30.30F                     .
+ 4PM EDT SEP 18 2011 PTSUNNY   66  48  52 SE12      30.28F                     .
+ 5PM EDT SEP 18 2011 PTSUNNY   66  47  50 VRB3      30.27F                     .
+ 6PM EDT SEP 18 2011 MOSUNNY   66  47  50 SE7       30.26F                     .
+ 7PM EDT SEP 18 2011 PTCLDY    65  47  52 SE6       30.26S                     .
+ 8PM EDT SEP 18 2011 PTCLDY    62  47  57 CALM      30.25F                     .
+ 9PM EDT SEP 18 2011 PTCLDY    60  48  64 SE5       30.25S                     .
+10PM EDT SEP 18 2011 PTCLDY    58  47  66 SE8       30.26R                     .
+11PM EDT SEP 18 2011 PTCLDY    57  46  66 SE7       30.25F                     .
+12AM EDT SEP 19 2011 PTCLDY    56  46  69 SE5       30.24F                     .
+ 1AM EDT SEP 19 2011 PTCLDY    53  46  77 E5        30.22F                     .
+ 2AM EDT SEP 19 2011 PTCLDY    53  46  77 E5        30.20F                     .
+ 3AM EDT SEP 19 2011 PTCLDY    52  46  80 SE5       30.19F                     .
+ 4AM EDT SEP 19 2011 PTCLDY    52  46  80 SE3       30.18F                     .
+ 5AM EDT SEP 19 2011 PTCLDY    52  46  80 SE3       30.17F                     .
+ 6AM EDT SEP 19 2011 PTCLDY    52  46  80 SE5       30.16F                     .
+ 7AM EDT SEP 19 2011 MOCLDY    52  47  83 SE7       30.15F                     .
+ 8AM EDT SEP 19 2011 MOCLDY    53  48  83 SE3       30.17R                     .
+ 9AM EDT SEP 19 2011 PTSUNNY   57  48  72 SE8       30.16F                     .
+10AM EDT SEP 19 2011 CLOUDY    59  48  67 SE8       30.15F                     .
+11AM EDT SEP 19 2011 CLOUDY    60  49  66 SE7       30.14F                     .
+12PM EDT SEP 19 2011 CLOUDY    61  50  67 SE9       30.14S                     .
+ 1PM EDT SEP 19 2011 CLOUDY    65  50  58 S14       30.11F                     .
+ 2PM EDT SEP 19 2011 CLOUDY    65  51  60 S10       30.10F                     .
+ 3PM EDT SEP 19 2011 CLOUDY    64  52  64 S10       30.07F                     .
+ 4PM EDT SEP 19 2011 CLOUDY    63  53  70 S9        30.06F                     .
+ 5PM EDT SEP 19 2011 CLOUDY    62  54  74 S7        30.04F                     .
+ 6PM EDT SEP 19 2011 LGT RAIN  61  56  83 S6        30.04S                     .
+ 7PM EDT SEP 19 2011 LGT RAIN  60  57  89 S6        30.03F                     .
+ 8PM EDT SEP 19 2011 LGT RAIN  60  58  92 S6        30.03S FOG                 .
+ 9PM EDT SEP 19 2011 LGT RAIN  60  58  92 S7        30.03S                     .
+10PM EDT SEP 19 2011 LGT RAIN  60  58  92 S3        30.03S FOG                 .
+11PM EDT SEP 19 2011 LGT RAIN  60  58  92 S5        30.04R FOG                 .
+12AM EDT SEP 20 2011 LGT RAIN  61  59  93 S3        30.04S                     .
+ 1AM EDT SEP 20 2011 LGT RAIN  61  59  93 S3        30.03F FOG                 .
+ 2AM EDT SEP 20 2011 CLOUDY    62  59  90 SW3       30.02F                     .
+ 3AM EDT SEP 20 2011 CLOUDY    62  60  93 SW3       30.02S                     .
+ 4AM EDT SEP 20 2011 CLOUDY    62  60  93 CALM      30.02S                     .
+ 5AM EDT SEP 20 2011 CLOUDY    62  60  93 SW6       30.02S                     .
+ 6AM EDT SEP 20 2011 CLOUDY    63  60  90 S6        30.04R                     .
+ 7AM EDT SEP 20 2011 DRIZZLE   63  60  90 SW3       30.06R                     .
+ 8AM EDT SEP 20 2011 DRIZZLE   63  61  94 W3        30.08R FOG                 .
+ 9AM EDT SEP 20 2011 CLOUDY    63  61  93 SW3       30.09R FOG                 .
+10AM EDT SEP 20 2011 CLOUDY    64  61  90 W3        30.11R                     .
+11AM EDT SEP 20 2011 CLOUDY    65  61  87 W5        30.13R                     .
+12PM EDT SEP 20 2011 CLOUDY    66  61  84 CALM      30.12F                     .
+ 1PM EDT SEP 20 2011 CLOUDY    67  60  78 CALM      30.12S                     .
+ 2PM EDT SEP 20 2011 PTSUNNY   70  60  70 CALM      30.11F                     .
+ 3PM EDT SEP 20 2011 PTSUNNY   71  61  70 SE7       30.10F                     .
+ 4PM EDT SEP 20 2011 PTSUNNY   72  60  66 SE8       30.09F                     .
+ 5PM EDT SEP 20 2011 PTSUNNY   73  60  63 S7        30.09S                     .
+ 6PM EDT SEP 20 2011 PTSUNNY   72  60  66 SE7       30.09S                     .
+ 7PM EDT SEP 20 2011 MOCLDY    71  61  70 S6        30.10R                     .
+ 8PM EDT SEP 20 2011 MOCLDY    67  61  81 S3        30.11R                     .
+ 9PM EDT SEP 20 2011 MOCLDY    66  61  84 S3        30.12R                     .
+10PM EDT SEP 20 2011 MOCLDY    64  61  90 CALM      30.12S                     .
+11PM EDT SEP 20 2011 PTCLDY    63  60  90 CALM      30.11F                     .
+12AM EDT SEP 21 2011 PTCLDY    62  60  93 CALM      30.12R FOG                 .
+ 1AM EDT SEP 21 2011 PTCLDY    61  59  93 CALM      30.13R                     .
+ 2AM EDT SEP 21 2011 MOCLDY    61  59  93 SE3       30.12F FOG                 .
+ 3AM EDT SEP 21 2011 PTCLDY    60  58  92 SE3       30.11F FOG                 .
+ 4AM EDT SEP 21 2011 FOG       60  58  92 CALM      30.12S VSB 1/2             .
+ 5AM EDT SEP 21 2011 FOG       57  56  96 SE6       30.11F VSB 1/4             .
+ 6AM EDT SEP 21 2011 FOG       58  57  97 CALM      30.11S VSB 1/8             .
+ 7AM EDT SEP 21 2011 FOG       55  55 100 CALM      30.11S VSB 1               .
+ 8AM EDT SEP 21 2011 MOCLDY    57  56  96 CALM      30.12R FOG                 .
+ 9AM EDT SEP 21 2011 PTSUNNY   60  58  92 SE3       30.11F FOG                 .
+10AM EDT SEP 21 2011 PTSUNNY   65  60  84 SE6       30.11S                     .
+11AM EDT SEP 21 2011 PTSUNNY   68  60  75 SE6       30.10F                     .
+12PM EDT SEP 21 2011 PTSUNNY   73  59  61 S13       30.09F                     .
+ 1PM EDT SEP 21 2011 MOSUNNY   76  60  57 SE10      30.08F                     .
+ 2PM EDT SEP 21 2011 MOSUNNY   77  59  53 S10       30.06F                     .
+ 3PM EDT SEP 21 2011 PTSUNNY   78  60  53 S9        30.04F                     .
+ 4PM EDT SEP 21 2011 PTSUNNY   79  60  52 SE9       30.03F                     .
+ 5PM EDT SEP 21 2011 PTSUNNY   80  59  48 SW13      30.02F                     .
+ 6PM EDT SEP 21 2011 CLOUDY    78  60  53 S8        30.02S                     .
+ 7PM EDT SEP 21 2011 CLOUDY    71  61  70 S7        30.03R                     .
+ 8PM EDT SEP 21 2011 CLOUDY    69  63  81 S3        30.04R                     .
+ 9PM EDT SEP 21 2011 CLOUDY    69  63  81 S6        30.05R                     .
+10PM EDT SEP 21 2011 CLOUDY    68  63  84 S3        30.07R                     .
+11PM EDT SEP 21 2011 MOCLDY    68  63  84 S6        30.06F                     .
+12AM EDT SEP 22 2011 MOCLDY    66  63  90 S5        30.06S                     .
+ 1AM EDT SEP 22 2011 MOCLDY    66  63  90 S3        30.05F                     .
+ 2AM EDT SEP 22 2011 CLOUDY    67  64  90 CALM      30.06R                     .
+ 3AM EDT SEP 22 2011 CLOUDY    66  64  93 S3        30.05F                     .
+ 4AM EDT SEP 22 2011 CLOUDY    67  64  90 SW3       30.04F                     .
+ 5AM EDT SEP 22 2011 CLOUDY    67  64  90 SW3       30.04S                     .
+ 6AM EDT SEP 22 2011 CLOUDY    67  64  90 SW3       30.06R                     .
+ 7AM EDT SEP 22 2011 CLOUDY    66  64  93 SW3       30.07R                     .
+ 8AM EDT SEP 22 2011 MOCLDY    67  64  90 CALM      30.07S                     .
+ 9AM EDT SEP 22 2011 CLOUDY    66  64  94 SW3       30.10R FOG                 .
+10AM EDT SEP 22 2011 CLOUDY    68  64  87 CALM      30.11R                     .
+11AM EDT SEP 22 2011 PTSUNNY   70  63  78 S3        30.12R                     .
+12PM EDT SEP 22 2011 PTSUNNY   72  63  73 S5        30.12S                     .
+ 1PM EDT SEP 22 2011 MOSUNNY   75  60  59 SW8       30.12S                     .
+ 2PM EDT SEP 22 2011 NOT AVBL                                                  .
+ 3PM EDT SEP 22 2011 PTSUNNY   76  58  53 SW8       30.10                      .
+ 4PM EDT SEP 22 2011 PTSUNNY   76  58  53 VRB6      30.08F                     .
+ 5PM EDT SEP 22 2011 PTSUNNY   76  58  53 S8        30.08S                     .
+ 6PM EDT SEP 22 2011 NOT AVBL                                                  .
+ 7PM EDT SEP 22 2011 PTCLDY    74  60  61 S5        30.08                      .
+ 8PM EDT SEP 22 2011 MOCLDY    70  61  73 S3        30.09R                     .
+ 9PM EDT SEP 22 2011 PTCLDY    69  61  75 CALM      30.09S                     .
+10PM EDT SEP 22 2011 PTCLDY    67  61  81 CALM      30.09S                     .
+11PM EDT SEP 22 2011 PTCLDY    67  60  78 CALM      30.09S                     .
+12AM EDT SEP 23 2011 MOCLDY    65  60  84 CALM      30.09S                     .
+ 1AM EDT SEP 23 2011 MOCLDY    61  59  93 CALM      30.09S FOG                 .
+ 2AM EDT SEP 23 2011 MOCLDY    61  58  90 CALM      30.07F FOG                 .
+ 3AM EDT SEP 23 2011 PTCLDY    62  59  90 CALM      30.05F FOG                 .
+ 4AM EDT SEP 23 2011 MOCLDY    62  59  90 CALM      30.01F FOG                 .
+ 5AM EDT SEP 23 2011 CLOUDY    62  59  90 CALM      30.00F FOG                 .
+ 6AM EDT SEP 23 2011 CLOUDY    62  59  90 CALM      29.98F FOG                 .
+ 7AM EDT SEP 23 2011 CLOUDY    62  59  90 CALM      29.98S FOG                 .
+ 8AM EDT SEP 23 2011 LGT RAIN  63  60  90 CALM      29.97F FOG                 .
+ 9AM EDT SEP 23 2011 LGT RAIN  63  60  90 SE6       29.98R FOG                 .
+10AM EDT SEP 23 2011 CLOUDY    65  62  90 SE5       29.97F FOG                 .
+11AM EDT SEP 23 2011 CLOUDY    67  62  84 SE8       29.96F                     .
+12PM EDT SEP 23 2011 CLOUDY    67  62  84 S5        29.95F                     .
+ 1PM EDT SEP 23 2011 LGT RAIN  68  64  87 SE6       29.94F                     .
+ 2PM EDT SEP 23 2011 LGT RAIN  67  64  90 S8        29.93F FOG                 .
+ 3PM EDT SEP 23 2011 LGT RAIN  60  58  92 NW13      29.92F                     .
+ 4PM EDT SEP 23 2011 LGT RAIN  60  57  89 NW10      29.92S                     .
+ 5PM EDT SEP 23 2011 CLOUDY    61  57  87 NW9       29.91F                     .
+ 6PM EDT SEP 23 2011 CLOUDY    59  56  89 NW10      29.93R                     .
+ 7PM EDT SEP 23 2011 MOCLDY    60  55  83 CALM      29.94R                     .
+ 8PM EDT SEP 23 2011 PTCLDY    58  55  90 NW7       29.96R                     .
+ 9PM EDT SEP 23 2011 PTCLDY    57  55  93 W3        29.98R                     .
+10PM EDT SEP 23 2011 PTCLDY    57  54  89 CALM      30.00R                     .
+11PM EDT SEP 23 2011 PTCLDY    56  54  93 W5        30.01R                     .
+12AM EDT SEP 24 2011 MOCLDY    57  54  89 CALM      30.02R                     .
+ 1AM EDT SEP 24 2011 CLOUDY    56  54  93 S3        30.03R FOG                 .
+ 2AM EDT SEP 24 2011 PTCLDY    56  54  93 CALM      30.03S FOG                 .
+ 3AM EDT SEP 24 2011 MOCLDY    56  53  90 CALM      30.03S FOG                 .
+ 4AM EDT SEP 24 2011 FOG       55  52  88 CALM      30.03S VSB 1               .
+ 5AM EDT SEP 24 2011 FOG       54  53  97 CALM      30.04R VSB 1               .
+ 6AM EDT SEP 24 2011 MOCLDY    53  51  93 CALM      30.04S FOG                 .
+ 7AM EDT SEP 24 2011 CLOUDY    54  52  93 CALM      30.06R FOG                 .
+ 8AM EDT SEP 24 2011 MOCLDY    54  52  93 CALM      30.06S FOG                 .
+ 9AM EDT SEP 24 2011 FOG       55  54  96 NE3       30.08R VSB 3/4             .
+10AM EDT SEP 24 2011 PTSUNNY   59  56  89 E3        30.08S FOG                 .
+11AM EDT SEP 24 2011 PTSUNNY   62  54  74 CALM      30.10R                     .
+12PM EDT SEP 24 2011 PTSUNNY   64  53  67 CALM      30.10S                     .
+ 1PM EDT SEP 24 2011 PTSUNNY   67  52  58 SE5       30.09F                     .
+ 2PM EDT SEP 24 2011 PTSUNNY   67  51  56 E6        30.07F                     .
+ 3PM EDT SEP 24 2011 PTSUNNY   67  51  56 SE6       30.06F                     .
+ 4PM EDT SEP 24 2011 MOSUNNY   69  53  56 SE9       30.05F                     .
+ 5PM EDT SEP 24 2011 MOSUNNY   69  52  54 VRB5      30.04F                     .
+ 6PM EDT SEP 24 2011 MOSUNNY   69  53  56 S5        30.05R                     .
+ 7PM EDT SEP 24 2011 PTCLDY    68  54  60 CALM      30.05S                     .
+ 8PM EDT SEP 24 2011 PTCLDY    65  55  70 CALM      30.06R                     .
+ 9PM EDT SEP 24 2011 MOCLDY    62  55  77 CALM      30.07R                     .
+10PM EDT SEP 24 2011 MOCLDY    61  56  83 CALM      30.07S                     .
+11PM EDT SEP 24 2011 MOCLDY    60  56  86 NW3       30.07S                     .
+12AM EDT SEP 25 2011 CLOUDY    63  56  78 N3        30.08R                     .
+ 1AM EDT SEP 25 2011 PTCLDY    61  55  81 CALM      30.06F                     .
+ 2AM EDT SEP 25 2011 MOCLDY    60  56  86 CALM      30.05F                     .
+ 3AM EDT SEP 25 2011 PTCLDY    59  56  89 CALM      30.03F                     .
+ 4AM EDT SEP 25 2011 PTCLDY    59  56  89 CALM      30.03S FOG                 .
+ 5AM EDT SEP 25 2011 CLOUDY    60  57  89 CALM      30.04R                     .
+ 6AM EDT SEP 25 2011 CLOUDY    61  58  90 CALM      30.06R                     .
+ 7AM EDT SEP 25 2011 MOCLDY    61  58  90 E5        30.06S                     .
+ 8AM EDT SEP 25 2011 MOCLDY    62  58  86 E3        30.07R                     .
+ 9AM EDT SEP 25 2011 MOSUNNY   64  59  83 SE6       30.07S                     .
+10AM EDT SEP 25 2011 NOT AVBL                                                  .
+11AM EDT SEP 25 2011 PTSUNNY   71  60  68 SE9       30.08                      .
+12PM EDT SEP 25 2011 PTSUNNY   73  61  65 SE12      30.07F                     .
+ 1PM EDT SEP 25 2011 PTSUNNY   75  61  61 S7        30.05F                     .
+ 2PM EDT SEP 25 2011 PTSUNNY   78  61  55 S8        30.04F                     .
+ 3PM EDT SEP 25 2011 PTSUNNY   76  62  62 SE14G20   30.02F                     .
+ 4PM EDT SEP 25 2011 MOSUNNY   78  63  59 SE9G17    30.00F                     .
+ 5PM EDT SEP 25 2011 MOSUNNY   78  62  57 SE14      29.98F                     .
+ 6PM EDT SEP 25 2011 PTSUNNY   78  61  55 SE9       29.98S                     .
+ 7PM EDT SEP 25 2011 MOCLDY    75  60  59 SE8       29.98S                     .
+ 8PM EDT SEP 25 2011 CLOUDY    73  61  65 E7        29.97F                     .
+ 9PM EDT SEP 25 2011 CLOUDY    72  61  68 E7        29.97S                     .
+10PM EDT SEP 25 2011 CLOUDY    70  61  73 E7        29.96F                     .
+11PM EDT SEP 25 2011 CLOUDY    69  61  75 SE8       29.95F                     .
+12AM EDT SEP 26 2011 PTCLDY    68  61  78 SE3       29.95S                     .
+ 1AM EDT SEP 26 2011 PTCLDY    66  61  84 E5        29.95S                     .
+ 2AM EDT SEP 26 2011 PTCLDY    66  61  84 E6        29.94F                     .
+ 3AM EDT SEP 26 2011 PTCLDY    65  61  87 E5        29.93F                     .
+ 4AM EDT SEP 26 2011 CLEAR     64  60  87 E3        29.92F                     .
+ 5AM EDT SEP 26 2011 PTCLDY    64  61  90 E3        29.91F                     .
+ 6AM EDT SEP 26 2011 PTCLDY    64  61  90 SE7       29.91S                     .
+ 7AM EDT SEP 26 2011 MOCLDY    64  61  90 E7        29.91S                     .
+ 8AM EDT SEP 26 2011 CLOUDY    65  61  87 SE7       29.92R                     .
+ 9AM EDT SEP 26 2011 CLOUDY    67  62  84 E7        29.91F                     .
+10AM EDT SEP 26 2011 CLOUDY    69  62  78 SE7       29.92R                     .
+11AM EDT SEP 26 2011 CLOUDY    71  63  75 SE7       29.91F                     .
+12PM EDT SEP 26 2011 CLOUDY    76  62  62 SE6       29.91S                     .
+ 1PM EDT SEP 26 2011 PTSUNNY   80  61  52 SE12      29.90F                     .
+ 2PM EDT SEP 26 2011 CLOUDY    80  62  54 SE7       29.88F                     .
+ 3PM EDT SEP 26 2011 CLOUDY    80  61  52 SE10      29.86F                     .
+ 4PM EDT SEP 26 2011 PTSUNNY   81  61  50 SE12      29.84F                     .
+ 5PM EDT SEP 26 2011 CLOUDY    82  62  50 SE13      29.83F                     .
+ 6PM EDT SEP 26 2011 PTSUNNY   79  63  57 SE14      29.81F                     .
+ 7PM EDT SEP 26 2011 LGT RAIN  78  64  61 S12       29.82R                     .
+ 8PM EDT SEP 26 2011 CLOUDY    68  64  87 S3        29.85R THUNDER             .
+ 9PM EDT SEP 26 2011 MOCLDY    70  67  90 N8        29.84F                     .
+10PM EDT SEP 26 2011 CLOUDY    69  66  90 NE6       29.85R                     .
+11PM EDT SEP 26 2011 CLOUDY    68  66  93 S3        29.85R                     .
+12AM EDT SEP 27 2011 RAIN      66  64  93 SW6       29.88S                     .
+ 1AM EDT SEP 27 2011 LGT RAIN  66  64  93 CALM      29.87F                     .
+ 2AM EDT SEP 27 2011 CLOUDY    65  62  90 SW12      29.88R                     .
+ 3AM EDT SEP 27 2011 LGT RAIN  60  57  89 W6        29.89R                     .
+ 4AM EDT SEP 27 2011 LGT RAIN  59  56  89 CALM      29.88F                     .
+ 5AM EDT SEP 27 2011 LGT RAIN  59  56  89 SW3       29.89R                     .
+ 6AM EDT SEP 27 2011 CLOUDY    59  56  89 CALM      29.90S                     .
+ 7AM EDT SEP 27 2011 CLOUDY    57  55  94 W6        29.91R                     .
+ 8AM EDT SEP 27 2011 CLOUDY    58  55  90 SW6       29.93R                     .
+ 9AM EDT SEP 27 2011 CLOUDY    58  55  90 SW5       29.94R                     .
+10AM EDT SEP 27 2011 PTSUNNY   59  53  80 VRB5      29.93F                     .
+11AM EDT SEP 27 2011 PTSUNNY   62  55  77 W6        29.93S                     .
+12PM EDT SEP 27 2011 MOSUNNY   63  54  72 CALM      29.92F                     .
+ 1PM EDT SEP 27 2011 MOSUNNY   67  54  63 SE9       29.93R                     .
+ 2PM EDT SEP 27 2011 MOSUNNY   68  54  60 S9        29.91F                     .
+ 3PM EDT SEP 27 2011 MOSUNNY   68  53  58 CALM      29.89F                     .
+ 4PM EDT SEP 27 2011 MOSUNNY   70  52  52 SW7       29.88F                     .
+ 5PM EDT SEP 27 2011 MOSUNNY   71  51  49 W6        29.86F                     .
+ 6PM EDT SEP 27 2011 MOSUNNY   70  50  49 W6        29.87R                     .
+ 7PM EDT SEP 27 2011 PTCLDY    67  51  56 CALM      29.89R                     .
+ 8PM EDT SEP 27 2011 LGT RAIN  63  53  70 W3        29.90R                     .
+ 9PM EDT SEP 27 2011 PTCLDY    60  53  77 CALM      29.89F                     .
+10PM EDT SEP 27 2011 PTCLDY    57  53  86 CALM      29.90R                     .
+11PM EDT SEP 27 2011 PTCLDY    57  52  83 W5        29.89F                     .
+12AM EDT SEP 28 2011 PTCLDY    58  51  78 CALM      29.89S                     .
+ 1AM EDT SEP 28 2011 PTCLDY    56  51  84 W3        29.89S                     .
+ 2AM EDT SEP 28 2011 PTCLDY    54  51  90 CALM      29.88F                     .
+ 3AM EDT SEP 28 2011 PTCLDY    54  50  86 CALM      29.86F                     .
+ 4AM EDT SEP 28 2011 MOCLDY    54  51  90 CALM      29.86S                     .
+ 5AM EDT SEP 28 2011 CLOUDY    54  51  90 CALM      29.87R                     .
+ 6AM EDT SEP 28 2011 PTCLDY    56  52  86 CALM      29.87S                     .
+ 7AM EDT SEP 28 2011 MOCLDY    55  51  86 CALM      29.87S                     .
+ 8AM EDT SEP 28 2011 MOCLDY    56  52  86 CALM      29.90R FOG                 .
+ 9AM EDT SEP 28 2011 PTSUNNY   60  56  86 SE5       29.89F                     .
+10AM EDT SEP 28 2011 CLOUDY    63  56  78 S5        29.90R                     .
+11AM EDT SEP 28 2011 CLOUDY    64  56  75 SE5       29.90S                     .
+12PM EDT SEP 28 2011 PTSUNNY   66  54  65 S5        29.88F                     .
+ 1PM EDT SEP 28 2011 PTSUNNY   70  55  59 VRB7      29.86F                     .
+ 2PM EDT SEP 28 2011 LGT RAIN  72  54  53 SW7       29.84F                     .
+ 3PM EDT SEP 28 2011 CLOUDY    64  59  83 S5        29.83F                     .
+ 4PM EDT SEP 28 2011 PTSUNNY   66  58  75 SE6       29.83S                     .
+ 5PM EDT SEP 28 2011 PTSUNNY   68  59  73 VRB5      29.82F                     .
+ 6PM EDT SEP 28 2011 PTSUNNY   69  49  48 SW10      29.83R                     .
+ 7PM EDT SEP 28 2011 PTCLDY    67  51  56 CALM      29.83S                     .
+ 8PM EDT SEP 28 2011 PTCLDY    65  52  62 CALM      29.83S                     .
+ 9PM EDT SEP 28 2011 PTCLDY    62  52  69 CALM      29.83S                     .
+10PM EDT SEP 28 2011 MOCLDY    58  52  80 CALM      29.84R                     .
+11PM EDT SEP 28 2011 CLOUDY    59  52  77 W5        29.83F                     .
+12AM EDT SEP 29 2011 CLOUDY    59  53  80 CALM      29.81F                     .
+ 1AM EDT SEP 29 2011 LGT RAIN  59  53  80 CALM      29.80F                     .
+ 2AM EDT SEP 29 2011 LGT RAIN  57  54  89 CALM      29.82R                     .
+ 3AM EDT SEP 29 2011 CLOUDY    57  54  89 SE3       29.79F                     .
+ 4AM EDT SEP 29 2011 CLOUDY    57  54  89 CALM      29.79S                     .
+ 5AM EDT SEP 29 2011 MOCLDY    54  53  97 CALM      29.79S FOG                 .
+ 6AM EDT SEP 29 2011 MOCLDY    55  53  93 CALM      29.77F FOG                 .
+ 7AM EDT SEP 29 2011 MOCLDY    54  52  93 S3        29.77S FOG                 .
+ 8AM EDT SEP 29 2011 CLOUDY    55  52  89 SW3       29.78R FOG                 .
+ 9AM EDT SEP 29 2011 PTSUNNY   55  54  94 SW7       29.79R FOG                 .
+10AM EDT SEP 29 2011 LGT RAIN  56  53  90 SW6       29.78F FOG                 .
+11AM EDT SEP 29 2011 PTSUNNY   59  54  82 SW9       29.77F                     .
+12PM EDT SEP 29 2011 CLOUDY    61  51  70 W10G20    29.76S                     .
+ 1PM EDT SEP 29 2011 PTSUNNY   63  49  60 W14G22    29.76S                     .
+ 2PM EDT SEP 29 2011 PTSUNNY   62  47  57 W15G25    29.75F                     .
+ 3PM EDT SEP 29 2011 PTSUNNY   62  47  57 SW16G24   29.75S                     .
+ 4PM EDT SEP 29 2011 PTSUNNY   63  47  55 W15G21    29.74F                     .
+ 5PM EDT SEP 29 2011 PTSUNNY   62  47  57 W10       29.73F                     .
+ 6PM EDT SEP 29 2011 PTSUNNY   62  48  60 SW8       29.72F                     .
+ 7PM EDT SEP 29 2011 MOCLDY    61  49  64 SW3       29.71F                     .
+ 8PM EDT SEP 29 2011 MOCLDY    58  50  75 S5        29.70F                     .
+ 9PM EDT SEP 29 2011 CLOUDY    58  50  75 S6        29.68F                     .
+10PM EDT SEP 29 2011 CLOUDY    58  51  78 S5        29.66F                     .
+11PM EDT SEP 29 2011 LGT RAIN  60  52  74 SW6       29.67R                     .
+12AM EDT SEP 30 2011 LGT RAIN  57  54  89 S9        29.63F                     .
+ 1AM EDT SEP 30 2011 CLOUDY    59  55  88 SW10G22   29.63S                     .
+ 2AM EDT SEP 30 2011 MOCLDY    58  54  86 SW14      29.65R                     .
+ 3AM EDT SEP 30 2011 PTCLDY    57  52  83 SW10      29.66R                     .
+ 4AM EDT SEP 30 2011 MOCLDY    56  51  84 SW12      29.67R                     .
+ 5AM EDT SEP 30 2011 MOCLDY    56  50  80 SW13G22   29.67R                     .
+ 6AM EDT SEP 30 2011 MOCLDY    55  48  77 SW14G20   29.68R                     .
+ 7AM EDT SEP 30 2011 MOCLDY    55  47  74 SW13G22   29.68S                     .
+ 8AM EDT SEP 30 2011 PTCLDY    54  47  77 SW10      29.68S                     .
+ 9AM EDT SEP 30 2011 PTSUNNY   55  47  74 SW14G22   29.67F                     .
+10AM EDT SEP 30 2011 CLOUDY    56  46  69 SW10G21   29.67S                     .
+11AM EDT SEP 30 2011 CLOUDY    56  46  69 SW14G20   29.69R                     .
+12PM EDT SEP 30 2011 LGT RAIN  55  47  74 SW10G21   29.70R                     .
+ 1PM EDT SEP 30 2011 CLOUDY    56  45  66 SW16G23   29.69F                     .
+ 2PM EDT SEP 30 2011 CLOUDY    56  46  69 SW18G28   29.69S                     .
+ 3PM EDT SEP 30 2011 CLOUDY    57  47  69 SW15G25   29.68F                     .
+ 4PM EDT SEP 30 2011 CLOUDY    56  48  74 SW8G18    29.70R                     .
+ 5PM EDT SEP 30 2011 LGT RAIN  54  52  94 SW8G18    29.70S                     .
+ 6PM EDT SEP 30 2011 CLOUDY    53  49  86 W16       29.73R                     .
+ 7PM EDT SEP 30 2011 LGT RAIN  50  45  83 NW21G29   29.76R                     .

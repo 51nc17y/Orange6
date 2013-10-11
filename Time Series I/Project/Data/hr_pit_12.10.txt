@@ -1,0 +1,765 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT SEP 30 2012 PTCLDY    55  49  80 CALM      29.89R                   OCT
+ 9PM EDT SEP 30 2012 FAIR      52  48  86 CALM      29.91R                   OCT
+10PM EDT SEP 30 2012 PTCLDY    51  46  83 W3        29.92R                   OCT
+11PM EDT SEP 30 2012 CLEAR     49  45  86 CALM      29.93R                   OCT
+12AM EDT OCT 01 2012 PTCLDY    48  44  86 NW5       29.92F                   OCT
+ 1AM EDT OCT 01 2012 PTCLDY    47  43  86 CALM      29.92S                   OCT
+ 2AM EDT OCT 01 2012 PTCLDY    46  43  89 W3        29.93R                   OCT
+ 3AM EDT OCT 01 2012 PTCLDY    45  42  89 CALM      29.92F                     .
+ 4AM EDT OCT 01 2012 PTCLDY    44  41  89 CALM      29.92S                     .
+ 5AM EDT OCT 01 2012 MOCLDY    43  40  89 CALM      29.92S                     .
+ 6AM EDT OCT 01 2012 MOCLDY    41  39  93 CALM      29.93R                     .
+ 7AM EDT OCT 01 2012 MOCLDY    40  39  97 CALM      29.93S                     .
+ 8AM EDT OCT 01 2012 FOG       39  39 100 CALM      29.95R VSB<1/4             .
+ 9AM EDT OCT 01 2012 FOG       43  43 100 CALM      29.96R VSB 1/8             .
+10AM EDT OCT 01 2012 FOG       45  44  97 CALM      29.97R VSB<1/4             .
+11AM EDT OCT 01 2012 PTSUNNY   52  48  86 CALM      29.96S                     .
+12PM EDT OCT 01 2012 PTSUNNY   58  44  60 E7        29.94F                     .
+ 1PM EDT OCT 01 2012 FAIR      62  43  49 SE7       29.93F                     .
+ 2PM EDT OCT 01 2012 PTSUNNY   64  42  44 E9        29.91F                     .
+ 3PM EDT OCT 01 2012 CLOUDY    64  41  42 E6        29.89F                     .
+ 4PM EDT OCT 01 2012 CLOUDY    63  43  48 E6        29.88F                     .
+ 5PM EDT OCT 01 2012 CLOUDY    63  44  50 E3        29.86F                     .
+ 6PM EDT OCT 01 2012 LGT RAIN  61  47  59 NE3       29.87R                     .
+ 7PM EDT OCT 01 2012 LGT RAIN  59  50  72 NE5       29.86F                     .
+ 8PM EDT OCT 01 2012 LGT RAIN  57  50  77 NE7       29.84F                     .
+ 9PM EDT OCT 01 2012 CLOUDY    58  50  75 NE5       29.85R                     .
+10PM EDT OCT 01 2012 CLOUDY    57  50  77 NE6       29.84F                     .
+11PM EDT OCT 01 2012 CLOUDY    57  50  77 E6        29.83F                     .
+12AM EDT OCT 02 2012 MOCLDY    57  50  77 E6        29.82F                     .
+ 1AM EDT OCT 02 2012 MOCLDY    58  51  78 E6        29.81F                     .
+ 2AM EDT OCT 02 2012 CLOUDY    58  52  80 E5        29.81S                     .
+ 3AM EDT OCT 02 2012 LGT RAIN  58  52  80 E5        29.80F                     .
+ 4AM EDT OCT 02 2012 RAIN      58  54  86 E6        29.80S FOG                 .
+ 5AM EDT OCT 02 2012 CLOUDY    58  55  90 E5        29.78F                     .
+ 6AM EDT OCT 02 2012 CLOUDY    58  56  93 CALM      29.80R                     .
+ 7AM EDT OCT 02 2012 LGT RAIN  58  56  93 E5        29.81R                     .
+ 8AM EDT OCT 02 2012 LGT RAIN  59  57  93 E7        29.83R FOG                 .
+ 9AM EDT OCT 02 2012 DRIZZLE   61  59  93 SE7       29.84R FOG                 .
+10AM EDT OCT 02 2012 CLOUDY    64  63  94 SE6       29.85R                     .
+11AM EDT OCT 02 2012 CLOUDY    65  63  93 SE6       29.85S                     .
+12PM EDT OCT 02 2012 CLOUDY    67  64  90 SE6       29.85S                     .
+ 1PM EDT OCT 02 2012 LGT RAIN  68  64  88 SE6       29.86R                     .
+ 2PM EDT OCT 02 2012 DRIZZLE   70  65  84 E6        29.83F                     .
+ 3PM EDT OCT 02 2012 CLOUDY    71  65  81 E3        29.82F                     .
+ 4PM EDT OCT 02 2012 PTSUNNY   73  66  78 E8        29.81F                     .
+ 5PM EDT OCT 02 2012 PTSUNNY   73  65  75 E6        29.82R                     .
+ 6PM EDT OCT 02 2012 CLOUDY    72  65  78 E5        29.84R                     .
+ 7PM EDT OCT 02 2012 MOCLDY    71  65  81 CALM      29.85R                     .
+ 8PM EDT OCT 02 2012 PTCLDY    69  65  86 CALM      29.85S                     .
+ 9PM EDT OCT 02 2012 PTCLDY    68  65  90 CALM      29.86R                     .
+10PM EDT OCT 02 2012 PTCLDY    67  64  90 E3        29.88R                     .
+11PM EDT OCT 02 2012 MOCLDY    66  64  93 E5        29.89R                     .
+12AM EDT OCT 03 2012 CLOUDY    65  63  93 E3        29.88F                     .
+ 1AM EDT OCT 03 2012 CLOUDY    65  63  93 E5        29.89R                     .
+ 2AM EDT OCT 03 2012 CLOUDY    65  62  90 CALM      29.90R                     .
+ 3AM EDT OCT 03 2012 CLOUDY    65  63  93 CALM      29.92R                     .
+ 4AM EDT OCT 03 2012 CLOUDY    64  63  96 CALM      29.95R                     .
+ 5AM EDT OCT 03 2012 CLOUDY    66  64  93 W6        29.96R                     .
+ 6AM EDT OCT 03 2012 CLOUDY    67  64  90 SW8       29.98R                     .
+ 7AM EDT OCT 03 2012 CLOUDY    67  64  90 SW7       30.01R                     .
+ 8AM EDT OCT 03 2012 CLOUDY    67  63  87 SW6       30.03R                     .
+ 9AM EDT OCT 03 2012 CLOUDY    66  63  88 W7        30.06R                     .
+10AM EDT OCT 03 2012 PTSUNNY   67  62  84 W7        30.08R                     .
+11AM EDT OCT 03 2012 PTSUNNY   69  60  73 W9        30.09R                     .
+12PM EDT OCT 03 2012 CLOUDY    69  59  70 W5        30.09S                     .
+ 1PM EDT OCT 03 2012 CLOUDY    70  59  68 SW6       30.10R                     .
+ 2PM EDT OCT 03 2012 CLOUDY    71  58  63 SW9       30.09F                     .
+ 3PM EDT OCT 03 2012 CLOUDY    73  57  57 S10       30.08F                     .
+ 4PM EDT OCT 03 2012 PTSUNNY   74  56  53 SW10      30.07F                     .
+ 5PM EDT OCT 03 2012 PTSUNNY   74  57  55 SW8       30.08R                     .
+ 6PM EDT OCT 03 2012 PTSUNNY   73  57  57 SW6       30.09R                     .
+ 7PM EDT OCT 03 2012 MOCLDY    71  56  58 SW5       30.10R                     .
+ 8PM EDT OCT 03 2012 CLOUDY    67  58  72 CALM      30.11R                     .
+ 9PM EDT OCT 03 2012 CLOUDY    66  58  75 SW3       30.13R                     .
+10PM EDT OCT 03 2012 CLOUDY    65  57  75 CALM      30.14R                     .
+11PM EDT OCT 03 2012 CLOUDY    63  56  78 W6        30.15R                     .
+12AM EDT OCT 04 2012 CLOUDY    62  55  77 CALM      30.17R                     .
+ 1AM EDT OCT 04 2012 CLOUDY    60  56  86 CALM      30.17S                     .
+ 2AM EDT OCT 04 2012 CLOUDY    60  56  86 CALM      30.17S                     .
+ 3AM EDT OCT 04 2012 CLOUDY    60  56  86 CALM      30.17S                     .
+ 4AM EDT OCT 04 2012 CLOUDY    59  56  89 CALM      30.16F                     .
+ 5AM EDT OCT 04 2012 CLOUDY    59  56  89 CALM      30.17R                     .
+ 6AM EDT OCT 04 2012 CLOUDY    59  55  87 CALM      30.17S                     .
+ 7AM EDT OCT 04 2012 CLOUDY    58  55  90 CALM      30.18R                     .
+ 8AM EDT OCT 04 2012 CLOUDY    58  55  90 CALM      30.18S                     .
+ 9AM EDT OCT 04 2012 PTSUNNY   59  55  87 CALM      30.20R                     .
+10AM EDT OCT 04 2012 PTSUNNY   64  55  72 SW6       30.20S                     .
+11AM EDT OCT 04 2012 CLOUDY    65  53  65 SW7       30.21R                     .
+12PM EDT OCT 04 2012 MOSUNNY   68  53  58 SW13      30.19F                     .
+ 1PM EDT OCT 04 2012 MOSUNNY   69  52  54 W10       30.19S                     .
+ 2PM EDT OCT 04 2012 MOSUNNY   72  48  42 W17       30.17F                     .
+ 3PM EDT OCT 04 2012 MOSUNNY   73  49  42 SW13G20   30.16F                     .
+ 4PM EDT OCT 04 2012 PTSUNNY   72  48  42 SW8G16    30.15F                     .
+ 5PM EDT OCT 04 2012 PTSUNNY   72  50  45 SW8       30.14F                     .
+ 6PM EDT OCT 04 2012 MOCLDY    70  51  51 SW3       30.14S                     .
+ 7PM EDT OCT 04 2012 MOCLDY    71  52  50 SW9       30.14S                     .
+ 8PM EDT OCT 04 2012 PTCLDY    67  52  58 SW5       30.14S                     .
+ 9PM EDT OCT 04 2012 PTCLDY    65  52  62 SW3       30.14S                     .
+10PM EDT OCT 04 2012 PTCLDY    63  52  67 CALM      30.14S                     .
+11PM EDT OCT 04 2012 CLEAR     62  52  69 S3        30.14S                     .
+12AM EDT OCT 05 2012 CLEAR     63  52  67 SW6       30.14S                     .
+ 1AM EDT OCT 05 2012 CLEAR     62  52  69 SW6       30.13F                     .
+ 2AM EDT OCT 05 2012 CLEAR     62  53  72 SW7       30.14R                     .
+ 3AM EDT OCT 05 2012 CLEAR     61  53  75 SW7       30.14S                     .
+ 4AM EDT OCT 05 2012 CLEAR     61  53  75 SW6       30.12F                     .
+ 5AM EDT OCT 05 2012 CLEAR     60  53  77 S5        30.11F                     .
+ 6AM EDT OCT 05 2012 CLEAR     58  52  80 CALM      30.12R                     .
+ 7AM EDT OCT 05 2012 CLEAR     58  52  80 CALM      30.12S                     .
+ 8AM EDT OCT 05 2012 PTCLDY    56  52  86 S3        30.12S                     .
+ 9AM EDT OCT 05 2012 MOSUNNY   62  53  72 VRB5      30.12S                     .
+10AM EDT OCT 05 2012 MOSUNNY   65  54  67 SW9       30.12S                     .
+11AM EDT OCT 05 2012 MOSUNNY   68  55  63 SW8       30.10F                     .
+12PM EDT OCT 05 2012 MOSUNNY   71  56  58 SW13      30.09F                     .
+ 1PM EDT OCT 05 2012 MOSUNNY   73  56  54 SW12      30.07F                     .
+ 2PM EDT OCT 05 2012 PTSUNNY   74  55  51 SW12      30.04F                     .
+ 3PM EDT OCT 05 2012 PTSUNNY   74  54  49 SW9G18    30.03F                     .
+ 4PM EDT OCT 05 2012 PTSUNNY   73  54  51 SW12      30.01F                     .
+ 5PM EDT OCT 05 2012 PTSUNNY   74  55  51 SW9       29.99F                     .
+ 6PM EDT OCT 05 2012 MOCLDY    72  54  53 SW7       29.98F                     .
+ 7PM EDT OCT 05 2012 MOCLDY    71  55  56 SW5       29.97F                     .
+ 8PM EDT OCT 05 2012 CLOUDY    68  56  65 CALM      29.96F                     .
+ 9PM EDT OCT 05 2012 MOCLDY    66  56  70 S5        29.94F                     .
+10PM EDT OCT 05 2012 CLOUDY    67  55  65 S5        29.92F                     .
+11PM EDT OCT 05 2012 CLOUDY    66  54  65 S6        29.90F                     .
+12AM EDT OCT 06 2012 CLOUDY    68  53  58 SW8       29.89F                     .
+ 1AM EDT OCT 06 2012 CLOUDY    63  57  81 NW10      29.88F                     .
+ 2AM EDT OCT 06 2012 CLOUDY    57  54  89 N13       29.87S FOG                 .
+ 3AM EDT OCT 06 2012 CLOUDY    55  51  86 NW7       29.85F                     .
+ 4AM EDT OCT 06 2012 LGT RAIN  52  50  93 NW13      29.88R                     .
+ 5AM EDT OCT 06 2012 LGT RAIN  48  45  89 N7        29.89R                     .
+ 6AM EDT OCT 06 2012 LGT RAIN  47  45  93 NW13      29.92R                     .
+ 7AM EDT OCT 06 2012 LGT RAIN  47  44  90 NW9       29.94R FOG                 .
+ 8AM EDT OCT 06 2012 CLOUDY    47  44  90 NW12      29.95R                     .
+ 9AM EDT OCT 06 2012 CLOUDY    47  44  90 W10       29.97R                     .
+10AM EDT OCT 06 2012 CLOUDY    47  43  86 W12       30.01R                     .
+11AM EDT OCT 06 2012 CLOUDY    47  41  80 W17       30.02R                     .
+12PM EDT OCT 06 2012 PTSUNNY   50  39  66 W15       30.02S                     .
+ 1PM EDT OCT 06 2012 PTSUNNY   52  37  56 W8        30.02S                     .
+ 2PM EDT OCT 06 2012 MOSUNNY   54  36  50 W13G21    30.01F                     .
+ 3PM EDT OCT 06 2012 NOT AVBL                                                  .
+ 4PM EDT OCT 06 2012 FAIR      57  35  43 W14       30.00                      .
+ 5PM EDT OCT 06 2012 MOSUNNY   55  33  43 W13       29.99F                     .
+ 6PM EDT OCT 06 2012 PTCLDY    55  34  45 W10       30.00R                     .
+ 7PM EDT OCT 06 2012 PTCLDY    53  33  46 NW12      30.03R                     .
+ 8PM EDT OCT 06 2012 PTCLDY    50  34  54 NW8       30.05R                     .
+ 9PM EDT OCT 06 2012 PTCLDY    48  34  58 NW8       30.07R                     .
+10PM EDT OCT 06 2012 MOCLDY    48  34  58 NW8       30.08R                     .
+11PM EDT OCT 06 2012 CLOUDY    47  35  63 NW5       30.10R                     .
+12AM EDT OCT 07 2012 CLOUDY    47  34  60 NW3       30.09F                     .
+ 1AM EDT OCT 07 2012 CLOUDY    47  34  60 NW5       30.09S                     .
+ 2AM EDT OCT 07 2012 CLOUDY    47  34  60 NW5       30.09S                     .
+ 3AM EDT OCT 07 2012 CLOUDY    46  35  65 NW5       30.07F                     .
+ 4AM EDT OCT 07 2012 CLOUDY    46  35  65 NW5       30.05F                     .
+ 5AM EDT OCT 07 2012 CLOUDY    45  34  65 NW3       30.05S                     .
+ 6AM EDT OCT 07 2012 CLOUDY    45  38  76 CALM      30.07R                     .
+ 7AM EDT OCT 07 2012 CLOUDY    44  38  79 CALM      30.07S                     .
+ 8AM EDT OCT 07 2012 CLOUDY    44  38  79 CALM      30.08R                     .
+ 9AM EDT OCT 07 2012 CLOUDY    44  36  73 CALM      30.08S                     .
+10AM EDT OCT 07 2012 CLOUDY    45  37  73 W3        30.09R                     .
+11AM EDT OCT 07 2012 CLOUDY    46  36  68 W3        30.10R                     .
+12PM EDT OCT 07 2012 CLOUDY    46  33  60 CALM      30.08F                     .
+ 1PM EDT OCT 07 2012 CLOUDY    46  35  65 W6        30.09R                     .
+ 2PM EDT OCT 07 2012 CLOUDY    47  35  63 W9        30.09S                     .
+ 3PM EDT OCT 07 2012 DRIZZLE   46  35  65 W7        30.07F                     .
+ 4PM EDT OCT 07 2012 LGT RAIN  45  36  70 SW7       30.09R                     .
+ 5PM EDT OCT 07 2012 LGT RAIN  45  37  76 W5        30.10R                     .
+ 6PM EDT OCT 07 2012 LGT RAIN  44  39  82 SW6       30.12R                     .
+ 7PM EDT OCT 07 2012 CLOUDY    43  39  86 NW7       30.13R                     .
+ 8PM EDT OCT 07 2012 MOCLDY    43  39  86 NW6       30.14R                     .
+ 9PM EDT OCT 07 2012 PTCLDY    41  39  93 CALM      30.16R                     .
+10PM EDT OCT 07 2012 PTCLDY    40  38  93 CALM      30.17R                     .
+11PM EDT OCT 07 2012 PTCLDY    39  37  92 CALM      30.17S                     .
+12AM EDT OCT 08 2012 PTCLDY    37  35  92 CALM      30.16F                     .
+ 1AM EDT OCT 08 2012 PTCLDY    37  35  92 CALM      30.17R                     .
+ 2AM EDT OCT 08 2012 PTCLDY    36  34  92 CALM      30.17S                     .
+ 3AM EDT OCT 08 2012 NOT AVBL                                                  .
+ 4AM EDT OCT 08 2012 CLEAR     35  33  92 CALM      30.19                      .
+ 5AM EDT OCT 08 2012 PTCLDY    35  33  92 CALM      30.20R                     .
+ 6AM EDT OCT 08 2012 MOCLDY    35  33  92 CALM      30.21R                     .
+ 7AM EDT OCT 08 2012 CLOUDY    35  33  92 CALM      30.23R                     .
+ 8AM EDT OCT 08 2012 CLOUDY    36  34  92 CALM      30.23S                     .
+ 9AM EDT OCT 08 2012 CLOUDY    37  35  92 CALM      30.24R                     .
+10AM EDT OCT 08 2012 CLOUDY    40  38  93 SE3       30.24S                     .
+11AM EDT OCT 08 2012 CLOUDY    43  39  86 CALM      30.25R                     .
+12PM EDT OCT 08 2012 CLOUDY    45  38  76 CALM      30.25S                     .
+ 1PM EDT OCT 08 2012 CLOUDY    46  37  71 S3        30.25S                     .
+ 2PM EDT OCT 08 2012 CLOUDY    47  36  65 SE6       30.23F                     .
+ 3PM EDT OCT 08 2012 CLOUDY    47  33  58 S5        30.22F                     .
+ 4PM EDT OCT 08 2012 CLOUDY    48  33  56 S6        30.21F                     .
+ 5PM EDT OCT 08 2012 CLOUDY    48  33  56 S5        30.20F                     .
+ 6PM EDT OCT 08 2012 CLOUDY    48  33  56 SE5       30.20S                     .
+ 7PM EDT OCT 08 2012 MOCLDY    47  34  60 S3        30.19F                     .
+ 8PM EDT OCT 08 2012 MOCLDY    46  35  65 CALM      30.19S                     .
+ 9PM EDT OCT 08 2012 MOCLDY    46  36  68 CALM      30.19S                     .
+10PM EDT OCT 08 2012 PTCLDY    43  37  79 CALM      30.20R                     .
+11PM EDT OCT 08 2012 PTCLDY    40  36  86 CALM      30.20S                     .
+12AM EDT OCT 09 2012 PTCLDY    38  35  89 CALM      30.19F                     .
+ 1AM EDT OCT 09 2012 PTCLDY    39  34  82 CALM      30.19S                     .
+ 2AM EDT OCT 09 2012 CLEAR     37  34  89 CALM      30.18F                     .
+ 3AM EDT OCT 09 2012 CLEAR     35  32  88 NW3       30.19R                     .
+ 4AM EDT OCT 09 2012 CLEAR     35  32  88 CALM      30.17F                     .
+ 5AM EDT OCT 09 2012 PTCLDY    34  32  92 CALM      30.16F                     .
+ 6AM EDT OCT 09 2012 PTCLDY    33  31  92 CALM      30.17R                     .
+ 7AM EDT OCT 09 2012 FOG       33  32  96 CALM      30.19R VSB 1               .
+ 8AM EDT OCT 09 2012 FOG       33  33 100 CALM      30.19S VSB 1/8             .
+ 9AM EDT OCT 09 2012 FOG       34  34 100 CALM      30.19S VSB 1/8             .
+10AM EDT OCT 09 2012 FOG       37  37 100 CALM      30.20R VSB 1/4             .
+11AM EDT OCT 09 2012 NOT AVBL                                                  .
+12PM EDT OCT 09 2012 MOSUNNY   48  40  73 VRB5      30.16F                     .
+ 1PM EDT OCT 09 2012 MOSUNNY   53  41  63 S7        30.15F                     .
+ 2PM EDT OCT 09 2012 MOSUNNY   55  40  56 CALM      30.11F                     .
+ 3PM EDT OCT 09 2012 MOSUNNY   56  39  53 S10       30.08F                     .
+ 4PM EDT OCT 09 2012 FAIR      57  40  52 SE8       30.07F                     .
+ 5PM EDT OCT 09 2012 MOSUNNY   58  39  49 S9G16     30.05F                     .
+ 6PM EDT OCT 09 2012 PTCLDY    58  39  49 S8        30.05S                     .
+ 7PM EDT OCT 09 2012 PTCLDY    56  40  55 S3        30.03F                     .
+ 8PM EDT OCT 09 2012 PTCLDY    52  41  66 CALM      30.03S                     .
+ 9PM EDT OCT 09 2012 CLEAR     50  40  68 S3        30.03S                     .
+10PM EDT OCT 09 2012 NOT AVBL                                                  .
+11PM EDT OCT 09 2012 CLEAR     47  39  74 S5        30.02                      .
+12AM EDT OCT 10 2012 CLEAR     45  39  79 S3        30.01F                     .
+ 1AM EDT OCT 10 2012 CLEAR     43  39  86 S5        29.99F                     .
+ 2AM EDT OCT 10 2012 CLEAR     44  39  82 CALM      29.99S                     .
+ 3AM EDT OCT 10 2012 PTCLDY    42  39  89 SE5       29.97F                     .
+ 4AM EDT OCT 10 2012 NOT AVBL                                                  .
+ 5AM EDT OCT 10 2012 PTCLDY    42  39  89 S5        29.95F                     .
+ 6AM EDT OCT 10 2012 PTCLDY    43  39  86 S5        29.95S                     .
+ 7AM EDT OCT 10 2012 PTCLDY    43  39  86 S6        29.94F                     .
+ 8AM EDT OCT 10 2012 MOCLDY    45  41  86 S7        29.93F                     .
+ 9AM EDT OCT 10 2012 PTSUNNY   48  42  80 S7        29.93S                     .
+10AM EDT OCT 10 2012 PTSUNNY   50  43  77 SW10      29.93S                     .
+11AM EDT OCT 10 2012 CLOUDY    51  43  74 SW10      29.93S                     .
+12PM EDT OCT 10 2012 CLOUDY    50  43  77 SW13      29.94R                     .
+ 1PM EDT OCT 10 2012 DRIZZLE   49  44  83 W8        29.96R                     .
+ 2PM EDT OCT 10 2012 DRIZZLE   48  45  89 W12       29.95F                     .
+ 3PM EDT OCT 10 2012 PTSUNNY   51  42  71 W12       29.95S                     .
+ 4PM EDT OCT 10 2012 PTSUNNY   53  37  54 W9        29.95S                     .
+ 5PM EDT OCT 10 2012 PTSUNNY   54  36  50 NW12      29.97R                     .
+ 6PM EDT OCT 10 2012 MOCLDY    52  34  50 NW17      29.99R                     .
+ 7PM EDT OCT 10 2012 FAIR      49  34  56 W9        30.02R                     .
+ 8PM EDT OCT 10 2012 FAIR      45  33  63 W7        30.05R                     .
+ 9PM EDT OCT 10 2012 MOCLDY    45  32  60 W10G16    30.07R                     .
+10PM EDT OCT 10 2012 MOCLDY    44  30  57 W10G21    30.11R                     .
+11PM EDT OCT 10 2012 MOCLDY    44  29  55 W16       30.14R                     .
+12AM EDT OCT 11 2012 PTCLDY    42  28  57 W10       30.16R                     .
+ 1AM EDT OCT 11 2012 PTCLDY    40  27  59 W6        30.17R                     .
+ 2AM EDT OCT 11 2012 PTCLDY    38  27  64 W5        30.18R                     .
+ 3AM EDT OCT 11 2012 CLEAR     38  27  64 W5        30.18S                     .
+ 4AM EDT OCT 11 2012 PTCLDY    36  28  73 W6        30.19R                     .
+ 5AM EDT OCT 11 2012 CLEAR     33  27  78 W5        30.20R WCI  29             .
+ 6AM EDT OCT 11 2012 CLEAR     35  27  72 W5        30.24R WCI  31             .
+ 7AM EDT OCT 11 2012 PTCLDY    34  27  75 SW5       30.27R WCI  30             .
+ 8AM EDT OCT 11 2012 PTCLDY    34  28  79 CALM      30.28R                     .
+ 9AM EDT OCT 11 2012 MOSUNNY   38  29  70 CALM      30.28S                     .
+10AM EDT OCT 11 2012 SUNNY     42  28  57 SW8       30.29R                     .
+11AM EDT OCT 11 2012 SUNNY     45  28  51 SW10      30.29S                     .
+12PM EDT OCT 11 2012 MOSUNNY   49  27  42 W14G20    30.27F                     .
+ 1PM EDT OCT 11 2012 SUNNY     50  27  40 SW9G17    30.24F                     .
+ 2PM EDT OCT 11 2012 SUNNY     52  28  39 SW9       30.20F                     .
+ 3PM EDT OCT 11 2012 SUNNY     54  28  36 SW10      30.18F                     .
+ 4PM EDT OCT 11 2012 FAIR      55  27  34 SW10      30.16F                     .
+ 5PM EDT OCT 11 2012 MOSUNNY   56  28  34 VRB7      30.14F                     .
+ 6PM EDT OCT 11 2012 PTCLDY    56  28  34 SW8       30.13F                     .
+ 7PM EDT OCT 11 2012 PTCLDY    53  29  39 S5        30.14R                     .
+ 8PM EDT OCT 11 2012 PTCLDY    49  32  52 SW5       30.14S                     .
+ 9PM EDT OCT 11 2012 PTCLDY    46  33  60 SW3       30.16R                     .
+10PM EDT OCT 11 2012 PTCLDY    46  31  55 SW6       30.16S                     .
+11PM EDT OCT 11 2012 PTCLDY    46  30  53 SW5       30.16S                     .
+12AM EDT OCT 12 2012 PTCLDY    44  31  60 CALM      30.15F                     .
+ 1AM EDT OCT 12 2012 PTCLDY    44  30  57 SW5       30.15S                     .
+ 2AM EDT OCT 12 2012 PTCLDY    44  30  57 CALM      30.16R                     .
+ 3AM EDT OCT 12 2012 PTCLDY    43  31  62 W5        30.16S                     .
+ 4AM EDT OCT 12 2012 MOCLDY    44  31  60 W5        30.14F                     .
+ 5AM EDT OCT 12 2012 CLOUDY    44  32  62 CALM      30.15R                     .
+ 6AM EDT OCT 12 2012 CLOUDY    45  33  63 NW5       30.17R                     .
+ 7AM EDT OCT 12 2012 CLOUDY    44  34  67 W7        30.20R                     .
+ 8AM EDT OCT 12 2012 DRIZZLE   46  37  71 NW16      30.24R                     .
+ 9AM EDT OCT 12 2012 CLOUDY    45  36  70 N12       30.27R                     .
+10AM EDT OCT 12 2012 CLOUDY    45  37  73 NW10      30.31R                     .
+11AM EDT OCT 12 2012 CLOUDY    45  37  73 N12       30.34R                     .
+12PM EDT OCT 12 2012 PTSUNNY   49  37  63 N9        30.34S                     .
+ 1PM EDT OCT 12 2012 PTSUNNY   52  33  48 N14       30.34S                     .
+ 2PM EDT OCT 12 2012 PTSUNNY   52  28  39 N6G21     30.33F                     .
+ 3PM EDT OCT 12 2012 PTSUNNY   53  29  39 N15       30.33S                     .
+ 4PM EDT OCT 12 2012 FAIR      54  30  40 N12G20    30.34R                     .
+ 5PM EDT OCT 12 2012 MOSUNNY   53  27  36 N12       30.34S                     .
+ 6PM EDT OCT 12 2012 PTCLDY    52  27  38 N9        30.35R                     .
+ 7PM EDT OCT 12 2012 CLEAR     48  26  42 N6        30.36R                     .
+ 8PM EDT OCT 12 2012 CLEAR     46  27  47 N5        30.38R                     .
+ 9PM EDT OCT 12 2012 CLEAR     45  27  49 N3        30.40R                     .
+10PM EDT OCT 12 2012 CLEAR     42  28  57 N3        30.41R                     .
+11PM EDT OCT 12 2012 CLEAR     41  27  57 NE7       30.41S                     .
+12AM EDT OCT 13 2012 CLEAR     38  27  64 E5        30.41S                     .
+ 1AM EDT OCT 13 2012 CLEAR     38  26  62 E3        30.41S                     .
+ 2AM EDT OCT 13 2012 CLEAR     37  26  64 E3        30.40F                     .
+ 3AM EDT OCT 13 2012 CLEAR     36  26  67 CALM      30.40S                     .
+ 4AM EDT OCT 13 2012 CLEAR     34  27  75 E3        30.38F                     .
+ 5AM EDT OCT 13 2012 CLEAR     33  27  78 E6        30.35F WCI  28             .
+ 6AM EDT OCT 13 2012 CLEAR     33  26  75 CALM      30.37R                     .
+ 7AM EDT OCT 13 2012 PTCLDY    32  26  78 CALM      30.38R                     .
+ 8AM EDT OCT 13 2012 PTCLDY    33  26  75 CALM      30.37F                     .
+ 9AM EDT OCT 13 2012 MOSUNNY   35  29  78 CALM      30.37S                     .
+10AM EDT OCT 13 2012 MOSUNNY   43  29  57 SE7       30.35F                     .
+11AM EDT OCT 13 2012 MOSUNNY   48  31  51 S7        30.35S                     .
+12PM EDT OCT 13 2012 SUNNY     52  34  50 SE5       30.32F                     .
+ 1PM EDT OCT 13 2012 MOSUNNY   57  38  48 S7        30.29F                     .
+ 2PM EDT OCT 13 2012 PTSUNNY   61  40  45 VRB3      30.25F                     .
+ 3PM EDT OCT 13 2012 PTSUNNY   64  42  44 S6        30.22F                     .
+ 4PM EDT OCT 13 2012 PTSUNNY   66  42  41 S10       30.19F                     .
+ 5PM EDT OCT 13 2012 CLOUDY    65  41  41 S8        30.16F                     .
+ 6PM EDT OCT 13 2012 CLOUDY    64  42  44 S7        30.15F                     .
+ 7PM EDT OCT 13 2012 CLOUDY    62  42  47 SE7       30.13F                     .
+ 8PM EDT OCT 13 2012 CLOUDY    61  42  49 S5        30.12F                     .
+ 9PM EDT OCT 13 2012 CLOUDY    61  42  49 S3        30.11F                     .
+10PM EDT OCT 13 2012 MOCLDY    61  42  49 S6        30.10F                     .
+11PM EDT OCT 13 2012 NOT AVBL                                                  .
+12AM EDT OCT 14 2012 CLOUDY    62  44  51 S9        30.06                      .
+ 1AM EDT OCT 14 2012 CLOUDY    64  45  49 S9G20     30.05F                     .
+ 2AM EDT OCT 14 2012 CLOUDY    64  46  52 S9        30.06R                     .
+ 3AM EDT OCT 14 2012 CLOUDY    64  47  53 S7        30.06S                     .
+ 4AM EDT OCT 14 2012 CLOUDY    63  48  58 S7        30.05F                     .
+ 5AM EDT OCT 14 2012 PTCLDY    61  48  62 S5        30.05S                     .
+ 6AM EDT OCT 14 2012 PTCLDY    59  48  67 S5        30.05S                     .
+ 7AM EDT OCT 14 2012 MOCLDY    60  48  64 S8        30.06R                     .
+ 8AM EDT OCT 14 2012 MOCLDY    60  48  64 S7        30.06S                     .
+ 9AM EDT OCT 14 2012 CLOUDY    62  48  60 S8        30.06S                     .
+10AM EDT OCT 14 2012 PTSUNNY   63  49  60 S10       30.05F                     .
+11AM EDT OCT 14 2012 PTSUNNY   66  50  56 S10       30.04F                     .
+12PM EDT OCT 14 2012 PTSUNNY   69  51  52 SW15G23   30.01F                     .
+ 1PM EDT OCT 14 2012 PTSUNNY   72  53  51 S14G25    29.98F                     .
+ 2PM EDT OCT 14 2012 PTSUNNY   74  54  49 S13G22    29.94F                     .
+ 3PM EDT OCT 14 2012 CLOUDY    73  53  49 SW15G22   29.89F                     .
+ 4PM EDT OCT 14 2012 PTSUNNY   76  52  43 SW21G30   29.86F                     .
+ 5PM EDT OCT 14 2012 PTSUNNY   76  51  41 S15G25    29.84F                     .
+ 6PM EDT OCT 14 2012 CLOUDY    75  51  43 S21G28    29.82F                     .
+ 7PM EDT OCT 14 2012 CLOUDY    74  51  44 SW10      29.81F                     .
+ 8PM EDT OCT 14 2012 CLOUDY    72  51  47 S9        29.79F                     .
+ 9PM EDT OCT 14 2012 CLOUDY    72  50  45 S14G20    29.76F                     .
+10PM EDT OCT 14 2012 CLOUDY    72  50  45 S15G21    29.75F                     .
+11PM EDT OCT 14 2012 MOCLDY    71  51  49 SW15G26   29.73F                     .
+12AM EDT OCT 15 2012 CLOUDY    71  52  50 SW20G28   29.72F                     .
+ 1AM EDT OCT 15 2012 CLOUDY    70  52  52 SW16G26   29.69F                     .
+ 2AM EDT OCT 15 2012 CLOUDY    69  53  56 SW16G26   29.68F                     .
+ 3AM EDT OCT 15 2012 CLOUDY    68  54  60 SW16G26   29.66F                     .
+ 4AM EDT OCT 15 2012 LGT RAIN  65  55  70 SW15G22   29.67R                     .
+ 5AM EDT OCT 15 2012 CLOUDY    59  54  83 W8        29.70R                     .
+ 6AM EDT OCT 15 2012 MOCLDY    58  52  80 W9        29.72R                     .
+ 7AM EDT OCT 15 2012 MOCLDY    56  50  80 W12       29.76R                     .
+ 8AM EDT OCT 15 2012 CLOUDY    53  45  74 W15       29.76S                     .
+ 9AM EDT OCT 15 2012 CLOUDY    53  45  74 W9        29.79R                     .
+10AM EDT OCT 15 2012 CLOUDY    54  45  71 W8        29.79S                     .
+11AM EDT OCT 15 2012 CLOUDY    55  45  68 W8        29.80R                     .
+12PM EDT OCT 15 2012 CLOUDY    56  44  64 W10       29.80S                     .
+ 1PM EDT OCT 15 2012 CLOUDY    57  45  64 W9        29.78F                     .
+ 2PM EDT OCT 15 2012 CLOUDY    58  44  60 W9        29.76F                     .
+ 3PM EDT OCT 15 2012 LGT RAIN  57  46  66 W14       29.76S                     .
+ 4PM EDT OCT 15 2012 RAIN      57  48  72 W8        29.76S                     .
+ 5PM EDT OCT 15 2012 LGT RAIN  51  48  89 W7        29.79R                     .
+ 6PM EDT OCT 15 2012 LGT RAIN  51  47  86 NW15      29.82R                     .
+ 7PM EDT OCT 15 2012 CLOUDY    50  47  89 W9        29.83R                     .
+ 8PM EDT OCT 15 2012 CLOUDY    50  45  83 NW13      29.85R                     .
+ 9PM EDT OCT 15 2012 MOCLDY    49  44  83 W12       29.87R                     .
+10PM EDT OCT 15 2012 CLOUDY    49  44  83 W8        29.89R                     .
+11PM EDT OCT 15 2012 CLOUDY    48  43  82 W5        29.89S                     .
+12AM EDT OCT 16 2012 CLOUDY    48  43  82 W6        29.89S                     .
+ 1AM EDT OCT 16 2012 CLOUDY    48  43  82 W8        29.89S                     .
+ 2AM EDT OCT 16 2012 DRIZZLE   48  44  86 W8        29.90R                     .
+ 3AM EDT OCT 16 2012 CLOUDY    47  43  86 NW9       29.90S                     .
+ 4AM EDT OCT 16 2012 CLOUDY    46  43  89 W7        29.90S                     .
+ 5AM EDT OCT 16 2012 CLOUDY    47  42  83 W8        29.90S                     .
+ 6AM EDT OCT 16 2012 CLOUDY    45  41  86 W7        29.92R                     .
+ 7AM EDT OCT 16 2012 MOCLDY    44  40  85 W5        29.94R                     .
+ 8AM EDT OCT 16 2012 CLOUDY    45  40  82 W3        29.94S                     .
+ 9AM EDT OCT 16 2012 CLOUDY    45  40  82 W7        29.97R                     .
+10AM EDT OCT 16 2012 CLOUDY    46  40  79 W5        29.98R                     .
+11AM EDT OCT 16 2012 CLOUDY    48  39  71 W10       29.98S                     .
+12PM EDT OCT 16 2012 CLOUDY    49  39  68 NW6       29.98S                     .
+ 1PM EDT OCT 16 2012 CLOUDY    51  37  58 W8        29.97F                     .
+ 2PM EDT OCT 16 2012 PTSUNNY   52  37  56 NW9       29.95F                     .
+ 3PM EDT OCT 16 2012 PTSUNNY   55  37  50 W6        29.93F                     .
+ 4PM EDT OCT 16 2012 FAIR      55  37  50 NW6       29.92F                     .
+ 5PM EDT OCT 16 2012 MOSUNNY   56  36  47 NW3       29.88F                     .
+ 6PM EDT OCT 16 2012 PTCLDY    56  36  47 SW6       29.88S                     .
+ 7PM EDT OCT 16 2012 PTCLDY    54  37  52 S3        29.88S                     .
+ 8PM EDT OCT 16 2012 PTCLDY    50  38  63 CALM      29.89R                     .
+ 9PM EDT OCT 16 2012 PTCLDY    48  38  68 CALM      29.89S                     .
+10PM EDT OCT 16 2012 PTCLDY    44  38  79 CALM      29.88F                     .
+11PM EDT OCT 16 2012 MOCLDY    44  38  79 CALM      29.88S                     .
+12AM EDT OCT 17 2012 MOCLDY    43  38  82 CALM      29.90R                     .
+ 1AM EDT OCT 17 2012 MOCLDY    43  37  79 CALM      29.89F                     .
+ 2AM EDT OCT 17 2012 MOCLDY    42  37  82 CALM      29.90R                     .
+ 3AM EDT OCT 17 2012 NOT AVBL                                                  .
+ 4AM EDT OCT 17 2012 MOCLDY    41  37  86 CALM      29.89                      .
+ 5AM EDT OCT 17 2012 PTCLDY    41  36  82 CALM      29.89S                     .
+ 6AM EDT OCT 17 2012 MOCLDY    39  36  89 S3        29.89S                     .
+ 7AM EDT OCT 17 2012 PTCLDY    39  35  86 CALM      29.89S                     .
+ 8AM EDT OCT 17 2012 MOCLDY    40  36  86 SE3       29.89S                     .
+ 9AM EDT OCT 17 2012 PTSUNNY   44  39  82 SE5       29.91R                     .
+10AM EDT OCT 17 2012 PTSUNNY   51  41  68 S5        29.91S                     .
+11AM EDT OCT 17 2012 PTSUNNY   57  41  55 SE7       29.89F                     .
+12PM EDT OCT 17 2012 PTSUNNY   63  39  41 S9        29.88F                     .
+ 1PM EDT OCT 17 2012 PTSUNNY   65  40  39 S9        29.87F                     .
+ 2PM EDT OCT 17 2012 PTSUNNY   67  41  38 S8        29.84F                     .
+ 3PM EDT OCT 17 2012 PTSUNNY   69  43  38 S6        29.81F                     .
+ 4PM EDT OCT 17 2012 FAIR      70  44  39 S10       29.80F                     .
+ 5PM EDT OCT 17 2012 MOSUNNY   70  44  39 SE9       29.80S                     .
+ 6PM EDT OCT 17 2012 PTCLDY    69  44  40 SE8       29.79F                     .
+ 7PM EDT OCT 17 2012 PTCLDY    65  44  46 SE6       29.79S                     .
+ 8PM EDT OCT 17 2012 PTCLDY    63  44  50 SE6       29.79S                     .
+ 9PM EDT OCT 17 2012 PTCLDY    61  43  51 SE6       29.77F                     .
+10PM EDT OCT 17 2012 PTCLDY    60  41  49 SE10      29.77S                     .
+11PM EDT OCT 17 2012 MOCLDY    57  40  52 SE7       29.77S                     .
+12AM EDT OCT 18 2012 PTCLDY    55  39  54 SE8       29.75F                     .
+ 1AM EDT OCT 18 2012 MOCLDY    55  39  54 SE7       29.73F                     .
+ 2AM EDT OCT 18 2012 CLOUDY    54  39  57 SE5       29.75R                     .
+ 3AM EDT OCT 18 2012 MOCLDY    53  39  59 SE6       29.73F                     .
+ 4AM EDT OCT 18 2012 PTCLDY    51  38  60 SE6       29.72F                     .
+ 5AM EDT OCT 18 2012 PTCLDY    51  39  63 SE5       29.70F                     .
+ 6AM EDT OCT 18 2012 PTCLDY    50  39  66 SE5       29.69F                     .
+ 7AM EDT OCT 18 2012 MOCLDY    51  40  65 SE3       29.70R                     .
+ 8AM EDT OCT 18 2012 CLOUDY    52  41  66 SE8       29.70S                     .
+ 9AM EDT OCT 18 2012 CLOUDY    53  42  66 SE10      29.70S                     .
+10AM EDT OCT 18 2012 CLOUDY    56  42  59 SE13      29.69F                     .
+11AM EDT OCT 18 2012 CLOUDY    61  43  51 S13       29.68F                     .
+12PM EDT OCT 18 2012 PTSUNNY   65  43  44 SE14G20   29.67F                     .
+ 1PM EDT OCT 18 2012 CLOUDY    67  43  41 S14G22    29.66F                     .
+ 2PM EDT OCT 18 2012 CLOUDY    67  44  43 S10G17    29.67R                     .
+ 3PM EDT OCT 18 2012 CLOUDY    64  45  49 W25G35    29.69R                     .
+ 4PM EDT OCT 18 2012 LGT RAIN  54  47  77 W12G22    29.71R                     .
+ 5PM EDT OCT 18 2012 LGT RAIN  51  46  83 W7        29.73R                     .
+ 6PM EDT OCT 18 2012 LGT RAIN  51  46  83 SE3       29.74R                     .
+ 7PM EDT OCT 18 2012 LGT RAIN  49  47  93 E5        29.77R                     .
+ 8PM EDT OCT 18 2012 CLOUDY    50  47  89 SE5       29.79R                     .
+ 9PM EDT OCT 18 2012 LGT RAIN  49  47  93 S6        29.83R                     .
+10PM EDT OCT 18 2012 CLOUDY    50  47  89 SE14      29.80F                     .
+11PM EDT OCT 18 2012 MOCLDY    49  47  93 CALM      29.80S                     .
+12AM EDT OCT 19 2012 PTCLDY    45  44  97 CALM      29.80S                     .
+ 1AM EDT OCT 19 2012 FOG       47  46  97 SE6       29.79F VSB 1/4             .
+ 2AM EDT OCT 19 2012 FOG       48  47  96 SE6       29.79S VSB 1/4             .
+ 3AM EDT OCT 19 2012 FOG       48  47  96 SE6       29.78F VSB 1/4             .
+ 4AM EDT OCT 19 2012 FOG       48  47  96 SE6       29.76F VSB 1/4             .
+ 5AM EDT OCT 19 2012 FOG       48  47  96 SE5       29.75F VSB 1/4             .
+ 6AM EDT OCT 19 2012 FOG       47  47 100 SE7       29.73F VSB 1/4             .
+ 7AM EDT OCT 19 2012 FOG       46  45  96 CALM      29.74R VSB 1               .
+ 8AM EDT OCT 19 2012 FOG       45  44  97 CALM      29.73F VSB 1/8             .
+ 9AM EDT OCT 19 2012 MOSUNNY   46  46 100 SE6       29.73S FOG                 .
+10AM EDT OCT 19 2012 MOSUNNY   51  46  83 SE7       29.72F                     .
+11AM EDT OCT 19 2012 MOSUNNY   55  46  71 SE8       29.70F                     .
+12PM EDT OCT 19 2012 MOSUNNY   59  44  57 S9        29.68F                     .
+ 1PM EDT OCT 19 2012 MOSUNNY   62  40  44 S10G21    29.66F                     .
+ 2PM EDT OCT 19 2012 PTSUNNY   63  39  41 S6G16     29.64F                     .
+ 3PM EDT OCT 19 2012 PTSUNNY   63  35  35 S12       29.62F                     .
+ 4PM EDT OCT 19 2012 PTSUNNY   63  33  32 S14G20    29.61F                     .
+ 5PM EDT OCT 19 2012 CLOUDY    63  33  32 SW7       29.60F                     .
+ 6PM EDT OCT 19 2012 CLOUDY    62  34  35 SW5       29.61R                     .
+ 7PM EDT OCT 19 2012 CLOUDY    61  33  35 SW8       29.63R                     .
+ 8PM EDT OCT 19 2012 CLOUDY    60  34  37 W7        29.62F                     .
+ 9PM EDT OCT 19 2012 LGT RAIN  58  35  42 SW15G24   29.66R                     .
+10PM EDT OCT 19 2012 LGT RAIN  51  43  74 W8        29.70R                     .
+11PM EDT OCT 19 2012 CLOUDY    49  44  83 SW8       29.69F                     .
+12AM EDT OCT 20 2012 CLOUDY    49  41  74 SW12G21   29.71R                     .
+ 1AM EDT OCT 20 2012 CLOUDY    48  41  76 SW9       29.72R                     .
+ 2AM EDT OCT 20 2012 CLOUDY    47  40  76 SW8       29.71F                     .
+ 3AM EDT OCT 20 2012 CLOUDY    47  40  76 S6        29.72R                     .
+ 4AM EDT OCT 20 2012 CLOUDY    47  40  76 S7        29.72S                     .
+ 5AM EDT OCT 20 2012 LGT RAIN  47  42  83 S6        29.72S                     .
+ 6AM EDT OCT 20 2012 LGT RAIN  46  43  89 SW6       29.72S                     .
+ 7AM EDT OCT 20 2012 MOCLDY    46  42  86 SW9       29.72S                     .
+ 8AM EDT OCT 20 2012 MOCLDY    45  42  89 SW7       29.74R                     .
+ 9AM EDT OCT 20 2012 PTSUNNY   46  42  86 SW8       29.75R                     .
+10AM EDT OCT 20 2012 PTSUNNY   48  42  80 SW8G16    29.76R                     .
+11AM EDT OCT 20 2012 PTSUNNY   49  40  71 SW14G22   29.77R                     .
+12PM EDT OCT 20 2012 CLOUDY    50  39  66 SW12G20   29.78R                     .
+ 1PM EDT OCT 20 2012 LGT RAIN  49  41  74 W9G17     29.78S                     .
+ 2PM EDT OCT 20 2012 LGT RAIN  49  42  77 W9        29.78S                     .
+ 3PM EDT OCT 20 2012 PTSUNNY   50  43  77 SW13G20   29.78S                     .
+ 4PM EDT OCT 20 2012 MOSUNNY   51  42  71 SW9G18    29.79R                     .
+ 5PM EDT OCT 20 2012 PTSUNNY   52  40  63 W8        29.81R                     .
+ 6PM EDT OCT 20 2012 MOCLDY    52  39  61 W8        29.82R                     .
+ 7PM EDT OCT 20 2012 MOCLDY    51  37  58 W7        29.84R                     .
+ 8PM EDT OCT 20 2012 CLOUDY    51  37  58 SW5       29.87R                     .
+ 9PM EDT OCT 20 2012 CLOUDY    50  37  61 SW6       29.88R                     .
+10PM EDT OCT 20 2012 CLOUDY    50  38  63 W6        29.90R                     .
+11PM EDT OCT 20 2012 CLOUDY    50  38  63 SW5       29.92R                     .
+12AM EDT OCT 21 2012 MOCLDY    48  38  68 SW7       29.93R                     .
+ 1AM EDT OCT 21 2012 MOCLDY    47  38  71 SW8       29.95R                     .
+ 2AM EDT OCT 21 2012 CLEAR     46  38  73 SW6       29.97R                     .
+ 3AM EDT OCT 21 2012 MOCLDY    44  39  82 W5        29.98R                     .
+ 4AM EDT OCT 21 2012 CLOUDY    45  39  79 W7        29.99R                     .
+ 5AM EDT OCT 21 2012 CLOUDY    45  39  79 SW7       30.02R                     .
+ 6AM EDT OCT 21 2012 CLOUDY    45  40  82 W6        30.04R                     .
+ 7AM EDT OCT 21 2012 MOCLDY    44  39  82 W6        30.07R                     .
+ 8AM EDT OCT 21 2012 MOCLDY    43  39  86 W6        30.08R                     .
+ 9AM EDT OCT 21 2012 PTSUNNY   44  39  82 W5        30.10R                     .
+10AM EDT OCT 21 2012 PTSUNNY   47  40  76 W7        30.10S                     .
+11AM EDT OCT 21 2012 PTSUNNY   49  41  74 W6        30.12R                     .
+12PM EDT OCT 21 2012 FAIR      55  36  48 W8G16     30.12S                     .
+ 1PM EDT OCT 21 2012 MOSUNNY   57  35  43 W14G20    30.11F                     .
+ 2PM EDT OCT 21 2012 NOT AVBL                                                  .
+ 3PM EDT OCT 21 2012 PTSUNNY   57  35  43 NW6       30.09                      .
+ 4PM EDT OCT 21 2012 PTSUNNY   57  35  43 CALM      30.10R                     .
+ 5PM EDT OCT 21 2012 MOSUNNY   58  36  43 W10       30.09F                     .
+ 6PM EDT OCT 21 2012 PTCLDY    57  35  43 SW5       30.09S                     .
+ 7PM EDT OCT 21 2012 PTCLDY    55  36  48 SW3       30.10R                     .
+ 8PM EDT OCT 21 2012 CLEAR     52  37  56 SW5       30.11R                     .
+ 9PM EDT OCT 21 2012 CLEAR     50  37  61 CALM      30.12R                     .
+10PM EDT OCT 21 2012 CLEAR     48  37  65 CALM      30.13R                     .
+11PM EDT OCT 21 2012 PTCLDY    44  37  76 CALM      30.13S                     .
+12AM EDT OCT 22 2012 PTCLDY    45  37  73 CALM      30.14R                     .
+ 1AM EDT OCT 22 2012 PTCLDY    43  36  76 CALM      30.14S                     .
+ 2AM EDT OCT 22 2012 PTCLDY    41  36  82 CALM      30.14S                     .
+ 3AM EDT OCT 22 2012 PTCLDY    40  36  86 CALM      30.14S                     .
+ 4AM EDT OCT 22 2012 CLEAR     39  35  86 CALM      30.14S                     .
+ 5AM EDT OCT 22 2012 CLEAR     39  36  89 CALM      30.15R                     .
+ 6AM EDT OCT 22 2012 CLEAR     38  34  85 CALM      30.16R                     .
+ 7AM EDT OCT 22 2012 CLEAR     38  34  85 CALM      30.17R                     .
+ 8AM EDT OCT 22 2012 CLEAR     38  34  85 CALM      30.18R                     .
+ 9AM EDT OCT 22 2012 SUNNY     42  37  82 CALM      30.19R                     .
+10AM EDT OCT 22 2012 SUNNY     48  39  71 CALM      30.18F                     .
+11AM EDT OCT 22 2012 SUNNY     56  42  59 CALM      30.18S                     .
+12PM EDT OCT 22 2012 SUNNY     64  43  46 S3        30.17F                     .
+ 1PM EDT OCT 22 2012 SUNNY     66  45  46 SW8       30.16F                     .
+ 2PM EDT OCT 22 2012 SUNNY     69  45  41 CALM      30.13F                     .
+ 3PM EDT OCT 22 2012 MOSUNNY   70  46  42 SW8       30.11F                     .
+ 4PM EDT OCT 22 2012 NOT AVBL                                                  .
+ 5PM EDT OCT 22 2012 MOSUNNY   72  48  42 W7        30.10                      .
+ 6PM EDT OCT 22 2012 MOCLDY    71  48  43 SW5       30.11R                     .
+ 7PM EDT OCT 22 2012 CLOUDY    70  48  45 S3        30.11S                     .
+ 8PM EDT OCT 22 2012 MOCLDY    67  50  54 S5        30.11S                     .
+ 9PM EDT OCT 22 2012 MOCLDY    67  49  52 CALM      30.10F                     .
+10PM EDT OCT 22 2012 MOCLDY    65  49  56 CALM      30.09F                     .
+11PM EDT OCT 22 2012 MOCLDY    64  49  57 SE5       30.08F                     .
+12AM EDT OCT 23 2012 CLOUDY    64  49  57 CALM      30.07F                     .
+ 1AM EDT OCT 23 2012 NOT AVBL                                                  .
+ 2AM EDT OCT 23 2012 MOCLDY    59  50  72 S3        30.07                      .
+ 3AM EDT OCT 23 2012 CLOUDY    61  50  67 CALM      30.07S                     .
+ 4AM EDT OCT 23 2012 CLOUDY    61  50  67 CALM      30.06F                     .
+ 5AM EDT OCT 23 2012 CLOUDY    60  50  69 S3        30.06S                     .
+ 6AM EDT OCT 23 2012 CLOUDY    60  50  69 CALM      30.07R                     .
+ 7AM EDT OCT 23 2012 CLOUDY    59  50  72 CALM      30.07S                     .
+ 8AM EDT OCT 23 2012 LGT RAIN  60  50  69 CALM      30.08R                     .
+ 9AM EDT OCT 23 2012 PTSUNNY   57  51  80 S5        30.07F                     .
+10AM EDT OCT 23 2012 PTSUNNY   64  50  60 S5        30.07S                     .
+11AM EDT OCT 23 2012 CLOUDY    68  48  48 SW7       30.08R                     .
+12PM EDT OCT 23 2012 CLOUDY    71  48  43 SW10      30.07F                     .
+ 1PM EDT OCT 23 2012 CLOUDY    74  48  39 SW15G21   30.05F                     .
+ 2PM EDT OCT 23 2012 CLOUDY    75  47  36 SW18G26   30.04F                     .
+ 3PM EDT OCT 23 2012 CLOUDY    75  46  35 W12G23    30.03F                     .
+ 4PM EDT OCT 23 2012 CLOUDY    76  46  34 W9        30.02F                     .
+ 5PM EDT OCT 23 2012 CLOUDY    75  46  35 SW14G21   30.02S                     .
+ 6PM EDT OCT 23 2012 MOCLDY    73  46  38 SW8       30.03R                     .
+ 7PM EDT OCT 23 2012 MOCLDY    70  46  42 S5        30.03S                     .
+ 8PM EDT OCT 23 2012 MOCLDY    68  46  45 S6        30.05R                     .
+ 9PM EDT OCT 23 2012 MOCLDY    67  46  47 S3        30.06R                     .
+10PM EDT OCT 23 2012 MOCLDY    62  48  60 CALM      30.06S                     .
+11PM EDT OCT 23 2012 CLOUDY    63  47  55 CALM      30.06S                     .
+12AM EDT OCT 24 2012 MOCLDY    65  48  54 SW3       30.07R                     .
+ 1AM EDT OCT 24 2012 MOCLDY    62  48  60 CALM      30.08R                     .
+ 2AM EDT OCT 24 2012 MOCLDY    62  49  62 CALM      30.08S                     .
+ 3AM EDT OCT 24 2012 CLOUDY    59  49  69 CALM      30.08S                     .
+ 4AM EDT OCT 24 2012 CLOUDY    57  49  74 CALM      30.08S                     .
+ 5AM EDT OCT 24 2012 CLOUDY    60  48  64 CALM      30.09R                     .
+ 6AM EDT OCT 24 2012 CLOUDY    63  47  55 W6        30.10R                     .
+ 7AM EDT OCT 24 2012 MOCLDY    62  47  57 CALM      30.12R                     .
+ 8AM EDT OCT 24 2012 MOCLDY    62  47  57 CALM      30.13R                     .
+ 9AM EDT OCT 24 2012 CLOUDY    63  48  58 SW5       30.14R                     .
+10AM EDT OCT 24 2012 NOT AVBL                                                  .
+11AM EDT OCT 24 2012 CLOUDY    65  52  62 SW5       30.15                      .
+12PM EDT OCT 24 2012 CLOUDY    66  51  58 S6        30.14F                     .
+ 1PM EDT OCT 24 2012 MOSUNNY   69  51  52 SW6       30.11F                     .
+ 2PM EDT OCT 24 2012 MOSUNNY   73  50  44 W8        30.09F                     .
+ 3PM EDT OCT 24 2012 MOSUNNY   75  50  41 SW13      30.08F                     .
+ 4PM EDT OCT 24 2012 MOSUNNY   76  50  40 SW9       30.07F                     .
+ 5PM EDT OCT 24 2012 MOSUNNY   76  49  38 SW6       30.06F                     .
+ 6PM EDT OCT 24 2012 PTCLDY    76  49  38 SW5       30.06S                     .
+ 7PM EDT OCT 24 2012 PTCLDY    72  50  45 CALM      30.07R                     .
+ 8PM EDT OCT 24 2012 CLEAR     70  50  49 CALM      30.08R                     .
+ 9PM EDT OCT 24 2012 CLEAR     65  51  60 CALM      30.09R                     .
+10PM EDT OCT 24 2012 CLEAR     64  51  62 CALM      30.10R                     .
+11PM EDT OCT 24 2012 CLEAR     63  50  62 CALM      30.11R                     .
+12AM EDT OCT 25 2012 CLEAR     61  50  67 CALM      30.11S                     .
+ 1AM EDT OCT 25 2012 CLEAR     59  50  72 CALM      30.11S                     .
+ 2AM EDT OCT 25 2012 PTCLDY    57  50  77 CALM      30.11S                     .
+ 3AM EDT OCT 25 2012 MOCLDY    58  50  75 CALM      30.11S                     .
+ 4AM EDT OCT 25 2012 PTCLDY    56  49  77 CALM      30.09F                     .
+ 5AM EDT OCT 25 2012 CLEAR     57  49  74 CALM      30.09S                     .
+ 6AM EDT OCT 25 2012 PTCLDY    55  48  77 CALM      30.09S                     .
+ 7AM EDT OCT 25 2012 PTCLDY    54  48  80 CALM      30.10R                     .
+ 8AM EDT OCT 25 2012 PTCLDY    54  48  80 CALM      30.11R                     .
+ 9AM EDT OCT 25 2012 SUNNY     55  48  77 CALM      30.12R                     .
+10AM EDT OCT 25 2012 SUNNY     62  51  67 SE3       30.12S                     .
+11AM EDT OCT 25 2012 MOSUNNY   68  50  52 S5        30.12S                     .
+12PM EDT OCT 25 2012 NOT AVBL                                                  .
+ 1PM EDT OCT 25 2012 SUNNY     78  46  32 SW9       30.09                      .
+ 2PM EDT OCT 25 2012 SUNNY     80  46  30 S12       30.06F                     .
+ 3PM EDT OCT 25 2012 SUNNY     81  44  27 S7        30.04F                     .
+ 4PM EDT OCT 25 2012 SUNNY     82  43  25 SW8       30.03F                     .
+ 5PM EDT OCT 25 2012 SUNNY     81  44  27 S9        30.02F                     .
+ 6PM EDT OCT 25 2012 CLEAR     80  44  27 S7        30.02S                     .
+ 7PM EDT OCT 25 2012 PTCLDY    75  44  33 S6        30.02S                     .
+ 8PM EDT OCT 25 2012 PTCLDY    70  46  42 SE5       30.03R                     .
+ 9PM EDT OCT 25 2012 CLEAR     70  46  42 CALM      30.02F                     .
+10PM EDT OCT 25 2012 CLEAR     69  48  47 S5        30.03R                     .
+11PM EDT OCT 25 2012 CLEAR     66  50  56 S6        30.02F                     .
+12AM EDT OCT 26 2012 CLEAR     65  51  60 S6        30.03R                     .
+ 1AM EDT OCT 26 2012 CLEAR     64  50  60 SE6       30.03S                     .
+ 2AM EDT OCT 26 2012 CLEAR     62  50  64 SE3       30.03S                     .
+ 3AM EDT OCT 26 2012 CLEAR     60  50  69 SE3       30.04R                     .
+ 4AM EDT OCT 26 2012 CLEAR     59  49  69 SE6       30.04S                     .
+ 5AM EDT OCT 26 2012 PTCLDY    59  49  69 SE6       30.05R                     .
+ 6AM EDT OCT 26 2012 PTCLDY    57  48  72 SE5       30.06R                     .
+ 7AM EDT OCT 26 2012 PTCLDY    56  48  74 SE3       30.07R                     .
+ 8AM EDT OCT 26 2012 PTCLDY    55  49  80 SE5       30.07S                     .
+ 9AM EDT OCT 26 2012 MOSUNNY   58  50  75 SE5       30.09R                     .
+10AM EDT OCT 26 2012 MOSUNNY   62  50  64 S5        30.09S                     .
+11AM EDT OCT 26 2012 MOSUNNY   68  51  54 S7        30.09S                     .
+12PM EDT OCT 26 2012 MOSUNNY   72  52  49 VRB7      30.09S                     .
+ 1PM EDT OCT 26 2012 MOSUNNY   73  53  49 SE7       30.07F                     .
+ 2PM EDT OCT 26 2012 PTSUNNY   74  52  46 SW9       30.04F                     .
+ 3PM EDT OCT 26 2012 PTSUNNY   74  53  48 VRB5      30.02F                     .
+ 4PM EDT OCT 26 2012 PTSUNNY   74  52  46 W6        30.01F                     .
+ 5PM EDT OCT 26 2012 PTSUNNY   69  53  56 N13       30.00F                     .
+ 6PM EDT OCT 26 2012 MOCLDY    66  52  60 N14       30.01R                     .
+ 7PM EDT OCT 26 2012 MOCLDY    58  50  75 NW16      30.05R                     .
+ 8PM EDT OCT 26 2012 CLOUDY    55  49  80 N17G23    30.08R                     .
+ 9PM EDT OCT 26 2012 CLOUDY    54  48  80 N12G20    30.09R                     .
+10PM EDT OCT 26 2012 CLOUDY    54  48  80 N9        30.08F                     .
+11PM EDT OCT 26 2012 CLOUDY    54  48  80 N9        30.06F                     .
+12AM EDT OCT 27 2012 CLOUDY    54  48  80 N10       30.05F                     .
+ 1AM EDT OCT 27 2012 CLOUDY    53  47  79 N10       30.03F                     .
+ 2AM EDT OCT 27 2012 CLOUDY    52  47  83 N9        30.01F                     .
+ 3AM EDT OCT 27 2012 CLOUDY    52  47  83 N8        29.99F                     .
+ 4AM EDT OCT 27 2012 CLOUDY    52  48  86 N6        29.97F                     .
+ 5AM EDT OCT 27 2012 CLOUDY    51  48  89 N8        29.95F                     .
+ 6AM EDT OCT 27 2012 CLOUDY    51  47  86 NW10      29.96R                     .
+ 7AM EDT OCT 27 2012 LGT RAIN  50  47  89 NW8       29.96S                     .
+ 8AM EDT OCT 27 2012 CLOUDY    50  46  86 NW9       29.97R                     .
+ 9AM EDT OCT 27 2012 CLOUDY    49  46  90 N7        29.98R                     .
+10AM EDT OCT 27 2012 CLOUDY    50  46  86 N6        29.99R                     .
+11AM EDT OCT 27 2012 LGT RAIN  49  46  90 NW7       30.00R                     .
+12PM EDT OCT 27 2012 CLOUDY    48  45  89 NW12      30.00S                     .
+ 1PM EDT OCT 27 2012 CLOUDY    48  44  86 NW10      29.99F                     .
+ 2PM EDT OCT 27 2012 LGT RAIN  47  45  93 NW10      29.98F FOG                 .
+ 3PM EDT OCT 27 2012 LGT RAIN  47  45  93 NW8       29.98S FOG                 .
+ 4PM EDT OCT 27 2012 CLOUDY    48  46  93 NW9       29.97F FOG                 .
+ 5PM EDT OCT 27 2012 LGT RAIN  48  46  93 NW12G21   29.98R FOG                 .
+ 6PM EDT OCT 27 2012 LGT RAIN  48  45  89 N9        29.99R FOG                 .
+ 7PM EDT OCT 27 2012 RAIN      47  45  93 N12       30.00R FOG                 .
+ 8PM EDT OCT 27 2012 LGT RAIN  47  44  90 N14       30.02R                     .
+ 9PM EDT OCT 27 2012 LGT RAIN  47  44  90 N13       30.01S                     .
+10PM EDT OCT 27 2012 CLOUDY    47  44  90 N12       30.01S                     .
+11PM EDT OCT 27 2012 CLOUDY    47  43  86 N15       30.01S                     .
+12AM EDT OCT 28 2012 CLOUDY    47  43  86 N16       30.00F                     .
+ 1AM EDT OCT 28 2012 CLOUDY    47  42  83 N13       29.99F                     .
+ 2AM EDT OCT 28 2012 DRIZZLE   46  43  89 N12       29.99S FOG                 .
+ 3AM EDT OCT 28 2012 LGT RAIN  45  43  93 N13       29.97F FOG                 .
+ 4AM EDT OCT 28 2012 DRIZZLE   45  43  93 N13       29.97S                     .
+ 5AM EDT OCT 28 2012 LGT RAIN  44  42  93 N14       29.97R                     .
+ 6AM EDT OCT 28 2012 LGT RAIN  44  42  93 N14       29.95F                     .
+ 7AM EDT OCT 28 2012 LGT RAIN  44  42  93 N9        29.94F FOG                 .
+ 8AM EDT OCT 28 2012 LGT RAIN  44  41  89 N9        29.94S FOG                 .
+ 9AM EDT OCT 28 2012 DRIZZLE   43  41  93 N12       29.94S FOG                 .
+10AM EDT OCT 28 2012 DRIZZLE   43  41  93 N12       29.94S FOG                 .
+11AM EDT OCT 28 2012 LGT RAIN  43  41  93 N10       29.93F FOG                 .
+12PM EDT OCT 28 2012 CLOUDY    43  40  89 N13       29.93F                     .
+ 1PM EDT OCT 28 2012 CLOUDY    44  40  85 N12       29.91F                     .
+ 2PM EDT OCT 28 2012 LGT RAIN  43  41  93 N13       29.89F                     .
+ 3PM EDT OCT 28 2012 LGT RAIN  43  41  93 N16       29.86F                     .
+ 4PM EDT OCT 28 2012 LGT RAIN  43  40  89 N15G22    29.86S FOG                 .
+ 5PM EDT OCT 28 2012 LGT RAIN  43  41  93 N13       29.86S FOG                 .
+ 6PM EDT OCT 28 2012 LGT RAIN  43  41  93 N13G23    29.85F FOG                 .
+ 7PM EDT OCT 28 2012 DRIZZLE   43  40  89 N14       29.86R                     .
+ 8PM EDT OCT 28 2012 LGT RAIN  43  41  93 N13       29.86S                     .
+ 9PM EDT OCT 28 2012 CLOUDY    43  40  89 N13       29.85F                     .
+10PM EDT OCT 28 2012 CLOUDY    43  40  89 N13       29.85S                     .
+11PM EDT OCT 28 2012 LGT RAIN  43  40  89 N10G20    29.84F                     .
+12AM EDT OCT 29 2012 DRIZZLE   42  40  92 N14       29.83F                     .
+ 1AM EDT OCT 29 2012 DRIZZLE   43  39  87 N12       29.83S                     .
+ 2AM EDT OCT 29 2012 LGT RAIN  42  40  92 N13       29.81F                     .
+ 3AM EDT OCT 29 2012 LGT RAIN  42  40  92 N12       29.80F                     .
+ 4AM EDT OCT 29 2012 LGT RAIN  42  40  92 N15       29.78F                     .
+ 5AM EDT OCT 29 2012 DRIZZLE   42  39  89 N17G24    29.77F                     .
+ 6AM EDT OCT 29 2012 LGT RAIN  42  39  89 N14       29.77S                     .
+ 7AM EDT OCT 29 2012 LGT RAIN  41  39  93 N15       29.75F FOG                 .
+ 8AM EDT OCT 29 2012 LGT RAIN  41  39  93 NW14      29.75S                     .
+ 9AM EDT OCT 29 2012 LGT RAIN  41  38  89 N18       29.73F                     .
+10AM EDT OCT 29 2012 LGT RAIN  41  39  93 N17       29.72F                     .
+11AM EDT OCT 29 2012 LGT RAIN  42  39  89 N18       29.69F FOG                 .
+12PM EDT OCT 29 2012 LGT RAIN  42  39  89 N22G29    29.69S                     .
+ 1PM EDT OCT 29 2012 LGT RAIN  43  39  87 N17       29.65F                     .
+ 2PM EDT OCT 29 2012 LGT RAIN  42  39  89 N20       29.61F                     .
+ 3PM EDT OCT 29 2012 LGT RAIN  42  39  89 NW18G26   29.57F                     .
+ 4PM EDT OCT 29 2012 LGT RAIN  41  39  93 NW24G36   29.52F                     .
+ 5PM EDT OCT 29 2012 LGT RAIN  41  38  89 NW25G39   29.48F                     .
+ 6PM EDT OCT 29 2012 LGT RAIN  41  38  89 NW23G36   29.45F                     .
+ 7PM EDT OCT 29 2012 LGT RAIN  42  39  89 NW25G36   29.40F                     .
+ 8PM EDT OCT 29 2012 RAIN      42  38  85 N23G37    29.37F                     .
+ 9PM EDT OCT 29 2012 RAIN      40  37  89 NW30G37   29.33F FOG                 .
+10PM EDT OCT 29 2012 RAIN      39  36  89 NW21G37   29.29F FOG                 .
+11PM EDT OCT 29 2012 RAIN      39  36  89 NW23G39   29.22F FOG                 .
+12AM EDT OCT 30 2012 RAIN      39  35  86 NW32G46   29.14F FOG                 .
+ 1AM EDT OCT 30 2012 RAIN      40  37  89 NW32G40   29.09F FOG                 .
+ 2AM EDT OCT 30 2012 LGT RAIN  41  38  89 NW29G40   29.05F FOG                 .
+ 3AM EDT OCT 30 2012 LGT RAIN  41  38  89 NW28G37   29.03F FOG                 .
+ 4AM EDT OCT 30 2012 LGT RAIN  41  38  89 NW25G39   29.01F FOG                 .
+ 5AM EDT OCT 30 2012 LGT RAIN  41  39  93 NW22G30   29.01S FOG                 .
+ 6AM EDT OCT 30 2012 LGT RAIN  42  39  89 NW24G33   29.01S                     .
+ 7AM EDT OCT 30 2012 LGT RAIN  42  40  92 NW24G30   29.00F                     .
+ 8AM EDT OCT 30 2012 LGT RAIN  43  40  89 NW21G28   29.02R                     .
+ 9AM EDT OCT 30 2012 RAIN      43  42  97 N7        29.05R FOG                 .
+10AM EDT OCT 30 2012 LGT RAIN  45  42  89 NW9       29.06R                     .
+11AM EDT OCT 30 2012 LGT RAIN  46  42  86 NE6       29.08R                     .
+12PM EDT OCT 30 2012 LGT RAIN  47  42  83 NE5       29.11R                     .
+ 1PM EDT OCT 30 2012 LGT RAIN  45  41  86 E7        29.13R                     .
+ 2PM EDT OCT 30 2012 LGT RAIN  44  40  85 E5        29.16R                     .
+ 3PM EDT OCT 30 2012 LGT RAIN  43  37  81 E7G17     29.18R                     .
+ 4PM EDT OCT 30 2012 LGT RAIN  42  40  92 CALM      29.21R                     .
+ 5PM EDT OCT 30 2012 DRIZZLE   42  40  92 SE3       29.23R                     .
+ 6PM EDT OCT 30 2012 LGT RAIN  42  39  89 CALM      29.26R                     .
+ 7PM EDT OCT 30 2012 LGT RAIN  42  39  89 CALM      29.29R                     .
+ 8PM EDT OCT 30 2012 LGT RAIN  42  40  92 CALM      29.31R                     .
+ 9PM EDT OCT 30 2012 LGT RAIN  41  40  96 SW3       29.33R                     .
+10PM EDT OCT 30 2012 LGT RAIN  40  39  97 CALM      29.34R FOG                 .
+11PM EDT OCT 30 2012 LGT RAIN  40  39  97 S3        29.35R VSB 1               .
+12AM EDT OCT 31 2012 LGT RAIN  40  39  97 CALM      29.35S VSB 1               .
+ 1AM EDT OCT 31 2012 LGT RAIN  40  39  97 CALM      29.35S VSB 1               .
+ 2AM EDT OCT 31 2012 LGT RAIN  41  39  93 VRB5      29.36R VSB 1               .
+ 3AM EDT OCT 31 2012 LGT RAIN  41  38  89 W12G18    29.37R                     .
+ 4AM EDT OCT 31 2012 LGT RAIN  39  37  92 W8G17     29.39R FOG                 .
+ 5AM EDT OCT 31 2012 LGT RAIN  38  36  92 W12G20    29.40R                     .
+ 6AM EDT OCT 31 2012 LGT SNOW  37  35  92 W14       29.43R FOG                 .
+ 7AM EDT OCT 31 2012 FLURRIES  36  33  89 SW10G18   29.44R                     .
+ 8AM EDT OCT 31 2012 FLURRIES  36  34  92 SW9       29.45R                     .
+ 9AM EDT OCT 31 2012 LGT SNOW  36  34  92 SW12G20   29.47R FOG                 .
+10AM EDT OCT 31 2012 LGT SNOW  37  35  92 SW12      29.49R FOG                 .
+11AM EDT OCT 31 2012 LGT SNOW  37  35  92 W10G18    29.50R FOG                 .
+12PM EDT OCT 31 2012 LGT SNOW  38  35  89 W12G21    29.51R FOG                 .
+ 1PM EDT OCT 31 2012 FLURRIES  38  35  89 W13G20    29.52R                     .
+ 2PM EDT OCT 31 2012 DRIZZLE   39  36  89 W10G20    29.52S                     .
+ 3PM EDT OCT 31 2012 LGT RAIN  39  36  89 W9G18     29.54R                     .
+ 4PM EDT OCT 31 2012 LGT RAIN  39  36  89 W7        29.55R                     .
+ 5PM EDT OCT 31 2012 LGT RAIN  39  37  92 W8        29.57R FOG                 .
+ 6PM EDT OCT 31 2012 LGT RAIN  39  37  92 W8        29.58R FOG                 .
+ 7PM EDT OCT 31 2012 LGT RAIN  39  37  92 W10       29.60R                     .

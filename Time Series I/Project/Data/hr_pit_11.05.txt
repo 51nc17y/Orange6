@@ -1,0 +1,767 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 8PM EDT APR 30 2011 CLOUDY    61  34  36 CALM      30.10R                   MAY
+ 9PM EDT APR 30 2011 FAIR      58  35  42 E3        30.10S                   MAY
+10PM EDT APR 30 2011 MOCLDY    56  35  45 E5        30.10S                   MAY
+11PM EDT APR 30 2011 MOCLDY    56  36  47 E6        30.10S                   MAY
+12AM EDT MAY 01 2011 CLOUDY    58  36  43 SE10      30.09F                   MAY
+ 1AM EDT MAY 01 2011 CLOUDY    58  35  42 E8        30.11R                   MAY
+ 2AM EDT MAY 01 2011 CLOUDY    58  33  39 SE10      30.07F                   MAY
+ 3AM EDT MAY 01 2011 CLOUDY    57  33  40 SE8       30.08R                     .
+ 4AM EDT MAY 01 2011 CLOUDY    57  34  41 E6        30.08S                     .
+ 5AM EDT MAY 01 2011 LGT RAIN  53  43  68 CALM      30.12R                     .
+ 6AM EDT MAY 01 2011 LGT RAIN  52  43  71 NE5       30.09F                     .
+ 7AM EDT MAY 01 2011 CLOUDY    53  43  68 CALM      30.10R                     .
+ 8AM EDT MAY 01 2011 CLOUDY    55  43  63 SE10      30.10S                     .
+ 9AM EDT MAY 01 2011 CLOUDY    56  44  64 SE7       30.11R                     .
+10AM EDT MAY 01 2011 CLOUDY    56  46  69 S3        30.13R                     .
+11AM EDT MAY 01 2011 CLOUDY    57  46  66 S7        30.12F                     .
+12PM EDT MAY 01 2011 LGT RAIN  56  49  77 S5        30.14R                     .
+ 1PM EDT MAY 01 2011 LGT RAIN  55  54  94 S7        30.13F FOG                 .
+ 2PM EDT MAY 01 2011 LGT RAIN  56  54  93 S8        30.13F FOG                 .
+ 3PM EDT MAY 01 2011 CLOUDY    57  54  89 S7        30.12F                     .
+ 4PM EDT MAY 01 2011 CLOUDY    59  56  89 SE7       30.08F                     .
+ 5PM EDT MAY 01 2011 CLOUDY    61  55  81 S7        30.09R                     .
+ 6PM EDT MAY 01 2011 CLOUDY    61  55  81 SE7       30.08F                     .
+ 7PM EDT MAY 01 2011 CLOUDY    61  55  81 SE7       30.08S                     .
+ 8PM EDT MAY 01 2011 CLOUDY    61  55  81 SE6       30.08S                     .
+ 9PM EDT MAY 01 2011 CLOUDY    61  55  81 SE5       30.09R                     .
+10PM EDT MAY 01 2011 CLOUDY    59  55  87 S5        30.10R                     .
+11PM EDT MAY 01 2011 CLOUDY    60  54  80 SE6       30.09F                     .
+12AM EDT MAY 02 2011 CLOUDY    59  54  83 SE5       30.08F                     .
+ 1AM EDT MAY 02 2011 CLOUDY    59  53  80 SE7       30.06F                     .
+ 2AM EDT MAY 02 2011 CLOUDY    59  53  80 SE7       30.05F                     .
+ 3AM EDT MAY 02 2011 CLOUDY    59  52  77 SE6       30.02F                     .
+ 4AM EDT MAY 02 2011 LGT RAIN  59  53  80 S3        30.05R                     .
+ 5AM EDT MAY 02 2011 LGT RAIN  62  54  74 SW8       30.06R                     .
+ 6AM EDT MAY 02 2011 LGT RAIN  59  57  93 CALM      30.04F                     .
+ 7AM EDT MAY 02 2011 CLOUDY    59  57  93 S5        30.05R                     .
+ 8AM EDT MAY 02 2011 CLOUDY    60  57  89 S6        30.07R                     .
+ 9AM EDT MAY 02 2011 DRIZZLE   61  56  83 S8        30.08R                     .
+10AM EDT MAY 02 2011 CLOUDY    62  57  83 S5        30.08S                     .
+11AM EDT MAY 02 2011 CLOUDY    64  57  78 S7        30.07F                     .
+12PM EDT MAY 02 2011 CLOUDY    67  55  65 S10G18    30.03F                     .
+ 1PM EDT MAY 02 2011 CLOUDY    71  55  56 S16G22    30.03S                     .
+ 2PM EDT MAY 02 2011 CLOUDY    70  55  59 W8        30.04R                     .
+ 3PM EDT MAY 02 2011 CLOUDY    58  50  75 N9        30.10R                     .
+ 4PM EDT MAY 02 2011 CLOUDY    61  51  70 VRB3      30.09F                     .
+ 5PM EDT MAY 02 2011 CLOUDY    66  54  65 W7        30.09S                     .
+ 6PM EDT MAY 02 2011 CLOUDY    63  51  65 NW13      30.12R                     .
+ 7PM EDT MAY 02 2011 CLOUDY    58  45  62 N15       30.12S                     .
+ 8PM EDT MAY 02 2011 CLOUDY    56  43  61 N13       30.15R                     .
+ 9PM EDT MAY 02 2011 CLOUDY    55  42  61 N9        30.15S                     .
+10PM EDT MAY 02 2011 CLOUDY    54  41  61 NE10      30.15S                     .
+11PM EDT MAY 02 2011 CLOUDY    53  41  63 NE8       30.13F                     .
+12AM EDT MAY 03 2011 LGT RAIN  51  44  77 N8        30.14R                     .
+ 1AM EDT MAY 03 2011 CLOUDY    49  46  90 N7        30.12F                     .
+ 2AM EDT MAY 03 2011 CLOUDY    49  45  86 NE7       30.07F                     .
+ 3AM EDT MAY 03 2011 CLOUDY    49  45  86 NW8       30.08R                     .
+ 4AM EDT MAY 03 2011 LGT RAIN  47  44  90 N7        30.05F                     .
+ 5AM EDT MAY 03 2011 CLOUDY    47  44  90 N7        30.03F                     .
+ 6AM EDT MAY 03 2011 CLOUDY    47  44  90 NE7       30.00F                     .
+ 7AM EDT MAY 03 2011 CLOUDY    47  44  90 N5        29.99F                     .
+ 8AM EDT MAY 03 2011 CLOUDY    48  45  89 CALM      29.98F                     .
+ 9AM EDT MAY 03 2011 CLOUDY    48  46  93 E3        29.96F                     .
+10AM EDT MAY 03 2011 LGT RAIN  49  46  90 W5        29.98R FOG                 .
+11AM EDT MAY 03 2011 LGT RAIN  49  47  93 NW8       29.98R FOG                 .
+12PM EDT MAY 03 2011 LGT RAIN  50  48  93 NW7       29.98R FOG                 .
+ 1PM EDT MAY 03 2011 CLOUDY    51  48  89 CALM      29.96F                     .
+ 2PM EDT MAY 03 2011 LGT RAIN  52  50  93 SE3       29.94F FOG                 .
+ 3PM EDT MAY 03 2011 CLOUDY    53  51  93 W13       29.96R                     .
+ 4PM EDT MAY 03 2011 LGT RAIN  50  47  89 W12       29.97R FOG                 .
+ 5PM EDT MAY 03 2011 LGT RAIN  48  45  89 W15       30.00R                     .
+ 6PM EDT MAY 03 2011 LGT RAIN  48  44  86 W8        30.02R                     .
+ 7PM EDT MAY 03 2011 LGT RAIN  47  44  90 NW18      30.05R                     .
+ 8PM EDT MAY 03 2011 LGT RAIN  44  41  89 NW17      30.09R                     .
+ 9PM EDT MAY 03 2011 CLOUDY    43  40  89 NW10      30.10R                     .
+10PM EDT MAY 03 2011 CLOUDY    43  40  89 W8        30.13R                     .
+11PM EDT MAY 03 2011 CLOUDY    43  40  89 W9        30.14S                     .
+12AM EDT MAY 04 2011 CLOUDY    44  41  89 NW10      30.13F                     .
+ 1AM EDT MAY 04 2011 DRIZZLE   44  41  89 NW7       30.13S                     .
+ 2AM EDT MAY 04 2011 DRIZZLE   44  40  85 NW12      30.14R                     .
+ 3AM EDT MAY 04 2011 NOT AVBL                                                  .
+ 4AM EDT MAY 04 2011 CLOUDY    42  40  92 N7        30.13F                     .
+ 5AM EDT MAY 04 2011 CLOUDY    43  40  89 NW7       30.13S                     .
+ 6AM EDT MAY 04 2011 CLOUDY    43  39  86 W5        30.14R                     .
+ 7AM EDT MAY 04 2011 CLOUDY    43  39  86 W7        30.16R                     .
+ 8AM EDT MAY 04 2011 PTSUNNY   43  39  86 NW10      30.16S                     .
+ 9AM EDT MAY 04 2011 CLOUDY    44  38  79 NW10      30.15F                     .
+10AM EDT MAY 04 2011 CLOUDY    44  37  76 NW9       30.16R                     .
+11AM EDT MAY 04 2011 LGT RAIN  44  38  79 NW13      30.17R                     .
+12PM EDT MAY 04 2011 DRIZZLE   44  38  79 NW14      30.19R                     .
+ 1PM EDT MAY 04 2011 LGT RAIN  45  39  81 NW15      30.20R                     .
+ 2PM EDT MAY 04 2011 PTSUNNY   46  40  79 N9        30.20S                     .
+ 3PM EDT MAY 04 2011 PTSUNNY   48  37  65 NW23G30   30.20S                     .
+ 4PM EDT MAY 04 2011 PTSUNNY   50  35  56 NW16G23   30.19F                     .
+ 5PM EDT MAY 04 2011 LGT RAIN  49  34  56 NW16G25   30.20R                     .
+ 6PM EDT MAY 04 2011 LGT RAIN  49  32  52 NW17G23   30.21R                     .
+ 7PM EDT MAY 04 2011 CLOUDY    49  31  49 NW16      30.21S                     .
+ 8PM EDT MAY 04 2011 MOCLDY    48  30  49 NW12      30.22R                     .
+ 9PM EDT MAY 04 2011 MOCLDY    46  32  58 NW9       30.23R                     .
+10PM EDT MAY 04 2011 MOCLDY    46  31  55 W9        30.25R                     .
+11PM EDT MAY 04 2011 PTCLDY    43  31  62 W6        30.26R                     .
+12AM EDT MAY 05 2011 PTCLDY    41  31  67 W7        30.26S                     .
+ 1AM EDT MAY 05 2011 CLEAR     39  30  70 W7        30.26S                     .
+ 2AM EDT MAY 05 2011 CLEAR     38  31  76 W9        30.26S                     .
+ 3AM EDT MAY 05 2011 CLEAR     37  31  78 W8        30.25F                     .
+ 4AM EDT MAY 05 2011 CLEAR     36  30  79 W7        30.25S                     .
+ 5AM EDT MAY 05 2011 CLEAR     37  30  75 W7        30.25S                     .
+ 6AM EDT MAY 05 2011 PTCLDY    35  29  78 W3        30.25S                     .
+ 7AM EDT MAY 05 2011 NOT AVBL                                                  .
+ 8AM EDT MAY 05 2011 MOSUNNY   42  31  64 W9        30.26                      .
+ 9AM EDT MAY 05 2011 MOSUNNY   46  34  62 W9        30.25F                     .
+10AM EDT MAY 05 2011 MOSUNNY   53  32  44 W12       30.24F                     .
+11AM EDT MAY 05 2011 SUNNY     57  32  38 NW16G26   30.22F                     .
+12PM EDT MAY 05 2011 MOSUNNY   60  31  33 NW20G26   30.20F                     .
+ 1PM EDT MAY 05 2011 PTSUNNY   61  27  27 NW17G29   30.18F                     .
+ 2PM EDT MAY 05 2011 PTSUNNY   62  29  28 NW22G28   30.16F                     .
+ 3PM EDT MAY 05 2011 MOSUNNY   62  28  27 NW18G24   30.14F                     .
+ 4PM EDT MAY 05 2011 MOSUNNY   63  28  26 NW13G21   30.11F                     .
+ 5PM EDT MAY 05 2011 MOSUNNY   63  28  26 NW17G26   30.08F                     .
+ 6PM EDT MAY 05 2011 MOSUNNY   63  29  27 NW18G24   30.07F                     .
+ 7PM EDT MAY 05 2011 MOSUNNY   61  27  27 W14       30.05F                     .
+ 8PM EDT MAY 05 2011 PTCLDY    59  27  29 NW12      30.05S                     .
+ 9PM EDT MAY 05 2011 PTCLDY    54  30  40 W5        30.04F                     .
+10PM EDT MAY 05 2011 PTCLDY    53  29  39 NW3       30.05R                     .
+11PM EDT MAY 05 2011 PTCLDY    51  31  46 CALM      30.05S                     .
+12AM EDT MAY 06 2011 MOCLDY    49  32  52 CALM      30.03F                     .
+ 1AM EDT MAY 06 2011 MOCLDY    45  33  63 CALM      30.02F                     .
+ 2AM EDT MAY 06 2011 MOCLDY    45  34  65 CALM      30.00F                     .
+ 3AM EDT MAY 06 2011 CLOUDY    42  34  73 CALM      29.98F                     .
+ 4AM EDT MAY 06 2011 CLOUDY    42  34  73 CALM      29.97F                     .
+ 5AM EDT MAY 06 2011 CLOUDY    41  33  73 CALM      29.96F                     .
+ 6AM EDT MAY 06 2011 CLOUDY    41  33  73 CALM      29.95F                     .
+ 7AM EDT MAY 06 2011 CLOUDY    42  34  73 CALM      29.95S                     .
+ 8AM EDT MAY 06 2011 CLOUDY    43  35  73 CALM      29.95S                     .
+ 9AM EDT MAY 06 2011 CLOUDY    48  35  60 S3        29.94F                     .
+10AM EDT MAY 06 2011 CLOUDY    52  38  58 S7        29.93F                     .
+11AM EDT MAY 06 2011 CLOUDY    57  36  45 SW8       29.92F                     .
+12PM EDT MAY 06 2011 CLOUDY    59  33  37 SW12      29.90F                     .
+ 1PM EDT MAY 06 2011 CLOUDY    60  36  40 W7        29.89F                     .
+ 2PM EDT MAY 06 2011 PTSUNNY   62  34  35 S12G21    29.87F                     .
+ 3PM EDT MAY 06 2011 PTSUNNY   64  31  28 SW12G24   29.84F                     .
+ 4PM EDT MAY 06 2011 PTSUNNY   63  31  30 W14G21    29.83F                     .
+ 5PM EDT MAY 06 2011 CLOUDY    63  32  31 SW9       29.83S                     .
+ 6PM EDT MAY 06 2011 CLOUDY    59  38  45 W12G22    29.86R                     .
+ 7PM EDT MAY 06 2011 CLOUDY    59  40  49 W7        29.86S                     .
+ 8PM EDT MAY 06 2011 LGT RAIN  53  45  74 SW9       29.89R                     .
+ 9PM EDT MAY 06 2011 MOCLDY    51  47  86 SW3       29.89S                     .
+10PM EDT MAY 06 2011 PTCLDY    49  47  93 CALM      29.90R                     .
+11PM EDT MAY 06 2011 LGT RAIN  49  46  90 SW3       29.92R                     .
+12AM EDT MAY 07 2011 CLOUDY    49  45  86 SW3       29.93R                     .
+ 1AM EDT MAY 07 2011 MOCLDY    47  45  93 CALM      29.93S                     .
+ 2AM EDT MAY 07 2011 MOCLDY    46  44  93 CALM      29.92F                     .
+ 3AM EDT MAY 07 2011 MOCLDY    46  44  93 CALM      29.91F                     .
+ 4AM EDT MAY 07 2011 MOCLDY    47  43  86 SW5       29.90F                     .
+ 5AM EDT MAY 07 2011 PTCLDY    46  43  89 CALM      29.90S                     .
+ 6AM EDT MAY 07 2011 PTCLDY    46  43  89 CALM      29.89F                     .
+ 7AM EDT MAY 07 2011 PTCLDY    47  43  86 SW3       29.91R                     .
+ 8AM EDT MAY 07 2011 PTSUNNY   50  45  83 CALM      29.92R                     .
+ 9AM EDT MAY 07 2011 LGT RAIN  50  44  80 NW13G21   29.95R                     .
+10AM EDT MAY 07 2011 LGT RAIN  52  43  71 W9        29.94F                     .
+11AM EDT MAY 07 2011 CLOUDY    52  48  86 S6        29.93F                     .
+12PM EDT MAY 07 2011 PTSUNNY   55  47  74 S6        29.93S                     .
+ 1PM EDT MAY 07 2011 PTSUNNY   57  47  69 S5        29.92F                     .
+ 2PM EDT MAY 07 2011 PTSUNNY   61  48  62 CALM      29.90F                     .
+ 3PM EDT MAY 07 2011 PTSUNNY   64  46  52 W5        29.88F                     .
+ 4PM EDT MAY 07 2011 LGT RAIN  56  49  77 SW10      29.88S                     .
+ 5PM EDT MAY 07 2011 PTSUNNY   62  43  49 W9        29.89R                     .
+ 6PM EDT MAY 07 2011 LGT RAIN  60  45  57 NW8       29.90R                     .
+ 7PM EDT MAY 07 2011 CLOUDY    59  45  59 CALM      29.90S                     .
+ 8PM EDT MAY 07 2011 CLOUDY    59  46  62 NW7       29.91R                     .
+ 9PM EDT MAY 07 2011 CLOUDY    58  46  64 CALM      29.91S                     .
+10PM EDT MAY 07 2011 MOCLDY    56  47  71 CALM      29.91S                     .
+11PM EDT MAY 07 2011 MOCLDY    55  47  74 CALM      29.92R                     .
+12AM EDT MAY 08 2011 MOCLDY    55  46  71 CALM      29.92S                     .
+ 1AM EDT MAY 08 2011 CLOUDY    53  47  79 CALM      29.93R                     .
+ 2AM EDT MAY 08 2011 CLOUDY    52  47  83 CALM      29.92F                     .
+ 3AM EDT MAY 08 2011 CLOUDY    50  46  86 W3        29.91F                     .
+ 4AM EDT MAY 08 2011 CLOUDY    53  46  77 CALM      29.91S                     .
+ 5AM EDT MAY 08 2011 LGT RAIN  51  47  86 CALM      29.92R                     .
+ 6AM EDT MAY 08 2011 LGT RAIN  51  48  89 CALM      29.92S                     .
+ 7AM EDT MAY 08 2011 CLOUDY    50  48  93 CALM      29.94R                     .
+ 8AM EDT MAY 08 2011 CLOUDY    52  48  86 CALM      29.95R                     .
+ 9AM EDT MAY 08 2011 PTSUNNY   54  47  77 NE3       29.96R                     .
+10AM EDT MAY 08 2011 PTSUNNY   57  46  66 CALM      29.97R                     .
+11AM EDT MAY 08 2011 PTSUNNY   60  43  53 CALM      29.97S                     .
+12PM EDT MAY 08 2011 PTSUNNY   63  43  48 E8        29.97S                     .
+ 1PM EDT MAY 08 2011 PTSUNNY   65  44  46 CALM      29.97S                     .
+ 2PM EDT MAY 08 2011 PTSUNNY   67  44  43 VRB6      29.95F                     .
+ 3PM EDT MAY 08 2011 MOSUNNY   68  43  40 N7        29.94F                     .
+ 4PM EDT MAY 08 2011 PTSUNNY   66  41  40 N5        29.94S                     .
+ 5PM EDT MAY 08 2011 MOSUNNY   67  42  40 N7        29.95R                     .
+ 6PM EDT MAY 08 2011 MOSUNNY   68  42  38 N15       29.95S                     .
+ 7PM EDT MAY 08 2011 MOSUNNY   67  40  37 N12       29.95S                     .
+ 8PM EDT MAY 08 2011 PTCLDY    65  40  39 N12       29.97R                     .
+ 9PM EDT MAY 08 2011 PTCLDY    62  39  42 N9        29.99R                     .
+10PM EDT MAY 08 2011 PTCLDY    59  36  42 N10       30.01R                     .
+11PM EDT MAY 08 2011 PTCLDY    57  33  40 N9        30.02R                     .
+12AM EDT MAY 09 2011 PTCLDY    55  32  41 N5        30.02S                     .
+ 1AM EDT MAY 09 2011 PTCLDY    52  33  48 CALM      30.02S                     .
+ 2AM EDT MAY 09 2011 PTCLDY    50  33  52 N5        30.02S                     .
+ 3AM EDT MAY 09 2011 PTCLDY    48  35  60 N6        30.02S                     .
+ 4AM EDT MAY 09 2011 CLEAR     45  35  68 N3        30.03R                     .
+ 5AM EDT MAY 09 2011 CLEAR     46  35  65 N5        30.04R                     .
+ 6AM EDT MAY 09 2011 CLEAR     45  35  68 N3        30.06R                     .
+ 7AM EDT MAY 09 2011 PTCLDY    45  36  70 N6        30.08R                     .
+ 8AM EDT MAY 09 2011 MOSUNNY   49  37  63 N8        30.10R                     .
+ 9AM EDT MAY 09 2011 MOSUNNY   53  38  56 NE9       30.12R                     .
+10AM EDT MAY 09 2011 MOSUNNY   57  38  48 E8        30.11F                     .
+11AM EDT MAY 09 2011 MOSUNNY   60  38  43 VRB6      30.10F                     .
+12PM EDT MAY 09 2011 MOSUNNY   63  36  36 N9        30.10S                     .
+ 1PM EDT MAY 09 2011 MOSUNNY   64  37  36 NE13      30.07F                     .
+ 2PM EDT MAY 09 2011 MOSUNNY   66  35  31 NW6       30.05F                     .
+ 3PM EDT MAY 09 2011 MOSUNNY   68  33  27 NE7       30.03F                     .
+ 4PM EDT MAY 09 2011 SUNNY     69  33  26 CALM      30.03S                     .
+ 5PM EDT MAY 09 2011 SUNNY     69  33  26 E3        30.01F                     .
+ 6PM EDT MAY 09 2011 SUNNY     70  33  25 NW6       30.01S                     .
+ 7PM EDT MAY 09 2011 SUNNY     69  30  23 NW6       30.02R                     .
+ 8PM EDT MAY 09 2011 PTCLDY    68  30  24 NE6       29.99F                     .
+ 9PM EDT MAY 09 2011 PTCLDY    65  32  29 NE3       29.98F                     .
+10PM EDT MAY 09 2011 PTCLDY    57  36  45 CALM      29.99R                     .
+11PM EDT MAY 09 2011 PTCLDY    59  35  40 NW8       30.01R                     .
+12AM EDT MAY 10 2011 MOCLDY    55  40  56 CALM      30.00F                     .
+ 1AM EDT MAY 10 2011 MOCLDY    55  40  56 N3        30.01R                     .
+ 2AM EDT MAY 10 2011 MOCLDY    53  39  59 NE3       30.02R                     .
+ 3AM EDT MAY 10 2011 MOCLDY    55  36  48 E3        30.01F                     .
+ 4AM EDT MAY 10 2011 CLOUDY    55  35  47 NE5       30.02R                     .
+ 5AM EDT MAY 10 2011 CLOUDY    53  34  48 E7        29.99F                     .
+ 6AM EDT MAY 10 2011 CLOUDY    53  34  48 CALM      30.01R                     .
+ 7AM EDT MAY 10 2011 MOCLDY    52  34  50 E3        30.03R                     .
+ 8AM EDT MAY 10 2011 CLOUDY    53  35  50 E6        30.03S                     .
+ 9AM EDT MAY 10 2011 PTSUNNY   57  36  45 E8        30.02F                     .
+10AM EDT MAY 10 2011 PTSUNNY   58  36  43 E7        30.02S                     .
+11AM EDT MAY 10 2011 PTSUNNY   62  39  42 E5        30.02S                     .
+12PM EDT MAY 10 2011 PTSUNNY   67  39  35 VRB6      30.00F                     .
+ 1PM EDT MAY 10 2011 PTSUNNY   70  38  31 SE12      29.97F                     .
+ 2PM EDT MAY 10 2011 PTSUNNY   72  38  29 SE10      29.96F                     .
+ 3PM EDT MAY 10 2011 PTSUNNY   74  38  27 SE9       29.95F                     .
+ 4PM EDT MAY 10 2011 PTSUNNY   74  39  28 VRB6      29.95S                     .
+ 5PM EDT MAY 10 2011 PTSUNNY   76  38  25 E8        29.93F                     .
+ 6PM EDT MAY 10 2011 MOSUNNY   75  36  24 E9        29.91F                     .
+ 7PM EDT MAY 10 2011 MOSUNNY   75  34  22 SE7       29.91S                     .
+ 8PM EDT MAY 10 2011 CLOUDY    73  33  23 E5        29.91S                     .
+ 9PM EDT MAY 10 2011 MOCLDY    72  35  25 CALM      29.91S                     .
+10PM EDT MAY 10 2011 LGT RAIN  68  42  38 E7        29.91S                     .
+11PM EDT MAY 10 2011 TSTM      66  48  52 W6        29.95R                     .
+12AM EDT MAY 11 2011 CLOUDY    63  45  51 E9        29.95S                     .
+ 1AM EDT MAY 11 2011 CLOUDY    62  44  51 E7        29.95S                     .
+ 2AM EDT MAY 11 2011 CLOUDY    59  48  67 S6        29.94F                     .
+ 3AM EDT MAY 11 2011 MOCLDY    56  48  74 SE3       29.93F                     .
+ 4AM EDT MAY 11 2011 CLEAR     57  49  74 CALM      29.93S                     .
+ 5AM EDT MAY 11 2011 PTCLDY    53  48  83 CALM      29.94R                     .
+ 6AM EDT MAY 11 2011 PTCLDY    55  48  77 NE6       29.96R                     .
+ 7AM EDT MAY 11 2011 PTCLDY    53  48  83 CALM      29.98R                     .
+ 8AM EDT MAY 11 2011 MOSUNNY   57  47  69 CALM      29.98S                     .
+ 9AM EDT MAY 11 2011 MOSUNNY   63  45  51 E6        29.98S                     .
+10AM EDT MAY 11 2011 PTSUNNY   67  44  MM E7        MM.MMM                     .
+11AM EDT MAY 11 2011 MOSUNNY   70  45  MM CALM      MM.MMM                     .
+12PM EDT MAY 11 2011 MOSUNNY   73  47  MM E8        MM.MMM                     .
+ 1PM EDT MAY 11 2011 MOSUNNY   75  48  MM E5        MM.MMM                     .
+ 2PM EDT MAY 11 2011 MOSUNNY   77  46  MM CALM      MM.MMM                     .
+ 3PM EDT MAY 11 2011 MOCLDY    78  44  MM E5	    MM.MMM		       .
+ 4PM EDT MAY 11 2011 MOCLDY    80  42  MM E7        MM.MMM                     .
+ 5PM EDT MAY 11 2011 MOCLDY    80  42  MM E3        MM.MMM                     .
+ 6PM EDT MAY 11 2011 MOCLDY    80  42  MM E3        MM.MMM                     .
+ 7PM EDT MAY 11 2011 MOCLDY    79  41  MM E5        MM.MMM                     .
+ 8PM EDT MAY 11 2011 MOCLDY    77  44  MM CALM      MM.MMM                     .
+ 9PM EDT MAY 11 2011 PTCLDY    72  45  MM E6        MM.MMM                     .
+10PM EDT MAY 11 2011 PTCLDY    69  46  MM E5        MM.MMM                     .
+11PM EDT MAY 11 2011 PTCLDY    69  47  MM E6        MM.MMM                     .
+12AM EDT MAY 12 2011 PTCLDY    68  47  MM E5        MM.MMM                     .
+ 1AM EDT MAY 12 2011 PTCLDY    65  47  MM E3        MM.MMM                     .
+ 2AM EDT MAY 12 2011 PTCLDY    64  47  MM CALM      MM.MMM                     .
+ 3AM EDT MAY 12 2011 PTCLDY    63  47  MM E3        MM.MMM                     .
+ 4AM EDT MAY 12 2011 CLOUDY    60  48  MM CALM      MM.MMM                     .
+ 5AM EDT MAY 12 2011 CLOUDY    58  48  MM E5        MM.MMM                     .
+ 6AM EDT MAY 12 2011 CLOUDY    59  49  MM CALM      MM.MMM                     .
+ 7AM EDT MAY 12 2011 CLOUDY    59  49  MM E3        MM.MMM                     .
+ 8AM EDT MAY 12 2011 CLOUDY    61  49  MM E3        MM.MMM                     .                                                                 .
+ 9AM EDT MAY 11 2011 MOSUNNY   63  45  51 E6        29.98S                     .
+ 8AM EDT MAY 12 2011 CLOUDY    61  51  70 E3        29.99R                     .
+ 9AM EDT MAY 12 2011 CLOUDY    64  52  64 SE5       30.00R                     .
+10AM EDT MAY 12 2011 CLOUDY    65  54  67 E9        29.97F                     .
+11AM EDT MAY 12 2011 CLOUDY    67  56  67 S6        29.96F                     .
+12PM EDT MAY 12 2011 CLOUDY    71  59  65 SE5       29.95F                     .
+ 1PM EDT MAY 12 2011 PTSUNNY   74  59  59 SW3       29.95S                     .
+ 2PM EDT MAY 12 2011 PTSUNNY   78  61  55 CALM      29.94F                     .
+ 3PM EDT MAY 12 2011 PTSUNNY   81  62  52 VRB6      29.93F                     .
+ 4PM EDT MAY 12 2011 PTSUNNY   80  62  54 S6        29.91F THUNDER             .
+ 5PM EDT MAY 12 2011 TSTM      75  67  76 E5        29.89F                     .
+ 6PM EDT MAY 12 2011 PTSUNNY   75  64  68 SE9       29.85F                     .
+ 7PM EDT MAY 12 2011 CLOUDY    74  65  73 CALM      29.88R THUNDER             .
+ 8PM EDT MAY 12 2011 TSTM      64  61  90 W6G28     29.92R FOG                 .
+ 9PM EDT MAY 12 2011 TSTM      64  62  93 E6        29.91F                     .
+10PM EDT MAY 12 2011 LGT RAIN  64  62  93 SE6       29.92R                     .
+11PM EDT MAY 12 2011 CLOUDY    63  61  93 S8        29.89F                     .
+12AM EDT MAY 13 2011 CLOUDY    63  61  93 S5        29.86F                     .
+ 1AM EDT MAY 13 2011 CLOUDY    63  60  90 S3        29.86S                     .
+ 2AM EDT MAY 13 2011 MOCLDY    62  60  93 CALM      29.85F                     .
+ 3AM EDT MAY 13 2011 PTCLDY    61  59  93 CALM      29.83F                     .
+ 4AM EDT MAY 13 2011 MOCLDY    61  59  93 SE3       29.83S FOG                 .
+ 5AM EDT MAY 13 2011 CLOUDY    61  59  93 CALM      29.82F FOG                 .
+ 6AM EDT MAY 13 2011 CLOUDY    60  58  92 CALM      29.81F FOG                 .
+ 7AM EDT MAY 13 2011 MOCLDY    60  58  92 CALM      29.82R FOG                 .
+ 8AM EDT MAY 13 2011 PTSUNNY   62  60  93 E5        29.82S FOG                 .
+ 9AM EDT MAY 13 2011 PTSUNNY   65  61  87 SE5       29.82S FOG                 .
+10AM EDT MAY 13 2011 PTSUNNY   68  63  84 CALM      29.82S                     .
+11AM EDT MAY 13 2011 PTSUNNY   71  63  75 S3        29.81F                     .
+12PM EDT MAY 13 2011 PTSUNNY   74  65  73 CALM      29.80F                     .
+ 1PM EDT MAY 13 2011 PTSUNNY   78  63  59 S7        29.77F                     .
+ 2PM EDT MAY 13 2011 LGT RAIN  77  63  61 VRB3      29.73F                     .
+ 3PM EDT MAY 13 2011 PTSUNNY   79  65  62 NE5       29.71F                     .
+ 4PM EDT MAY 13 2011 TSTM      72  62  71 S18       29.72R                     .
+ 5PM EDT MAY 13 2011 LGT RAIN  67  63  87 CALM      29.74R                     .
+ 6PM EDT MAY 13 2011 LGT RAIN  67  65  93 S3        29.73F                     .
+ 7PM EDT MAY 13 2011 CLOUDY    67  64  90 SE7       29.71F                     .
+ 8PM EDT MAY 13 2011 CLOUDY    66  63  90 S3        29.71S                     .
+ 9PM EDT MAY 13 2011 CLOUDY    66  61  84 CALM      29.73R                     .
+10PM EDT MAY 13 2011 CLOUDY    64  61  90 S3        29.72F                     .
+11PM EDT MAY 13 2011 CLOUDY    63  61  93 E3        29.71F                     .
+12AM EDT MAY 14 2011 MOCLDY    62  60  93 E3        29.71S                     .
+ 1AM EDT MAY 14 2011 MOCLDY    62  60  93 E3        29.69F FOG                 .
+ 2AM EDT MAY 14 2011 MOCLDY    61  60  97 E5        29.68F FOG                 .
+ 3AM EDT MAY 14 2011 FOG       61  60  97 S3        29.69R VSB 1/4             .
+ 4AM EDT MAY 14 2011 FOG       60  59  96 CALM      29.69S VSB 1/4             .
+ 5AM EDT MAY 14 2011 FOG       60  59  96 CALM      29.68F VSB 3/4             .
+ 6AM EDT MAY 14 2011 FOG       60  59  96 S5        29.67S VSB 1               .
+ 7AM EDT MAY 14 2011 DRIZZLE   61  59  93 S5        29.70R FOG                 .
+ 8AM EDT MAY 14 2011 LGT RAIN  61  60  97 CALM      29.70S FOG                 .
+ 9AM EDT MAY 14 2011 LGT RAIN  63  61  93 CALM      29.71R FOG                 .
+10AM EDT MAY 14 2011 CLOUDY    65  62  90 CALM      29.71S FOG                 .
+11AM EDT MAY 14 2011 CLOUDY    66  62  87 S5        29.71S                     .
+12PM EDT MAY 14 2011 RAIN      64  62  93 S6        29.71S VSB 1               .
+ 1PM EDT MAY 14 2011 LGT RAIN  67  63  87 S6        29.69F                     .
+ 2PM EDT MAY 14 2011 LGT RAIN  69  62  78 VRB6      29.67F                     .
+ 3PM EDT MAY 14 2011 CLOUDY    71  61  70 S6        29.65F                     .
+ 4PM EDT MAY 14 2011 PTSUNNY   72  60  66 S3        29.62F                     .
+ 5PM EDT MAY 14 2011 PTSUNNY   74  59  59 S7        29.58F                     .
+ 6PM EDT MAY 14 2011 PTSUNNY   75  57  53 S3        29.57F                     .
+ 7PM EDT MAY 14 2011 PTSUNNY   74  58  57 S6        29.57S                     .
+ 8PM EDT MAY 14 2011 TSTM      72  59  63 SW16G23   29.59R                     .
+ 9PM EDT MAY 14 2011 LGT RAIN  63  59  88 W10       29.59S                     .
+10PM EDT MAY 14 2011 TSTM      62  59  90 S3        29.62R FOG                 .
+11PM EDT MAY 14 2011 LGT RAIN  61  59  93 N3        29.61F                     .
+12AM EDT MAY 15 2011 LGT RAIN  61  59  93 CALM      29.60F FOG                 .
+ 1AM EDT MAY 15 2011 LGT RAIN  61  59  93 E6        29.57F                     .
+ 2AM EDT MAY 15 2011 CLOUDY    61  59  93 SE3       29.55F FOG                 .
+ 3AM EDT MAY 15 2011 CLOUDY    61  60  97 CALM      29.54F FOG                 .
+ 4AM EDT MAY 15 2011 CLOUDY    61  60  97 CALM      29.53F FOG                 .
+ 5AM EDT MAY 15 2011 DRIZZLE   62  60  93 W3        29.53S FOG                 .
+ 6AM EDT MAY 15 2011 LGT RAIN  61  59  93 SW3       29.54R                     .
+ 7AM EDT MAY 15 2011 LGT RAIN  61  59  93 SW5       29.55R FOG                 .
+ 8AM EDT MAY 15 2011 LGT RAIN  61  59  93 SW6       29.55S FOG                 .
+ 9AM EDT MAY 15 2011 LGT RAIN  61  59  93 SW6       29.55S FOG                 .
+10AM EDT MAY 15 2011 LGT RAIN  62  59  90 SW7       29.56R FOG                 .
+11AM EDT MAY 15 2011 LGT RAIN  62  58  86 SW8G17    29.57R                     .
+12PM EDT MAY 15 2011 CLOUDY    64  56  75 W10G18    29.56F                     .
+ 1PM EDT MAY 15 2011 PTSUNNY   66  55  67 W12G20    29.56S                     .
+ 2PM EDT MAY 15 2011 PTSUNNY   66  56  70 W7        29.55F                     .
+ 3PM EDT MAY 15 2011 PTSUNNY   67  55  65 W10       29.54F                     .
+ 4PM EDT MAY 15 2011 PTSUNNY   67  55  65 SW10G16   29.54S                     .
+ 5PM EDT MAY 15 2011 PTSUNNY   67  54  63 W13       29.53F                     .
+ 6PM EDT MAY 15 2011 CLOUDY    65  54  67 W9G18     29.55R                     .
+ 7PM EDT MAY 15 2011 CLOUDY    60  57  89 NW8       29.57R                     .
+ 8PM EDT MAY 15 2011 LGT RAIN  57  55  93 N10       29.59R FOG                 .
+ 9PM EDT MAY 15 2011 LGT RAIN  55  53  93 NW12      29.62R FOG                 .
+10PM EDT MAY 15 2011 LGT RAIN  53  51  93 NW9       29.63R                     .
+11PM EDT MAY 15 2011 DRIZZLE   52  50  93 NW9       29.64R                     .
+12AM EDT MAY 16 2011 CLOUDY    51  48  89 NW7       29.64S                     .
+ 1AM EDT MAY 16 2011 DRIZZLE   50  48  93 NW7       29.64S FOG                 .
+ 2AM EDT MAY 16 2011 CLOUDY    49  47  93 NW8       29.63F                     .
+ 3AM EDT MAY 16 2011 DRIZZLE   49  47  93 NW8       29.62F FOG                 .
+ 4AM EDT MAY 16 2011 DRIZZLE   49  47  93 NW5       29.63S FOG                 .
+ 5AM EDT MAY 16 2011 DRIZZLE   49  48  97 CALM      29.64R FOG                 .
+ 6AM EDT MAY 16 2011 DRIZZLE   49  48  97 CALM      29.65R FOG                 .
+ 7AM EDT MAY 16 2011 DRIZZLE   50  48  93 NW5       29.66R FOG                 .
+ 8AM EDT MAY 16 2011 DRIZZLE   50  48  93 NW3       29.68R FOG                 .
+ 9AM EDT MAY 16 2011 DRZL/FOG  50  48  93 NW5       29.69R VSB 1               .
+10AM EDT MAY 16 2011 DRZL/FOG  51  49  92 N5        29.70R VSB 1               .
+11AM EDT MAY 16 2011 DRIZZLE   52  49  89 N5        29.71R FOG                 .
+12PM EDT MAY 16 2011 DRIZZLE   52  49  89 N7        29.73R FOG                 .
+ 1PM EDT MAY 16 2011 CLOUDY    53  49  86 NW5       29.74R                     .
+ 2PM EDT MAY 16 2011 CLOUDY    53  49  86 N7        29.74S                     .
+ 3PM EDT MAY 16 2011 CLOUDY    53  49  86 NW9       29.74S                     .
+ 4PM EDT MAY 16 2011 CLOUDY    54  49  83 N9        29.75R                     .
+ 5PM EDT MAY 16 2011 CLOUDY    54  48  80 N9        29.76R                     .
+ 6PM EDT MAY 16 2011 CLOUDY    54  48  80 NW8       29.77R                     .
+ 7PM EDT MAY 16 2011 CLOUDY    54  48  80 N12       29.78R                     .
+ 8PM EDT MAY 16 2011 CLOUDY    53  47  79 N9        29.79R                     .
+ 9PM EDT MAY 16 2011 CLOUDY    51  47  86 NW10      29.81R                     .
+10PM EDT MAY 16 2011 CLOUDY    50  46  86 N8        29.82R                     .
+11PM EDT MAY 16 2011 LGT RAIN  50  46  86 N9        29.83R                     .
+12AM EDT MAY 17 2011 CLOUDY    49  46  90 N7        29.82F                     .
+ 1AM EDT MAY 17 2011 CLOUDY    49  46  90 N7        29.81F                     .
+ 2AM EDT MAY 17 2011 CLOUDY    49  46  90 N8        29.80F                     .
+ 3AM EDT MAY 17 2011 CLOUDY    49  46  90 N10       29.78F                     .
+ 4AM EDT MAY 17 2011 LGT RAIN  50  47  89 N9        29.77S FOG                 .
+ 5AM EDT MAY 17 2011 LGT RAIN  50  47  89 N9        29.76F FOG                 .
+ 6AM EDT MAY 17 2011 LGT RAIN  50  48  93 N9        29.76S                     .
+ 7AM EDT MAY 17 2011 CLOUDY    51  48  89 N10       29.76S                     .
+ 8AM EDT MAY 17 2011 CLOUDY    51  49  92 NE8       29.77R                     .
+ 9AM EDT MAY 17 2011 CLOUDY    52  49  89 NE7       29.77S                     .
+10AM EDT MAY 17 2011 LGT RAIN  53  50  89 NE7       29.77S                     .
+11AM EDT MAY 17 2011 LGT RAIN  54  51  90 NE10      29.76F                     .
+12PM EDT MAY 17 2011 LGT RAIN  55  53  93 NE9       29.76S                     .
+ 1PM EDT MAY 17 2011 LGT RAIN  56  54  93 NE7       29.74F                     .
+ 2PM EDT MAY 17 2011 LGT RAIN  58  55  90 NE7       29.73F                     .
+ 3PM EDT MAY 17 2011 LGT RAIN  59  56  89 N8        29.72S                     .
+ 4PM EDT MAY 17 2011 LGT RAIN  60  57  89 N7        29.70F                     .
+ 5PM EDT MAY 17 2011 DRIZZLE   60  57  89 NE10      29.69F                     .
+ 6PM EDT MAY 17 2011 LGT RAIN  61  57  88 E7        29.70S FOG                 .
+ 7PM EDT MAY 17 2011 LGT RAIN  59  57  93 NE10      29.70S FOG                 .
+ 8PM EDT MAY 17 2011 CLOUDY    59  57  93 NE9       29.70S                     .
+ 9PM EDT MAY 17 2011 CLOUDY    59  56  89 E7        29.71R                     .
+10PM EDT MAY 17 2011 PTCLDY    58  55  90 E7        29.72R                     .
+11PM EDT MAY 17 2011 PTCLDY    58  55  90 E9        29.72S                     .
+12AM EDT MAY 18 2011 MOCLDY    58  55  90 E7        29.74R                     .
+ 1AM EDT MAY 18 2011 MOCLDY    58  55  90 E3        29.74S                     .
+ 2AM EDT MAY 18 2011 LGT RAIN  58  55  90 E8        29.75R                     .
+ 3AM EDT MAY 18 2011 CLOUDY    58  55  90 NE8       29.73F                     .
+ 4AM EDT MAY 18 2011 LGT RAIN  57  55  93 E6        29.74R                     .
+ 5AM EDT MAY 18 2011 LGT RAIN  57  55  93 E5        29.75R                     .
+ 6AM EDT MAY 18 2011 DRIZZLE   57  55  93 E6        29.76R FOG                 .
+ 7AM EDT MAY 18 2011 TSTM      57  55  94 E6        29.78R FOG                 .
+ 8AM EDT MAY 18 2011 CLOUDY    57  55  93 E7        29.77F                     .
+ 9AM EDT MAY 18 2011 PTSUNNY   58  55  90 NE7       29.79R                     .
+10AM EDT MAY 18 2011 PTSUNNY   59  55  87 E6        29.80R                     .
+11AM EDT MAY 18 2011 PTSUNNY   65  57  75 E10       29.80S                     .
+12PM EDT MAY 18 2011 PTSUNNY   66  55  67 E7        29.80S                     .
+ 1PM EDT MAY 18 2011 CLOUDY    64  59  82 SE8       29.79S                     .
+ 2PM EDT MAY 18 2011 TSTM      62  58  86 E8        29.80R                     .
+ 3PM EDT MAY 18 2011 CLOUDY    61  56  83 E7        29.80R                     .
+ 4PM EDT MAY 18 2011 CLOUDY    61  54  77 CALM      29.81R                     .
+ 5PM EDT MAY 18 2011 CLOUDY    57  51  80 SW12G20   29.84R                     .
+ 6PM EDT MAY 18 2011 CLOUDY    59  51  75 NW7       29.83F                     .
+ 7PM EDT MAY 18 2011 PTSUNNY   58  51  78 NE6       29.83S                     .
+ 8PM EDT MAY 18 2011 MOCLDY    58  51  78 CALM      29.84R                     .
+ 9PM EDT MAY 18 2011 MOCLDY    57  51  80 CALM      29.85R                     .
+10PM EDT MAY 18 2011 MOCLDY    54  51  90 CALM      29.87R                     .
+11PM EDT MAY 18 2011 LGT RAIN  53  51  93 S3        29.89R                     .
+12AM EDT MAY 19 2011 CLOUDY    54  52  93 CALM      29.88F                     .
+ 1AM EDT MAY 19 2011 MOCLDY    54  52  93 S5        29.89R                     .
+ 2AM EDT MAY 19 2011 CLOUDY    53  50  89 S5        29.89S                     .
+ 3AM EDT MAY 19 2011 CLOUDY    53  50  89 SW5       29.90S                     .
+ 4AM EDT MAY 19 2011 CLOUDY    52  50  93 SW3       29.91R                     .
+ 5AM EDT MAY 19 2011 CLOUDY    52  50  93 S3        29.92R                     .
+ 6AM EDT MAY 19 2011 CLOUDY    52  50  93 SW3       29.94R                     .
+ 7AM EDT MAY 19 2011 CLOUDY    53  50  89 SW6       29.96R                     .
+ 8AM EDT MAY 19 2011 CLOUDY    53  50  89 S7        29.97R FOG                 .
+ 9AM EDT MAY 19 2011 PTSUNNY   54  50  87 SW7       29.99R                     .
+10AM EDT MAY 19 2011 CLOUDY    57  49  74 VRB5      30.00R                     .
+11AM EDT MAY 19 2011 CLOUDY    57  49  74 SW6       30.00S                     .
+12PM EDT MAY 19 2011 CLOUDY    57  49  74 S5        30.01S                     .
+ 1PM EDT MAY 19 2011 CLOUDY    59  48  67 S8        30.02R                     .
+ 2PM EDT MAY 19 2011 PTSUNNY   61  49  64 W3        30.02S                     .
+ 3PM EDT MAY 19 2011 PTSUNNY   62  48  60 W3        30.02S                     .
+ 4PM EDT MAY 19 2011 MOSUNNY   65  49  56 SW8       30.00F                     .
+ 5PM EDT MAY 19 2011 PTSUNNY   64  47  53 SW8       30.00S                     .
+ 6PM EDT MAY 19 2011 PTSUNNY   62  48  60 SW7       30.00S                     .
+ 7PM EDT MAY 19 2011 PTSUNNY   63  49  60 SW7       30.02R                     .
+ 8PM EDT MAY 19 2011 MOCLDY    61  49  64 SW5       30.02S                     .
+ 9PM EDT MAY 19 2011 MOCLDY    60  50  69 SW5       30.03R                     .
+10PM EDT MAY 19 2011 PTCLDY    58  50  75 SW3       30.04R                     .
+11PM EDT MAY 19 2011 PTCLDY    55  50  83 SW3       30.05R                     .
+12AM EDT MAY 20 2011 PTCLDY    54  50  86 SW3       30.05S                     .
+ 1AM EDT MAY 20 2011 PTCLDY    53  50  89 CALM      30.03F                     .
+ 2AM EDT MAY 20 2011 CLEAR     53  50  89 CALM      30.03S                     .
+ 3AM EDT MAY 20 2011 CLEAR     51  49  92 CALM      30.03S FOG                 .
+ 4AM EDT MAY 20 2011 FOG       50  48  93 CALM      30.03F VSB 1/8             .
+ 5AM EDT MAY 20 2011 FOG       51  50  96 CALM      30.05R VSB 1/4             .
+ 6AM EDT MAY 20 2011 FOG       52  50  93 CALM      30.05S VSB 1/8             .
+ 7AM EDT MAY 20 2011 FOG       52  51  97 CALM      30.06R VSB 1/8             .
+ 8AM EDT MAY 20 2011 FOG       52  51  97 NW5       30.06S VSB 1/8             .
+ 9AM EDT MAY 20 2011 FOG       53  52  96 CALM      30.07R VSB 1/8             .
+10AM EDT MAY 20 2011 CLOUDY    54  52  93 CALM      30.07S FOG                 .
+11AM EDT MAY 20 2011 CLOUDY    59  53  80 W3        30.07S                     .
+12PM EDT MAY 20 2011 PTSUNNY   63  53  70 N3        30.06F                     .
+ 1PM EDT MAY 20 2011 CLOUDY    66  52  60 W8        30.05F                     .
+ 2PM EDT MAY 20 2011 PTSUNNY   67  52  58 W3        30.04F                     .
+ 3PM EDT MAY 20 2011 CLOUDY    67  51  56 NW9       30.03F                     .
+ 4PM EDT MAY 20 2011 PTSUNNY   68  51  54 NW8       30.03S                     .
+ 5PM EDT MAY 20 2011 CLOUDY    68  51  54 NW6       30.02F                     .
+ 6PM EDT MAY 20 2011 PTSUNNY   69  52  54 NW7       30.01F                     .
+ 7PM EDT MAY 20 2011 PTSUNNY   69  51  52 NW7       30.01S                     .
+ 8PM EDT MAY 20 2011 MOCLDY    69  50  50 NW8       30.03R                     .
+ 9PM EDT MAY 20 2011 PTCLDY    65  51  60 CALM      30.03S                     .
+10PM EDT MAY 20 2011 MOCLDY    62  52  69 CALM      30.04R                     .
+11PM EDT MAY 20 2011 PTCLDY    60  52  74 CALM      30.04S                     .
+12AM EDT MAY 21 2011 CLEAR     60  52  74 CALM      30.05R                     .
+ 1AM EDT MAY 21 2011 PTCLDY    55  51  86 W5        30.05S                     .
+ 2AM EDT MAY 21 2011 CLEAR     55  52  89 CALM      30.06R                     .
+ 3AM EDT MAY 21 2011 CLEAR     54  50  86 CALM      30.04F                     .
+ 4AM EDT MAY 21 2011 CLEAR     53  50  89 CALM      30.03F                     .
+ 5AM EDT MAY 21 2011 CLEAR     51  48  89 W5        30.03S                     .
+ 6AM EDT MAY 21 2011 PTCLDY    51  49  92 W3        30.03S                     .
+ 7AM EDT MAY 21 2011 PTCLDY    53  50  89 CALM      30.05R FOG                 .
+ 8AM EDT MAY 21 2011 SUNNY     57  53  86 CALM      30.07R                     .
+ 9AM EDT MAY 21 2011 MOSUNNY   62  55  77 W6        30.09R                     .
+10AM EDT MAY 21 2011 MOSUNNY   66  56  70 NW3       30.08F                     .
+11AM EDT MAY 21 2011 MOSUNNY   70  55  59 CALM      30.08S                     .
+12PM EDT MAY 21 2011 PTSUNNY   70  55  59 CALM      30.07F                     .
+ 1PM EDT MAY 21 2011 PTSUNNY   72  54  53 CALM      30.07S                     .
+ 2PM EDT MAY 21 2011 PTSUNNY   74  54  49 CALM      30.05F                     .
+ 3PM EDT MAY 21 2011 PTSUNNY   75  53  46 W5        30.04F                     .
+ 4PM EDT MAY 21 2011 PTSUNNY   77  53  43 E5        30.03F                     .
+ 5PM EDT MAY 21 2011 PTSUNNY   77  51  40 NW3       30.01F                     .
+ 6PM EDT MAY 21 2011 PTSUNNY   79  51  37 CALM      30.00F                     .
+ 7PM EDT MAY 21 2011 PTSUNNY   77  52  41 S5        29.99F                     .
+ 8PM EDT MAY 21 2011 CLOUDY    74  54  49 SW3       30.00R                     .
+ 9PM EDT MAY 21 2011 MOCLDY    71  55  56 CALM      30.00S                     .
+10PM EDT MAY 21 2011 MOCLDY    66  57  72 CALM      30.01R                     .
+11PM EDT MAY 21 2011 MOCLDY    66  55  67 CALM      30.02R                     .
+12AM EDT MAY 22 2011 MOCLDY    63  56  78 CALM      30.00F                     .
+ 1AM EDT MAY 22 2011 MOCLDY    61  55  81 CALM      30.00S                     .
+ 2AM EDT MAY 22 2011 MOCLDY    60  55  83 CALM      30.00S                     .
+ 3AM EDT MAY 22 2011 CLOUDY    61  55  81 CALM      29.99F                     .
+ 4AM EDT MAY 22 2011 CLOUDY    59  55  87 CALM      29.98F                     .
+ 5AM EDT MAY 22 2011 CLOUDY    60  55  83 CALM      29.98S                     .
+ 6AM EDT MAY 22 2011 CLOUDY    59  55  87 CALM      29.96F                     .
+ 7AM EDT MAY 22 2011 CLOUDY    60  56  86 CALM      29.98R                     .
+ 8AM EDT MAY 22 2011 CLOUDY    62  57  83 CALM      29.99R                     .
+ 9AM EDT MAY 22 2011 CLOUDY    64  57  78 E3        29.98F                     .
+10AM EDT MAY 22 2011 CLOUDY    65  57  75 CALM      30.01R                     .
+11AM EDT MAY 22 2011 LGT RAIN  63  59  88 SE3       30.00F                     .
+12PM EDT MAY 22 2011 PTSUNNY   67  62  84 S3        30.00S                     .
+ 1PM EDT MAY 22 2011 PTSUNNY   75  60  59 S7        29.99F                     .
+ 2PM EDT MAY 22 2011 CLOUDY    78  60  53 SW5       29.97F                     .
+ 3PM EDT MAY 22 2011 PTSUNNY   79  61  53 W3        29.96F                     .
+ 4PM EDT MAY 22 2011 MOSUNNY   81  61  50 SW9       29.96S                     .
+ 5PM EDT MAY 22 2011 MOSUNNY   82  57  42 SW9       29.93F                     .
+ 6PM EDT MAY 22 2011 PTSUNNY   82  58  43 S6        29.91F                     .
+ 7PM EDT MAY 22 2011 PTSUNNY   82  58  43 S6        29.92R                     .
+ 8PM EDT MAY 22 2011 CLOUDY    79  59  50 S5        29.90F                     .
+ 9PM EDT MAY 22 2011 CLOUDY    75  61  61 S5        29.92R                     .
+10PM EDT MAY 22 2011 CLOUDY    75  58  55 S5        29.91F                     .
+11PM EDT MAY 22 2011 CLOUDY    72  59  63 SE5       29.89F                     .
+12AM EDT MAY 23 2011 CLOUDY    72  58  61 SW12G21   29.90R                     .
+ 1AM EDT MAY 23 2011 CLOUDY    68  57  68 S8        29.89F                     .
+ 2AM EDT MAY 23 2011 CLOUDY    67  57  70 S7        29.90R                     .
+ 3AM EDT MAY 23 2011 CLOUDY    66  58  75 S5        29.91R                     .
+ 4AM EDT MAY 23 2011 MOCLDY    66  59  78 S6        29.89F                     .
+ 5AM EDT MAY 23 2011 MOCLDY    65  58  78 S6        29.87F                     .
+ 6AM EDT MAY 23 2011 MOCLDY    63  58  83 S6        29.87S                     .
+ 7AM EDT MAY 23 2011 MOCLDY    63  58  83 CALM      29.87S                     .
+ 8AM EDT MAY 23 2011 PTSUNNY   66  58  75 S9        29.85F                     .
+ 9AM EDT MAY 23 2011 CLOUDY    68  59  73 S7        29.86R                     .
+10AM EDT MAY 23 2011 CLOUDY    72  59  63 SW15      29.87R                     .
+11AM EDT MAY 23 2011 LGT RAIN  71  59  65 SW15G23   29.88R                     .
+12PM EDT MAY 23 2011 LGT RAIN  70  59  68 SW13G22   29.85F                     .
+ 1PM EDT MAY 23 2011 CLOUDY    70  59  68 SW10      29.83F                     .
+ 2PM EDT MAY 23 2011 CLOUDY    70  60  70 SW16G25   29.81F                     .
+ 3PM EDT MAY 23 2011 PTSUNNY   73  60  63 SW12G25   29.80F                     .
+ 4PM EDT MAY 23 2011 PTSUNNY   76  59  55 SW15G24   29.79F                     .
+ 5PM EDT MAY 23 2011 PTSUNNY   78  59  51 SW17G25   29.79S                     .
+ 6PM EDT MAY 23 2011 MOSUNNY   78  59  51 SW17G23   29.76F                     .
+ 7PM EDT MAY 23 2011 MOSUNNY   79  59  50 S13       29.74F                     .
+ 8PM EDT MAY 23 2011 PTCLDY    77  59  53 SW9       29.75R                     .
+ 9PM EDT MAY 23 2011 PTCLDY    75  59  57 SW10      29.75S                     .
+10PM EDT MAY 23 2011 MOCLDY    74  59  59 SW9       29.77R                     .
+11PM EDT MAY 23 2011 CLOUDY    74  59  59 S12       29.77S                     .
+12AM EDT MAY 24 2011 LGT RAIN  70  57  63 W21G35    29.81R                     .
+ 1AM EDT MAY 24 2011 CLOUDY    68  56  65 W15G29    29.82R                     .
+ 2AM EDT MAY 24 2011 CLOUDY    66  56  70 SW10      29.82S                     .
+ 3AM EDT MAY 24 2011 CLOUDY    64  57  78 SW9G18    29.81F                     .
+ 4AM EDT MAY 24 2011 CLOUDY    64  58  80 SW9       29.80F                     .
+ 5AM EDT MAY 24 2011 CLOUDY    64  58  80 SW12G18   29.78F                     .
+ 6AM EDT MAY 24 2011 DRIZZLE   64  57  77 SW14G21   29.81R                     .
+ 7AM EDT MAY 24 2011 CLOUDY    65  59  81 W14       29.82R                     .
+ 8AM EDT MAY 24 2011 CLOUDY    65  59  81 W8G16     29.84R                     .
+ 9AM EDT MAY 24 2011 CLOUDY    66  59  78 W9G17     29.84S                     .
+10AM EDT MAY 24 2011 CLOUDY    66  59  78 W7        29.85R                     .
+11AM EDT MAY 24 2011 CLOUDY    67  59  75 W8        29.87R                     .
+12PM EDT MAY 24 2011 CLOUDY    68  59  73 SW9       29.88R                     .
+ 1PM EDT MAY 24 2011 CLOUDY    68  59  73 SW7       29.90R                     .
+ 2PM EDT MAY 24 2011 CLOUDY    69  60  73 W7        29.89F                     .
+ 3PM EDT MAY 24 2011 CLOUDY    71  60  68 W6        29.88F                     .
+ 4PM EDT MAY 24 2011 CLOUDY    72  60  66 W6        29.88S                     .
+ 5PM EDT MAY 24 2011 PTSUNNY   73  60  63 W7        29.87F                     .
+ 6PM EDT MAY 24 2011 MOSUNNY   74  59  59 SW9       29.86F                     .
+ 7PM EDT MAY 24 2011 MOSUNNY   74  60  61 W6        29.85F                     .
+ 8PM EDT MAY 24 2011 PTCLDY    73  60  63 W5        29.87R                     .
+ 9PM EDT MAY 24 2011 PTCLDY    71  60  68 CALM      29.89R                     .
+10PM EDT MAY 24 2011 PTCLDY    70  61  73 CALM      29.91R                     .
+11PM EDT MAY 24 2011 CLOUDY    70  61  73 N9        29.92R                     .
+12AM EDT MAY 25 2011 LGT RAIN  65  62  90 S3        29.92F                     .
+ 1AM EDT MAY 25 2011 CLOUDY    65  62  90 CALM      29.93R                     .
+ 2AM EDT MAY 25 2011 MOCLDY    64  62  93 CALM      29.94R                     .
+ 3AM EDT MAY 25 2011 PTCLDY    62  61  96 W3        29.93S                     .
+ 4AM EDT MAY 25 2011 PTCLDY    62  60  93 CALM      29.92F FOG                 .
+ 5AM EDT MAY 25 2011 PTCLDY    62  60  93 CALM      29.93R FOG                 .
+ 6AM EDT MAY 25 2011 FOG       61  61 100 CALM      29.94R VSB 1/2             .
+ 7AM EDT MAY 25 2011 FOG       61  61 100 S5        29.95R VSB<1/4             .
+ 8AM EDT MAY 25 2011 FOG       62  61  96 S5        29.95S VSB<1/4             .
+ 9AM EDT MAY 25 2011 CLOUDY    63  61  94 S5        29.95S FOG                 .
+10AM EDT MAY 25 2011 CLOUDY    67  62  84 SE3       29.96R                     .
+11AM EDT MAY 25 2011 PTSUNNY   70  63  78 SE5       29.95F                     .
+12PM EDT MAY 25 2011 PTSUNNY   73  62  68 SE8       29.92F                     .
+ 1PM EDT MAY 25 2011 MOSUNNY   75  61  61 S8G16     29.91F                     .
+ 2PM EDT MAY 25 2011 PTSUNNY   77  61  57 S8        29.88F                     .
+ 3PM EDT MAY 25 2011 PTSUNNY   78  60  53 S8        29.87F                     .
+ 4PM EDT MAY 25 2011 PTSUNNY   80  61  52 SE8       29.85F                     .
+ 5PM EDT MAY 25 2011 PTSUNNY   81  61  50 S9        29.82F                     .
+ 6PM EDT MAY 25 2011 PTSUNNY   81  61  50 SE7       29.79F                     .
+ 7PM EDT MAY 25 2011 PTSUNNY   80  61  52 SE10      29.77F                     .
+ 8PM EDT MAY 25 2011 MOCLDY    79  61  53 S8        29.76F                     .
+ 9PM EDT MAY 25 2011 PTCLDY    78  61  55 S6        29.77R                     .
+10PM EDT MAY 25 2011 CLOUDY    76  62  62 CALM      29.80R                     .
+11PM EDT MAY 25 2011 CLOUDY    68  56  65 N21G30    29.82R                     .
+12AM EDT MAY 26 2011 CLOUDY    66  56  70 NE7       29.82S                     .
+ 1AM EDT MAY 26 2011 PTCLDY    64  56  75 E6        29.81F                     .
+ 2AM EDT MAY 26 2011 PTCLDY    63  56  78 SE6       29.79F                     .
+ 3AM EDT MAY 26 2011 PTCLDY    63  56  78 E3        29.76F                     .
+ 4AM EDT MAY 26 2011 PTCLDY    63  56  78 E3        29.74F                     .
+ 5AM EDT MAY 26 2011 MOCLDY    62  56  80 E3        29.73F                     .
+ 6AM EDT MAY 26 2011 CLOUDY    62  57  83 SW5       29.78R                     .
+ 7AM EDT MAY 26 2011 CLOUDY    66  58  75 SW8       29.79R                     .
+ 8AM EDT MAY 26 2011 CLOUDY    67  57  70 SW10      29.83R                     .
+ 9AM EDT MAY 26 2011 CLOUDY    69  57  65 S7        29.81F                     .
+10AM EDT MAY 26 2011 CLOUDY    71  58  63 S7        29.80F                     .
+11AM EDT MAY 26 2011 PTSUNNY   74  57  55 S13G20    29.81R                     .
+12PM EDT MAY 26 2011 CLOUDY    77  55  46 SW16G25   29.81S                     .
+ 1PM EDT MAY 26 2011 CLOUDY    78  55  44 S16       29.81S                     .
+ 2PM EDT MAY 26 2011 CLOUDY    79  55  43 S13G20    29.81S                     .
+ 3PM EDT MAY 26 2011 PTSUNNY   81  56  42 S12G21    29.80F                     .
+ 4PM EDT MAY 26 2011 CLOUDY    81  56  42 S12       29.79F                     .
+ 5PM EDT MAY 26 2011 CLOUDY    80  56  43 SW17G25   29.79S                     .
+ 6PM EDT MAY 26 2011 MOSUNNY   80  52  37 SW15G25   29.75F                     .
+ 7PM EDT MAY 26 2011 PTSUNNY   78  52  40 S15G23    29.77R                     .
+ 8PM EDT MAY 26 2011 CLOUDY    76  51  41 SW13G22   29.77S                     .
+ 9PM EDT MAY 26 2011 LGT RAIN  75  52  44 S7        29.78R                     .
+10PM EDT MAY 26 2011 MOCLDY    73  53  49 S3        29.83R                     .
+11PM EDT MAY 26 2011 CLOUDY    70  54  56 SE6       29.85R                     .
+12AM EDT MAY 27 2011 LGT RAIN  67  59  75 S7        29.85S                     .
+ 1AM EDT MAY 27 2011 CLOUDY    65  61  87 S6        29.85S                     .
+ 2AM EDT MAY 27 2011 CLOUDY    65  61  87 SE5       29.85S                     .
+ 3AM EDT MAY 27 2011 LGT RAIN  64  60  87 S9        29.87R                     .
+ 4AM EDT MAY 27 2011 LGT RAIN  63  60  90 S3        29.86F                     .
+ 5AM EDT MAY 27 2011 CLOUDY    63  59  87 S3        29.85F                     .
+ 6AM EDT MAY 27 2011 CLOUDY    63  59  87 CALM      29.85S                     .
+ 7AM EDT MAY 27 2011 CLOUDY    62  59  90 CALM      29.87R                     .
+ 8AM EDT MAY 27 2011 CLOUDY    63  60  90 S5        29.91R                     .
+ 9AM EDT MAY 27 2011 LGT RAIN  63  60  90 SE3       29.92R                     .
+10AM EDT MAY 27 2011 CLOUDY    64  61  88 S5        29.93R                     .
+11AM EDT MAY 27 2011 CLOUDY    65  61  87 SE5       29.93S                     .
+12PM EDT MAY 27 2011 PTSUNNY   67  61  81 SE5       29.93S                     .
+ 1PM EDT MAY 27 2011 LGT RAIN  68  60  75 S5        29.93S                     .
+ 2PM EDT MAY 27 2011 LGT RAIN  65  62  90 W7        29.93S FOG                 .
+ 3PM EDT MAY 27 2011 LGT RAIN  66  63  90 CALM      29.91F FOG                 .
+ 4PM EDT MAY 27 2011 CLOUDY    68  61  77 CALM      29.91S THUNDER             .
+ 5PM EDT MAY 27 2011 PTSUNNY   67  63  87 NW3       29.90F FOG                 .
+ 6PM EDT MAY 27 2011 PTSUNNY   67  63  87 SE3       29.90S                     .
+ 7PM EDT MAY 27 2011 PTSUNNY   68  62  81 CALM      29.89F                     .
+ 8PM EDT MAY 27 2011 MOCLDY    68  63  84 SE6       29.90R                     .
+ 9PM EDT MAY 27 2011 MOCLDY    67  64  90 CALM      29.90S                     .
+10PM EDT MAY 27 2011 LGT RAIN  67  64  90 CALM      29.90S                     .
+11PM EDT MAY 27 2011 CLOUDY    66  64  93 CALM      29.91R                     .
+12AM EDT MAY 28 2011 MOCLDY    64  63  96 CALM      29.91S FOG                 .
+ 1AM EDT MAY 28 2011 MOCLDY    65  62  90 S5        29.90F                     .
+ 2AM EDT MAY 28 2011 MOCLDY    64  61  90 CALM      29.90S                     .
+ 3AM EDT MAY 28 2011 PTCLDY    63  61  93 SW3       29.89F FOG                 .
+ 4AM EDT MAY 28 2011 PTCLDY    62  60  93 SW3       29.89S FOG                 .
+ 5AM EDT MAY 28 2011 FOG       61  59  94 CALM      29.90R VSB 1/2             .
+ 6AM EDT MAY 28 2011 FOG       60  59  96 SW3       29.92R VSB<1/4             .
+ 7AM EDT MAY 28 2011 FOG       61  59  93 S5        29.95R VSB 1/4             .
+ 8AM EDT MAY 28 2011 CLOUDY    62  60  93 S3        29.96R FOG                 .
+ 9AM EDT MAY 28 2011 PTSUNNY   64  60  87 S6        29.97R FOG                 .
+10AM EDT MAY 28 2011 PTSUNNY   67  59  75 VRB6      29.96F                     .
+11AM EDT MAY 28 2011 PTSUNNY   69  56  62 SW10      29.96S                     .
+12PM EDT MAY 28 2011 PTSUNNY   72  57  59 SW9       29.94F                     .
+ 1PM EDT MAY 28 2011 PTSUNNY   74  56  53 SW12      29.96R                     .
+ 2PM EDT MAY 28 2011 PTSUNNY   75  55  49 SW7G21    29.96S                     .
+ 3PM EDT MAY 28 2011 PTSUNNY   76  54  46 S12G21    29.94F                     .
+ 4PM EDT MAY 28 2011 PTSUNNY   78  54  43 S8        29.94S                     .
+ 5PM EDT MAY 28 2011 PTSUNNY   78  51  38 S10       29.92F                     .
+ 6PM EDT MAY 28 2011 PTSUNNY   79  51  37 SW10      29.92S                     .
+ 7PM EDT MAY 28 2011 PTSUNNY   78  52  40 SW6       29.93R                     .
+ 8PM EDT MAY 28 2011 CLOUDY    76  55  48 CALM      29.94R                     .
+ 9PM EDT MAY 28 2011 CLOUDY    73  59  61 CALM      29.95R                     .
+10PM EDT MAY 28 2011 CLOUDY    71  57  61 SW3       29.98R                     .
+11PM EDT MAY 28 2011 CLOUDY    69  59  70 S3        29.98S                     .
+12AM EDT MAY 29 2011 CLOUDY    69  58  67 E6        29.93F                     .
+ 1AM EDT MAY 29 2011 CLOUDY    67  59  75 E6        29.97R                     .
+ 2AM EDT MAY 29 2011 CLOUDY    68  58  70 CALM      29.98R                     .
+ 3AM EDT MAY 29 2011 CLOUDY    65  59  81 CALM      29.96F                     .
+ 4AM EDT MAY 29 2011 CLOUDY    65  59  81 CALM      29.97R                     .
+ 5AM EDT MAY 29 2011 CLOUDY    65  58  78 S3        29.98R                     .
+ 6AM EDT MAY 29 2011 CLOUDY    66  58  75 SE3       29.99R                     .
+ 7AM EDT MAY 29 2011 PTSUNNY   66  58  75 CALM      30.01R                     .
+ 8AM EDT MAY 29 2011 PTSUNNY   67  60  78 S3        30.02R                     .
+ 9AM EDT MAY 29 2011 PTSUNNY   71  62  73 S6        30.03R                     .
+10AM EDT MAY 29 2011 CLOUDY    75  61  61 SW7       30.04R                     .
+11AM EDT MAY 29 2011 PTSUNNY   79  61  53 SW8       30.04S                     .
+12PM EDT MAY 29 2011 MOSUNNY   82  63  52 W8        30.04S                     .
+ 1PM EDT MAY 29 2011 MOSUNNY   84  63  49 S10G17    30.01F HX  85              .
+ 2PM EDT MAY 29 2011 MOSUNNY   85  63  47 S12G17    30.00F HX  86              .
+ 3PM EDT MAY 29 2011 MOSUNNY   87  63  44 SW15G22   30.00S HX  88              .
+ 4PM EDT MAY 29 2011 PTSUNNY   86  62  44 SW10      30.03R HX  86              .
+ 5PM EDT MAY 29 2011 PTSUNNY   86  64  47 SW7       30.03S HX  87              .
+ 6PM EDT MAY 29 2011 MOSUNNY   86  64  47 SW12      30.04R HX  87              .
+ 7PM EDT MAY 29 2011 MOSUNNY   85  64  49 SW10      30.04S HX  86              .
+ 8PM EDT MAY 29 2011 MOCLDY    83  65  54 SW5       30.06R HX  85              .
+ 9PM EDT MAY 29 2011 MOCLDY    81  65  58 S3        30.06S                     .
+10PM EDT MAY 29 2011 CLOUDY    78  66  66 S6        30.06S                     .
+11PM EDT MAY 29 2011 CLOUDY    78  65  63 S7        30.08R                     .
+12AM EDT MAY 30 2011 MOCLDY    78  65  63 S5        30.07F                     .
+ 1AM EDT MAY 30 2011 CLOUDY    78  64  61 SW6       30.08R                     .
+ 2AM EDT MAY 30 2011 MOCLDY    76  64  66 SW6       30.08S                     .
+ 3AM EDT MAY 30 2011 MOCLDY    75  64  68 CALM      30.08S                     .
+ 4AM EDT MAY 30 2011 MOCLDY    73  65  75 CALM      30.10R                     .
+ 5AM EDT MAY 30 2011 PTCLDY    70  64  81 CALM      30.12R                     .
+ 6AM EDT MAY 30 2011 PTCLDY    68  64  87 CALM      30.14R                     .
+ 7AM EDT MAY 30 2011 PTSUNNY   68  64  87 CALM      30.16R                     .
+ 8AM EDT MAY 30 2011 PTSUNNY   71  66  84 CALM      30.18R                     .
+ 9AM EDT MAY 30 2011 PTSUNNY   75  67  76 CALM      30.20R                     .
+10AM EDT MAY 30 2011 PTSUNNY   78  68  71 SW3       30.20S                     .
+11AM EDT MAY 30 2011 MOSUNNY   82  66  58 SW8       30.20S                     .
+12PM EDT MAY 30 2011 MOSUNNY   84  66  54 VRB6      30.20S HX  86              .
+ 1PM EDT MAY 30 2011 MOSUNNY   86  68  54 VRB5      30.19F HX  89              .
+ 2PM EDT MAY 30 2011 MOSUNNY   87  68  52 W7        30.18F HX  90              .
+ 3PM EDT MAY 30 2011 MOSUNNY   88  66  48 SW8       30.17F HX  90              .
+ 4PM EDT MAY 30 2011 MOSUNNY   89  65  44 W10       30.17S HX  91              .
+ 5PM EDT MAY 30 2011 MOSUNNY   89  64  43 W6        30.17S HX  90              .
+ 6PM EDT MAY 30 2011 MOSUNNY   88  64  44 W8        30.17S HX  89              .
+ 7PM EDT MAY 30 2011 MOSUNNY   87  65  47 W6        30.17S HX  89              .
+ 8PM EDT MAY 30 2011 PTCLDY    86  66  51 W3        30.18R HX  88              .
+ 9PM EDT MAY 30 2011 PTCLDY    83  67  58 W3        30.19R HX  85              .
+10PM EDT MAY 30 2011 CLEAR     81  66  60 SW3       30.20R                     .
+11PM EDT MAY 30 2011 CLEAR     78  66  66 SW3       30.21R                     .
+12AM EDT MAY 31 2011 CLEAR     77  67  71 CALM      30.21S                     .
+ 1AM EDT MAY 31 2011 CLEAR     74  67  78 CALM      30.22R                     .
+ 2AM EDT MAY 31 2011 CLEAR     76  66  71 CALM      30.21F                     .
+ 3AM EDT MAY 31 2011 CLEAR     74  66  76 CALM      30.20F                     .
+ 4AM EDT MAY 31 2011 CLEAR     72  66  81 CALM      30.19F                     .
+ 5AM EDT MAY 31 2011 CLEAR     70  66  87 CALM      30.19S                     .
+ 6AM EDT MAY 31 2011 CLEAR     70  65  84 CALM      30.21R                     .
+ 7AM EDT MAY 31 2011 SUNNY     71  66  84 CALM      30.22R HAZE                .
+ 8AM EDT MAY 31 2011 SUNNY     74  67  78 CALM      30.24R                     .
+ 9AM EDT MAY 31 2011 SUNNY     79  69  71 W7        30.25R                     .
+10AM EDT MAY 31 2011 MOSUNNY   82  69  64 W7        30.26R HX  85              .
+11AM EDT MAY 31 2011 MOSUNNY   85  69  58 W7        30.26S HX  89              .
+12PM EDT MAY 31 2011 MOSUNNY   87  69  54 W7        30.26S HX  91              .
+ 1PM EDT MAY 31 2011 MOSUNNY   88  67  49 NW5       30.25F HX  91              .
+ 2PM EDT MAY 31 2011 MOSUNNY   89  66  46 W5        30.24F HX  91              .
+ 3PM EDT MAY 31 2011 MOSUNNY   88  67  49 W7        30.22F HX  91              .
+ 4PM EDT MAY 31 2011 MOSUNNY   90  65  43 W7        30.22S HX  92              .
+ 5PM EDT MAY 31 2011 MOSUNNY   90  66  45 CALM      30.20F HX  92              .
+ 6PM EDT MAY 31 2011 MOSUNNY   90  65  43 SW7       30.19F HX  92              .
+ 7PM EDT MAY 31 2011 MOSUNNY   90  65  43 S8        30.17F HX  92              .

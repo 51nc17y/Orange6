@@ -1,0 +1,764 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+ 7PM EST FEB 28 2011 CLOUDY    32  23  69 N17G24    29.97R WCI  21           MAR
+ 8PM EST FEB 28 2011 CLOUDY    31  21  66 N17G25    30.03R WCI  19           MAR
+ 9PM EST FEB 28 2011 PTCLDY    29  19  66 N22G29    30.05R WCI  15           MAR
+10PM EST FEB 28 2011 PTCLDY    28  19  69 N13       30.10R WCI  17           MAR
+11PM EST FEB 28 2011 PTCLDY    27  17  66 N14G21    30.15R WCI  16           MAR
+12AM EST MAR 01 2011 PTCLDY    25  17  72 NW6       30.18R WCI  18           MAR
+ 1AM EST MAR 01 2011 CLEAR     24  17  74 NW6       30.19R WCI  17           MAR
+ 2AM EST MAR 01 2011 CLEAR     24  17  74 W5        30.19S WCI  18             .
+ 3AM EST MAR 01 2011 CLEAR     24  17  74 W6        30.20R WCI  17             .
+ 4AM EST MAR 01 2011 PTCLDY    23  17  78 W5        30.23R WCI  17             .
+ 5AM EST MAR 01 2011 PTCLDY    22  17  81 W3        30.26R                     .
+ 6AM EST MAR 01 2011 CLEAR     22  17  81 W5        30.28R WCI  16             .
+ 7AM EST MAR 01 2011 PTCLDY    20  16  84 W6        30.30R WCI  12             .
+ 8AM EST MAR 01 2011 MOSUNNY   23  19  85 CALM      30.32R                     .
+ 9AM EST MAR 01 2011 MOSUNNY   26  18  71 CALM      30.33R                     .
+10AM EST MAR 01 2011 MOSUNNY   27  18  69 CALM      30.33S                     .
+11AM EST MAR 01 2011 MOSUNNY   30  18  60 CALM      30.33S                     .
+12PM EST MAR 01 2011 MOSUNNY   33  18  53 SE3       30.32F                     .
+ 1PM EST MAR 01 2011 MOSUNNY   35  17  47 VRB5      30.28F WCI  31             .
+ 2PM EST MAR 01 2011 MOSUNNY   39  17  41 S7        30.26F                     .
+ 3PM EST MAR 01 2011 MOSUNNY   41  16  36 VRB5      30.26S                     .
+ 4PM EST MAR 01 2011 MOSUNNY   42  15  33 SW9       30.24F                     .
+ 5PM EST MAR 01 2011 MOSUNNY   42  15  33 S7        30.22F                     .
+ 6PM EST MAR 01 2011 PTCLDY    42  12  29 S8        30.21F                     .
+ 7PM EST MAR 01 2011 PTCLDY    40  14  34 S3        30.22R                     .
+ 8PM EST MAR 01 2011 PTCLDY    37  16  42 S3        30.20F                     .
+ 9PM EST MAR 01 2011 PTCLDY    36  15  42 S5        30.18F                     .
+10PM EST MAR 01 2011 PTCLDY    36  15  42 S3        30.16F                     .
+11PM EST MAR 01 2011 CLEAR     35  16  45 SW7       30.14F WCI  29             .
+12AM EST MAR 02 2011 PTCLDY    35  17  47 S5        30.12F WCI  31             .
+ 1AM EST MAR 02 2011 PTCLDY    36  18  48 SW5       30.10F                     .
+ 2AM EST MAR 02 2011 PTCLDY    35  19  52 SW5       30.11R WCI  31             .
+ 3AM EST MAR 02 2011 PTCLDY    35  20  54 SW5       30.10F WCI  31             .
+ 4AM EST MAR 02 2011 PTCLDY    35  21  56 SW6       30.09F WCI  30             .
+ 5AM EST MAR 02 2011 CLEAR     34  22  61 W6        30.10R WCI  29             .
+ 6AM EST MAR 02 2011 CLEAR     35  23  61 SW8       30.11R WCI  29             .
+ 7AM EST MAR 02 2011 MOCLDY    35  23  61 SW6       30.12R WCI  30             .
+ 8AM EST MAR 02 2011 PTSUNNY   35  24  64 W8        30.16R WCI  29             .
+ 9AM EST MAR 02 2011 PTSUNNY   37  26  64 W13       30.17R                     .
+10AM EST MAR 02 2011 PTSUNNY   39  28  64 NW14      30.19R                     .
+11AM EST MAR 02 2011 PTSUNNY   42  27  55 W16       30.21R                     .
+12PM EST MAR 02 2011 MOSUNNY   42  24  49 NW20      30.23R                     .
+ 1PM EST MAR 02 2011 PTSUNNY   43  24  47 NW18G26   30.23S                     .
+ 2PM EST MAR 02 2011 MOSUNNY   43  21  41 NW20G26   30.23S                     .
+ 3PM EST MAR 02 2011 MOSUNNY   42  19  39 NW21G28   30.25R                     .
+ 4PM EST MAR 02 2011 MOSUNNY   40  18  41 W21G28    30.28R                     .
+ 5PM EST MAR 02 2011 MOSUNNY   38  19  46 N17       30.31R                     .
+ 6PM EST MAR 02 2011 PTCLDY    33  18  53 N14       30.36R WCI  23             .
+ 7PM EST MAR 02 2011 PTCLDY    29  15  56 N15       30.40R WCI  18             .
+ 8PM EST MAR 02 2011 CLEAR     27  14  58 N13       30.42R WCI  16             .
+ 9PM EST MAR 02 2011 CLEAR     25  12  58 N12       30.44R WCI  14             .
+10PM EST MAR 02 2011 CLEAR     24  12  60 N9        30.47R WCI  14             .
+11PM EST MAR 02 2011 CLEAR     22  10  60 N9        30.48R WCI  12             .
+12AM EST MAR 03 2011 CLEAR     21  10  62 N8        30.47F WCI  11             .
+ 1AM EST MAR 03 2011 CLEAR     20   8  60 NE8       30.48R WCI  10             .
+ 2AM EST MAR 03 2011 CLEAR     19   7  59 NE7       30.49R WCI  10             .
+ 3AM EST MAR 03 2011 CLEAR     19   7  59 CALM      30.49S                     .
+ 4AM EST MAR 03 2011 CLEAR     18   6  59 NE5       30.50R WCI  11             .
+ 5AM EST MAR 03 2011 CLEAR     17   5  59 NE5       30.53R WCI  10             .
+ 6AM EST MAR 03 2011 CLEAR     17   4  56 NE6       30.56R WCI   9             .
+ 7AM EST MAR 03 2011 PTCLDY    16   3  56 NE5       30.58R WCI   9             .
+ 8AM EST MAR 03 2011 MOSUNNY   17   4  56 NE6       30.59R WCI   9             .
+ 9AM EST MAR 03 2011 MOSUNNY   19   5  54 E8        30.59S WCI   9             .
+10AM EST MAR 03 2011 MOSUNNY   22   4  46 E8        30.60R WCI  12             .
+11AM EST MAR 03 2011 PTSUNNY   25   4  40 SE5       30.61R WCI  19             .
+12PM EST MAR 03 2011 PTSUNNY   27   2  34 VRB6      30.57F WCI  20             .
+ 1PM EST MAR 03 2011 CLOUDY    31   2  29 VRB6      30.53F WCI  25             .
+ 2PM EST MAR 03 2011 CLOUDY    33   3  28 E10       30.49F WCI  25             .
+ 3PM EST MAR 03 2011 CLOUDY    35   2  24 SE9       30.47F WCI  28             .
+ 4PM EST MAR 03 2011 CLOUDY    37   2  22 E12       30.44F                     .
+ 5PM EST MAR 03 2011 CLOUDY    37   4  25 E8        30.42F                     .
+ 6PM EST MAR 03 2011 CLOUDY    36   5  27 VRB7      30.40F                     .
+ 7PM EST MAR 03 2011 CLOUDY    35   6  29 E5        30.39F WCI  31             .
+ 8PM EST MAR 03 2011 CLOUDY    34   6  31 E8        30.36F WCI  27             .
+ 9PM EST MAR 03 2011 CLOUDY    35   7  31 E8        30.36S WCI  29             .
+10PM EST MAR 03 2011 CLOUDY    35   6  29 E10       30.34F WCI  27             .
+11PM EST MAR 03 2011 CLOUDY    35   6  29 E12       30.33F WCI  27             .
+12AM EST MAR 04 2011 MOCLDY    34   7  32 E8        30.31F WCI  27             .
+ 1AM EST MAR 04 2011 CLOUDY    35   9  33 E9        30.32R WCI  28             .
+ 2AM EST MAR 04 2011 CLOUDY    34  10  37 E8        30.33R WCI  27             .
+ 3AM EST MAR 04 2011 MOCLDY    35  10  35 SE8       30.31F WCI  29             .
+ 4AM EST MAR 04 2011 MOCLDY    35  10  35 SE6       30.31S WCI  30             .
+ 5AM EST MAR 04 2011 CLOUDY    36  10  34 SE6       30.31S                     .
+ 6AM EST MAR 04 2011 MOCLDY    34  13  41 SE6       30.30F WCI  29             .
+ 7AM EST MAR 04 2011 CLOUDY    36  12  37 SE6       30.30S                     .
+ 8AM EST MAR 04 2011 CLOUDY    38  12  34 SE6       30.31R                     .
+ 9AM EST MAR 04 2011 CLOUDY    41  13  31 SE8       30.32R                     .
+10AM EST MAR 04 2011 PTSUNNY   46  15  28 SE8       30.30F                     .
+11AM EST MAR 04 2011 CLOUDY    50  17  27 S6        30.29F                     .
+12PM EST MAR 04 2011 CLOUDY    53  19  26 S7        30.29S                     .
+ 1PM EST MAR 04 2011 CLOUDY    55  20  25 S8        30.28F                     .
+ 2PM EST MAR 04 2011 CLOUDY    55  21  26 S8        30.24F                     .
+ 3PM EST MAR 04 2011 LGT RAIN  50  34  54 W3        30.25R                     .
+ 4PM EST MAR 04 2011 LGT RAIN  47  38  71 CALM      30.25S                     .
+ 5PM EST MAR 04 2011 RAIN      45  40  82 E6        30.24F                     .
+ 6PM EST MAR 04 2011 LGT RAIN  44  40  85 SE6       30.24S FOG                 .
+ 7PM EST MAR 04 2011 LGT RAIN  43  40  89 SE6       30.23F                     .
+ 8PM EST MAR 04 2011 LGT RAIN  44  39  82 SE6       30.22F                     .
+ 9PM EST MAR 04 2011 LGT RAIN  43  38  82 SE6       30.19F                     .
+10PM EST MAR 04 2011 CLOUDY    44  36  73 SE6       30.19S                     .
+11PM EST MAR 04 2011 CLOUDY    46  32  58 SE5       30.19S                     .
+12AM EST MAR 05 2011 CLOUDY    46  29  51 SE6       30.18F                     .
+ 1AM EST MAR 05 2011 LGT RAIN  46  30  53 SE7       30.17F                     .
+ 2AM EST MAR 05 2011 LGT RAIN  46  33  60 SE7       30.16F                     .
+ 3AM EST MAR 05 2011 CLOUDY    47  32  56 S6        30.13F                     .
+ 4AM EST MAR 05 2011 CLOUDY    49  32  52 S9        30.10F                     .
+ 5AM EST MAR 05 2011 CLOUDY    49  33  54 S9        30.09F                     .
+ 6AM EST MAR 05 2011 LGT RAIN  49  34  56 S6        30.09S                     .
+ 7AM EST MAR 05 2011 LGT RAIN  47  36  65 SE7       30.07F                     .
+ 8AM EST MAR 05 2011 CLOUDY    50  36  58 S9G16     30.07S                     .
+ 9AM EST MAR 05 2011 LGT RAIN  51  38  60 S10G18    30.06F                     .
+10AM EST MAR 05 2011 LGT RAIN  53  37  54 S10G21    30.06S                     .
+11AM EST MAR 05 2011 LGT RAIN  49  42  77 S8        30.07R                     .
+12PM EST MAR 05 2011 LGT RAIN  50  44  80 S8        30.06F                     .
+ 1PM EST MAR 05 2011 LGT RAIN  50  45  83 S14G22    30.03F                     .
+ 2PM EST MAR 05 2011 LGT RAIN  51  47  86 S14G21    30.01F                     .
+ 3PM EST MAR 05 2011 LGT RAIN  51  47  86 S15G21    29.99F                     .
+ 4PM EST MAR 05 2011 LGT RAIN  52  48  86 S9G21     29.97F                     .
+ 5PM EST MAR 05 2011 LGT RAIN  52  48  86 S9G18     29.96F                     .
+ 6PM EST MAR 05 2011 LGT RAIN  52  48  86 S12G18    29.95F                     .
+ 7PM EST MAR 05 2011 LGT RAIN  51  48  89 S9        29.95S                     .
+ 8PM EST MAR 05 2011 LGT RAIN  51  48  89 S8        29.93F                     .
+ 9PM EST MAR 05 2011 LGT RAIN  50  48  93 S7        29.92F                     .
+10PM EST MAR 05 2011 LGT RAIN  52  48  87 SW8       29.91F                     .
+11PM EST MAR 05 2011 LGT RAIN  51  48  89 S8        29.90F                     .
+12AM EST MAR 06 2011 RAIN      50  48  93 W6        29.86F FOG                 .
+ 1AM EST MAR 06 2011 LGT RAIN  50  49  96 S6        29.85F FOG                 .
+ 2AM EST MAR 06 2011 RAIN      37  36  93 NW20G25   29.88R FOG                 .
+ 3AM EST MAR 06 2011 LGT RAIN  35  32  88 NW16      29.90R WCI  25             .
+ 4AM EST MAR 06 2011 LGT RAIN  34  31  88 NW13      29.90S WCI  25             .
+ 5AM EST MAR 06 2011 FRZ RAIN  33  30  88 NW12      29.92R WCI  24             .
+ 6AM EST MAR 06 2011 FRZ RAIN  34  30  86 NW10      29.96R WCI  26             .
+ 7AM EST MAR 06 2011 FRZ RAIN  32  29  88 NW12      29.97R WCI  23             .
+ 8AM EST MAR 06 2011 LGT SNOW  30  28  93 NW10      29.99R FOG     WCI  21     .
+ 9AM EST MAR 06 2011 LGT SNOW  30  27  88 NW13      30.01R FOG     WCI  20     .
+10AM EST MAR 06 2011 LGT SNOW  30  27  88 NW15      30.03R VSB 1   WCI  19     .
+11AM EST MAR 06 2011 LGT SNOW  30  26  85 NW12      30.02F FOG     WCI  20     .
+12PM EST MAR 06 2011 LGT SNOW  30  26  85 N14G23    30.01F FOG     WCI  19     .
+ 1PM EST MAR 06 2011 CLOUDY    30  25  81 N10       30.01S WCI  21             .
+ 2PM EST MAR 06 2011 FLURRIES  30  25  81 N14       29.98F WCI  19             .
+ 3PM EST MAR 06 2011 CLOUDY    31  26  82 N13       29.98S WCI  21             .
+ 4PM EST MAR 06 2011 CLOUDY    32  26  78 N15       29.98S WCI  22             .
+ 5PM EST MAR 06 2011 CLOUDY    32  26  78 N20G25    30.00R WCI  20             .
+ 6PM EST MAR 06 2011 CLOUDY    30  25  81 N18G28    30.00S WCI  18             .
+ 7PM EST MAR 06 2011 CLOUDY    29  24  82 N15G24    30.01R WCI  18             .
+ 8PM EST MAR 06 2011 CLOUDY    30  24  78 N16       30.01S WCI  19             .
+ 9PM EST MAR 06 2011 CLOUDY    29  24  82 N18G24    30.05R WCI  16             .
+10PM EST MAR 06 2011 CLOUDY    29  24  82 NW18G26   30.05S WCI  16             .
+11PM EST MAR 06 2011 CLOUDY    29  23  78 NW18G26   30.07R WCI  16             .
+12AM EST MAR 07 2011 CLOUDY    28  22  78 NW22      30.08R WCI  14             .
+ 1AM EST MAR 07 2011 MOCLDY    27  21  78 NW13      30.08S WCI  16             .
+ 2AM EST MAR 07 2011 MOCLDY    26  19  74 N9        30.09R WCI  17             .
+ 3AM EST MAR 07 2011 MOCLDY    25  18  74 NW13      30.10R WCI  14             .
+ 4AM EST MAR 07 2011 MOCLDY    24  17  74 NW8       30.11R WCI  15             .
+ 5AM EST MAR 07 2011 PTCLDY    23  17  78 NW6       30.12R WCI  16             .
+ 6AM EST MAR 07 2011 PTCLDY    21  16  81 NW8       30.15R WCI  11             .
+ 7AM EST MAR 07 2011 PTCLDY    20  16  84 NW6       30.16R WCI  12             .
+ 8AM EST MAR 07 2011 MOSUNNY   21  16  81 NW7       30.19R WCI  12             .
+ 9AM EST MAR 07 2011 MOSUNNY   23  16  74 NW6       30.21R WCI  16             .
+10AM EST MAR 07 2011 MOSUNNY   27  16  63 W6        30.22R WCI  20             .
+11AM EST MAR 07 2011 MOSUNNY   29  17  61 NW7       30.23R WCI  22             .
+12PM EST MAR 07 2011 FAIR      32  15  49 CALM      30.23S                     .
+ 1PM EST MAR 07 2011 SUNNY     34  17  50 CALM      30.22F                     .
+ 2PM EST MAR 07 2011 MOSUNNY   36  17  46 W3        30.22S                     .
+ 3PM EST MAR 07 2011 MOSUNNY   39  15  37 W8        30.22S                     .
+ 4PM EST MAR 07 2011 MOSUNNY   40  18  41 VRB5      30.23R                     .
+ 5PM EST MAR 07 2011 PTSUNNY   40  15  36 W6        30.23S                     .
+ 6PM EST MAR 07 2011 CLOUDY    38  17  42 N6        30.23S                     .
+ 7PM EST MAR 07 2011 CLOUDY    37  18  46 N5        30.26R                     .
+ 8PM EST MAR 07 2011 CLOUDY    36  18  48 N3        30.28R                     .
+ 9PM EST MAR 07 2011 CLOUDY    34  20  56 CALM      30.29R                     .
+10PM EST MAR 07 2011 MOCLDY    32  20  61 CALM      30.30R                     .
+11PM EST MAR 07 2011 MOCLDY    30  22  72 CALM      30.30S                     .
+12AM EST MAR 08 2011 PTCLDY    30  20  66 E3        30.29F                     .
+ 1AM EST MAR 08 2011 PTCLDY    28  20  71 CALM      30.31R                     .
+ 2AM EST MAR 08 2011 PTCLDY    30  21  69 CALM      30.32R                     .
+ 3AM EST MAR 08 2011 PTCLDY    29  20  69 NE6       30.30F WCI  23             .
+ 4AM EST MAR 08 2011 CLOUDY    30  20  66 E3        30.30S                     .
+ 5AM EST MAR 08 2011 MOCLDY    29  20  69 E5        30.31R WCI  24             .
+ 6AM EST MAR 08 2011 MOCLDY    30  21  69 CALM      30.33R                     .
+ 7AM EST MAR 08 2011 MOCLDY    29  19  66 NE5       30.33S WCI  24             .
+ 8AM EST MAR 08 2011 CLOUDY    31  21  66 E3        30.35R                     .
+ 9AM EST MAR 08 2011 CLOUDY    33  21  61 E6        30.36R WCI  28             .
+10AM EST MAR 08 2011 CLOUDY    36  20  52 SE6       30.38R                     .
+11AM EST MAR 08 2011 CLOUDY    38  20  48 E6        30.38S                     .
+12PM EST MAR 08 2011 CLOUDY    40  20  44 E6        30.40R                     .
+ 1PM EST MAR 08 2011 CLOUDY    43  22  43 E7        30.37F                     .
+ 2PM EST MAR 08 2011 PTSUNNY   46  23  40 E7        30.34F                     .
+ 3PM EST MAR 08 2011 PTSUNNY   48  23  37 E9        30.31F                     .
+ 4PM EST MAR 08 2011 PTSUNNY   49  24  37 SE14      30.30F                     .
+ 5PM EST MAR 08 2011 PTSUNNY   49  24  37 E15G21    30.29F                     .
+ 6PM EST MAR 08 2011 MOCLDY    47  25  42 E9        30.29S                     .
+ 7PM EST MAR 08 2011 PTCLDY    45  23  42 E10       30.30R                     .
+ 8PM EST MAR 08 2011 MOCLDY    44  23  43 E14G22    30.30S                     .
+ 9PM EST MAR 08 2011 CLOUDY    43  23  45 SE12      30.30S                     .
+10PM EST MAR 08 2011 CLOUDY    42  22  44 E8        30.30S                     .
+11PM EST MAR 08 2011 CLOUDY    42  21  43 E10       30.29F                     .
+12AM EST MAR 09 2011 CLOUDY    42  20  41 SE13G23   30.26F                     .
+ 1AM EST MAR 09 2011 CLOUDY    42  20  41 E9        30.24F                     .
+ 2AM EST MAR 09 2011 CLOUDY    42  20  41 E9        30.24S                     .
+ 3AM EST MAR 09 2011 CLOUDY    42  19  39 SE10      30.23F                     .
+ 4AM EST MAR 09 2011 LGT RAIN  42  19  39 SE12      30.21F                     .
+ 5AM EST MAR 09 2011 FLURRIES  38  29  70 S17G24    30.25R                     .
+ 6AM EST MAR 09 2011 LGT SNOW  34  31  88 SE10      30.23F FOG     WCI  26     .
+ 7AM EST MAR 09 2011 LGT RAIN  34  32  92 SE14      30.21F WCI  25             .
+ 8AM EST MAR 09 2011 LGT RAIN  35  32  88 SE14      30.20F WCI  26             .
+ 9AM EST MAR 09 2011 LGT RAIN  36  32  85 SE15      30.18F                     .
+10AM EST MAR 09 2011 LGT RAIN  37  33  85 SE18      30.13F                     .
+11AM EST MAR 09 2011 LGT SNOW  38  34  85 SE15G24   30.13S FOG                 .
+12PM EST MAR 09 2011 LGT SNOW  39  35  86 SE17      30.11F FOG                 .
+ 1PM EST MAR 09 2011 LGT RAIN  39  36  89 SE16      30.07F FOG                 .
+ 2PM EST MAR 09 2011 LGT RAIN  40  37  89 SE17      30.03F FOG                 .
+ 3PM EST MAR 09 2011 LGT RAIN  41  37  86 SE15G23   30.01F FOG                 .
+ 4PM EST MAR 09 2011 LGT RAIN  41  37  86 SE17      30.00F FOG                 .
+ 5PM EST MAR 09 2011 LGT RAIN  42  38  85 SE17G26   29.99F FOG                 .
+ 6PM EST MAR 09 2011 LGT RAIN  42  38  85 SE17G23   29.97F                     .
+ 7PM EST MAR 09 2011 LGT RAIN  42  37  82 SE16G22   29.97S                     .
+ 8PM EST MAR 09 2011 LGT RAIN  43  38  82 SE12      29.97S                     .
+ 9PM EST MAR 09 2011 LGT RAIN  44  38  79 SE14      29.96F                     .
+10PM EST MAR 09 2011 LGT RAIN  44  39  82 SE13      29.96S                     .
+11PM EST MAR 09 2011 LGT RAIN  44  40  85 SE10      29.95F                     .
+12AM EST MAR 10 2011 LGT RAIN  45  40  82 SE10      29.93F                     .
+ 1AM EST MAR 10 2011 LGT RAIN  45  40  82 SE10      29.92F                     .
+ 2AM EST MAR 10 2011 LGT RAIN  45  41  86 SE9       29.91F                     .
+ 3AM EST MAR 10 2011 LGT RAIN  45  42  89 SE8       29.89F                     .
+ 4AM EST MAR 10 2011 LGT RAIN  45  42  89 E8        29.86F                     .
+ 5AM EST MAR 10 2011 LGT RAIN  46  43  89 SE9       29.85F FOG                 .
+ 6AM EST MAR 10 2011 LGT RAIN  46  43  89 SE10      29.83F                     .
+ 7AM EST MAR 10 2011 DRIZZLE   46  43  89 SE7       29.83S                     .
+ 8AM EST MAR 10 2011 DRIZZLE   46  43  89 E7        29.82F                     .
+ 9AM EST MAR 10 2011 CLOUDY    47  44  90 E8        29.80F                     .
+10AM EST MAR 10 2011 LGT RAIN  47  44  90 E7        29.79F                     .
+11AM EST MAR 10 2011 DRIZZLE   50  46  86 SE7       29.76F                     .
+12PM EST MAR 10 2011 CLOUDY    51  47  86 E5        29.73F                     .
+ 1PM EST MAR 10 2011 CLOUDY    52  47  83 NE5       29.69F                     .
+ 2PM EST MAR 10 2011 RAIN      51  48  89 NW7       29.65F FOG                 .
+ 3PM EST MAR 10 2011 RAIN      50  48  93 W10       29.66R FOG                 .
+ 4PM EST MAR 10 2011 LGT RAIN  46  42  86 W23G33    29.68R FOG                 .
+ 5PM EST MAR 10 2011 LGT RAIN  44  40  85 NW15      29.68S                     .
+ 6PM EST MAR 10 2011 RAIN      42  39  89 W8        29.72R FOG                 .
+ 7PM EST MAR 10 2011 LGT RAIN  41  37  86 NW12      29.70F                     .
+ 8PM EST MAR 10 2011 LGT RAIN  40  36  86 NW16      29.71R                     .
+ 9PM EST MAR 10 2011 LGT RAIN  38  35  89 W12       29.71S                     .
+10PM EST MAR 10 2011 LGT RAIN  36  33  89 NW14      29.70F                     .
+11PM EST MAR 10 2011 LGT SNOW  33  31  92 W7        29.72R VSB 1   WCI  27     .
+12AM EST MAR 11 2011 SNOW      33  31  92 W9        29.72S VSB 1/2 WCI  25     .
+ 1AM EST MAR 11 2011 SNOW      32  30  92 W12       29.72S VSB 1/2 WCI  23     .
+ 2AM EST MAR 11 2011 SNOW      32  30  92 W15       29.73R VSB 1/2 WCI  22     .
+ 3AM EST MAR 11 2011 LGT SNOW  32  30  92 W8        29.72F WCI  25             .
+ 4AM EST MAR 11 2011 LGT SNOW  32  29  88 W7        29.73R WCI  26             .
+ 5AM EST MAR 11 2011 LGT SNOW  32  29  88 W9        29.74R WCI  24             .
+ 6AM EST MAR 11 2011 LGT SNOW  31  28  89 W9        29.77R WCI  23             .
+ 7AM EST MAR 11 2011 LGT SNOW  31  29  92 SW9       29.78R WCI  23             .
+ 8AM EST MAR 11 2011 LGT SNOW  32  29  88 W7        29.80R WCI  26             .
+ 9AM EST MAR 11 2011 LGT SNOW  31  28  89 W8        29.82R VSB 1   WCI  23     .
+10AM EST MAR 11 2011 SNOW      31  29  92 W8        29.83R VSB 1/2 WCI  23     .
+11AM EST MAR 11 2011 SNOW      31  28  89 W8        29.84R VSB 1/2 WCI  23     .
+12PM EST MAR 11 2011 LGT SNOW  31  27  85 W9G16     29.85R WCI  23             .
+ 1PM EST MAR 11 2011 FLURRIES  33  28  81 W7        29.85S WCI  27             .
+ 2PM EST MAR 11 2011 FLURRIES  32  27  81 W12G22    29.85S WCI  23             .
+ 3PM EST MAR 11 2011 CLOUDY    32  27  81 W12G20    29.85S WCI  23             .
+ 4PM EST MAR 11 2011 CLOUDY    31  27  85 W10G18    29.86R WCI  22             .
+ 5PM EST MAR 11 2011 LGT SNOW  31  28  89 W9G18     29.87R FOG     WCI  23     .
+ 6PM EST MAR 11 2011 CLOUDY    32  27  81 W10G16    29.89R WCI  24             .
+ 7PM EST MAR 11 2011 CLOUDY    32  28  85 SW5       29.90R WCI  27             .
+ 8PM EST MAR 11 2011 CLOUDY    32  28  85 SW9       29.91R WCI  24             .
+ 9PM EST MAR 11 2011 CLOUDY    33  29  85 SW7       29.90F WCI  27             .
+10PM EST MAR 11 2011 CLOUDY    34  29  82 SW12      29.91R WCI  25             .
+11PM EST MAR 11 2011 CLOUDY    34  30  85 SW9       29.91S WCI  27             .
+12AM EST MAR 12 2011 PTCLDY    33  30  88 SW7       29.90F WCI  27             .
+ 1AM EST MAR 12 2011 CLEAR     33  29  85 SW7       29.90S WCI  27             .
+ 2AM EST MAR 12 2011 CLEAR     33  28  81 SW7       29.92R WCI  27             .
+ 3AM EST MAR 12 2011 CLEAR     32  28  85 SW6       29.93R WCI  26             .
+ 4AM EST MAR 12 2011 CLEAR     32  28  85 SW6       29.92F WCI  26             .
+ 5AM EST MAR 12 2011 PTCLDY    31  27  85 S5        29.90F WCI  26             .
+ 6AM EST MAR 12 2011 MOCLDY    31  27  85 S5        29.89F WCI  26             .
+ 7AM EST MAR 12 2011 MOCLDY    32  27  81 S6        29.87F WCI  26             .
+ 8AM EST MAR 12 2011 CLOUDY    33  28  81 S5        29.85F WCI  29             .
+ 9AM EST MAR 12 2011 PTSUNNY   36  28  73 S7        29.83F                     .
+10AM EST MAR 12 2011 CLOUDY    38  29  70 S10       29.78F                     .
+11AM EST MAR 12 2011 PTSUNNY   41  30  65 SW16      29.79R                     .
+12PM EST MAR 12 2011 MOSUNNY   46  31  55 SW15G25   29.78F                     .
+ 1PM EST MAR 12 2011 MOSUNNY   50  32  50 SW16G25   29.76F                     .
+ 2PM EST MAR 12 2011 MOSUNNY   53  33  46 SW17G24   29.73F                     .
+ 3PM EST MAR 12 2011 MOSUNNY   56  33  42 SW16G30   29.73S                     .
+ 4PM EST MAR 12 2011 MOSUNNY   58  33  39 W17G30    29.72F                     .
+ 5PM EST MAR 12 2011 MOSUNNY   58  30  34 W18G30    29.74R                     .
+ 6PM EST MAR 12 2011 PTCLDY    57  30  35 W12G28    29.75R                     .
+ 7PM EST MAR 12 2011 PTCLDY    56  28  34 W15G22    29.77R                     .
+ 8PM EST MAR 12 2011 PTCLDY    49  37  63 NW21G30   29.82R                     .
+ 9PM EST MAR 12 2011 MOCLDY    45  35  68 NW25G35   29.87R                     .
+10PM EST MAR 12 2011 MOCLDY    44  31  60 NW21G29   29.90R                     .
+11PM EST MAR 12 2011 MOCLDY    42  30  62 W12G20    29.92R                     .
+12AM EST MAR 13 2011 MOCLDY    42  29  59 W13       29.93R                     .
+ 1AM EST MAR 13 2011 CLOUDY    42  28  57 W13G21    29.94R                     .
+ 3AM EDT MAR 13 2011 CLOUDY    41  30  65 W15G22    29.97R                     .
+ 4AM EDT MAR 13 2011 MOCLDY    38  28  67 W12       29.99R                     .
+ 5AM EDT MAR 13 2011 CLOUDY    37  26  64 NW18G25   30.01R                     .
+ 6AM EDT MAR 13 2011 CLOUDY    37  27  67 W15       30.04R                     .
+ 7AM EDT MAR 13 2011 CLOUDY    37  27  67 W10       30.06R                     .
+ 8AM EDT MAR 13 2011 CLOUDY    36  27  69 W9        30.08R                     .
+ 9AM EDT MAR 13 2011 CLOUDY    36  26  67 W9        30.10R                     .
+10AM EDT MAR 13 2011 CLOUDY    36  27  69 NW13      30.14R                     .
+11AM EDT MAR 13 2011 CLOUDY    36  28  73 NW12      30.15R                     .
+12PM EDT MAR 13 2011 CLOUDY    36  27  69 W14       30.17R                     .
+ 1PM EDT MAR 13 2011 CLOUDY    37  28  70 NW10      30.19R                     .
+ 2PM EDT MAR 13 2011 CLOUDY    36  27  69 W10       30.20R                     .
+ 3PM EDT MAR 13 2011 CLOUDY    37  27  67 W12       30.20S                     .
+ 4PM EDT MAR 13 2011 CLOUDY    36  27  69 W7        30.21R                     .
+ 5PM EDT MAR 13 2011 CLOUDY    36  28  73 W8        30.23R                     .
+ 6PM EDT MAR 13 2011 CLOUDY    36  28  73 W9        30.25R                     .
+ 7PM EDT MAR 13 2011 CLOUDY    36  28  73 W7        30.28R                     .
+ 8PM EDT MAR 13 2011 CLOUDY    36  28  73 CALM      30.29R                     .
+ 9PM EDT MAR 13 2011 CLOUDY    35  28  75 CALM      30.29S                     .
+10PM EDT MAR 13 2011 CLOUDY    35  29  78 CALM      30.30R                     .
+11PM EDT MAR 13 2011 CLOUDY    35  28  75 NW6       30.29F WCI  30             .
+12AM EDT MAR 14 2011 CLOUDY    35  29  78 NW5       30.30R WCI  31             .
+ 1AM EDT MAR 14 2011 CLOUDY    35  29  78 NW3       30.30S                     .
+ 2AM EDT MAR 14 2011 CLOUDY    34  29  82 CALM      30.30S                     .
+ 3AM EDT MAR 14 2011 CLOUDY    34  29  82 SW3       30.30S                     .
+ 4AM EDT MAR 14 2011 CLOUDY    34  29  82 CALM      30.29F                     .
+ 5AM EDT MAR 14 2011 FLURRIES  34  28  80 NW6       30.31R WCI  29             .
+ 6AM EDT MAR 14 2011 FLURRIES  34  28  80 NW3       30.32R                     .
+ 7AM EDT MAR 14 2011 FLURRIES  34  28  79 NW5       30.34R WCI  30             .
+ 8AM EDT MAR 14 2011 CLOUDY    34  28  79 NW6       30.34S WCI  29             .
+ 9AM EDT MAR 14 2011 PTSUNNY   33  27  78 N8        30.36R WCI  26             .
+10AM EDT MAR 14 2011 PTSUNNY   34  26  72 N8        30.37R WCI  27             .
+11AM EDT MAR 14 2011 PTSUNNY   36  25  64 NE6       30.38R                     .
+12PM EDT MAR 14 2011 PTSUNNY   39  25  57 NW8       30.39R                     .
+ 1PM EDT MAR 14 2011 PTSUNNY   40  25  55 N9        30.38F                     .
+ 2PM EDT MAR 14 2011 CLOUDY    42  22  44 VRB3      30.36F                     .
+ 3PM EDT MAR 14 2011 CLOUDY    44  23  43 N5        30.33F                     .
+ 4PM EDT MAR 14 2011 CLOUDY    44  23  43 E3        30.32F                     .
+ 5PM EDT MAR 14 2011 CLOUDY    45  22  40 N3        30.31F                     .
+ 6PM EDT MAR 14 2011 CLOUDY    44  20  38 CALM      30.30F                     .
+ 7PM EDT MAR 14 2011 CLOUDY    44  21  40 E5        30.30S                     .
+ 8PM EDT MAR 14 2011 CLOUDY    43  22  43 NE5       30.30S                     .
+ 9PM EDT MAR 14 2011 CLOUDY    40  23  50 CALM      30.31R                     .
+10PM EDT MAR 14 2011 MOCLDY    39  23  52 NE6       30.32R                     .
+11PM EDT MAR 14 2011 MOCLDY    38  22  52 E3        30.33R                     .
+12AM EDT MAR 15 2011 MOCLDY    36  22  56 NE5       30.32F                     .
+ 1AM EDT MAR 15 2011 PTCLDY    36  23  59 NE8       30.32S                     .
+ 2AM EDT MAR 15 2011 PTCLDY    35  23  61 NE8       30.30F WCI  29             .
+ 3AM EDT MAR 15 2011 PTCLDY    33  22  63 E6        30.29F WCI  28             .
+ 4AM EDT MAR 15 2011 NOT AVBL                                                  .
+ 5AM EDT MAR 15 2011 NOT AVBL                                                  .
+ 6AM EDT MAR 15 2011 NOT AVBL                                                  .
+ 7AM EDT MAR 15 2011 MOCLDY    32  22  66 E6        30.23F WCI  26             .
+ 8AM EDT MAR 15 2011 CLOUDY    33  23  66 E7        30.22F WCI  27             .
+ 9AM EDT MAR 15 2011 CLOUDY    35  24  64 E6        30.21F WCI  30             .
+10AM EDT MAR 15 2011 CLOUDY    38  25  59 SE8       30.23R                     .
+11AM EDT MAR 15 2011 LGT RAIN  38  30  73 E6        30.21F                     .
+12PM EDT MAR 15 2011 LGT RAIN  39  31  72 E6        30.21S                     .
+ 1PM EDT MAR 15 2011 CLOUDY    42  33  70 E7        30.19F                     .
+ 2PM EDT MAR 15 2011 CLOUDY    45  32  60 E9        30.16F                     .
+ 3PM EDT MAR 15 2011 LGT RAIN  45  31  58 E9        30.13F                     .
+ 4PM EDT MAR 15 2011 LGT RAIN  45  35  68 E7        30.11F                     .
+ 5PM EDT MAR 15 2011 NOT AVBL                                                  .
+ 6PM EDT MAR 15 2011 LGT RAIN  43  38  82 E8        30.08                      .
+ 7PM EDT MAR 15 2011 CLOUDY    44  38  79 E12       30.07F                     .
+ 8PM EDT MAR 15 2011 CLOUDY    43  38  82 SE10      30.07S                     .
+ 9PM EDT MAR 15 2011 CLOUDY    43  37  79 SE9       30.08R                     .
+10PM EDT MAR 15 2011 LGT RAIN  43  36  76 SE9       30.08S                     .
+11PM EDT MAR 15 2011 LGT RAIN  41  37  86 SE7       30.08F                     .
+12AM EDT MAR 16 2011 LGT RAIN  41  38  89 SE7       30.07F                     .
+ 1AM EDT MAR 16 2011 CLOUDY    41  39  93 SE5       30.06F                     .
+ 2AM EDT MAR 16 2011 LGT RAIN  41  39  93 S5        30.05F FOG                 .
+ 3AM EDT MAR 16 2011 CLOUDY    42  40  92 S5        30.04F                     .
+ 4AM EDT MAR 16 2011 DRIZZLE   44  41  89 SW6       30.04S                     .
+ 5AM EDT MAR 16 2011 DRIZZLE   45  41  86 SW7       30.02F                     .
+ 6AM EDT MAR 16 2011 CLOUDY    45  41  86 SW9       30.03R                     .
+ 7AM EDT MAR 16 2011 CLOUDY    45  41  86 SW8       30.05R                     .
+ 8AM EDT MAR 16 2011 CLOUDY    45  40  82 W6        30.06R                     .
+ 9AM EDT MAR 16 2011 DRIZZLE   44  40  85 W10       30.08R                     .
+10AM EDT MAR 16 2011 CLOUDY    44  40  85 W8        30.10R                     .
+11AM EDT MAR 16 2011 CLOUDY    44  39  82 W8G18     30.10S                     .
+12PM EDT MAR 16 2011 DRIZZLE   44  40  85 W10G16    30.11R                     .
+ 1PM EDT MAR 16 2011 CLOUDY    44  40  85 W9G20     30.10F                     .
+ 2PM EDT MAR 16 2011 DRIZZLE   44  39  82 W10G18    30.11R                     .
+ 3PM EDT MAR 16 2011 LGT RAIN  44  40  85 W12       30.10F                     .
+ 4PM EDT MAR 16 2011 CLOUDY    44  39  82 W6G16     30.10S                     .
+ 5PM EDT MAR 16 2011 CLOUDY    44  39  82 W8        30.11R                     .
+ 6PM EDT MAR 16 2011 PTSUNNY   45  39  79 W6        30.13R                     .
+ 7PM EDT MAR 16 2011 MOCLDY    45  39  79 W8        30.15R                     .
+ 8PM EDT MAR 16 2011 MOCLDY    44  38  79 SW3       30.17R                     .
+ 9PM EDT MAR 16 2011 PTCLDY    42  38  85 SW5       30.18R                     .
+10PM EDT MAR 16 2011 MOCLDY    41  38  89 S3        30.19R                     .
+11PM EDT MAR 16 2011 FAIR      41  37  86 S6        30.20R                     .
+12AM EDT MAR 17 2011 FAIR      40  36  86 S5        30.21R                     .
+ 1AM EDT MAR 17 2011 CLEAR     39  36  89 S5        30.19F                     .
+ 2AM EDT MAR 17 2011 CLEAR     39  36  89 SW6       30.20R                     .
+ 3AM EDT MAR 17 2011 CLEAR     38  35  89 S6        30.21R FOG                 .
+ 4AM EDT MAR 17 2011 CLEAR     38  35  89 S5        30.20F FOG                 .
+ 5AM EDT MAR 17 2011 PTCLDY    38  35  89 S3        30.20S FOG                 .
+ 6AM EDT MAR 17 2011 PTCLDY    38  35  89 S3        30.21R FOG                 .
+ 7AM EDT MAR 17 2011 PTCLDY    37  35  92 S3        30.23R FOG                 .
+ 8AM EDT MAR 17 2011 PTCLDY    38  35  89 SW5       30.25R FOG                 .
+ 9AM EDT MAR 17 2011 MOSUNNY   40  36  86 S5        30.25S                     .
+10AM EDT MAR 17 2011 MOSUNNY   44  38  79 SW9       30.26R                     .
+11AM EDT MAR 17 2011 PTSUNNY   48  38  68 SW8       30.24F                     .
+12PM EDT MAR 17 2011 MOSUNNY   52  37  56 S14       30.22F                     .
+ 1PM EDT MAR 17 2011 PTSUNNY   55  36  48 SW15      30.20F                     .
+ 2PM EDT MAR 17 2011 PTSUNNY   58  36  43 SW15G22   30.17F                     .
+ 3PM EDT MAR 17 2011 PTSUNNY   60  35  39 S10G18    30.11F                     .
+ 4PM EDT MAR 17 2011 CLOUDY    61  33  35 S14G24    30.09F                     .
+ 5PM EDT MAR 17 2011 CLOUDY    61  33  35 S12       30.07F                     .
+ 6PM EDT MAR 17 2011 PTSUNNY   62  35  36 SW12      30.05F                     .
+ 7PM EDT MAR 17 2011 MOCLDY    62  36  37 S10       30.02F                     .
+ 8PM EDT MAR 17 2011 MOCLDY    59  36  42 S7        29.99F                     .
+ 9PM EDT MAR 17 2011 MOCLDY    59  36  42 S6        29.98F                     .
+10PM EDT MAR 17 2011 MOCLDY    57  36  45 S5        29.97F                     .
+11PM EDT MAR 17 2011 MOCLDY    55  36  48 S5        29.96F                     .
+12AM EDT MAR 18 2011 MOCLDY    56  36  47 S3        29.97R                     .
+ 1AM EDT MAR 18 2011 CLOUDY    59  38  45 SW8       29.95F                     .
+ 2AM EDT MAR 18 2011 CLOUDY    62  39  42 SW12G22   29.94F                     .
+ 3AM EDT MAR 18 2011 CLOUDY    62  40  44 SW12G18   29.94S                     .
+ 4AM EDT MAR 18 2011 CLOUDY    62  41  46 SW12G17   29.92F                     .
+ 5AM EDT MAR 18 2011 CLOUDY    63  42  46 SW9G17    29.93R                     .
+ 6AM EDT MAR 18 2011 CLOUDY    62  43  49 SW12      29.95R                     .
+ 7AM EDT MAR 18 2011 CLOUDY    61  43  51 SW10      29.96R                     .
+ 8AM EDT MAR 18 2011 CLOUDY    61  44  53 SW8       29.98R                     .
+ 9AM EDT MAR 18 2011 CLOUDY    62  45  53 W8        30.00R                     .
+10AM EDT MAR 18 2011 CLOUDY    63  47  55 W12G20    30.01R                     .
+11AM EDT MAR 18 2011 CLOUDY    65  49  56 W14G22    30.01S                     .
+12PM EDT MAR 18 2011 PTSUNNY   67  52  58 W16       30.01S                     .
+ 1PM EDT MAR 18 2011 MOSUNNY   69  48  47 W21G26    30.00F                     .
+ 2PM EDT MAR 18 2011 MOSUNNY   71  48  43 W15G23    30.00S                     .
+ 3PM EDT MAR 18 2011 PTSUNNY   71  41  33 NW21G26   29.97F                     .
+ 4PM EDT MAR 18 2011 PTSUNNY   71  37  28 NW16G22   29.95F                     .
+ 5PM EDT MAR 18 2011 PTSUNNY   70  35  27 NW16G24   29.98R                     .
+ 6PM EDT MAR 18 2011 CLOUDY    66  32  28 NW22G28   30.01R                     .
+ 7PM EDT MAR 18 2011 LGT RAIN  64  30  27 W14       30.02R                     .
+ 8PM EDT MAR 18 2011 CLOUDY    62  28  27 NW10      30.02S                     .
+ 9PM EDT MAR 18 2011 CLOUDY    60  29  30 NW9       30.04R                     .
+10PM EDT MAR 18 2011 CLOUDY    57  28  33 N13       30.06R                     .
+11PM EDT MAR 18 2011 PTCLDY    53  31  42 NW10      30.09R                     .
+12AM EDT MAR 19 2011 MOCLDY    50  32  50 NW9       30.11R                     .
+ 1AM EDT MAR 19 2011 MOCLDY    47  35  63 N8        30.15R                     .
+ 2AM EDT MAR 19 2011 CLOUDY    45  35  68 N7        30.18R                     .
+ 3AM EDT MAR 19 2011 PTCLDY    42  34  73 NW6       30.22R                     .
+ 4AM EDT MAR 19 2011 MOCLDY    41  35  79 NW8       30.23R                     .
+ 5AM EDT MAR 19 2011 PTCLDY    40  33  76 NW9       30.25R                     .
+ 6AM EDT MAR 19 2011 PTCLDY    38  31  76 NW6       30.26R                     .
+ 7AM EDT MAR 19 2011 PTCLDY    38  31  76 NW9       30.29R                     .
+ 8AM EDT MAR 19 2011 PTCLDY    37  30  75 NW7       30.32R                     .
+ 9AM EDT MAR 19 2011 CLOUDY    39  29  67 N13       30.36R                     .
+10AM EDT MAR 19 2011 MOSUNNY   38  28  67 N16       30.38R                     .
+11AM EDT MAR 19 2011 MOSUNNY   41  27  57 N12       30.41R                     .
+12PM EDT MAR 19 2011 PTSUNNY   42  26  53 N10       30.42R                     .
+ 1PM EDT MAR 19 2011 PTSUNNY   45  26  47 NW15G23   30.43R                     .
+ 2PM EDT MAR 19 2011 MOSUNNY   45  25  45 NW9       30.41F                     .
+ 3PM EDT MAR 19 2011 MOSUNNY   48  24  39 NW10      30.41S                     .
+ 4PM EDT MAR 19 2011 MOSUNNY   49  24  37 N13G18    30.40F                     .
+ 5PM EDT MAR 19 2011 MOSUNNY   49  23  36 N12       30.41R                     .
+ 6PM EDT MAR 19 2011 MOSUNNY   49  23  36 NW8       30.42R                     .
+ 7PM EDT MAR 19 2011 CLEAR     47  23  38 N10       30.43R                     .
+ 8PM EDT MAR 19 2011 PTCLDY    44  23  43 N8        30.44R                     .
+ 9PM EDT MAR 19 2011 CLEAR     43  23  45 N7        30.47R                     .
+10PM EDT MAR 19 2011 PTCLDY    41  23  48 N9        30.48R                     .
+11PM EDT MAR 19 2011 PTCLDY    38  24  57 N12       30.50R                     .
+12AM EDT MAR 20 2011 PTCLDY    36  24  62 N7        30.52R                     .
+ 1AM EDT MAR 20 2011 PTCLDY    34  24  67 N8        30.52S WCI  27             .
+ 2AM EDT MAR 20 2011 MOCLDY    33  24  69 N8        30.52S WCI  26             .
+ 3AM EDT MAR 20 2011 CLOUDY    32  24  72 N7        30.53R WCI  26             .
+ 4AM EDT MAR 20 2011 CLOUDY    31  23  72 N6        30.53S WCI  25             .
+ 5AM EDT MAR 20 2011 CLOUDY    31  23  72 NE3       30.53S                     .
+ 6AM EDT MAR 20 2011 CLOUDY    30  22  72 E3        30.52F                     .
+ 7AM EDT MAR 20 2011 CLOUDY    30  22  72 E5        30.51F WCI  25             .
+ 8AM EDT MAR 20 2011 CLOUDY    30  22  72 E5        30.51S WCI  25             .
+ 9AM EDT MAR 20 2011 CLOUDY    32  23  69 E7        30.50F WCI  26             .
+10AM EDT MAR 20 2011 CLOUDY    35  24  64 SE5       30.51R WCI  31             .
+11AM EDT MAR 20 2011 CLOUDY    41  25  53 E9        30.45F                     .
+12PM EDT MAR 20 2011 CLOUDY    45  25  45 SE7       30.46R                     .
+ 1PM EDT MAR 20 2011 PTSUNNY   51  24  34 E9        30.43F                     .
+ 2PM EDT MAR 20 2011 MOSUNNY   52  23  32 E9        30.40F                     .
+ 3PM EDT MAR 20 2011 MOSUNNY   55  22  27 E14       30.35F                     .
+ 4PM EDT MAR 20 2011 MOSUNNY   58  22  24 SE13      30.31F                     .
+ 5PM EDT MAR 20 2011 MOSUNNY   60  21  22 SE10      30.28F                     .
+ 6PM EDT MAR 20 2011 PTSUNNY   60  19  20 SE10      30.24F                     .
+ 7PM EDT MAR 20 2011 CLOUDY    60  20  21 SE7       30.21F                     .
+ 8PM EDT MAR 20 2011 CLOUDY    58  27  30 SE13      30.20F                     .
+ 9PM EDT MAR 20 2011 CLOUDY    56  27  32 SE13      30.19F                     .
+10PM EDT MAR 20 2011 LGT RAIN  55  28  35 SE12      30.16F                     .
+11PM EDT MAR 20 2011 CLOUDY    54  30  40 SE10      30.12F                     .
+12AM EDT MAR 21 2011 CLOUDY    54  32  43 SE9       30.10F                     .
+ 1AM EDT MAR 21 2011 CLOUDY    53  36  52 NE9       30.10S                     .
+ 2AM EDT MAR 21 2011 CLOUDY    52  35  52 SE8       30.07F                     .
+ 3AM EDT MAR 21 2011 MOCLDY    53  36  52 SE8       30.03F                     .
+ 4AM EDT MAR 21 2011 RAIN      52  40  63 S12       29.99F                     .
+ 5AM EDT MAR 21 2011 CLOUDY    50  44  80 S3        29.98F                     .
+ 6AM EDT MAR 21 2011 CLOUDY    56  47  71 SW14      29.95F                     .
+ 7AM EDT MAR 21 2011 CLOUDY    56  49  77 SW12      29.97R                     .
+ 8AM EDT MAR 21 2011 CLOUDY    57  50  77 SW12G17   29.98R                     .
+ 9AM EDT MAR 21 2011 CLOUDY    58  51  78 SW7       29.99R                     .
+10AM EDT MAR 21 2011 PTSUNNY   63  51  65 W15G28    29.98F                     .
+11AM EDT MAR 21 2011 CLOUDY    65  51  60 W20G26    29.97F                     .
+12PM EDT MAR 21 2011 CLOUDY    68  52  56 W20G26    29.95F                     .
+ 1PM EDT MAR 21 2011 CLOUDY    68  51  54 SW17G25   29.94F                     .
+ 2PM EDT MAR 21 2011 CLOUDY    70  51  51 SW17G29   29.93F                     .
+ 3PM EDT MAR 21 2011 CLOUDY    72  51  47 SW15G24   29.91F                     .
+ 4PM EDT MAR 21 2011 CLOUDY    72  50  45 W10G24    29.90F                     .
+ 5PM EDT MAR 21 2011 LGT RAIN  69  56  62 NW14      29.89F                     .
+ 6PM EDT MAR 21 2011 CLOUDY    69  52  54 NW21      29.88F                     .
+ 7PM EDT MAR 21 2011 CLOUDY    67  51  56 NW18      29.90R                     .
+ 8PM EDT MAR 21 2011 MOCLDY    65  50  58 NW13      29.91R                     .
+ 9PM EDT MAR 21 2011 MOCLDY    53  46  77 N14G23    29.95R                     .
+10PM EDT MAR 21 2011 CLOUDY    51  45  79 N13       29.98R                     .
+11PM EDT MAR 21 2011 CLOUDY    50  43  77 N13       30.00R                     .
+12AM EDT MAR 22 2011 PTCLDY    48  40  73 N10       30.01R                     .
+ 1AM EDT MAR 22 2011 PTCLDY    45  37  73 N5        30.02R                     .
+ 2AM EDT MAR 22 2011 PTCLDY    43  37  79 CALM      30.02S                     .
+ 3AM EDT MAR 22 2011 MOCLDY    43  36  76 CALM      30.02S                     .
+ 4AM EDT MAR 22 2011 PTCLDY    40  36  86 W5        30.01F                     .
+ 5AM EDT MAR 22 2011 MOCLDY    42  37  82 NW7       30.02R                     .
+ 6AM EDT MAR 22 2011 CLOUDY    43  37  79 NW7       30.03R                     .
+ .                                                                              
+ 8AM EDT MAR 22 2011 CLOUDY    42  37  82 NW7       30.06S                     .
+ 9AM EDT MAR 22 2011 CLOUDY    43  36  76 N8        30.07R                     .
+10AM EDT MAR 22 2011 CLOUDY    43  34  70 N8        30.05F                     .
+11AM EDT MAR 22 2011 CLOUDY    44  33  65 N8        30.04F                     .
+12PM EDT MAR 22 2011 CLOUDY    45  33  63 N7        30.04S                     .
+ 1PM EDT MAR 22 2011 CLOUDY    46  33  60 W5        30.01F                     .
+ 2PM EDT MAR 22 2011 PTSUNNY   48  33  56 CALM      30.00F                     .
+ 3PM EDT MAR 22 2011 CLOUDY    47  33  58 N3        29.97F                     .
+ 4PM EDT MAR 22 2011 CLOUDY    48  33  56 CALM      29.96F                     .
+ 5PM EDT MAR 22 2011 LGT RAIN  48  34  58 N3        29.93F                     .
+ 6PM EDT MAR 22 2011 CLOUDY    48  33  56 NE7       29.93S                     .
+ 7PM EDT MAR 22 2011 CLOUDY    48  33  56 NE7       29.91F                     .
+ 8PM EDT MAR 22 2011 CLOUDY    47  33  58 E6        29.91S                     .
+ 9PM EDT MAR 22 2011 LGT RAIN  46  34  62 NE8       29.89F                     .
+10PM EDT MAR 22 2011 CLOUDY    44  36  73 NE8       29.88F                     .
+11PM EDT MAR 22 2011 LGT RAIN  42  36  79 NE7       29.87F                     .
+12AM EDT MAR 23 2011 CLOUDY    41  37  86 NE7       29.83F                     .
+ 1AM EDT MAR 23 2011 CLOUDY    41  37  86 E6        29.79F                     .
+ 2AM EDT MAR 23 2011 LGT RAIN  42  38  85 E5        29.79S                     .
+ 3AM EDT MAR 23 2011 CLOUDY    41  37  87 NE8       29.73F                     .
+ 4AM EDT MAR 23 2011 CLOUDY    41  38  89 E5        29.71F                     .
+ 5AM EDT MAR 23 2011 CLOUDY    40  37  89 E8        29.69F                     .
+ 6AM EDT MAR 23 2011 CLOUDY    40  37  89 E6        29.66F                     .
+ 7AM EDT MAR 23 2011 CLOUDY    40  37  89 E7        29.62F                     .
+ 8AM EDT MAR 23 2011 LGT RAIN  40  38  93 CALM      29.61F FOG                 .
+ 9AM EDT MAR 23 2011 CLOUDY    41  38  89 E3        29.58F FOG                 .
+10AM EDT MAR 23 2011 PTSUNNY   42  40  92 E3        29.54F FOG                 .
+11AM EDT MAR 23 2011 CLOUDY    47  43  86 SE3       29.54S FOG                 .
+12PM EDT MAR 23 2011 CLOUDY    51  46  83 CALM      29.52F                     .
+ 1PM EDT MAR 23 2011 PTSUNNY   55  49  80 SW3       29.48F                     .
+ 2PM EDT MAR 23 2011 PTSUNNY   63  53  70 SW8       29.44F                     .
+ 3PM EDT MAR 23 2011 PTSUNNY   68  53  58 W15G25    29.40F                     .
+ 4PM EDT MAR 23 2011 TSTM      59  52  77 N9        29.32F                     .
+ 5PM EDT MAR 23 2011 HAIL      55  52  88 NW30G38   29.44R VSB 1               .
+ 6PM EDT MAR 23 2011 RAIN      50  47  89 NW15G23   29.47R FOG                 .
+ 7PM EDT MAR 23 2011 LGT RAIN  50  46  86 NW9       29.47F                     .
+ 8PM EDT MAR 23 2011 CLOUDY    49  44  83 NW10      29.47S                     .
+ 9PM EDT MAR 23 2011 CLOUDY    47  42  83 NW6       29.50R                     .
+10PM EDT MAR 23 2011 CLOUDY    45  41  86 NW12      29.52R                     .
+11PM EDT MAR 23 2011 CLOUDY    43  39  86 NW13      29.51S                     .
+12AM EDT MAR 24 2011 CLOUDY    41  38  89 NW8       29.49F                     .
+ 1AM EDT MAR 24 2011 CLOUDY    39  36  89 NW18      29.53R                     .
+ 2AM EDT MAR 24 2011 CLOUDY    35  33  92 N14       29.52F WCI  26             .
+ 3AM EDT MAR 24 2011 CLOUDY    33  30  88 NW16      29.55R WCI  23             .
+ 4AM EDT MAR 24 2011 CLOUDY    33  29  85 N12       29.57R WCI  24             .
+ 5AM EDT MAR 24 2011 LGT SNOW  32  29  88 NW14      29.61R FOG     WCI  22     .
+ 6AM EDT MAR 24 2011 LGT SNOW  31  29  92 NW14      29.65R FOG     WCI  21     .
+ 7AM EDT MAR 24 2011 FLURRIES  30  27  86 N17G23    29.67R WCI  18             .
+ 8AM EDT MAR 24 2011 FLURRIES  31  27  85 NW13      29.70R WCI  21             .
+ 9AM EDT MAR 24 2011 CLOUDY    30  26  85 NW12      29.75R WCI  20             .
+10AM EDT MAR 24 2011 FLURRIES  31  25  78 N15       29.78R WCI  20             .
+11AM EDT MAR 24 2011 CLOUDY    31  25  78 N9G21     29.83R WCI  23             .
+12PM EDT MAR 24 2011 CLOUDY    31  24  75 NW14      29.86R WCI  21             .
+ 1PM EDT MAR 24 2011 CLOUDY    33  24  69 N12G21    29.87R WCI  24             .
+ 2PM EDT MAR 24 2011 PTSUNNY   34  24  67 N12       29.88R WCI  25             .
+ 3PM EDT MAR 24 2011 PTSUNNY   37  22  54 NW10G18   29.88S                     .
+ 4PM EDT MAR 24 2011 MOSUNNY   38  21  50 NW16      29.89R                     .
+ 5PM EDT MAR 24 2011 MOSUNNY   40  19  43 N13G20    29.89S                     .
+ 6PM EDT MAR 24 2011 MOSUNNY   39  18  42 NW14G21   29.91R                     .
+ 7PM EDT MAR 24 2011 PTCLDY    38  17  42 NW13      29.94R                     .
+ 8PM EDT MAR 24 2011 PTCLDY    35  17  47 N18       29.96R WCI  24             .
+ 9PM EDT MAR 24 2011 PTCLDY    31  16  54 NW12      29.99R WCI  22             .
+10PM EDT MAR 24 2011 PTCLDY    29  14  53 N12       30.01R WCI  19             .
+11PM EDT MAR 24 2011 PTCLDY    27  15  61 NW14      30.03R WCI  16             .
+12AM EDT MAR 25 2011 PTCLDY    26  15  63 N10       30.03S WCI  16             .
+ 1AM EDT MAR 25 2011 PTCLDY    24  14  65 N7        30.03S WCI  16             .
+ 2AM EDT MAR 25 2011 FAIR      23  14  68 NW6       30.03S WCI  16             .
+ 3AM EDT MAR 25 2011 CLOUDY    24  14  65 N6        30.02F WCI  17             .
+ 4AM EDT MAR 25 2011 CLOUDY    23  13  65 NW7       30.03R WCI  15             .
+ 5AM EDT MAR 25 2011 CLOUDY    23  13  65 N7        30.05R WCI  15             .
+ 6AM EDT MAR 25 2011 PTCLDY    23  14  68 NW5       30.05S WCI  17             .
+ 7AM EDT MAR 25 2011 PTCLDY    21  14  74 SW3       30.05S                     .
+ 8AM EDT MAR 25 2011 MOCLDY    20  14  77 W6        30.07R WCI  12             .
+ 9AM EDT MAR 25 2011 PTSUNNY   22  14  71 NW5       30.05F WCI  16             .
+10AM EDT MAR 25 2011 PTSUNNY   25  13  60 N3        30.05S                     .
+11AM EDT MAR 25 2011 PTSUNNY   26  12  55 CALM      30.05S                     .
+12PM EDT MAR 25 2011 CLOUDY    29  12  49 W5        30.03F WCI  24             .
+ 1PM EDT MAR 25 2011 CLOUDY    31  11  43 VRB3      30.03S                     .
+ 2PM EDT MAR 25 2011 CLOUDY    32  10  40 N9        30.00F WCI  24             .
+ 3PM EDT MAR 25 2011 CLOUDY    33  11  39 CALM      29.98F                     .
+ 4PM EDT MAR 25 2011 CLOUDY    34  12  40 SW5       29.99R WCI  30             .
+ 5PM EDT MAR 25 2011 PTSUNNY   36  11  35 VRB6      29.97F                     .
+ 6PM EDT MAR 25 2011 PTSUNNY   36  11  35 W8        29.96F                     .
+ 7PM EDT MAR 25 2011 MOCLDY    36  11  35 VRB7      29.96S                     .
+ 8PM EDT MAR 25 2011 PTCLDY    33  13  43 W9        29.98R WCI  25             .
+ 9PM EDT MAR 25 2011 PTCLDY    32  15  49 W10       30.00R WCI  24             .
+10PM EDT MAR 25 2011 PTCLDY    31  15  52 NW9       30.01R WCI  23             .
+11PM EDT MAR 25 2011 CLOUDY    29  14  53 N13       30.02R WCI  19             .
+12AM EDT MAR 26 2011 MOCLDY    28  11  48 N9        30.04R WCI  19             .
+ 1AM EDT MAR 26 2011 MOCLDY    25  10  53 N13       30.05R WCI  14             .
+ 2AM EDT MAR 26 2011 PTCLDY    24  12  60 N10       30.05S WCI  14             .
+ 3AM EDT MAR 26 2011 CLEAR     23  12  62 N10       30.06R WCI  12             .
+ 4AM EDT MAR 26 2011 CLEAR     22  11  62 N7        30.06S WCI  13             .
+ 5AM EDT MAR 26 2011 PTCLDY    20  11  68 NW6       30.07R WCI  12             .
+ 6AM EDT MAR 26 2011 CLEAR     20  12  71 N6        30.08R WCI  12             .
+ 7AM EDT MAR 26 2011 PTCLDY    19  10  68 N8        30.08S WCI   9             .
+ 8AM EDT MAR 26 2011 PTCLDY    19   8  62 N9        30.09R WCI   8             .
+ 9AM EDT MAR 26 2011 MOSUNNY   21   9  59 N8        30.10R WCI  11             .
+10AM EDT MAR 26 2011 MOSUNNY   23   9  55 CALM      30.10S                     .
+11AM EDT MAR 26 2011 MOSUNNY   25   3  38 NE5       30.09F WCI  19             .
+12PM EDT MAR 26 2011 MOSUNNY   28   5  37 VRB6      30.09S WCI  22             .
+ 1PM EDT MAR 26 2011 MOSUNNY   31   5  33 N8        30.07F WCI  23             .
+ 2PM EDT MAR 26 2011 MOSUNNY   33   6  32 E6        30.07S WCI  28             .
+ 3PM EDT MAR 26 2011 PTSUNNY   34   6  31 VRB7      30.04F WCI  28             .
+ 4PM EDT MAR 26 2011 PTSUNNY   36   6  28 N3        30.03F                     .
+ 5PM EDT MAR 26 2011 CLOUDY    35   4  27 NW7       30.02F WCI  29             .
+ 6PM EDT MAR 26 2011 CLOUDY    35   4  27 N9        30.00F WCI  28             .
+ 7PM EDT MAR 26 2011 CLOUDY    34   4  28 N10       30.00S WCI  26             .
+ 8PM EDT MAR 26 2011 CLOUDY    33   5  30 N7        30.00S WCI  27             .
+ 9PM EDT MAR 26 2011 CLOUDY    32   5  32 N10       29.99F WCI  24             .
+10PM EDT MAR 26 2011 CLOUDY    31   6  35 N13G21    30.01R WCI  21             .
+11PM EDT MAR 26 2011 CLOUDY    30   7  37 N10       30.00F WCI  21             .
+12AM EDT MAR 27 2011 CLOUDY    29   8  41 N10       30.01R WCI  20             .
+ 1AM EDT MAR 27 2011 CLOUDY    28   8  43 NE10      30.01S WCI  19             .
+ 2AM EDT MAR 27 2011 CLOUDY    27   8  44 N13       30.02R WCI  16             .
+ 3AM EDT MAR 27 2011 CLOUDY    26   9  48 N9        30.00F WCI  17             .
+ 4AM EDT MAR 27 2011 CLOUDY    26   9  48 NE9       29.99F WCI  17             .
+ 5AM EDT MAR 27 2011 CLOUDY    25   8  48 N10       29.98F WCI  15             .
+ 6AM EDT MAR 27 2011 CLOUDY    25   8  48 NE9       30.00R WCI  15             .
+ 7AM EDT MAR 27 2011 FAIR      23   8  52 NE12      30.02R WCI  12             .
+ 8AM EDT MAR 27 2011 CLEAR     23   9  55 NE12      30.04R WCI  12             .
+ 9AM EDT MAR 27 2011 MOSUNNY   24  10  55 NE10      30.06R WCI  14             .
+10AM EDT MAR 27 2011 MOSUNNY   27  10  49 N12       30.07R WCI  17             .
+11AM EDT MAR 27 2011 SUNNY     30   9  41 N13       30.07S WCI  20             .
+12PM EDT MAR 27 2011 SUNNY     32   9  38 N7        30.06F WCI  26             .
+ 1PM EDT MAR 27 2011 SUNNY     34   8  33 N10       30.05F WCI  26             .
+ 2PM EDT MAR 27 2011 SUNNY     37   9  31 NW9       30.03F                     .
+ 3PM EDT MAR 27 2011 SUNNY     38   8  29 N13G21    30.02F                     .
+ 4PM EDT MAR 27 2011 SUNNY     38   6  26 NW14G22   30.02S                     .
+ 5PM EDT MAR 27 2011 MOSUNNY   39   7  26 N14G21    30.03R                     .
+ 6PM EDT MAR 27 2011 MOSUNNY   38   8  29 N13G21    30.03S                     .
+ 7PM EDT MAR 27 2011 PTCLDY    36   6  28 N14       30.05R                     .
+ 8PM EDT MAR 27 2011 PTCLDY    33   6  32 N13       30.06R WCI  24             .
+ 9PM EDT MAR 27 2011 PTCLDY    30   5  34 N14       30.08R WCI  19             .
+10PM EDT MAR 27 2011 PTCLDY    28   6  39 N12       30.10R WCI  18             .
+11PM EDT MAR 27 2011 PTCLDY    27   8  44 N14       30.10S WCI  16             .
+12AM EDT MAR 28 2011 PTCLDY    25   9  50 N8        30.10S WCI  16             .
+ 1AM EDT MAR 28 2011 PTCLDY    24  10  55 N7        30.11R WCI  16             .
+ 2AM EDT MAR 28 2011 CLEAR     23  10  57 N8        30.11S WCI  14             .
+ 3AM EDT MAR 28 2011 CLEAR     23  11  60 N7        30.10F WCI  15             .
+ 4AM EDT MAR 28 2011 CLEAR     22  11  62 N9        30.10S WCI  12             .
+ 5AM EDT MAR 28 2011 CLEAR     22  11  62 N9        30.10S WCI  12             .
+ 6AM EDT MAR 28 2011 CLEAR     20  10  65 N5        30.10S WCI  13             .
+ 7AM EDT MAR 28 2011 PTCLDY    20   8  60 N8        30.13R WCI  10             .
+ 8AM EDT MAR 28 2011 PTCLDY    21   9  59 N7        30.16R WCI  12             .
+ 9AM EDT MAR 28 2011 PTSUNNY   23  10  57 N12       30.18R WCI  12             .
+10AM EDT MAR 28 2011 PTSUNNY   25  10  53 N9        30.18S WCI  15             .
+11AM EDT MAR 28 2011 PTSUNNY   27   9  46 CALM      30.18S                     .
+12PM EDT MAR 28 2011 PTSUNNY   30   7  37 VRB5      30.16F WCI  25             .
+ 1PM EDT MAR 28 2011 PTSUNNY   32   6  33 N5        30.14F WCI  27             .
+ 2PM EDT MAR 28 2011 PTSUNNY   33   6  32 NW9       30.13F WCI  25             .
+ 3PM EDT MAR 28 2011 PTSUNNY   36   8  31 VRB3G18   30.11F                     .
+ 4PM EDT MAR 28 2011 PTSUNNY   38  10  31 NW7       30.10F                     .
+ 5PM EDT MAR 28 2011 MOSUNNY   39  10  30 NW8       30.10S                     .
+ 6PM EDT MAR 28 2011 MOSUNNY   38  11  32 NW13      30.10S                     .
+ 7PM EDT MAR 28 2011 PTCLDY    38  10  31 NW12      30.10S                     .
+ 8PM EDT MAR 28 2011 PTCLDY    36  10  34 N10       30.11R                     .
+ 9PM EDT MAR 28 2011 CLEAR     34   9  35 N13       30.12R WCI  25             .
+10PM EDT MAR 28 2011 CLEAR     31   9  39 N10       30.14R WCI  22             .
+11PM EDT MAR 28 2011 CLEAR     29   9  43 N10       30.15R WCI  20             .
+12AM EDT MAR 29 2011 CLEAR     27   9  46 N9        30.15S WCI  18             .
+ 1AM EDT MAR 29 2011 CLEAR     26  10  50 N6        30.16R WCI  19             .
+ 2AM EDT MAR 29 2011 CLEAR     25  11  55 N3        30.18R                     .
+ 3AM EDT MAR 29 2011 CLEAR     24  11  57 CALM      30.19R                     .
+ 4AM EDT MAR 29 2011 CLEAR     22  11  62 CALM      30.19S                     .
+ 5AM EDT MAR 29 2011 PTCLDY    21  11  65 CALM      30.20R                     .
+ 6AM EDT MAR 29 2011 PTCLDY    20  12  71 CALM      30.21R                     .
+ 7AM EDT MAR 29 2011 MOCLDY    20  12  71 CALM      30.22R                     .
+ 9AM EDT MAR 29 2011 MOSUNNY   25  16  68 CALM      30.26S                     .
+10AM EDT MAR 29 2011 MOSUNNY   30  10  43 N7        30.27R WCI  23             .
+ .                                                                              
+12PM EDT MAR 29 2011 PTSUNNY   34  11  38 N6        30.27S WCI  29             .
+ 1PM EDT MAR 29 2011 MOSUNNY   37  10  32 N5        30.26F                     .
+ 2PM EDT MAR 29 2011 PTSUNNY   39  10  30 NW3       30.24F                     .
+ 3PM EDT MAR 29 2011 MOSUNNY   41  10  28 NW5       30.22F                     .
+ 4PM EDT MAR 29 2011 PTSUNNY   43  10  26 CALM      30.19F                     .
+ 5PM EDT MAR 29 2011 PTSUNNY   44   9  23 CALM      30.18F                     .
+ 6PM EDT MAR 29 2011 MOSUNNY   45  10  24 N9G16     30.17F                     .
+ 7PM EDT MAR 29 2011 PTCLDY    43  10  26 N7        30.18R                     .
+ 8PM EDT MAR 29 2011 PTCLDY    42  11  28 NW6       30.18S                     .
+ 9PM EDT MAR 29 2011 MOCLDY    41  13  31 N3        30.17F                     .
+10PM EDT MAR 29 2011 PTCLDY    39  14  36 N3        30.18R                     .
+11PM EDT MAR 29 2011 PTCLDY    36  15  42 N7        30.18S                     .
+12AM EDT MAR 30 2011 PTCLDY    34  15  46 N7        30.19R WCI  28             .
+ 1AM EDT MAR 30 2011 PTCLDY    32  13  45 N3        30.19S                     .
+ 2AM EDT MAR 30 2011 PTCLDY    31  12  45 CALM      30.18F                     .
+ 3AM EDT MAR 30 2011 PTCLDY    31  11  43 NE5       30.14F WCI  26             .
+ 4AM EDT MAR 30 2011 PTCLDY    30  11  45 NE3       30.13F                     .
+ 5AM EDT MAR 30 2011 PTCLDY    30  10  43 CALM      30.13S                     .
+ 6AM EDT MAR 30 2011 MOCLDY    30  12  47 NE6       30.10F WCI  24             .
+ 7AM EDT MAR 30 2011 MOCLDY    31  12  45 NE6       30.09F WCI  25             .
+ 8AM EDT MAR 30 2011 CLOUDY    32  12  43 NE7       30.08F WCI  26             .
+ 9AM EDT MAR 30 2011 PTSUNNY   32  13  45 NE6       30.05F WCI  26             .
+10AM EDT MAR 30 2011 PTSUNNY   35  13  40 E6        30.03F WCI  30             .
+11AM EDT MAR 30 2011 CLOUDY    37  13  37 E9        30.00F                     .
+12PM EDT MAR 30 2011 CLOUDY    39  14  36 E7        29.97F                     .
+ 1PM EDT MAR 30 2011 FLURRIES  41  16  36 E8        29.94F                     .
+ 2PM EDT MAR 30 2011 FLURRIES  42  17  36 E10G16    29.90F                     .
+ 3PM EDT MAR 30 2011 LGT SNOW  39  27  60 E12       29.86F FOG                 .
+ 4PM EDT MAR 30 2011 LGT SNOW  34  32  93 E7        29.86F VSB 3/4 WCI  28     .
+ 5PM EDT MAR 30 2011 SNOW      34  32  92 E10       29.83F VSB 1/2 WCI  26     .
+ 6PM EDT MAR 30 2011 LGT SNOW  33  31  92 E9        29.83F VSB 1   WCI  25     .
+ 7PM EDT MAR 30 2011 SNOW      33  31  92 NE8       29.82F VSB 1/2 WCI  26     .
+ 8PM EDT MAR 30 2011 SNOW      33  31  92 NE7       29.82S VSB 1/2 WCI  27     .
+ 9PM EDT MAR 30 2011 LGT SNOW  33  31  92 NE6       29.82S FOG     WCI  28     .
+10PM EDT MAR 30 2011 DRZL/FOG  33  31  92 N7        29.81F VSB 1/2 WCI  27     .
+11PM EDT MAR 30 2011 DRZL/FOG  33  31  92 N8        29.79F VSB 1/2 WCI  26     .
+12AM EDT MAR 31 2011 DRZL/FOG  33  31  92 N5        29.79S VSB 1/2 WCI  29     .
+ 1AM EDT MAR 31 2011 DRZL/FOG  33  31  92 NW7       29.79S VSB 1/2 WCI  27     .
+ 2AM EDT MAR 31 2011 DRZL/FOG  33  31  92 NW8       29.79S VSB 1/2 WCI  26     .
+ 3AM EDT MAR 31 2011 FOG       33  32  96 NW8       29.78F VSB 1/2 WCI  26     .
+ 4AM EDT MAR 31 2011 FOG       33  31  92 W9        29.78S VSB 1/2 WCI  25     .
+ 5AM EDT MAR 31 2011 FOG       32  31  96 NW10      29.78S VSB 1/4 WCI  24     .
+ 6AM EDT MAR 31 2011 FOG       32  31  96 W8        29.79R VSB 1/4 WCI  25     .
+ 7AM EDT MAR 31 2011 FOG       32  31  96 NW8       29.79S VSB 1/4 WCI  25     .
+ 8AM EDT MAR 31 2011 FOG       32  30  93 NW7       29.80R VSB 1   WCI  26     .
+ 9AM EDT MAR 31 2011 CLOUDY    32  30  92 W5        29.81R FOG     WCI  27     .
+10AM EDT MAR 31 2011 CLOUDY    33  30  88 W3        29.81S FOG                 .
+11AM EDT MAR 31 2011 CLOUDY    33  31  92 W5        29.80F FOG     WCI  29     .
+12PM EDT MAR 31 2011 CLOUDY    35  31  85 NW6       29.78F FOG     WCI  30     .
+ 1PM EDT MAR 31 2011 CLOUDY    35  31  85 N6        29.77F FOG     WCI  30     .
+ 2PM EDT MAR 31 2011 CLOUDY    35  30  82 CALM      29.76F                     .
+ 3PM EDT MAR 31 2011 DRIZZLE   35  30  82 CALM      29.76S                     .
+ 4PM EDT MAR 31 2011 DRIZZLE   36  30  79 NW3       29.72F                     .
+ 5PM EDT MAR 31 2011 DRIZZLE   36  31  82 VRB6      29.69F                     .
+ 6PM EDT MAR 31 2011 CLOUDY    36  30  79 N7        29.68F                     .
+ 7PM EDT MAR 31 2011 CLOUDY    36  31  82 NW6       29.68S                     .

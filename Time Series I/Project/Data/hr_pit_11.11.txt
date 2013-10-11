@@ -1,0 +1,742 @@
+TEMP = TEMPERATURE                     DP= DEW POINT TEMPERATURE
+RH   = RELATIVE HUMIDITY (PERCENT)
+WIND = DIRECTION FROM WHICH THE WIND IS COMING
+
+OTHER ABBREVIATIONS:
+BLWGSNOW BLOWING SNOW
+DRZL  DRIZZLE
+FOG   When fog is under 'weather', visibility is 1 MILE OR LESS.
+      If mentioned as a remark after "PRESSURE", visibility 6 or less.
+FRZ   FREEZING (rain or drizzle that freezes on contact with surfaces)
+G     GUST (USED WITH WIND SPEED IN MPH)
+HI    HEAT INDEX
+HVY   HEAVY  } If snow or rain does not have intensity shown,
+LGT   LIGHT  }    it is assumed to be 'moderate'.
+MOCLDY MOSTLY CLOUDY                     MOSUNNY MOSTLY SUNNY
+PTCLDY PARTLY CLOUDY                     PTSUNNY MOSTLY SUNNY
+TC    TEMPERATURE IN DEGREES CELSIUS     TSTM  THUNDERSTORM
+VSB   VISIBILITY (IN MILES)              WCI   WIND CHILL INDEX
+
+PITTSBURGH AIRPORT   WEATHER TEMP  DP  RH WIND      PRESSURE
+                                F   F   %  MPH       INCHES
+
+ 8PM EDT OCT 31 2011 LGT RAIN  44  41  89 SE3       30.20R                   NOV
+ 9PM EDT OCT 31 2011 CLOUDY    44  41  89 S3        30.20S                   NOV
+10PM EDT OCT 31 2011 MOCLDY    44  41  89 SE3       30.21R                   NOV
+11PM EDT OCT 31 2011 PTCLDY    41  39  93 SE3       30.21S                   NOV
+12AM EDT NOV 01 2011 PTCLDY    40  38  93 CALM      30.22R                   NOV
+ 1AM EDT NOV 01 2011 PTCLDY    38  36  92 CALM      30.21F                   NOV
+ 2AM EDT NOV 01 2011 PTCLDY    37  35  92 CALM      30.22R                   NOV
+ 3AM EDT NOV 01 2011 PTCLDY    35  33  92 CALM      30.23R                     .
+ 4AM EDT NOV 01 2011 PTCLDY    33  32  96 CALM      30.23S                     .
+ 5AM EDT NOV 01 2011 PTCLDY    33  31  92 CALM      30.24R FOG                 .
+ 6AM EDT NOV 01 2011 PTCLDY    32  31  96 CALM      30.25R FOG                 .
+ 7AM EDT NOV 01 2011 PTCLDY    32  29  88 CALM      30.26R FOG                 .
+ 8AM EDT NOV 01 2011 PTCLDY    30  28  92 CALM      30.28R FOG                 .
+ 9AM EDT NOV 01 2011 MOSUNNY   32  32 100 CALM      30.30R FOG                 .
+10AM EDT NOV 01 2011 SUNNY     38  36  92 CALM      30.31R                     .
+11AM EDT NOV 01 2011 SUNNY     44  38  79 SW3       30.32R                     .
+12PM EDT NOV 01 2011 SUNNY     49  39  68 CALM      30.32S                     .
+ 1PM EDT NOV 01 2011 MOSUNNY   52  36  54 CALM      30.31F                     .
+ 2PM EDT NOV 01 2011 MOSUNNY   54  35  48 SE6       30.29F                     .
+ 3PM EDT NOV 01 2011 MOSUNNY   55  33  43 S8        30.28F                     .
+ 4PM EDT NOV 01 2011 MOSUNNY   56  31  38 S6        30.27F                     .
+ 5PM EDT NOV 01 2011 NOT AVBL                                                  .
+ 6PM EDT NOV 01 2011 PTCLDY    56  32  40 S3        30.27                      .
+ 7PM EDT NOV 01 2011 CLEAR     51  34  52 CALM      30.27S                     .
+ 8PM EDT NOV 01 2011 CLEAR     49  33  54 CALM      30.28R                     .
+ 9PM EDT NOV 01 2011 CLEAR     46  34  62 CALM      30.28S                     .
+10PM EDT NOV 01 2011 CLEAR     45  34  65 CALM      30.29R                     .
+11PM EDT NOV 01 2011 CLEAR     43  34  70 SE3       30.30R                     .
+12AM EDT NOV 02 2011 CLEAR     42  34  73 CALM      30.29F                     .
+ 1AM EDT NOV 02 2011 CLEAR     41  33  73 CALM      30.28F                     .
+ 2AM EDT NOV 02 2011 CLEAR     39  32  76 CALM      30.28S                     .
+ 3AM EDT NOV 02 2011 CLEAR     38  32  79 CALM      30.28S                     .
+ 4AM EDT NOV 02 2011 CLEAR     36  31  82 CALM      30.28S                     .
+ 5AM EDT NOV 02 2011 CLEAR     37  31  78 CALM      30.29R                     .
+ 6AM EDT NOV 02 2011 CLEAR     35  30  82 CALM      30.30R                     .
+ 7AM EDT NOV 02 2011 PTCLDY    34  30  85 CALM      30.31R                     .
+ 8AM EDT NOV 02 2011 PTCLDY    33  29  85 CALM      30.32R                     .
+ 9AM EDT NOV 02 2011 MOSUNNY   35  31  85 CALM      30.33R                     .
+10AM EDT NOV 02 2011 MOSUNNY   42  34  73 SE3       30.34R                     .
+11AM EDT NOV 02 2011 PTSUNNY   50  35  56 S5        30.33F                     .
+12PM EDT NOV 02 2011 PTSUNNY   56  35  45 S5        30.31F                     .
+ 1PM EDT NOV 02 2011 CLOUDY    60  33  36 CALM      30.30F                     .
+ 2PM EDT NOV 02 2011 CLOUDY    62  32  32 SE10      30.25F                     .
+ 3PM EDT NOV 02 2011 PTSUNNY   62  33  33 S8        30.23F                     .
+ 4PM EDT NOV 02 2011 PTSUNNY   63  32  31 S10       30.20F                     .
+ 5PM EDT NOV 02 2011 PTSUNNY   63  32  31 S8        30.19F                     .
+ 6PM EDT NOV 02 2011 MOCLDY    61  31  32 S3        30.18F                     .
+ 7PM EDT NOV 02 2011 MOCLDY    57  32  38 CALM      30.19R                     .
+ 8PM EDT NOV 02 2011 CLOUDY    54  32  43 SE3       30.18F                     .
+ 9PM EDT NOV 02 2011 CLOUDY    52  32  46 S5        30.17F                     .
+10PM EDT NOV 02 2011 CLOUDY    53  31  42 CALM      30.16F                     .
+11PM EDT NOV 02 2011 MOCLDY    49  32  52 CALM      30.14F                     .
+12AM EDT NOV 03 2011 CLOUDY    49  32  52 CALM      30.13F                     .
+ 1AM EDT NOV 03 2011 MOCLDY    47  32  56 CALM      30.13S                     .
+ 2AM EDT NOV 03 2011 MOCLDY    47  31  53 CALM      30.11F                     .
+ 3AM EDT NOV 03 2011 CLOUDY    45  32  60 CALM      30.10F                     .
+ 4AM EDT NOV 03 2011 CLOUDY    45  32  60 CALM      30.08F                     .
+ 5AM EDT NOV 03 2011 CLOUDY    46  32  58 CALM      30.08S                     .
+ 6AM EDT NOV 03 2011 MOCLDY    40  32  73 S3        30.07F                     .
+ 7AM EDT NOV 03 2011 MOCLDY    40  32  73 CALM      30.07S                     .
+ 8AM EDT NOV 03 2011 CLOUDY    39  32  76 CALM      30.07S                     .
+ 9AM EDT NOV 03 2011 PTSUNNY   42  32  67 CALM      30.07S                     .
+10AM EDT NOV 03 2011 PTSUNNY   49  34  56 S3        30.06F                     .
+11AM EDT NOV 03 2011 PTSUNNY   55  34  45 SW6       30.05F                     .
+12PM EDT NOV 03 2011 CLOUDY    58  34  40 SW6       30.04F                     .
+ 1PM EDT NOV 03 2011 CLOUDY    61  34  36 W6        30.02F                     .
+ 2PM EDT NOV 03 2011 CLOUDY    61  33  35 SW5       29.99F                     .
+ 3PM EDT NOV 03 2011 CLOUDY    62  34  35 CALM      29.95F                     .
+ 4PM EDT NOV 03 2011 CLOUDY    61  33  35 CALM      29.93F                     .
+ 5PM EDT NOV 03 2011 CLOUDY    61  32  33 CALM      29.92F                     .
+ 6PM EDT NOV 03 2011 CLOUDY    60  32  34 CALM      29.91F                     .
+ 7PM EDT NOV 03 2011 CLOUDY    56  36  47 N5        29.93R                     .
+ 8PM EDT NOV 03 2011 CLOUDY    55  37  50 N6        29.94R                     .
+ 9PM EDT NOV 03 2011 CLOUDY    54  36  50 N7        29.95R                     .
+10PM EDT NOV 03 2011 CLOUDY    52  36  54 N7        29.93F                     .
+11PM EDT NOV 03 2011 CLOUDY    51  37  58 N7        29.94R                     .
+12AM EDT NOV 04 2011 CLOUDY    50  37  61 NE7       29.93F                     .
+ 1AM EDT NOV 04 2011 CLOUDY    49  37  63 N12       29.93S                     .
+ 2AM EDT NOV 04 2011 CLOUDY    48  39  71 N9        29.96R                     .
+ 3AM EDT NOV 04 2011 CLOUDY    47  41  80 N10       29.96S                     .
+ 4AM EDT NOV 04 2011 CLOUDY    47  41  80 N10       29.98R                     .
+ 5AM EDT NOV 04 2011 CLOUDY    47  42  83 N8        29.98S                     .
+ 6AM EDT NOV 04 2011 CLOUDY    48  42  80 NE13      30.00R                     .
+ 7AM EDT NOV 04 2011 CLOUDY    48  41  76 N16       30.02R                     .
+ 8AM EDT NOV 04 2011 CLOUDY    47  40  76 N16       30.06R                     .
+ 9AM EDT NOV 04 2011 MOSUNNY   45  36  70 N17G25    30.11R                     .
+10AM EDT NOV 04 2011 MOSUNNY   45  34  65 N17       30.12R                     .
+11AM EDT NOV 04 2011 MOSUNNY   47  31  53 N14       30.12S                     .
+12PM EDT NOV 04 2011 MOSUNNY   50  30  46 NE14      30.13R                     .
+ 1PM EDT NOV 04 2011 MOSUNNY   50  27  40 N16       30.13S                     .
+ 2PM EDT NOV 04 2011 MOSUNNY   53  25  33 N13       30.12F                     .
+ 3PM EDT NOV 04 2011 SUNNY     53  22  29 N13G20    30.13R                     .
+ 4PM EDT NOV 04 2011 SUNNY     53  23  31 N17G23    30.14R                     .
+ 5PM EDT NOV 04 2011 SUNNY     52  21  29 N15       30.15R                     .
+ 6PM EDT NOV 04 2011 PTCLDY    50  20  30 N14       30.18R                     .
+ 7PM EDT NOV 04 2011 PTCLDY    47  19  33 N8        30.20R                     .
+ 8PM EDT NOV 04 2011 PTCLDY    45  20  36 N8        30.23R                     .
+ 9PM EDT NOV 04 2011 CLEAR     43  21  41 N13       30.24R                     .
+10PM EDT NOV 04 2011 CLEAR     41  22  46 N9        30.26R                     .
+11PM EDT NOV 04 2011 NOT AVBL                                                  .
+12AM EDT NOV 05 2011 CLEAR     38  23  55 N7        30.28                      .
+ 1AM EDT NOV 05 2011 CLEAR     38  23  55 NE8       30.29R                     .
+ 2AM EDT NOV 05 2011 FAIR      37  22  54 NE7       30.29S                     .
+ 3AM EDT NOV 05 2011 CLEAR     36  22  56 NE7       30.30R                     .
+ 4AM EDT NOV 05 2011 CLEAR     34  22  61 NE5       30.30S WCI  30             .
+ 5AM EDT NOV 05 2011 CLEAR     34  22  61 NE3       30.31R                     .
+ 6AM EDT NOV 05 2011 CLEAR     32  23  69 N3        30.33R                     .
+ 7AM EDT NOV 05 2011 CLEAR     31  23  72 NE8       30.34R WCI  23             .
+ 8AM EDT NOV 05 2011 CLEAR     30  23  75 E3        30.36R                     .
+ 9AM EDT NOV 05 2011 SUNNY     32  24  72 E7        30.37R WCI  26             .
+10AM EDT NOV 05 2011 SUNNY     36  25  64 E9        30.38R                     .
+11AM EDT NOV 05 2011 SUNNY     40  24  53 E8        30.39R                     .
+12PM EDT NOV 05 2011 MOSUNNY   44  24  45 E9        30.38F                     .
+ 1PM EDT NOV 05 2011 MOSUNNY   48  21  34 E10       30.35F                     .
+ 2PM EDT NOV 05 2011 MOSUNNY   51  19  28 SE10      30.33F                     .
+ 3PM EDT NOV 05 2011 MOSUNNY   52  19  27 SE7       30.32F                     .
+ 4PM EDT NOV 05 2011 MOSUNNY   54  20  26 E7        30.31F                     .
+ 5PM EDT NOV 05 2011 MOSUNNY   54  20  26 E3        30.31S                     .
+ 6PM EDT NOV 05 2011 PTCLDY    53  18  25 E5        30.30F                     .
+ 7PM EDT NOV 05 2011 CLEAR     50  17  27 E6        30.30S                     .
+ 8PM EDT NOV 05 2011 CLEAR     46  18  32 E7        30.30S                     .
+ 9PM EDT NOV 05 2011 CLEAR     46  16  30 SE8       30.30S                     .
+10PM EDT NOV 05 2011 CLEAR     44  16  32 SE9       30.30S                     .
+11PM EDT NOV 05 2011 CLEAR     44  17  33 SE7       30.30S                     .
+12AM EDT NOV 06 2011 CLEAR     40  19  43 SE6       30.30S                     .
+ 1AM EDT NOV 06 2011 CLEAR     39  19  44 SE6       30.30S                     .
+ 1AM EST NOV 06 2011 CLEAR     40  19  43 SE3       30.31R                     .
+ 2AM EST NOV 06 2011 CLEAR     38  19  46 E5        30.31S                     .
+ 3AM EST NOV 06 2011 CLEAR     38  18  44 CALM      30.31S                     .
+ 4AM EST NOV 06 2011 CLEAR     34  20  56 CALM      30.31S                     .
+ 5AM EST NOV 06 2011 CLEAR     32  20  61 CALM      30.33R                     .
+ 6AM EST NOV 06 2011 CLEAR     30  19  63 CALM      30.35R                     .
+ 7AM EST NOV 06 2011 PTCLDY    30  21  69 CALM      30.36R                     .
+ 8AM EST NOV 06 2011 MOSUNNY   31  22  69 CALM      30.38R                     .
+ 9AM EST NOV 06 2011 SUNNY     38  25  59 SE3       30.39R                     .
+10AM EST NOV 06 2011 SUNNY     45  19  35 SW6       30.39S                     .
+11AM EST NOV 06 2011 MOSUNNY   51  22  31 SW6       30.38F                     .
+12PM EST NOV 06 2011 MOSUNNY   55  23  28 S6        30.36F                     .
+ 1PM EST NOV 06 2011 MOSUNNY   57  26  30 VRB7      30.32F                     .
+ 2PM EST NOV 06 2011 MOSUNNY   59  27  29 VRB6      30.30F                     .
+ 3PM EST NOV 06 2011 MOSUNNY   59  27  29 SW5       30.29F                     .
+ 4PM EST NOV 06 2011 MOSUNNY   60  28  29 S7        30.28F                     .
+ 5PM EST NOV 06 2011 MOCLDY    58  28  32 S3        30.27F                     .
+ 6PM EST NOV 06 2011 MOCLDY    53  28  38 CALM      30.27S                     .
+ 7PM EST NOV 06 2011 PTCLDY    52  28  39 CALM      30.28R                     .
+ 8PM EST NOV 06 2011 PTCLDY    49  28  44 CALM      30.29R                     .
+ 9PM EST NOV 06 2011 PTCLDY    46  28  49 CALM      30.29S                     .
+10PM EST NOV 06 2011 CLEAR     44  28  53 CALM      30.30R                     .
+11PM EST NOV 06 2011 CLEAR     42  28  57 CALM      30.28F                     .
+12AM EST NOV 07 2011 CLEAR     42  27  55 S3        30.29R                     .
+ 1AM EST NOV 07 2011 CLEAR     41  27  57 CALM      30.29S                     .
+ 2AM EST NOV 07 2011 CLEAR     37  27  67 CALM      30.30R                     .
+ 3AM EST NOV 07 2011 CLEAR     38  27  64 CALM      30.31R                     .
+ 4AM EST NOV 07 2011 CLEAR     34  27  75 S3        30.30F                     .
+ 5AM EST NOV 07 2011 PTCLDY    35  27  72 CALM      30.31R                     .
+ 6AM EST NOV 07 2011 PTCLDY    36  27  69 CALM      30.32R                     .
+ 7AM EST NOV 07 2011 PTCLDY    38  27  64 CALM      30.33R                     .
+ 8AM EST NOV 07 2011 PTCLDY    40  29  64 CALM      30.34R                     .
+ 9AM EST NOV 07 2011 MOSUNNY   45  32  60 S6        30.35R                     .
+10AM EST NOV 07 2011 MOSUNNY   52  35  52 S6        30.36R                     .
+11AM EST NOV 07 2011 MOSUNNY   57  36  45 SW10      30.35F                     .
+12PM EST NOV 07 2011 MOSUNNY   60  38  43 SW8       30.32F                     .
+ 1PM EST NOV 07 2011 MOSUNNY   62  40  44 SW9       30.30F                     .
+ 2PM EST NOV 07 2011 MOSUNNY   64  40  41 SW5       30.29F                     .
+ 3PM EST NOV 07 2011 MOSUNNY   65  40  39 VRB6      30.26F                     .
+ 4PM EST NOV 07 2011 SUNNY     64  40  41 SW7       30.27R                     .
+ 5PM EST NOV 07 2011 CLEAR     63  39  41 SW5       30.27S                     .
+ 6PM EST NOV 07 2011 CLEAR     60  40  47 S3        30.27S                     .
+ 7PM EST NOV 07 2011 CLEAR     57  40  52 S3        30.28R                     .
+ 8PM EST NOV 07 2011 CLEAR     56  39  53 CALM      30.28S                     .
+ 9PM EST NOV 07 2011 CLEAR     52  40  63 CALM      30.28S                     .
+10PM EST NOV 07 2011 CLEAR     53  39  59 CALM      30.27F                     .
+11PM EST NOV 07 2011 CLEAR     49  38  65 CALM      30.27S                     .
+12AM EST NOV 08 2011 CLEAR     46  39  76 CALM      30.26F                     .
+ 1AM EST NOV 08 2011 CLEAR     46  38  73 CALM      30.26S                     .
+ 2AM EST NOV 08 2011 CLEAR     45  38  76 CALM      30.25F                     .
+ 3AM EST NOV 08 2011 CLEAR     44  37  76 CALM      30.25S                     .
+ 4AM EST NOV 08 2011 CLEAR     42  37  82 CALM      30.24F                     .
+ 5AM EST NOV 08 2011 CLEAR     41  37  86 CALM      30.24S                     .
+ 6AM EST NOV 08 2011 CLEAR     41  35  79 CALM      30.25R                     .
+ 7AM EST NOV 08 2011 PTCLDY    40  35  83 CALM      30.25S                     .
+ 8AM EST NOV 08 2011 PTCLDY    42  37  82 CALM      30.25S                     .
+ 9AM EST NOV 08 2011 MOSUNNY   49  40  71 CALM      30.26R                     .
+10AM EST NOV 08 2011 MOSUNNY   55  39  54 S3        30.24F                     .
+11AM EST NOV 08 2011 MOSUNNY   61  40  45 SE3       30.24S                     .
+12PM EST NOV 08 2011 MOSUNNY   64  40  41 S8        30.20F                     .
+ 1PM EST NOV 08 2011 MOSUNNY   66  39  37 SW9       30.17F                     .
+ 2PM EST NOV 08 2011 MOSUNNY   67  38  34 SW9       30.15F                     .
+ 3PM EST NOV 08 2011 MOSUNNY   68  38  33 SW7       30.14F                     .
+ 4PM EST NOV 08 2011 MOSUNNY   68  39  34 S6        30.13F                     .
+ 5PM EST NOV 08 2011 PTCLDY    67  39  35 S5        30.13S                     .
+ 6PM EST NOV 08 2011 PTCLDY    61  39  44 CALM      30.13S                     .
+ 7PM EST NOV 08 2011 PTCLDY    57  39  51 CALM      30.14R                     .
+ 8PM EST NOV 08 2011 PTCLDY    52  39  61 CALM      30.14S                     .
+ 9PM EST NOV 08 2011 CLEAR     52  39  61 CALM      30.15R                     .
+10PM EST NOV 08 2011 CLEAR     48  38  68 CALM      30.14F                     .
+11PM EST NOV 08 2011 CLEAR     48  39  71 CALM      30.12F                     .
+12AM EST NOV 09 2011 PTCLDY    47  37  68 CALM      30.11F                     .
+ 1AM EST NOV 09 2011 PTCLDY    44  37  76 CALM      30.10F                     .
+ 2AM EST NOV 09 2011 PTCLDY    42  37  82 CALM      30.09F                     .
+ 3AM EST NOV 09 2011 PTCLDY    41  36  82 CALM      30.07F                     .
+ 4AM EST NOV 09 2011 PTCLDY    41  36  82 CALM      30.08R                     .
+ 5AM EST NOV 09 2011 PTCLDY    40  35  83 CALM      30.06F                     .
+ 6AM EST NOV 09 2011 PTCLDY    40  35  83 CALM      30.05F                     .
+ 7AM EST NOV 09 2011 MOCLDY    38  34  85 CALM      30.05S                     .
+ 8AM EST NOV 09 2011 PTCLDY    40  35  83 CALM      30.05S                     .
+ 9AM EST NOV 09 2011 MOSUNNY   49  37  63 SE3       30.04F                     .
+10AM EST NOV 09 2011 MOSUNNY   55  36  48 S8        30.02F                     .
+11AM EST NOV 09 2011 PTSUNNY   61  39  44 S7        30.01F                     .
+12PM EST NOV 09 2011 CLOUDY    64  40  41 S12       29.97F                     .
+ 1PM EST NOV 09 2011 CLOUDY    67  42  40 S13G18    29.93F                     .
+ 2PM EST NOV 09 2011 PTSUNNY   68  41  37 S10       29.91F                     .
+ 3PM EST NOV 09 2011 CLOUDY    67  42  40 S10G17    29.87F                     .
+ 4PM EST NOV 09 2011 CLOUDY    67  41  38 SE9       29.83F                     .
+ 5PM EST NOV 09 2011 CLOUDY    66  39  37 S12G17    29.82F                     .
+ 6PM EST NOV 09 2011 LGT RAIN  66  42  41 SW7       29.85R                     .
+ 7PM EST NOV 09 2011 LGT RAIN  58  52  80 W7        29.85S                     .
+ 8PM EST NOV 09 2011 LGT RAIN  59  54  83 S14G21    29.85S                     .
+ 9PM EST NOV 09 2011 CLOUDY    59  54  83 S12G21    29.85R                     .
+10PM EST NOV 09 2011 CLOUDY    59  54  83 S14       29.86R                     .
+11PM EST NOV 09 2011 CLOUDY    59  52  77 W6G21     29.86S                     .
+12AM EST NOV 10 2011 CLOUDY    54  44  69 W15G30    29.90R                     .
+ 1AM EST NOV 10 2011 CLOUDY    49  39  68 W17       29.93R                     .
+ 2AM EST NOV 10 2011 MOCLDY    44  33  65 W15       29.95R                     .
+ 3AM EST NOV 10 2011 PTCLDY    42  30  62 W8        29.97R                     .
+ 4AM EST NOV 10 2011 CLOUDY    42  31  64 W8        29.98R                     .
+ 5AM EST NOV 10 2011 CLOUDY    42  31  64 W7        29.98S                     .
+ 6AM EST NOV 10 2011 CLOUDY    41  30  65 W13G20    30.00R                     .
+ 7AM EST NOV 10 2011 CLOUDY    40  28  62 SW7       30.00S                     .
+ 8AM EST NOV 10 2011 CLOUDY    41  27  57 SW7       30.01R                     .
+ 9AM EST NOV 10 2011 CLOUDY    41  28  60 SW8       30.01S                     .
+10AM EST NOV 10 2011 CLOUDY    42  28  57 SW9       30.00F                     .
+11AM EST NOV 10 2011 CLOUDY    42  28  57 SW9G16    29.99F                     .
+12PM EST NOV 10 2011 PTSUNNY   43  29  57 SW10      29.96F                     .
+ 1PM EST NOV 10 2011 CLOUDY    44  27  51 SW7       29.93F                     .
+ 2PM EST NOV 10 2011 CLOUDY    45  27  49 SW12      29.91F                     .
+ 3PM EST NOV 10 2011 CLOUDY    45  28  51 W10       29.89F                     .
+ 4PM EST NOV 10 2011 PTSUNNY   45  26  47 W9G18     29.88F                     .
+ 5PM EST NOV 10 2011 MOCLDY    44  26  49 SW6       29.87F                     .
+ 6PM EST NOV 10 2011 LGT RAIN  39  33  79 W12G29    29.89R                     .
+ 7PM EST NOV 10 2011 CLOUDY    39  34  82 SW3       29.89S                     .
+ 8PM EST NOV 10 2011 CLOUDY    39  33  79 SW3       29.88F                     .
+ 9PM EST NOV 10 2011 CLOUDY    38  30  73 W10       29.89R                     .
+10PM EST NOV 10 2011 NOT AVBL                                                  .
+11PM EST NOV 10 2011 PTCLDY    35  23  61 W10       29.89  WCI  27             .
+12AM EST NOV 11 2011 PTCLDY    34  22  61 W5        29.88F WCI  30             .
+ 1AM EST NOV 11 2011 MOCLDY    34  22  61 W7        29.86F WCI  28             .
+ 2AM EST NOV 11 2011 MOCLDY    34  23  64 W10       29.86S WCI  26             .
+ 3AM EST NOV 11 2011 CLOUDY    34  24  67 W8        29.86S WCI  27             .
+ 4AM EST NOV 11 2011 CLOUDY    34  24  67 W8        29.86S WCI  27             .
+ 5AM EST NOV 11 2011 MOCLDY    33  24  69 W9        29.87R WCI  25             .
+ 6AM EST NOV 11 2011 MOCLDY    33  25  72 W8        29.87S WCI  26             .
+ 7AM EST NOV 11 2011 MOCLDY    33  25  72 W9        29.89R WCI  25             .
+ 8AM EST NOV 11 2011 CLOUDY    34  27  75 W10       29.91R WCI  26             .
+ 9AM EST NOV 11 2011 CLOUDY    36  27  69 W10G23    29.93R                     .
+10AM EST NOV 11 2011 PTSUNNY   38  27  64 W17G23    29.94R                     .
+11AM EST NOV 11 2011 PTSUNNY   40  26  57 W16       29.95R                     .
+12PM EST NOV 11 2011 CLOUDY    40  24  53 W14G20    29.95S                     .
+ 1PM EST NOV 11 2011 FLURRIES  41  23  48 W16G23    29.95S                     .
+ 2PM EST NOV 11 2011 PTSUNNY   41  23  48 W18G24    29.95S                     .
+ 3PM EST NOV 11 2011 CLOUDY    41  23  48 W10       29.95S                     .
+ 4PM EST NOV 11 2011 PTSUNNY   41  23  48 SW12G20   29.97R                     .
+ 5PM EST NOV 11 2011 MOCLDY    40  23  50 W8        29.97S                     .
+ 6PM EST NOV 11 2011 MOCLDY    40  22  48 SW7       29.99R                     .
+ 7PM EST NOV 11 2011 MOCLDY    39  21  48 W7        30.00R                     .
+ 8PM EST NOV 11 2011 PTCLDY    38  21  50 SW3       30.00S                     .
+ 9PM EST NOV 11 2011 PTCLDY    37  21  52 SW5       30.01R                     .
+10PM EST NOV 11 2011 PTCLDY    33  22  63 S5        30.00F WCI  29             .
+11PM EST NOV 11 2011 CLEAR     33  22  63 S6        29.99F WCI  28             .
+12AM EST NOV 12 2011 CLEAR     32  21  64 S3        30.00R                     .
+ 1AM EST NOV 12 2011 CLEAR     32  21  64 CALM      30.00S                     .
+ 2AM EST NOV 12 2011 CLEAR     31  21  66 SE3       29.99F                     .
+ 3AM EST NOV 12 2011 CLEAR     30  21  69 S5        29.96F WCI  25             .
+ 4AM EST NOV 12 2011 CLEAR     32  21  64 S6        29.94F WCI  26             .
+ 5AM EST NOV 12 2011 CLEAR     33  20  58 S6        29.94S WCI  28             .
+ 6AM EST NOV 12 2011 PTCLDY    34  21  59 S6        29.94S WCI  29             .
+ 7AM EST NOV 12 2011 PTCLDY    36  22  56 S7        29.95R                     .
+ 8AM EST NOV 12 2011 PTCLDY    41  23  48 SW10      29.97R                     .
+ 9AM EST NOV 12 2011 SUNNY     44  25  47 SW10G18   29.99R                     .
+10AM EST NOV 12 2011 SUNNY     49  26  41 SW16G23   30.00R                     .
+11AM EST NOV 12 2011 SUNNY     51  28  41 W15G23    30.02R                     .
+12PM EST NOV 12 2011 SUNNY     54  28  36 SW15G24   30.02S                     .
+ 1PM EST NOV 12 2011 MOSUNNY   56  29  35 SW12G20   30.01F                     .
+ 2PM EST NOV 12 2011 PTSUNNY   58  29  33 S12G20    29.99F                     .
+ 3PM EST NOV 12 2011 MOSUNNY   60  29  30 SW13G24   29.99S                     .
+ 4PM EST NOV 12 2011 PTSUNNY   60  28  29 SW9       30.00R                     .
+ 5PM EST NOV 12 2011 MOCLDY    59  27  29 SW8       30.00S                     .
+ 6PM EST NOV 12 2011 PTCLDY    56  26  31 SW7       30.01R                     .
+ 7PM EST NOV 12 2011 PTCLDY    53  27  36 S5        30.02R                     .
+ 8PM EST NOV 12 2011 PTCLDY    53  26  35 SW7       30.02S                     .
+ 9PM EST NOV 12 2011 MOCLDY    52  26  36 S6        30.02S                     .
+10PM EST NOV 12 2011 MOCLDY    50  26  39 S5        30.02S                     .
+11PM EST NOV 12 2011 CLOUDY    49  27  42 S5        30.00F                     .
+12AM EST NOV 13 2011 CLOUDY    48  27  44 S6        29.99F                     .
+ 1AM EST NOV 13 2011 CLOUDY    50  26  39 S3        29.99S                     .
+ 2AM EST NOV 13 2011 CLOUDY    52  24  33 S6        29.98F                     .
+ 3AM EST NOV 13 2011 CLOUDY    51  24  34 S6        29.99R                     .
+ 4AM EST NOV 13 2011 CLOUDY    49  24  37 S7        29.98F                     .
+ 5AM EST NOV 13 2011 PTCLDY    51  21  30 S8        29.98S                     .
+ 6AM EST NOV 13 2011 MOCLDY    51  21  30 S12       29.97F                     .
+ 7AM EST NOV 13 2011 MOCLDY    53  21  28 S13       29.95F                     .
+ 8AM EST NOV 13 2011 MOCLDY    54  21  27 S9        29.95S                     .
+ 9AM EST NOV 13 2011 SUNNY     56  22  26 S15G25    29.95S                     .
+10AM EST NOV 13 2011 PTSUNNY   58  27  30 SW14G24   29.91F                     .
+11AM EST NOV 13 2011 CLOUDY    60  32  34 SW20G29   29.90F                     .
+12PM EST NOV 13 2011 CLOUDY    60  34  37 S17G26    29.88F                     .
+ 1PM EST NOV 13 2011 CLOUDY    60  36  40 SW10G22   29.86F                     .
+ 2PM EST NOV 13 2011 CLOUDY    61  38  42 S17G28    29.81F                     .
+ 3PM EST NOV 13 2011 PTSUNNY   63  40  42 S14G25    29.79F                     .
+ 4PM EST NOV 13 2011 MOSUNNY   64  41  42 S18G28    29.79S                     .
+ 5PM EST NOV 13 2011 MOCLDY    63  41  44 S14G21    29.78F                     .
+ 6PM EST NOV 13 2011 MOCLDY    62  40  44 S13G21    29.76F                     .
+ 7PM EST NOV 13 2011 MOCLDY    61  40  45 S10G21    29.77R                     .
+ 8PM EST NOV 13 2011 CLOUDY    62  41  46 SW9G21    29.81R                     .
+ 9PM EST NOV 13 2011 CLOUDY    62  41  46 S10G24    29.80F                     .
+10PM EST NOV 13 2011 MOCLDY    62  42  47 SW14G22   29.80S                     .
+11PM EST NOV 13 2011 PTCLDY    62  42  47 SW12G21   29.80S                     .
+12AM EST NOV 14 2011 MOCLDY    62  43  49 SW13G22   29.81R                     .
+ 1AM EST NOV 14 2011 MOCLDY    61  43  51 SW12G22   29.81S                     .
+ 2AM EST NOV 14 2011 CLOUDY    62  45  53 SW14G23   29.80F                     .
+ 3AM EST NOV 14 2011 CLOUDY    63  46  54 SW12      29.80S                     .
+ 4AM EST NOV 14 2011 CLOUDY    63  47  55 SW12G21   29.80S                     .
+ 5AM EST NOV 14 2011 LGT RAIN  57  51  80 W7        29.82R                     .
+ 6AM EST NOV 14 2011 LGT RAIN  58  51  78 SW9       29.81F                     .
+ 7AM EST NOV 14 2011 LGT RAIN  58  52  80 S10       29.81S                     .
+ 8AM EST NOV 14 2011 LGT RAIN  57  52  83 SW5       29.83R                     .
+ 9AM EST NOV 14 2011 DRIZZLE   57  53  86 S5        29.82F                     .
+10AM EST NOV 14 2011 RAIN      58  54  86 SW10G17   29.83R FOG                 .
+11AM EST NOV 14 2011 CLOUDY    59  55  87 S3        29.81F                     .
+12PM EST NOV 14 2011 CLOUDY    65  56  72 S10       29.77F                     .
+ 1PM EST NOV 14 2011 CLOUDY    68  53  58 SW16G23   29.74F                     .
+ 2PM EST NOV 14 2011 CLOUDY    69  53  56 SW16G29   29.72F                     .
+ 3PM EST NOV 14 2011 PTSUNNY   70  53  54 SW21G32   29.68F                     .
+ 4PM EST NOV 14 2011 CLOUDY    70  53  54 SW16G25   29.67F                     .
+ 5PM EST NOV 14 2011 CLOUDY    70  52  52 S21G29    29.65F                     .
+ 6PM EST NOV 14 2011 CLOUDY    70  53  54 SW18G30   29.66R                     .
+ 7PM EST NOV 14 2011 CLOUDY    70  53  54 SW15G30   29.66S                     .
+ 8PM EST NOV 14 2011 CLOUDY    69  52  54 SW13G28   29.67R                     .
+ 9PM EST NOV 14 2011 CLOUDY    69  53  56 SW16G26   29.67S                     .
+10PM EST NOV 14 2011 HVY RAIN  57  52  83 NW22G37   29.74R                     .
+11PM EST NOV 14 2011 TSTM      55  52  88 SW9       29.74S FOG                 .
+12AM EST NOV 15 2011 LGT RAIN  56  53  90 SW6       29.75F                     .
+ 1AM EST NOV 15 2011 LGT RAIN  56  54  93 SW9       29.77R                     .
+ 2AM EST NOV 15 2011 LGT RAIN  57  54  89 W7        29.77S                     .
+ 3AM EST NOV 15 2011 LGT RAIN  56  53  90 S8        29.76F                     .
+ 4AM EST NOV 15 2011 LGT RAIN  56  53  90 S9        29.78R                     .
+ 5AM EST NOV 15 2011 LGT RAIN  56  52  86 W7        29.80R                     .
+ 6AM EST NOV 15 2011 LGT RAIN  56  52  86 SW7       29.82R                     .
+ 7AM EST NOV 15 2011 LGT RAIN  55  50  83 SW9       29.83R                     .
+ 8AM EST NOV 15 2011 LGT RAIN  54  50  86 SW12      29.87R                     .
+ 9AM EST NOV 15 2011 LGT RAIN  53  49  86 S10       29.88R                     .
+10AM EST NOV 15 2011 LGT RAIN  52  49  89 S10       29.90R                     .
+11AM EST NOV 15 2011 LGT RAIN  52  48  87 SW5       29.92R                     .
+12PM EST NOV 15 2011 CLOUDY    52  48  86 VRB6      29.89S                     .
+ 1PM EST NOV 15 2011 CLOUDY    52  49  89 SW5       29.89S                     .
+ 2PM EST NOV 15 2011 DRIZZLE   52  49  89 SW7       29.90R                     .
+ 3PM EST NOV 15 2011 LGT RAIN  52  49  89 SW6       29.89F                     .
+ 4PM EST NOV 15 2011 CLOUDY    52  50  93 S3        29.89S                     .
+ 5PM EST NOV 15 2011 DRIZZLE   52  50  93 S5        29.90R                     .
+ 6PM EST NOV 15 2011 CLOUDY    52  50  93 CALM      29.92R                     .
+ 7PM EST NOV 15 2011 CLOUDY    52  50  93 CALM      29.92S                     .
+ 8PM EST NOV 15 2011 CLOUDY    51  50  96 S3        29.92S                     .
+ 9PM EST NOV 15 2011 CLOUDY    51  49  92 S3        29.91F                     .
+10PM EST NOV 15 2011 CLOUDY    51  50  96 CALM      29.92R FOG                 .
+11PM EST NOV 15 2011 CLOUDY    51  49  92 CALM      29.91S FOG                 .
+12AM EST NOV 16 2011 DRIZZLE   52  50  93 CALM      29.89F                     .
+ 1AM EST NOV 16 2011 CLOUDY    51  50  96 S3        29.87F                     .
+ 2AM EST NOV 16 2011 CLOUDY    52  50  93 CALM      29.86F                     .
+ 3AM EST NOV 16 2011 CLOUDY    52  50  93 S3        29.85F                     .
+ 4AM EST NOV 16 2011 DRIZZLE   52  50  93 S3        29.84F FOG                 .
+ 5AM EST NOV 16 2011 CLOUDY    52  50  93 CALM      29.83S                     .
+ 6AM EST NOV 16 2011 CLOUDY    52  50  93 CALM      29.84R FOG                 .
+ 7AM EST NOV 16 2011 CLOUDY    52  50  93 CALM      29.83F FOG                 .
+ 8AM EST NOV 16 2011 CLOUDY    52  50  93 CALM      29.84R FOG                 .
+ 9AM EST NOV 16 2011 CLOUDY    53  51  93 SW3       29.85R FOG                 .
+10AM EST NOV 16 2011 CLOUDY    54  51  90 NW7       29.84F                     .
+11AM EST NOV 16 2011 LGT RAIN  53  49  86 NW6       29.86R FOG                 .
+12PM EST NOV 16 2011 LGT RAIN  52  48  86 NW6       29.84F FOG                 .
+ 1PM EST NOV 16 2011 LGT RAIN  52  48  86 NW8       29.84S FOG                 .
+ 2PM EST NOV 16 2011 LGT RAIN  52  45  77 N5        29.83R                     .
+ 3PM EST NOV 16 2011 LGT RAIN  51  48  89 S3        29.82F                     .
+ 4PM EST NOV 16 2011 LGT RAIN  51  48  89 SW6       29.86R                     .
+ 5PM EST NOV 16 2011 LGT RAIN  51  47  86 NW9       29.87R                     .
+ 6PM EST NOV 16 2011 CLOUDY    49  45  86 NW10      29.89R                     .
+ 7PM EST NOV 16 2011 CLOUDY    47  42  83 NW7       29.91R                     .
+ 8PM EST NOV 16 2011 CLOUDY    45  36  70 NW12      29.93R                     .
+ 9PM EST NOV 16 2011 MOCLDY    42  30  62 NW13      29.95R                     .
+10PM EST NOV 16 2011 PTCLDY    39  27  62 NW7       29.97R                     .
+11PM EST NOV 16 2011 NOT AVBL                                                  .
+12AM EST NOV 17 2011 CLEAR     37  29  72 CALM      29.98                      .
+ 1AM EST NOV 17 2011 CLEAR     35  29  78 CALM      29.99R                     .
+ 2AM EST NOV 17 2011 MOCLDY    33  28  81 W7        29.98F WCI  27             .
+ 3AM EST NOV 17 2011 CLOUDY    36  28  73 NW9       29.99R                     .
+ 4AM EST NOV 17 2011 CLOUDY    35  29  78 NW7       30.00R WCI  29             .
+ 5AM EST NOV 17 2011 CLOUDY    36  28  73 NW13      30.01R                     .
+ 6AM EST NOV 17 2011 CLOUDY    35  27  72 NW14      30.02R WCI  26             .
+ 7AM EST NOV 17 2011 CLOUDY    34  23  64 NW9       30.02S WCI  27             .
+ 8AM EST NOV 17 2011 CLOUDY    34  23  64 NW7       30.04R WCI  28             .
+ 9AM EST NOV 17 2011 CLOUDY    35  24  64 W3        30.07R                     .
+10AM EST NOV 17 2011 CLOUDY    36  25  64 W7        30.06F                     .
+11AM EST NOV 17 2011 CLOUDY    37  25  61 W8        30.06S                     .
+12PM EST NOV 17 2011 CLOUDY    38  23  55 W15       30.04F                     .
+ 1PM EST NOV 17 2011 CLOUDY    39  21  48 W13       30.02F                     .
+ 2PM EST NOV 17 2011 CLOUDY    39  19  44 W13G20    30.01F                     .
+ 3PM EST NOV 17 2011 PTSUNNY   39  15  37 W14       29.99F                     .
+ 4PM EST NOV 17 2011 PTCLDY    39  17  41 W15G24    30.01R                     .
+ 5PM EST NOV 17 2011 PTCLDY    37  17  44 W9        30.04R                     .
+ 6PM EST NOV 17 2011 PTCLDY    36  14  40 W12G17    30.07R                     .
+ 7PM EST NOV 17 2011 PTCLDY    34  14  43 NW22G31   30.11R WCI  22             .
+ 8PM EST NOV 17 2011 PTCLDY    32  15  49 W20G29    30.14R WCI  20             .
+ 9PM EST NOV 17 2011 MOCLDY    32  15  49 W22G28    30.16R WCI  19             .
+10PM EST NOV 17 2011 PTCLDY    31  14  49 W20G25    30.20R WCI  19             .
+11PM EST NOV 17 2011 PTCLDY    31  15  52 W16       30.22R WCI  20             .
+12AM EST NOV 18 2011 CLEAR     30  14  51 W13       30.24R WCI  20             .
+ 1AM EST NOV 18 2011 NOT AVBL                                                  .
+ 2AM EST NOV 18 2011 CLEAR     29  15  56 W6        30.26  WCI  23             .
+ 3AM EST NOV 18 2011 CLEAR     28  15  58 SW6       30.29R WCI  22             .
+ 4AM EST NOV 18 2011 CLEAR     27  15  61 W6        30.31R WCI  20             .
+ 5AM EST NOV 18 2011 CLEAR     27  15  61 W7        30.33R WCI  19             .
+ 6AM EST NOV 18 2011 CLEAR     25  14  63 W3        30.33S                     .
+ 7AM EST NOV 18 2011 CLEAR     26  14  60 SW7       30.36R WCI  18             .
+ 8AM EST NOV 18 2011 CLEAR     26  14  60 SW6       30.38R WCI  19             .
+ 9AM EST NOV 18 2011 MOSUNNY   29  14  53 SW8       30.39R WCI  21             .
+10AM EST NOV 18 2011 MOSUNNY   32  13  45 SW8       30.40R WCI  25             .
+11AM EST NOV 18 2011 MOSUNNY   35  12  38 S8        30.39F WCI  29             .
+12PM EST NOV 18 2011 NOT AVBL                                                  .
+ 1PM EST NOV 18 2011 MOSUNNY   40  13  33 SW13      30.35                      .
+ 2PM EST NOV 18 2011 MOSUNNY   41  14  33 S10G17    30.33F                     .
+ 3PM EST NOV 18 2011 MOSUNNY   42  13  30 S10       30.32F                     .
+ 4PM EST NOV 18 2011 PTCLDY    42  13  30 S12G17    30.30F                     .
+ 5PM EST NOV 18 2011 MOCLDY    40  14  34 S5        30.29F                     .
+ 6PM EST NOV 18 2011 PTCLDY    37  16  42 S5        30.28F                     .
+ 7PM EST NOV 18 2011 PTCLDY    36  16  44 S6        30.26F                     .
+ 8PM EST NOV 18 2011 PTCLDY    35  16  45 S5        30.25F WCI  31             .
+ 9PM EST NOV 18 2011 PTCLDY    34  16  47 S6        30.23F WCI  29             .
+10PM EST NOV 18 2011 MOCLDY    33  17  51 S6        30.21F WCI  28             .
+11PM EST NOV 18 2011 MOCLDY    34  16  47 S3        30.20F                     .
+12AM EST NOV 19 2011 CLOUDY    35  16  45 S5        30.19F WCI  31             .
+ 1AM EST NOV 19 2011 MOCLDY    37  16  42 SE3       30.19S                     .
+ 2AM EST NOV 19 2011 MOCLDY    35  17  47 SE3       30.18F                     .
+ 3AM EST NOV 19 2011 MOCLDY    34  18  52 CALM      30.19R                     .
+ 4AM EST NOV 19 2011 CLOUDY    35  16  45 E3        30.19S                     .
+ 5AM EST NOV 19 2011 MOCLDY    34  16  47 CALM      30.20R                     .
+ 6AM EST NOV 19 2011 MOCLDY    31  18  58 CALM      30.22R                     .
+ 7AM EST NOV 19 2011 MOCLDY    31  19  61 CALM      30.22S                     .
+ 8AM EST NOV 19 2011 MOCLDY    33  19  56 S5        30.24R WCI  29             .
+ 9AM EST NOV 19 2011 PTSUNNY   41  21  44 S5        30.25R                     .
+10AM EST NOV 19 2011 PTSUNNY   48  22  35 SW7       30.25S                     .
+11AM EST NOV 19 2011 PTSUNNY   51  26  37 SW12G23   30.24F                     .
+12PM EST NOV 19 2011 PTSUNNY   53  28  38 SW15G23   30.22F                     .
+ 1PM EST NOV 19 2011 PTSUNNY   55  32  41 SW16G25   30.17F                     .
+ 2PM EST NOV 19 2011 PTSUNNY   55  33  43 SW17G28   30.16F                     .
+ 3PM EST NOV 19 2011 CLOUDY    55  33  43 S13       30.12F                     .
+ 4PM EST NOV 19 2011 CLOUDY    55  34  45 S12G17    30.12S                     .
+ 5PM EST NOV 19 2011 CLOUDY    55  33  43 S9        30.11F                     .
+ 6PM EST NOV 19 2011 MOCLDY    52  33  48 S5        30.11S                     .
+ 7PM EST NOV 19 2011 MOCLDY    50  33  52 SE3       30.11S                     .
+ 8PM EST NOV 19 2011 MOCLDY    48  32  53 SE5       30.10F                     .
+ 9PM EST NOV 19 2011 MOCLDY    47  32  56 S6        30.09F                     .
+10PM EST NOV 19 2011 MOCLDY    50  31  48 S6        30.08F                     .
+11PM EST NOV 19 2011 MOCLDY    52  32  46 S9        30.06F                     .
+12AM EST NOV 20 2011 CLOUDY    52  34  50 S7        30.05F                     .
+ 1AM EST NOV 20 2011 CLOUDY    57  39  51 SW14G21   30.04F                     .
+ 2AM EST NOV 20 2011 CLOUDY    58  42  55 SW10      30.05R                     .
+ 3AM EST NOV 20 2011 CLOUDY    59  42  53 SW12G21   30.05S                     .
+ 4AM EST NOV 20 2011 CLOUDY    59  42  53 SW9G16    30.06R                     .
+ 5AM EST NOV 20 2011 MOCLDY    59  43  55 SW13G21   30.06S                     .
+ 6AM EST NOV 20 2011 MOCLDY    59  45  59 SW16G22   30.07R                     .
+ 7AM EST NOV 20 2011 NOT AVBL                                                  .
+ 8AM EST NOV 20 2011 CLOUDY    59  46  62 SW9G21    30.11                      .
+ 9AM EST NOV 20 2011 CLOUDY    59  48  67 SW10G21   30.14R                     .
+10AM EST NOV 20 2011 CLOUDY    59  50  72 SW12G21   30.15R                     .
+11AM EST NOV 20 2011 CLOUDY    59  50  72 SW10      30.16R                     .
+12PM EST NOV 20 2011 CLOUDY    59  51  75 SW8G17    30.16S                     .
+ 1PM EST NOV 20 2011 CLOUDY    59  51  75 SW10      30.14F                     .
+ 2PM EST NOV 20 2011 CLOUDY    59  51  75 SW6       30.13F                     .
+ 3PM EST NOV 20 2011 CLOUDY    59  51  75 SW7       30.12F                     .
+ 4PM EST NOV 20 2011 CLOUDY    59  51  75 SW5       30.13R                     .
+ 5PM EST NOV 20 2011 CLOUDY    58  52  80 S3        30.12F                     .
+ 6PM EST NOV 20 2011 LGT RAIN  57  53  86 SW5       30.16R FOG                 .
+ 7PM EST NOV 20 2011 LGT RAIN  56  54  93 CALM      30.16S FOG                 .
+ 8PM EST NOV 20 2011 LGT RAIN  55  53  93 CALM      30.15F FOG                 .
+ 9PM EST NOV 20 2011 LGT RAIN  51  48  89 N12       30.18R                     .
+10PM EST NOV 20 2011 LGT RAIN  49  45  86 N10       30.18R                     .
+11PM EST NOV 20 2011 LGT RAIN  47  43  86 N12       30.19R                     .
+12AM EST NOV 21 2011 LGT RAIN  46  43  89 N9        30.20R FOG                 .
+ 1AM EST NOV 21 2011 LGT RAIN  45  42  89 N9        30.20S                     .
+ 2AM EST NOV 21 2011 CLOUDY    44  41  89 N6        30.20S                     .
+ 3AM EST NOV 21 2011 CLOUDY    44  40  85 N7        30.21R                     .
+ 4AM EST NOV 21 2011 CLOUDY    43  39  86 N9        30.23R                     .
+ 5AM EST NOV 21 2011 CLOUDY    42  37  82 N9        30.23S                     .
+ 6AM EST NOV 21 2011 CLOUDY    42  37  82 N5        30.25R                     .
+ 7AM EST NOV 21 2011 LGT RAIN  42  37  82 N5        30.25R                     .
+ 8AM EST NOV 21 2011 LGT RAIN  41  37  86 N6        30.28R                     .
+ 9AM EST NOV 21 2011 CLOUDY    41  37  86 NE5       30.27F                     .
+10AM EST NOV 21 2011 LGT RAIN  42  38  85 NE6       30.29R                     .
+11AM EST NOV 21 2011 LGT RAIN  42  38  85 N6        30.29S                     .
+12PM EST NOV 21 2011 CLOUDY    42  39  89 NE7       30.25F FOG                 .
+ 1PM EST NOV 21 2011 CLOUDY    43  39  86 N3        30.23F                     .
+ 2PM EST NOV 21 2011 CLOUDY    43  39  86 N5        30.23S                     .
+ 3PM EST NOV 21 2011 CLOUDY    43  40  89 N5        30.22F                     .
+ 4PM EST NOV 21 2011 CLOUDY    43  39  86 N8        30.23R                     .
+ 5PM EST NOV 21 2011 CLOUDY    43  39  86 VRB6      30.24R                     .
+ 6PM EST NOV 21 2011 CLOUDY    43  39  86 N6        30.24S                     .
+ 7PM EST NOV 21 2011 CLOUDY    43  39  86 NE5       30.24S                     .
+ 8PM EST NOV 21 2011 MOCLDY    42  39  89 N3        30.23F                     .
+ 9PM EST NOV 21 2011 PTCLDY    42  39  89 N5        30.22F                     .
+10PM EST NOV 21 2011 MOCLDY    41  39  93 N3        30.22S FOG                 .
+11PM EST NOV 21 2011 CLOUDY    42  40  92 NE5       30.21F FOG                 .
+12AM EST NOV 22 2011 FOG       41  40  96 NE3       30.21R VSB 1               .
+ 1AM EST NOV 22 2011 FOG       41  39  93 N8        30.19F VSB 1/2             .
+ 2AM EST NOV 22 2011 FOG       41  40  96 NE5       30.20R VSB 1/2             .
+ 3AM EST NOV 22 2011 FOG       42  40  92 NE5       30.20S VSB 1/4             .
+ 4AM EST NOV 22 2011 FOG       43  41  93 NE6       30.18F VSB 1/4             .
+ 5AM EST NOV 22 2011 FOG       42  41  96 NE3       30.19R VSB 1               .
+ 6AM EST NOV 22 2011 LGT RAIN  43  41  93 NE6       30.18F FOG                 .
+ 7AM EST NOV 22 2011 FOG       43  41  93 NE5       30.17F VSB 1/2             .
+ 8AM EST NOV 22 2011 CLOUDY    44  41  89 E3        30.17S FOG                 .
+ 9AM EST NOV 22 2011 CLOUDY    44  41  89 E7        30.15F                     .
+10AM EST NOV 22 2011 CLOUDY    45  42  89 E7        30.13F                     .
+11AM EST NOV 22 2011 CLOUDY    47  43  86 E8        30.09F                     .
+12PM EST NOV 22 2011 LGT RAIN  46  43  89 E7        30.05F FOG                 .
+ 1PM EST NOV 22 2011 LGT RAIN  47  44  90 E6        30.03F FOG                 .
+ 2PM EST NOV 22 2011 LGT RAIN  47  45  93 E9        29.96F FOG                 .
+ 3PM EST NOV 22 2011 LGT RAIN  48  46  93 E9        29.91F FOG                 .
+ 4PM EST NOV 22 2011 LGT RAIN  48  46  93 E9        29.87F FOG                 .
+ 5PM EST NOV 22 2011 RAIN      49  47  93 SE6       29.84F FOG                 .
+ 6PM EST NOV 22 2011 CLOUDY    49  48  97 SE8       29.82F                     .
+ 7PM EST NOV 22 2011 LGT RAIN  50  49  96 E6        29.79F FOG                 .
+ 8PM EST NOV 22 2011 CLOUDY    52  51  97 SE5       29.77F FOG                 .
+ 9PM EST NOV 22 2011 LGT RAIN  55  53  93 S6        29.74F FOG                 .
+10PM EST NOV 22 2011 LGT RAIN  55  54  96 S7        29.73F FOG                 .
+11PM EST NOV 22 2011 LGT RAIN  56  54  93 SE7       29.68F FOG                 .
+12AM EST NOV 23 2011 LGT RAIN  59  54  83 S10       29.67F                     .
+ 1AM EST NOV 23 2011 CLOUDY    59  54  83 S10       29.63F                     .
+ 2AM EST NOV 23 2011 CLOUDY    59  54  83 SW12G21   29.60F                     .
+ 3AM EST NOV 23 2011 LGT RAIN  59  54  83 SW12G18   29.59F                     .
+ 4AM EST NOV 23 2011 MOCLDY    54  48  80 W9G21     29.59S                     .
+ 5AM EST NOV 23 2011 MOCLDY    49  42  77 W14G30    29.62R                     .
+ 6AM EST NOV 23 2011 CLOUDY    47  41  80 W13G20    29.66R                     .
+ 7AM EST NOV 23 2011 LGT SNOW  43  39  87 W12G21    29.72R FOG                 .
+ 8AM EST NOV 23 2011 LGT SNOW  43  40  89 NW20G26   29.77R FOG                 .
+ 9AM EST NOV 23 2011 LGT RAIN  40  36  86 NW22G31   29.83R                     .
+10AM EST NOV 23 2011 CLOUDY    41  37  86 NW17G28   29.88R                     .
+11AM EST NOV 23 2011 CLOUDY    42  38  85 NW23G33   29.91R                     .
+12PM EST NOV 23 2011 CLOUDY    43  38  82 NW20G30   29.94R                     .
+ 1PM EST NOV 23 2011 CLOUDY    44  38  79 NW18G31   29.97R                     .
+ 2PM EST NOV 23 2011 PTSUNNY   45  36  70 NW17G30   29.99R                     .
+ 3PM EST NOV 23 2011 MOSUNNY   45  35  68 NW21G26   30.03R                     .
+ 4PM EST NOV 23 2011 PTCLDY    46  32  58 NW17      30.06R                     .
+ 5PM EST NOV 23 2011 PTCLDY    44  32  62 NW12      30.09R                     .
+ 6PM EST NOV 23 2011 PTCLDY    42  33  70 NW8       30.12R                     .
+ 7PM EST NOV 23 2011 CLEAR     40  33  76 NW9       30.13R                     .
+ 8PM EST NOV 23 2011 CLEAR     39  32  76 W5        30.16R                     .
+ 9PM EST NOV 23 2011 CLEAR     37  32  82 W7        30.18R                     .
+10PM EST NOV 23 2011 CLEAR     37  33  85 W6        30.20R                     .
+11PM EST NOV 23 2011 NOT AVBL                                                  .
+12AM EST NOV 24 2011 CLEAR     36  32  85 CALM      30.21                      .
+ 1AM EST NOV 24 2011 CLEAR     34  31  88 CALM      30.21S                     .
+ 2AM EST NOV 24 2011 CLEAR     34  31  88 CALM      30.21S                     .
+ 3AM EST NOV 24 2011 CLEAR     34  31  88 SW3       30.21S                     .
+ 4AM EST NOV 24 2011 CLEAR     34  31  88 CALM      30.21S                     .
+ 5AM EST NOV 24 2011 CLEAR     34  31  88 CALM      30.23R                     .
+ 6AM EST NOV 24 2011 MOCLDY    33  31  92 CALM      30.24R FOG                 .
+ 7AM EST NOV 24 2011 FOG       36  34  93 VRB3      30.26R VSB 1/4             .
+ 8AM EST NOV 24 2011 FOG       34  33  96 W7        30.29R VSB 1/8 WCI  28     .
+ 9AM EST NOV 24 2011 FOG       34  33  96 SW7       30.30R VSB 1/8 WCI  28     .
+10AM EST NOV 24 2011 CLOUDY    35  33  92 W5        30.31S FOG     WCI  31     .
+11AM EST NOV 24 2011 CLOUDY    37  34  89 SW8       30.31S FOG                 .
+12PM EST NOV 24 2011 CLOUDY    38  35  89 S10       30.30F                     .
+ 1PM EST NOV 24 2011 MOSUNNY   42  34  73 SW8       30.29F                     .
+ 2PM EST NOV 24 2011 MOSUNNY   45  35  68 SW7       30.29S                     .
+ 3PM EST NOV 24 2011 MOSUNNY   45  35  68 SW10      30.28F                     .
+ 4PM EST NOV 24 2011 PTCLDY    43  35  73 SW9       30.28S                     .
+ 5PM EST NOV 24 2011 MOCLDY    39  34  81 SW8       30.27F                     .
+ 6PM EST NOV 24 2011 CLOUDY    39  34  82 SW7       30.28R                     .
+ 7PM EST NOV 24 2011 CLOUDY    39  33  79 SW8       30.28S                     .
+ 8PM EST NOV 24 2011 CLOUDY    38  34  85 SW12G17   30.29R                     .
+ 9PM EST NOV 24 2011 CLOUDY    38  34  85 SW7       30.28F                     .
+10PM EST NOV 24 2011 CLOUDY    39  34  82 SW7       30.28S                     .
+11PM EST NOV 24 2011 CLOUDY    40  36  86 SW8       30.27F                     .
+12AM EST NOV 25 2011 MOCLDY    40  36  86 S7        30.26F                     .
+ 1AM EST NOV 25 2011 PTCLDY    39  35  86 CALM      30.26S                     .
+ 2AM EST NOV 25 2011 CLEAR     37  34  89 S5        30.24F                     .
+ 3AM EST NOV 25 2011 CLEAR     38  35  89 S3        30.24S                     .
+ 4AM EST NOV 25 2011 CLEAR     39  35  86 SW5       30.23F                     .
+ 5AM EST NOV 25 2011 CLEAR     41  35  79 SW6       30.23S                     .
+ 6AM EST NOV 25 2011 CLEAR     41  34  76 S5        30.24R                     .
+ 7AM EST NOV 25 2011 PTCLDY    40  34  79 S5        30.23F                     .
+ 8AM EST NOV 25 2011 NOT AVBL                                                  .
+ 9AM EST NOV 25 2011 PTSUNNY   44  35  70 S6        30.25                      .
+10AM EST NOV 25 2011 MOSUNNY   48  34  58 SW10      30.25S                     .
+11AM EST NOV 25 2011 MOSUNNY   51  34  52 SW14G21   30.24F                     .
+12PM EST NOV 25 2011 MOSUNNY   54  33  45 SW13      30.22F                     .
+ 1PM EST NOV 25 2011 PTSUNNY   56  30  37 SW12      30.18F                     .
+ 2PM EST NOV 25 2011 MOSUNNY   57  31  37 S10       30.16F                     .
+ 3PM EST NOV 25 2011 MOSUNNY   58  30  34 SW12      30.15F                     .
+ 4PM EST NOV 25 2011 PTCLDY    58  31  35 SW12G20   30.15S                     .
+ 5PM EST NOV 25 2011 PTCLDY    55  32  41 SW8       30.14F                     .
+ 6PM EST NOV 25 2011 PTCLDY    53  33  46 S5        30.14S                     .
+ 7PM EST NOV 25 2011 PTCLDY    51  33  50 S6        30.14S                     .
+ 8PM EST NOV 25 2011 PTCLDY    51  32  48 S5        30.13F                     .
+ 9PM EST NOV 25 2011 NOT AVBL                                                  .
+10PM EST NOV 25 2011 PTCLDY    50  30  46 S3        30.14                      .
+11PM EST NOV 25 2011 MOCLDY    49  29  46 S3        30.14S                     .
+12AM EST NOV 26 2011 MOCLDY    48  28  46 S3        30.14S                     .
+ 1AM EST NOV 26 2011 CLOUDY    47  28  47 S3        30.14S                     .
+ 2AM EST NOV 26 2011 CLOUDY    47  27  45 S6        30.14S                     .
+ 3AM EST NOV 26 2011 CLOUDY    45  27  49 S3        30.16R                     .
+ 4AM EST NOV 26 2011 CLOUDY    46  26  45 S3        30.16S                     .
+ 5AM EST NOV 26 2011 CLOUDY    47  26  44 CALM      30.17R                     .
+ 6AM EST NOV 26 2011 CLOUDY    50  24  36 SW7       30.18R                     .
+ 7AM EST NOV 26 2011 MOCLDY    49  24  37 S3        30.19R                     .
+ 8AM EST NOV 26 2011 MOCLDY    48  26  42 S3        30.20R                     .
+ 9AM EST NOV 26 2011 CLOUDY    50  26  39 S7        30.21R                     .
+10AM EST NOV 26 2011 CLOUDY    54  29  38 SW9       30.21S                     .
+11AM EST NOV 26 2011 CLOUDY    56  32  40 SW9       30.21S                     .
+12PM EST NOV 26 2011 CLOUDY    57  35  43 SW9       30.19F                     .
+ 1PM EST NOV 26 2011 CLOUDY    58  37  45 S9        30.17F                     .
+ 2PM EST NOV 26 2011 CLOUDY    59  38  45 S7        30.14F                     .
+ 3PM EST NOV 26 2011 CLOUDY    60  39  45 S9        30.13F                     .
+ 4PM EST NOV 26 2011 CLOUDY    60  40  47 S10       30.13S                     .
+ 5PM EST NOV 26 2011 CLOUDY    57  40  52 S5        30.12F                     .
+ 6PM EST NOV 26 2011 CLOUDY    55  39  54 S3        30.13R                     .
+ 7PM EST NOV 26 2011 CLOUDY    53  39  59 S5        30.12F                     .
+ 8PM EST NOV 26 2011 CLOUDY    52  39  61 S6        30.11F                     .
+ 9PM EST NOV 26 2011 CLOUDY    52  40  63 SE6       30.08F                     .
+10PM EST NOV 26 2011 CLOUDY    52  41  66 S3        30.08S                     .
+11PM EST NOV 26 2011 MOCLDY    51  41  68 S5        30.06F                     .
+12AM EST NOV 27 2011 MOCLDY    51  40  65 S3        30.06S                     .
+ 1AM EST NOV 27 2011 MOCLDY    51  40  65 S6        30.04F                     .
+ 2AM EST NOV 27 2011 MOCLDY    51  39  63 S3        30.03F                     .
+ 3AM EST NOV 27 2011 MOCLDY    50  37  61 S6        30.01F                     .
+ 4AM EST NOV 27 2011 MOCLDY    50  36  58 S7        30.00F                     .
+ 5AM EST NOV 27 2011 CLOUDY    51  37  58 S7        29.98F                     .
+ 6AM EST NOV 27 2011 CLOUDY    53  38  56 S7        29.96F                     .
+ 7AM EST NOV 27 2011 CLOUDY    54  39  57 S7        29.97R                     .
+ 8AM EST NOV 27 2011 CLOUDY    55  39  54 S8        29.98R                     .
+ 9AM EST NOV 27 2011 CLOUDY    56  41  57 S8        30.00R                     .
+10AM EST NOV 27 2011 CLOUDY    57  41  55 S3        29.99F                     .
+11AM EST NOV 27 2011 CLOUDY    57  42  57 S8        29.98F                     .
+12PM EST NOV 27 2011 CLOUDY    59  43  55 S10       29.95F                     .
+ 1PM EST NOV 27 2011 LGT RAIN  58  46  64 S8        29.93F                     .
+ 2PM EST NOV 27 2011 LGT RAIN  55  49  80 S9        29.92F                     .
+ 3PM EST NOV 27 2011 LGT RAIN  55  50  83 S8        29.91F                     .
+ 4PM EST NOV 27 2011 LGT RAIN  55  51  86 S8        29.92R                     .
+ 5PM EST NOV 27 2011 LGT RAIN  54  51  90 S6        29.91F                     .
+ 6PM EST NOV 27 2011 LGT RAIN  55  52  89 SW6       29.92R                     .
+ 7PM EST NOV 27 2011 LGT RAIN  55  52  89 S3        29.93R                     .
+ 8PM EST NOV 27 2011 LGT RAIN  54  52  93 CALM      29.93S                     .
+ 9PM EST NOV 27 2011 CLOUDY    54  52  93 CALM      29.94S                     .
+10PM EST NOV 27 2011 CLOUDY    54  52  93 CALM      29.95R                     .
+11PM EST NOV 27 2011 LGT RAIN  53  52  96 SE5       29.94F                     .
+12AM EST NOV 28 2011 LGT RAIN  53  52  96 CALM      29.94S                     .
+ 1AM EST NOV 28 2011 LGT RAIN  53  51  93 SE3       29.96R FOG                 .
+ 2AM EST NOV 28 2011 LGT RAIN  53  51  93 SE3       29.95F FOG                 .
+ 3AM EST NOV 28 2011 LGT RAIN  53  52  96 SE3       29.95S FOG                 .
+ 4AM EST NOV 28 2011 LGT RAIN  53  52  96 CALM      29.95S FOG                 .
+ 5AM EST NOV 28 2011 LGT RAIN  53  51  93 E3        29.96R FOG                 .
+ 6AM EST NOV 28 2011 LGT RAIN  53  51  93 E3        29.97R FOG                 .
+ 7AM EST NOV 28 2011 LGT RAIN  51  49  92 N10       30.00R VSB 3/4             .
+ 8AM EST NOV 28 2011 LGT RAIN  50  47  89 N8        30.02R FOG                 .
+ 9AM EST NOV 28 2011 DRZL/FOG  49  47  93 N8        30.02S VSB 1               .
+10AM EST NOV 28 2011 FOG       50  48  93 N6        30.01F VSB 1/2             .
+11AM EST NOV 28 2011 FOG       51  49  92 N5        30.02R VSB 1/2             .
+12PM EST NOV 28 2011 CLOUDY    54  51  90 CALM      29.98F FOG                 .
+ 1PM EST NOV 28 2011 CLOUDY    57  53  86 E6        29.95F                     .
+ 2PM EST NOV 28 2011 CLOUDY    59  54  83 CALM      29.94F                     .
+ 3PM EST NOV 28 2011 CLOUDY    59  54  83 NE3       29.94S                     .
+ 4PM EST NOV 28 2011 CLOUDY    59  54  83 SE5       29.92F                     .
+ 5PM EST NOV 28 2011 CLOUDY    59  52  77 E7        29.93R                     .
+ 6PM EST NOV 28 2011 CLOUDY    59  51  75 E7        29.93S                     .
+ 7PM EST NOV 28 2011 LGT RAIN  58  51  78 E5        29.90F                     .
+ 8PM EST NOV 28 2011 CLOUDY    58  50  75 E7        29.88F                     .
+ 9PM EST NOV 28 2011 CLOUDY    58  50  75 E7        29.88S                     .
+10PM EST NOV 28 2011 CLOUDY    57  50  77 E5        29.87F                     .
+11PM EST NOV 28 2011 CLOUDY    58  50  75 E7        29.84F                     .
+12AM EST NOV 29 2011 CLOUDY    58  50  75 E7        29.84S                     .
+ 1AM EST NOV 29 2011 LGT RAIN  58  50  75 E7        29.81F                     .
+ 2AM EST NOV 29 2011 LGT RAIN  56  51  84 E7        29.78F                     .
+ 3AM EST NOV 29 2011 LGT RAIN  56  52  86 E9        29.75F                     .
+ 4AM EST NOV 29 2011 LGT RAIN  56  53  90 E5        29.72F                     .
+ 5AM EST NOV 29 2011 LGT RAIN  57  54  89 E8        29.69F                     .
+ 6AM EST NOV 29 2011 LGT RAIN  57  54  89 E10       29.68F                     .
+ 7AM EST NOV 29 2011 RAIN      57  54  89 E13       29.66F                     .
+ 8AM EST NOV 29 2011 LGT RAIN  57  53  86 E14G24    29.63F                     .
+ 9AM EST NOV 29 2011 LGT RAIN  58  54  86 E13       29.62F                     .
+10AM EST NOV 29 2011 LGT RAIN  58  54  86 E12       29.61F                     .
+11AM EST NOV 29 2011 LGT RAIN  57  55  93 SE9       29.60F FOG                 .
+12PM EST NOV 29 2011 CLOUDY    59  56  89 SE9       29.54F                     .
+ 1PM EST NOV 29 2011 DRIZZLE   49  43  80 SW22G38   29.58R                     .
+ 2PM EST NOV 29 2011 PTSUNNY   45  37  76 SW13G21   29.62R                     .
+ 3PM EST NOV 29 2011 PTSUNNY   46  34  62 SW18G26   29.62S                     .
+ 4PM EST NOV 29 2011 MOCLDY    44  34  67 W12G18    29.63R                     .
+ 5PM EST NOV 29 2011 MOCLDY    42  31  64 SW13G20   29.65R                     .
+ 6PM EST NOV 29 2011 MOCLDY    41  31  67 SW3       29.64F                     .
+ 7PM EST NOV 29 2011 MOCLDY    40  32  73 S3        29.66R                     .
+ 8PM EST NOV 29 2011 CLOUDY    40  32  73 S3        29.66S                     .
+ 9PM EST NOV 29 2011 CLOUDY    41  32  70 SW3       29.64F                     .
+10PM EST NOV 29 2011 CLOUDY    40  31  70 SW7       29.62F                     .
+11PM EST NOV 29 2011 CLOUDY    40  30  67 SW10      29.62S                     .
+12AM EST NOV 30 2011 CLOUDY    39  29  67 SW10G17   29.62S                     .
+ 1AM EST NOV 30 2011 CLOUDY    39  30  70 SW12      29.60F                     .
+ 2AM EST NOV 30 2011 CLOUDY    39  29  67 SW12      29.60S                     .
+ 3AM EST NOV 30 2011 CLOUDY    39  29  67 SW10G18   29.60S                     .
+ 4AM EST NOV 30 2011 CLOUDY    38  31  76 SW8       29.61R                     .
+ 5AM EST NOV 30 2011 FLURRIES  37  31  78 SW10G20   29.62R                     .
+ 6AM EST NOV 30 2011 FLURRIES  36  30  79 SW9       29.64R                     .
+ 7AM EST NOV 30 2011 FLURRIES  35  31  85 SW9G18    29.67R WCI  28             .
+ 8AM EST NOV 30 2011 LGT SNOW  35  32  88 SW12      29.70R FOG     WCI  27     .
+ 9AM EST NOV 30 2011 LGT SNOW  35  32  88 W13G20    29.75R FOG     WCI  26     .
+10AM EST NOV 30 2011 LGT SNOW  34  31  88 W16       29.79R FOG     WCI  24     .
+11AM EST NOV 30 2011 FLURRIES  34  29  82 W17G25    29.83R WCI  23             .
+12PM EST NOV 30 2011 CLOUDY    34  29  82 W15G21    29.84R WCI  24             .
+ 1PM EST NOV 30 2011 FLURRIES  34  28  79 W12G18    29.87R WCI  25             .
+ 2PM EST NOV 30 2011 FLURRIES  34  27  75 W18G24    29.88R WCI  23             .
+ 3PM EST NOV 30 2011 CLOUDY    34  25  69 W15G22    29.92R WCI  24             .
+ 4PM EST NOV 30 2011 CLOUDY    35  25  66 W10G20    29.95R WCI  27             .
+ 5PM EST NOV 30 2011 MOCLDY    35  25  66 W10       30.00R WCI  27             .
+ 6PM EST NOV 30 2011 CLOUDY    35  25  66 W5        30.04R WCI  31             .
