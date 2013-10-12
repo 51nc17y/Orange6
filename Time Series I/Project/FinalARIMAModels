@@ -1,31 +1,89 @@
+libname time "C:\Users\Marc\Documents\Analytics NC State\Time Series";
+libname electric "C:\Users\Marc\Documents\Analytics NC State\Time Series\Electric Load";
+
+
 /*These are the best models thus far*/
 
 
 /*ALL WHITE NOISE!!!!!!!!!*/
+ods listing close;
+ods html close;
+ods output Forecasts=Predicted2;
 proc arima data=electric.training1 plot(unpack)=all;
 	identify var=DUQ (1 24) nlag=100;
 	estimate p=(1,2,3,7,9,12,15,17,20,24,48,72) q= (12) (24) method=ML;
-	forecast lead=168;
+	forecast lead=144;
 run;
 quit;
+ods listing;
+ods html;
+
+data combined2;
+merge predicted2 electric.weekone;
+forecast1 = forecast;
+difference1 = DUQ - forecast1;
+MAPE_1 = abs((DUQ-forecast1)/DUQ);
+MAPE = MAPE_1 / 144;
+
+run;
+
+/*We get MAPE = .085*/
+proc means data=combined2 sum;
+var MAPE;
+run;
+
+
+
+
+
+
 
 /*Best White Noise Plot so Far!*/
+ods listing close;
+ods html close;
+ods output Forecasts=Predicted3;
 proc arima data=electric.training1 plot(unpack)=all;
 	identify var=DUQ (1 24) nlag=100;
 	estimate p=(1,2,7,9,12,15,17,20,48,72,96) q= (12) (24) method=ML;
-	forecast lead=168;
+	forecast lead=144;
 run;
 quit;
+ods listing;
+ods html;
+
+data combined3;
+merge predicted3 electric.weekone;
+forecast1 = forecast;
+difference1 = DUQ - forecast1;
+MAPE_1 = abs((DUQ-forecast1)/DUQ);
+MAPE = MAPE_1 / 144;
+
+run;
+
+/*We get MAPE = .0865*/
+proc means data=combined3 sum;
+var MAPE;
+run;
 
 
-/* I am pretty confident this is the best model*/
-ods output forecasts=predicted1;
+
+
+
+
+
+/*I'm pretty sure this is the best model out of the bunch*/
+ods listing close;
+ods html close;
+ods output Forecasts=Predicted1;
 proc arima data=electric.training1 plot(unpack)=all;
 	identify var=DUQ (1 24) nlag=100;
 	estimate p=(1,2,3,4,7,9,12,15,17,20,48,72,96) q= (12) (24) method=ML;
-	forecast lead=168;
+	forecast lead=144;
 run;
 quit;
+ods listing;
+ods html;
+
 
 /*Calculating the MAPE For The Best Model*/
 data combined1;
@@ -33,25 +91,71 @@ merge predicted1 electric.weekone;
 forecast1 = forecast;
 difference1 = DUQ - forecast1;
 MAPE_1 = abs((DUQ-forecast1)/DUQ);
+MAPE = MAPE_1 / 144;
 run;
 
-/*We get 12.052, which we divide by 144 hours to get = 0.08368*/
+/*We get MAPE= 0.08368*/
 proc means data=combined1 sum;
-var MAPE_1;
+var MAPE;
 run;
 
+
+
+
+ods listing close;
+ods html close;
+ods output Forecasts=Predicted4;
 /*Still good White Noise after adding 5*/
 proc arima data=electric.training1 plot(unpack)=all;
 	identify var=DUQ (1 24) nlag=100;
 	estimate p=(1,2,3,4,5,7,9,12,15,17,20,48,72,96) q= (12) (24) method=ML;
-	forecast lead=168;
+	forecast lead=144;
 run;
 quit;
+ods html;
+ods listing;
+
+data combined4;
+merge predicted4 electric.weekone;
+forecast1 = forecast;
+difference1 = DUQ - forecast1;
+MAPE_1 = abs((DUQ-forecast1)/DUQ);
+MAPE = MAPE_1 / 144;
+run;
+
+/*We get MAPE = .08369*/
+proc means data=combined4 sum;
+var MAPE;
+run;
+
+
+
+
+
+
+ods listing close;
+ods html close;
+ods output Forecasts=Predicted5;
 
 /*Still very good White Noise: maybe best yet?*/
 proc arima data=electric.training1 plot(unpack)=all;
 	identify var=DUQ (1 24) nlag=100;
 	estimate p=(1,2,3,4,7,9,12,15,17,20,48,72,96) q= (12) (24) (48) method=ML;
-	forecast lead=168;
+	forecast lead=144;
 run;
 quit;
+ods listing;
+ods html;
+
+data combined5;
+merge predicted1 electric.weekone;
+forecast1 = forecast;
+difference1 = DUQ - forecast1;
+MAPE_1 = abs((DUQ-forecast1)/DUQ);
+MAPE = MAPE_1 / 144;
+run;
+
+/*We get MAPE =.08369 */
+proc means data=combined5 sum;
+var MAPE;
+run;
