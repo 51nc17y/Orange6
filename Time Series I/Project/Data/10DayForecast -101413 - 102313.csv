@@ -1,0 +1,11 @@
+Widget,Data Source,Result Row,Source Page URL,Source Page URL source,Source Page URL title,Source Page URL text,Day,High temp,Low temp,Wind
+10dayForecast,10dayForecast,1,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Tonight Oct 14,62; 12; 0; 5,55,5
+10dayForecast,10dayForecast,2,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Tue Oct 15,73,59,7
+10dayForecast,10dayForecast,3,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Wed Oct 16,63,49,12
+10dayForecast,10dayForecast,4,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Thu Oct 17,56,46,8
+10dayForecast,10dayForecast,5,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Fri Oct 18,58,44,9
+10dayForecast,10dayForecast,6,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Sat Oct 19,54,44,10
+10dayForecast,10dayForecast,7,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Sun Oct 20,52,41,10
+10dayForecast,10dayForecast,8,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Mon Oct 21,57,44,9
+10dayForecast,10dayForecast,9,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Tue Oct 22,54,41,9
+10dayForecast,10dayForecast,10,http://www.weather.com/weather/tenday/Pittsburgh+PA+USPA1290:1:US,,,,Wed Oct 23,54,41,9

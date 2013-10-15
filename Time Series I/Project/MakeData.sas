@@ -4,6 +4,9 @@
 
 %let path=C:\Users\Phill\Documents\GitHub\Orange6\Time Series I\Project\data;
 
+*
+
+
 libname electric "&path";
 
 *********************************************************************
@@ -42,11 +45,11 @@ run;
     %let year = &i; 
     %let month = %sysfunc(putn(&j, z2.));
     data _&year&month ;
-        length Date 5 _Time $4 Time 8 Month $3 Day $2 Year $4 temp 3; 
+        length Date 5 _Time $4 Time 8 Month $3 Day $2 Year $4 Weather $8 temp 3 DP 3 RH 3 Wind $8; 
           format Date DATE9.; 
         infile "&path\hr_pit_&year..&month..txt" firstobs=27;  
 
-    input _time $ Month $ 10-13 Day Year temp 32-34; 
+    input _time $ Month $ 10-13 Day Year Weather $ 22-29 temp 32-34 DP RH Wind; 
     _time = right(_time);
     Date = input(Day||Month||Year, date9.);
     if _time = '12AM' or (_time ne '12PM' and index(_time, 'PM') > 1 )
@@ -70,11 +73,11 @@ run;
 
 proc sql;
 create table electric.temp_data as
-	select Date, Time, Temp
+	select Date, Time, Temp, DP, RH, Weather, Wind 
 	from work.all_data; 
 drop table work.all_data;
 create table electric.master as
-	select temp_data.Date, temp_data.Time as Hour, Load_Data.DUQ, temp_data.Temp
+	select temp_data.Date, temp_data.Time as Hour, Load_Data.DUQ, temp_data.Temp, temp_data.DP, temp_data.RH, Temp_data.Weather, temp_data.Wind
 	from electric.temp_data, electric.load_data
 	where temp_data.Date = load_data.day and temp_data.time = load_data.hour
 	order by temp_data.date desc, temp_data.time desc;
@@ -83,17 +86,23 @@ quit;
 
 data Electric.Master; 
 	set Electric.Master;
-
+	
+	*Weekend=1 -> Sat/Sun; 
 	if weekday(date) in(1, 7) then Weekend = 1; 
 	else Weekend = 0; 
 
-	if month(date)<4 then Season="Winter"; 
-	else if month(date)<10 then Season="Summer"; 
-	else Season="Winter"; 
+	*Create Seasons: 1=Summer, 0=Winter; 
+	if month(date)<4 then Season=0; 
+	else if month(date)<10 then Season=1; 
+	else Season=0; 
 	
-	hour2=hour/100;
-	DateTime = put(dhms(date, hour2, 0, 0), datetime10.); 
-	drop hour2; 
+	*Create Month Dummies; 
+	array Months{12} Mon1-Mon12; 
+	Do i=1 to 12; 
+		if month(date)=i then Months[i]=1; 
+		else Months[i]=0; 
+	end; 
+	drop i; 
 
 	if hour = '100' then AM01 = 1; else AM01 = 0;
 	if hour = '200' then AM02 = 1; else AM02 = 0;
@@ -125,9 +134,14 @@ proc sql;
 	create table Electric.Train as 
 		select 	*
 		from 	Electric.Master
-		where 	Date<19624;
+		where 	Date<mdy(9, 23, 2013);
 	create table Electric.Val as
 		select 	*
 		from 	Electric.Master
-		where	Date>=19624; 
+		where	Date>=mdy(9, 23, 2013); 
 quit;  
+
+data Electric.Val; 
+	set Electric.Val; 
+	DUQ = . ; 
+run; 

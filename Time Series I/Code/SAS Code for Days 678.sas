@@ -7,6 +7,8 @@
 
 /* Linear Trend */
 
+libname Time 'C:\Users\Phill\Documents\GitHub\Orange6\Time Series I\Data';
+
 data Time.Leadyear;
 	set Time.Leadyear end=eof;
 	Time+1;
