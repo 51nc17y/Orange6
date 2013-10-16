@@ -1,0 +1,56 @@
+libname time 'c:\iaa\time series';
+
+/* Macro to make editable start day for train and validation sets */
+%let valid_date = %sysfunc(mdy(10,2,2013));
+
+/* Create train set and new variables */
+data alldays;
+set time.alldays;
+	count + 1;
+	if &valid_date <= day then valid = 1;
+		else valid = 0;
+	weekday=weekday(day);
+	month=month(day);
+run;
+
+data train;
+	set alldays;
+	if valid=1 then DUQ = .;
+run;
+
+/*  Use proc glm to predict DUQ based on simple inputs and output residuals to ARIMA */
+proc glm data=train;
+	class hour month weekday;
+	model DUQ=hour month weekday;
+	output out=residuals r=res p=pred;
+run;
+quit;
+
+/* Model residuals with ARIMA */
+proc arima data=residuals plot(unpack)=all;
+	identify var=res nlags=50;
+	estimate p=(1,2,5,17,24,25) q=(25,26,47,48);
+	forecast lead=144 id=count out=arimaout;
+run;
+quit;
+
+/* Combine the two models in a single table */
+proc sql;
+create table forecast as
+select	 	a.*
+			, b.pred as DUQ_forecast
+			, c.forecast as res_forecast
+			, b.pred + c.forecast as final_forecast
+from alldays a, residuals b, arimaout c
+where a.count = b.count
+and a.count = c.count;
+quit;
+
+/* Calculate MAPE */
+proc sql;
+select sum(abs(DUQ - DUQ_forecast)/DUQ) / count(*) as MAPE
+		,sum(abs(DUQ - final_forecast)/DUQ) / count(*) as MAPE_Final
+from forecast
+/* where day >= &valid_date */
+;
+quit;
